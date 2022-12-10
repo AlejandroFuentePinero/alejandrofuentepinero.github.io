@@ -2,21 +2,22 @@
 main:
   - title: "Publications"
     url: /publications/
+    
+  - title: "Threatened species nominations"
+    url: /markdown/
 
+  - title: "Book chapters"
+    url: /year-archive/
+    
   - title: "Talks"
     url: /talks/    
 
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Portfolio"
+  - title: "Grants and Awards"
     url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
+       
   - title: "CV"
     url: /cv/
     
-  - title: "Guide"
-    url: /markdown/
