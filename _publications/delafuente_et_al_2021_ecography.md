@@ -2,7 +2,7 @@
 title: "Predicting species abundance by implementing the ecological niche theory"
 collection: publications
 permalink: /publication/delaFuente.et.al.2021
-excerpt: 'Abundance-suitability hypothesis Wet Tropics'
+excerpt: 'Can habitat suitability derived from SDMs predict species abundance?'
 date: 2021-11-12
 venue: 'Ecography'
 paperurl: 'https://onlinelibrary.wiley.com/doi/full/10.1111/ecog.05776'
