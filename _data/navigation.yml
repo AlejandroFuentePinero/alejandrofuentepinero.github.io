@@ -6,7 +6,7 @@ main:
   - title: "Book chapters"
     url: /year-archive/
     
-  - title: "Threatened species nominations"
+  - title: "Threatened species"
     url: /markdown/
     
   - title: "Talks"
@@ -15,7 +15,7 @@ main:
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Grants and Awards"
+  - title: "Grants/Awards"
     url: /portfolio/
        
   - title: "CV"
