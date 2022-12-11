@@ -2,7 +2,7 @@
 title: "Long-term changes in populations of rainforest birds in the Australia Wet Tropics bioregion: A climate-driven biodiversity emergency"
 collection: publications
 permalink: /publication/Williams_delafuente_2021_plosone
-excerpt: 'Bird declines Wet Tropics'
+excerpt: 'Upland rainforest birds are declining while lowland birds increase in population in the Australian Wet Tropics.'
 date: 2021-12-22
 venue: 'Plos One'
 paperurl: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254307'
