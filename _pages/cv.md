@@ -15,17 +15,55 @@ Education
 * M.S. in Biology and Conservation of Biodiversity, Universidad de Salamanca, 2016
 * Ph.D in Zoology and Ecology, James Cook University, 2023 (expected)
 
-Work experience
+Volunteering and other field experiences
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Vertebrate biodiversity monitoring in the Australian Wet Tropics.
+  * Organisation: James Cook University.
+  * Country: Australia.
+  * Year: 2019 - present.
+* Yellow-tailed woolly monkey Lagothrix flavicauda, survey, mammals’ inventory and community-based conservation work in the Peruvian Cloud Forest and the Peruvian Amazon Rainforest.
+  * Organisation: Neotropical Primate Conservation and Lush Cosmetics.
+  * Country: Peru.
+  * Year: 2018-2019.
+* Breeding bird survey at Fairburn Ings Natural Reserve.
+  * Organisation: Royal Society for the Protection of Birds.
+  * Country: UK.
+  * Year: 2018.
+* Exploration and description of Andean flora and fauna in Puyehue National Park.
+  * Organisation: CONAF.
+  * Country: Chile.
+  * Year: 2016-2017.
+* Annual population monitoring of the Darwin's Frog (_Rhinoderma darwinii_).
+  * Organisation: Andres Bello University.
+  * Country: Chile.
+  * Year: 2017.
+* Big cats monitoring in Kaa-Iya National Park.
+  * Organisaion: Bolivian National Parks (with the support of University of Florida and WCS).
+  * Country: Bolivia.
+  * Year: 2017.
+* Population monitoring of black rats, population and breeding monitoring of cormorants and Cory's shearwater.
+  * Organisaion: SPEA Life+ Berlengas.
+  * Country: Portugal.
+  * Year: 2016.
+* Population monitoring of amphibians and semi-aquatic mammals.
+  * Organisaion: University of Salamanca.
+  * Country: Spain.
+  * Year: 2016.
+* Population dynamics of Balearic lacertids.
+  * Organisation: University of Salamanca.
+  * Country: Spain.
+  * Year 2016.
+* Recovery and release of endemic iberian fauna.
+  * Organisation: [AMUS](https://www.amus.org.es/).
+  * Country: Spain.
+  * Year: 2015.
+* Rescue and rehabilitation of primates.
+  * Organisaion: [RAINFER](http://rainfer.org/english/).
+  * Country: Spain.
+  * Year: 2014-2015.
+* Animal care and wildlife rehabilitation and release.
+  * Organisation: [Zoo de Santillana Foundation](http://www.fundacionzoodesantillana.org/).
+  * Year 2013.
   
 Skills
 ======
