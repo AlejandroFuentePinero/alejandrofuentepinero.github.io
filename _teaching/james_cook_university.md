@@ -1,7 +1,7 @@
 ---
 title: "James Cook University"
 collection: teaching
-type: "Undergraduate and Master's course"
+type: "Undergraduate and Master's courses"
 permalink: /teaching/james_cook_university
 venue: "James Cook University"
 date: 2019-01-01
