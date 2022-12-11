@@ -8,8 +8,5 @@ date: 2021-03-01
 location: "Virtual"
 ---
 
-
-<p align="center">
-  <img src="https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/images/esa_2021_poster.png">
-</p>
+[Link to poster](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/images/delafuente_alejandro_escalator_to_extinction_ESA_conference.pdf)
 
