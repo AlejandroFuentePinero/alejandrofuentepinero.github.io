@@ -2,7 +2,7 @@
 title: "Seasonal variation in the richness, relative frequency and diversity of birds in urban wetlands of Llanquihue, southern Chile"
 collection: publications
 permalink: /publication/Gallardo.et.al.2018
-excerpt: 'Synchronous flowering of Chusquea montane in Puyehue National Park'
+excerpt: 'Bird community seasonal variation in urban wetlands of South Chile.'
 date: 2018-06-14
 venue: 'Revista Chilena de Ornitologia'
 paperurl: 'https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/Gallardo.et.al.2018.pdf'
