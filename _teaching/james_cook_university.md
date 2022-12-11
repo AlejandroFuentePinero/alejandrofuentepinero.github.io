@@ -1,5 +1,5 @@
 ---
-title: "Teaching experience - James Cook University"
+title: "James Cook University"
 collection: teaching
 type: "Undergraduate and Master's course"
 permalink: /teaching/james_cook_university
@@ -8,7 +8,7 @@ date: 2019-01-01
 location: "Townsville, Australia"
 ---
 
-My teaching experience includes demonstrating and tutoring ecological courses and advanced statistics.
+My teaching experience includes tutoring and lecturing on ecological courses and advanced statistics.
 ======
 
 2022
