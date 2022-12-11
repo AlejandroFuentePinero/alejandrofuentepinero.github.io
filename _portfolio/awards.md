@@ -1,5 +1,5 @@
 ---
-title: "Awards"
+title: "Go to awards"
 excerpt: "Awards"
 collection: portfolio
 ---
