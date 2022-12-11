@@ -123,8 +123,6 @@ Talks
   
 Media engagement
 ======
-  
-### 2022
 
 * Possums threatened by climate change
   * Article. [JCU media](https://www.jcu.edu.au/news/releases/2022/november/possums-threatened-by-climate-change)
@@ -134,9 +132,6 @@ Media engagement
 * Global warming drives Wet Tropics possums species fromt their mountain homes.
   * Article. [ABC news](https://www.abc.net.au/news/2022-01-03/climate-change-herbert-river-ringtail-possum-decline/100705912)
   * Interview. [ABC news](https://www.abc.net.au/news/2022-01-02/climate-change-drives-possums-from-high-altitude/13693612)
-
-### 2019
-
 * It’s Easy to Hate Selfies. But Can They Also Be a Force for Good?
   * Photo contribution. [New York Times](https://www.nytimes.com/2019/07/11/style/selfies-instagram.html) 
 * Woody bamboo flowering in Puyehue National Park.
