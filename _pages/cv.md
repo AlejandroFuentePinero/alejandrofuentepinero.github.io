@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Biology, Universidad de Salamanca, 2014
+* M.S. in Biology and Conservation of Biodiversity, Universidad de Salamanca, 2016
+* Ph.D in Zoology and Ecology, James Cook University, 2023 (expected)
 
 Work experience
 ======
@@ -54,6 +54,29 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Professional development and community-based conservation
 ======
-* Currently signed in to 43 different slack teams
+* Training of local rangers in biodiversity monitoring. 
+  * Organisation: Queensland National Parks and Wildlife Services. 
+  * Country: Australia.
+  * Year: 2020 - Present
+* International Ecology School. 
+  * Country: Thailand. 
+  * Year: 2022
+* Indigenous rangers training in biodiversity monitoring, data collection, curation, and interpretation. 
+  * Organisation: Abriculture: indigenous environmental organisation.
+  * Country: Australia. 
+  * Year: 2020.
+* Indigenous community engagement for the conservation of the critically endangered Yellow-tailed woolly monkey.
+  * Organisation: Neotropical Primate Conservation.
+  * Country: Peru.
+  * Year: 2018. 
+* Training of local rangers in biodiversity monitoring.
+  * Organisaion: Bolivian National Parks.
+  * Country: Bolivia.
+  * Year 2017.
+* Training of local rangers in biodiversity monitoring, community engagement, and science communication.
+  * Organisation: CONAF - Chilean National Parks.
+  * Country: Chile.
+  * Year 2016 - 2017.
+
