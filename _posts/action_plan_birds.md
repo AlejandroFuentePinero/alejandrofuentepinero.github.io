@@ -1,0 +1,32 @@
+---
+title: 'The Action Plan for Australian Birds 2020'
+date: 2021-12-01
+permalink: /posts/action_plan_birds/
+tags:
+  - Australian birds
+  - Climate change
+  - Threatened species
+---
+ An overview of the 2020 status of all Australian birds, and the actions needed for conservation.
+======
+
+The Action Plan for Australian Birds 2020 is the most comprehensive review of the status of Australia's avifauna ever attempted. The latest in a series of action plans for Australian birds that have been produced every decade since 1992, it is also the largest. The accounts in this plan have been authored by more than 300 of the most knowledgeable bird experts in the country, and feature far more detail than any of the earlier plans. This volume also includes accounts of over 60 taxa that are no longer considered threatened, mainly thanks to sustained conservation action over many decades.
+This extensive book covers key themes that have emerged in the last decade, including the increasing impact of climate change as a threatening process, most obviously in Queensland's tropical rainforests where many birds are being pushed up the mountains. However, the effects are also indirect, as happened in the catastrophic fires of 2019/20. Many of the newly listed birds are subspecies confined to Kangaroo Island, where fire destroyed over half the population. But there are good news stories too, especially on islands where there have been spectacular successes with predator control. Such uplifting results demonstrate that when action plans are followed by action on the ground, threatened species can indeed be recovered and threats alleviated.
+
+Chapters contribution:
+======
+
+1.	Williams S.E., de la Fuente A., Freeman AND, Craig M, Frith DW, Frith CB, Garnett ST. (2021). Grey-headed Robin Heteremyias cinereifrons. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 744-746. CSIRO Publishing, Melbourne.
+2.	Williams S.E., de la Fuente A., Frith CB, Frith DW, Garnett ST. (2021). Victoria’s riflebird Lophorina victoriae. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 737-739. CSIRO Publishing, Melbourne.
+3.	Williams S.E., de la Fuente A., Garnett ST. (2021). Wet Tropics Eastern Whipbird Psophodes olivaceus lateralis. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 722-724. CSIRO Publishing, Melbourne.
+4.	Williams S.E., de la Fuente A., Harrington GN, Frith CB, Frith DW, Chaplin D, Freeman AND, Craig M, Garnett ST. (2021). Tooth-billed Bowerbird Scenopoeetes dentirostris. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 483-486. CSIRO Publishing, Melbourne.
+5.	Williams S.E., de la Fuente A., Frith CB, Frith DW, Chaplin D, Garnett ST. (2021). Wet Tropics Satin Bowerbird Ptilonorhynchus violaceus. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 489-491. CSIRO Publishing, Melbourne.
+6.	Williams S.E., de la Fuente A., Garnett ST. (2021). Little Treecreeper Cormobates leucophaea minor. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 495-497. CSIRO Publishing, Melbourne.
+7.	Williams S.E., de la Fuente A., Frith CB, Frith DW, Chaplin D, Garnett ST. (2021). Golden Bowerbird Prionodura newtoniana. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 486-488. CSIRO Publishing, Melbourne.
+8.	Williams S.E., de la Fuente A., Grant JDA, Garnett ST. (2021). Fernwren Oreoscupus gutturalis. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 644-646. CSIRO Publishing, Melbourne.
+9.	Williams S.E., de la Fuente A., Freeman AND, Garnett ST. (2021). Wet Tropics Brown Gerygone Gerygone mouki mouki. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 649-651. CSIRO Publishing, Melbourne.
+10.	Williams S.E., de la Fuente A., Garnett ST. (2021). Atherton Scrubwren Sericornis keri. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 672-674. CSIRO Publishing, Melbourne.
+11.	Williams S.E., de la Fuente A., Freeman AND, Craig M, Garnett ST. (2021). Wet Tropics Large-billed Scrubwren Sericornis magnirostra viridior. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 676-678. CSIRO Publishing, Melbourne.
+12.	Williams S.E., de la Fuente A., Garnett ST. (2021). Mountain Thornbill Acanthiza katherina. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 695-697. CSIRO Publishing, Melbourne.
+13.	Williams S.E., de la Fuente A., Freeman AND, Craig M, Garnett ST. (2021). Bower’s Shrike-thrush Colluricincla boweri. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 744-746. CSIRO Publishing, Melbourne.
+14.	Williams S.E., de la Fuente A., Freeman AND, Craig M, Garnett ST. (2021). Wet Tropics Australian King-Parrot Alisterus scapularis minor. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 467-469. CSIRO Publishing, Melbourne.
