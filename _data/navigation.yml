@@ -4,10 +4,10 @@ main:
     url: /publications/
     
   - title: "Book chapters"
-    url: /year-archive/
+    url: /book_chapter/
     
   - title: "Threatened species"
-    url: /markdown/
+    url: /threatened_species/
     
   - title: "Talks"
     url: /talks/    
