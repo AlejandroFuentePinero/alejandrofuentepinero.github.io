@@ -1,7 +1,7 @@
 ---
 title: "Seasonal variation in the richness, relative frequency and diversity of birds in urban wetlands of Llanquihue, southern Chile"
 collection: publications
-permalink: /publication/delafuente_pacheco_2017_bosque
+permalink: /publication/Gallardo.et.al.2018
 excerpt: 'Synchronous flowering of Chusquea montane in Puyehue National Park'
 date: 2019-06-14
 venue: 'Revista Chilena de Ornitologia'
