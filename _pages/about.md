@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-My research focuses on understanding the impacts of climate change on tropical biodiversity. I study climate change from the lens of population dynamics. My studies take place in tropical mountains, considered natural laboratories for studying climate change. Since elevation represents a natural thermal gradient across the distribution of montane species, these ecosystems are the ideal scenario for studying rapid climate-driven population changes in sensitive species. My current research focuses on the rainforest ringtail possum community endemic to the Australian Wet Tropics.
+I am a PhD student seeking to understand the impacts of climate change on tropical biodiversity. I study climate change from the lens of population dynamics. My studies take place in tropical mountains, considered natural laboratories for studying climate change. Since elevation represents a natural thermal gradient across the distribution of montane species, these ecosystems are the ideal scenario for studying rapid climate-driven population changes in sensitive species. My current research focuses on the rainforest ringtail possum community endemic to the Australian Wet Tropics.
 
 
 ![Green Ringtail Possum](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/images/_MG_3336.JPG?raw=true)
