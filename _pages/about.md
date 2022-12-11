@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /_pages/about.md
 title: "About me"
 excerpt: "About me"
 author_profile: true
