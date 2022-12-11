@@ -7,62 +7,62 @@ redirect_from:
   - /markdown.html
 ---
 
-### Lemuroid Ringtail Possum
+### 15. Lemuroid Ringtail Possum
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999).
 - Authors: Williams, S., de la Fuente, A., Falconi, L. (2022)
 
-### Grey-Headed Robin
+### 14. Grey-Headed Robin
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Freeman AND., Graig, M., Frith, DW., Frith, CD., Garnett, ST. (2021).
 
-### Victoria's Riflebird
+### 13. Victoria's Riflebird
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Frith, CD., Frith, DW., Garnett, ST. (2021).
 
-### Wet Tropics Eastern Whipbird
+### 12. Wet Tropics Eastern Whipbird
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Harrington GB., Frith, CD., Frith, DW., Chaplin, D., Garnett, ST. (2021).
 
-### Tooth-billed Bowerbird
+### 11. Tooth-billed Bowerbird
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Harrington GB., Frith, CD., Frith, DW., Chaplin, D., Freeman, AND., Graig, M., Garnett, ST. (2021).
 
-### Wet Tropics Satin Bowerbird
+### 10. Wet Tropics Satin Bowerbird
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Frith, CD., Frith, DW., Chaplin, D., Garnett, ST. (2021).
 
-### Little Treecreeper
+### 9. Little Treecreeper
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Garnett, ST. (2021).
 
-### Golden Bowerbird
+### 8. Golden Bowerbird
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Frith, CD., Frith, DW., Chaplin, D., Garnett, ST. (2021).
 
-### Fernwren
+### 7. Fernwren
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Grant, JDA., Garnett, ST. (2021).
 
-### Wet Tropics Brown Gerygone
+### 6. Wet Tropics Brown Gerygone
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Freeman, AND., Garnett, ST. (2021).
 
-### Atherton Scrubwren
+### 5. Atherton Scrubwren
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Garnett, ST. (2021).
 
-### Mountain Thornbill
+### 4. Mountain Thornbill
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Garnett, ST. (2021).
 
-### Wet Tropics Large-Billed Scrubwren
+### 3. Wet Tropics Large-Billed Scrubwren
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Freeman, AND., Graig, M., Garnett, ST. (2021).
 
-### Bower Shrike-Thrush
+### 2. Bower Shrike-Thrush
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Freeman, AND., Graig, M., Garnett, ST. (2021).
 
-### Wet Tropics King-Parrot
+### 1. Wet Tropics King-Parrot
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Freeman, AND., Graig, M., Garnett, ST. (2021).
