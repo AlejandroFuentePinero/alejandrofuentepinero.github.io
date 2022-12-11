@@ -2,7 +2,7 @@
 title: "New records of Lagidium cf. L. wolffsohni (Thomas, 1907) (Rodentia, Chinchillidae) in southern Chile"
 collection: publications
 permalink: /publication/SAREM_NotasMamSud_12-2021_Iriarte
-excerpt: 'Mountain vizcachas occurs much more north than once though. New records expand their range by 722 km.'
+excerpt: 'Mountain vizcachas occur much more north than once though. New records expand their range by 722 km.'
 date: 2021-11-11
 venue: 'Notas  sobre  Mamíferos Sudamericanos'
 paperurl: 'https://ojs.sarem.org.ar/index.php/nms/article/view/771/98'
