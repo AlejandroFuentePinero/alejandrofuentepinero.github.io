@@ -7,6 +7,9 @@ redirect_from:
   - /markdown.html
 ---
 
+My research has contributed to a better understanding of the impacts of climate change on tropical biodiversity. One of the most relevant findings is the rapid climate-driven biodiversity erosion. Below is a list of the most relevant cases, representing a robust representation of the unique biodiversity that constituted the Outstanding Universal Value of the Wet Tropics of North Queensland. All these species have a prominent characteristic in common; they are restricted to the highlands of the Australian Wet Tropics, highlighting the alarming rapid collapse of tropical montane ecosystems, following a clear pattern of the ["escalator to extinction"](https://www.pnas.org/doi/abs/10.1073/pnas.1817416115).
+
+
 ### 15. Lemuroid Ringtail Possum
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999).
 - Authors: Williams, S., de la Fuente, A., Falconi, L. (2022)
