@@ -9,7 +9,6 @@ location: "Townsville, Australia"
 ---
 
 My teaching experience includes tutoring and lecturing on ecological courses and advanced statistics.
-======
 
 2022
 ======
