@@ -1,6 +1,6 @@
 ---
 title: "Grants and awards"
-excerpt: "Grants and awards<br/>
+excerpt: "Grants and awards<br/>"
 collection: portfolio
 ---
 
