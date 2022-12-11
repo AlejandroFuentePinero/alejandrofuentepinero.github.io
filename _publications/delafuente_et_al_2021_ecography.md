@@ -6,7 +6,7 @@ excerpt: 'Abundance-suitability hypothesis Wet Tropics'
 date: 2021-11-12
 venue: 'Ecography'
 paperurl: 'https://onlinelibrary.wiley.com/doi/full/10.1111/ecog.05776'
-citation: 'de la Fuente, A, Hirsch, B, Cernusak, L, & Williams, S. (2021). &quot;Predicting species abundance by implementing the ecological niche theory.&quot; <i>Ecography</i>. 44: 1723-1730.'
+citation: 'de la Fuente, A., Hirsch, B., Cernusak, L., & Williams, S. (2021). &quot;Predicting species abundance by implementing the ecological niche theory.&quot; <i>Ecography</i>. 44: 1723-1730.'
 ---
 # Abstract
 
