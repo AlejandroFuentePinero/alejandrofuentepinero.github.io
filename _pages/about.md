@@ -7,10 +7,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Welcome to my website!
+# Welcome to my website!
 
-My research focuses on undestanding the impacts of climate change on tropical biodiversity. I study climate change from the lense of population dynamics. My studies take place in tropical mountains, which are consider natural laboratories for the study of climate change. This is because in tropical mountains, elevation defines a strong gradient across which most ecological processes vary. Since elevation defines a natural thermal gradient across the distribution of montane species, these ecosystems are the ideal scenario to study rapid climate-driven population changes in sensitive species.
-My current research focuses on the rainforest ringtail possum community endemic to the Australian Wet Tropics.
+My research focuses on understanding the impacts of climate change on tropical biodiversity. I study climate change from the lens of population dynamics. My studies take place in tropical mountains, considered natural laboratories for studying climate change. Since elevation represents a natural thermal gradient across the distribution of montane species, these ecosystems are the ideal scenario for studying rapid climate-driven population changes in sensitive species. My current research focuses on the rainforest ringtail possum community endemic to the Australian Wet Tropics.
 
 
 ![Green Ringtail Possum](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/images/_MG_3336.JPG?raw=true)
@@ -18,27 +17,30 @@ Green Ringtail Possum (*Pseudochirops archeri*) at Mount Lewis National Park, Qu
 
 # Current projects
 
-### Age-structure population model for rainforest ringtail possums.
-* We aim to understand the spatial variation in the population structure of rainforest ringtail possums, as well as the proccess that govern this variability. In this project, we are constructing age-structure population model using 3 years of abundance (juveniles and adults) data across 32 sites in the Australian Wet Tropics. We established the study sites across the thermal (elevation) and geological (soil fertility) gradients to understand the interaction between the species [thermal intolerance](https://link.springer.com/article/10.1007/s00442-011-2146-2) and site fertility. We are expecting to find a strong interaction between these variables, with fertile soil not only enabling a larger population size, but also a higher tolerance to heatwaves.
+### 1. Climate change and rainforest birds population dynamics.
+#### (Ready for submission)
 
+Climate-driven biodiversity erosion is escalating at an alarming rate. The pressure imposed by climate change is exceptionally high in tropical ecosystems, where species adapted to narrow environmental ranges exhibit strong physiological constraints. Despite the observed detrimental effect of climate change on ecosystems at a global scale, our understanding of the extent to which multiple climatic drivers affect population dynamics is limited. Here, we disentangle the impact of different climate change components on 47 rainforest birds inhabiting the mountains of the Australian Wet Tropics using hierarchical population models. We estimate the effect of spatiotemporal changes in temperature, precipitation, heatwaves, droughts, and cyclones on the population dynamics of rainforest birds between 2000-2016. We find an escalating effect of warming and changes in rainfall patterns across the elevational-segregated bird communities, with lowland populations benefiting from increasing temperature and precipitation, while upland species show an inverse strong negative response to the same drivers. Additionally, we find a negative effect of heatwaves on lowland populations, a pattern associated with the observed distribution of these extreme events across elevations. In contrast, cyclones and droughts have a marginal effect on spatiotemporal changes in rainforest bird communities, suggesting a species-specific response unrelated to the elevational gradient. This study demonstrated the importance of unravelling the drivers of climate change impacts on population changes, providing significant insight into the mechanisms accelerating climate-induced biodiversity degradation.
 
-### Biophysical models for rainforest ringtail possums.
-* Brief summary:
-* Aim:
-* Expected results:
-### Climate change and rainforest birds population dynamics.
-* Brief summary:
-* Aim:
-* Expected results:
-### The resource-availability hypothesis in the Australian Wet Tropics.
-* Brief summary:
-* Aim:
-* Expected results:
-### Climate change and nutrient availability causes declines in survival and recruitment in rainforest ringtail possums.
-* Brief summary:
-* Aim:
-* Expected results:
-### Plastic-induced mortality in marine turtles.
+### 2. An age-structure population model for rainforest ringtail possums.
+We aim to understand the spatial variation in the population structure of rainforest ringtail possums and the process that governs this variability. In this project, we are constructing an age-structure population model using three years of abundance (juveniles and adults) data across 32 sites in the Australian Wet Tropics. We established the study sites across the thermal (elevation) and geological (soil fertility) gradients to understand the interaction between the species'  [thermal intolerance](https://link.springer.com/article/10.1007/s00442-011-2146-2) and site fertility. We expect to find a strong interaction between these variables, with fertile soil enabling a larger population size and a higher tolerance to heatwaves (allowing the species to persist at lower elevations in high-nutrient soils).
+
+<p align="center">
+  <img src="https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/images/soil_abundance.png">
+</p>
+
+### 3. The resource-availability hypothesis in the Australian Wet Tropics.
+We explore the spatial variation in foliage quality across different climatic, nutritional, and competitive gradients. Our primary interest is understanding the bottom-up effect that soil fertility and climate impose on plant growth and the derived quality of foliage for herbivores. First, we test the influence of foliage quality (nutritional value vs toxins) on apparent herbivory damage across our ecological and environmental gradients. We expect to find a strong correlation between soil fertility and foliage quality as per [the resource-availability hypothesis](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2435.2010.01803.x). We then tested the ecological implications of this heterogeneous chemical landscape on the herbivory community. We predict a positive association between foliage quality and herbivore abundance.
+
+### 4. Why are rainforest ringtail possums collapsing in the Australian Wet Tropics?
+Conservation actions focused on alleviating the impact of climate change on populations need to be targeted and locally implemented. To do so, we need a very detailed understanding of the causes of population declines. We embark in an ambitious project to understand the impact of climate change on rainforest ringtail possum populations at a very fine scale. This project is the culmination of a long-term monitoring effort. We combine 32 years of abundance data across 32 sites distributed across thermal (elevation), nutritional (foliage quality / toxins), and geological gradient (soil fertility) with state-of-the-art population and biophysical models. We aim to undertand how the species interact with the environment hourly, and how climate change is inducing a deficit in water/energy balance. We expect to find the physiological causes of the collapse in population, and its relationship with the species survival and recruitment.
+
+<p align="center">
+  <img src="https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/images/hl_hot.gif">
+</p>
+
+### 5. Plastic-induced mortality in marine turtles (led by Daniel Gonzalez-Paredes).
+
 * Brief summary:
 * Aim:
 * Expected results:
