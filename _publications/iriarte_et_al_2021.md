@@ -5,7 +5,7 @@ permalink: /publication/SAREM_NotasMamSud_12-2021_Iriarte
 excerpt: 'Distribution extension vizcacha'
 date: 2021-11-11
 venue: 'Notas  sobre  Mamíferos Sudamericanos'
-paperurl: 'https://www.scielo.cl/scielo.php?pid=S0717-92002017000300018&script=sci_arttext'
+paperurl: 'https://ojs.sarem.org.ar/index.php/nms/article/view/771/98'
 citation: 'Iriarte, A, Rau, A, & de la Fuente, A. (2021). &quot;New records of Lagidium cf. L. wolffsohni (Thomas, 1907) (Rodentia, Chinchillidae) in southern Chile.&quot; <i>Notas  sobre  Mamíferos Sudamericanos</i>. 3:e21.12.2.'
 ---
 # Abstract
