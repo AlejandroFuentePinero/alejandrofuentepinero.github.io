@@ -1,10 +1,10 @@
 ---
-title: "Teaching assistantship"
+title: "James Cook University"
 collection: teaching
 type: "Undergraduate and master course"
 permalink: /teaching/james_cook_university
-venue: "James Cook University"
-date: 2019-01-01
+venue: ""
+date: 
 location: "Townsville, Australia"
 ---
 
