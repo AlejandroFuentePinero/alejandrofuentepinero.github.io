@@ -2,7 +2,7 @@
 title: "Predicted alteration of vertebrate communities in response to climate-induced elevational shifts"
 collection: publications
 permalink: /publication/Diversity%20and%20Distributions%20-%202022%20-%20de%20la%20Fuente%20-%20Predicted%20alteration%20of%20vertebrate%20communities%20in%20response%20to
-excerpt: 'Community reshuffling Wet Tropics'
+excerpt: 'Climate-driven community re-shuffling in the mountains of the Australian Wet Tropics.'
 date: 2022-04-1
 venue: 'Diversity and Distributions'
 paperurl: 'https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13514'
