@@ -1,28 +1,37 @@
+---
+title: "Teaching experience - James Cook University"
+collection: teaching
+type: "Undergraduate and Master's course"
+permalink: /teaching/james_cook_university
+venue: "James Cook University"
+date: 2019-01-01
+location: "Townsville, Australia"
+---
+
 # James Cook University
 
-My teaching experience includes demostrating and tutoring ecological courses and advance statistics at James Cook University.
-
+My teaching experience includes demonstrating and tutoring ecological courses and advanced statistics.
 2022
 ======
 - Conservation Biology. 
   - Course: Master's degree. 
   - Role: Guess lecturer. 
-  - Title: "Targeted conservations actions under climate change".
+  - Title: "Targeted conservation actions under climate change".
 - Population and Community Ecology. 
   - Course: Undergraduate. 
   - Role: Tutor and field demonstrator.
 - Advanced statistics. 
   - Course: Master's degree. 
   - Role: demonstrator and tutor.
-- Fundamens of Ecology.
+- Fundamentals of Ecology.
   - Course: Undergraduate.
-  - Role: demonstrator and course developping.
+  - Role: demonstrator and course development.
 
 2021
 ======
-- Fundamens of Ecology.
+- Fundamentals of Ecology.
   - Course: Undergraduate.
-  - Role: demonstrator and course developping.
+  - Role: demonstrator and course development.
 - Population and Community Ecology. 
   - Course: Undergraduate. 
   - Role: Tutor and field demonstrator.
