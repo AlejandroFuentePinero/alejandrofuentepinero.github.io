@@ -5,7 +5,7 @@ permalink: /publication/delafuente_pacheco_2017_bosque
 excerpt: 'Synchronous flowering of Chusquea montane in Puyehue National Park'
 date: 2017-10-11
 venue: 'Bosque'
-paperurl: 'https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/delafuente_pacheco_2017.pdf'
+paperurl: 'https://www.scielo.cl/scielo.php?pid=S0717-92002017000300018&script=sci_arttext'
 citation: 'de la Fuente, A & Pacheco, N. (2017). &quot;Biomass, seed production and phenology of Chusquea montana after a massive and synchronous flowering event in Puyehue National Park, Chile.&quot; <i>Bosque</i>. 38(3): 599-604.'
 ---
 # Abstract
