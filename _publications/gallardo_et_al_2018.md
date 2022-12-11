@@ -1,7 +1,7 @@
 ---
 title: "Seasonal variation in the richness, relative frequency and diversity of birds in urban wetlands of Llanquihue, southern Chile"
 collection: publications
-permalink: /publication/Gallardo.et.al.2018
+permalink: /publication/gallardo_et_al_2018
 excerpt: 'Bird community seasonal variation in urban wetlands of South Chile.'
 date: 2018-06-14
 venue: 'Revista Chilena de Ornitologia'
