@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate and master course"
 permalink: /teaching/james_cook_university
 venue: ""
-date: 
+date: 2019-01-01
 location: "Townsville, Australia"
 ---
 
