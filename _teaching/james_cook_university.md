@@ -1,12 +1,4 @@
----
-title: "James Cook University"
-collection: teaching
-type: "Undergraduate and master course"
-permalink: /teaching/james_cook_university
-venue: ""
-date: 2019-01-01
-location: "Townsville, Australia"
----
+# James Cook University
 
 My teaching experience includes demostrating and tutoring ecological courses and advance statistics at James Cook University.
 
