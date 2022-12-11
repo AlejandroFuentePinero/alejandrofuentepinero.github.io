@@ -29,12 +29,26 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Animal trapping
+* Modelling
+  * Population dynamics
+  * Biophysical models
+  * Occupancy
+  * Species distribution
+  * Landscape ecology
+  *	Movement
+  *	Climatic data and other time-series
+  *	Spatial analysis
+* Stats
+  * Frequentist
+  * Bayesian
+* Coding
+  * R
+  * WinBUGS
+* Languages
+  * Spaninsh - First language
+  * English - IELTS 7.0
+  * French - Basic  
 
 Publications
 ======
@@ -58,12 +72,38 @@ Book chapters
 12.	Williams S.E., de la Fuente A., Garnett ST. (2021). Mountain Thornbill Acanthiza katherina. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 695-697. CSIRO Publishing, Melbourne.
 13.	Williams S.E., de la Fuente A., Freeman AND, Craig M, Garnett ST. (2021). Bower’s Shrike-thrush Colluricincla boweri. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 744-746. CSIRO Publishing, Melbourne.
 14.	Williams S.E., de la Fuente A., Freeman AND, Craig M, Garnett ST. (2021). Wet Tropics Australian King-Parrot Alisterus scapularis minor. In The Action Plan for Australian Birds 2020. (Eds ST Garnett and GB Baker) pp. 467-469. CSIRO Publishing, Melbourne.
+
+Editorial services
+======
+* PeerJ
   
 Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
+  
+Media engagement
+======
+  
+### 2022
+
+* Possums threatened by climate change
+  * Article. [JCU media](https://www.jcu.edu.au/news/releases/2022/november/possums-threatened-by-climate-change)
+  * Total media coverage - [70 national stories](https://app.mediaportal.com/#/custom-report/062b775f-86fc-4380-a866-2a2ed7c8b988)
+* Aussi birds dissapearing due to warming
+  * Article. [Narromine News](https://www.narrominenewsonline.com.au/story/7574394/aussie-birds-disappearing-due-to-warming/)
+* Global warming drives Wet Tropics possums species fromt their mountain homes.
+  * Article. [ABC news](https://www.abc.net.au/news/2022-01-03/climate-change-herbert-river-ringtail-possum-decline/100705912)
+  * Interview. [ABC news](https://www.abc.net.au/news/2022-01-02/climate-change-drives-possums-from-high-altitude/13693612)
+
+### 2019
+
+* It’s Easy to Hate Selfies. But Can They Also Be a Force for Good?
+  * Photo contribution. [New York Times](https://www.nytimes.com/2019/07/11/style/selfies-instagram.html) 
+* Woody bamboo flowering in Puyehue National Park.
+  * Article. El Austral, Chile.
+
   
 Teaching
 ======
