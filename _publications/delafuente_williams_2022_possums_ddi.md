@@ -5,7 +5,7 @@ permalink: /publication/Diversity and Distributions - 2022 - Fuente - Climate ch
 excerpt: 'Rainforest ringtail possum collapse Wet Tropics'
 date: 2022-11-06
 venue: 'Diversity and Distributions'
-paperurl: 'https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/Diversity%20and%20Distributions%20-%202022%20-%20Fuente%20-%20Climate%20change%20threatens%20the%20future%20of%20rain%20forest%20ringtail%20possums%20by%202050.pdf'
+paperurl: 'https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13652'
 citation: 'de la Fuente, A. & Williams, S. (2022). &quot;Climate change threatens the future of rain forest ringtail possums by 2050.&quot; <i>Diversity and Distributions</i>. 00, 1– 11.'
 ---
 # Abstract
