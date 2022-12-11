@@ -2,7 +2,7 @@
 title: "Climate change threatens the future of rain forest ringtail possums by 2050"
 collection: publications
 permalink: /publication/Diversity and Distributions - 2022 - Fuente - Climate change threatens the future of rain forest ringtail possums by 2050
-excerpt: 'Rainforest ringtail possum collapse Wet Tropics'
+excerpt: 'Rainforest ringtail possum are collapsing in the Australian Wet Tropics'
 date: 2022-11-06
 venue: 'Diversity and Distributions'
 paperurl: 'https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13652'
