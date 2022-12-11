@@ -3,11 +3,11 @@ main:
   - title: "Publications"
     url: /publications/
     
-  - title: "Threatened species nominations"
-    url: /markdown/
-
   - title: "Book chapters"
     url: /year-archive/
+    
+  - title: "Threatened species nominations"
+    url: /markdown/
     
   - title: "Talks"
     url: /talks/    
