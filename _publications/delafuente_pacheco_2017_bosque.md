@@ -2,7 +2,7 @@
 title: "Biomass, seed production and phenology of Chusquea montana after a massive and synchronous flowering event in Puyehue National Park, Chile"
 collection: publications
 permalink: /publication/delafuente_pacheco_2017_bosque
-excerpt: 'Synchronous flowering of Chusquea montane in Puyehue National Park'
+excerpt: 'First description of the synchronous flowering of Chusquea montane in Puyehue National Park'
 date: 2017-10-11
 venue: 'Bosque'
 paperurl: 'https://www.scielo.cl/scielo.php?pid=S0717-92002017000300018&script=sci_arttext'
