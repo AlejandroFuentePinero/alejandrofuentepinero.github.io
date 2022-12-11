@@ -1,7 +1,7 @@
 ---
 title: "Predicting species abundance by implementing the ecological niche theory"
 collection: publications
-permalink: /publication/delaFuente.et.al.2021
+permalink: /publication/delafuente_et_al_2021_ecography
 excerpt: 'Can habitat suitability derived from SDMs predict species abundance?'
 date: 2021-11-12
 venue: 'Ecography'
