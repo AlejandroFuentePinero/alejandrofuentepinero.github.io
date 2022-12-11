@@ -1,5 +1,5 @@
 ---
-title: "Grants"
+title: "Go to grants"
 excerpt: "Grants"
 collection: portfolio
 ---
