@@ -1,5 +1,5 @@
 ---
-permalink: /markdown/
+permalink: /threatened_species/
 title: "Threatened Species Nomination"
 author_profile: true
 redirect_from: 
