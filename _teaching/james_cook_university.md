@@ -8,8 +8,6 @@ date: 2019-01-01
 location: "Townsville, Australia"
 ---
 
-# James Cook University
-
 My teaching experience includes demonstrating and tutoring ecological courses and advanced statistics.
 2022
 ======
