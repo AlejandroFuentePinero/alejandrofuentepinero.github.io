@@ -171,3 +171,9 @@ Professional development and community-based conservation
   * Country: Chile.
   * Year 2016 - 2017.
 
+Grants and Awards
+======
+  <ul>{% for post in site.porfolio %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
