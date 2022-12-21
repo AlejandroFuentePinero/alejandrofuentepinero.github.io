@@ -1,6 +1,6 @@
 ---
-title: "Go to grants"
-excerpt: "Grants"
+title: "Grants"
+excerpt: ""
 collection: portfolio
 ---
 
