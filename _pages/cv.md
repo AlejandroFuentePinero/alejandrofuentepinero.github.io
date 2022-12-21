@@ -63,6 +63,7 @@ Volunteering and other field experiences
   * Year: 2014-2015.
 * Animal care and wildlife rehabilitation and release.
   * Organisation: [Zoo de Santillana Foundation](http://www.fundacionzoodesantillana.org/).
+  * Country: Spain.
   * Year 2013.
   
 Skills
