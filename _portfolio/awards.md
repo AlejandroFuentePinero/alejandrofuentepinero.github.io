@@ -1,6 +1,6 @@
 ---
-title: "Go to awards"
-excerpt: "Awards"
+title: "Awards"
+excerpt: ""
 collection: portfolio
 ---
 
