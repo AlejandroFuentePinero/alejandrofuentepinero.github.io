@@ -173,9 +173,6 @@ Professional development and community-based conservation
 
 Grants and Awards
 ======
-  <ul>{% for post in site.porfolio %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
 
 {% for post in site.portfolio %}
   {% include archive-single.html %}
