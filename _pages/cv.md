@@ -115,6 +115,7 @@ Book chapters
 Editorial services
 ======
 * PeerJ
+* Biodiversity and Conservation
   
 Talks
 ======
