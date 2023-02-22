@@ -6,7 +6,7 @@ excerpt: 'Rainforest birds in the Australian Wet Tropics are following the escal
 date: 2021-12-22
 venue: 'Plos One'
 paperurl: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254307'
-citation: 'Williams, S. & de la Fuente, A. (2017). &quot;Long-term changes in populations of rainforest birds in the Australia Wet Tropics bioregion: A climate-driven biodiversity emergency.&quot; <i>Plos One</i>. 16(12):e0254307.'
+citation: 'Williams, S. & de la Fuente, A. (2021). &quot;Long-term changes in populations of rainforest birds in the Australia Wet Tropics bioregion: A climate-driven biodiversity emergency.&quot; <i>Plos One</i>. 16(12):e0254307.'
 ---
 # Abstract
 
