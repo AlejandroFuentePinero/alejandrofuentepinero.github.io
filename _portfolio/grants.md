@@ -33,30 +33,30 @@ collection: portfolio
 ### 2014
 
 - Scholarship (Master's degree)
-  - Organisation: University of Salamance.
+  - Organisation: University of Salamanca.
   - Project: "Implementation of GIS and species distribution models on studies of niche marginality of threatened plants".
   - Amount: €10,000.
 
 ### 2013
 
 - Scholarship (Undergraduate)
-  - Organisation: University of Salamance.
+  - Organisation: University of Salamanca.
   - Amount: €6,000.
 
 ### 2012
 
 - Scholarship (Undergraduate)
-  - Organisation: University of Salamance.
+  - Organisation: University of Salamanca.
   - Amount: €6,000.
 
 ### 2011
 
 - Scholarship (Undergraduate)
-  - Organisation: University of Salamance.
+  - Organisation: University of Salamanca.
   - Amount: €6,000.
 
 ### 2010
 
 - Scholarship (Undergraduate)
-  - Organisation: University of Salamance.
+  - Organisation: University of Salamanca.
   - Amount: €6,000.
