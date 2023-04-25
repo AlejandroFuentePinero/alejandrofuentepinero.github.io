@@ -6,7 +6,7 @@ collection: portfolio
 
 ### 2022
 
-- Best post-graduate presentation at the Conference Talk Skill Workship
+- Best post-graduate presentation at the Conference Talk Skill Workshop
   - ESA-SCBO conference, Wollongong.
   - Talk title: "Predicted alteration of vertebrate communities in response to climate-induced elevational shifts".
  
