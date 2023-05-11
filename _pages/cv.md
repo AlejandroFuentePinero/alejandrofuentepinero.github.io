@@ -117,6 +117,7 @@ Editorial services
 * PeerJ
 * Biodiversity and Conservation
 * One Earth
+* Ecology and Evolution
   
 Talks
 ======
