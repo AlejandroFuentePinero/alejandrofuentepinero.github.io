@@ -119,6 +119,7 @@ Editorial services
 * One Earth
 * Ecology and Evolution
 * Emu - Austral Ornithology
+* Diversity and Distributions
   
 Talks
 ======
