@@ -15,7 +15,7 @@ My teaching experience includes tutoring and lecturing on ecological courses and
 - Fundamentals of Ecology.
   - Course: Undergraduate.
   - Role: demonstrator.
-
+ 
 2022
 ======
 - Conservation Biology. 
