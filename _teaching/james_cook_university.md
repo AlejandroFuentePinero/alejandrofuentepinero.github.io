@@ -10,6 +10,12 @@ location: "Townsville, Australia"
 
 My teaching experience includes tutoring and lecturing on ecological courses and advanced statistics.
 
+2023
+======
+- Fundamentals of Ecology.
+  - Course: Undergraduate.
+  - Role: demonstrator.
+  - 
 2022
 ======
 - Conservation Biology. 
