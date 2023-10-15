@@ -4,6 +4,12 @@ excerpt: ""
 collection: portfolio
 ---
 
+### 2023
+
+- Best talk prize for best presentation
+  - Zoology and Ecology North Queensland, Mission Beach.
+  - Talk title: "Songs of disappearance: Rainforest Montane Birds and Climate Change".
+
 ### 2022
 
 - Best post-graduate presentation at the Conference Talk Skill Workshop
@@ -11,7 +17,7 @@ collection: portfolio
   - Talk title: "Predicted alteration of vertebrate communities in response to climate-induced elevational shifts".
  
 
-- People's choice award to the best presentation.
+- People's Choice award for the best presentation.
   - Zoology and Ecology North Queensland, Mission Beach.
   - Talk title: "Climate change threatens the future of rainforest ringtail possums".
 
