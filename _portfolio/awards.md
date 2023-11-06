@@ -9,6 +9,9 @@ collection: portfolio
 - Best talk prize for best presentation
   - Zoology and Ecology North Queensland, Mission Beach.
   - Talk title: "Songs of disappearance: Rainforest Montane Birds and Climate Change".
+- Second best presentation
+  - TESS conference, Palm Cove
+  - Talk title: "Possums in Peril: The Urgent Need to Address Climate Change Impacts on Tropical Montane Species"
 
 ### 2022
 
