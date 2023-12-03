@@ -142,6 +142,8 @@ Media engagement
   * Photo contribution. [New York Times](https://www.nytimes.com/2019/07/11/style/selfies-instagram.html) 
 * Woody bamboo flowering in Puyehue National Park.
   * Article. El Austral, Chile.
+* Tropical rainforest research
+  * Article [Skyrail Foundation](https://www.skyrail.com.au/blog/tropical-rainforest-research-in-education/)
 
   
 Teaching
