@@ -161,10 +161,10 @@ Professional development and community-based conservation
 * Training of local rangers in biodiversity monitoring. 
   * Organisation: Queensland National Parks and Wildlife Services. 
   * Country: Australia.
-  * Year: 2020 - Present
+  * Year: 2020 - 2022.
 * International Ecology School. 
   * Country: Thailand. 
-  * Year: 2022
+  * Year: 2022.
 * Indigenous rangers training in biodiversity monitoring, data collection, curation, and interpretation. 
   * Organisation: Abriculture: indigenous environmental organisation.
   * Country: Australia. 
