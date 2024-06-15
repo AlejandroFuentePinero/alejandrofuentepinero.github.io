@@ -154,6 +154,10 @@ Teaching
   
 Professional development and community-based conservation
 ======
+* Expert workshop participation: Improving the resilience of the Wet Tropics bioregion. 
+  * Organisation: Wet Tropics Management Authority. 
+  * Country: Australia.
+  * Year: 2024.
 * Training of local rangers in biodiversity monitoring. 
   * Organisation: Queensland National Parks and Wildlife Services. 
   * Country: Australia.
