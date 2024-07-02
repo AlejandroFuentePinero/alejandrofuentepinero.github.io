@@ -155,6 +155,10 @@ Teaching
   
 Professional development and community-based conservation
 ======
+* Biodiversity consulting.
+  * Organisation: Wet Tropics Management Authority. 
+  * Country: Australia.
+  * Year: 2024.
 * Expert workshop participation: Improving the resilience of the Wet Tropics bioregion. 
   * Organisation: Wet Tropics Management Authority. 
   * Country: Australia.
