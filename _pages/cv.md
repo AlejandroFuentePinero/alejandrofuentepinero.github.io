@@ -114,6 +114,7 @@ Book chapters
 
 Editorial services
 ======
+* Functional Ecology
 * PeerJ
 * Biodiversity and Conservation
 * One Earth
