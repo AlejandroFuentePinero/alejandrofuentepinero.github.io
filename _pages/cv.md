@@ -121,6 +121,7 @@ Editorial services
 * Ecology and Evolution
 * Emu - Austral Ornithology
 * Diversity and Distributions
+* Ecography
   
 Talks
 ======
