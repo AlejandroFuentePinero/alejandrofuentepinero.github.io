@@ -156,10 +156,6 @@ Teaching
   
 Professional development and community-based conservation
 ======
-* Postdoctoral fellow.
-  * Organisation: James Cook University. 
-  * Country: Australia.
-  * Year: 2024 - Present.
 * Biodiversity consulting.
   * Organisation: Wet Tropics Management Authority. 
   * Country: Australia.
