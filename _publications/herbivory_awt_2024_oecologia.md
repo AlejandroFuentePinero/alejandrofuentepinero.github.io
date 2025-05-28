@@ -5,7 +5,7 @@ permalink: /publication/delafuente_etal_2024_oecologia
 excerpt: 'Relationships between abiotic factors, foliage chemistry and herbivory in a tropical montane ecosystem.'
 date: 2024-10-25
 venue: 'Oecologia'
-paperurl: '[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254307](https://link.springer.com/article/10.1007/s00442-024-05630-y)'
+paperurl: 'https://link.springer.com/article/10.1007/s00442-024-05630-y'
 citation: 'de la Fuente, A., Youngentob, K.N., Marsh, K.J., Krockenberger, A.K., Williams, S.E. & Cernusak, L.A. (2024). &quot;Relationships between abiotic factors, foliage chemistry and herbivory in a tropical montane ecosystem.&quot; <i>Oecologia</i>.'
 ---
 # Abstract
