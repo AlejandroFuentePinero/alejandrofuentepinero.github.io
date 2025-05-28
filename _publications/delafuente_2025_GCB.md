@@ -5,7 +5,7 @@ permalink: /publication/delafuente_2025_gcb
 excerpt: 'Climate-Induced Physiological Stress Drives Rainforest Mammal Population Declines.'
 date: 2025-05-05
 venue: 'Global Change Biology'
-paperurl: '[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254307](https://doi.org/10.1111/gcb.70215)'
+paperurl: 'https://doi.org/10.1111/gcb.70215'
 citation: 'de la Fuente, A., Briscoe, N.J., Kearney, M.R., Williams, S.E., Youngentob, K.N., Marsh, K.J., Cernusak, L.A., Leahy, L., Larson, J. and Krockenberger, A.K. (2025), Climate-Induced Physiological Stress Drives Rainforest Mammal Population Declines. Glob Change Biol, 31: e70215. https://doi.org/10.1111/gcb.70215'
 ---
 # Abstract
