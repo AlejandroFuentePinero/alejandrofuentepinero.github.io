@@ -11,7 +11,7 @@ sidebar:
 
 Below are selected case studies (academic + applied) with a data-science focus.
 
-<div class="ds-card-grid">
+<div class="mm-card-grid">
 {% include base_path %}
 {% for post in site.projects reversed %}
   {% include archive-single.html %}
