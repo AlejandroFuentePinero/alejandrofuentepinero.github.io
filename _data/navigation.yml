@@ -1,11 +1,6 @@
-# main links
-main:
-  - title: "Academic"
-    url: /academic/
-  - title: "Data Science"
-    url: /datascience/
-
 academic:
+  - title: "<strong>Academic</strong>"
+    url: ""  # blank so it’s not clickable
   - title: "Publications"
     url: /academic/publications/
   - title: "Book chapters"
@@ -22,6 +17,8 @@ academic:
     url: /academic/cv/
 
 datascience:
+  - title: "<strong>Data Science</strong>"
+    url: ""
   - title: "Projects"
     url: /datascience/projects/
   - title: "Skills"
@@ -30,4 +27,3 @@ datascience:
     url: /datascience/education/
   - title: "Communication"
     url: /datascience/communication/
-
