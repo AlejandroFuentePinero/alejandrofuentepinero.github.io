@@ -1,5 +1,5 @@
 ---
-title: "James Cook University"
+title: "Teaching: James Cook University"
 collection: teaching
 type: "Undergraduate and Master's courses"
 permalink: /teaching/james_cook_university
