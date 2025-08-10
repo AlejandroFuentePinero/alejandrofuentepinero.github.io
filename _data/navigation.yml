@@ -1,6 +1,14 @@
+# Top header links
+main:
+  - title: "Academic"
+    url: /academic/
+  - title: "Data Science"
+    url: /datascience/
+
+# Sidebar: Academic
 academic:
   - title: "<span class='nav__sub-title'>Academic</span>"
-    url:   # blank so it’s not clickable
+    url:
   - title: "Publications"
     url: /academic/publications/
   - title: "Book chapters"
@@ -16,9 +24,10 @@ academic:
   - title: "CV"
     url: /academic/cv/
 
+# Sidebar: Data Science
 datascience:
   - title: "<span class='nav__sub-title'>Data Science</span>"
-    url: 
+    url:
   - title: "Projects"
     url: /datascience/projects/
   - title: "Skills"
