@@ -1,5 +1,5 @@
-/* --- DS project card grid (no teaser images needed) --- */
-.ds-card-grid .archive__item {
+/* --- Generic card grid style (for DS projects, Publications, Talks, etc.) --- */
+.mm-card-grid .grid__item .archive__item {
   border: 1px solid #e8e8e8;
   border-radius: 12px;
   background: #fff;
@@ -8,44 +8,53 @@
   height: 100%;
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
   position: relative; /* for stretched-link */
-  margin-bottom: 1.25rem;
 }
 
-.ds-card-grid .archive__item:hover {
+.mm-card-grid .grid__item {
+  display: flex;
+}
+
+.mm-card-grid .grid__item > * {
+  flex: 1 1 auto;
+}
+
+.mm-card-grid .archive__item-title {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.mm-card-grid .archive__item-excerpt p {
+  margin-bottom: 0.25rem;
+}
+
+.mm-card-grid .archive__item:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0,0,0,.08);
   border-color: #ddd;
 }
 
-.ds-card-grid .archive__item-title { margin: 0.25rem 0 0.5rem; }
-.ds-card-grid .archive__item-excerpt p { margin-bottom: 0.25rem; }
-
-/* Make the entire card clickable via a stretched link */
-.ds-card-grid .archive__item-title a {
+/* Make the entire card clickable */
+.mm-card-grid .archive__item-title a {
   position: relative;
   z-index: 1;
   text-decoration: none;
 }
-.ds-card-grid .archive__item::after {
+.mm-card-grid .archive__item::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: 0;
 }
 
-/* --- Sidebar section titles --- */
-.nav__sub-title {
-  font-weight: bold;
-  margin-top: 0.75em;
-  margin-bottom: 0.25em;
-  font-size: 1.25em; /* larger than links */
-  text-transform: uppercase;
-  color: #333; /* darker for emphasis */
-  padding-left: 0.25rem;
-  border-bottom: 2px solid #e2e2e2; /* optional underline for separation */
+/* --- Sidebar font size adjustments --- */
+.sidebar nav ul {
+  font-size: 0.9rem; /* smaller link text */
+  line-height: 1.4;
 }
 
-/* Optional: make links a little smaller to accentuate the difference */
-.sidebar .nav__items li a {
-  font-size: 0.95em;
+.sidebar nav ul li strong {
+  display: block;
+  font-size: 1.05rem; /* larger than links */
+  font-weight: 600;
+  margin-bottom: 0.25rem;
 }
