@@ -5,13 +5,13 @@ type: "Mentoring"
 permalink: /teaching/mentoring/
 venue: "James Cook University"
 location: "Cairns, Australia"
-classes: no-date
+date: '2025-01-01'
 ---
 
-# 2025
 
-**Olivia Bond**
+#**Olivia Bond**
 
+2025
 *Johns Hopkins University*
 
 *School for International Training*  
