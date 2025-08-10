@@ -8,7 +8,7 @@ toc: false
 
 feature_row:
   - title: "Projects"
-    excerpt: "Case studies in ML, Bayesian modelling, forecasting, remote sensing, and tools."
+    excerpt: "Case studies in ML, Bayesian modelling, forecasting, remote sensing, hierarchical modelling, and other tools."
     url: "/datascience/projects/"
     btn_label: "Explore projects"
     btn_class: "btn--primary"
