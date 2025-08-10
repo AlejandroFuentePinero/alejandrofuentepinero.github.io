@@ -20,12 +20,12 @@ classes: wide
 
 ### Additional Training & Courses
 
-- **Statistical Rethinking**: A Bayesian Course with Examples in R and Stan  
-- **Applied Hierarchical Modeling in Ecology**  
-- **Integrated Population Models**  
-- **R for Data Science**  
-- **Bayesian Methods for Ecology**  
-- **Bayesian Data Analysis 3**  
-- **The Complete Python Bootcamp: From Zero to Hero in Python**  
-- **Python for Data Science and Machine Learning Bootcamp**  
-- **The Complete SQL Bootcamp: Go from Zero to Hero**
+- Statistical Rethinking: A Bayesian Course with Examples in R and Stan  
+- Applied Hierarchical Modeling in Ecology  
+- Integrated Population Models  
+- R for Data Science  
+- Bayesian Methods for Ecology  
+- Bayesian Data Analysis 3  
+- The Complete Python Bootcamp: From Zero to Hero in Python  
+- Python for Data Science and Machine Learning Bootcamp  
+- The Complete SQL Bootcamp: Go from Zero to Hero
