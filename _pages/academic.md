@@ -2,12 +2,11 @@
 title: "Academic"
 permalink: /academic/
 layout: single
-classes: wide      # full-width for a roomy grid
+classes: wide
 toc: false
-# no sidebar here to avoid redundancy on the landing
-# (subpages will still show the Academic sidebar)
+author_profile: false
+# no sidebar on landing
 
-# Card data (you can add/rename items freely)
 feature_row:
   - title: "Publications"
     excerpt: "Peer-reviewed papers across ecology, conservation, and climate science."
@@ -48,4 +47,4 @@ feature_row:
 
 Welcome to my Academic Portfolio. This section showcases my publications, talks, teaching, grants & awards, and threatened-species work.
 
-{% include feature_row id="feature_row" %}
+{% include feature_row %}
