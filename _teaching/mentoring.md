@@ -10,7 +10,9 @@ date: 2025
 
 ## 2025
 
-**Olivia Bond**  
+**Olivia Bond**
+*Johns Hopkins University*
+
 *School for International Training*  
 **Project:** *Microclimate drivers of thermoregulatory behaviors in spectacled flying-foxes (Pteropus conspicillatus)*
 
