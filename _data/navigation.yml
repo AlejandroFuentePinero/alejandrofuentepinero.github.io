@@ -5,6 +5,22 @@ main:
   - title: "Data Science"
     url: /datascience/
 
+academic:
+  - title: "Publications"
+    url: /academic/publications/
+  - title: "Book chapters"
+    url: /academic/book_chapter/
+  - title: "Threatened species"
+    url: /academic/threatened_species/
+  - title: "Talks"
+    url: /academic/talks/
+  - title: "Teaching"
+    url: /academic/teaching/
+  - title: "Grants and Awards"
+    url: /academic/grants_awards/
+  - title: "CV"
+    url: /academic/cv/
+
 datascience:
   - title: "Projects"
     url: /datascience/projects/
@@ -15,18 +31,3 @@ datascience:
   - title: "Communication"
     url: /datascience/communication/
 
-academic:
-  - title: "Publications"
-    url: /publications/
-  - title: "Book chapters"
-    url: /book_chapter/
-  - title: "Threatened species"
-    url: /threatened_species/
-  - title: "Talks"
-    url: /talks/
-  - title: "Teaching"
-    url: /teaching/
-  - title: "Grants and Awards"
-    url: /grants_awards/
-  - title: "CV"
-    url: /cv/
