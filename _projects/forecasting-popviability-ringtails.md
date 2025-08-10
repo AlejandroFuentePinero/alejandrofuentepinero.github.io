@@ -33,8 +33,7 @@ Understanding population sustainability is critical to conservation prioritisati
 
 ## Links & Resources
 - 📄 **Paper:** [Diversity & Distributions article](https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13652)  
-- 💾 **Data repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.m63xsj44h)  
-- 💻 **Code repository:** [GitHub – Ringtail_possums_collapse](https://github.com/AlejandroFuentePinero/Ringtail_possums_collapse)
+- 💾 **Repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.m63xsj44h) 
 
 ## Role
 - Conceptualised and developed the hierarchical Bayesian framework.  
