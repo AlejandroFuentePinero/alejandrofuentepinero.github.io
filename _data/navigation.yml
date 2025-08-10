@@ -1,23 +1,33 @@
-# main links links
+# main links
 main:
-  - title: "Publications"
-    url: /publications/
-    
-  - title: "Book chapters"
-    url: /book_chapter/
-    
-  - title: "Threatened species"
-    url: /threatened_species/
-    
-  - title: "Talks"
-    url: /talks/    
+  - title: "Academic"
+    url: /academic/
+  - title: "Data Science"
+    url: /datascience/
 
+academic:
+  - title: "Publications"
+    url: /academic/publications/
+  - title: "Book chapters"
+    url: /academic/book_chapter/
+  - title: "Threatened species"
+    url: /academic/threatened_species/
+  - title: "Talks"
+    url: /academic/talks/
   - title: "Teaching"
-    url: /teaching/    
-    
+    url: /academic/teaching/
   - title: "Grants and Awards"
-    url: /grants_awards/
-       
+    url: /academic/grants_awards/
   - title: "CV"
-    url: /cv/
-    
+    url: /academic/cv/
+
+datascience:
+  - title: "Projects"
+    url: /datascience/projects/
+  - title: "Skills"
+    url: /datascience/skills/
+  - title: "Education"
+    url: /datascience/education/
+  - title: "Communication"
+    url: /datascience/communication/
+

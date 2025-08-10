@@ -1,10 +1,13 @@
 ---
 layout: archive
 title: "CV - Alejandro de la Fuente"
-permalink: /cv/
+permalink: /academic/cv/
 author_profile: true
 redirect_from:
+  - /cv/
   - /resume
+sidebar:
+  nav: "academic"
 ---
 
 {% include base_path %}
