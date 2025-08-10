@@ -16,16 +16,16 @@ datascience:
     url: /datascience/communication/
 
 academic:
-    - title: "Publications"
+  - title: "Publications"
     url: /publications/
   - title: "Book chapters"
     url: /book_chapter/
   - title: "Threatened species"
     url: /threatened_species/
   - title: "Talks"
-    url: /talks/   
+    url: /talks/
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching/
   - title: "Grants and Awards"
     url: /grants_awards/
   - title: "CV"
