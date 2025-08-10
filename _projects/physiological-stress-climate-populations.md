@@ -36,7 +36,7 @@ Understanding these links requires integrating multiple models and data sources 
 
 ## Links & Resources
 - 📄 **Paper:** [Global Change Biology article](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.70215)  
-- 💾 **Data & code repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.fxpnvx13n)
+- 💾 **Repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.fxpnvx13n)
 
 ## Role
 - Designed and implemented the entire multi-component modelling workflow.
