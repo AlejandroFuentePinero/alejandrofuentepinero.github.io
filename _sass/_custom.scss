@@ -1,5 +1,5 @@
-/* --- Generic card grid style (for DS projects, Publications, Talks, etc.) --- */
-.mm-card-grid .grid__item .archive__item {
+/* ========== Reusable card grid (Projects, Publications, Talks, etc.) ========== */
+.mm-card-grid .archive__item {
   border: 1px solid #e8e8e8;
   border-radius: 12px;
   background: #fff;
@@ -7,24 +7,8 @@
   box-shadow: 0 2px 8px rgba(0,0,0,.04);
   height: 100%;
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
-  position: relative; /* for stretched-link */
-}
-
-.mm-card-grid .grid__item {
-  display: flex;
-}
-
-.mm-card-grid .grid__item > * {
-  flex: 1 1 auto;
-}
-
-.mm-card-grid .archive__item-title {
-  margin-top: 0.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.mm-card-grid .archive__item-excerpt p {
-  margin-bottom: 0.25rem;
+  position: relative;
+  margin-bottom: 1.25rem;
 }
 
 .mm-card-grid .archive__item:hover {
@@ -33,7 +17,10 @@
   border-color: #ddd;
 }
 
-/* Make the entire card clickable */
+.mm-card-grid .archive__item-title { margin: 0.25rem 0 0.5rem; }
+.mm-card-grid .archive__item-excerpt p { margin-bottom: 0.25rem; }
+
+/* Whole-card click behaviour without blocking links */
 .mm-card-grid .archive__item-title a {
   position: relative;
   z-index: 1;
@@ -43,18 +30,25 @@
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 0;
+  z-index: 0; /* behind links */
 }
 
-/* --- Sidebar font size adjustments --- */
-.sidebar nav ul {
-  font-size: 0.9rem; /* smaller link text */
-  line-height: 1.4;
-}
-
-.sidebar nav ul li strong {
+/* ========== Sidebar sizing ========== */
+/* Make section titles clearly larger */
+.nav__sub-title {
   display: block;
-  font-size: 1.05rem; /* larger than links */
-  font-weight: 600;
-  margin-bottom: 0.25rem;
+  font-weight: 700;
+  font-size: 1.30rem;     /* substantially bigger than links */
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #333;
+  margin: 0.75rem 0 0.35rem;
+  padding-left: 0.15rem;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+/* Make the regular sidebar links slightly larger (but smaller than the title) */
+.sidebar .nav__items a {
+  font-size: 1.00rem;     /* bump up from too-small */
+  line-height: 1.45;
 }
