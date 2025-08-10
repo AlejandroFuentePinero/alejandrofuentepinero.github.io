@@ -1,5 +1,5 @@
 academic:
-  - title: "<strong>Academic</strong>"
+  - title: "<span class='nav__sub-title'>Academic</span>"
     url: ""  # blank so it’s not clickable
   - title: "Publications"
     url: /academic/publications/
@@ -17,7 +17,7 @@ academic:
     url: /academic/cv/
 
 datascience:
-  - title: "<strong>Data Science</strong>"
+  - title: "<span class='nav__sub-title'>Data Science</span>"
     url: ""
   - title: "Projects"
     url: /datascience/projects/
