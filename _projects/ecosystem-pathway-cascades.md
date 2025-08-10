@@ -12,8 +12,8 @@ Ecosystems operate through complex direct and indirect interactions—understand
 ## Approach
 - Compiled experiments and observations quantifying herbivory rates, litter decomposition, nutrient fluxes, and other ecosystem variables in montane rainforests.
 - Built **Bayesian hierarchical models** that capture:
-  - Direct effects (e.g., herbivory → litter input)
-  - Indirect pathways (e.g., mediated through soil nutrient flux or microbial processes)
+  - Direct effects (e.g., plant defences → herbivory)
+  - Indirect pathways (e.g., mediated through soil nutrient flux or climatic processes)
   - Random effects across sites and time (hierarchical nesting).
 - Quantified cascading impacts via posterior analysis of structured pathway coefficients.
   
