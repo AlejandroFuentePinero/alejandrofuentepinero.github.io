@@ -33,22 +33,19 @@
   z-index: 0; /* behind links */
 }
 
-/* ========== Sidebar sizing ========== */
-/* Make section titles clearly larger */
+/* Sidebar section titles */
 .nav__sub-title {
-  display: block;
+  font-size: 1.4rem; /* substantially bigger than links */
   font-weight: 700;
-  font-size: 1.30rem;     /* substantially bigger than links */
-  line-height: 1.2;
   text-transform: uppercase;
-  color: #333;
-  margin: 0.75rem 0 0.35rem;
-  padding-left: 0.15rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   border-bottom: 2px solid #e2e2e2;
+  padding-bottom: 0.2rem;
 }
 
-/* Make the regular sidebar links slightly larger (but smaller than the title) */
+/* Sidebar link size */
 .sidebar .nav__items a {
-  font-size: 1.00rem;     /* bump up from too-small */
-  line-height: 1.45;
+  font-size: 1rem; /* keep this as is since you liked it */
 }
+
