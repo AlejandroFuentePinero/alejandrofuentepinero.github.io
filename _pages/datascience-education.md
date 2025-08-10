@@ -8,13 +8,23 @@ classes: wide
 ### Formal Education
 
 - **Ph.D. in Zoology and Ecology**, James Cook University — *Cum laude* (2024)  
-  Research focus: climate change impacts on tropical wildlife using ecological modelling and physiological approaches.
+  Designed and implemented advanced analytical workflows to assess climate change impacts on tropical wildlife.  
+  - Developed **novel modelling techniques** combining **Bayesian inference**, **machine learning**, **physiological**, **climatic**, and **spatial modelling** (GIS, remote sensing).  
+  - Managed large, multi-source ecological and climate datasets, including **data cleaning**, **relational database design**, and **automated pipelines** for data integration.  
+  - Applied **predictive modelling** to identify high-risk events and vulnerable habitats, integrating physiological and biogeochemical data (e.g., soil and foliage chemistry).  
+  - Extensive experience in **R** (statistical programming) and reproducible research practices.  
 
 - **M.S. in Biology and Conservation of Biodiversity**, Universidad de Salamanca (2016)  
-  Focus: biodiversity monitoring, conservation strategies, and applied ecology.
+  Advanced training in quantitative ecology and conservation planning.  
+  - Coursework in **GIS**, **advanced statistics**, **statistical programming** (R), and **applied statistical modelling**.  
+  - Applied coding and spatial analysis to biodiversity monitoring and conservation decision-making.  
+  - Experience in designing and executing analytical workflows for ecological datasets.  
 
 - **B.S. in Biology**, Universidad de Salamanca (2014)  
-  Broad foundation in organismal biology, ecology, and environmental sciences.
+  Broad foundation in organismal biology, ecology, and environmental sciences, supported by strong quantitative training.  
+  - Coursework in **mathematics**, **algebra**, **biostatistics**, and **physics**.  
+  - Completed a research project on **ecological modelling**, integrating environmental and species distribution data.  
+  - Gained initial experience with statistical programming and data analysis workflows.  
 
 ---
 
