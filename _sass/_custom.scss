@@ -38,8 +38,14 @@
   font-weight: bold;
   margin-top: 0.75em;
   margin-bottom: 0.25em;
-  font-size: 1.05em;
+  font-size: 1.25em; /* larger than links */
   text-transform: uppercase;
-  color: #555;
+  color: #333; /* darker for emphasis */
   padding-left: 0.25rem;
+  border-bottom: 2px solid #e2e2e2; /* optional underline for separation */
+}
+
+/* Optional: make links a little smaller to accentuate the difference */
+.sidebar .nav__items li a {
+  font-size: 0.95em;
 }
