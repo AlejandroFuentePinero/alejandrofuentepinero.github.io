@@ -2,16 +2,17 @@
 title: "Academic"
 permalink: /academic/
 layout: single
-toc: false
+sidebar:
+  nav: "academic"
 ---
 
-Welcome to my academic portfolio.  
+Welcome to my Academic Portfolio.
 
 Here you’ll find:
-- [Publications](/publications/)
-- [Book Chapters](/book-chapters/)
-- [Threatened Species](/threatened-species/)
-- [Grants & Awards](/grants-and-awards/)
-- [Talks](/talks/)
-- [Teaching](/teaching/)
-- [Academic CV](/cv/academic/)
+- [Publications](/academic/publications/)
+- [Book Chapters](/academic/book_chapter/)
+- [Threatened Species](/academic/threatened_species/)
+- [Grants & Awards](/academic/grants_awards/)
+- [Talks](/academic/talks/)
+- [Teaching](/academic/teaching/)
+- [Academic CV](/academic/cv/)
