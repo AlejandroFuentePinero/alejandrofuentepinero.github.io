@@ -4,7 +4,6 @@ collection: teaching
 type: "Undergraduate and Master's courses"
 permalink: /teaching/james_cook_university
 venue: "James Cook University"
-date: 2019-01-01
 location: "Townsville, Australia"
 ---
 
