@@ -32,7 +32,7 @@ Climate change is forcing species to redistribute uphill in montane ecosystems, 
 ## Links & Resources
 - 📄 **Paper:** [Diversity & Distributions article](https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13514)  
 - 💾 **Data repository:** [Dryad dataset (community reshuffling)](https://datadryad.org/dataset/doi:10.5061/dryad.ksn02v759)
-- 💻 **Code repository:** [GitHub – herbivory_rate_awt](https://github.com/AlejandroFuentePinero/community_reshuffling)
+- 💻 **Code repository:** [GitHub – Community re-shuffling](https://github.com/AlejandroFuentePinero/community_reshuffling)
 
 ## Role
 - Designed and implemented the spatial forecasting workflow for multi-species community simulations.  
