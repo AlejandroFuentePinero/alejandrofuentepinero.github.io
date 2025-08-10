@@ -2,16 +2,55 @@
 title: "Communication"
 permalink: /datascience/communication/
 layout: single
+classes: wide
 ---
 
-Highlight talks, workshops, and teaching with an applied data-science angle.
+This page shows how I share and apply data-science outputs — from formal reporting to talks and open resources.
 
-### Talks & Workshops (selected)
-- **Title** — Event/Org (Year): one-line summary of audience & impact.
-- **Title** — Event/Org (Year): tools/stack covered (e.g., Python, R, ML).
+---
 
-### Teaching & Training (selected)
-- Short courses, guest lectures, internal trainings relevant to DS.
+### Reporting & Written Outputs
+For examples of written communication that translate analysis into action, see  
+[**Publications & Reports**](/academic/publications/).
 
-### Resources
-- Slide decks, repos, notebooks, or public write-ups (if available).
+---
+
+### Oral Communication
+For selected technical talks, workshops, and briefings, see  
+[**Talks & Presentations**](/academic/talks/).
+
+---
+
+### Resources & Tools
+
+<div class="mm-card-grid">
+
+  <div class="archive__item">
+    <h3 class="archive__item-title">
+      <a href="https://alejandrodelafuente.shinyapps.io/BirdsPopTrendAWT/" target="_blank" rel="noopener">Interactive Shiny App</a>
+    </h3>
+    <p class="archive__item-excerpt">Population trend explorer and forecasting tool for tropical birds.</p>
+  </div>
+
+  <div class="archive__item">
+    <h3 class="archive__item-title">
+      <a href="https://github.com/AlejandroFuentePinero" target="_blank" rel="noopener">GitHub Repositories</a>
+    </h3>
+    <p class="archive__item-excerpt">Codebases for modelling, data workflows, and reproducible analysis.</p>
+  </div>
+
+  <div class="archive__item">
+    <h3 class="archive__item-title">
+      <a href="https://orcid.org/my-orcid?orcid=0000-0001-9686-3844" target="_blank" rel="noopener">ORCID Profile</a>
+    </h3>
+    <p class="archive__item-excerpt">Persistent identifier linking outputs across journals and repositories.</p>
+  </div>
+
+  <div class="archive__item">
+    <h3 class="archive__item-title">
+      <a href="https://datadryad.org/search?q=0000-0001-9686-3844" target="_blank" rel="noopener">Dryad Datasets</a>
+    </h3>
+    <p class="archive__item-excerpt">Curated, open-access datasets supporting published work.</p>
+  </div>
+
+</div>
