@@ -8,17 +8,22 @@ redirect_from:
   - /about.html
 ---
 
-# Postdoctoral Research: Mitigating Climate Change Impacts on Spectacled Flying Foxes
 
-My current research focuses on the endangered spectacled flying fox, whose populations were dramatically impacted by the extreme heatwave of 2018. This event, which led to the loss of approximately one-third of the species, underscores the critical threat that future extreme thermal events pose. I am investigating the thermal environments of spectacled flying fox roosts across their range—from the Wet Tropics to the rainforests of Cape Tribulation—to better understand how rising temperatures and increasing heatwave intensity compromise their survival.
+## Hi, I’m Alejandro — Postdoctoral Fellow & Data Scientist
 
-By integrating ecological monitoring, physiological studies, and forecasting models, I am developing a predictive tool to identify high-risk heat events and pinpoint vulnerable roost sites. This work not only enhances our understanding of how climate change drives mass mortality events in flying foxes but also provides actionable guidance for conservation managers. Potential interventions include misting systems, roost exclusion measures, and targeted revegetation to modify roost microclimates. Ultimately, this project aims to support adaptive conservation strategies that address national priorities and contribute to reversing the decline of Australia’s natural environment.
+I work at the interface of **ecology** and **data science**, using advanced analytical approaches to tackle complex questions about biodiversity and environmental change.
 
+My **academic research** focuses on understanding how species respond to climate change — from the fine-scale microclimates experienced by endangered spectacled flying foxes to the large-scale redistribution of tropical montane birds.  
+My **data science work** applies many of the same modelling, forecasting, and analytical skills to broader problems, developing solutions that are rigorous, transparent, and actionable.
 
-# PhD Research: Climate Change Impacts on Tropical Montane Biodiversity
+---
 
-My doctoral research investigated the complex impacts of climate change on tropical montane ecosystems, with a focus on how shifting climatic conditions affected biodiversity in the Australian Wet Tropics. Drawing on three decades of region-wide monitoring, I examined the abundance–suitability relationships, community reshuffling, and population responses of rainforest birds and endemic ringtail possums to both gradual warming and extreme heatwaves. By integrating experimental studies with ecological modelling, my work unravelled the physiological mechanisms—such as reduced survival, recruitment, and foraging performance—that underpinned climate-induced declines. Overall, my thesis provided critical insights into the causal links between environmental change and population dynamics, laying the groundwork for evidence-based conservation strategies in these natural laboratories.
+## Bridging Research & Application
 
+What drives me is turning complexity into clarity.  
+I use tools such as hierarchical Bayesian models, spatiotemporal analysis, and machine learning to:
+- Reveal patterns in high-dimensional ecological and environmental data.
+- Forecast changes under future scenarios.
+- Support decision-making with evidence-based strategies.
 
-![Green Ringtail Possum](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/images/_MG_3336.JPG?raw=true)
-
+Whether working in conservation, policy, or applied analytics, my goal is to produce insights that can be **acted upon** — helping managers, stakeholders, and communities respond to change.
