@@ -10,11 +10,11 @@ Ecosystems operate through complex direct and indirect interactions—understand
 **Goal:** Model and disentangle direct and indirect pathways of ecosystem functioning using **Bayesian hierarchical models**, clarifying cascading effects in biogeochemical dynamics.
 
 ## Approach
-- Compiled experiments and observations quantifying herbivory rates, litter decomposition, nutrient fluxes, and other ecosystem variables in montane rainforests.
+- Compiled experiments and observations quantifying herbivory rates, plant defences, nutrient fluxes, and other ecosystem variables in montane rainforests.
 - Built **Bayesian hierarchical models** that capture:
   - Direct effects (e.g., plant defences → herbivory)
   - Indirect pathways (e.g., mediated through soil nutrient flux or climatic processes)
-  - Random effects across sites and time (hierarchical nesting).
+  - Random effects across geographical sites (hierarchical nesting).
 - Quantified cascading impacts via posterior analysis of structured pathway coefficients.
   
 ## Stack
@@ -39,4 +39,4 @@ Ecosystems operate through complex direct and indirect interactions—understand
 - Designed and specified the hierarchical modelling of cascading pathways.
 - Cleaned and structured multivariate field dataset.
 - Fitted Bayesian models, interpreted complex posterior relationships.
-- Co-wrote the manuscript and articulated the ecological implications.
+- Wrote the manuscript and articulated the ecological implications.
