@@ -1,7 +1,7 @@
 ---
 title: "Academic"
 permalink: /academic/
-layout: single
+layout: splash
 classes: wide
 toc: false
 # no sidebar on landing
