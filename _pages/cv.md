@@ -151,7 +151,7 @@ Media engagement
   * Article [Skyrail Foundation](https://www.skyrail.com.au/blog/tropical-rainforest-research-in-education/)
 
   
-Teaching
+Teaching and Mentoring
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
@@ -159,6 +159,10 @@ Teaching
   
 Professional development and community-based conservation
 ======
+* Postdoctoral fellow.
+  * Organisation: James Cook University. 
+  * Country: Australia.
+  * Year: 2024 - Currently.
 * Biodiversity consulting.
   * Organisation: Wet Tropics Management Authority. 
   * Country: Australia.
