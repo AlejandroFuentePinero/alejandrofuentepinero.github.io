@@ -35,17 +35,17 @@
 
 /* Sidebar section titles */
 .nav__sub-title {
-  font-size: 1.4rem; /* substantially bigger than links */
+  font-size: 1.05rem; /* smaller than before but still bigger than links */
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   border-bottom: 2px solid #e2e2e2;
   padding-bottom: 0.2rem;
 }
 
 /* Sidebar link size */
 .sidebar .nav__items a {
-  font-size: 1rem; /* keep this as is since you liked it */
+  font-size: 0.95rem; /* slightly smaller than now */
 }
 
