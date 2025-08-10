@@ -1,7 +1,7 @@
 ---
 title: "Data Science"
 permalink: /datascience/
-layout: single
+layout: splash
 classes: wide
 toc: false
 # no sidebar here; keep it on the subpages
