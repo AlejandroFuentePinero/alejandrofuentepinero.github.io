@@ -1,10 +1,13 @@
 ---
-permalink: /threatened_species/
+layout: single
 title: "Threatened Species Nomination"
+permalink: /academic/threatened_species/
 author_profile: true
 redirect_from: 
   - /md/
   - /markdown.html
+sidebar:
+  nav: "academic"
 ---
 
 My research has contributed to a better understanding of the impacts of climate change on tropical biodiversity. One of the most relevant findings is the rapid climate-driven biodiversity erosion. Below is a list of the most relevant cases, representing a robust representation of the unique biodiversity that constituted the Outstanding Universal Value of the Wet Tropics of North Queensland. All these species have a prominent characteristic in common - they are restricted to the highlands of the Australian Wet Tropics. The rapid decline of upland populations highlighs the alarming rapid collapse of tropical montane ecosystems, following a clear pattern of the ["escalator to extinction"](https://www.pnas.org/doi/abs/10.1073/pnas.1817416115).
