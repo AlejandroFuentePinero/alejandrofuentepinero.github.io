@@ -13,15 +13,22 @@ layout: single
 - **Probability modelling:** hypergeometric distribution, Monte Carlo simulation  
 
 ### Technical Stack
-- **Languages:** R, JAGS, JavaScript, HTML/CSS, Python *(learning)*, SQL *(learning)*  
-- **Data workflows:** large-scale data wrangling, **multi-source data integration**, spatial analysis, parallel processing, reproducible pipelines  
-- **Visualisation:** ggplot2, base R, JavaScript charting libraries  
+- **Languages:** R, JAGS, Python, SQL
+- **Databases & storage:** SQL , Microsoft Access  
+- **Data workflows:** large-scale data wrangling, **multi-source data integration**, spatial analysis, parallel processing, reproducible pipelines (Git/GitHub)  
+- **Visualisation:** R (ggplot2, base), **Python (matplotlib, Plotly)**  
 - **Remote sensing & geospatial:** raster/vector processing, spatial joins, satellite-derived metrics  
+- **Other analytics tools:** **Excel** (advanced formulas, pivot tables, data cleaning, charts)
 
 ### Applied Expertise
 - **Pattern detection** in complex, high-dimensional datasets  
-- **Data integration** from diverse sources (remote sensing, in-situ monitoring, experimental data, models)  
+- **Forecasting** to predict trends, risks, and opportunities across domains  
+- **Tailored statistical analysis** customised to specific datasets and objectives  
 - **Decision-support tools:** interactive tools and dashboards for stakeholders  
 - **Workflow optimisation** for computational efficiency and scalability  
 - **Translation to action:** turning analyses into clear, actionable recommendations  
 - **Data-driven frameworks** for strategic decision-making
+
+### Communication
+- **Writing:** lead and co-author on peer-reviewed papers; clear technical documentation  
+- **Speaking:** conference talks, workshops, stakeholder briefings; tailoring content to technical and non-technical audiences
