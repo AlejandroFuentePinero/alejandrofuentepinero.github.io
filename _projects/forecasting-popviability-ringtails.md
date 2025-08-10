@@ -17,15 +17,15 @@ Understanding population sustainability is critical to conservation prioritisati
 
 ## Stack
 - **Bayesian hierarchical modelling**: detection–abundance partitioning, forecasting of latent trends with credible intervals.  
-- **Forecasting workflows**: dynamic prediction of future population trajectories, uncertainty quantification.  
-- **Data workflows**: count data cleaning, model fitting, posterior analysis, reproducible scripting and reporting.  
+- **Forecasting workflows**: dynamic prediction of future population trajectories under forecasted climate change, uncertainty quantification.  
+- **Data workflows**: count data cleaning, variable development (climate change predictors), model fitting, posterior analysis, reproducible scripting and reporting.  
 - **Implementation**: carried out in **R** (data processing, analysis, visualisation) and **JAGS** (Bayesian model specification and MCMC sampling), with full version control for transparency.
 
 
 ## Results
 - Forecasted strong declines in target species with credible uncertainty bounds.  
 - Identified species with high extinction risk over relevant time horizons.  
-- Results directly contributed to elevating  conservation priority status for those species under national and international protection lists.
+- Results directly contributed to elevating conservation priority status for those species under national and international protection lists.
 
 ## Impact
 - Strengthened the scientific basis for conservation policy decisions by delivering rigorous, uncertainty-aware forecasts.  
@@ -37,7 +37,7 @@ Understanding population sustainability is critical to conservation prioritisati
 
 ## Role
 - Conceptualised and developed the hierarchical Bayesian framework.  
-- Cleaned and structured count/detection data for robust inference.  
+- Cleaned and structured count/detection data and climate change covariates (heatwaves and warming) for robust inference.  
 - Ran forecasting models and interpreted posterior outputs.  
 - Produced insights used in elevated conservation recommendations.  
-- Co-wrote the manuscript and communicated findings to conservation authorities.
+- Wrote the manuscript and communicated findings to conservation authorities.
