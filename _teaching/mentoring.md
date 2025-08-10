@@ -2,10 +2,10 @@
 title: "Mentoring"
 collection: teaching
 type: "Mentoring"
-permalink: /teaching/mentoring
+permalink: /teaching/mentoring/
 venue: "James Cook University"
 location: "Cairns, Australia"
-date: 2025
+date: "2025-01-01"
 ---
 
 ## 2025
