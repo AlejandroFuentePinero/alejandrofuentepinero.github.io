@@ -32,7 +32,7 @@ Rapid shifts in bird population trends can signal emerging conservation needs, b
 
 ## Links & Resources
 - 📄 **Paper:** [PLOS ONE article](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254307)  
-- 💻 **Code repository:** [GitHub – Williams_and_delafuente_appendix](https://github.com/AlejandroFuentePinero/Williams_and_delafuente_appendix) and [GitHub – Williams_and_delafuente_code] (https://github.com/AlejandroFuentePinero/rainforest_birds_pop_trend)
+- 💻 **Code repository:** [GitHub – Williams_and_delafuente_code] (https://github.com/AlejandroFuentePinero/rainforest_birds_pop_trend)
 -  **Interactive app:** [Shiny App – Bird Population Trends](https://alejandrodelafuente.shinyapps.io/BirdsPopTrendAWT/)
 
 ## Role
