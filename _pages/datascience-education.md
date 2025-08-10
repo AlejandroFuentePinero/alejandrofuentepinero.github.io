@@ -8,23 +8,17 @@ classes: wide
 ### Formal Education
 
 - **Ph.D. in Zoology and Ecology**, James Cook University — *Cum laude* (2024)  
-  Designed and implemented advanced analytical workflows to assess climate change impacts on tropical wildlife.  
-  - Developed **novel modelling techniques** combining **Bayesian inference**, **machine learning**, **physiological**, **climatic**, and **spatial modelling** (GIS, remote sensing).  
-  - Managed large, multi-source ecological and climate datasets, including **data cleaning**, **relational database design**, and **automated pipelines** for data integration.  
-  - Applied **predictive modelling** to identify high-risk events and vulnerable habitats, integrating physiological and biogeochemical data (e.g., soil and foliage chemistry).  
-  - Extensive experience in **R** (statistical programming) and reproducible research practices.  
+  - **Skills & Tools:** Bayesian inference, machine learning, predictive modelling, spatial analysis (GIS, remote sensing), SQL querying, relational database design, automated data pipelines, data cleaning, R programming, reproducible workflows.  
+  - **Data Types:** Multi-source ecological, biological, climatic, physiological, and biogeochemical datasets (soil, foliage chemistry).  
+  - **Applications:** Developed novel modelling frameworks to predict species vulnerability to extreme events and identify high-risk habitats.  
 
 - **M.S. in Biology and Conservation of Biodiversity**, Universidad de Salamanca (2016)  
-  Advanced training in quantitative ecology and conservation planning.  
-  - Coursework in **GIS**, **advanced statistics**, **statistical programming** (R), and **applied statistical modelling**.  
-  - Applied coding and spatial analysis to biodiversity monitoring and conservation decision-making.  
-  - Experience in designing and executing analytical workflows for ecological datasets.  
+  - **Skills & Tools:** GIS, advanced statistics, applied statistical modelling, R programming, spatial analysis, workflow automation.  
+  - **Applications:** Designed and executed analytical workflows for biodiversity monitoring and conservation planning.  
 
 - **B.S. in Biology**, Universidad de Salamanca (2014)  
-  Broad foundation in organismal biology, ecology, and environmental sciences, supported by strong quantitative training.  
-  - Coursework in **mathematics**, **algebra**, **biostatistics**, and **physics**.  
-  - Completed a research project on **ecological modelling**, integrating environmental and species distribution data.  
-  - Gained initial experience with statistical programming and data analysis workflows.  
+  - **Skills & Tools:** Mathematics, algebra, biostatistics, physics, introductory statistical programming, ecological modelling.  
+  - **Applications:** Undergraduate research project integrating environmental and ecological data.  
 
 ---
 
