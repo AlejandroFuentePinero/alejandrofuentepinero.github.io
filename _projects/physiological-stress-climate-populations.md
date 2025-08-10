@@ -42,4 +42,4 @@ Understanding these links requires integrating multiple models and data sources 
 - Designed and implemented the entire multi-component modelling workflow.
 - Developed each model component (microclimate, physiology, biogeochemistry, population) and integrated them into a holistic Bayesian framework.
 - Conducted model fitting, validation, and scenario testing.
-- Co-authored manuscript, providing the analytical synthesis and causal interpretation.
+- Authored manuscript, providing the analytical synthesis and causal interpretation.
