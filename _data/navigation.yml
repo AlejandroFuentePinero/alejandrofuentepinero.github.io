@@ -1,23 +1,6 @@
-# main links links
+# main links
 main:
-  - title: "Publications"
-    url: /publications/
-    
-  - title: "Book chapters"
-    url: /book_chapter/
-    
-  - title: "Threatened species"
-    url: /threatened_species/
-    
-  - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Grants and Awards"
-    url: /grants_awards/
-       
-  - title: "CV"
-    url: /cv/
-    
+  - title: "Academic"
+    url: /academic/
+  - title: "Data Science"
+    url: /datascience/
