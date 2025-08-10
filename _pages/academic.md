@@ -4,7 +4,6 @@ permalink: /academic/
 layout: single
 classes: wide
 toc: false
-author_profile: false
 # no sidebar on landing
 
 feature_row:
