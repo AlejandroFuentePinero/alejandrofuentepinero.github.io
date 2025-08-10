@@ -44,3 +44,14 @@
   inset: 0;
   z-index: 0;
 }
+
+/* --- Sidebar section titles --- */
+.nav__sub-title {
+  font-weight: bold;
+  margin-top: 0.75em;
+  margin-bottom: 0.25em;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  color: #555;
+  padding-left: 0.25rem; /* small indent for alignment */
+}
