@@ -5,8 +5,8 @@ permalink: /datascience/projects/
 collection: projects
 entries_layout: grid
 classes: wide
-sidebar:
-  nav: "datascience"
+#sidebar:
+#  nav: "datascience"
 ---
 
 Below are selected case studies (academic + applied) with a data-science focus.
