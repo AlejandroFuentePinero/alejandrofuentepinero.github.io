@@ -11,6 +11,7 @@ date: 2025
 ## 2025
 
 **Olivia Bond**
+
 *Johns Hopkins University*
 
 *School for International Training*  
