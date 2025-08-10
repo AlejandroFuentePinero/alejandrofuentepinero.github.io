@@ -11,6 +11,6 @@ sidebar:
 Below are selected case studies (academic + applied) with a data-science focus.
 
 {% include base_path %}
-{% for post in site.projects %}
+{% for post in site.projects reversed %}
   {% include archive-single.html %}
 {% endfor %}
