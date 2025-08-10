@@ -2,6 +2,8 @@
 title: "Skills"
 permalink: /datascience/skills/
 layout: single
+sidebar:
+  nav: "datascience"
 ---
 
 ### Analytical & Modelling
