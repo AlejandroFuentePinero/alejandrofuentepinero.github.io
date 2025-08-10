@@ -7,8 +7,8 @@ main:
 
 # Sidebar: Academic
 academic:
-  - title: "<span class='nav__sub-title'>Academic</span>"
-    url:
+  - title: "Academic"
+    class: "nav__sub-title"
   - title: "Publications"
     url: /academic/publications/
   - title: "Book chapters"
@@ -26,8 +26,8 @@ academic:
 
 # Sidebar: Data Science
 datascience:
-  - title: "<span class='nav__sub-title'>Data Science</span>"
-    url:
+  - title: "Data Science"
+    class: "nav__sub-title"
   - title: "Projects"
     url: /datascience/projects/
   - title: "Skills"
