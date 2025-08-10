@@ -2,7 +2,7 @@
 title: "Assessing Bird Population Trends to Inform Conservation Priorities"
 excerpt: "Used time-series GLMs and interactive visualisation (Shiny app) to nominate 14 bird species for elevated protection under national and international priority lists."
 tags: [R, time-series, GLM, visualisation, outreach, conservation]
-date: 2025-04-15
+date: 2021-12-22
 ---
 
 ## Problem
