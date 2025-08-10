@@ -36,8 +36,7 @@ Tropical montane bird populations are increasingly threatened by climate change 
 
 ## Links & Resources
 - 📄 **Paper:** [Global Change Biology article](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.16608)  
-- 💾 **Data repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.hx3ffbgjj)  
-- 💻 **Code repository:** [GitHub – rainforest_birds_climatic_drivers_pop](https://github.com/AlejandroFuentePinero/rainforest_birds_climatic_drivers_pop)
+- 💾 **Repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.hx3ffbgjj)  
 
 ## Role
 - Designed and implemented the spatiotemporal Bayesian modelling framework.
