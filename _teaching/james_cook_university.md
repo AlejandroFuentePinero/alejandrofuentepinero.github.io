@@ -2,11 +2,12 @@
 title: "Teaching: James Cook University"
 collection: teaching
 type: "Undergraduate and Master's courses"
-permalink: /teaching/james_cook_university
+permalink: /teaching/james_cook_university/
 venue: "James Cook University"
 location: "Townsville, Australia"
-date: 2019
+date: "2019-01-01"
 ---
+
 
 My teaching experience includes tutoring and lecturing on ecological courses and advanced statistics.
 
