@@ -8,8 +8,7 @@ date: 2021-10-12
 ## Problem
 Conservation and land-use planning require **maps of abundance**, not just where a species can occur. Traditional surveys are expensive and spatially limited; presence-only data are abundant but lack counts.  
 
-**Goal:** Build a reproducible, data-driven workflow that predicts **continuous abundance** from environmental suitability, using **ensemble machine learning** to combine multiple niche modelling algorithms and link them to observed counts.  
-(Paper: [Ecography 44:1723–1730](https://doi.org/10.1111/ecog.05776))
+**Goal:** Build a reproducible, data-driven workflow that predicts **continuous abundance** from environmental suitability, using **ensemble machine learning** to combine multiple niche modelling algorithms and link them to observed counts.
 
 ## Approach
 **1) Data acquisition & wrangling**  
