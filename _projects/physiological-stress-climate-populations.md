@@ -15,7 +15,7 @@ Understanding these links requires integrating multiple models and data sources 
 - **Microclimate modelling**: simulated fine-scale environmental conditions within roosting habitats to capture species-relevant temperature, humidity, and thermal stress.
 - **Physiological modelling**: quantified energetic and thermal balances to estimate climate-driven physiological stress (e.g. dehydration, overheating) at relevant temporal scales.
 - **Biogeochemical modelling**: incorporated nutrient cycling and vegetation process models to capture indirect effects on habitat quality and food availability.
-- **Population modelling**: developed Bayesian hierarchical state–space models linking physiological and biogeochemical predictors to demographic rates (recruitment and survival), explicitly accounting for detection probability in count data.
+- **Population modelling**: developed Bayesian hierarchical models linking physiological and biogeochemical predictors to demographic rates (recruitment and survival), explicitly accounting for detection probability in count data.
 - Integrated all components into a **unified Bayesian framework** implemented in **R** and **JAGS**, enabling joint inference and propagation of uncertainty across the entire causal chain.
 
 ## Stack
