@@ -33,7 +33,7 @@ feature_row:
     btn_label: "See talks"
     btn_class: "btn--primary"
   - title: "Teaching"
-    excerpt: "Courses, mentoring, and training."
+    excerpt: "Courses and mentoring."
     url: "/academic/teaching/"
     btn_label: "See teaching"
     btn_class: "btn--primary"
