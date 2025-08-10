@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-## Hi, I’m Alejandro — Postdoctoral Fellow & Data Scientist
+## Hi, I’m Alejandro — Researcher & Data Scientist
 
 I work at the interface of **ecology** and **data science**, using advanced analytical approaches to tackle complex questions about biodiversity and environmental change.
 
