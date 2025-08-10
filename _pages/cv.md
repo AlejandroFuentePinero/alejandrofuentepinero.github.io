@@ -18,6 +18,25 @@ Education
 * M.S. in Biology and Conservation of Biodiversity, Universidad de Salamanca, 2016
 * Ph.D in Zoology and Ecology, James Cook University, 2024 (Cum laude)
 
+Professional Appointments
+======
+* Postdoctoral fellow.
+  * Organisation: James Cook University. 
+  * Country: Australia.
+  * Year: 2024 - Currently.
+* Research assistant.
+  * Organisation: James Cook University. 
+  * Country: Australia.
+  * Year: 2019.
+* Research and conservation leader.
+  * Organisation: Kaa-Iya National Park. 
+  * Country: Bolivia.
+  * Year: 2017-2018.
+* Head biologist.
+  * Organisation: CONAF (Puyehue National Park). 
+  * Country: Chile.
+  * Year: 2016-2017.
+
 Volunteering and other field experiences
 ======
 * Vertebrate biodiversity monitoring in the Australian Wet Tropics.
@@ -159,10 +178,6 @@ Teaching and Mentoring
   
 Professional development and community-based conservation
 ======
-* Postdoctoral fellow.
-  * Organisation: James Cook University. 
-  * Country: Australia.
-  * Year: 2024 - Currently.
 * Biodiversity consulting.
   * Organisation: Wet Tropics Management Authority. 
   * Country: Australia.
