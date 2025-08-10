@@ -10,8 +10,8 @@ Climate change is forcing species to redistribute uphill in montane ecosystems, 
 **Goal:** Forecast elevational community turnover across thousands of assemblages, using a streamlined, optimised spatial workflow capable of dynamic, simultaneous predictions for many species.
 
 ## Approach
-- Compiled and harmonised spatial layers: species distribution models, thermal resistance surfaces, and elevational patch definitions (Dryad dataset). :contentReference[oaicite:2]{index=2}  
-- Simulated uphill shifts of 7,613 community assemblages using per-species dispersal probabilities and landscape resistance, then computed dissimilarity indices to quantify community restructuring. :contentReference[oaicite:3]{index=3}  
+- Compiled and harmonised spatial layers: species distribution models, thermal resistance surfaces, and elevational patch definitions.
+- Simulated uphill shifts of 7,613 community assemblages using per-species dispersal probabilities and landscape resistance, then computed dissimilarity indices to quantify community restructuring.
 - Engineered high-throughput and optimised code (parallel processing, efficient file I/O, streamlined loops) to run multi-spatial, multi-species forecasts significantly faster.  
 - Enabled dynamic visualisation and batch processing to support interactive exploration and extensive scenario testing.
 
@@ -19,10 +19,10 @@ Climate change is forcing species to redistribute uphill in montane ecosystems, 
 - **Spatial forecasting**: improved workflows for handling high-resolution, multi-species predictions across elevational bands.  
 - **Advanced statistical analyses**: dispersal success estimation, beta-diversity (dissimilarity) metrics, and patch-level population turnover.  
 - **Workflow optimisation**: high-performance parallelisation, memory-efficient geospatial processing, reproducible scripting.  
-- **Implementation**: all in **R**, with version control and data reproducibility (Dryad dataset). :contentReference[oaicite:4]{index=4}
+- **Implementation**: all in **R**, with version control and data reproducibility.
 
 ## Results
-- Mapped intense community turnover (reshuffling) along elevation gradients; particularly severe species co-occurrence declines at higher altitudes. :contentReference[oaicite:5]{index=5}  
+- Mapped intense community turnover (reshuffling) along elevation gradients; particularly severe species co-occurrence declines at higher altitudes.
 - Identification of "escalator to extinction" zones where communities are most vulnerable to future climate shifts.
 
 ## Impact
