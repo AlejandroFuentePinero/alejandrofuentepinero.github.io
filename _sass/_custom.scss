@@ -1,0 +1,46 @@
+/* --- DS project card grid (no teaser images needed) --- */
+.ds-card-grid .grid__item .archive__item {
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  background: #fff;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  height: 100%;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  position: relative; /* for stretched-link */
+}
+
+.ds-card-grid .grid__item {
+  display: flex;
+}
+.ds-card-grid .grid__item > * {
+  flex: 1 1 auto;
+}
+
+.ds-card-grid .archive__item-title {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.ds-card-grid .archive__item-excerpt p {
+  margin-bottom: 0.25rem;
+}
+
+.ds-card-grid .archive__item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  border-color: #ddd;
+}
+
+/* Make the entire card clickable via a stretched link */
+.ds-card-grid .archive__item-title a {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+}
+.ds-card-grid .archive__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
