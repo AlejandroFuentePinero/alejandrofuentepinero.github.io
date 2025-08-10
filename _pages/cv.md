@@ -6,8 +6,8 @@ author_profile: true
 redirect_from:
   - /cv/
   - /resume
-sidebar:
-  nav: "academic"
+#sidebar:
+#  nav: "academic"
 ---
 
 {% include base_path %}
