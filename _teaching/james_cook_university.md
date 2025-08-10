@@ -5,7 +5,7 @@ type: "Undergraduate and Master's courses"
 permalink: /teaching/james_cook_university
 venue: "James Cook University"
 location: "Townsville, Australia"
-date: 2019 - 2025
+date: 2019
 ---
 
 My teaching experience includes tutoring and lecturing on ecological courses and advanced statistics.
