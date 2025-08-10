@@ -1,13 +1,13 @@
 ---
 layout: archive
 title: "Publications"
-permalink: /publications/
+permalink: /academic/publications/
 author_profile: true
+sidebar:
+  nav: "academic"
 ---
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{https://scholar.google.com.au/citations?view_op=list_works&hl=en&hl=en&user=7CKVdZwAAAAJ}}">my Google Scholar profile</a>.</u>
-{% endif %}
+You can also find my articles on <u><a href="https://scholar.google.com.au/citations?view_op=list_works&hl=en&user=7CKVdZwAAAAJ">my Google Scholar profile</a>.</u>
 
 {% include base_path %}
 
