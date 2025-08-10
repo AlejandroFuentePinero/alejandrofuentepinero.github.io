@@ -3,8 +3,8 @@ layout: archive
 title: "Publications"
 permalink: /academic/publications/
 author_profile: true
-sidebar:
-  nav: "academic"
+#sidebar:
+#  nav: "academic"
 classes: wide
 entries_layout: grid
 ---
