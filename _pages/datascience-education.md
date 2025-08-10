@@ -26,6 +26,8 @@ classes: wide
 - R for Data Science  
 - Bayesian Methods for Ecology  
 - Bayesian Data Analysis 3  
-- The Complete Python Bootcamp: From Zero to Hero in Python  
-- Python for Data Science and Machine Learning Bootcamp  
-- The Complete SQL Bootcamp: Go from Zero to Hero
+- The Complete Python Bootcamp: From Zero to Hero in Python (Udemy)
+- Python for Data Science and Machine Learning Bootcamp (Udemy)
+- The Complete SQL Bootcamp: Go from Zero to Hero (Udemy)
+- Python for Data Science (Udemy)
+
