@@ -1,3 +1,11 @@
+---
+title: "Data Science"
+permalink: /datascience/
+layout: single
+sidebar:
+  nav: "datascience"
+---
+
 This section highlights my applied data science work.
 
 - [Projects](/datascience/projects/)
