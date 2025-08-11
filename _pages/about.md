@@ -26,7 +26,7 @@ I use tools such as hierarchical Bayesian models, spatiotemporal analysis, and m
 - Forecast changes under future scenarios.
 - Support decision-making with evidence-based strategies.
 
-Whether working in conservation, policy, or applied analytics, my goal is to produce insights that can be **acted upon** — helping managers, stakeholders, and communities respond to change.
+Whether working in conservation or applied analytics, my goal is to produce insights that can be **acted upon** — helping managers, stakeholders, and communities respond to change.
 
 _Explore the **Academic** and **Data Science** tabs above to learn more about my work and projects._
 
