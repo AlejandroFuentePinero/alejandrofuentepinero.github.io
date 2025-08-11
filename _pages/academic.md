@@ -46,6 +46,7 @@ feature_row:
 
 Welcome to my Academic Portfolio. This section showcases my publications, talks, teaching, grants & awards, and threatened-species work.
 
+{% include feature_row %}
 
 **Postdoctoral Research: Mitigating Climate Change Impacts on Spectacled Flying Foxes**
 
@@ -61,4 +62,4 @@ My doctoral research investigated the complex impacts of climate change on tropi
 
 ![Green Ringtail Possum](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/images/_MG_3336.JPG?raw=true)
 
-{% include feature_row %}
+
