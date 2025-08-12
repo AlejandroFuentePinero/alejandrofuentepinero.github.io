@@ -34,4 +34,5 @@ classes: wide
 - Python for Data Science and Machine Learning Bootcamp (Udemy)
 - The Complete SQL Bootcamp: Go from Zero to Hero (Udemy)
 - Python for Data Science (Udemy)
+- 100 Days of Code: The Complete Python Pro Bootcamp
 
