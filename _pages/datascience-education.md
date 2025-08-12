@@ -28,8 +28,7 @@ classes: wide
 - Applied Hierarchical Modeling in Ecology  
 - Integrated Population Models  
 - R for Data Science  
-- Bayesian Methods for Ecology  
-- Bayesian Data Analysis 3  
+- Bayesian Methods for Ecology 
 - The Complete Python Bootcamp: From Zero to Hero in Python (Udemy)
 - Python for Data Science and Machine Learning Bootcamp (Udemy)
 - The Complete SQL Bootcamp: Go from Zero to Hero (Udemy)
