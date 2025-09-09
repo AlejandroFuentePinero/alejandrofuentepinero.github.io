@@ -24,11 +24,27 @@ classes: wide
 
 ### Additional Training & Courses
 
-- Statistical Rethinking: A Bayesian Course with Examples in R and Stan  
-- Applied Hierarchical Modeling in Ecology  
-- Integrated Population Models  
-- R for Data Science  
-- Bayesian Methods for Ecology
-- [The Complete Python Bootcamp: From Zero to Hero in Python (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)  
+- [Statistical Rethinking: A Bayesian Course with Examples in R and Stan](https://xcelab.net/rm/)  
+- [Applied Hierarchical Modeling in Ecology](https://www.mbr-pwrc.usgs.gov/pubanalysis/keryroylebook/)  
+- [Integrated Population Models](https://www.sciencedirect.com/book/9780323908108/integrated-population-models)  
+- [R for Data Science](https://r4ds.had.co.nz/) 
+- Bayesian Methods for Ecology by Michael A. McCarthy
+- [The Complete Python Bootcamp: From Zero to Hero in Python (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
+  - *Milestone 1: Tic-Tac-Toe (Two-player CLI)* — **function decomposition & interaction** for board rendering, input validation, win/draw logic, and replay loop.  
+    *Skills:* procedural programming, modular functions, control flow, input handling.  
+  - *Milestone 2: Blackjack (CLI)* — **OOP with class composition** using `Card`, `Deck`, `Hand`, `Chips`; betting system, hit/stand loop, and Ace adjustment.  
+    *Skills:* OOP design, encapsulation, method design, state management.
+
+  - *Milestone 3 (Applied Python systems)*
+    - **3a. Credit Card Validator** — Implemented the **Luhn algorithm** plus **rule-based provider classification** (e.g., Visa/MasterCard via prefixes).  
+    *Skills:* algorithm design, rule-based branching, string/regex ops, defensive programming.  
+    - **3b. Bank Account Manager** — **Inheritance & polymorphism** with `Account` base class and `CheckingAccount`, `SavingsAccount`, `BusinessAccount` subclasses; `Bank` orchestrates accounts, deposits/withdrawals, and **transfers**.  
+    *Skills:* OOP inheritance, class hierarchies, polymorphism, class interaction, CLI workflow.  
+    - **3c. Product Inventory** — `Inventory` ↔ `Product` **class interaction** supporting CRUD (add/remove/update/search), low-stock checks, and quantity adjustments.  
+    *Skills:* OOP, data structures (lists/dicts), CRUD patterns, search/update logic.  
+    - **3d. Doctor–Patient Appointment System** — Interacting classes (`Doctor`, `Patient`, `Appointment`, `Scheduler`) with **availability checks** and time-slot allocation (via `datetime`).  
+    *Skills:* multi-class OOP orchestration, relationship modelling, validation, time-based scheduling.  
+    - **3e. Library Lending System** — **Inheritance & polymorphism** with `Item` parent (`Book`, `Journal`, `DVD` subclasses), plus `Member` and `Loan` for lending/returns and **due-date tracking**.  
+    *Skills:* OOP inheritance, polymorphism, encapsulation, state tracking, and domain modelling.    
 - Python for Data Science and Machine Learning Bootcamp (Udemy)
 
