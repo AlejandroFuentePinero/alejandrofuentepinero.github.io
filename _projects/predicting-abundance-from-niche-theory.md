@@ -55,7 +55,7 @@ Conservation and land-use planning require **maps of abundance**, not just where
 - Demonstrated that **ensemble ML** applied to presence-only data can yield reliable abundance estimates — a transferable approach for other taxa and regions.  
 
 ## Links & Resources
-- 📄 **Paper:** [Ecography 44:1723–1730](https://doi.org/10.1111/ecog.05776)  
+- 📄 **Paper:** [Ecography article](https://doi.org/10.1111/ecog.05776)  
 - 💾 **Data repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.0zpc866wv)  
 - 💻 **Code repository:** [GitHub – density_suitability_tropics](https://github.com/AlejandroFuentePinero/density_suitability_tropics)  
 
