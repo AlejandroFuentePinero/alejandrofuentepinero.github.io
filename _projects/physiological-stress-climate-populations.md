@@ -37,6 +37,7 @@ Understanding these links requires integrating multiple models and data sources 
 ## Links & Resources
 - 📄 **Paper:** [Global Change Biology article](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.70215)  
 - 💾 **Repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.fxpnvx13n)
+- 💻 **Code repository:** [GitHub – Ringtail_WT_Mechanistic_Model](https://github.com/AlejandroFuentePinero/Ringtail_WT_Mechanistic_Model)  
 
 ## Role
 - Designed and implemented the entire multi-component modelling workflow.
