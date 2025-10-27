@@ -1,45 +1,45 @@
 ---
-title: "Altitudinal Migration and Community ‘Breathing’ in Tropical Mountains"
-excerpt: "Modelled seasonal elevational migration across bird communities in the Australian Wet Tropics using hierarchical Bayesian abundance models and posterior-predicted community metrics."
-tags: [R, bayesian-modelling, biodiversity, spatial-ecology, community-dynamics, climate-change]
-date: 2024-11-01
+title: "Altitudinal Migration and Seasonal Redistribution in Rainforest Bird Communities"
+excerpt: "Developed a hierarchical Bayesian workflow to quantify partial altitudinal migration and system-wide community reshuffling across elevation and season in the Australian Wet Tropics."
+tags: [R, bayesian-modeling, hierarchical-models, spatial-ecology, abundance-modeling, biodiversity-dynamics]
+date: 2025-03-01
 ---
 
 ## Problem
-Tropical mountain birds often shift their elevation seasonally to track favourable conditions, yet these movements remain poorly quantified at the community level.  
-**Goal:** Quantify and visualise how entire bird communities “breathe” along elevation gradients through the year — expanding upslope during warm seasons and contracting downslope in cooler ones.
+Seasonal shifts in abundance along mountain gradients—known as **altitudinal migration**—remain one of the least quantified forms of animal movement. In tropical mountains, these redistributions are subtle and partial, involving only portions of populations moving uphill or downhill seasonally.  
+**Goal:** Detect and quantify altitudinal migration at the community scale using long-term bird monitoring data, accounting for imperfect detection and uneven sampling, and identify how species and communities dynamically “breathe” across elevation and season.
 
 ## Approach
-- Compiled long-term bird monitoring data across **160 sites** and multiple mountains in the Wet Tropics of Australia.  
-- Fitted a **hierarchical Bayesian model** linking abundance to **elevation × season** interactions, capturing partial migration tendencies at the species level.  
-- Used **posterior-predicted abundances (`N_pred`)** to compute ecological metrics:  
-  - Species-level **centroid shifts** (mean elevation change across seasons).  
-  - **Range width** and redistribution of abundance along elevation.  
-  - **Community turnover** and synchrony among species through time.  
-- Visualised outcomes via **heatmaps**, **ridge plots**, and **community ‘breathing’ diagrams** showing system-wide expansion and contraction dynamics.
+- Integrated 16 years of bird count data from the Australian Wet Tropics (2000–2016), spanning >100 rainforest sites across full elevational gradients.  
+- Built a **hierarchical Bayesian N-mixture model** to jointly estimate abundance and detection while isolating the seasonal signal of redistribution.  
+- Defined altitudinal migration as the **season × elevation interaction**, using ecologically centred season encoding (−0.5 = winter, +0.5 = summer) to directly interpret uphill vs. downhill movements.  
+- Pooled across mountains with species-level random slopes to maximize statistical power and capture consistent migration signals.  
+- Generated **posterior predictions** of abundance (`N_pred`) across continuous elevation bands to reconstruct system-wide patterns of seasonal change.  
+- Computed derived metrics (centroid shift, range shift, turnover) to quantify redistribution at both species and community levels.
 
 ## Stack
-- **Hierarchical modelling:** multi-level structure accounting for species-level variation in seasonal elevational responses.  
-- **Predictive analysis:** posterior predictions (`brms`, `bayestestR`) used to estimate centroid shifts and turnover uncertainty.  
-- **Visualisation:** multi-panel figures combining `ggplot2`, `patchwork`, and `ggrepel` for dynamic community representations.  
-- **Implementation:** all in **R**, with reproducible scripts for data cleaning, model fitting, and post-processing.
+- **Bayesian hierarchical modeling**: implemented in **JAGS** with structured priors, shrinkage, and multi-level random effects.  
+- **Data engineering & post-processing**: extensive data reshaping, full grid expansion, NA-filling, and prediction-block generation in **R (tidyverse)**.  
+- **Model validation**: posterior predictive checks, convergence diagnostics, and cross-season model comparisons.  
+- **Downstream analytics**: abundance centroids, elevational range width, beta-diversity turnover (vegan & betapart).  
+- **Visualisation**: ggplot2 and patchwork pipelines for system-level “breathing” plots across elevation and season.
 
 ## Results
-- ~70% of species displayed significant **upslope migration** during the warm season.  
-- Communities exhibited a distinct **“breathing” pattern** — contraction to mid-elevations during the cool season and expansion upslope in warmer months.  
-- Migration was **partial and asynchronous** across species, highlighting the complexity of community reorganisation under climate variability.  
+- Most species exhibited **predictable seasonal redistribution**—moving uphill in summer and downhill in winter.  
+- These individual shifts aggregate into a striking **community-level pattern**, with total bird abundance peaking in lowlands during winter and uplands in summer.  
+- Species-specific centroid and range shifts revealed diverse strategies—from narrow-range specialists showing limited movement to generalists tracking resources more flexibly.
 
 ## Impact
-- Provided the first predictive, community-level quantification of altitudinal migration in tropical birds.  
-- Demonstrated how **Bayesian predictive modelling** can extract dynamic behavioural and ecological patterns from sparse field data.  
-- Created a transferable analytical pipeline for studying seasonal redistribution in other ecological systems.
+- Provides the **first quantitative system-wide evidence** of partial altitudinal migration in tropical rainforest birds.  
+- Establishes a generalisable **Bayesian workflow** for detecting redistribution in long-term monitoring datasets.  
+- Demonstrates how seasonal migration acts as a **systemic process**, reshaping community structure and potentially buffering biodiversity against climate change.
 
 ## Links & Resources
-- 💻 **Code repository:** [GitHub – Altitudinal migration project](https://github.com/AlejandroFuentePinero/awt_bird_altitudinal_migration)  
-- 📄 **Paper (in prep):** “Community breathing: Predicting altitudinal migration from abundance models”
+- 📄 **Manuscript:** *In prep for* *Global Change Biology* (Altitudinal migration and community breathing in the Australian Wet Tropics).  
+- 💻 **Code repository:** [GitHub – Altitudinal Migration Workflow](https://github.com/AlejandroFuentePinero/awt_bird_altitudinal_migration)  
 
 ## Role
-- Designed and implemented the Bayesian modelling framework.  
-- Led analysis of community redistribution and synchrony metrics.  
-- Created all visual outputs and reproducible R pipelines.  
-- Wrote the manuscript and integrated ecological interpretation.
+- Designed the **model architecture** and analytical workflow.  
+- Engineered the data processing and prediction pipelines.  
+- Led the **Bayesian modeling**, post-processing, and community-level synthesis.  
+- Wrote the full methods and results sections and coordinated manuscript development.
