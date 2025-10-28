@@ -28,7 +28,6 @@ classes: wide
 - [Applied Hierarchical Modeling in Ecology](https://www.mbr-pwrc.usgs.gov/pubanalysis/keryroylebook/) 
 - [Integrated Population Models](https://www.sciencedirect.com/book/9780323908108/integrated-population-models)
 - ‘Statistics in R’ workshop with Dr Murray Logan (biostatistician at the Australian Institute of Marine Science)
-
 ### Coding in R
 - [R for Data Science](https://r4ds.had.co.nz/)
 ### Coding in Python
