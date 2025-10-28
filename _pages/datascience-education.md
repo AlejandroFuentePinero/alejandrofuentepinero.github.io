@@ -30,21 +30,36 @@ classes: wide
 - [R for Data Science](https://r4ds.had.co.nz/) 
 - Bayesian Methods for Ecology by Michael A. McCarthy
 - [The Complete Python Bootcamp: From Zero to Hero in Python (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
-  - *Milestone 1: Tic-Tac-Toe (Two-player CLI)* — **function decomposition & interaction** for board rendering, input validation, win/draw logic, and replay loop.  
+  - Completed a comprehensive, hands-on program covering Python from fundamentals through to real-world application development. Built proficiency in core Python programming (variables, data types, control flow, functions, OOP) and applied it to create games, applications and automate tasks. Gained experience with modules/libraries, file handling, timestamps/collections, and developing code that moves beyond scripting into maintainable programs. 
+Udemy
+
+  - Core skills acquired:
+    - Python programming (syntax, data types, control structures).
+    - Object-Oriented Programming: classes, methods, inheritance, decorators.
+    - Working with built-in libraries (collections, datetime/timestamps).
+    - File handling, I/O, packaging modules and writing reusable code.
+    - Building portfolio projects (games like Tic Tac Toe/Blackjack, custom applications).
+    - Transitioning from learning to applying: solving tasks via Python in “real-work” or project contexts.
+   
+  - Course projects:
+
+    - *Milestone 1: Tic-Tac-Toe (Two-player CLI)* — **function decomposition & interaction** for board rendering, input validation, win/draw logic, and replay loop.  
     *Skills:* procedural programming, modular functions, control flow, input handling.  
-  - *Milestone 2: Blackjack (CLI)* — **OOP with class composition** using `Card`, `Deck`, `Hand`, `Chips`; betting system, hit/stand loop, and Ace adjustment.  
+    - *Milestone 2: Blackjack (CLI)* — **OOP with class composition** using `Card`, `Deck`, `Hand`, `Chips`; betting system, hit/stand loop, and Ace adjustment.  
     *Skills:* OOP design, encapsulation, method design, state management.
 
-  - *Milestone 3 (Applied Python systems)*
-    - **3a. Credit Card Validator** — Implemented the **Luhn algorithm** plus **rule-based provider classification** (e.g., Visa/MasterCard via prefixes).  
+    - *Milestone 3 (Applied Python systems)*
+      - **3a. Credit Card Validator** — Implemented the **Luhn algorithm** plus **rule-based provider classification** (e.g., Visa/MasterCard via prefixes).  
     *Skills:* algorithm design, rule-based branching, string/regex ops, defensive programming.  
-    - **3b. Bank Account Manager** — **Inheritance & polymorphism** with `Account` base class and `CheckingAccount`, `SavingsAccount`, `BusinessAccount` subclasses; `Bank` orchestrates accounts, deposits/withdrawals, and **transfers**.  
+      - **3b. Bank Account Manager** — **Inheritance & polymorphism** with `Account` base class and `CheckingAccount`, `SavingsAccount`, `BusinessAccount` subclasses; `Bank` orchestrates accounts, deposits/withdrawals, and **transfers**.  
     *Skills:* OOP inheritance, class hierarchies, polymorphism, class interaction, CLI workflow.  
-    - **3c. Product Inventory** — `Inventory` ↔ `Product` **class interaction** supporting CRUD (add/remove/update/search), low-stock checks, and quantity adjustments.  
+      - **3c. Product Inventory** — `Inventory` ↔ `Product` **class interaction** supporting CRUD (add/remove/update/search), low-stock checks, and quantity adjustments.  
     *Skills:* OOP, data structures (lists/dicts), CRUD patterns, search/update logic.  
-    - **3d. Doctor–Patient Appointment System** — Interacting classes (`Doctor`, `Patient`, `Appointment`, `Scheduler`) with **availability checks** and time-slot allocation (via `datetime`).  
+      - **3d. Doctor–Patient Appointment System** — Interacting classes (`Doctor`, `Patient`, `Appointment`, `Scheduler`) with **availability checks** and time-slot allocation (via `datetime`).  
     *Skills:* multi-class OOP orchestration, relationship modelling, validation, time-based scheduling.  
-    - **3e. Library Lending System** — **Inheritance & polymorphism** with `Item` parent (`Book`, `Journal`, `DVD` subclasses), plus `Member` and `Loan` for lending/returns and **due-date tracking**.  
+      - **3e. Library Lending System** — **Inheritance & polymorphism** with `Item` parent (`Book`, `Journal`, `DVD` subclasses), plus `Member` and `Loan` for lending/returns and **due-date tracking**.  
     *Skills:* OOP inheritance, polymorphism, encapsulation, state tracking, and domain modelling.    
 - Python for Data Science and Machine Learning Bootcamp (Udemy)
+  - Developed solid foundations in Python programming and applied machine learning. Completed hands-on projects using `NumPy`, `Pandas`, `Matplotlib`, `Seaborn`, `Plotly`, and `Scikit-learn` to perform data cleaning, visualisation, feature engineering, and predictive modelling. Built and evaluated regression, classification, and clustering models (Linear/Logistic Regression, KNN, SVM, Decision Trees, Random Forests, K-Means). Strengthened end-to-end data-science workflow skills — from exploratory data analysis and preprocessing to model evaluation and interpretation.
+  - Core skills: Python, NumPy, Pandas, Matplotlib, Seaborn, Plotly, Scikit-learn, Data Wrangling, EDA, Machine Learning, Model Evaluation, Data Visualisation, Feature Engineering.
 
