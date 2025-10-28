@@ -19,7 +19,7 @@ layout: single
 - **Data acquisition & I/O:** CSV/Excel/JSON, PDF parsing basics, **HTTP APIs (requests)**, **web scraping (BeautifulSoup/lxml)**
 - **Databases & storage:** SQLite, Microsoft Access; SQL querying (SELECT/JOIN/AGGREGATE, CTEs/window functions – foundational)
 - **Reproducible workflows:** version control (Git/GitHub – branching/PRs), environments (renv, venv/conda), parallel processing
-- **Visualisation:** R (ggplot2/base), Python (matplotlib, Plotly)
+- **Visualisation:** R (ggplot2/base), Python (matplotlib, Plotly, Seaborn)
 - **Geospatial/remote sensing:** raster/vector processing, spatial joins, satellite-derived metrics (terra/sf or equivalents)
 - **Testing & quality:** unit tests with pytest (foundational), assertions, data validation checks
 - **Packaging & docs (foundational):** module structure, docstrings/type hints, README/usage examples
