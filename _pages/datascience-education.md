@@ -8,7 +8,7 @@ classes: wide
 ## Formal Education
 
 - **Ph.D. in Zoology and Ecology**, James Cook University — *Cum laude* (2024)  
-  - **Skills & Tools:** Bayesian inference, machine learning, predictive modelling, spatial analysis (GIS, remote sensing), SQL querying, relational database design, automated data pipelines, data cleaning, R programming, reproducible workflows.  
+  - **Skills & Tools:** Bayesian and frequentist inference, hierarchical modelling, machine learning, predictive modelling, spatial analysis (GIS, remote sensing), automated data pipelines, data cleaning, R programming, reproducible workflows.  
   - **Data Types:** Multi-source ecological, biological, climatic, physiological, and biogeochemical datasets (soil, foliage chemistry).  
   - **Applications:** Developed novel modelling frameworks to predict species vulnerability to extreme events and identify high-risk habitats.  
 
