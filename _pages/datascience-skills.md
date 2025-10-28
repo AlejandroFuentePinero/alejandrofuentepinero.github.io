@@ -24,9 +24,11 @@ layout: single
 - **Reproducible workflows:** version control (Git/GitHub – branching/PRs), environments (renv, venv/conda), parallel processing
 - **Visualisation:** R (ggplot2/base), Python (matplotlib, Plotly, Seaborn)
 - **Geospatial/remote sensing:** raster/vector processing, spatial joins, satellite-derived metrics (terra/sf or equivalents)
-- **Testing & quality:** unit tests with pytest (foundational), assertions, data validation checks
-- **Packaging & docs (foundational):** module structure, docstrings/type hints, README/usage examples
+- **Testing & quality:** unit tests with pytest, assertions, data validation checks
+- **Packaging & docs:** module structure, docstrings/type hints, README/usage examples
 - **Web & apps:** GitHub Pages (this site), Shiny apps (R)
+- **Data preprocessing** (missing-value handling, feature engineering).
+- **Data integration** (joining large relational datasets, APIs + SQL combo).
 
 ### Applied Expertise
 - **Pattern detection** in complex, high-dimensional datasets
@@ -36,6 +38,7 @@ layout: single
 - **Workflow optimisation:** high-performance/parallel pipelines, memory-efficient geoprocessing
 - **Translation to action:** clear, actionable recommendations for managers & policy
 - **Data-driven frameworks** for strategic decision-making
+- **Model interpretability**
 
 ### Communication
 - **Writing:** lead & co-author on peer-reviewed papers; clear technical documentation
