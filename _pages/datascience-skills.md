@@ -7,10 +7,13 @@ layout: single
 ### Analytical & Modelling
 - **Statistical modelling:** GLM, GAM, mixed-effects, hierarchical models
 - **Spatial modelling:** species distribution models, spatiotemporal analysis, spatial autocorrelation, spatial forecasting
-- **Machine learning:** supervised & unsupervised models (regression, clustering, Random Forests, Gradient Boosting, neural nets, MaxEnt); model evaluation, feature scaling, and cross-validation.
+- **Machine learning:** supervised & unsupervised models (regression, clustering, Random Forests, Gradient Boosting, MaxEnt); model evaluation, feature scaling, and cross-validation.
 - **Bayesian inference:** hierarchical & spatiotemporal models, detection–abundance separation
+- **Hybrid modelling:** integration of mechanistic and statistical frameworks for process-based forecasting
 - **Forecasting & simulation:** population viability, simulation-based forecasting, scenario testing
+- **Multivariate analysis:** PCA, correlation structure analysis, ordination methods
 - **Model evaluation:** cross-validation (incl. spatial CV), calibration & error metrics (RMSE/MAE, PPCs)
+- **Model interpretation:** feature importance, partial dependence, SHAP, mechanistic interpretation of predictive models
 - **Probability modelling:** hypergeometric, Monte Carlo simulation
 
 ### Technical Stack
