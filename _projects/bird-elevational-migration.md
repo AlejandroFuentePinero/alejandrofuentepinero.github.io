@@ -2,7 +2,7 @@
 title: "Altitudinal Migration and Seasonal Redistribution in Rainforest Bird Communities"
 excerpt: "Developed a hierarchical Bayesian workflow to quantify partial altitudinal migration and system-wide community reshuffling across elevation and season in the Australian Wet Tropics."
 tags: [R, bayesian-modeling, hierarchical-models, spatial-ecology, abundance-modeling, biodiversity-dynamics]
-date: 2025-03-01
+date: 2025-09-15
 ---
 
 ## Problem
@@ -10,15 +10,15 @@ Seasonal shifts in abundance along mountain gradients—known as **altitudinal m
 **Goal:** Detect and quantify altitudinal migration at the community scale using long-term bird monitoring data, accounting for imperfect detection and uneven sampling, and identify how species and communities dynamically “breathe” across elevation and season.
 
 ## Approach
-- Integrated 16 years of bird count data from the Australian Wet Tropics (2000–2016), spanning >100 rainforest sites across full elevational gradients.  
+- Integrated 16 years of imperfect bird count data from the Australian Wet Tropics (2000–2016), spanning >100 rainforest sites across full elevational gradients.  
 - Built a **hierarchical Bayesian N-mixture model** to jointly estimate abundance and detection while isolating the seasonal signal of redistribution.  
 - Defined altitudinal migration as the **season × elevation interaction**, using ecologically centred season encoding (−0.5 = winter, +0.5 = summer) to directly interpret uphill vs. downhill movements.  
-- Pooled across mountains with species-level random slopes to maximize statistical power and capture consistent migration signals.  
-- Generated **posterior predictions** of abundance (`N_pred`) across continuous elevation bands to reconstruct system-wide patterns of seasonal change.  
+- Pooled across mountains with species-level random slopes to maximise statistical power and capture consistent migration signals.  
+- Generated **posterior predictions** of abundance across continuous elevation bands to reconstruct system-wide patterns of seasonal change.  
 - Computed derived metrics (centroid shift, range shift, turnover) to quantify redistribution at both species and community levels.
 
 ## Stack
-- **Bayesian hierarchical modeling**: implemented in **JAGS** with structured priors, shrinkage, and multi-level random effects.  
+- **Bayesian hierarchical modelling**: implemented in **JAGS** with structured priors, shrinkage, and multi-level random effects.  
 - **Data engineering & post-processing**: extensive data reshaping, full grid expansion, NA-filling, and prediction-block generation in **R (tidyverse)**.  
 - **Model validation**: posterior predictive checks, convergence diagnostics, and cross-season model comparisons.  
 - **Downstream analytics**: abundance centroids, elevational range width, beta-diversity turnover (vegan & betapart).  
