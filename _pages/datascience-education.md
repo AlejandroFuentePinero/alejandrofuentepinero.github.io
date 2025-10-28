@@ -22,14 +22,17 @@ classes: wide
 
 ---
 ## Additional analytical, statistical, and coding training
+
 ### Bayesian and hierarchical modelling
 - [Statistical Rethinking: A Bayesian Course with Examples in R and Stan](https://xcelab.net/rm/)  
 - Bayesian Methods for Ecology by Michael A. McCarthy
 - [Applied Hierarchical Modeling in Ecology](https://www.mbr-pwrc.usgs.gov/pubanalysis/keryroylebook/) 
 - [Integrated Population Models](https://www.sciencedirect.com/book/9780323908108/integrated-population-models)
 - ‘Statistics in R’ workshop with Dr Murray Logan (biostatistician at the Australian Institute of Marine Science)
+
 ### Coding in R
 - [R for Data Science](https://r4ds.had.co.nz/)
+
 ### Coding in Python
 - [The Complete Python Bootcamp: From Zero to Hero in Python (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
   - Completed a comprehensive, hands-on program covering Python from fundamentals through to real-world application development. Built proficiency in core Python programming (variables, data types, control flow, functions, OOP) and applied it to create games, applications and automate tasks. Gained experience with modules/libraries, file handling, timestamps/collections, and developing code that moves beyond scripting into maintainable programs. 
