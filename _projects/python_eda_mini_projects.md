@@ -1,7 +1,7 @@
 ---
 title: "Exploratory Data Analysis (EDA) Projects in Python"
-excerpt: "Developed an applied EDA framework combining real-world case studies — emergency call records and financial time series — to demonstrate data wrangling, feature extraction, and visualization workflows using pandas, seaborn, and plotly."
-tags: [Python, eda, data-wrangling, pandas, visualization, time-series, feature-engineering, seaborn, plotly]
+excerpt: "Developed an applied EDA framework combining real-world case studies — emergency call records and financial time series — to demonstrate data wrangling, feature extraction, and visualisation workflows using pandas, seaborn, and plotly."
+tags: [Python, eda, data-wrangling, pandas, visualisation, time-series, feature-engineering, seaborn, plotly]
 date: 2025-10-01
 ---
 
@@ -13,18 +13,18 @@ Data scientists often encounter diverse datasets requiring tailored cleaning, tr
 - Designed two **end-to-end EDA pipelines** using real-world datasets:
   1. **911 Calls Analysis:** time and location-based patterns of emergency calls.
   2. **Finance Data Analysis:** stock price behaviour, returns, and inter-company correlations.
-- Implemented **data ingestion → cleaning → transformation → visualization** using pandas and numpy for data handling and seaborn/plotly for insight communication.
+- Implemented **data ingestion → cleaning → transformation → visualisation** using pandas and numpy for data handling and seaborn/plotly for insight communication.
 - Created reusable analysis templates for:
   - Date/time feature engineering (`.dt` accessors, grouping, resampling)
   - String and categorical handling (type conversion, feature splitting)
   - Correlation and pairwise analysis
-  - Multi-panel and interactive visualizations for pattern discovery.
+  - Multi-panel and interactive visualisations for pattern discovery.
 
 ## Stack
 - **Language:** Python 3  
 - **Libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `plotly`, `datetime`  
-- **Tools:** Jupyter Notebook, VS Code, Git/GitHub  
-- **Concepts:** EDA, data cleaning, feature extraction, time series analysis, correlation analysis, visualization design
+- **Tools:** Jupyter Notebook, Git/GitHub  
+- **Concepts:** EDA, data cleaning, feature extraction, time series analysis, correlation analysis, visualisation design
 
 ## Case Studies
 
@@ -32,10 +32,10 @@ Data scientists often encounter diverse datasets requiring tailored cleaning, tr
 **Objective:** Explore temporal and spatial patterns in emergency call data.  
 - Parsed timestamps into year, month, day, and hour features for time-based analysis.  
 - Mapped call reasons and types to broader categories (e.g., EMS, Fire, Traffic).  
-- Visualized daily and monthly call volume, call-type distributions, and temporal trends.  
+- Visualised daily and monthly call volume, call-type distributions, and temporal trends.  
 - Identified operational peaks and seasonal call variation patterns.
 
-**Skills:** datetime manipulation, grouping and aggregation, categorical encoding, visualization (line, bar, count, heatmap).
+**Skills:** datetime manipulation, grouping and aggregation, categorical encoding, visualisation (line, bar, count, heatmap).
 
 ---
 
@@ -44,7 +44,7 @@ Data scientists often encounter diverse datasets requiring tailored cleaning, tr
 - Collected multi-stock price data via Yahoo Finance API.  
 - Calculated moving averages, daily returns, and cumulative returns.  
 - Conducted pairwise correlation and risk–return analysis across multiple tickers.  
-- Visualized price trends and co-movement patterns through heatmaps and scatter matrices.
+- Visualised price trends and co-movement patterns through heatmaps and scatter matrices.
 
 **Skills:** time-series analysis, rolling windows, correlation matrices, multi-plot visual storytelling.
 
@@ -53,7 +53,7 @@ Data scientists often encounter diverse datasets requiring tailored cleaning, tr
 ## Results
 - Demonstrated **consistent EDA methodology** applicable across domains.  
 - Built a reproducible framework highlighting how to structure exploratory workflows for both categorical–temporal and continuous–financial data.  
-- Strengthened proficiency in **data storytelling and visualization** using modern Python tools.
+- Strengthened proficiency in **data storytelling and visualisation** using modern Python tools.
 
 ## Impact
 - Forms the **analytical bridge** between raw data handling and predictive modelling.  
@@ -65,5 +65,5 @@ Data scientists often encounter diverse datasets requiring tailored cleaning, tr
 
 ## Role
 - Designed and implemented both projects from scratch.  
-- Performed data wrangling, analysis, and visualization.  
+- Performed data wrangling, analysis, and visualisation.  
 - Structured the repository to serve as a modular EDA framework.
