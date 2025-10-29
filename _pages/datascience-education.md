@@ -35,9 +35,7 @@ classes: wide
 
 ### Coding in Python
 - [The Complete Python Bootcamp: From Zero to Hero in Python (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
-  - Completed a comprehensive, hands-on program covering Python from fundamentals through to real-world application development. Built proficiency in core Python programming (variables, data types, control flow, functions, OOP) and applied it to create games, applications and automate tasks. Gained experience with modules/libraries, file handling, timestamps/collections, and developing code that moves beyond scripting into maintainable programs. 
-Udemy
-
+  - Completed a comprehensive, hands-on program covering Python from fundamentals through to real-world application development. Built proficiency in core Python programming (variables, data types, control flow, functions, OOP) and applied it to create games, applications and automate tasks. Gained experience with modules/libraries, file handling, timestamps/collections, and developing code that moves beyond scripting into maintainable programs.
   - Core skills acquired:
     - Python programming (syntax, data types, control structures).
     - Object-Oriented Programming: classes, methods, inheritance, decorators.
