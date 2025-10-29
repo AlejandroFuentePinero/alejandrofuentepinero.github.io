@@ -59,10 +59,8 @@ Udemy
       - **3b. Bank Account Manager** — **Inheritance & polymorphism** with `Account` base class and `CheckingAccount`, `SavingsAccount`, `BusinessAccount` subclasses; `Bank` orchestrates accounts, deposits/withdrawals, and **transfers**.  
     *Skills:* OOP inheritance, class hierarchies, polymorphism, class interaction, CLI workflow.  
       - **3c. Product Inventory** — `Inventory` ↔ `Product` **class interaction** supporting CRUD (add/remove/update/search), low-stock checks, and quantity adjustments.  
-    *Skills:* OOP, data structures (lists/dicts), CRUD patterns, search/update logic.  
-      - **3d. Doctor–Patient Appointment System** — Interacting classes (`Doctor`, `Patient`, `Appointment`, `Scheduler`) with **availability checks** and time-slot allocation (via `datetime`).  
-    *Skills:* multi-class OOP orchestration, relationship modelling, validation, time-based scheduling.  
-      - **3e. Library Lending System** — **Inheritance & polymorphism** with `Item` parent (`Book`, `Journal`, `DVD` subclasses), plus `Member` and `Loan` for lending/returns and **due-date tracking**.  
+    *Skills:* OOP, data structures (lists/dicts), CRUD patterns, search/update logic. 
+      - **3d. Library Lending System** — **Inheritance & polymorphism** with `Item` parent (`Book`, `Journal`, `DVD` subclasses), plus `Member` and `Loan` for lending/returns and **due-date tracking**.  
     *Skills:* OOP inheritance, polymorphism, encapsulation, state tracking, and domain modelling.    
 - Python for Data Science and Machine Learning Bootcamp (Udemy)
   - Developed solid foundations in Python programming and applied machine learning. Completed hands-on projects using `NumPy`, `Pandas`, `Matplotlib`, `Seaborn`, `Plotly`, and `Scikit-learn` to perform data cleaning, visualisation, feature engineering, and predictive modelling. Built and evaluated regression, classification, and clustering models (Linear/Logistic Regression, KNN, SVM, Decision Trees, Random Forests, K-Means). Strengthened end-to-end data-science workflow skills — from exploratory data analysis and preprocessing to model evaluation and interpretation.
