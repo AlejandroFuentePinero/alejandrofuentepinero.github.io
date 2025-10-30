@@ -54,8 +54,3 @@ Each section of the repository represents a standalone ML module from the Udemy 
 
 ## Links & Resources
 - 💻 **Code repository:** [GitHub – Machine Learning Fundamentals](https://github.com/AlejandroFuentePinero/python-ML-course-projects)
-
-## Role
-- Designed and implemented all projects independently.  
-- Conducted data preparation, model training, and performance evaluation.  
-- Documented each project for clarity, reproducibility, and educational value.
