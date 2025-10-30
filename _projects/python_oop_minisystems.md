@@ -42,8 +42,3 @@ Transitioning from analytical scripting to **structured software development** r
 
 ## Links & Resources
 - 💻 **Code repository:** [GitHub – Python OOP Mini-Systems](https://github.com/AlejandroFuentePinero/python-oop-mini-systems)
-
-## Role
-- Designed and implemented all systems from scratch.  
-- Documented the full codebase and learning progression.  
-- Structured the repository for clarity, modularity, and reusability.
