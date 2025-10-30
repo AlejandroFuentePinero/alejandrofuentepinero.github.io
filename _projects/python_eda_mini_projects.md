@@ -62,8 +62,3 @@ Data scientists often encounter diverse datasets requiring tailored cleaning, tr
 
 ## Links & Resources
 - 💻 **Code repository:** [GitHub – Python EDA Projects](https://github.com/AlejandroFuentePinero/python-eda-mini-projects)
-
-## Role
-- Designed and implemented both projects from scratch.  
-- Performed data wrangling, analysis, and visualisation.  
-- Structured the repository to serve as a modular EDA framework.
