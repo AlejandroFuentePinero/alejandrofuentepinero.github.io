@@ -11,9 +11,10 @@ redirect_from:
 
 ## Hi, I’m Alejandro — Researcher & Data Scientist
 
-I work at the interface of **ecology** and **data science**, using advanced analytical approaches to tackle complex questions about biodiversity and environmental change.
+I work at the interface of **quantitative ecology** and **data science**, using advanced analytical approaches to tackle complex questions about biodiversity and environmental change.
 
-My **academic research** focuses on understanding how species respond to climate change — from the fine-scale microclimates experienced by endangered spectacled flying foxes to the large-scale redistribution of tropical montane birds.  
+My **academic research** focuses on understanding how species respond to climate change — from the fine-scale microclimates experienced by endangered rainforest ringtail possums to the large-scale redistribution of tropical montane birds.
+
 My **data science work** applies many of the same modelling, forecasting, and analytical skills to broader problems, developing solutions that are rigorous, transparent, and actionable.
 
 ---
