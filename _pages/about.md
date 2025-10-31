@@ -8,26 +8,25 @@ redirect_from:
   - /about.html
 ---
 
-
 ## Hi, I’m Alejandro — Researcher & Data Scientist
 
-I work at the interface of **quantitative ecology** and **data science**, using advanced analytical approaches to tackle complex questions about biodiversity and environmental change.
+I work at the interface of **quantitative ecology** and **data science**, using advanced analytical approaches to understand biodiversity and environmental change.
 
-My **academic research** focuses on understanding how species respond to climate change — from the fine-scale microclimates experienced by endangered rainforest ringtail possums to the large-scale redistribution of tropical montane birds.
+My **academic research** explores how species respond to **climate change** — from the microclimates experienced by endangered rainforest possums to the large-scale redistribution of tropical montane birds.
 
-My **data science work** applies many of the same modelling, forecasting, and analytical skills to broader problems, developing solutions that are rigorous, transparent, and actionable.
+In **data science**, I apply the same modelling and forecasting principles to broader problems, building solutions that are **rigorous, transparent, and actionable** across scientific and applied contexts.
 
 ---
 
 ## Bridging Research & Application
 
-What drives me is turning complexity into clarity.  
-I use tools such as hierarchical Bayesian models, spatiotemporal analysis, and machine learning to:
-- Reveal patterns in high-dimensional ecological and environmental data.
-- Forecast changes under future scenarios.
-- Support decision-making with evidence-based strategies.
+What drives me is **turning complexity into clarity**.  
+I develop and apply tools such as **hierarchical Bayesian models**, **spatiotemporal analysis**, and **machine learning** to:
 
-Whether working in conservation or applied analytics, my goal is to produce insights that can be **acted upon** — helping managers, stakeholders, and communities respond to change.
+- Reveal patterns in high-dimensional ecological and environmental data.  
+- Forecast change and uncertainty under future scenarios.  
+- Support decision-making with evidence-based, interpretable results.  
+
+Whether in **conservation science** or **applied analytics**, my goal is to produce insights that can be **acted upon** — helping managers, stakeholders, and communities **respond to change with confidence**.
 
 _Explore the **Academic** and **Data Science** tabs above to learn more about my work and projects._
-
