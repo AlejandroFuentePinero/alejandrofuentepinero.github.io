@@ -6,8 +6,8 @@ date: 2025-10-31
 ---
 
 ## Overview
-**Goal:** Develop practical Python fluency through a series of small, self-contained challenges that blend logical reasoning, data manipulation, and lightweight system design.  
-Each challenge mirrors a realistic problem — from building small data systems to writing automation scripts or analysing mini-datasets — encouraging flexible, creative solutions rather than following fixed templates.
+**Goal:** Build strong, intuitive Python fluency through a series of small, self-contained challenges that combine logical reasoning, data manipulation, and lightweight system design.  
+Each challenge mirrors a realistic problem — from automating tasks to cleaning data or simulating mini-systems — encouraging flexible and creative approaches rather than step-by-step replication.
 
 ---
 
@@ -29,9 +29,9 @@ Each challenge mirrors a realistic problem — from building small data systems 
 ---
 
 ## Impact
-- Builds the foundation for confident, creative Python thinking applicable across data science and software development.  
-- Demonstrates consistent, structured self-learning and applied problem-solving ability.  
-- Serves as a living portfolio of progressively complex, well-documented code mini-systems.
+- Strengthens reasoning and design fluency across diverse Python paradigms.  
+- Builds habits of clean coding, modular thinking, and defensive programming.  
+- Demonstrates structured self-learning and applied problem-solving capabilities relevant to data science and software development
 
 ---
 
