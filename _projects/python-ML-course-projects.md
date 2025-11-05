@@ -1,5 +1,5 @@
 ---
-title: "Machine Learning Fundamentals – Python Mini Projects"
+title: "Machine Learning Fundamentals – Applied Python Projects"
 excerpt: "Implemented core machine learning algorithms — from regression and classification to clustering and deep learning — through applied mini-projects in Python. Focused on building intuition for model training, evaluation, and interpretability using Scikit-learn and Jupyter Notebooks."
 tags: [Python, machine-learning, scikit-learn, regression, classification, clustering, dimensionality-reduction, deep-learning, jupyter, data-science]
 date: 2025-10-30
@@ -12,23 +12,23 @@ Mastering machine learning requires understanding both **theory and practice** �
 ## Approach
 - Created a structured repository with subprojects covering:
   - **Regression:** Linear and Polynomial Regression  
-  - **Classification:** Logistic Regression, K-Nearest Neighbors (KNN), Decision Trees, Random Forests, Support Vector Machines (SVM)  
+  - **Classification:** Logistic Regression, K-Nearest Neighbours (KNN), Decision Trees, Random Forests, Support Vector Machines (SVM) 
   - **Ensemble Methods:** Gradient Boosting, XGBoost  
   - **Clustering:** K-Means, Hierarchical Clustering  
   - **Dimensionality Reduction:** Principal Component Analysis (PCA)  
   - **Natural Language Processing (NLP):** Naive Bayes text classification and TF-IDF feature extraction  
   - **Deep Learning:** Neural Networks using TensorFlow and Keras  
 - Implemented complete **data preprocessing → model training → evaluation → visualization** workflows using Scikit-learn and supporting libraries.  
-- Emphasized algorithmic intuition through visual diagnostics (e.g., decision boundaries, feature importance, ROC curves). 
+- Emphasised algorithmic intuition through visual diagnostics (e.g., decision boundaries, feature importance, ROC curves). 
 
 ## Stack
 - **Language:** Python 3  
 - **Libraries:** `scikit-learn`, `pandas`, `numpy`, `matplotlib`, `seaborn`, `xgboost`, `tensorflow`, `keras`  
 - **Tools:** Jupyter Notebook, Git/GitHub  
-- **Concepts:** supervised & unsupervised learning, model validation, scaling, feature engineering, interpretability, neural networks
+- **Concepts:** EDA, data manipulation, supervised & unsupervised learning, model validation, scaling, feature engineering, interpretability, neural networks
 
 ## Structure
-Each section of the repository represents a standalone ML module from the Udemy course:
+Each section of the repository represents a standalone ML project:
 1. Linear Regression  
 2. Logistic Regression  
 3. K-Nearest Neighbors (KNN)  
@@ -50,7 +50,7 @@ Each section of the repository represents a standalone ML module from the Udemy 
 ## Impact
 - Establishes a solid foundation for **practical ML application and interpretability**.  
 - Serves as a bridge between exploratory data analysis (EDA) and more advanced AI/ML workflows.  
-- Complements the “Python OOP Mini-Systems” and “EDA Projects” repositories as part of a coherent progression from programming → exploration → modelling.
+- Complements the “Python OOP Mini-Systems”, "Python EDA projects" and “Python Coding challenges” repositories as part of a coherent progression from programming → exploration → modelling.
 
 ## Links & Resources
 - 💻 **Code repository:** [GitHub – Machine Learning Fundamentals](https://github.com/AlejandroFuentePinero/python-ML-course-projects)
