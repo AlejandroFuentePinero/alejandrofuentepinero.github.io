@@ -6,8 +6,7 @@ date: 2025-10-30
 ---
 
 ## Problem
-Mastering machine learning requires understanding both **theory and practice** — how algorithms behave with real data, how to prepare features, and how to evaluate model performance.  
-**Goal:** Build a comprehensive, hands-on portfolio of ML mini-projects that demonstrate end-to-end workflows for key algorithms in Python, each grounded in applied examples.
+Mastering machine learning requires understanding both theory and practice — how algorithms behave with real data, how to prepare features, and how to evaluate model performance. This project builds a hands-on portfolio of mini-projects that demonstrate end-to-end ML workflows in Python.
 
 ## Approach
 - Created a structured repository with subprojects covering:
@@ -24,7 +23,7 @@ Mastering machine learning requires understanding both **theory and practice** �
 ## Stack
 - **Language:** Python 3  
 - **Libraries:** `scikit-learn`, `pandas`, `numpy`, `matplotlib`, `seaborn`, `xgboost`, `tensorflow`, `keras`  
-- **Tools:** Jupyter Notebook, Git/GitHub  
+- **Environment**: Jupyter Notebook, Git/GitHub  
 - **Concepts:** EDA, data manipulation, supervised & unsupervised learning, model validation, scaling, feature engineering, interpretability, neural networks
 
 ## Structure
@@ -40,7 +39,7 @@ Each section of the repository represents a standalone ML project:
 9. Natural Language Processing (NLP)  
 10. Neural Nets and Deep Learning with TensorFlow and Keras
 11. Cross-validation
-12. Big Data and Spark with Python
+12. Introduction to Big Data and PySpark workflows
 
 ## Results
 - Developed a **complete portfolio of machine learning workflows** covering both predictive and unsupervised methods.  
@@ -48,9 +47,9 @@ Each section of the repository represents a standalone ML project:
 - Created a modular learning resource that can be extended with more advanced algorithms.
 
 ## Impact
-- Establishes a solid foundation for **practical ML application and interpretability**.  
-- Serves as a bridge between exploratory data analysis (EDA) and more advanced AI/ML workflows.  
-- Complements the “Python OOP Mini-Systems”, "Python EDA projects" and “Python Coding challenges” repositories as part of a coherent progression from programming → exploration → modelling.
+Developed a complete, modular portfolio of ML workflows covering predictive and unsupervised methods. Strengthened understanding of data preparation, evaluation metrics, and model trade-offs.
+
+This repository establishes a practical foundation for model interpretability and applied machine learning, bridging exploratory data analysis and advanced AI workflows. It complements the Python OOP Mini-Systems, EDA Projects, and Coding Challenges repositories as part of a coherent learning progression.
 
 ## Links & Resources
 - 💻 **Code repository:** [GitHub – Machine Learning Fundamentals](https://github.com/AlejandroFuentePinero/python-ML-course-projects)
