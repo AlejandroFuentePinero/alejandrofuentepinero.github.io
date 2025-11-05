@@ -45,7 +45,7 @@ Each section of the repository represents a standalone ML project:
 * Developed a complete, modular portfolio of ML workflows covering predictive and unsupervised methods.
 * Strengthened understanding of data preparation, evaluation metrics, and model trade-offs.
 * Strengthened proficiency in data storytelling and visualisation using modern Python tools.
-This repository establishes a practical foundation for model interpretability and applied machine learning, bridging exploratory data analysis and advanced AI workflows. It complements the Python OOP Mini-Systems, EDA Projects, and Coding Challenges repositories as part of a coherent learning progression.
+* This repository establishes a practical foundation for model interpretability and applied machine learning, bridging exploratory data analysis and advanced AI workflows. It complements the Python OOP Mini-Systems, EDA Projects, and Coding Challenges repositories as part of a coherent learning progression.
 
 ## Links & Resources
 - 💻 **Code repository:** [GitHub – Machine Learning Fundamentals](https://github.com/AlejandroFuentePinero/python-ML-course-projects)
