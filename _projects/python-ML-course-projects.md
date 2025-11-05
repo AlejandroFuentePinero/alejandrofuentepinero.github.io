@@ -41,14 +41,10 @@ Each section of the repository represents a standalone ML project:
 11. Cross-validation
 12. Introduction to Big Data and PySpark workflows
 
-## Results
-- Developed a **complete portfolio of machine learning workflows** covering both predictive and unsupervised methods.  
-- Strengthened understanding of data preparation, evaluation metrics, and model trade-offs.  
-- Created a modular learning resource that can be extended with more advanced algorithms.
-
-## Impact
-Developed a complete, modular portfolio of ML workflows covering predictive and unsupervised methods. Strengthened understanding of data preparation, evaluation metrics, and model trade-offs.
-
+## Results and Impact
+* Developed a complete, modular portfolio of ML workflows covering predictive and unsupervised methods.
+* Strengthened understanding of data preparation, evaluation metrics, and model trade-offs.
+* Strengthened proficiency in data storytelling and visualisation using modern Python tools.
 This repository establishes a practical foundation for model interpretability and applied machine learning, bridging exploratory data analysis and advanced AI workflows. It complements the Python OOP Mini-Systems, EDA Projects, and Coding Challenges repositories as part of a coherent learning progression.
 
 ## Links & Resources
