@@ -1,5 +1,5 @@
 ---
-title: "Python OOP Mini-Systems: From Procedural to Object-Oriented Design"
+title: "Python OOP Systems: From Procedural to Object-Oriented Design"
 excerpt: "Developed a suite of applied Python mini-systems demonstrating the progression from procedural programming to object-oriented design and class interaction across real-world examples."
 tags: [Python, oop, algorithms, cli-applications, software-design, programming-fundamentals]
 date: 2025-09-01
