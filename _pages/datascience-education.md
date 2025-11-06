@@ -36,18 +36,21 @@ classes: wide
 ### Coding in Python
 - [The Complete Python Bootcamp: From Zero to Hero in Python (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
   - Completed a full-spectrum, hands-on course designed to take learners from absolute beginner to proficient Python developer.  
-  - Covered Python 3 fundamentals through to advanced concepts — building a professional-level understanding of syntax, data types, control flow, functions, and Object-Oriented Programming (OOP).  
+  - Covered Python fundamentals through to advanced concepts — building a professional-level understanding of syntax, data types, control flow, functions, and Object-Oriented Programming (OOP).  
   - Developed the ability to write **clean, maintainable, and efficient code** through practical projects, games, and automation scripts.  
-  - Explored Python’s **core libraries** and advanced features (collections, decorators, timestamps), while learning how to create reusable modules and work effectively with Jupyter Notebooks and `.py` files.  
+  - Explored Python’s **core and advanced modules**, applied automation techniques, and built end-to-end mini projects demonstrating professional workflows.  
   - **Core skills acquired:**
-    - Python 3 fundamentals: variables, data types, operators, conditionals, loops, and functions.  
-    - Intermediate and advanced topics: decorators, error handling, collections, timestamps, and iterators.  
-    - Functional and **Object-Oriented Programming**: classes, methods, inheritance, and encapsulation. 
-    - File handling, modules, and package structuring for reusable code.  
-    - Creating and debugging scripts in both **Jupyter Notebooks and standalone `.py` files**.  
-    - Building interactive **games and projects** (e.g., Tic Tac Toe, Blackjack) and leveraging Python libraries.  
-    - Introduction to GUI development and visualisation in Jupyter environments.  
-    - Applying Python to automate personal and professional tasks, bridging learning with real-world application.  
+    - Python fundamentals: variables, data types, operators, conditionals, loops, and functions.  
+    - Intermediate and advanced topics: decorators, debugging, error handling, regular expressions, and iterators.  
+    - Functional and **Object-Oriented Programming**: classes, inheritance, encapsulation, and modular code design.  
+    - Advanced modules and libraries: `collections`, `datetime`, `os`, `math`, `random`, `re`, and file handling.  
+    - Working with **files, images, PDFs, CSVs**, and automating file I/O tasks.  
+    - **Web scraping** with BeautifulSoup and Requests; automating data extraction.  
+    - **Email automation** and task scripting for productivity workflows.  
+    - Building and debugging in both **Jupyter Notebooks and standalone `.py` scripts**.  
+    - Creating interactive **games and small applications** (e.g., Blackjack, Tic Tac Toe).  
+    - Introduction to **GUI development** and interactive elements within Jupyter environments.  
+    - Applying Python to real-world scenarios: automating tasks, managing data, and developing shareable portfolio projects.  
   
 - Python for Data Science and Machine Learning Bootcamp (Udemy)
   - Completed an extensive, project-based program covering **data science, analytics, and machine learning using Python**. Developed practical fluency across the modern Python data ecosystem — from data wrangling and visualisation to supervised, unsupervised, and deep learning.  
