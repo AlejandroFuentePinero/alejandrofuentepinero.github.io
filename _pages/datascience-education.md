@@ -35,16 +35,31 @@ classes: wide
 
 ### Coding in Python
 - [The Complete Python Bootcamp: From Zero to Hero in Python (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
-  - Completed a comprehensive, hands-on program covering Python from fundamentals through to real-world application development. Built proficiency in core Python programming (variables, data types, control flow, functions, OOP) and applied it to create games, applications and automate tasks. Gained experience with modules/libraries, file handling, timestamps/collections, and developing code that moves beyond scripting into maintainable programs.
-  - Core skills acquired:
-    - Python programming (syntax, data types, control structures).
-    - Object-Oriented Programming: classes, methods, inheritance, decorators.
-    - Working with built-in libraries (collections, datetime/timestamps).
-    - File handling, I/O, packaging modules and writing reusable code.
-    - Building portfolio projects (games like Tic Tac Toe/Blackjack, custom applications).
-    - Transitioning from learning to applying: solving tasks via Python in “real-work” or project contexts.
+  - Completed a full-spectrum, hands-on course designed to take learners from absolute beginner to proficient Python developer.  
+  - Covered Python 3 fundamentals through to advanced concepts — building a professional-level understanding of syntax, data types, control flow, functions, and Object-Oriented Programming (OOP).  
+  - Developed the ability to write **clean, maintainable, and efficient code** through practical projects, games, and automation scripts.  
+  - Explored Python’s **core libraries** and advanced features (collections, decorators, timestamps), while learning how to create reusable modules and work effectively with Jupyter Notebooks and `.py` files.  
+  - **Core skills acquired:**
+    - Python 3 fundamentals: variables, data types, operators, conditionals, loops, and functions.  
+    - Intermediate and advanced topics: decorators, error handling, collections, timestamps, and iterators.  
+    - Functional and **Object-Oriented Programming**: classes, methods, inheritance, and encapsulation. 
+    - File handling, modules, and package structuring for reusable code.  
+    - Creating and debugging scripts in both **Jupyter Notebooks and standalone `.py` files**.  
+    - Building interactive **games and projects** (e.g., Tic Tac Toe, Blackjack) and leveraging Python libraries.  
+    - Introduction to GUI development and visualisation in Jupyter environments.  
+    - Applying Python to automate personal and professional tasks, bridging learning with real-world application.  
   
 - Python for Data Science and Machine Learning Bootcamp (Udemy)
-  - Developed solid foundations in Python programming and applied machine learning. Completed hands-on projects using `NumPy`, `Pandas`, `Matplotlib`, `Seaborn`, `Plotly`, and `Scikit-learn` to perform data cleaning, visualisation, feature engineering, and predictive modelling. Built and evaluated regression, classification, and clustering models (Linear/Logistic Regression, KNN, SVM, Decision Trees, Random Forests, K-Means). Strengthened end-to-end data-science workflow skills — from exploratory data analysis and preprocessing to model evaluation and interpretation.
-  - Core skills: Python, NumPy, Pandas, Matplotlib, Seaborn, Plotly, Scikit-learn, Data Wrangling, EDA, Machine Learning, Model Evaluation, Data Visualisation, Feature Engineering.
+  - Completed an extensive, project-based program covering **data science, analytics, and machine learning using Python**. Developed practical fluency across the modern Python data ecosystem — from data wrangling and visualisation to supervised, unsupervised, and deep learning.  
+  - Built end-to-end analytical workflows integrating data preprocessing, feature engineering, model building, and evaluation. Applied advanced concepts such as bias–variance trade-off, dimensionality reduction, and distributed big-data processing.  
+  - **Core skills acquired:**
+    - Data manipulation and numerical computing with **Pandas** and **NumPy**.  
+    - Data visualization and storytelling using **Matplotlib**, **Seaborn**, and **Plotly** (static and interactive visualizations).  
+    - Machine learning with **Scikit-learn** — building and evaluating models for:
+      - **Supervised learning:** Linear Regression, Logistic Regression, KNN, Decision Trees, Random Forests, Support Vector Machines, Neural Networks.  
+      - **Unsupervised learning:** K-Means Clustering, **Principal Component Analysis (PCA)** for dimensionality reduction.  
+    - **Recommender Systems** and **Natural Language Processing (NLP)** (text cleaning, vectorisation, and spam detection).  
+    - Introduction to **Deep Learning** (neural network fundamentals, activation functions, and training workflows).  
+    - **Big Data and Spark with Python** — handling large-scale distributed datasets.  
+    - Model evaluation, cross-validation, bias–variance analysis, and performance optimisation for real-world applications.   
 
