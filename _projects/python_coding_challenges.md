@@ -13,7 +13,6 @@ Each challenge mirrors a realistic problem — from automating tasks to cleaning
 
 ## Approach
 - Designed a **progressive learning framework** with 10–60 min projects.  
-- Challenges cover diverse topics: loops, conditionals, functions, dictionaries, classes, and basic data analysis.  
 - Each project emphasises:
   - Choosing the right data structure for the task.  
   - Writing clear, modular, and reusable code.  
