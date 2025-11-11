@@ -6,7 +6,7 @@ date: 2025-10-30
 ---
 
 ## Problem
-Mastering machine learning requires understanding both theory and practice — how algorithms behave with real data, how to prepare features, and how to evaluate model performance. This project builds a hands-on portfolio of mini-projects that demonstrate end-to-end ML workflows in Python.
+Mastering machine learning requires understanding both theory and practice — how algorithms behave with real data, how to prepare features, and how to evaluate model performance. Here, I showcase a collection of hands-on machine learning projects. Each project demonstrates end-to-end implementation of key algorithms, emphasising data preparation, model training, evaluation, and interpretation.
 
 ## Approach
 - Created a structured repository with subprojects covering:
