@@ -244,6 +244,20 @@ defaults:
       type: projects
     values:
       layout: single
+      author_profile: true
+  # Academic section sidebar
+  - scope:
+      path: "academic"
+    values:
+      sidebar:
+        nav: academic
+
+  # Data Science section sidebar
+  - scope:
+      path: "datascience"
+    values:
+      sidebar:
+        nav: datascience
 
 # Sass/SCSS
 sass:
