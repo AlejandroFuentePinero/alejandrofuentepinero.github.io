@@ -4,42 +4,74 @@ permalink: /datascience/skills/
 layout: single
 ---
 
-### Analytical & Modelling
-- **Statistical modelling:** GLM, GAM, mixed-effects, hierarchical models
-- **Spatial modelling:** species distribution models, spatiotemporal analysis, spatial autocorrelation, spatial forecasting
-- **Machine learning:** supervised & unsupervised models (regression, clustering, Random Forests, Gradient Boosting, MaxEnt); model evaluation, feature scaling, and cross-validation.
-- **Bayesian inference:** hierarchical & spatiotemporal models, detection–abundance separation
-- **Hybrid modelling:** integration of mechanistic and statistical frameworks for process-based forecasting
-- **Forecasting & simulation:** population viability, simulation-based forecasting, scenario testing
-- **Multivariate analysis:** PCA, correlation structure analysis, ordination methods
-- **Model evaluation:** cross-validation (incl. spatial CV), calibration & error metrics (RMSE/MAE, PPCs)
-- **Model interpretation:** feature importance, partial dependence, SHAP, mechanistic interpretation of predictive models
-- **Probability modelling:** hypergeometric, Monte Carlo simulation
+## Core Data Science Competencies
+- Exploratory data analysis (EDA), data cleaning, missing-data strategies, outlier detection  
+- Feature engineering (scaling, encoding, transformations, variable selection)  
+- Model development: supervised & unsupervised ML (classification, regression, clustering)  
+- Model selection: algorithm comparison, hyperparameter tuning, validation strategies, overfitting control  
+- Model evaluation: accuracy, precision/recall, ROC-AUC, F1, confusion matrices, cross-validation  
+- Workflow design: replicable pipelines, version control, environment management  
 
-### Technical Stack
-- **Languages:** R, Python, SQL, JAGS
-- **Python data stack:** pandas, NumPy, scikit-learn; **OOP (composition, inheritance/polymorphism)**; CLI apps (argparse/click); regex; logging & error handling
-- **Data acquisition & I/O:** CSV/Excel/JSON, PDF parsing basics, **HTTP APIs (requests)**, **web scraping (BeautifulSoup/lxml)**
-- **Databases & storage:** SQLite, Microsoft Access; SQL querying (SELECT/JOIN/AGGREGATE, CTEs/window functions – foundational)
-- **Reproducible workflows:** version control (Git/GitHub – branching/PRs), environments (renv, venv/conda), parallel processing
-- **Visualisation:** R (ggplot2/base), Python (matplotlib, Plotly, Seaborn)
-- **Geospatial/remote sensing:** raster/vector processing, spatial joins, satellite-derived metrics (terra/sf or equivalents)
-- **Testing & quality:** unit tests with pytest, assertions, data validation checks
-- **Packaging & docs:** module structure, docstrings/type hints, README/usage examples
-- **Web & apps:** GitHub Pages (this site), Shiny apps (R)
-- **Data preprocessing** (missing-value handling, feature engineering).
-- **Data integration** (joining large relational datasets, APIs + SQL combo).
+---
 
-### Applied Expertise
-- **Pattern detection** in complex, high-dimensional datasets
-- **Forecasting** to predict trends, risks, and opportunities
-- **Tailored statistical analysis** aligned to data & objectives
-- **Decision-support tools:** interactive apps/dashboards for stakeholders
-- **Workflow optimisation:** high-performance/parallel pipelines, memory-efficient geoprocessing
-- **Translation to action:** clear, actionable recommendations for managers & policy
-- **Data-driven frameworks** for strategic decision-making
-- **Model interpretability**
+## Analytical & Modelling
+- **Statistical modelling:** GLM, GAM, mixed-effects, hierarchical Bayesian models  
+- **Spatiotemporal modelling:** species distribution models, spatial autocorrelation, forecasting  
+- **Machine learning:** Linear/Logistic Regression, Random Forests, Gradient Boosting, k-NN, Decision Trees, SVMs, clustering (K-Means); hyperparameter tuning; scikit-learn Pipelines  
+- **Deep learning:** foundational neural networks using TensorFlow/Keras (feedforward models)  
+- **Dimensionality reduction:** PCA (ordination, variance structure, visualisation)  
+- **Bayesian inference:** hierarchical & spatiotemporal models, detection–abundance separation  
+- **Forecasting & simulation:** demographic forecasting, Monte Carlo, scenario modelling  
+- **Model interpretation:** feature importance, partial dependence, SHAP  
+- **Probability modelling:** Monte Carlo simulation, hypergeometric frameworks
+- **Introductory recommender systems:** collaborative filtering and similarity metrics
+- **Introductory NLP:** text cleaning, tokenization, vectorization (CountVectorizer/TF-IDF), Naive Bayes classification
 
-### Communication
-- **Writing:** lead & co-author on peer-reviewed papers; clear technical documentation
-- **Speaking:** conference talks, workshops, stakeholder briefings; tailored to technical & non-technical audiences
+---
+
+## Technical Stack
+
+### Languages & Libraries
+- **Python:** pandas, NumPy, scikit-learn, matplotlib, Seaborn, Plotly; regex; logging; OOP  
+- **R:** tidyverse (dplyr/tidyr), ggplot2, sf/terra (spatial analysis), Shiny  
+- **SQL:** PostgreSQL (SELECT, JOIN, aggregation, subqueries, CTEs, window functions); PgAdmin  
+- **Bayesian modelling:** JAGS; familiarity with rstan-style workflows  
+
+### Data Engineering & I/O
+- CSV/Excel/Text, web scraping (BeautifulSoup/lxml), PDF parsing basics  
+- Data integration: joining complex relational datasets, API + SQL workflows  
+
+### Software Engineering
+- Git/GitHub (branching, PRs), reproducible environments (venv/conda, renv)  
+- Code quality: pytest, assertions, type hints, docstrings  
+- Modular code design and packaging fundamentals  
+
+### Databases & Storage
+- PostgreSQL database setup and querying  
+- Microsoft Access (legacy support)  
+
+### Visualisation & Communication
+- Exploratory and diagnostic plots in Python and R  
+- Model evaluation and interpretability visualisation  
+- Interactive dashboards (Shiny, Plotly)  
+
+### Geospatial & Remote Sensing
+- Raster/vector workflows, spatial joins, canopy/landscape metrics  
+- Spatial modelling and geoprocessing pipelines  
+- Parallelised spatial workflows  
+
+---
+
+## Applied Expertise
+- Pattern detection in high-dimensional datasets  
+- Forecasting for risk assessment and scenario exploration  
+- Decision-support tools for environmental managers and policy audiences  
+- High-performance geoprocessing and workflow optimisation  
+- Translating analytical outputs into actionable insights  
+
+---
+
+## Communication
+- Technical writing: peer-reviewed publications, reports, documentation  
+- Scientific communication: presentations, workshops, stakeholder briefings  
+- Skilled at adjusting explanations for technical and non-technical audiences 
