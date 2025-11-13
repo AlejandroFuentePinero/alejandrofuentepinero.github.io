@@ -55,16 +55,31 @@ classes: wide
       
 ### Machine learning
 - [Python for Data Science and Machine Learning Bootcamp (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
-  - Completed an extensive, project-based program covering **data science, analytics, and machine learning using Python**. Developed practical fluency across the modern Python data ecosystem — from data wrangling and visualisation to supervised, unsupervised, and deep learning.  
-  - Built end-to-end analytical workflows integrating data preprocessing, feature engineering, model building, and evaluation. Applied advanced concepts such as bias–variance trade-off, dimensionality reduction, and distributed big-data processing.  
+  - Completed a comprehensive, project-based introduction to **data science and machine learning in Python**, covering the full modelling workflow from data cleaning to evaluation and interpretation.
+  - Built practical experience across the modern Python data stack (NumPy, pandas, Matplotlib, Seaborn, Plotly) and implemented supervised, unsupervised, and introductory deep-learning models.
   - **Core skills acquired:**
-    - Data manipulation and numerical computing with **Pandas** and **NumPy**.  
-    - Data visualization and storytelling using **Matplotlib**, **Seaborn**, and **Plotly** (static and interactive visualizations).  
-    - Machine learning with **Scikit-learn** — building and evaluating models for:
-      - **Supervised learning:** Linear Regression, Logistic Regression, KNN, Decision Trees, Random Forests, Support Vector Machines, Neural Networks.  
-      - **Unsupervised learning:** K-Means Clustering, **Principal Component Analysis (PCA)** for dimensionality reduction.  
-    - **Recommender Systems** and **Natural Language Processing (NLP)** (text cleaning, vectorisation, and spam detection).  
-    - Introduction to **Deep Learning** (neural network fundamentals, activation functions, and training workflows).  
-    - **Big Data and Spark with Python** — handling large-scale distributed datasets.  
-    - Model evaluation, cross-validation, bias–variance analysis, and performance optimisation for real-world applications.   
+    - Data wrangling and numerical computing with **pandas** and **NumPy**.  
+    - Exploratory and statistical visualisation using **Matplotlib**, **Seaborn**, and **Plotly**.  
+    - Machine learning with **scikit-learn**, including:
+      - **Supervised learning:** Linear/Logistic Regression, k-NN, Decision Trees, Random Forests, Support Vector Machines, feed-forward Neural Networks.  
+      - **Unsupervised learning:** K-Means Clustering, **PCA** (dimensionality reduction).  
+    - Introductory **NLP** (text cleaning, tokenisation, vectorisation with CountVectorizer/TF-IDF) and **Naive Bayes** classification.  
+    - Introductory **Recommender Systems** (similarity metrics and collaborative filtering).  
+    - Foundations of **Deep Learning** (activation functions, simple network training with Keras).  
+    - Model evaluation, cross-validation, train/test workflows, bias–variance analysis, and performance optimisation.  
+    - Exposure to **big-data concepts with Spark**, including handling distributed datasets in Python.
+    - 
+### SQL & Databases
+- The Complete SQL Bootcamp: PostgreSQL & pgAdmin (Udemy)
+  - Hands-on training in **PostgreSQL** for data analysis, reporting, and database querying, using practical exercises and real-world datasets.
+  - Gained full proficiency with SQL fundamentals and intermediate query patterns for analytics workflows.
+  - **Core skills acquired:**
+    - SQL querying with `SELECT`, `WHERE`, `ORDER BY`, logical filtering, and pattern matching.  
+    - Data aggregation with `GROUP BY`, `HAVING`, and window functions.  
+    - Table joins (INNER, LEFT/RIGHT, FULL, CROSS) and multi-table relational operations.  
+    - Subqueries, **CTEs**, temporary tables, and query optimisation basics.  
+    - Database design principles: tables, constraints, data types, and schema structure.  
+    - Practical work using **PostgreSQL + pgAdmin**, including database setup, table creation, and data loading.  
+    - Integrating SQL with **Python** as part of data-science pipelines.
+
 
