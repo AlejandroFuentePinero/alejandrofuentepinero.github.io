@@ -54,7 +54,7 @@ classes: wide
     - Applying Python to real-world scenarios: automating tasks, managing data, and developing shareable portfolio projects.
       
 ### Machine learning
-- Python for Data Science and Machine Learning Bootcamp (Udemy)
+- [Python for Data Science and Machine Learning Bootcamp (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
   - Completed an extensive, project-based program covering **data science, analytics, and machine learning using Python**. Developed practical fluency across the modern Python data ecosystem — from data wrangling and visualisation to supervised, unsupervised, and deep learning.  
   - Built end-to-end analytical workflows integrating data preprocessing, feature engineering, model building, and evaluation. Applied advanced concepts such as bias–variance trade-off, dimensionality reduction, and distributed big-data processing.  
   - **Core skills acquired:**
