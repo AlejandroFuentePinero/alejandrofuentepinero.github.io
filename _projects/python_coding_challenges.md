@@ -7,12 +7,12 @@ date: 2025-10-31
 
 ## Overview
 **Goal:** Build strong, intuitive Python fluency through a series of small, self-contained challenges that combine logical reasoning, data manipulation, and lightweight system design.  
-Each challenge mirrors a realistic problem — from automating tasks to cleaning data or simulating mini-systems — encouraging flexible and creative approaches rather than step-by-step replication.
+Each challenge mirrors a realistic problem, encouraging flexible and creative approaches rather than step-by-step replication.
 
 ---
 
 ## Approach
-- Designed a **progressive learning framework** with 10–60 min projects.  
+- Designed a **progressive learning framework** with 30–60 min projects.  
 - Each project emphasises:
   - Choosing the right data structure for the task.  
   - Writing clear, modular, and reusable code.  
