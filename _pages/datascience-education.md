@@ -21,7 +21,7 @@ classes: wide
   - **Applications:** Undergraduate research project integrating environmental and ecological data.  
 
 ---
-## Additional analytical, statistical, and coding training
+## Statistical, Computational & Coding Training
 
 ### Bayesian and hierarchical modelling
 - [Statistical Rethinking: A Bayesian Course with Examples in R and Stan](https://xcelab.net/rm/)  
@@ -51,8 +51,9 @@ classes: wide
     - Building and debugging in both **Jupyter Notebooks and standalone `.py` scripts**.  
     - Creating interactive **games and small applications** (e.g., Blackjack, Tic Tac Toe).  
     - Introduction to **GUI development** and interactive elements within Jupyter environments.  
-    - Applying Python to real-world scenarios: automating tasks, managing data, and developing shareable portfolio projects.  
-  
+    - Applying Python to real-world scenarios: automating tasks, managing data, and developing shareable portfolio projects.
+      
+### Machine learning
 - Python for Data Science and Machine Learning Bootcamp (Udemy)
   - Completed an extensive, project-based program covering **data science, analytics, and machine learning using Python**. Developed practical fluency across the modern Python data ecosystem — from data wrangling and visualisation to supervised, unsupervised, and deep learning.  
   - Built end-to-end analytical workflows integrating data preprocessing, feature engineering, model building, and evaluation. Applied advanced concepts such as bias–variance trade-off, dimensionality reduction, and distributed big-data processing.  
