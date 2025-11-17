@@ -70,7 +70,7 @@ classes: wide
     - Exposure to **big-data concepts with Spark**, including handling distributed datasets in Python.
 
 ### SQL & Databases
-- The Complete SQL Bootcamp: PostgreSQL & pgAdmin (Udemy)
+- [The Complete SQL Bootcamp: PostgreSQL & pgAdmin (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_basic.pdf)
   - Hands-on training in **PostgreSQL** for data analysis, reporting, and database querying, using practical exercises and real-world datasets.
   - Gained full proficiency with SQL fundamentals and intermediate query patterns for analytics workflows.
   - **Core skills acquired:**
