@@ -83,11 +83,13 @@ classes: wide
 - SQL for Data Analysis: Advanced SQL Querying Techniques (Udemy)  
   - Completed an applied advanced-SQL course focused on professional analytical querying and multi-table relational workflows.  
   - **Core skills acquired:**  
-    - Advanced **JOIN logic**, including multi-table joins, self-joins, and cross joins for complex relational analysis.
-    - **Subqueries** and **Common Table Expressions (CTEs)** to structure multi-step logic and improve readability of analytical pipelines.  
+    - Advanced **JOIN logic**, including multi-table joins, self-joins, cross joins, and unions for complex relational analysis.  
+    - **Subqueries** and **Common Table Expressions (CTEs)** (including recursive CTEs) to structure multi-step logic and improve readability of analytical pipelines.  
     - **Window functions** (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`, `FIRST_VALUE`, `LAST_VALUE`) for ranking, rolling calculations, trend detection, and partition-based summarisation.  
-    - Advanced **string, numeric, and date functions**, including pattern matching, conditional expressions, and robust handling of missing or irregular values.  
-    - Analytical patterns: de-duping logic, conditional aggregation, segmentation, pivot-style summaries, and multi-stage transformations.  
-    - Use of **views** and modular query structures to streamline reusable data-analysis workflows.
+    - Comprehensive **string, numeric, and date functions**, including pattern matching, conditional expressions, and reliable handling of NULLs and irregular values.  
+    - Applied analytical patterns: de-duplication workflows, conditional aggregation, segmentation, pivot-style summaries, and multi-stage data transformations.  
+    - Use of **views** and modular query structures to encapsulate reusable logic and streamline complex analytical workflows.
+
+
 
 
