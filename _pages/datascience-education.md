@@ -35,7 +35,7 @@ classes: wide
 - ‘Statistics in R’ workshop with Dr Murray Logan (biostatistician at the Australian Institute of Marine Science)
 
 ### Coding in Python
-- [The Complete Python Bootcamp: From Zero to Hero in Python (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
+- [The Complete Python Bootcamp: From Zero to Hero in Python](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
   - Completed a full-spectrum, hands-on course designed to take learners from absolute beginner to proficient Python developer.  
   - Covered Python fundamentals through to advanced concepts — building a professional-level understanding of syntax, data types, control flow, functions, and Object-Oriented Programming (OOP).  
   - Developed the ability to write **clean, maintainable, and efficient code** through practical projects, games, and automation scripts.  
@@ -54,7 +54,7 @@ classes: wide
     - Applying Python to real-world scenarios: automating tasks, managing data, and developing shareable portfolio projects.
       
 ### Machine learning
-- [Python for Data Science and Machine Learning Bootcamp (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
+- [Python for Data Science and Machine Learning Bootcamp](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
   - Completed a comprehensive, project-based introduction to **data science and machine learning in Python**, covering the full modelling workflow from data cleaning to evaluation and interpretation.
   - Built practical experience across the modern Python data stack (NumPy, pandas, Matplotlib, Seaborn, Plotly) and implemented supervised, unsupervised, and introductory deep-learning models.
   - **Core skills acquired:**
@@ -70,7 +70,7 @@ classes: wide
     - Exposure to **big-data concepts with Spark**, including handling distributed datasets in Python.
 
 ### SQL & Databases
-- [The Complete SQL Bootcamp: PostgreSQL & pgAdmin (Udemy)](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_basic.pdf)
+- [The Complete SQL Bootcamp: PostgreSQL & pgAdmin](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_basic.pdf)
   - Hands-on training in **PostgreSQL** for data analysis, reporting, and database querying, using practical exercises and real-world datasets.
   - Gained full proficiency with SQL fundamentals and intermediate query patterns for analytics workflows.
   - **Core skills acquired:**
@@ -80,7 +80,7 @@ classes: wide
     - Database design principles: tables, constraints, data types, and schema structure.  
     - Practical work using **PostgreSQL + pgAdmin**, including database setup, table creation, and data loading.  
     - Integrating SQL with **Python** as part of data-science pipelines.
-- SQL for Data Analysis: Advanced SQL Querying Techniques (Udemy)  
+- SQL for Data Analysis: Advanced SQL Querying Techniques  
   - Completed an applied advanced-SQL course focused on professional analytical querying and multi-table relational workflows.  
   - **Core skills acquired:**  
     - Advanced **JOIN logic**, including multi-table joins, self-joins, cross joins, and unions for complex relational analysis.  
