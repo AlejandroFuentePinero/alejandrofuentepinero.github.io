@@ -80,7 +80,7 @@ classes: wide
     - Database design principles: tables, constraints, data types, and schema structure.  
     - Practical work using **PostgreSQL + pgAdmin**, including database setup, table creation, and data loading.  
     - Integrating SQL with **Python** as part of data-science pipelines.
-- SQL for Data Analysis: Advanced SQL Querying Techniques  
+- [SQL for Data Analysis: Advanced SQL Querying Techniques](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_advanced.pdf)
   - Completed an applied advanced-SQL course focused on professional analytical querying and multi-table relational workflows.  
   - **Core skills acquired:**  
     - Advanced **JOIN logic**, including multi-table joins, self-joins, cross joins, and unions for complex relational analysis.  
