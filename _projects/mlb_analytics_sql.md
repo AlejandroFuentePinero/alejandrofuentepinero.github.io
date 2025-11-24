@@ -119,4 +119,4 @@ MLB_Analytics_Project/
 
 ## Links & Resources
 - **GitHub Repository:**  
-  [MLB Analytics SQL Project](https://github.com/AlejandroFuentePinero/MLB-Analytics-Project)
+  [MLB Analytics SQL Project](https://github.com/AlejandroFuentePinero/MLB_Analytics_Project)
