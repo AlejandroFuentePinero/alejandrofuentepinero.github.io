@@ -57,7 +57,6 @@ Conservation and land-use planning require **maps of abundance**, not just where
 ## Links & Resources
 - 📄 **Paper:** [Ecography article](https://doi.org/10.1111/ecog.05776)  
 - 💾 **Data repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.0zpc866wv)  
-- 💻 **Code repository:** [GitHub – density_suitability_tropics](https://github.com/AlejandroFuentePinero/density_suitability_tropics)  
 
 ## Role
 - Led study design and workflow development.  
