@@ -62,7 +62,7 @@ This project spans the full spectrum of practical SQL used in real analytics and
   - Identifying top-spending teams, overperforming low-payroll clubs, long-career players, Hall of Fame vs non-HOF career patterns, and state-level growth in talent pipelines.
 
 - **Python integration**
-  - Executing SQL from Python (via `pandas` / `sqlalchemy`), exporting results, and building visualisations with `matplotlib` and `seaborn` to turn query outputs into interpretable charts.
+  - Exporting results from SQL and building visualisations with `matplotlib` and `seaborn` to turn query outputs into interpretable charts.
 
 ## Stack
 - **Database:** PostgreSQL  
@@ -70,35 +70,6 @@ This project spans the full spectrum of practical SQL used in real analytics and
 - **Libraries:** `pandas`, `matplotlib`, `seaborn` 
 - **Environment:** VS Code, Jupyter Notebook, Git/GitHub  
 - **Concepts:** schema design, window functions, CTEs, NTILE-based bucketing, statistical SQL, views, data normalisation, analytical SQL, data visualisation
-
-## Repository Structure
-The project follows a clean, modular layout:
-
-MLB_Analytics_Project/
-│
-├── data/
-│   ├── core/          # Raw Lahman tables
-│   ├── extra/         # Supplemental reference data
-│   └── output/        # Exported CSVs from SQL queries for visualisation
-│
-├── docs/
-│   ├── business_questions.md
-│   ├── project_overview.md
-│   └── schema_design.md
-│
-├── images/            # Visuals used in documentation & portfolio
-│
-├── notebooks/
-│   └── mlb_visual_analysis.ipynb   # Python-based analysis & plots
-│
-├── sql/
-│   ├── schema.sql
-│   ├── views.sql
-│   ├── analysis_queries.sql
-│   ├── advanced_queries.sql
-│   └── optimised_queries.sql
-│
-└── README.md
 
 ## Results and Impact
 * Produced a complete, production-quality SQL analytics system using real multi-table historical data (1871–2024), following sports-analytics pipelines.  
