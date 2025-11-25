@@ -11,9 +11,21 @@ classes: wide
 
 Below are selected case studies (academic + applied) with a data-science focus.
 
+#<div class="mm-card-grid">
+#{% include base_path %}
+#{% for post in site.projects reversed %}
+#  {% include archive-single.html %}
+#{% endfor %}
+#</div>
+
+
 <div class="mm-card-grid">
 {% include base_path %}
-{% for post in site.projects reversed %}
+
+{% assign projects_sorted = site.projects | sort: "order" %}
+
+{% for post in projects_sorted %}
   {% include archive-single.html %}
 {% endfor %}
+
 </div>
