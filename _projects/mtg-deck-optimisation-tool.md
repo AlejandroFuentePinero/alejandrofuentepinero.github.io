@@ -33,7 +33,6 @@ Players often rely on intuition or static charts, but an interactive, parameteri
 
 ## Links & Resources
 - 🌐 **Live tool:** [MTG Deck Optimisation Tool](https://alejandrofuentepinero.github.io/MTG/)  
-- 💻 **Code repository:** [GitHub – MTG](https://github.com/AlejandroFuentePinero/MTG)
 
 ## Role
 - Developed hypergeometric probability model and optimisation logic.
