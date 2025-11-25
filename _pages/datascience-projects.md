@@ -11,13 +11,15 @@ classes: wide two-column
 
 Below are selected case studies (academic + applied) with a data-science focus.
 
-<div class="mm-card-grid">
 {% include base_path %}
 
-{% assign projects_sorted = site.projects | sort: "order" %}
+{%- assign ordered_projects   = site.projects | where_exp: "p", "p.order"        | sort: "order" -%}
+{%- assign unordered_projects = site.projects | where_exp: "p", "p.order == nil" -%}
 
-{% for post in projects_sorted reversed %}
+{%- for post in ordered_projects -%}
   {% include archive-single.html %}
-{% endfor %}
+{%- endfor -%}
 
-</div>
+{%- for post in unordered_projects -%}
+  {% include archive-single.html %}
+{%- endfor -%}
