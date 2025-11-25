@@ -4,7 +4,7 @@ layout: archive
 permalink: /datascience/projects/
 collection: projects
 entries_layout: grid
-classes: wide two-column
+classes: wide
 #sidebar:
 #  nav: "datascience"
 ---
