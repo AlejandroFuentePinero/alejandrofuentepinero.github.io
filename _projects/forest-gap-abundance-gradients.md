@@ -29,7 +29,7 @@ Forest gaps alter microhabitat structure and resource availability, potentially 
 - Results contributed directly to the publication and interpretation of forest gap ecology in tropical systems.
 
 ## Links & Resources
-- 📄 **Paper:** [Ecologica Montenegrina article](https://www.biotaxa.org/em/article/view/87143)
+- 📄 **Paper:** [Ecologica Montenegrina article](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/siri_et_al_2025_tropical_birds_forest_gap.pdf)
 
 ## Role
 - Designed and implemented the analytical framework.
