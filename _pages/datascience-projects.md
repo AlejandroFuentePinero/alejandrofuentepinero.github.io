@@ -14,7 +14,7 @@ Below are selected case studies (academic + applied) with a data-science focus.
 {% include base_path %}
 
 {%- assign ordered_projects   = site.projects | where_exp: "p", "p.order"        | sort: "order" -%}
-{%- assign unordered_projects = site.projects | where_exp: "p", "p.order == nil" -%}
+{%- assign unordered_projects = site.projects | where_exp: "p", "p.order == nil" | sort: "date" | reverse -%}
 
 {%- for post in ordered_projects -%}
   {% include archive-single.html %}
