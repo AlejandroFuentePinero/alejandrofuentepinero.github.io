@@ -35,8 +35,7 @@ Seasonal shifts in abundance along mountain gradients—known as **altitudinal m
 - Demonstrates how seasonal migration acts as a **systemic process**, reshaping community structure and potentially buffering biodiversity against climate change.
 
 ## Links & Resources
-- 📄 **Manuscript:** *In prep for* *Global Ecology and Biogeography* (Altitudinal migration and community breathing in the Australian Wet Tropics).  
-- 💻 **Code repository:** [GitHub – Altitudinal Migration Workflow](https://github.com/AlejandroFuentePinero/awt_bird_altitudinal_migration)  
+- 📄 **Manuscript:** *Under Review for* *Diversity and Distributions* (Altitudinal migration and community breathing in the Australian Wet Tropics).  
 
 ## Role
 - Designed the **model architecture** and analytical workflow.  
