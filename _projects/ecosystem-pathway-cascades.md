@@ -33,7 +33,7 @@ Ecosystems operate through complex direct and indirect interactions—understand
 
 ## Links & Resources
 - 📄 **Paper:** [Oecologia article](https://link.springer.com/article/10.1007/s00442-024-05630-y)  
-- 💾 **Repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.d51c5b08s)
+- 💾 **Data Repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.d51c5b08s)
 
 ## Role
 - Designed and specified the hierarchical modelling of cascading pathways.
