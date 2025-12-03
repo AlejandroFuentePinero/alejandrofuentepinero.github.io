@@ -24,7 +24,8 @@ classes: wide
 ## Statistical, Computational & Coding Training
 
 ### Bayesian and hierarchical modelling
-- [Statistical Rethinking: A Bayesian Course with Examples in R and Stan](https://xcelab.net/rm/)  
+- [Statistical Rethinking: A Bayesian Course with Examples in R and Stan](https://xcelab.net/rm/)
+- [Statistical Rethinking 2023 - Online Course by Richard McElreath](https://www.youtube.com/watch?v=FdnMWdICdRs&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus)   
 - Bayesian Methods for Ecology by Michael A. McCarthy
 - [Applied Hierarchical Modeling in Ecology](https://www.mbr-pwrc.usgs.gov/pubanalysis/keryroylebook/) 
 - [Integrated Population Models](https://www.sciencedirect.com/book/9780323908108/integrated-population-models)
@@ -89,6 +90,23 @@ classes: wide
     - Comprehensive **string, numeric, and date functions**, including pattern matching, conditional expressions, and reliable handling of NULLs and irregular values.  
     - Applied analytical patterns: de-duplication workflows, conditional aggregation, segmentation, pivot-style summaries, and multi-stage data transformations.  
     - Use of **views** and modular query structures to encapsulate reusable logic and streamline complex analytical workflows.
+      
+### Artificial Intelligence
+- [Agentic AI by Andrew Ng (DeepLearning.AI)](https://learn.deeplearning.ai/courses/agentic-ai/information)  
+  - Completed Andrew Ng’s flagship course introducing the emerging paradigm of **Agentic AI** — AI systems that can plan, act, reflect, and self-improve through autonomous workflows.  
+  - Explored how agentic systems go **beyond traditional LLM prompting**, incorporating tools, memory, iterative reasoning, and multi-step planning to accomplish complex tasks.  
+  - Gained hands-on experience building agents that use **reflection loops, tool calling, search, retrieval, APIs, and multi-agent collaboration** to improve performance and reliability.  
+  - Learned practical design patterns for real-world agentic systems, including **task decomposition**, **reflection-based refinement**, **evaluation loops**, and **autonomous decision-making**.  
+  - Implemented agent workflows in Python using the course’s code labs, building an intuitive understanding of how modern agentic frameworks operate under the hood.  
+  - **Core skills acquired:**  
+    - Understanding of the **Agentic AI framework**: planners, actors, critics, memory, tools, and feedback loops.  
+    - Designing agents that perform **multi-step reasoning**, revise outputs, and autonomously improve via reflection.  
+    - Using **tool calling and API integration** to enable agents to interact with external systems and retrieve real-time information.  
+    - Building **retrieval-augmented** agents using vector databases and structured search.  
+    - Implementing **multi-agent systems**, including coordinator–specialist architectures.  
+    - Applying agent evaluation and debugging techniques: trace inspection, behavioural testing, and performance refinement.  
+    - Awareness of emerging applications of agentic workflows across data science, automation, research, and production AI systems.
+
 
 
 
