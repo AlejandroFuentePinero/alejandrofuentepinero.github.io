@@ -33,7 +33,7 @@ classes: wide
 
 ### Coding in R
 - [R for Data Science](https://r4ds.had.co.nz/)
-- ‘Statistics in R’ workshop with Dr Murray Logan (biostatistician at the Australian Institute of Marine Science)
+- ‘Statistics in R’ workshop with Dr Murray Logan
 
 ### Coding in Python
 - [The Complete Python Bootcamp: From Zero to Hero in Python](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
