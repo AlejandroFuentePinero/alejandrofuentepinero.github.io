@@ -92,7 +92,7 @@ classes: wide
     - Use of **views** and modular query structures to encapsulate reusable logic and streamline complex analytical workflows.
       
 ### Artificial Intelligence / Prompt Engineering  
-- [ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/information)  
+- [ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/accomplishments/855ab3d3-2a59-4f56-b934-e620c7e28551?usp=sharing)  
   - Completed a practical, hands-on introduction to **prompt engineering** for building applications with large language models (LLMs), taught by Isa Fulford (OpenAI) and Andrew Ng.  
   - Learned best practices for writing effective prompts and systematically refining them to improve output quality and reliability.  
   - Gained experience using the **OpenAI API** to build LLM-powered applications, including a custom chatbot developed directly in the course labs.  
