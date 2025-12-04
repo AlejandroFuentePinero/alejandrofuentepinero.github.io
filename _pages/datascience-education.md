@@ -91,10 +91,26 @@ classes: wide
     - Applied analytical patterns: de-duplication workflows, conditional aggregation, segmentation, pivot-style summaries, and multi-stage data transformations.  
     - Use of **views** and modular query structures to encapsulate reusable logic and streamline complex analytical workflows.
       
-### Artificial Intelligence
-- [Agentic AI by Andrew Ng (DeepLearning.AI)](https://learn.deeplearning.ai/courses/agentic-ai/information)  
+### Artificial Intelligence / Prompt Engineering  
+- [ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/courses/chatgpt-prompt-eng/information)  
+  - Completed a practical, hands-on introduction to **prompt engineering** for building applications with large language models (LLMs), taught by Isa Fulford (OpenAI) and Andrew Ng.  
+  - Learned best practices for writing effective prompts and systematically refining them to improve output quality and reliability.  
+  - Gained experience using the **OpenAI API** to build LLM-powered applications, including a custom chatbot developed directly in the course labs.  
+  - Practised applying prompt engineering techniques across key real-world tasks:
+    - **Summarising** content (e.g., condensing user reviews or long-form text).  
+    - **Inferring** information such as sentiment, categories, or topics.  
+    - **Transforming** text (translation, grammar correction, tone/style changes).  
+    - **Expanding** text (drafting emails, generating ideas, elaborating short inputs).  
+  - Developed a strong understanding of how LLMs work conceptually and how to leverage them to prototype and deploy new capabilities.  
+  - **Core skills acquired:**  
+    - Writing clear, structured, and instruction-oriented prompts.  
+    - Iterative prompt refinement for accuracy, robustness, and task alignment.  
+    - Designing prompts for summarisation, classification, text transformation, and generative expansion.  
+    - Using LLM APIs in practical development workflows.  
+    - Building basic LLM-driven applications, including custom chatbots, with reproducible prompting strategies.
+- [Agentic AI by Andrew Ng](https://learn.deeplearning.ai/courses/agentic-ai/information)  
   - Completed Andrew Ng’s flagship course introducing the emerging paradigm of **Agentic AI** — AI systems that can plan, act, reflect, and self-improve through autonomous workflows.  
-  - Explored how agentic systems go **beyond traditional LLM prompting**, incorporating tools, memory, iterative reasoning, and multi-step planning to accomplish complex tasks.  
+  - Explored how agentic systems go **beyond traditional LLM prompting**, incorporating tools, memory, iterative reasoning, and multi-step planning to accomplish complex tasks. 
   - Gained hands-on experience building agents that use **reflection loops, tool calling, search, retrieval, APIs, and multi-agent collaboration** to improve performance and reliability.  
   - Learned practical design patterns for real-world agentic systems, including **task decomposition**, **reflection-based refinement**, **evaluation loops**, and **autonomous decision-making**.  
   - Implemented agent workflows in Python using the course’s code labs, building an intuitive understanding of how modern agentic frameworks operate under the hood.  
