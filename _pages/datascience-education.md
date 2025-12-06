@@ -120,7 +120,7 @@ classes: wide
     - Applying evaluation and debugging techniques such as trace inspection, behavioural tests, and performance refinement.  
     - Awareness of real-world applications of agentic workflows in data science, automation, research, and production AI systems.
 
-- [AI Agents in LangGraph](https://learn.deeplearning.ai/courses/ai-agents-in-langgraph/information)
+- [AI Agents in LangGraph](https://learn.deeplearning.ai/accomplishments/d88b3679-f219-4914-913e-9c0b7ea6ab77?usp=sharing)
   - Completed a practical introduction to building **stateful, production-ready AI agents** using the LangGraph framework.  
   - Learned how to structure agent workflows as **deterministic graphs** with clear control flow, tool calling, memory management, and error handling.  
   - Developed agents capable of **planning, reflecting, and iterating** through multi-step tasks, with transparent behavioural tracing and debugging.  
