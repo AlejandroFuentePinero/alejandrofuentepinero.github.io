@@ -106,6 +106,11 @@ Skills
 * Coding
   * R
   * WinBUGS
+  * Python
+  * SQL
+* AI
+  * Prompt engineering
+  * Agentic AI 
 * Languages
   * Spaninsh - First language
   * English - IELTS 7.0
