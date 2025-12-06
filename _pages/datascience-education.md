@@ -35,7 +35,7 @@ classes: wide
 - [R for Data Science](https://r4ds.had.co.nz/)
 - ‘Statistics in R’ workshop with Dr Murray Logan
 
-### Coding in Python
+### Coding in Python & Machine learning
 - [The Complete Python Bootcamp: From Zero to Hero in Python](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
   - Completed a full-spectrum, hands-on course designed to take learners from absolute beginner to proficient Python developer.  
   - Covered Python fundamentals through to advanced concepts — building a professional-level understanding of syntax, data types, control flow, functions, and Object-Oriented Programming (OOP).  
@@ -53,8 +53,7 @@ classes: wide
     - Creating interactive **games and small applications** (e.g., Blackjack, Tic Tac Toe).  
     - Introduction to **GUI development** and interactive elements within Jupyter environments.  
     - Applying Python to real-world scenarios: automating tasks, managing data, and developing shareable portfolio projects.
-      
-### Machine learning
+
 - [Python for Data Science and Machine Learning Bootcamp](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
   - Completed a comprehensive, project-based introduction to **data science and machine learning in Python**, covering the full modelling workflow from data cleaning to evaluation and interpretation.
   - Built practical experience across the modern Python data stack (NumPy, pandas, Matplotlib, Seaborn, Plotly) and implemented supervised, unsupervised, and introductory deep-learning models.
