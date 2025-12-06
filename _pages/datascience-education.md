@@ -37,22 +37,23 @@ classes: wide
 
 ### Coding in Python & Machine learning
 - [The Complete Python Bootcamp: From Zero to Hero in Python](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
-  - Completed a full-spectrum, hands-on course designed to take learners from absolute beginner to proficient Python developer.  
-  - Covered Python fundamentals through to advanced concepts — building a professional-level understanding of syntax, data types, control flow, functions, and Object-Oriented Programming (OOP).  
-  - Developed the ability to write **clean, maintainable, and efficient code** through practical projects, games, and automation scripts.  
-  - Explored Python’s **core and advanced modules**, applied automation techniques, and built end-to-end mini projects demonstrating professional workflows.  
-  - **Core skills acquired:**
-    - Python fundamentals: variables, data types, operators, conditionals, loops, and functions.  
-    - Intermediate and advanced topics: decorators, debugging, error handling, regular expressions, and iterators.  
-    - Functional and **Object-Oriented Programming**: classes, inheritance, encapsulation, and modular code design.  
-    - Advanced modules and libraries: `collections`, `datetime`, `os`, `math`, `random`, `re`, and file handling.  
-    - Working with **files, images, PDFs, CSVs**, and automating file I/O tasks.  
-    - **Web scraping** with BeautifulSoup and Requests; automating data extraction.  
-    - **Email automation** and task scripting for productivity workflows.  
-    - Building and debugging in both **Jupyter Notebooks and standalone `.py` scripts**.  
-    - Creating interactive **games and small applications** (e.g., Blackjack, Tic Tac Toe).  
-    - Introduction to **GUI development** and interactive elements within Jupyter environments.  
-    - Applying Python to real-world scenarios: automating tasks, managing data, and developing shareable portfolio projects.
+  - Completed a comprehensive, hands-on course covering the full Python stack from beginner fundamentals to advanced programming concepts.  
+  - Built a strong professional foundation in **syntax, data structures, control flow, functions, and Object-Oriented Programming (OOP)** through practical exercises and projects.  
+  - Developed the ability to write **clean, efficient, and maintainable code**, applying Python across automation, scripting, data handling, and application development.  
+  - Explored Python’s standard library, automation patterns, file processing, and interactive workflows through end-to-end mini-projects.
+  - **Core skills acquired:**  
+    - Python essentials: variables, data types, operators, loops, conditionals, and functions.  
+    - Intermediate and advanced concepts: decorators, debugging, error handling, regex, and iterators.  
+    - Functional and **Object-Oriented Programming** (classes, inheritance, encapsulation).  
+    - Working with key modules: `collections`, `datetime`, `os`, `math`, `random`, `re`, and file I/O.  
+    - Handling **files, images, PDFs, CSVs**, and automating repetitive workflows.  
+    - **Web scraping** with BeautifulSoup and Requests.  
+    - **Email automation** and productivity scripting.  
+    - Building and debugging in both **Jupyter notebooks and standalone `.py` files**.  
+    - Creating interactive mini-projects and games (e.g., Blackjack, Tic-Tac-Toe).  
+    - Introductory **GUI development** and interactive notebook elements.  
+    - Applying Python to real-world scenarios, from automation to small production-ready projects.
+
 
 - [Python for Data Science and Machine Learning Bootcamp](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
   - Completed a comprehensive, project-based introduction to **data science and machine learning in Python**, covering the full modelling workflow from data cleaning to evaluation and interpretation.
@@ -92,35 +93,45 @@ classes: wide
       
 ### Artificial Intelligence / Prompt Engineering  
 - [ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/accomplishments/855ab3d3-2a59-4f56-b934-e620c7e28551?usp=sharing)  
-  - Completed a practical, hands-on introduction to **prompt engineering** for building applications with large language models (LLMs), taught by Isa Fulford (OpenAI) and Andrew Ng.  
-  - Learned best practices for writing effective prompts and systematically refining them to improve output quality and reliability.  
-  - Gained experience using the **OpenAI API** to build LLM-powered applications, including a custom chatbot developed directly in the course labs.  
-  - Practised applying prompt engineering techniques across key real-world tasks:
-    - **Summarising** content (e.g., condensing user reviews or long-form text).  
-    - **Inferring** information such as sentiment, categories, or topics.  
-    - **Transforming** text (translation, grammar correction, tone/style changes).  
-    - **Expanding** text (drafting emails, generating ideas, elaborating short inputs).  
-  - Developed a strong understanding of how LLMs work conceptually and how to leverage them to prototype and deploy new capabilities.  
+  - Completed a hands-on introduction to **prompt engineering** for building LLM-powered applications, taught by Isa Fulford (OpenAI) and Andrew Ng.  
+  - Learned best practices for writing clear, reliable prompts and systematically refining them to improve output quality.  
+  - Gained practical experience using the **OpenAI API**, including developing a custom chatbot in the course labs.  
+  - Practised prompt engineering across core application areas such as **summarisation, inference, text transformation, and generative expansion**, developing intuition for how LLMs interpret and follow instructions.  
+  - Built a conceptual understanding of LLM behaviour and how prompting can be used to prototype and deploy new capabilities.
   - **Core skills acquired:**  
-    - Writing clear, structured, and instruction-oriented prompts.  
-    - Iterative prompt refinement for accuracy, robustness, and task alignment.  
-    - Designing prompts for summarisation, classification, text transformation, and generative expansion.  
+    - Writing concise, structured, instruction-focused prompts.  
+    - Iterative refinement techniques for accuracy, robustness, and alignment.  
+    - Designing prompts for summarisation, classification, transformation, and generation tasks.  
     - Using LLM APIs in practical development workflows.  
-    - Building basic LLM-driven applications, including custom chatbots, with reproducible prompting strategies.
+    - Building basic LLM-driven applications with reproducible prompting strategies.
+
 - [Agentic AI by Andrew Ng](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/agentic_AI.png)  
-  - Completed Andrew Ng’s flagship course introducing the emerging paradigm of **Agentic AI** — AI systems that can plan, act, reflect, and self-improve through autonomous workflows.  
-  - Explored how agentic systems go **beyond traditional LLM prompting**, incorporating tools, memory, iterative reasoning, and multi-step planning to accomplish complex tasks. 
-  - Gained hands-on experience building agents that use **reflection loops, tool calling, search, retrieval, APIs, and multi-agent collaboration** to improve performance and reliability.  
-  - Learned practical design patterns for real-world agentic systems, including **task decomposition**, **reflection-based refinement**, **evaluation loops**, and **autonomous decision-making**.  
-  - Implemented agent workflows in Python using the course’s code labs, building an intuitive understanding of how modern agentic frameworks operate under the hood.  
+  - Completed Andrew Ng’s flagship introduction to **Agentic AI** — systems that can plan, act, reflect, and self-improve through autonomous workflows.  
+  - Learned how agentic systems extend traditional prompting by integrating **tools, memory, iterative reasoning, and multi-step planning** for complex tasks.  
+  - Built agents using **reflection loops, tool calling, retrieval, search, APIs, and multi-agent collaboration**, with hands-on code labs reinforcing each pattern.  
+  - Studied key design patterns for real-world agents, including **task decomposition**, reflection-driven refinement, evaluation loops, and autonomous decision-making.  
+  - Implemented agent workflows in Python, gaining practical intuition for how modern agent frameworks function under the hood.
   - **Core skills acquired:**  
-    - Understanding of the **Agentic AI framework**: planners, actors, critics, memory, tools, and feedback loops.  
-    - Designing agents that perform **multi-step reasoning**, revise outputs, and autonomously improve via reflection.  
-    - Using **tool calling and API integration** to enable agents to interact with external systems and retrieve real-time information.  
-    - Building **retrieval-augmented** agents using vector databases and structured search.  
-    - Implementing **multi-agent systems**, including coordinator–specialist architectures.  
-    - Applying agent evaluation and debugging techniques: trace inspection, behavioural testing, and performance refinement.  
-    - Awareness of emerging applications of agentic workflows across data science, automation, research, and production AI systems.
+    - Understanding the **Agentic AI architecture**: planners, actors, critics, tools, memory, and feedback loops.  
+    - Designing agents for **multi-step reasoning**, iterative improvement, and self-correction.  
+    - Integrating **tool calling and API actions** to interact with external systems and retrieve live information.  
+    - Building **retrieval-augmented agents** using vector databases and structured search.  
+    - Constructing **multi-agent systems**, including coordinator–specialist patterns.  
+    - Applying evaluation and debugging techniques such as trace inspection, behavioural tests, and performance refinement.  
+    - Awareness of real-world applications of agentic workflows in data science, automation, research, and production AI systems.
+
+- **[AI Agents in LangGraph](https://learn.deeplearning.ai/courses/ai-agents-in-langgraph/information)**  
+  - Completed a practical introduction to building **stateful, production-ready AI agents** using the LangGraph framework.  
+  - Learned how to structure agent workflows as **deterministic graphs** with clear control flow, tool calling, memory management, and error handling.  
+  - Developed agents capable of **planning, reflecting, and iterating** through multi-step tasks, with transparent behavioural tracing and debugging.  
+  - Built complete agent pipelines in Python, gaining intuition for how LangGraph orchestrates LLMs, tools, and state updates.  
+  - **Core skills acquired:**  
+    - Designing agent workflows using LangGraph’s **nodes, edges, and state objects**.  
+    - Integrating **tool calling, APIs, and memory** into multi-step agent systems.  
+    - Implementing **reflection loops**, retries, and human-in-the-loop stages.  
+    - Debugging and evaluating agents through **event tracing and structured testing**.  
+    - Understanding how graph-based architectures support **reliable, scalable agentic applications**.
+
 
 
 
