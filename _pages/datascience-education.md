@@ -69,6 +69,23 @@ classes: wide
     - Foundations of **Deep Learning** (activation functions, simple network training with Keras).  
     - Model evaluation, cross-validation, train/test workflows, bias–variance analysis, and performance optimisation.  
     - Exposure to **big-data concepts with Spark**, including handling distributed datasets in Python.
+   
+- **Machine Learning Specialization**, DeepLearning.AI (Andrew Ng)  
+  - Completed a foundational specialisation on **machine learning fundamentals and applied techniques** designed for practitioners entering AI and data science. The curriculum emphasises both conceptual understanding and implementation using Python and core libraries.
+  - Developed proficiency in **supervised learning, advanced algorithms, unsupervised learning, recommender systems, and introductory reinforcement learning**. Tools and environment include **Python, NumPy, scikit-learn, and TensorFlow concepts**.
+
+  **Module 1 — Supervised Machine Learning: Regression and Classification**  
+  - Built and trained supervised models for prediction and classification tasks, including **linear regression, logistic regression, feature scaling, model evaluation, and optimisation concepts**.
+  - *Certificate:* *(to be attached)*
+
+  **Module 2 — Advanced Learning Algorithms**  
+  - Explored deeper models and learning techniques such as **neural networks, decision trees, ensemble logic, and optimisation strategies**, with practical guidance on algorithm application.
+  - *Certificate:* *(to be attached)*
+
+  **Module 3 — Unsupervised Learning, Recommenders, and Reinforcement Learning**  
+  - Covered **clustering (e.g., K-means), anomaly detection, recommender systems (collaborative and content-based), and introductory reinforcement learning concepts**. 
+  - *Certificate:* *(to be attached)*
+
 
 ### SQL & Databases
 - [The Complete SQL Bootcamp: PostgreSQL & pgAdmin](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_basic.pdf)
