@@ -74,9 +74,8 @@ classes: wide
   - Completed a foundational specialisation on **machine learning fundamentals and applied techniques** designed for practitioners entering AI and data science. The curriculum emphasises both conceptual understanding and implementation using Python and core libraries.
   - Developed proficiency in **supervised learning, advanced algorithms, unsupervised learning, recommender systems, and introductory reinforcement learning**. Tools and environment include **Python, NumPy, scikit-learn, and TensorFlow concepts**.
 
-  **Module 1 — Supervised Machine Learning: Regression and Classification**  
+  [**Module 1 — Supervised Machine Learning: Regression and Classification**](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/supervised_ml.png)
   - Built and trained supervised models for prediction and classification tasks, including **linear regression, logistic regression, feature scaling, model evaluation, and optimisation concepts**.
-  - [*Certificate*](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/supervised_ml.png)
 
   **Module 2 — Advanced Learning Algorithms**  
   - Explored deeper models and learning techniques such as **neural networks, decision trees, ensemble logic, and optimisation strategies**, with practical guidance on algorithm application.
