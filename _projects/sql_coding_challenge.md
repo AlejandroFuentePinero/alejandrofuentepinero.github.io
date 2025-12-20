@@ -42,6 +42,13 @@ Add new challenges as you complete them. Keep notes short and pattern-focused.
 | 5 | 20/12/2025 | DataLemur | Uber | User's Third Transaction | Medium | `window_row_number`, `CTE` | Row-number per user ordered by date, filter rn = 3 |
 | 6 | 20/12/2025 | DataLemur | FAANG | Second Highest Salary | Medium | `dense_rank`, `dedup_ties` | Distinct salaries + dense_rank to handle duplicates |
 | 7 | 20/12/2025 | DataLemur | Snapchat | Sending vs. Opening Snaps | Medium | `pivot_case_when`, `percent_calc`, `CTE` | Conditional aggregation pivot + percent of total time |
+| 8 | 20/12/2025 | DataLemur | NY Times | Laptop vs. Mobile Viewership | Easy | `conditional_aggregation`, `CASE` | Conditional SUM by device bucket |
+
+
+
+
+
+
 
 ---
 
