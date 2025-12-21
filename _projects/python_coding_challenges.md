@@ -3,7 +3,7 @@ title: "Python Coding Challenges"
 excerpt: "Created a growing collection of short, narrative-style coding projects designed to strengthen Python reasoning, design thinking, and problem-solving fluency through realistic mini-scenarios."
 tags: [Python, problem-solving, algorithms, data-structures, programming-fundamentals, OOP, functions, design-thinking]
 date: 2025-10-31
-order: 4
+order: 5
 ---
 
 ## Overview
