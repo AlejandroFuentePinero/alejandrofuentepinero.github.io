@@ -3,7 +3,7 @@ title: "Exploratory Data Analysis (EDA) Projects in Python"
 excerpt: "Developed an applied EDA framework combining real-world case studies — emergency call records and financial time series — to demonstrate data wrangling, feature extraction, and visualisation workflows using pandas, seaborn, and plotly."
 tags: [Python, eda, data-wrangling, pandas, visualisation, time-series, feature-engineering, seaborn, plotly]
 date: 2025-10-02
-order: 3
+order: 4
 ---
 
 ## Problem
