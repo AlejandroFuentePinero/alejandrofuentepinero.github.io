@@ -3,7 +3,7 @@ title: "MLB Analytics with SQL"
 excerpt: "End-to-end SQL analytics project using the Lahman Baseball Database. Designed a complete relational workflow with schema creation, reusable views, advanced CTEs, window functions, and business-focused analyses on talent pipelines, salary dynamics, and player careers."
 tags: [SQL, PostgreSQL, data-engineering, analytics, baseball, lahman-database, window-functions, CTEs, views, data-modelling]
 date: 2025-11-24
-order: 1
+order: 2
 ---
 
 ## Problem
