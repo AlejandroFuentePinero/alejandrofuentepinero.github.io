@@ -43,8 +43,8 @@ Add new challenges as you complete them. Keep notes short and pattern-focused.
 | 6 | 20/12/2025 | DataLemur | FAANG | Second Highest Salary | Medium | `dense_rank`, `dedup_ties` | Distinct salaries + dense_rank to handle duplicates |
 | 7 | 20/12/2025 | DataLemur | Snapchat | Sending vs. Opening Snaps | Medium | `pivot_case_when`, `percent_calc`, `CTE` | Conditional aggregation pivot + percent of total time |
 | 8 | 20/12/2025 | DataLemur | NY Times | Laptop vs. Mobile Viewership | Easy | `conditional_aggregation`, `CASE` | Conditional SUM by device bucket |
-
-
+| 9 | 22/12/2025 | DataLemur | Twitter | 3-Day Rolling Average Tweets | Medium | `window_avg`, `partition_by`, `order_by`, `window_frame` | Rolling average per user using window `AVG() OVER (...)`; ensure correct frame (often `ROWS BETWEEN 2 PRECEDING AND CURRENT ROW` after daily aggregation) |
+| 10 | 22/12/2025 | DataLemur | Google | Odd and Even Measurements | Medium | `row_number`, `window_function`, `partition_by`, `FILTER`, `modulo` | Assign row_number within each day by time; sum values where rn%2=1 (odd) vs rn%2=0 (even) using FILTER |
 
 
 
