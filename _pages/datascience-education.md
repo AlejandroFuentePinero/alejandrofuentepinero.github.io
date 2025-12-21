@@ -1,5 +1,5 @@
 ---
-title: "Education"
+title: "Education & Training"
 permalink: /datascience/education/
 layout: single
 classes: wide
