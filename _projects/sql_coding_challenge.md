@@ -54,8 +54,6 @@ Add new challenges as you complete them. Keep notes short and pattern-focused.
 
 
 
-
-
 ---
 
 ## Stack
