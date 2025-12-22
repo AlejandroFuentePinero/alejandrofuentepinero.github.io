@@ -48,6 +48,9 @@ Add new challenges as you complete them. Keep notes short and pattern-focused.
 | 11 | 22/12/2025 | DataLemur | Zomato | Swapped Food Delivery | Medium | `row_number`, `CASE`, `odd_even_swap` | Swap adjacent rows; keep last row if unpaired |
 | 12 | 22/12/2025 | DataLemur | Amazon | Highest-Grossing Items | Medium | `group_by`, `SUM`, `rank`, `partition_by` | Sum spend per product; rank within category; top 2 |
 | 13 | 22/12/2025 | DataLemur | Facebook | Average Post Hiatus (Part 1) | Easy | `MIN_MAX`, `date_diff`, `HAVING` | Filter users with 2+ posts; max(date)-min(date) |
+| 14 | 23/12/2025 | DataLemur | FAANG | Top Three Salaries | Medium | `dense_rank`, `partition_by`, `order_by` | Dense-rank salaries per dept; filter rank <= 3 |
+| 15 | 23/12/2025 | DataLemur | TikTok | Signup Activation Rate | Medium | `left_join`, `conditional_count`, `ratio_round` | Confirmed / total emails via LEFT JOIN; round 2dp |
+
 
 
 
