@@ -50,6 +50,8 @@ Add new challenges as you complete them. Keep notes short and pattern-focused.
 | 13 | 22/12/2025 | DataLemur | Facebook | Average Post Hiatus (Part 1) | Easy | `MIN_MAX`, `date_diff`, `HAVING` | Filter users with 2+ posts; max(date)-min(date) |
 | 14 | 23/12/2025 | DataLemur | FAANG | Top Three Salaries | Medium | `dense_rank`, `partition_by`, `order_by` | Dense-rank salaries per dept; filter rank <= 3 |
 | 15 | 23/12/2025 | DataLemur | TikTok | Signup Activation Rate | Medium | `left_join`, `conditional_count`, `ratio_round` | Confirmed / total emails via LEFT JOIN; round 2dp |
+| 16 | 23/12/2025 | DataLemur | Spotify | Spotify Streaming History | Medium | `UNION_ALL`, `group_by`, `SUM`, `date_filter` | Union weekly+history; sum plays per user/song |
+| 17 | 23/12/2025 | DataLemur | Microsoft | Teams Power Users | Easy | `group_by`, `COUNT`, `date_filter`, `LIMIT` | Count msgs in date range; order desc; limit 2 |
 
 
 
