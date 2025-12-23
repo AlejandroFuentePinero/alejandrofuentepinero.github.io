@@ -31,7 +31,7 @@ Each entry captures the problem type and the key SQL pattern(s) used, building a
 ---
 
 ## Challenge Log
-Add new challenges as you complete them. Keep notes short and pattern-focused.
+Adding new challenges as I am completing them. Keep notes short and pattern-focused.
 
 | # | Date | Platform | Source | Challenge | Difficulty | Core Pattern(s) | Notes |
 |---:|:-----|:---------|:-------|:----------|:----------:|:----------------|:------|
