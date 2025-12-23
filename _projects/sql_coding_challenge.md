@@ -54,6 +54,8 @@ Add new challenges as you complete them. Keep notes short and pattern-focused.
 | 17 | 23/12/2025 | DataLemur | Microsoft | Teams Power Users | Easy | `group_by`, `COUNT`, `date_filter`, `LIMIT` | Count msgs in date range; order desc; limit 2 |
 | 18 | 23/12/2025 | DataLemur | LinkedIn | Duplicate Job Listings | Easy | `group_by`, `having`, `COUNT`, `CTE` | Group by company; filter duplicates; count companies |
 | 19 | 23/12/2025 | DataLemur | Microsoft | Supercloud Customer | Medium | `join`, `COUNT_DISTINCT`, `group_by`, `compare_to_total` | Count distinct categories/customer; keep those = total categories |
+| 20 | 24/12/2025 | LeetCode | - | 175. Combine Two Tables | Easy | `left_join`, `select_cols` | LEFT JOIN person→address to keep all persons |
+| 21 | 24/12/2025 | LeetCode | - | 176. Second Highest Salary | Medium | `distinct`, `rank`, `NULL_if_missing` | Distinct salaries; pick 2nd (else NULL) |
 
 
 
