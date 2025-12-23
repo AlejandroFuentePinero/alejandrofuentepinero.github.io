@@ -52,6 +52,14 @@ Add new challenges as you complete them. Keep notes short and pattern-focused.
 | 15 | 23/12/2025 | DataLemur | TikTok | Signup Activation Rate | Medium | `left_join`, `conditional_count`, `ratio_round` | Confirmed / total emails via LEFT JOIN; round 2dp |
 | 16 | 23/12/2025 | DataLemur | Spotify | Spotify Streaming History | Medium | `UNION_ALL`, `group_by`, `SUM`, `date_filter` | Union weekly+history; sum plays per user/song |
 | 17 | 23/12/2025 | DataLemur | Microsoft | Teams Power Users | Easy | `group_by`, `COUNT`, `date_filter`, `LIMIT` | Count msgs in date range; order desc; limit 2 |
+| 18 | 23/12/2025 | DataLemur | LinkedIn | Duplicate Job Listings | Easy | `group_by`, `having`, `COUNT`, `CTE` | Group by company; filter duplicates; count companies |
+| 19 | 23/12/2025 | DataLemur | Microsoft | Supercloud Customer | Medium | `join`, `COUNT_DISTINCT`, `group_by`, `compare_to_total` | Count distinct categories/customer; keep those = total categories |
+
+
+
+
+
+
 
 
 
