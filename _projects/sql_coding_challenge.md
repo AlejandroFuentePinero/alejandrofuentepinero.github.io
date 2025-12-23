@@ -67,7 +67,7 @@ Add new challenges as you complete them. Keep notes short and pattern-focused.
 
 ## Stack
 - **Language:** SQL (PostgreSQL-style)
-- **Environment:** DataLemur (browser) + local notes
+- **Environment:** DataLemur + LeetCode + local notes
 
 ---
 
