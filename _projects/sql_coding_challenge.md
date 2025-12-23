@@ -54,10 +54,10 @@ Add new challenges as you complete them. Keep notes short and pattern-focused.
 | 17 | 23/12/2025 | DataLemur | Microsoft | Teams Power Users | Easy | `group_by`, `COUNT`, `date_filter`, `LIMIT` | Count msgs in date range; order desc; limit 2 |
 | 18 | 23/12/2025 | DataLemur | LinkedIn | Duplicate Job Listings | Easy | `group_by`, `having`, `COUNT`, `CTE` | Group by company; filter duplicates; count companies |
 | 19 | 23/12/2025 | DataLemur | Microsoft | Supercloud Customer | Medium | `join`, `COUNT_DISTINCT`, `group_by`, `compare_to_total` | Count distinct categories/customer; keep those = total categories |
-| 20 | 24/12/2025 | LeetCode | - | 175. Combine Two Tables | Easy | `left_join`, `select_cols` | LEFT JOIN person→address to keep all persons |
-| 21 | 24/12/2025 | LeetCode | - | 176. Second Highest Salary | Medium | `distinct`, `rank`, `NULL_if_missing` | Distinct salaries; pick 2nd (else NULL) |
-| 22 | 24/12/2025 | LeetCode | - | 177. Nth Highest Salary | Medium | `distinct`, `dense_rank`, `parameter_fn`, `NULL_if_missing` | Dense-rank distinct salaries; return rank = N else NULL |
-| 23 | 24/12/2025 | LeetCode | - | 178. Rank Scores | Medium | `dense_rank`, `order_by` | Dense-rank scores (no gaps); order by score desc |
+| 20 | 24/12/2025 | LeetCode | LeetCode | 175. Combine Two Tables | Easy | `left_join`, `select_cols` | LEFT JOIN person→address to keep all persons |
+| 21 | 24/12/2025 | LeetCode | LeetCode | 176. Second Highest Salary | Medium | `distinct`, `rank`, `NULL_if_missing` | Distinct salaries; pick 2nd (else NULL) |
+| 22 | 24/12/2025 | LeetCode | LeetCode | 177. Nth Highest Salary | Medium | `distinct`, `dense_rank`, `parameter_fn`, `NULL_if_missing` | Dense-rank distinct salaries; return rank = N else NULL |
+| 23 | 24/12/2025 | LeetCode | LeetCode | 178. Rank Scores | Medium | `dense_rank`, `order_by` | Dense-rank scores (no gaps); order by score desc |
 | 24 | 24/12/2025 | DataLemur | Bloomberg | FAANG Stock Min-Max (Part 1) | Medium | `group_by`, `MIN_MAX`, `join_back`, `format_month` | Find min/max open per ticker; join back to get month |
 
 
