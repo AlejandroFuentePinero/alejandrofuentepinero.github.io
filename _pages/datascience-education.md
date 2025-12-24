@@ -36,7 +36,7 @@ classes: wide
 - ‘Statistics in R’ workshop with Dr Murray Logan
 
 ### Coding in Python & Machine learning
-- [The Complete Python Bootcamp: From Zero to Hero in Python](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
+- [The Complete Python Bootcamp: From Zero to Hero in Python  _(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
   - Completed a comprehensive, hands-on course covering the full Python stack from beginner fundamentals to advanced programming concepts.  
   - Built a strong professional foundation in **syntax, data structures, control flow, functions, and Object-Oriented Programming (OOP)** through practical exercises and projects.  
   - Developed the ability to write **clean, efficient, and maintainable code**, applying Python across automation, scripting, data handling, and application development.  
@@ -55,7 +55,7 @@ classes: wide
     - Applying Python to real-world scenarios, from automation to small production-ready projects.
 
 
-- [Python for Data Science and Machine Learning Bootcamp](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
+- [Python for Data Science and Machine Learning Bootcamp  _(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
   - Completed a comprehensive, project-based introduction to **data science and machine learning in Python**, covering the full modelling workflow from data cleaning to evaluation and interpretation.
   - Built practical experience across the modern Python data stack (NumPy, pandas, Matplotlib, Seaborn, Plotly) and implemented supervised, unsupervised, and introductory deep-learning models.
   - **Core skills acquired:**
@@ -74,10 +74,10 @@ classes: wide
   - Completed a foundational specialisation on **machine learning fundamentals and applied techniques** designed for practitioners entering AI and data science. The curriculum emphasises both conceptual understanding and implementation using Python and core libraries.
   - Developed proficiency in **supervised learning, advanced algorithms, unsupervised learning, recommender systems, and introductory reinforcement learning**. Tools and environment include **Python, NumPy, scikit-learn, and TensorFlow concepts**.
 
-  [**Module 1 — Supervised Machine Learning: Regression and Classification**](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/supervised_ml.png)
+  [**Module 1 — Supervised Machine Learning: Regression and Classification** _(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/supervised_ml.png)
   - Built and trained supervised models for prediction and classification tasks, including **linear regression, logistic regression, feature scaling, model evaluation, and optimisation concepts**.
 
-  [**Module 2 — Advanced Learning Algorithms**](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/advanced_learning_algorithms.png)
+  [**Module 2 — Advanced Learning Algorithms**  _(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/advanced_learning_algorithms.png)
   - Explored deeper models and learning techniques such as **neural networks, decision trees, ensemble logic, and optimisation strategies**, with practical guidance on algorithm application.
 
   **Module 3 — Unsupervised Learning, Recommenders, and Reinforcement Learning**  
@@ -86,7 +86,7 @@ classes: wide
 
 
 ### SQL & Databases
-- [The Complete SQL Bootcamp: PostgreSQL & pgAdmin](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_basic.pdf)
+- [The Complete SQL Bootcamp: PostgreSQL & pgAdmin  _(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_basic.pdf)
   - Hands-on training in **PostgreSQL** for data analysis, reporting, and database querying, using practical exercises and real-world datasets.
   - Gained full proficiency with SQL fundamentals and intermediate query patterns for analytics workflows.
   - **Core skills acquired:**
@@ -96,7 +96,7 @@ classes: wide
     - Database design principles: tables, constraints, data types, and schema structure.  
     - Practical work using **PostgreSQL + pgAdmin**, including database setup, table creation, and data loading.  
     - Integrating SQL with **Python** as part of data-science pipelines.
-- [SQL for Data Analysis: Advanced SQL Querying Techniques](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_advanced.pdf)
+- [SQL for Data Analysis: Advanced SQL Querying Techniques  _(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_advanced.pdf)
   - Completed an applied advanced-SQL course focused on professional analytical querying and multi-table relational workflows.  
   - **Core skills acquired:**  
     - Advanced **JOIN logic**, including multi-table joins, self-joins, cross joins, and unions for complex relational analysis.  
@@ -107,7 +107,7 @@ classes: wide
     - Use of **views** and modular query structures to encapsulate reusable logic and streamline complex analytical workflows.
       
 ### Artificial Intelligence / Prompt Engineering  
-- [ChatGPT Prompt Engineering for Developers](https://learn.deeplearning.ai/accomplishments/855ab3d3-2a59-4f56-b934-e620c7e28551?usp=sharing)  
+- [ChatGPT Prompt Engineering for Developers  _(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/855ab3d3-2a59-4f56-b934-e620c7e28551?usp=sharing)  
   - Completed a hands-on introduction to **prompt engineering** for building LLM-powered applications, taught by Isa Fulford (OpenAI) and Andrew Ng.  
   - Learned best practices for writing clear, reliable prompts and systematically refining them to improve output quality.  
   - Gained practical experience using the **OpenAI API**, including developing a custom chatbot in the course labs.  
@@ -120,7 +120,7 @@ classes: wide
     - Using LLM APIs in practical development workflows.  
     - Building basic LLM-driven applications with reproducible prompting strategies.
 
-- [Agentic AI by Andrew Ng](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/agentic_AI.png)  
+- [Agentic AI by Andrew Ng  _(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/agentic_AI.png)  
   - Completed Andrew Ng’s flagship introduction to **Agentic AI** — systems that can plan, act, reflect, and self-improve through autonomous workflows.  
   - Learned how agentic systems extend traditional prompting by integrating **tools, memory, iterative reasoning, and multi-step planning** for complex tasks.  
   - Built agents using **reflection loops, tool calling, retrieval, search, APIs, and multi-agent collaboration**, with hands-on code labs reinforcing each pattern.  
@@ -135,7 +135,7 @@ classes: wide
     - Applying evaluation and debugging techniques such as trace inspection, behavioural tests, and performance refinement.  
     - Awareness of real-world applications of agentic workflows in data science, automation, research, and production AI systems.
 
-- [AI Agents in LangGraph](https://learn.deeplearning.ai/accomplishments/d88b3679-f219-4914-913e-9c0b7ea6ab77?usp=sharing)
+- [AI Agents in LangGraph  _(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/d88b3679-f219-4914-913e-9c0b7ea6ab77?usp=sharing)
   - Completed a practical introduction to building **stateful, production-ready AI agents** using the LangGraph framework.  
   - Learned how to structure agent workflows as **deterministic graphs** with clear control flow, tool calling, memory management, and error handling.  
   - Developed agents capable of **planning, reflecting, and iterating** through multi-step tasks, with transparent behavioural tracing and debugging.  
