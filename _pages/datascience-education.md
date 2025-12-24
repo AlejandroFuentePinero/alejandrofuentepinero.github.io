@@ -34,6 +34,14 @@ classes: wide
 ### Coding in R
 - [R for Data Science](https://r4ds.had.co.nz/)
 - ‘Statistics in R’ workshop with Dr Murray Logan
+  - Completed a structured, workshop-based introduction to **R for statistical analysis**, covering core language fundamentals and the full workflow from data handling to modelling.  
+  - Built proficiency with **R basics**, including objects, vectors, indexing, functions, and working efficiently in an interactive coding environment.  
+  - Developed practical skills for handling real datasets using **data frames**, vectorised operations, and tidy data principles, with an emphasis on clear, reproducible analysis.  
+  - Trained in **code management and versioning** practices and implemented **reproducible research workflows** using **R Markdown**.  
+  - Applied modern data-science tooling in R, including **data wrangling** and high-quality visualisation with **ggplot2**.  
+  - Strengthened statistical foundations through **introductory principles** and **basic inference testing** (hypothesis testing and interpretation).  
+  - Extended modelling capability across a broad family of methods, including **linear models**, **mixed-effects models**, **generalised linear (mixed) models**, **non-linear / GAM frameworks**, and **multivariate analyses**, with exposure to both **frequentist and Bayesian** implementations.  
+  - Reinforced professional practice by consistently explaining the purpose of each step (syntax → data transformation → model → interpretation), supporting readable, transparent, and reusable analysis pipelines.
 
 ### Coding in Python & Machine learning
 - The Complete Python Bootcamp: From Zero to Hero in Python
