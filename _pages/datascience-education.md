@@ -72,7 +72,7 @@ classes: wide
     - Model evaluation, cross-validation, train/test workflows, bias–variance analysis, and performance optimisation.  
     - Exposure to **big-data concepts with Spark**, including handling distributed datasets in Python.
    
-- **Machine Learning Specialization**, DeepLearning.AI (Andrew Ng)  
+- Machine Learning Specialisation, DeepLearning.AI (Andrew Ng)  
   - Completed a foundational specialisation on **machine learning fundamentals and applied techniques** designed for practitioners entering AI and data science. The curriculum emphasises both conceptual understanding and implementation using Python and core libraries.
   - Developed proficiency in **supervised learning, advanced algorithms, unsupervised learning, recommender systems, and introductory reinforcement learning**. Tools and environment include **Python, NumPy, scikit-learn, and TensorFlow concepts**.
 
