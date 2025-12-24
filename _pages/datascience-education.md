@@ -77,9 +77,8 @@ classes: wide
   [**Module 1 — Supervised Machine Learning: Regression and Classification**](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/supervised_ml.png)
   - Built and trained supervised models for prediction and classification tasks, including **linear regression, logistic regression, feature scaling, model evaluation, and optimisation concepts**.
 
-  **Module 2 — Advanced Learning Algorithms**  
+  [**Module 2 — Advanced Learning Algorithms**](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/advanced_learning_algorithms.png)
   - Explored deeper models and learning techniques such as **neural networks, decision trees, ensemble logic, and optimisation strategies**, with practical guidance on algorithm application.
-  - *Certificate:* *(to be attached)*
 
   **Module 3 — Unsupervised Learning, Recommenders, and Reinforcement Learning**  
   - Covered **clustering (e.g., K-means), anomaly detection, recommender systems (collaborative and content-based), and introductory reinforcement learning concepts**. 
