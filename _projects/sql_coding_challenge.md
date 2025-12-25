@@ -60,6 +60,8 @@ Adding new challenges as I am completing them. Keep notes short and pattern-focu
 | 23 | 24/12/2025 | LeetCode | LeetCode | 178. Rank Scores | Medium | `dense_rank`, `order_by` | Dense-rank scores (no gaps); order by score desc |
 | 24 | 24/12/2025 | DataLemur | Bloomberg | FAANG Stock Min-Max (Part 1) | Medium | `group_by`, `MIN_MAX`, `join_back`, `format_month` | Find min/max open per ticker; join back to get month |
 | 25 | 24/12/2025 | DataLemur | Robinhood | Cities With Completed Trades | Easy | `join`, `group_by`, `COUNT`, `filter`, `LIMIT` | Join users→trades; filter completed; top-3 cities by count |
+| 26 | 25/12/2025 | LeetCode | LeetCode | Rank Scores | Medium | `window_functions`, `DENSE_RANK` | Use `DENSE_RANK()` to produce gapless ranks with ties; order by `score DESC` |
+| 27 | 25/12/2025 | LeetCode | LeetCode | Consecutive Numbers | Medium | `window_functions`, `LAG/LEAD`, `distinct` | Detect values appearing ≥3 times consecutively via `LAG/LEAD` (num = prev AND num = next) + `DISTINCT` |
 
 
 
