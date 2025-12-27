@@ -65,7 +65,7 @@ Adding new challenges as I am completing them. Keep notes short and pattern-focu
 | 28 | 27/12/2025 | DataLemur | Amazon | User Shopping Sprees | Medium | `self_join`, `date_arithmetic`, `distinct` | Identify users with purchases on 3 consecutive days (date + 1, + 2) via self-joins; `DISTINCT` user_id + sort ascending |
 | 29 | 27/12/2025 | DataLemur | Walmart | Histogram of Users and Purchases | Medium | `CTE`, `group_by`, `row_number`, `date_cast`, `order_by` | Count products per user per day, then use `ROW_NUMBER()` to keep each user’s most recent transaction date; output sorted by transaction_date ASC |
 | 30 | 27/12/2025 | DataLemur | Amazon | Average Review Ratings | Easy | `group_by`, `date_part/extract`, `round`, `order_by` | grouped average by month and user_id|
-| 31 | 27/12/2025 | DataLemur | Amazon | User Shopping Sprees (Optimized) | Medium | gaps_and_islands, row_number, date_cast, distinct | DISTINCT user-day; group streaks with date - ROW_NUMBER(); COUNT>=3 |
+| 31 | 27/12/2025 | DataLemur | Amazon | User Shopping Sprees (Optimised) | Medium | gaps_and_islands, row_number, date_cast, distinct | DISTINCT user-day; group streaks with date - ROW_NUMBER(); COUNT>=3 |
 
 
 
