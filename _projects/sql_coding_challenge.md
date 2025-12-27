@@ -64,8 +64,8 @@ Adding new challenges as I am completing them. Keep notes short and pattern-focu
 | 27 | 25/12/2025 | LeetCode | LeetCode | Consecutive Numbers | Medium | `window_functions`, `LAG/LEAD`, `distinct` | Detect values appearing ≥3 times consecutively via `LAG/LEAD` (num = prev AND num = next) + `DISTINCT` |
 | 28 | 27/12/2025 | DataLemur | Amazon | User Shopping Sprees | Medium | `self_join`, `date_arithmetic`, `distinct` | Identify users with purchases on 3 consecutive days (date + 1, + 2) via self-joins; `DISTINCT` user_id + sort ascending |
 | 29 | 27/12/2025 | DataLemur | Walmart | Histogram of Users and Purchases | Medium | `CTE`, `group_by`, `row_number`, `date_cast`, `order_by` | Count products per user per day, then use `ROW_NUMBER()` to keep each user’s most recent transaction date; output sorted by transaction_date ASC |
-| 30 | 27/12/2025 | DataLemur | Amazon | Average Review Ratings | Easy | `group_by`, `date_part/extract`, `round`, `order_by` | Extract month from submit_date, group by (month, product_id), compute `ROUND(AVG(stars), 2)`, then order by month ASC, product_id ASC |
-| 31 | 27/12/2025 | DataLemur | Amazon | User Shopping Sprees (Optimized) | Medium | window_functions, gaps_and_islands, row_number, date_cast, distinct | Cast to date and DISTINCT (user_id, day) to avoid multi-purchase inflation; build streak groups via day - ROW_NUMBER() per user; HAVING COUNT(*) >= 3; output distinct user_id sorted ASC |
+| 30 | 27/12/2025 | DataLemur | Amazon | Average Review Ratings | Easy | `group_by`, `date_part/extract`, `round`, `order_by` | grouped average by month and user_id|
+| 31 | 27/12/2025 | DataLemur | Amazon | User Shopping Sprees (Optimized) | Medium | gaps_and_islands, row_number, date_cast, distinct | DISTINCT user-day; group streaks with date - ROW_NUMBER(); COUNT>=3 |
 
 
 
