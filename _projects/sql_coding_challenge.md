@@ -66,6 +66,9 @@ Adding new challenges as I am completing them. Keep notes short and pattern-focu
 | 29 | 27/12/2025 | DataLemur | Walmart | Histogram of Users and Purchases | Medium | `CTE`, `group_by`, `row_number`, `date_cast`, `order_by` | Count products per user per day, then use `ROW_NUMBER()` to keep each user’s most recent transaction date; output sorted by transaction_date ASC |
 | 30 | 27/12/2025 | DataLemur | Amazon | Average Review Ratings | Easy | `group_by`, `date_part/extract`, `round`, `order_by` | grouped average by month and user_id|
 | 31 | 27/12/2025 | DataLemur | Amazon | User Shopping Sprees (Optimised) | Medium | gaps_and_islands, row_number, date_cast, distinct | DISTINCT user-day; group streaks with date - ROW_NUMBER(); COUNT>=3 |
+| 32 | 28/12/2025 | DataLemur | FAANG | Well Paid Employees | Easy | `self_join`, `hierarchy_fk`, `compare_to_manager` | Self-join on e.manager_id = m.employee_id; filter e.salary > m.salary; don’t assume managers have NULL manager_id. |
+| 33 | 28/12/2025 | DataLemur | Alibaba | Compressed Mode | Medium | `frequency_table`, `argmax`, `ties_sort` | Table is already aggregated: mode is item_count with max(order_occurrences); don’t compute “mode of order_occurrences”. |
+| 34 | 28/12/2025 | DataLemur | JPMorgan | Card Launch Success | Medium | `row_number`, `partition`, `earliest_record`, `sort` | Launch month = earliest (issue_year, issue_month) per card; ROW_NUMBER rn=1; order by issued_amount desc.|
 
 
 
