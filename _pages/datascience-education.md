@@ -80,7 +80,7 @@ classes: wide
     - Model evaluation, cross-validation, train/test workflows, bias–variance analysis, and performance optimisation.  
     - Exposure to **big-data concepts with Spark**, including handling distributed datasets in Python.
    
-- Machine Learning Specialisation, DeepLearning.AI (Andrew Ng)  
+- Machine Learning Specialisation, DeepLearning.AI (Andrew Ng) [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/machine_learning_specialisation.png)
   - Completed a foundational specialisation on **machine learning fundamentals and applied techniques** designed for practitioners entering AI and data science. The curriculum emphasises both conceptual understanding and implementation using Python and core libraries.
   - Developed proficiency in **supervised learning, advanced algorithms, unsupervised learning, recommender systems, and introductory reinforcement learning**. Tools and environment include **Python, NumPy, scikit-learn, and TensorFlow concepts**.
 
@@ -92,9 +92,9 @@ classes: wide
   [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/advanced_learning_algorithms.png)
   - Explored deeper models and learning techniques such as **neural networks, decision trees, ensemble logic, and optimisation strategies**, with practical guidance on algorithm application.
 
-  **Module 3 — Unsupervised Learning, Recommenders, and Reinforcement Learning**  
+  **Module 3 — Unsupervised Learning, Recommenders, and Reinforcement Learning**
+  [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/unsupervised_learning.png)
   - Covered **clustering (e.g., K-means), anomaly detection, recommender systems (collaborative and content-based), and introductory reinforcement learning concepts**. 
-  - *Certificate:* *(to be attached)*
 
 
 ### SQL & Databases
