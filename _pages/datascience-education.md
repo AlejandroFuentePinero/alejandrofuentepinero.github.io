@@ -164,6 +164,16 @@ classes: wide
     - Debugging and evaluating agents through **event tracing and structured testing**.  
     - Understanding how graph-based architectures support **reliable, scalable agentic applications**.
 
+### Version Control Systems
+- The Git & GitHub Bootcamp  
+  - Completed an end-to-end, practice-driven course on **Git version control** and **GitHub collaboration**, covering both day-to-day workflows and the internal mental model needed to work confidently in real codebases.  
+  - Built fluency with the **core Git workflow** (working directory → staging area → commits) and learned to manage change safely through **branching, merging, and conflict resolution**.  
+  - Developed the ability to **inspect and reason about change over time** using `git diff` across commits, branches, the staging area, and the working tree, with emphasis on reading and interpreting diff output.  
+  - Learned reliable strategies for **undoing and recovering work**, including time-travel patterns with `git restore`, `git revert`, `git reset`, detached HEAD workflows, and rescuing “lost” commits via **reflogs**.  
+  - Trained in **collaborative GitHub workflows** used in professional teams: remote repositories, `push/pull/fetch`, feature branches, pull requests, forks/clones, and contributing to shared codebases.  
+  - Strengthened practical tooling around GitHub, including writing clear **Markdown READMEs**, sharing reusable snippets with **Gists**, and deploying simple project sites with **GitHub Pages**.  
+  - Built an “under the hood” understanding of Git by learning how Git represents history through **objects** (blobs, trees, commits) and how **hashing and references** underpin integrity and navigation.  
+  - Improved workflow efficiency by creating **custom Git aliases** and applying history hygiene practices with **rebasing** and **interactive rebase** (reword/edit/drop/squash), plus release management using **lightweight and annotated tags**.
 
 
 
