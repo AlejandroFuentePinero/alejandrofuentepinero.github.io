@@ -69,8 +69,8 @@ Adding new challenges as I am completing them. Keep notes short and pattern-focu
 | 32 | 28/12/2025 | DataLemur | FAANG | Well Paid Employees | Easy | `self_join`, `hierarchy_fk`, `compare_to_manager` | Self-join on e.manager_id = m.employee_id; filter e.salary > m.salary; don’t assume managers have NULL manager_id. |
 | 33 | 28/12/2025 | DataLemur | Alibaba | Compressed Mode | Medium | `frequency_table`, `argmax`, `ties_sort` | Table is already aggregated: mode is item_count with max(order_occurrences); don’t compute “mode of order_occurrences”. |
 | 34 | 28/12/2025 | DataLemur | JPMorgan | Card Launch Success | Medium | `row_number`, `partition`, `earliest_record`, `sort` | Launch month = earliest (issue_year, issue_month) per card; ROW_NUMBER rn=1; order by issued_amount desc.|
-
-
+| 35 | 30/12/2025 | DataLemur | Verizon | International Call Percentage | Medium | join_twice, CASE, avg_boolean, percent_calc, ROUND | Join phone_info twice (caller + receiver); international = different country_id; AVG(CASE ...)*100 and round to 1dp (~6 min). |
+| 36 | 30/12/2025 | DataLemur | Facebook | Active User Retention | Hard | dedupe_month, LAG, window_partition, consecutive_month_check, DATE_TRUNC | Passed in ~11 min. Key correctness: must enforce July has June activity (consecutive months) and use year-month (not month-only) to avoid cross-year errors. |
 
 
 ---
