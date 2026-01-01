@@ -4,7 +4,7 @@ permalink: /datascience/skills/
 layout: single
 ---
 
-## Summary (scan-first)
+## Summary
 Data scientist with a **research-grade modelling foundation** (spatiotemporal + hierarchical Bayesian population modelling) and **end-to-end ML delivery** (Python pipelines, evaluation, interpretability, recommender outputs). Strong scientific communication and publication record.
 
 ---
