@@ -5,14 +5,15 @@ layout: single
 ---
 
 ## Summary (scan-first)
-Data scientist with a **research-grade modelling foundation** (spatiotemporal + hierarchical Bayesian population modelling) and **end-to-end ML delivery** (Python pipelines, evaluation, interpretability, recommender outputs). Strong scientific communication, project leadership, and excellent publication record.
+Data scientist with a **research-grade modelling foundation** (spatiotemporal + hierarchical Bayesian population modelling) and **end-to-end ML delivery** (Python pipelines, evaluation, interpretability, recommender outputs). Strong scientific communication and excellent publication record.
 
 ---
 
-## 1) Research & Modelling (Academic Umbrella)
-- Population modelling and inference under uncertainty (ecological/field data)  
-- Reproducible research workflows (transparent methods, defensible assumptions)  
-- Conference and stakeholder communication (oral presentations, scientific storytelling)  
+## 1) Research Practice (PhD / Publications)
+- Peer-reviewed writing; methods-first documentation; reproducible reporting  
+- Oral presentations (conferences, stakeholder briefings); scientific storytelling  
+- Teaching and mentoring (students/collaborators; code + modelling support)  
+- Project management: scoping, prioritisation, milestones, delivery under constraints  
 
 ---
 
@@ -113,14 +114,6 @@ Data scientist with a **research-grade modelling foundation** (spatiotemporal + 
 - Reliability patterns: structured prompts, iterative refinement, evaluation loops  
 - Agentic patterns: planning/acting/reflection loops, tool calling, retrieval, multi-agent coordination  
 - Graph-style orchestration concepts (LangGraph): state, control flow, tracing/debugging, retries, HITL stages  
-
----
-
-## 15) Communication, Leadership & Delivery
-- Peer-reviewed writing; methods-first documentation; reproducible reporting  
-- Conference presentations; teaching; mentoring (students/collaborators)  
-- Project management: scoping, prioritisation, milestones, delivery under constraints  
-- Collaboration: cross-disciplinary teamwork, feedback loops, iterative improvement  
 
 ---
 
