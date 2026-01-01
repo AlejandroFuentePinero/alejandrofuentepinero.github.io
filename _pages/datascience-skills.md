@@ -5,7 +5,7 @@ layout: single
 ---
 
 ## Summary (scan-first)
-Data scientist with a **research-grade modelling foundation** (spatiotemporal + hierarchical Bayesian population modelling) and **end-to-end ML delivery** (Python pipelines, evaluation, interpretability, recommender outputs). Strong scientific communication and excellent publication record.
+Data scientist with a **research-grade modelling foundation** (spatiotemporal + hierarchical Bayesian population modelling) and **end-to-end ML delivery** (Python pipelines, evaluation, interpretability, recommender outputs). Strong scientific communication and publication record.
 
 ---
 
@@ -30,7 +30,7 @@ Data scientist with a **research-grade modelling foundation** (spatiotemporal + 
 - GLM/GAM foundations; mixed-effects / hierarchical modelling  
 - **Hierarchical Bayesian** modelling (partial pooling, uncertainty-first reporting)  
 - **Spatiotemporal** modelling mindset: structured dependence, forecasting logic, SDMs  
-- Population/observation models (detection–abundance separation template)  
+- Population / observation models (detection–abundance separation template)  
 - **Integrated Population Models (IPMs)**  
 - Bayesian tooling exposure: **Stan (Statistical Rethinking)**, **JAGS** (R-based workflows)  
 
