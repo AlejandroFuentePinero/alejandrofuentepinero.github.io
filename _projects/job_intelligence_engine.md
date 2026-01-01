@@ -17,7 +17,7 @@ Job postings are high-volume, inconsistent, and full of overlapping terminology 
 - **Career positioning:** separates **best_now** roles (good fit, low barrier) from **stretch** roles (bigger step, strong upside) with explicit rationale.
 - **Upskilling recommendations:** counterfactual “add-one-skill” analysis that quantifies how missing skills change suitability, competitiveness, and salary potential.
 
-## How it works (high level)
+## How it works
 The system runs as a deterministic pipeline. It first normalises raw postings into a clean dataset (titles, locations, salaries, and skill tokens). It then learns market structure via probabilistic skill-requirement models and a tuned XGBoost salary model built on structured features and learned skill components. Finally, it constructs a job–skill landscape and turns those signals into interpretable positioning scores, job recommendations (best_now vs stretch), and upskilling targets, surfaced through a lightweight Streamlit interface.
 
 ## Engineering standards
