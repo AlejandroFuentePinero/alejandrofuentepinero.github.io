@@ -1,7 +1,7 @@
 ---
 title: "Job Intelligence Engine"
 excerpt: "End-to-end job-market intelligence system that turns messy job ads into structured skill signals, salary forecasts, and interpretable career positioning — delivered through a deterministic Python pipeline and a lightweight Streamlit app (best_now vs stretch)."
-date: 2025-12-21
+date: 2026-01-01
 order: 1
 ---
 
