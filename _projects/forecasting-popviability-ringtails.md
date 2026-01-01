@@ -1,7 +1,6 @@
 ---
 title: "Forecasting Population Viability with Bayesian Hierarchical Models"
 excerpt: "Developed Bayesian hierarchical models incorporating detection probability to forecast population viability and support elevated conservation status for imperilled species."
-tags: [R, bayesian-statistics, hierarchical-modelling, forecasting, detection-probability, conservation]
 date: 2022-11-06
 ---
 
