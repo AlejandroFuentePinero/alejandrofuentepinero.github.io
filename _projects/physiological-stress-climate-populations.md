@@ -1,7 +1,6 @@
 ---
 title: "Integrating Microclimate, Physiology, Biogeochemistry, and Population Models to Link Climate Change to Demographic Outcomes"
 excerpt: "Developed and implemented a holistic Bayesian framework integrating microclimate, mechanistic physiology, biogeochemical processes, and population dynamics to identify causal pathways from climate change to survival and recruitment."
-tags: [R, JAGS, bayesian-statistics, physiological-modelling, microclimate, biogeochemistry, population-forecasting, climate-impact]
 date: 2025-05-05
 ---
 
