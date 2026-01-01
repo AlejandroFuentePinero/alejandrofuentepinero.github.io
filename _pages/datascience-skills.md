@@ -86,7 +86,7 @@ Data scientist with a **research-grade modelling foundation** (spatiotemporal + 
 - Environments: venv/conda (Python), renv (R)  
 - Code quality: assertions/validation utilities, docstrings, type hints where useful, pytest-style testing patterns  
 - Modular architecture: reusable modules, script-to-pipeline conversion, clean interfaces  
-- Reproducible reporting: **R Markdown**; artefact generation + methods-first documentation  
+- Reproducible reporting: R Markdown; Jupyter Notebook; artefact generation + methods-first documentation  
 
 ---
 
