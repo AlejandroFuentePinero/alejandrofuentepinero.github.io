@@ -1,7 +1,6 @@
 ---
 title: "SQL Coding Challenges"
 excerpt: "Ongoing SQL interview-practice log (DataLemur-style) to keep querying sharp alongside flagship projects, with emphasis on core analytical patterns (joins, CTEs, window functions, time series, cohorts)."
-tags: [SQL, analytics, window-functions, CTE, joins, time-series, cohort-analysis, interview-practice]
 date: 2025-12-20
 order: 7
 ---
