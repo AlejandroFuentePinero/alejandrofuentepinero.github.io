@@ -38,9 +38,10 @@ Data scientist with a **research-grade modelling foundation** (spatiotemporal + 
 
 ## 4) Machine Learning (Classical)
 - Supervised: linear/logistic regression, trees, random forests, gradient boosting, SVM, k-NN  
-- Unsupervised: K-Means clustering, anomaly detection fundamentals  
+- Unsupervised: K-Means clustering, **PCA (dimensionality reduction)**, anomaly detection fundamentals  
 - scikit-learn Pipelines; hyperparameter tuning; model comparison  
 - Gradient boosting (incl. **XGBoost**) and practical performance tuning patterns  
+- Intro exposure: **reinforcement learning** concepts (course-level foundations)  
 
 ---
 
@@ -69,7 +70,7 @@ Data scientist with a **research-grade modelling foundation** (spatiotemporal + 
 ## 8) Programming & Libraries
 - **Python (primary):** pandas, NumPy, scikit-learn, matplotlib, seaborn, plotly; regex; logging; OOP  
 - **R:** tidyverse, ggplot2; sf/terra; Shiny familiarity  
-- **SQL:** PostgreSQL (joins, CTEs, window functions, views, NULL-safe patterns)  
+- **SQL:** PostgreSQL + **pgAdmin4** (joins, CTEs, window functions, views, NULL-safe patterns)  
 
 ---
 
@@ -114,6 +115,7 @@ Data scientist with a **research-grade modelling foundation** (spatiotemporal + 
 - Reliability patterns: structured prompts, iterative refinement, evaluation loops  
 - Agentic patterns: planning/acting/reflection loops, tool calling, retrieval, multi-agent coordination  
 - Graph-style orchestration concepts (LangGraph): state, control flow, tracing/debugging, retries, HITL stages  
+- API exposure: **OpenAI API** basics (prompt-driven app patterns)  
 
 ---
 
