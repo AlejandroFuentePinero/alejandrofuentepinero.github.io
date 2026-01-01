@@ -1,7 +1,6 @@
 ---
 title: "Dynamic Community Re-shuffling Under Elevational Climate Shifts"
 excerpt: "Developed a high-throughput spatial forecasting workflow of community turnover under climate change, optimising computational performance for multi-species forecasting across elevational gradients."
-tags: [R, spatial-forecasting, big-data, workflow-optimisation, ecology, community-dynamics]
 date: 2022-04-01
 ---
 
