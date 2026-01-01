@@ -1,7 +1,6 @@
 ---
 title: "Predicting Species Abundance from Environmental Suitability"
 excerpt: "Applied ensemble machine learning to convert presence-only niche models into abundance predictions, combining big-data wrangling, advanced analytics, and multi-algorithm ensembles."
-tags: [R, machine-learning, big-data, ensemble-models, ecology, spatial]
 date: 2021-10-12
 ---
 
