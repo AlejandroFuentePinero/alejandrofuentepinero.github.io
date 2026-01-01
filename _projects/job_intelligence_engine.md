@@ -9,7 +9,13 @@ order: 1
 Job postings are high-volume, inconsistent, and full of overlapping terminology — yet they still encode real signals about what the market rewards.  
 **Job Intelligence Engine** converts raw job ads into decision-ready outputs: interpretable market insights, a constraint-aware recommender, and ROI-ranked upskilling targets that clarify what to learn next.
 
-![Job Intelligence Engine — system workflow](https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/project_pipeline_simple.png)
+<figure>
+  <img src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/project_pipeline_simple.png" alt="Job Intelligence Engine — system workflow" style="width:100%; max-width:1100px;">
+  <figcaption style="text-align:center; font-size:0.9em; color:#666;">
+    System workflow: job ads → deterministic pipeline → market insights, best_now vs stretch recommendations, and ROI-ranked upskilling.
+  </figcaption>
+</figure>
+
 
 ## What it delivers
 - **Market signals (interpretable):** structured skill demand and salary drivers, designed to be read and trusted rather than treated as a black box.
