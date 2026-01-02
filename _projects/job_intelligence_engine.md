@@ -30,4 +30,4 @@ Deterministic runs, modular `src/` design, saved artefacts, and an end-to-end pi
 
 ## Links
 - **GitHub repo:** [Job Intelligence Engine](https://github.com/AlejandroFuentePinero/job-intelligence-engine)
-- **Live app:** [Streamlit App](<APP_URL>)
+- **Live app:** [Streamlit App](https://job-intelligence-engine.streamlit.app/)
