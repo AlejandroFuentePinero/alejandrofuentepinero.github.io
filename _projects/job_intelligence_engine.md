@@ -34,7 +34,7 @@ Job postings are noisy: roles and skills overlap heavily in meaning, postings de
 The system runs as a deterministic pipeline. It normalises raw postings (titles, locations, salaries, skill tokens), learns market structure via probabilistic skill-requirement models and a tuned salary model, then translates those signals into transparent positioning scores, recommendations, and upskilling targets. Outputs are served through a lightweight Streamlit interface.
 
 ## Stack
-Python, pandas, numpy, scikit-learn, Sentence Transformers (SBERT), KMeans, XGBoost, SHAP, Streamlit, NetworkX, graph.
+Python, pandas, numpy, scikit-learn, Sentence Transformers (SBERT), KMeans, XGBoost, SHAP, Streamlit, NetworkX.
 
 ## Engineering standards
-Reproducible, modular `src/` design with persisted artefacts and an end-to-end build that reliably regenerates app-ready assets fro
+Reproducible, modular `src/` design with persisted artefacts and an end-to-end build that reliably regenerates app-ready assets from raw inputs.
