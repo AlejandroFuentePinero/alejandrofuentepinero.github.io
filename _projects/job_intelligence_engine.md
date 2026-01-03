@@ -1,7 +1,7 @@
 ---
 title: "Job Intelligence Engine"
 excerpt: "A deterministic job-market intelligence system that turns messy postings into interpretable skill demand, salary signals, and clear best_now vs stretch recommendations — delivered as a reproducible Python pipeline + Streamlit app."
-date: 2026-01-01
+date: 2026-01-02
 order: 1
 ---
 
@@ -10,9 +10,9 @@ order: 1
 - **GitHub repo:** [Job Intelligence Engine](https://github.com/AlejandroFuentePinero/job-intelligence-engine)
 
 ## Overview
-Most job searches fail in a predictable way: roles and skills overlap heavily in meaning, postings describe the same requirements with different language, and “fit” becomes guesswork driven by keyword matching or generic advice. The result is wasted time—applying to roles that are either unrealistic right now or undershoot your actual potential.
+Job postings are noisy: roles and skills overlap heavily in meaning, postings describe the same requirements with different language, and “fit” often devolves into keyword matching or generic advice. The result is wasted time—applying to roles that are either unrealistic right now or undershoot your actual potential.
 
-**Job Intelligence Engine** converts raw job ads into a structured, interpretable market layer, then positions an individual within that landscape to make decisions that are both realistic and strategic:
+**Job Intelligence Engine** converts raw job ads into a structured, interpretable market layer, then positions an individual within that landscape to make decisions that are both realistic and strategic. The app surfaces recommendations with explicit rationale and interpretation panels; the repo contains the deterministic pipeline and persisted artefacts that reproduce those outputs.
 
 - What roles are realistic **now** (high fit, low friction)?
 - What roles are worth a **stretch** (clear upside, clear gaps)?
@@ -37,4 +37,4 @@ The system runs as a deterministic pipeline. It normalises raw postings (titles,
 Python, pandas, scikit-learn, Sentence Transformers (SBERT), KMeans, XGBoost, SHAP, Streamlit, NetworkX.
 
 ## Engineering standards
-Reproducible, modular `src/` design with persisted artefacts and an end-to-end build that reliably regenerates app-ready assets from raw inputs.
+Reproducible, modular `src/` design with persisted artefacts and an end-to-end build that reliably regenerates app-ready assets fro
