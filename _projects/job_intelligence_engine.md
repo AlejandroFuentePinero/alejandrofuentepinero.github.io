@@ -1,13 +1,22 @@
 ---
 title: "Job Intelligence Engine"
-excerpt: "End-to-end job-market intelligence system that turns messy job ads into structured skill signals, salary forecasts, and interpretable career positioning — delivered through a deterministic Python pipeline and a lightweight Streamlit app (best_now vs stretch)."
+excerpt: "A deterministic job-market intelligence system that turns messy postings into interpretable skill demand, salary signals, and clear best_now vs stretch recommendations — delivered as a reproducible Python pipeline + Streamlit app."
 date: 2026-01-01
 order: 1
 ---
 
+## Links (start here)
+- **Live app:** [Streamlit App](https://job-intelligence-engine.streamlit.app/)
+- **GitHub repo:** [Job Intelligence Engine](https://github.com/AlejandroFuentePinero/job-intelligence-engine)
+
 ## Overview
-Job postings are high-volume, inconsistent, and full of overlapping terminology — yet they still encode real signals about what the market rewards.  
-**Job Intelligence Engine** converts raw job ads into decision-ready outputs: interpretable market insights, a constraint-aware recommender, and ROI-ranked upskilling targets that clarify what to learn next.
+Most job searches fail in a predictable way: roles and skills overlap heavily in meaning, postings describe the same requirements with different language, and “fit” becomes guesswork driven by keyword matching or generic advice. The result is wasted time—applying to roles that are either unrealistic right now or undershoot your actual potential.
+
+**Job Intelligence Engine** converts raw job ads into a structured, interpretable market layer, then positions an individual within that landscape to make decisions that are both realistic and strategic:
+
+- What roles are realistic **now** (high fit, low friction)?
+- What roles are worth a **stretch** (clear upside, clear gaps)?
+- What should I learn next to change my options **measurably**?
 
 <figure>
   <img src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/project_pipeline_simple.png" alt="Job Intelligence Engine — system workflow" style="width:100%; max-width:1100px;">
@@ -16,18 +25,16 @@ Job postings are high-volume, inconsistent, and full of overlapping terminology 
   </figcaption>
 </figure>
 
-
 ## What it delivers
-- **Market signals (interpretable):** structured skill demand and salary drivers, designed to be read and trusted rather than treated as a black box.
-- **Career positioning:** separates **best_now** roles (good fit, low barrier) from **stretch** roles (bigger step, strong upside) with explicit rationale.
-- **Upskilling recommendations:** counterfactual “add-one-skill” analysis that quantifies how missing skills change suitability, competitiveness, and salary potential.
+- **Interpretable market signals:** structured skill demand and salary drivers you can inspect and reason about.
+- **Career positioning:** separates **best_now** roles (strong fit, lower barriers) from **stretch** roles (higher upside, clearer gaps), with explicit rationale.
+- **Upskilling recommendations:** counterfactual “add-one-skill” analysis that ranks what to learn by the change it produces in suitability, competitiveness, and salary alignment.
 
 ## How it works
-The system runs as a deterministic pipeline. It first normalises raw postings into a clean dataset (titles, locations, salaries, and skill tokens). It then learns market structure via probabilistic skill-requirement models and a tuned XGBoost salary model built on structured features and learned skill components. Finally, it constructs a job–skill landscape and turns those signals into interpretable positioning scores, job recommendations (best_now vs stretch), and upskilling targets, surfaced through a lightweight Streamlit interface.
+The system runs as a deterministic pipeline. It normalises raw postings (titles, locations, salaries, skill tokens), learns market structure via probabilistic skill-requirement models and a tuned salary model, then translates those signals into transparent positioning scores, recommendations, and upskilling targets. Outputs are served through a lightweight Streamlit interface.
+
+## Stack
+Python, pandas, scikit-learn, Sentence Transformers (SBERT), KMeans, XGBoost, SHAP, Streamlit, NetworkX.
 
 ## Engineering standards
-Deterministic runs, modular `src/` design, saved artefacts, and an end-to-end pipeline that rebuilds outputs reliably from raw data to app-ready assets.
-
-## Links
-- **GitHub repo:** [Job Intelligence Engine](https://github.com/AlejandroFuentePinero/job-intelligence-engine)
-- **Live app:** [Streamlit App](https://job-intelligence-engine.streamlit.app/)
+Reproducible, modular `src/` design with persisted artefacts and an end-to-end build that reliably regenerates app-ready assets from raw inputs.
