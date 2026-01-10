@@ -4,120 +4,156 @@ permalink: /datascience/skills/
 layout: single
 ---
 
-## Summary
-Data scientist with a **research-grade modelling foundation** (spatiotemporal + hierarchical Bayesian population modelling) and **end-to-end ML delivery** (Python pipelines, evaluation, interpretability, recommender outputs). Strong scientific communication and publication record.
+## What I’m best at
+
+I drive modelling work from definition to delivery: setting objectives and success metrics, building the data foundation, developing features and models, and shipping reproducible outputs that inform decisions. My differentiator is deep statistical judgement and uncertainty-aware inference, with particular strength in hierarchical and Bayesian modelling, producing results that remain robust under noise, sparse data, selection bias, and spatiotemporal structure.
 
 ---
 
-## 1) Research Practice (PhD / Publications)
-- Peer-reviewed writing; methods-first documentation; reproducible reporting  
-- Oral presentations (conferences, stakeholder briefings); scientific storytelling  
-- Teaching and mentoring (students/collaborators; code + modelling support)  
-- Project management: scoping, prioritisation, milestones, delivery under constraints  
+## What I deliver
+
+- Full-cycle modelling delivery: define objectives and success metrics, design the data foundation, engineer features, train models, validate rigorously, and deliver reproducible outputs that support decisions.
+- Model selection with statistical judgement: select model families aligned to the data-generating process, including structured dependence across space and time.
+- Bayesian hierarchical inference: partial pooling and principled uncertainty propagation for robust estimates and uncertainty-aware decision-making under sparse, noisy, or biased data.
+- Experimentation and causal reasoning: A/B testing fundamentals, power and effect-size framing, and clear treatment of confounding, selection bias, and the limits of identification.
+- Reliable evaluation and communication: leakage checks, calibration awareness, error slicing, robustness and stress testing, and transparent reporting of assumptions, tradeoffs, and limitations.
 
 ---
 
-## 2) Data Science Workflow
-- EDA, data cleaning, missingness strategies, outliers, leakage checks, sanity checks  
-- Feature engineering: encoding, scaling, transformations, selection  
-- Validation design: train/val/test, cross-validation, baseline discipline, overfitting control  
-- Evaluation: classification/regression metrics, calibration awareness, error analysis  
-- Reproducibility: deterministic runs, configs, artefact generation, documentation  
+## Core stack
+
+**Tools**
+- **Python:** pandas, NumPy, scikit-learn; pipelines; visualisation (matplotlib/plotly)
+- **SQL (PostgreSQL):** joins, CTEs, window functions; analytics transformations
+- **Software engineering:** Git/GitHub; modular code; testing/validation (pytest patterns); reproducible environments (conda/venv)
+
+**Core methods**
+- **Bayesian & hierarchical modelling:** partial pooling, uncertainty quantification and propagation  
+- **Machine learning:** supervised/unsupervised, model selection, tuning, gradient boosting (incl. XGBoost)  
+- **Experimentation & causal:** A/B testing, power/effect size, confounding, selection bias  
+- **Evaluation discipline:** leakage, calibration, error analysis, robustness  
+
+--- 
+
+## Academia transferability
+
+- **First-principles problem solving:** break down open-ended questions, formalise hypotheses, and select methods aligned to the data-generating process.  
+- **Study and measurement design:** design sampling and measurement protocols, define data quality standards, and handle bias, missingness, and uncertainty at the source.  
+- **Full-cycle project delivery:** scope work, set milestones, manage tradeoffs, and deliver high-quality outcomes under real constraints.  
+- **High-standard technical communication:** publish peer-reviewed work and produce clear, auditable narratives with explicit assumptions, evidence, and limitations.  
+- **Cross-functional collaboration and mentorship:** work across disciplines, mentor and upskill collaborators, and drive alignment through proposal-style writing and resourcing justification (grants/funding).  
 
 ---
 
-## 3) Statistical, Bayesian & Spatiotemporal Modelling
-- GLM/GAM foundations; mixed-effects / hierarchical modelling  
-- **Hierarchical Bayesian** modelling (partial pooling, uncertainty-first reporting)  
-- **Spatiotemporal** modelling mindset: structured dependence, forecasting logic, SDMs  
-- Population / observation models (detection–abundance separation template)  
-- **Integrated Population Models (IPMs)**  
-- Bayesian tooling exposure: **Stan (Statistical Rethinking)**, **JAGS** (R-based workflows)  
+## Technical depth
 
----
+<details>
+<summary><strong>Bayesian, hierarchical & spatiotemporal modelling</strong></summary>
 
-## 4) Machine Learning (Classical)
-- Supervised: linear/logistic regression, trees, random forests, gradient boosting, SVM, k-NN  
-- Unsupervised: K-Means clustering, **PCA (dimensionality reduction)**, anomaly detection fundamentals  
-- scikit-learn Pipelines; hyperparameter tuning; model comparison  
-- Gradient boosting (incl. **XGBoost**) and practical performance tuning patterns  
-- Intro exposure: **reinforcement learning** concepts (course-level foundations)  
+- Generalised linear models (GLMs) and generalised additive models (GAMs) for nonlinear effects  
+- Threshold and segmented regression for decision-point inference  
+- Hierarchical and mixed-effects modelling; partial pooling  
+- Bayesian inference with uncertainty quantification and propagation; priors as explicit assumptions  
+- Spatiotemporal modelling: structured dependence, forecasting logic, species distribution modelling (SDMs)  
+- Observation vs process modelling: detection–abundance separation; N-mixture models  
+- Integrated Population Models (IPMs)
 
----
+</details>
 
-## 5) Deep Learning (Foundations)
-- Feedforward neural networks (classification/regression)  
-- Training concepts: activation functions, loss/optimisers, regularisation, train/val monitoring  
-- **TensorFlow / Keras** fundamentals (model definition, training, evaluation)  
+<details>
+<summary><strong>Machine learning (classical)</strong></summary>
 
----
+- Supervised learning: linear/logistic regression, tree-based models, random forests, gradient boosting (incl. XGBoost), SVM, k-NN  
+- Unsupervised learning: PCA, clustering (K-Means), anomaly detection  
+- scikit-learn Pipelines; hyperparameter tuning; model comparison and baselines  
 
-## 6) NLP & Recommenders (Applied Foundations)
-- Text cleaning/normalisation; tokenisation; feature inspection  
-- Vectorisation: CountVectorizer, TF-IDF; Naive Bayes baselines  
+</details>
+
+<details>
+<summary><strong>Deep learning</strong></summary>
+
+- Neural networks for classification and regression  
+- Training fundamentals: loss functions, optimisers, regularisation, monitoring and early stopping  
+- TensorFlow / Keras: model definition, training, evaluation  
+
+</details>
+
+<details>
+<summary><strong>Evaluation, interpretability & reporting</strong></summary>
+
+- Validation design: train/val/test, cross-validation, temporal/blocked splits where appropriate  
+- Evaluation discipline: leakage checks, calibration awareness, error analysis and slicing, robustness/stress testing  
+- Interpretability: feature importance, partial dependence, SHAP-style global/local explanations  
+- Decision-ready reporting: assumptions, limitations, tradeoffs, and clear recommendations  
+
+</details>
+
+<details>
+<summary><strong>Experimentation & causal inference</strong></summary>
+
+- A/B testing fundamentals: hypotheses, metrics, power and effect size  
+- Causal inference basics: confounding, selection bias, counterfactual framing, limits of identification  
+- Practical decision-making under uncertainty: interpreting results and communicating tradeoffs  
+
+</details>
+
+<details>
+<summary><strong>Data engineering & integration</strong></summary>
+
+- Data ingestion and transformation: structured files, schema discipline, reliable I/O  
+- SQL-centric data work: joins across complex relational datasets, analytics transformations  
+- API integration patterns: extracting, normalising, and joining external data sources  
+
+</details>
+
+<details>
+<summary><strong>Software engineering & reproducibility</strong></summary>
+
+- Git/GitHub workflows: branching, pull requests, code review, merge discipline  
+- Maintainable codebases: modular architecture, clean interfaces, reusable components, pipeline-style structure  
+- Quality controls: input validation, assertions, unit tests (pytest patterns), docstrings, type hints where useful  
+- Reproducibility: environment management (conda/venv), deterministic runs, versioned artefacts, methods-first documentation  
+
+</details>
+
+<details>
+<summary><strong>NLP, recommenders & text features</strong></summary>
+
+- Text preprocessing and inspection: normalisation, tokenisation, feature auditing  
+- Vectorisation: bag-of-words and TF-IDF; baseline classifiers (Naive Bayes)  
 - Recommender foundations: similarity metrics, collaborative filtering, constraint-aware framing  
 
----
+</details>
 
-## 7) Interpretability, Diagnostics & Reporting
-- Feature importance; partial dependence style diagnostics  
-- SHAP-style global/local explanation workflows (where appropriate)  
-- Model debugging: residual/error slicing, failure modes, robustness checks  
-- Decision-ready reporting (clear tradeoffs, assumptions, limitations)  
+<details>
+<summary><strong>LLMs, prompt engineering & agents</strong></summary>
 
----
+- Prompting for structured outputs; reliability patterns (prompt scaffolds, self-checks, evaluation loops)  
+- Tool calling and retrieval patterns; schema/contract design for model outputs  
+- Agent workflows: planning/acting loops, orchestration, retries, human-in-the-loop checkpoints  
+- LangGraph concepts: state, control flow, tracing/debugging  
+- OpenAI API integration patterns for prompt-driven applications  
 
-## 8) Programming & Libraries
-- **Python (primary):** pandas, NumPy, scikit-learn, matplotlib, seaborn, plotly; regex; logging; OOP  
-- **R:** tidyverse, ggplot2; sf/terra; Shiny familiarity  
-- **SQL:** PostgreSQL + **pgAdmin4** (joins, CTEs, window functions, views, NULL-safe patterns)  
+</details>
 
----
+<details>
+<summary><strong>Geospatial & remote sensing</strong></summary>
 
-## 9) Data Engineering, I/O & Integration
-- Data ingestion/processing: CSV/Excel/text; file I/O; schema discipline  
-- Web data basics: requests + BeautifulSoup; PDF parsing basics  
-- Integration patterns: API + SQL workflows; joining complex relational datasets  
-- Exposure to distributed-data tooling: **Spark (intro)**  
+- Raster/vector workflows; spatial joins; geoprocessing pipelines  
+- Spatial feature engineering; landscape/canopy metrics  
+- Scalable spatial processing  
 
----
+</details>
 
-## 10) Software Engineering & Reproducibility
-- Git/GitHub: branching/merging, PR workflow, conflict resolution, diff-driven review  
-- Environments: venv/conda (Python), renv (R)  
-- Code quality: assertions/validation utilities, docstrings, type hints where useful, pytest-style testing patterns  
-- Modular architecture: reusable modules, script-to-pipeline conversion, clean interfaces  
-- Reproducible reporting: R Markdown; Jupyter Notebook; artefact generation + methods-first documentation  
+<details>
+<summary><strong>Visualisation & lightweight apps</strong></summary>
 
----
+- Visualisation: matplotlib, seaborn, plotly; ggplot2  
+- Lightweight apps: Streamlit (Python), Shiny (R)  
 
-## 11) Databases & Storage
-- PostgreSQL setup and querying; analytics-oriented schema reasoning  
-- Microsoft Access (legacy support)  
-
----
-
-## 12) Visualisation & Dashboards
-- EDA + diagnostic plots in Python/R  
-- Interactive outputs: Streamlit (Python), Shiny familiarity (R), Plotly  
-
----
-
-## 13) Geospatial & Remote Sensing
-- **GIS / remote sensing** workflows: raster/vector, spatial joins, geoprocessing pipelines  
-- Spatial feature engineering; canopy/landscape metrics  
-- Parallelised spatial workflows where appropriate  
-
----
-
-## 14) LLMs, Prompt Engineering & Agents (Foundations)
-- Prompt engineering for summarisation, classification, transformation, generation  
-- Reliability patterns: structured prompts, iterative refinement, evaluation loops  
-- Agentic patterns: planning/acting/reflection loops, tool calling, retrieval, multi-agent coordination  
-- Graph-style orchestration concepts (LangGraph): state, control flow, tracing/debugging, retries, HITL stages  
-- API exposure: **OpenAI API** basics (prompt-driven app patterns)  
+</details>
 
 ---
 
 ## Education & Training
-A detailed, certificate-linked list of formal education and courses is maintained here: **/datascience/education/**
+A detailed, certificate-linked list of formal education and courses is maintained here: **/datascience/education/**.
