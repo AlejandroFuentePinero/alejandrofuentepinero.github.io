@@ -31,6 +31,8 @@ In each /_projects/*.md add:
 {%- assign research = site.projects | where: "tier", "research" | sort: "order" -%}
 {%- assign other    = site.projects | where_exp: "p", "p.tier == nil" | sort: "date" | reverse -%}
 
+---
+
 ## Flagship Projects
 Working apps/pipelines with reproducible architecture and documented outputs.
 <div class="mm-card-grid projects-tier projects-tier--featured">
@@ -38,6 +40,8 @@ Working apps/pipelines with reproducible architecture and documented outputs.
   {% include archive-single.html %}
 {% endfor %}
 </div>
+
+---
 
 ## Research Projects
 Peer-reviewed modelling/analytics work presented in a DS case-study format.
@@ -47,6 +51,8 @@ Peer-reviewed modelling/analytics work presented in a DS case-study format.
 {% endfor %}
 </div>
 
+---
+
 ## Skill Labs
 Short technique-focused builds used to cement specific skills.
 <div class="mm-card-grid projects-tier projects-tier--learning">
@@ -54,6 +60,8 @@ Short technique-focused builds used to cement specific skills.
   {% include archive-single.html %}
 {% endfor %}
 </div>
+
+---
 
 {% if other and other.size > 0 %}
 ## Other
