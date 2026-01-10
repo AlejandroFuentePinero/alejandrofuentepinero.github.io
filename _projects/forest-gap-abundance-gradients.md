@@ -1,6 +1,7 @@
 ---
 title: "Analytical Framework for Forest Gap Gradient Effects on Tropical Species Abundance"
 excerpt: "Developed the analytical framework using generalised linear models to assess abundance changes of tropical species across forest gap gradients."
+tier: research   # featured | learning | research
 date: 2025-07-16
 ---
 
