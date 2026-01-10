@@ -14,6 +14,12 @@ If you have 3 minutes: read the first two in “Featured case studies”.
 
 {% include base_path %}
 
+{%- comment -%}
+In each /_projects/*.md add:
+  tier: featured | learning | research
+  order: <number>   (recommended)
+{%- endcomment -%}
+
 {%- assign featured = site.projects | where: "tier", "featured" | sort: "order" -%}
 {%- assign learning = site.projects | where: "tier", "learning" | sort: "order" -%}
 {%- assign research = site.projects | where: "tier", "research" | sort: "order" -%}
@@ -24,33 +30,41 @@ If you have 3 minutes: read the first two in “Featured case studies”.
 ## Featured case studies
 Portfolio-grade, end-to-end projects.
 
+<div class="projects-tier projects-tier--featured">
 {%- for post in featured -%}
   {% include archive-single.html type="list" %}
 {%- endfor -%}
+</div>
 
 <hr>
 
 ## Learning builds (curated)
 Smaller repos used to build core skills.
 
+<div class="projects-tier projects-tier--learning">
 {%- for post in learning -%}
   {% include archive-single.html type="list" %}
 {%- endfor -%}
+</div>
 
 <hr>
 
 ## Research case studies (translated)
 Academic work reframed in industry language.
 
+<div class="projects-tier projects-tier--research">
 {%- for post in research -%}
   {% include archive-single.html type="list" %}
 {%- endfor -%}
+</div>
 
 {%- if other and other.size > 0 -%}
 <hr>
 
 ## Other
+<div class="projects-tier projects-tier--other">
 {%- for post in other -%}
   {% include archive-single.html type="list" %}
 {%- endfor -%}
+</div>
 {%- endif -%}
