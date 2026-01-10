@@ -2,6 +2,7 @@
 title: "MLB Analytics with SQL"
 excerpt: "End-to-end SQL analytics project using the Lahman Baseball Database. Designed a complete relational workflow with schema creation, reusable views, advanced CTEs, window functions, and business-focused analyses on talent pipelines, salary dynamics, and player careers."
 date: 2025-11-24
+tier: featured   # featured | learning | research
 order: 2
 ---
 
