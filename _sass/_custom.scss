@@ -33,44 +33,11 @@
   z-index: 0; /* behind links */
 }
 
-/* ========== Projects page: card-style list items (no grid issues) ========== */
-/* Requires Projects page front matter: classes: wide projects-page */
-.projects-page {
+/* ========== Projects tiers (accents + spacing; uses existing .mm-card-grid cards) ========== */
+.projects-page .projects-tier--featured .archive__item { border-left: 4px solid rgba(0,0,0,.18); }
+.projects-page .projects-tier--research  .archive__item { border-left: 4px solid rgba(0,0,0,.10); }
+.projects-page .projects-tier--learning  .archive__item { border-left: 4px solid rgba(0,0,0,.12); }
+.projects-page .projects-tier--other     .archive__item { border-left: 4px solid rgba(0,0,0,.08); }
 
-  /* Tier wrapper spacing */
-  .projects-tier .list__item {
-    margin-bottom: 1.1rem;
-  }
-
-  /* Card styling for list items */
-  .projects-tier .archive__item {
-    border: 1px solid #e8e8e8;
-    border-radius: 12px;
-    background: #fff;
-    padding: 1rem 1.25rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,.04);
-    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
-    position: relative;
-    margin-bottom: 1.25rem; /* ensure spacing even if list__item margin collapses */
-  }
-
-  .projects-tier .archive__item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 24px rgba(0,0,0,.08);
-    border-color: #ddd;
-  }
-
-  /* Title spacing */
-  .projects-tier .archive__item-title {
-    margin: 0 0 0.4rem;
-  }
-
-  /* Meta line: smaller + calmer */
-  .projects-tier .page__meta {
-    margin: 0.25rem 0 0.75rem;
-    font-size: 0.85em;
-    opacity: 0.9;
-  }
-
-  /* Excerpt handling:
-     - keep excerpts ON (recommended) but
+/* Slightly more space between tier sections */
+.projects-page h2 { margin-top: 2.0em; }
