@@ -8,13 +8,13 @@ classes: wide projects-page
 entries_layout: grid
 ---
 
-This page is a map of my data-science work, grouped by deliverable type:
+This page is a map of my data-science work, grouped into three tiers:
 
-> - **Featured case studies**: industry-style, end-to-end projects with code (reproducible pipeline + outputs).
-> - **Research case studies**: industry-style case studies of rigorous modelling work where the primary deliverable is an analysis/paper (methods, validation, and decision-relevant insights).
-> - **Learning builds**: smaller repos from structured practice (kept clean), included to show breadth—not as the main evidence of senior capability.
+> Flagship Projects: end-to-end projects where I solved a real problem and delivered a working app/pipeline with reproducible architecture, orchestration, and documented outputs.
+> Research Projects: research-grade modelling and analytics work presented in a DS format, where the primary deliverable is an analysis/paper/report (methods, validation, and findings).
+> Skill Labs: short, focused projects built to implement and cement specific techniques (e.g., ML workflows, EDA patterns, OOP systems) through hands-on application.
 
-If you’re short on time: start with **Featured case studies**, then scan one **Research case study**.
+If you’re short on time: start with Flagship Projects, then scan one Research Project.
 
 
 {% include base_path %}
@@ -30,23 +30,26 @@ In each /_projects/*.md add:
 {%- assign research = site.projects | where: "tier", "research" | sort: "order" -%}
 {%- assign other    = site.projects | where_exp: "p", "p.tier == nil" | sort: "date" | reverse -%}
 
-## Featured case studies
+## Flagship Projects
+End-to-end projects where I solved a real problem and delivered a working app/pipeline with reproducible architecture, orchestration, and documented outputs.
 <div class="mm-card-grid projects-tier projects-tier--featured">
 {% for post in featured %}
   {% include archive-single.html %}
 {% endfor %}
 </div>
 
-## Learning builds (curated)
-<div class="mm-card-grid projects-tier projects-tier--learning">
-{% for post in learning %}
+## Research Projects
+Rigorous modelling/analysis projects where the primary deliverable is a paper or report, presented in a data-science format (methods, validation, and decision-relevant insights).
+<div class="mm-card-grid projects-tier projects-tier--research">
+{% for post in research %}
   {% include archive-single.html %}
 {% endfor %}
 </div>
 
-## Research case studies (translated)
-<div class="mm-card-grid projects-tier projects-tier--research">
-{% for post in research %}
+## Skill Labs
+Short, focused projects built to implement and cement specific techniques through hands-on application.
+<div class="mm-card-grid projects-tier projects-tier--learning">
+{% for post in learning %}
   {% include archive-single.html %}
 {% endfor %}
 </div>
