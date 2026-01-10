@@ -2,6 +2,7 @@
 title: "Exploratory Data Analysis (EDA) Projects in Python"
 excerpt: "Developed an applied EDA framework combining real-world case studies — emergency call records and financial time series — to demonstrate data wrangling, feature extraction, and visualisation workflows using pandas, seaborn, and plotly."
 date: 2025-10-02
+tier: learning   # featured | learning | research
 order: 4
 ---
 
