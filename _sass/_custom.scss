@@ -1,11 +1,13 @@
+
 /* ========== Reusable card grid (Projects, Publications, Talks, etc.) ========== */
+/* Keep the card styling, but DO NOT force grids inside grids.
+   Only apply when you intentionally wrap a page with .mm-card-grid. */
 .mm-card-grid .archive__item {
   border: 1px solid #e8e8e8;
   border-radius: 12px;
   background: #fff;
   padding: 1rem 1.25rem;
   box-shadow: 0 2px 8px rgba(0,0,0,.04);
-  height: 100%;
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
   position: relative;
   margin-bottom: 1.25rem;
@@ -33,6 +35,42 @@
   z-index: 0; /* behind links */
 }
 
+/* ========== Projects page overrides (clean recruiter scan) ========== */
+/* Add `classes: wide projects-page` to the Projects page front matter */
+.projects-page {
+
+  /* Hide descriptions/excerpts to reduce clutter */
+  .archive__item-excerpt {
+    display: none !important;
+  }
+
+  /* Improve section separation */
+  hr {
+    margin: 2em 0;
+    border: 0;
+    border-top: 1px solid #e6e6e6;
+  }
+
+  h2 {
+    margin-top: 2.0em;
+    margin-bottom: 0.35em;
+  }
+
+  /* Tighten meta spacing (Published line) */
+  .page__meta {
+    margin: 0.25em 0 0.75em;
+  }
+
+  /* If the theme still renders items in a grid, force list-like behavior */
+  .archive {
+    display: block;
+  }
+  .list__item {
+    margin-bottom: 0.9em;
+  }
+}
+
+/* ========== Sidebar tweaks ========== */
 /* Sidebar section titles */
 .nav__sub-title {
   font-size: 0.75rem; /* smaller than before but still bigger than links */
@@ -40,12 +78,3 @@
   text-transform: uppercase;
   margin-top: 1rem;
   margin-bottom: 0.4rem;
-  border-bottom: 2px solid #e2e2e2;
-  padding-bottom: 0.2rem;
-}
-
-/* Sidebar link size */
-.sidebar .nav__items a {
-  font-size: 0.5rem; /* slightly smaller than now */
-}
-
