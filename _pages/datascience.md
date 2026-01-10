@@ -6,7 +6,7 @@ classes: wide
 toc: false
 ---
 
-This section curates my data science work. Start with **Projects** for case studies, then use **Skills**, **Education**, and **Communication** for context.
+This section showcases my data science portfolio: flagship projects, curated learning builds, and translated research case studies. Explore Projects to see end-to-end work first, then Skills, Education, and Communication for supporting context.
 
 <ul class="feature__wrapper">
   <li class="feature__item">
