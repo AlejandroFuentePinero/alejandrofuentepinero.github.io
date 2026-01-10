@@ -10,9 +10,9 @@ entries_layout: grid
 
 This page is a map of my data-science work, grouped into three tiers:
 
-> Flagship Projects: end-to-end projects where I solved a real problem and delivered a working app/pipeline with reproducible architecture, orchestration, and documented outputs.
-> Research Projects: research-grade modelling and analytics work presented in a DS format, where the primary deliverable is an analysis/paper/report (methods, validation, and findings).
-> Skill Labs: short, focused projects built to implement and cement specific techniques (e.g., ML workflows, EDA patterns, OOP systems) through hands-on application.
+> * Flagship Projects: end-to-end projects where I solved a real problem and delivered a working app/pipeline with reproducible architecture, orchestration, and documented outputs.
+> * Research Projects: research-grade modelling and analytics work presented in a DS format, where the primary deliverable is an analysis/paper/report (methods, validation, and findings).
+> * Skill Labs: short, focused projects built to implement and cement specific techniques (e.g., ML workflows, EDA patterns, OOP systems) through hands-on application.
 
 If you’re short on time: start with Flagship Projects, then scan one Research Project.
 
