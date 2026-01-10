@@ -92,7 +92,7 @@ classes: wide
 <details>
 <summary><strong>The Complete Python Bootcamp: From Zero to Hero in Python</strong></summary>
 
-- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
+[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
 - **Outcome:** strong programming foundation for automation, scripting, data handling, and maintainable code.
 - **Coverage:**
   - Core Python: data types, control flow, functions, and standard debugging patterns.
@@ -109,7 +109,7 @@ classes: wide
 <details>
 <summary><strong>Python for Data Science and Machine Learning Bootcamp</strong></summary>
 
-- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
+[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
 - **Outcome:** end-to-end applied ML workflow: wrangling → modelling → evaluation.
 - **Coverage:**
   - Data wrangling and numerical computing: **pandas**, **NumPy**.
@@ -128,7 +128,7 @@ classes: wide
 <details>
 <summary><strong>Machine Learning Specialisation — DeepLearning.AI (Andrew Ng)</strong></summary>
 
-- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/machine_learning_specialisation.png)
+[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/machine_learning_specialisation.png)
 - **Outcome:** strong conceptual + practical grounding in classical ML and core modern foundations.
 - **Coverage:**
   - Supervised learning fundamentals; model evaluation and optimisation concepts.
@@ -158,7 +158,7 @@ classes: wide
 <details>
 <summary><strong>The Complete SQL Bootcamp: PostgreSQL & pgAdmin</strong></summary>
 
-- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_basic.pdf)
+[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_basic.pdf)
 - **Outcome:** strong SQL foundation for analytics workflows in PostgreSQL.
 - **Coverage:**
   - Core querying: `SELECT`, `WHERE`, filtering, ordering, pattern matching.
@@ -172,7 +172,7 @@ classes: wide
 <details>
 <summary><strong>SQL for Data Analysis: Advanced SQL Querying Techniques</strong></summary>
 
-- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_advanced.pdf)
+[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_advanced.pdf)
 - **Outcome:** advanced analytical SQL patterns for complex relational datasets.
 - **Coverage:**
   - Advanced joins, unions, and self-join patterns.
@@ -191,7 +191,7 @@ classes: wide
 <details>
 <summary><strong>ChatGPT Prompt Engineering for Developers</strong></summary>
 
-- [_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/855ab3d3-2a59-4f56-b934-e620c7e28551?usp=sharing)
+[_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/855ab3d3-2a59-4f56-b934-e620c7e28551?usp=sharing)
 - **Outcome:** reliable prompting patterns for LLM application building.
 - **Coverage:**
   - Structured prompting for summarisation, inference, transformation, generation.
@@ -203,7 +203,7 @@ classes: wide
 <details>
 <summary><strong>Agentic AI — Andrew Ng</strong></summary>
 
-- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/agentic_AI.png)
+[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/agentic_AI.png)
 - **Outcome:** foundations of agentic workflows (plan/act/reflect) and tool-based systems.
 - **Coverage:**
   - Task decomposition; reflection-driven improvement; evaluation loops.
@@ -215,7 +215,7 @@ classes: wide
 <details>
 <summary><strong>AI Agents in LangGraph</strong></summary>
 
-- [_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/d88b3679-f219-4914-913e-9c0b7ea6ab77?usp=sharing)
+[_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/d88b3679-f219-4914-913e-9c0b7ea6ab77?usp=sharing)
 - **Outcome:** graph-structured agent workflows with explicit control flow and tracing.
 - **Coverage:**
   - Nodes/edges/state objects; deterministic orchestration and tool integration.
