@@ -3,8 +3,9 @@ title: "Projects"
 layout: archive
 permalink: /datascience/projects/
 collection: projects
-entries_layout: grid
-classes: wide
+entries_layout: list
+classes: wide projects-page
+show_excerpts: false
 ---
 
 Below are selected case studies (academic + applied) with a data-science focus.
@@ -13,51 +14,43 @@ If you have 3 minutes: read the first two in “Featured case studies”.
 
 {% include base_path %}
 
-{%- comment -%}
-Requirements in each project markdown (/_projects/*.md):
-  tier: featured | learning | research
-  order: (number)  # recommended for deterministic ordering inside each tier
-{%- endcomment -%}
-
 {%- assign featured = site.projects | where: "tier", "featured" | sort: "order" -%}
 {%- assign learning = site.projects | where: "tier", "learning" | sort: "order" -%}
 {%- assign research = site.projects | where: "tier", "research" | sort: "order" -%}
 {%- assign other    = site.projects | where_exp: "p", "p.tier == nil" | sort: "date" | reverse -%}
 
-<h2>Featured case studies</h2>
-<p>Portfolio-grade, end-to-end projects (best signal).</p>
+<hr>
 
-<div class="mm-card-grid">
-  {%- for post in featured -%}
-    {% include archive-single.html type="grid" %}
-  {%- endfor -%}
-</div>
+## Featured case studies
+Portfolio-grade, end-to-end projects.
 
-<h2>Learning builds (curated)</h2>
-<p>Smaller repos used to build core skills (kept clean and intentional).</p>
+{%- for post in featured -%}
+  {% include archive-single.html type="list" %}
+{%- endfor -%}
 
-<div class="mm-card-grid">
-  {%- for post in learning -%}
-    {% include archive-single.html type="grid" %}
-  {%- endfor -%}
-</div>
+<hr>
 
-<h2>Research case studies (translated)</h2>
-<p>Academic projects reframed in industry language (methods + outcomes).</p>
+## Learning builds (curated)
+Smaller repos used to build core skills.
 
-<div class="mm-card-grid">
-  {%- for post in research -%}
-    {% include archive-single.html type="grid" %}
-  {%- endfor -%}
-</div>
+{%- for post in learning -%}
+  {% include archive-single.html type="list" %}
+{%- endfor -%}
+
+<hr>
+
+## Research case studies (translated)
+Academic work reframed in industry language.
+
+{%- for post in research -%}
+  {% include archive-single.html type="list" %}
+{%- endfor -%}
 
 {%- if other and other.size > 0 -%}
-<h2>Other</h2>
-<p>Uncategorized items (consider assigning a tier).</p>
+<hr>
 
-<div class="mm-card-grid">
-  {%- for post in other -%}
-    {% include archive-single.html type="grid" %}
-  {%- endfor -%}
-</div>
+## Other
+{%- for post in other -%}
+  {% include archive-single.html type="list" %}
+{%- endfor -%}
 {%- endif -%}
