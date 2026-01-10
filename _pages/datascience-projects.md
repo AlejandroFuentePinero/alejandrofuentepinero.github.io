@@ -1,21 +1,19 @@
 ---
-title: "Projects"
 layout: archive
+title: "Projects"
 permalink: /datascience/projects/
 collection: projects
-entries_layout: list
+author_profile: true
 classes: wide projects-page
-show_excerpts: true
+entries_layout: grid
 ---
 
 Below are selected case studies (academic + applied) with a data-science focus.
 
-If you have 3 minutes: read the first two in “Featured case studies”.
-
 {% include base_path %}
 
 {%- comment -%}
-Add to each /_projects/*.md:
+In each /_projects/*.md add:
   tier: featured | learning | research
   order: <number>
 {%- endcomment -%}
@@ -25,46 +23,32 @@ Add to each /_projects/*.md:
 {%- assign research = site.projects | where: "tier", "research" | sort: "order" -%}
 {%- assign other    = site.projects | where_exp: "p", "p.tier == nil" | sort: "date" | reverse -%}
 
-<hr>
-
 ## Featured case studies
-Portfolio-grade, end-to-end projects.
-
-<div class="projects-tier projects-tier--featured">
-{%- for post in featured -%}
-  {% include archive-single.html type="list" %}
-{%- endfor -%}
+<div class="mm-card-grid projects-tier projects-tier--featured">
+{% for post in featured %}
+  {% include archive-single.html %}
+{% endfor %}
 </div>
-
-<hr>
 
 ## Learning builds (curated)
-Smaller repos used to build core skills.
-
-<div class="projects-tier projects-tier--learning">
-{%- for post in learning -%}
-  {% include archive-single.html type="list" %}
-{%- endfor -%}
+<div class="mm-card-grid projects-tier projects-tier--learning">
+{% for post in learning %}
+  {% include archive-single.html %}
+{% endfor %}
 </div>
-
-<hr>
 
 ## Research case studies (translated)
-Academic projects reframed in industry language.
-
-<div class="projects-tier projects-tier--research">
-{%- for post in research -%}
-  {% include archive-single.html type="list" %}
-{%- endfor -%}
+<div class="mm-card-grid projects-tier projects-tier--research">
+{% for post in research %}
+  {% include archive-single.html %}
+{% endfor %}
 </div>
 
-{%- if other and other.size > 0 -%}
-<hr>
-
+{% if other and other.size > 0 %}
 ## Other
-<div class="projects-tier projects-tier--other">
-{%- for post in other -%}
-  {% include archive-single.html type="list" %}
-{%- endfor -%}
+<div class="mm-card-grid projects-tier projects-tier--other">
+{% for post in other %}
+  {% include archive-single.html %}
+{% endfor %}
 </div>
-{%- endif -%}
+{% endif %}
