@@ -29,6 +29,6 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-This section highlights my applied data science work across projects, skills, education, and communication.
+Welcome to my Data Science portfolio. This section showcases my projects, curated learning builds, and translated research case studies. Use Projects to see end-to-end work first, then Skills, Education, and Communication for supporting context.
 
 {% include feature_row id="feature_row" %}
