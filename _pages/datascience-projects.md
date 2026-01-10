@@ -10,9 +10,9 @@ entries_layout: grid
 
 This page is a map of my data-science work, grouped by deliverable type:
 
-- **Featured case studies**: industry-style, end-to-end projects with code (reproducible pipeline + outputs).
-- **Research case studies**: industry-style case studies of rigorous modelling work where the primary deliverable is an analysis/paper (methods, validation, and decision-relevant insights).
-- **Learning builds**: smaller repos from structured practice (kept clean), included to show breadth—not as the main evidence of senior capability.
+> - **Featured case studies**: industry-style, end-to-end projects with code (reproducible pipeline + outputs).
+> - **Research case studies**: industry-style case studies of rigorous modelling work where the primary deliverable is an analysis/paper (methods, validation, and decision-relevant insights).
+> - **Learning builds**: smaller repos from structured practice (kept clean), included to show breadth—not as the main evidence of senior capability.
 
 If you’re short on time: start with **Featured case studies**, then scan one **Research case study**.
 
