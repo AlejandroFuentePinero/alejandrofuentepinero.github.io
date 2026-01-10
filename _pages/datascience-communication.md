@@ -27,6 +27,13 @@ For selected technical talks, workshops, and briefings, see
 
   <div class="archive__item">
     <h3 class="archive__item-title">
+      <a href="https://job-intelligence-engine.streamlit.app/" target="_blank" rel="noopener">Streamlit App</a>
+    </h3>
+    <p class="archive__item-excerpt">Job Intelligence Engine.</p>
+  </div>
+
+  <div class="archive__item">
+    <h3 class="archive__item-title">
       <a href="https://alejandrodelafuente.shinyapps.io/BirdsPopTrendAWT/" target="_blank" rel="noopener">Interactive Shiny App</a>
     </h3>
     <p class="archive__item-excerpt">Population trend explorer and forecasting tool for tropical birds.</p>
