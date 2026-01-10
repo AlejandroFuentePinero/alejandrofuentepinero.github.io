@@ -1,45 +1,51 @@
 ---
 title: "Data Science"
 permalink: /datascience/
-layout: splash
-classes: wide datascience-landing
+layout: single
+classes: wide
 toc: false
-# no sidebar here; keep it on the subpages
-
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.05"
-  title: "Data Science"
-  excerpt: "Applied ML/analytics with a focus on reproducible pipelines, interpretability, and decision-ready outputs."
-  actions:
-    - label: "View projects"
-      url: "/datascience/projects/"
-    - label: "View GitHub"
-      url: "https://github.com/AlejandroFuentePinero"
-
-feature_row:
-  - title: "Projects (start here)"
-    excerpt: "Two flagship case studies first, then curated learning builds and translated research."
-    url: "/datascience/projects/"
-    btn_label: "Explore projects"
-    btn_class: "btn--primary"
-  - title: "Skills"
-    excerpt: "Python, SQL, ML, experimentation, Bayesian modeling, and data workflows."
-    url: "/datascience/skills/"
-    btn_label: "See skills"
-    btn_class: "btn--primary"
-  - title: "Education"
-    excerpt: "Formal training and certifications relevant to DS/ML roles."
-    url: "/datascience/education/"
-    btn_label: "View education"
-    btn_class: "btn--primary"
-  - title: "Communication"
-    excerpt: "Writing, talks, workshops, and resources for technical + non-technical audiences."
-    url: "/datascience/communication/"
-    btn_label: "View communication"
-    btn_class: "btn--primary"
 ---
 
-This page showcases my data science portfolio: flagship projects, curated learning builds, and translated research case studies. Use Projects to see end-to-end work first, then Skills, Education, and Communication for supporting context.”
+This section curates my data science work. Start with **Projects** for case studies, then use **Skills**, **Education**, and **Communication** for context.
 
-{% include feature_row id="feature_row" %}
+<ul class="feature__wrapper">
+  <li class="feature__item">
+    <div class="archive__item">
+      <h2 class="archive__item-title">Projects (start here)</h2>
+      <div class="archive__item-excerpt">
+        <p>Flagship case studies, curated learning builds, and translated research.</p>
+      </div>
+      <p><a href="/datascience/projects/" class="btn btn--primary">Explore projects</a></p>
+    </div>
+  </li>
+
+  <li class="feature__item">
+    <div class="archive__item">
+      <h2 class="archive__item-title">Skills</h2>
+      <div class="archive__item-excerpt">
+        <p>Python, SQL, ML, experimentation, Bayesian modeling, and workflows.</p>
+      </div>
+      <p><a href="/datascience/skills/" class="btn btn--primary">See skills</a></p>
+    </div>
+  </li>
+
+  <li class="feature__item">
+    <div class="archive__item">
+      <h2 class="archive__item-title">Education</h2>
+      <div class="archive__item-excerpt">
+        <p>Degrees, training, and certifications relevant to DS/ML roles.</p>
+      </div>
+      <p><a href="/datascience/education/" class="btn btn--primary">View education</a></p>
+    </div>
+  </li>
+
+  <li class="feature__item">
+    <div class="archive__item">
+      <h2 class="archive__item-title">Communication</h2>
+      <div class="archive__item-excerpt">
+        <p>Talks, workshops, and technical writing for varied audiences.</p>
+      </div>
+      <p><a href="/datascience/communication/" class="btn btn--primary">View communication</a></p>
+    </div>
+  </li>
+</ul>
