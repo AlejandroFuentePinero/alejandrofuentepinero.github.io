@@ -5,177 +5,239 @@ layout: single
 classes: wide
 ---
 
-## Formal Education
+## Highlights
 
-- **Ph.D. in Zoology and Ecology**, James Cook University — *Cum laude* (2024)  
-  - **Skills & Tools:** Bayesian and frequentist inference, hierarchical modelling, machine learning, predictive modelling, spatial analysis (GIS, remote sensing), automated data pipelines, data cleaning, R programming, reproducible workflows.  
-  - **Data Types:** Multi-source ecological, biological, climatic, physiological, and biogeochemical datasets (soil, foliage chemistry).  
-  - **Applications:** Developed novel modelling frameworks to predict species vulnerability to extreme events and identify high-risk habitats.  
-
-- **M.S. in Biology and Conservation of Biodiversity**, Universidad de Salamanca (2016)  
-  - **Skills & Tools:** GIS, advanced statistics, applied statistical modelling, R programming, spatial analysis, workflow automation.  
-  - **Applications:** Designed and executed analytical workflows for biodiversity monitoring and conservation planning.  
-
-- **B.S. in Biology**, Universidad de Salamanca (2014)  
-  - **Skills & Tools:** Mathematics, algebra, biostatistics, physics, introductory statistical programming, ecological modelling.  
-  - **Applications:** Undergraduate research project integrating environmental and ecological data.  
+- Research PhD with a strong quantitative foundation: hierarchical/Bayesian inference, spatiotemporal reasoning, and reproducible modelling workflows.
+- Industry-oriented stack: Python + SQL for data work, modelling, evaluation, and reliable delivery.
+- Formal ML training across supervised/unsupervised learning, recommenders, and introductory deep learning.
+- LLMs and agentic workflows (foundational): prompt engineering, tool use patterns, and graph-style orchestration concepts.
 
 ---
+
+## Formal Education
+
+<details>
+<summary><strong>Ph.D. in Zoology and Ecology — James Cook University (Cum laude)</strong></summary>
+
+- **Focus:** research-grade modelling for ecological systems under uncertainty and spatiotemporal structure.
+- **Skills & tools:** Bayesian and frequentist inference; hierarchical modelling; predictive modelling; GIS/remote sensing; automated data pipelines; data cleaning; R; reproducible workflows.
+- **Data types:** multi-source ecological, biological, climatic, physiological, and biogeochemical datasets (e.g., soil, foliage chemistry).
+- **Outcome:** developed modelling frameworks to predict vulnerability to extreme events and identify high-risk habitats.
+
+</details>
+
+<details>
+<summary><strong>M.S. in Biology and Conservation of Biodiversity — Universidad de Salamanca</strong></summary>
+
+- **Skills & tools:** GIS; advanced statistics; applied statistical modelling; R; spatial analysis; workflow automation.
+- **Outcome:** designed and executed analytical workflows for biodiversity monitoring and conservation planning.
+
+</details>
+
+<details>
+<summary><strong>B.S. in Biology — Universidad de Salamanca</strong></summary>
+
+- **Skills & tools:** mathematics, algebra, biostatistics, physics, introductory statistical programming, ecological modelling.
+- **Outcome:** undergraduate research integrating environmental and ecological data.
+
+</details>
+
+---
+
 ## Statistical, Computational & Coding Training
 
-### Bayesian and hierarchical modelling
+### Bayesian & hierarchical modelling
+
+<details>
+<summary><strong>Core courses & texts</strong></summary>
+
 - [Statistical Rethinking: A Bayesian Course with Examples in R and Stan](https://xcelab.net/rm/)
-- [Statistical Rethinking 2023 - Online Course by Richard McElreath](https://www.youtube.com/watch?v=FdnMWdICdRs&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus)   
-- Bayesian Methods for Ecology by Michael A. McCarthy
-- [Applied Hierarchical Modeling in Ecology](https://www.mbr-pwrc.usgs.gov/pubanalysis/keryroylebook/) 
+- [Statistical Rethinking 2023 — Online Course (Richard McElreath)](https://www.youtube.com/watch?v=FdnMWdICdRs&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus)
+- Bayesian Methods for Ecology — Michael A. McCarthy
+- [Applied Hierarchical Modeling in Ecology](https://www.mbr-pwrc.usgs.gov/pubanalysis/keryroylebook/)
 - [Integrated Population Models](https://www.sciencedirect.com/book/9780323908108/integrated-population-models)
-- ‘Statistics in R’ workshop with Dr Murray Logan (biostatistician at the Australian Institute of Marine Science)
+- Statistics in R workshop — Dr Murray Logan (AIMS)
+
+</details>
+
+---
 
 ### Coding in R
+
+<details>
+<summary><strong>R for Data Science</strong></summary>
+
 - [R for Data Science](https://r4ds.had.co.nz/)
-- ‘Statistics in R’ workshop with Dr Murray Logan
-  - Completed a structured, workshop-based introduction to **R for statistical analysis**, covering core language fundamentals and the full workflow from data handling to modelling.  
-  - Built proficiency with **R basics**, including objects, vectors, indexing, functions, and working efficiently in an interactive coding environment.  
-  - Developed practical skills for handling real datasets using **data frames**, vectorised operations, and tidy data principles, with an emphasis on clear, reproducible analysis.  
-  - Trained in **code management and versioning** practices and implemented **reproducible research workflows** using **R Markdown**.  
-  - Applied modern data-science tooling in R, including **data wrangling** and high-quality visualisation with **ggplot2**.  
-  - Strengthened statistical foundations through **introductory principles** and **basic inference testing** (hypothesis testing and interpretation).  
-  - Extended modelling capability across a broad family of methods, including **linear models**, **mixed-effects models**, **generalised linear (mixed) models**, **non-linear / GAM frameworks**, and **multivariate analyses**, with exposure to both **frequentist and Bayesian** implementations.  
-  - Reinforced professional practice by consistently explaining the purpose of each step (syntax → data transformation → model → interpretation), supporting readable, transparent, and reusable analysis pipelines.
 
-### Coding in Python & Machine learning
-- The Complete Python Bootcamp: From Zero to Hero in Python
-  [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
-  - Completed a comprehensive, hands-on course covering the full Python stack from beginner fundamentals to advanced programming concepts.  
-  - Built a strong professional foundation in **syntax, data structures, control flow, functions, and Object-Oriented Programming (OOP)** through practical exercises and projects.  
-  - Developed the ability to write **clean, efficient, and maintainable code**, applying Python across automation, scripting, data handling, and application development.  
-  - Explored Python’s standard library, automation patterns, file processing, and interactive workflows through end-to-end mini-projects.
-  - **Core skills acquired:**  
-    - Python essentials: variables, data types, operators, loops, conditionals, and functions.  
-    - Intermediate and advanced concepts: decorators, debugging, error handling, regex, and iterators.  
-    - Functional and **Object-Oriented Programming** (classes, inheritance, encapsulation).  
-    - Working with key modules: `collections`, `datetime`, `os`, `math`, `random`, `re`, and file I/O.  
-    - Handling **files, images, PDFs, CSVs**, and automating repetitive workflows.  
-    - **Web scraping** with BeautifulSoup and Requests.  
-    - **Email automation** and productivity scripting.  
-    - Building and debugging in both **Jupyter notebooks and standalone `.py` files**.  
-    - Creating interactive mini-projects and games (e.g., Blackjack, Tic-Tac-Toe).  
-    - Introductory **GUI development** and interactive notebook elements.  
-    - Applying Python to real-world scenarios, from automation to small production-ready projects.
+</details>
 
+<details>
+<summary><strong>Statistics in R workshop — Dr Murray Logan (AIMS)</strong></summary>
 
-- Python for Data Science and Machine Learning Bootcamp
-  [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
-  - Completed a comprehensive, project-based introduction to **data science and machine learning in Python**, covering the full modelling workflow from data cleaning to evaluation and interpretation.
-  - Built practical experience across the modern Python data stack (NumPy, pandas, Matplotlib, Seaborn, Plotly) and implemented supervised, unsupervised, and introductory deep-learning models.
-  - **Core skills acquired:**
-    - Data wrangling and numerical computing with **pandas** and **NumPy**.  
-    - Exploratory and statistical visualisation using **Matplotlib**, **Seaborn**, and **Plotly**.  
-    - Machine learning with **scikit-learn**, including:
-      - **Supervised learning:** Linear/Logistic Regression, k-NN, Decision Trees, Random Forests, Support Vector Machines, feed-forward Neural Networks.  
-      - **Unsupervised learning:** K-Means Clustering, **PCA** (dimensionality reduction).  
-    - Introductory **NLP** (text cleaning, tokenisation, vectorisation with CountVectorizer/TF-IDF) and **Naive Bayes** classification.  
-    - Introductory **Recommender Systems** (similarity metrics and collaborative filtering).  
-    - Foundations of **Deep Learning** (activation functions, simple network training with Keras).  
-    - Model evaluation, cross-validation, train/test workflows, bias–variance analysis, and performance optimisation.  
-    - Exposure to **big-data concepts with Spark**, including handling distributed datasets in Python.
-   
-- Machine Learning Specialisation, DeepLearning.AI (Andrew Ng) [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/machine_learning_specialisation.png)
-  - Completed a foundational specialisation on **machine learning fundamentals and applied techniques** designed for practitioners entering AI and data science. The curriculum emphasises both conceptual understanding and implementation using Python and core libraries.
-  - Developed proficiency in **supervised learning, advanced algorithms, unsupervised learning, recommender systems, and introductory reinforcement learning**. Tools and environment include **Python, NumPy, scikit-learn, and TensorFlow concepts**.
+- **Outcome:** practical, end-to-end R workflow from data handling to modelling and interpretation.
+- **Coverage:**
+  - Core R fundamentals (objects, vectors, indexing, functions) and interactive workflows.
+  - Data handling with data frames; vectorised operations; tidy data principles.
+  - Wrangling and visualisation with **tidyverse** and **ggplot2**.
+  - Reproducible analysis with **R Markdown**; workflow discipline and code organisation.
+  - Statistical foundations: introductory inference testing and interpretation.
+  - Modelling coverage: linear models, GLMs/GLMMs, mixed-effects models, GAM/nonlinear frameworks, multivariate analyses (frequentist + Bayesian exposure).
 
-  **Module 1 — Supervised Machine Learning: Regression and Classification**
-  [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/supervised_ml.png)
-  - Built and trained supervised models for prediction and classification tasks, including **linear regression, logistic regression, feature scaling, model evaluation, and optimisation concepts**.
+</details>
 
-  **Module 2 — Advanced Learning Algorithms**
-  [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/advanced_learning_algorithms.png)
-  - Explored deeper models and learning techniques such as **neural networks, decision trees, ensemble logic, and optimisation strategies**, with practical guidance on algorithm application.
+---
 
-  **Module 3 — Unsupervised Learning, Recommenders, and Reinforcement Learning**
-  [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/unsupervised_learning.png)
-  - Covered **clustering (e.g., K-means), anomaly detection, recommender systems (collaborative and content-based), and introductory reinforcement learning concepts**. 
+### Coding in Python & Machine Learning
 
+<details>
+<summary><strong>The Complete Python Bootcamp: From Zero to Hero in Python</strong></summary>
+
+- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
+- **Outcome:** strong programming foundation for automation, scripting, data handling, and maintainable code.
+- **Coverage:**
+  - Core Python: data types, control flow, functions, and standard debugging patterns.
+  - Data structures and program design; writing clean, maintainable code.
+  - Error handling and regex; iterators/generators; decorators (intermediate concepts).
+  - OOP fundamentals: classes, inheritance, encapsulation.
+  - File I/O and common modules (`collections`, `datetime`, `os`, `math`, `random`, `re`).
+  - Working with CSV/PDF/image files; automation patterns and scripting utilities.
+  - Web scraping with **Requests** + **BeautifulSoup**.
+  - Jupyter + standalone `.py` development workflows; small end-to-end mini-projects.
+
+</details>
+
+<details>
+<summary><strong>Python for Data Science and Machine Learning Bootcamp</strong></summary>
+
+- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
+- **Outcome:** end-to-end applied ML workflow: wrangling → modelling → evaluation.
+- **Coverage:**
+  - Data wrangling and numerical computing: **pandas**, **NumPy**.
+  - Visualisation: **Matplotlib**, **Seaborn**, **Plotly**.
+  - ML with **scikit-learn**:
+    - Supervised: Linear/Logistic Regression, k-NN, Decision Trees, Random Forests, SVM, feed-forward neural networks (intro).
+    - Unsupervised: K-Means, **PCA**.
+  - Intro NLP: tokenisation, vectorisation (CountVectorizer/TF-IDF), **Naive Bayes** baselines.
+  - Intro recommenders: similarity metrics and collaborative filtering.
+  - Deep learning foundations with Keras (intro).
+  - Evaluation workflows: cross-validation, train/test design, bias–variance reasoning.
+  - Exposure to big-data concepts with **Spark** (intro).
+
+</details>
+
+<details>
+<summary><strong>Machine Learning Specialisation — DeepLearning.AI (Andrew Ng)</strong></summary>
+
+- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/machine_learning_specialisation.png)
+- **Outcome:** strong conceptual + practical grounding in classical ML and core modern foundations.
+- **Coverage:**
+  - Supervised learning fundamentals; model evaluation and optimisation concepts.
+  - Advanced learning algorithms; neural network foundations; decision trees and ensemble logic.
+  - Unsupervised learning; anomaly detection; recommenders; introductory reinforcement learning.
+
+  <details>
+  <summary><strong>Module certificates</strong></summary>
+
+  - **Module 1 — Supervised Machine Learning: Regression and Classification**  
+    [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/supervised_ml.png)
+
+  - **Module 2 — Advanced Learning Algorithms**  
+    [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/advanced_learning_algorithms.png)
+
+  - **Module 3 — Unsupervised Learning, Recommenders, and Reinforcement Learning**  
+    [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/unsupervised_learning.png)
+
+  </details>
+
+</details>
+
+---
 
 ### SQL & Databases
-- The Complete SQL Bootcamp: PostgreSQL & pgAdmin
-  [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_basic.pdf)
-  - Hands-on training in **PostgreSQL** for data analysis, reporting, and database querying, using practical exercises and real-world datasets.
-  - Gained full proficiency with SQL fundamentals and intermediate query patterns for analytics workflows.
-  - **Core skills acquired:**
-    - SQL querying with `SELECT`, `WHERE`, `ORDER BY`, logical filtering, and pattern matching.  
-    - Data aggregation with `GROUP BY`, `HAVING`.  
-    - Table joins (INNER, LEFT/RIGHT, FULL, CROSS) and multi-table relational operations.  
-    - Database design principles: tables, constraints, data types, and schema structure.  
-    - Practical work using **PostgreSQL + pgAdmin**, including database setup, table creation, and data loading.  
-    - Integrating SQL with **Python** as part of data-science pipelines.
-- SQL for Data Analysis: Advanced SQL Querying Techniques
-  [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_advanced.pdf)
-  - Completed an applied advanced-SQL course focused on professional analytical querying and multi-table relational workflows.  
-  - **Core skills acquired:**  
-    - Advanced **JOIN logic**, including multi-table joins, self-joins, cross joins, and unions for complex relational analysis.  
-    - **Subqueries** and **Common Table Expressions (CTEs)** (including recursive CTEs) to structure multi-step logic and improve readability of analytical pipelines.  
-    - **Window functions** (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`, `FIRST_VALUE`, `LAST_VALUE`) for ranking, rolling calculations, trend detection, and partition-based summarisation.  
-    - Comprehensive **string, numeric, and date functions**, including pattern matching, conditional expressions, and reliable handling of NULLs and irregular values.  
-    - Applied analytical patterns: de-duplication workflows, conditional aggregation, segmentation, pivot-style summaries, and multi-stage data transformations.  
-    - Use of **views** and modular query structures to encapsulate reusable logic and streamline complex analytical workflows.
-      
-### Artificial Intelligence / Prompt Engineering  
-- ChatGPT Prompt Engineering for Developers
-  [_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/855ab3d3-2a59-4f56-b934-e620c7e28551?usp=sharing)  
-  - Completed a hands-on introduction to **prompt engineering** for building LLM-powered applications, taught by Isa Fulford (OpenAI) and Andrew Ng.  
-  - Learned best practices for writing clear, reliable prompts and systematically refining them to improve output quality.  
-  - Gained practical experience using the **OpenAI API**, including developing a custom chatbot in the course labs.  
-  - Practised prompt engineering across core application areas such as **summarisation, inference, text transformation, and generative expansion**, developing intuition for how LLMs interpret and follow instructions.  
-  - Built a conceptual understanding of LLM behaviour and how prompting can be used to prototype and deploy new capabilities.
-  - **Core skills acquired:**  
-    - Writing concise, structured, instruction-focused prompts.  
-    - Iterative refinement techniques for accuracy, robustness, and alignment.  
-    - Designing prompts for summarisation, classification, transformation, and generation tasks.  
-    - Using LLM APIs in practical development workflows.  
-    - Building basic LLM-driven applications with reproducible prompting strategies.
 
-- Agentic AI by Andrew Ng
-  [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/agentic_AI.png)  
-  - Completed Andrew Ng’s flagship introduction to **Agentic AI** — systems that can plan, act, reflect, and self-improve through autonomous workflows.  
-  - Learned how agentic systems extend traditional prompting by integrating **tools, memory, iterative reasoning, and multi-step planning** for complex tasks.  
-  - Built agents using **reflection loops, tool calling, retrieval, search, APIs, and multi-agent collaboration**, with hands-on code labs reinforcing each pattern.  
-  - Studied key design patterns for real-world agents, including **task decomposition**, reflection-driven refinement, evaluation loops, and autonomous decision-making.  
-  - Implemented agent workflows in Python, gaining practical intuition for how modern agent frameworks function under the hood.
-  - **Core skills acquired:**  
-    - Understanding the **Agentic AI architecture**: planners, actors, critics, tools, memory, and feedback loops.  
-    - Designing agents for **multi-step reasoning**, iterative improvement, and self-correction.  
-    - Integrating **tool calling and API actions** to interact with external systems and retrieve live information.  
-    - Building **retrieval-augmented agents** using vector databases and structured search.  
-    - Constructing **multi-agent systems**, including coordinator–specialist patterns.  
-    - Applying evaluation and debugging techniques such as trace inspection, behavioural tests, and performance refinement.  
-    - Awareness of real-world applications of agentic workflows in data science, automation, research, and production AI systems.
+<details>
+<summary><strong>The Complete SQL Bootcamp: PostgreSQL & pgAdmin</strong></summary>
 
-- AI Agents in LangGraph
-  [_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/d88b3679-f219-4914-913e-9c0b7ea6ab77?usp=sharing)
-  - Completed a practical introduction to building **stateful, production-ready AI agents** using the LangGraph framework.  
-  - Learned how to structure agent workflows as **deterministic graphs** with clear control flow, tool calling, memory management, and error handling.  
-  - Developed agents capable of **planning, reflecting, and iterating** through multi-step tasks, with transparent behavioural tracing and debugging.  
-  - Built complete agent pipelines in Python, gaining intuition for how LangGraph orchestrates LLMs, tools, and state updates.  
-  - **Core skills acquired:**  
-    - Designing agent workflows using LangGraph’s **nodes, edges, and state objects**.  
-    - Integrating **tool calling, APIs, and memory** into multi-step agent systems.  
-    - Implementing **reflection loops**, retries, and human-in-the-loop stages.  
-    - Debugging and evaluating agents through **event tracing and structured testing**.  
-    - Understanding how graph-based architectures support **reliable, scalable agentic applications**.
+- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_basic.pdf)
+- **Outcome:** strong SQL foundation for analytics workflows in PostgreSQL.
+- **Coverage:**
+  - Core querying: `SELECT`, `WHERE`, filtering, ordering, pattern matching.
+  - Aggregation: `GROUP BY`, `HAVING`.
+  - Joins: INNER/LEFT/RIGHT/FULL/CROSS; multi-table workflows.
+  - Schema fundamentals: tables, constraints, data types; practical loading/setup.
+  - PostgreSQL tooling with **pgAdmin**; integrating SQL outputs with Python pipelines.
+
+</details>
+
+<details>
+<summary><strong>SQL for Data Analysis: Advanced SQL Querying Techniques</strong></summary>
+
+- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_advanced.pdf)
+- **Outcome:** advanced analytical SQL patterns for complex relational datasets.
+- **Coverage:**
+  - Advanced joins, unions, and self-join patterns.
+  - Subqueries and **CTEs** (including recursive CTEs) for multi-step logic.
+  - Window functions: `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `LAG`, `LEAD`, `FIRST_VALUE`, `LAST_VALUE`.
+  - String/numeric/date functions; NULL-safe handling and conditional expressions.
+  - Analytics patterns: de-duplication, conditional aggregation, segmentation, pivot-style summaries.
+  - Views and modular query structure for reusable analytical pipelines.
+
+</details>
+
+---
+
+### Artificial Intelligence / Prompt Engineering
+
+<details>
+<summary><strong>ChatGPT Prompt Engineering for Developers</strong></summary>
+
+- [_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/855ab3d3-2a59-4f56-b934-e620c7e28551?usp=sharing)
+- **Outcome:** reliable prompting patterns for LLM application building.
+- **Coverage:**
+  - Structured prompting for summarisation, inference, transformation, generation.
+  - Iterative refinement patterns for reliability and consistency.
+  - Practical OpenAI API exposure through course labs.
+
+</details>
+
+<details>
+<summary><strong>Agentic AI — Andrew Ng</strong></summary>
+
+- [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/agentic_AI.png)
+- **Outcome:** foundations of agentic workflows (plan/act/reflect) and tool-based systems.
+- **Coverage:**
+  - Task decomposition; reflection-driven improvement; evaluation loops.
+  - Tool calling and API actions; retrieval/search patterns.
+  - Multi-agent coordination patterns and practical lab-based implementations in Python.
+
+</details>
+
+<details>
+<summary><strong>AI Agents in LangGraph</strong></summary>
+
+- [_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/d88b3679-f219-4914-913e-9c0b7ea6ab77?usp=sharing)
+- **Outcome:** graph-structured agent workflows with explicit control flow and tracing.
+- **Coverage:**
+  - Nodes/edges/state objects; deterministic orchestration and tool integration.
+  - Retries and human-in-the-loop checkpoints; debugging via tracing.
+  - Building complete agent pipelines in Python.
+
+</details>
+
+---
 
 ### Version Control Systems
-- The Git & GitHub Bootcamp  
-  - Completed an end-to-end, practice-driven course on **Git version control** and **GitHub collaboration**, covering both day-to-day workflows and the internal mental model needed to work confidently in real codebases.  
-  - Built fluency with the **core Git workflow** (working directory → staging area → commits) and learned to manage change safely through **branching, merging, and conflict resolution**.  
-  - Developed the ability to **inspect and reason about change over time** using `git diff` across commits, branches, the staging area, and the working tree, with emphasis on reading and interpreting diff output.  
-  - Learned reliable strategies for **undoing and recovering work**, including time-travel patterns with `git restore`, `git revert`, `git reset`, detached HEAD workflows, and rescuing “lost” commits via **reflogs**.  
-  - Trained in **collaborative GitHub workflows** used in professional teams: remote repositories, `push/pull/fetch`, feature branches, pull requests, forks/clones, and contributing to shared codebases.  
-  - Strengthened practical tooling around GitHub, including writing clear **Markdown READMEs**, sharing reusable snippets with **Gists**, and deploying simple project sites with **GitHub Pages**.  
-  - Built an “under the hood” understanding of Git by learning how Git represents history through **objects** (blobs, trees, commits) and how **hashing and references** underpin integrity and navigation.  
-  - Improved workflow efficiency by creating **custom Git aliases** and applying history hygiene practices with **rebasing** and **interactive rebase** (reword/edit/drop/squash), plus release management using **lightweight and annotated tags**.
 
+<details>
+<summary><strong>The Git & GitHub Bootcamp</strong></summary>
 
+- **Outcome:** professional Git fluency for collaborative codebases.
+- **Coverage:**
+  - Core workflow: working tree → staging → commits; branching/merging; conflict resolution.
+  - Inspecting change with `git diff`; reasoning across commits and branches.
+  - Recovery workflows: `restore`, `revert`, `reset`, detached HEAD, reflogs.
+  - Collaboration: remotes, `push/pull/fetch`, PRs, forks/clones; GitHub workflows.
+  - Markdown/READMEs, Gists, and GitHub Pages basics.
+  - Rebasing and interactive rebase; tags and lightweight release patterns.
 
-
-
+</details>
