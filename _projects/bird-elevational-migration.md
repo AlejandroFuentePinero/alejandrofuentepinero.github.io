@@ -1,6 +1,7 @@
 ---
 title: "Altitudinal Migration and Seasonal Redistribution in Rainforest Bird Communities"
 excerpt: "Developed a hierarchical Bayesian workflow to quantify partial altitudinal migration and system-wide community reshuffling across elevation and season in the Australian Wet Tropics."
+tier: research   # featured | learning | research
 date: 2025-09-15
 ---
 
