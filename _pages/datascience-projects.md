@@ -5,7 +5,7 @@ permalink: /datascience/projects/
 collection: projects
 entries_layout: list
 classes: wide projects-page
-show_excerpts: false
+show_excerpts: true
 ---
 
 Below are selected case studies (academic + applied) with a data-science focus.
@@ -15,9 +15,9 @@ If you have 3 minutes: read the first two in “Featured case studies”.
 {% include base_path %}
 
 {%- comment -%}
-In each /_projects/*.md add:
+Add to each /_projects/*.md:
   tier: featured | learning | research
-  order: <number>   (recommended)
+  order: <number>
 {%- endcomment -%}
 
 {%- assign featured = site.projects | where: "tier", "featured" | sort: "order" -%}
@@ -50,7 +50,7 @@ Smaller repos used to build core skills.
 <hr>
 
 ## Research case studies (translated)
-Academic work reframed in industry language.
+Academic projects reframed in industry language.
 
 <div class="projects-tier projects-tier--research">
 {%- for post in research -%}
