@@ -2,6 +2,7 @@
 title: "Machine Learning Projects in Python"
 excerpt: "Implemented core machine learning algorithms — from regression and classification to clustering and deep learning — through applied projects in Python. Focused on building intuition for model training, evaluation, and interpretability using Scikit-learn and Jupyter Notebooks."
 date: 2025-10-15
+tier: learning   # featured | learning | research
 order: 3
 ---
 
