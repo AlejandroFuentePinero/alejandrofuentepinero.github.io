@@ -33,20 +33,28 @@ feature_row:
 This section showcases my projects, curated learning builds, and translated research case studies. Use Projects to see end-to-end work first, then Skills, Education, and Communication for supporting context.
 
 ## Featured work
-**Job Intelligence Engine** — an end-to-end pipeline that turns real job ads into a skill taxonomy, fit-for-purpose models, and decision-ready outputs for role targeting and upskilling. Built with reproducible architecture and documented evaluation.
 
-[View the Job Intelligence Engine project](/datascience/projects/job_intelligence_engine/)
+<div style="display:flex; gap:24px; align-items:center; flex-wrap:wrap; margin-top:0.75rem;">
+  <!-- Left: text -->
+  <div style="flex:1 1 420px; min-width:280px;">
+    <p style="margin-top:0;">
+      <strong>Job Intelligence Engine</strong> — an end-to-end pipeline that turns real job ads into a skill taxonomy,
+      fit-for-purpose models, and decision-ready outputs for role targeting and upskilling. Built with reproducible
+      architecture and documented evaluation.
+    </p>
+    <p style="margin:0;">
+      <a href="/datascience/projects/job_intelligence_engine/"><strong>View the Job Intelligence Engine project</strong></a>
+    </p>
+  </div>
 
-<figure style="text-align:center;">
-  <img
-    src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png"
-    alt="Job Intelligence Engine"
-    style="width:90%; max-width:900px; height:auto; display:block; margin:0 auto;"
-  >
-</figure>
-
-
-
-
+  <!-- Right: smaller image -->
+  <div style="flex:0 0 360px; max-width:360px; width:100%;">
+    <img
+      src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png"
+      alt="Job Intelligence Engine"
+      style="width:100%; height:auto; display:block; margin:0 auto;"
+    >
+  </div>
+</div>
 
 {% include feature_row id="feature_row" %}
