@@ -51,7 +51,7 @@ This section showcases my projects, curated learning builds, and translated rese
   </div>
 
   <!-- Right: image -->
-  <div style="flex:0 1 640px; min-width:320px;">
+  <div style="flex:0 1 760px; min-width:360px;">
     <img
       src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png"
       alt="Job Intelligence Engine"
