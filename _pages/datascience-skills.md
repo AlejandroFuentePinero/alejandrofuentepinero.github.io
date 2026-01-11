@@ -50,6 +50,8 @@ I drive modelling work from definition to delivery: setting objectives and succe
 <details>
 <summary><strong>Bayesian, hierarchical & spatiotemporal modelling</strong></summary>
 
+<div markdown="1">
+
 - Generalised linear models (GLMs) and generalised additive models (GAMs) for nonlinear effects  
 - Threshold and segmented regression for decision-point inference  
 - Hierarchical and mixed-effects modelling; partial pooling  
@@ -58,75 +60,99 @@ I drive modelling work from definition to delivery: setting objectives and succe
 - Observation vs process modelling: detection–abundance separation; N-mixture models  
 - Integrated Population Models (IPMs)
 
+</div>
 </details>
 
 <details>
 <summary><strong>Machine learning (classical)</strong></summary>
 
+<div markdown="1">
+
 - Supervised learning: linear/logistic regression, tree-based models, random forests, gradient boosting (incl. XGBoost), SVM, k-NN  
 - Unsupervised learning: PCA, clustering (K-Means), anomaly detection  
 - scikit-learn Pipelines; hyperparameter tuning; model comparison and baselines  
 
+</div>
 </details>
 
 <details>
 <summary><strong>Deep learning</strong></summary>
 
+<div markdown="1">
+
 - Neural networks for classification and regression  
 - Training fundamentals: loss functions, optimisers, regularisation, monitoring and early stopping  
 - TensorFlow / Keras: model definition, training, evaluation  
 
+</div>
 </details>
 
 <details>
 <summary><strong>Evaluation, interpretability & reporting</strong></summary>
+
+<div markdown="1">
 
 - Validation design: train/val/test, cross-validation, temporal/blocked splits where appropriate  
 - Evaluation discipline: leakage checks, calibration awareness, error analysis and slicing, robustness/stress testing  
 - Interpretability: feature importance, partial dependence, SHAP-style global/local explanations  
 - Decision-ready reporting: assumptions, limitations, tradeoffs, and clear recommendations  
 
+</div>
 </details>
 
 <details>
 <summary><strong>Experimentation & causal inference</strong></summary>
 
+<div markdown="1">
+
 - A/B testing fundamentals: hypotheses, metrics, power and effect size  
 - Causal inference basics: confounding, selection bias, counterfactual framing, limits of identification  
 - Practical decision-making under uncertainty: interpreting results and communicating tradeoffs  
 
+</div>
 </details>
 
 <details>
 <summary><strong>Data engineering & integration</strong></summary>
 
+<div markdown="1">
+
 - Data ingestion and transformation: structured files, schema discipline, reliable I/O  
 - SQL-centric data work: joins across complex relational datasets, analytics transformations  
 - API integration patterns: extracting, normalising, and joining external data sources  
 
+</div>
 </details>
 
 <details>
 <summary><strong>Software engineering & reproducibility</strong></summary>
+
+<div markdown="1">
 
 - Git/GitHub workflows: branching, pull requests, code review, merge discipline  
 - Maintainable codebases: modular architecture, clean interfaces, reusable components, pipeline-style structure  
 - Quality controls: input validation, assertions, unit tests (pytest patterns), docstrings, type hints where useful  
 - Reproducibility: environment management (conda/venv), deterministic runs, versioned artefacts, methods-first documentation  
 
+</div>
 </details>
 
 <details>
 <summary><strong>NLP, recommenders & text features</strong></summary>
 
+<div markdown="1">
+
 - Text preprocessing and inspection: normalisation, tokenisation, feature auditing  
 - Vectorisation: bag-of-words and TF-IDF; baseline classifiers (Naive Bayes)  
 - Recommender foundations: similarity metrics, collaborative filtering, constraint-aware framing  
 
+</div>
 </details>
 
 <details>
 <summary><strong>LLMs, prompt engineering & agents</strong></summary>
+
+<div markdown="1">
 
 - Prompting for structured outputs; reliability patterns (prompt scaffolds, self-checks, evaluation loops)  
 - Tool calling and retrieval patterns; schema/contract design for model outputs  
@@ -134,23 +160,30 @@ I drive modelling work from definition to delivery: setting objectives and succe
 - LangGraph concepts: state, control flow, tracing/debugging  
 - OpenAI API integration patterns for prompt-driven applications  
 
+</div>
 </details>
 
 <details>
 <summary><strong>Geospatial & remote sensing</strong></summary>
 
+<div markdown="1">
+
 - Raster/vector workflows; spatial joins; geoprocessing pipelines  
 - Spatial feature engineering; landscape/canopy metrics  
 - Scalable spatial processing  
 
+</div>
 </details>
 
 <details>
 <summary><strong>Visualisation & lightweight apps</strong></summary>
 
+<div markdown="1">
+
 - Visualisation: matplotlib, seaborn, plotly; ggplot2  
 - Lightweight apps: Streamlit (Python), Shiny (R)  
 
+</div>
 </details>
 
 ---
