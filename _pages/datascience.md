@@ -10,11 +10,13 @@ toc: false
 ## Welcome to my Data Science portfolio
 This section showcases my projects, curated learning builds, and translated research case studies. Use Projects to see end-to-end work first, then Skills, Education, and Communication for supporting context.
 
+<style>
 /* 4-up card grid for the DS landing page */
 .ds-nav-grid{
   display:grid;
   grid-template-columns:repeat(4, minmax(0, 1fr));
   gap:28px;
+  margin-top: 1.25rem;
 }
 .ds-nav-card{
   border:1px solid rgba(0,0,0,0.08);
@@ -62,7 +64,7 @@ This section showcases my projects, curated learning builds, and translated rese
   </div>
 </div>
 
-
+<hr style="margin: 2rem 0;" />
 
 <h2>Featured work</h2>
 
@@ -80,7 +82,7 @@ This section showcases my projects, curated learning builds, and translated rese
     </p>
   </div>
 
-  <!-- Right: image (slightly bigger) -->
+  <!-- Right: image -->
   <div style="flex:0 1 640px; min-width:320px;">
     <img
       src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png"
@@ -89,9 +91,3 @@ This section showcases my projects, curated learning builds, and translated rese
     >
   </div>
 </div>
-
-<hr style="margin: 2rem 0;" />
-
-<style>
-
-  
