@@ -1,7 +1,9 @@
 ---
 title: "Skills"
 permalink: /datascience/skills/
-layout: single
+layout: archive
+author_profile: true
+classes: wide projects-page
 ---
 
 <figure style="text-align:center; margin:0;">
