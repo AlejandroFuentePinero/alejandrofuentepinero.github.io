@@ -34,9 +34,9 @@ This section showcases my projects, curated learning builds, and translated rese
 
 ## Featured work
 
-<div style="display:flex; gap:24px; align-items:center; flex-wrap:wrap; margin-top:0.75rem;">
+<div style="display:flex; gap:28px; align-items:center; flex-wrap:wrap; margin-top:0.75rem;">
   <!-- Left: text -->
-  <div style="flex:1 1 420px; min-width:280px;">
+  <div style="flex:1 1 360px; min-width:280px;">
     <p style="margin-top:0;">
       <strong>Job Intelligence Engine</strong> — an end-to-end pipeline that turns real job ads into a skill taxonomy,
       fit-for-purpose models, and decision-ready outputs for role targeting and upskilling. Built with reproducible
@@ -47,8 +47,8 @@ This section showcases my projects, curated learning builds, and translated rese
     </p>
   </div>
 
-  <!-- Right: smaller image -->
-  <div style="flex:0 0 360px; max-width:360px; width:100%;">
+  <!-- Right: larger image (forces taller right column, so left wraps into more lines) -->
+  <div style="flex:0 0 520px; max-width:520px; width:100%;">
     <img
       src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png"
       alt="Job Intelligence Engine"
