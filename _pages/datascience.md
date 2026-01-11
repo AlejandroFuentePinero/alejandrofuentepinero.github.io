@@ -46,12 +46,6 @@ A map of my end-to-end projects, core skills, education, and public work.
       fit-for-purpose models, and decision-ready outputs for role targeting and upskilling.
     </p>
 
-    <ul style="margin:0 0 0.9rem 1.1rem;">
-      <li>Reproducible pipeline: ingest → normalize → taxonomy → modelling → reporting</li>
-      <li>Documented evaluation and error analysis for decision-ready outputs</li>
-      <li>Outputs: role targeting, skill-gap diagnosis, and upskilling priorities</li>
-    </ul>
-
     <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">View project</a>
   </div>
 
