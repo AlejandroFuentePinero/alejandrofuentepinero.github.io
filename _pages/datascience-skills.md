@@ -4,6 +4,15 @@ permalink: /datascience/skills/
 layout: single
 ---
 
+<figure style="text-align:center;">
+  <img
+    src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/skill_summary.png"
+    alt="Skills at a Glance"
+    style="width:90%; max-width:900px; height:auto; display:block; margin:0 auto;"
+  >
+</figure>
+
+
 ## What I’m best at
 
 I drive modelling work from definition to delivery: setting objectives and success metrics, building the data foundation, developing features and models, and shipping reproducible outputs that inform decisions. My differentiator is deep statistical judgement and uncertainty-aware inference, with particular strength in hierarchical and Bayesian modelling, producing results that remain robust under noise, sparse data, selection bias, and spatiotemporal structure.
