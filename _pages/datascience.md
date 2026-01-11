@@ -8,22 +8,22 @@ toc: false
 
 feature_row:
   - title: "Projects"
-    excerpt: "Case studies in ML, Bayesian modelling, forecasting, remote sensing, hierarchical modelling, and other tools."
+    excerpt: "End-to-end builds and case studies."
     url: "/datascience/projects/"
     btn_label: "Explore projects"
     btn_class: "btn--primary"
   - title: "Skills"
-    excerpt: "Analytics, modelling, ML, Bayesian inference, spatial analysis, data workflows."
+    excerpt: "Core methods and tooling."
     url: "/datascience/skills/"
     btn_label: "See skills"
     btn_class: "btn--primary"
   - title: "Education"
-    excerpt: "Degrees, training, and certifications."
+    excerpt: "Degrees and certifications."
     url: "/datascience/education/"
     btn_label: "View education"
     btn_class: "btn--primary"
   - title: "Communication"
-    excerpt: "Talks, workshops, and public resources."
+    excerpt: "Talks and public resources."
     url: "/datascience/communication/"
     btn_label: "View communication"
     btn_class: "btn--primary"
@@ -32,11 +32,11 @@ feature_row:
 ## Welcome to my Data Science portfolio
 This section showcases my projects, curated learning builds, and translated research case studies. Use Projects to see end-to-end work first, then Skills, Education, and Communication for supporting context.
 
-<h2 style="margin-bottom:0.6rem;">Featured work</h2>
+<h2>Featured work</h2>
 
-<div style="display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap; margin-top:0;">
+<div style="display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap; margin-top:0.5rem;">
   <!-- Left: text -->
-  <div style="flex:1 1 520px; min-width:340px;">
+  <div style="flex:1 1 520px; min-width:320px;">
     <p style="margin-top:0;">
       <strong>Job Intelligence Engine</strong> — an end-to-end pipeline that turns real job ads into a skill taxonomy,
       fit-for-purpose models, and decision-ready outputs for role targeting and upskilling. Built with reproducible
@@ -48,8 +48,8 @@ This section showcases my projects, curated learning builds, and translated rese
     </p>
   </div>
 
-  <!-- Right: image -->
-  <div style="flex:0 1 680px; min-width:340px;">
+  <!-- Right: image (slightly larger) -->
+  <div style="flex:0 1 640px; min-width:320px;">
     <img
       src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png"
       alt="Job Intelligence Engine"
@@ -58,4 +58,8 @@ This section showcases my projects, curated learning builds, and translated rese
   </div>
 </div>
 
-{% include feature_row id="feature_row" %}
+<hr style="margin: 2rem 0;" />
+
+<div class="mm-card-grid" style="grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px;">
+  {% include feature_row id="feature_row" %}
+</div>
