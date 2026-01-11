@@ -17,7 +17,7 @@ classes: wide
 ## Formal Education
 
 <details>
-<summary><strong>Ph.D. in Zoology and Ecology — James Cook University (Cum laude)</strong></summary>
+<summary><strong>Ph.D. in Quantitative Ecology — James Cook University (Cum laude)</strong></summary>
 
 <div markdown="1">
 
