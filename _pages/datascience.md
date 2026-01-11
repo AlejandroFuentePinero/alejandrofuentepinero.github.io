@@ -62,7 +62,7 @@ A map of my end-to-end projects, core skills, education, and public work.
 <div class="ds-nav">
   <div class="ds-card">
     <h3>Projects</h3>
-    <p>End-to-end builds and case studies.</p>
+    <p>End-to-end builds.</p>
     <a class="btn btn--primary" href="/datascience/projects/">Explore projects</a>
   </div>
 
