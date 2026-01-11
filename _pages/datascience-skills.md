@@ -8,7 +8,7 @@ layout: single
   <img
     src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/skill_summary.png"
     alt="Skills at a Glance"
-    style="width:90%; max-width:900px; height:auto; display:block; margin:0 auto;"
+    style="width:100%; max-width:1100px;"; height:auto; display:block; margin:0 auto;"
   >
 </figure>
 
