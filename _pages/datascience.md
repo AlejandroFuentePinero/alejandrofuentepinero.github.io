@@ -105,13 +105,14 @@ End-to-end case studies, core skills, education, and public work.
     <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">View Job Intelligence Engine</a>
   </div>
 
-  <!-- Right: image (clickable, no extra CTA) -->
-  <div class="ds-feature-media">
-    <a href="/datascience/projects/job_intelligence_engine/" style="display:block;">
-      <img
-        src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/simple_workflow.png"
-        alt="Job Intelligence Engine workflow"
-      >
-    </a>
-  </div>
+<!-- Right: image (clickable) -->
+<div class="ds-feature-media">
+  <a href="/datascience/projects/job_intelligence_engine/" aria-label="Open Job Intelligence Engine">
+    <img
+      src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/simple_workflow.png"
+      alt="Job Intelligence Engine workflow"
+    >
+  </a>
+</div>
+
 
