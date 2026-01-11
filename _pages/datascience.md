@@ -38,11 +38,16 @@ This section showcases my projects, curated learning builds, and translated rese
 [View the Job Intelligence Engine project](/datascience/projects/job_intelligence_engine/)
 
 <figure>
-  <img src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png" alt="Job Intelligence Engine" style="width:100%; max-width:1100px;">
+  <img
+    src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png"
+    alt="Job Intelligence Engine"
+    style="width:90%; max-width:900px; height:auto;"
+  >
   <figcaption style="text-align:center; font-size:0.9em; color:#666;">
     Job Intelligence Engine project.
   </figcaption>
 </figure>
+
 
 
 
