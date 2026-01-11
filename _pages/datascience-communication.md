@@ -1,8 +1,9 @@
 ---
 title: "Communication"
 permalink: /datascience/communication/
-layout: single
-classes: wide
+layout: archive
+author_profile: true
+classes: wide projects-page
 ---
 
 This page shows how I share and apply data-science outputs — from formal reporting to talks and open resources.
