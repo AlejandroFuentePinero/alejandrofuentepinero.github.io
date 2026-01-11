@@ -1,8 +1,9 @@
 ---
 title: "Education & Training"
 permalink: /datascience/education/
-layout: single
-classes: wide
+layout: archive
+author_profile: true
+classes: wide projects-page
 ---
 
 ## Highlights
