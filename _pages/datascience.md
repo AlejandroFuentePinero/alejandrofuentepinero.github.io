@@ -58,7 +58,7 @@ A map of my end-to-end projects, core skills, education, and public work.
   <!-- Right: image -->
   <div style="flex:0 1 640px; min-width:320px;">
     <img
-      src="/simple_workflow.png"
+      src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/simple_workflow.png"
       alt="Job Intelligence Engine workflow"
       style="width:100%; height:auto; display:block;"
     >
