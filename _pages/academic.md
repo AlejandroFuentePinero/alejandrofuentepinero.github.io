@@ -44,7 +44,8 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-## Welcome to my Academic Portfolio. This section showcases my publications, talks, teaching, grants & awards, and threatened-species work.
+## Welcome to my Academic Portfolio. 
+This section showcases my publications, talks, teaching, grants & awards, and threatened-species work.
 
 ### Postdoctoral Research: Mitigating Climate Change Impacts on Spectacled Flying Foxes
 > My current research focuses on the endangered spectacled flying fox, whose populations were dramatically impacted by the extreme heatwave of 2018. This event, which led to the loss of approximately one-third of the species, underscores the critical threat that future extreme thermal events pose. I am investigating the thermal environments of spectacled flying fox roosts across their range—from the Wet Tropics to the rainforests of Cape Tribulation—to better understand how rising temperatures and increasing heatwave intensity compromise their survival.
