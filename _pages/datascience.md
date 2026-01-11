@@ -105,7 +105,7 @@ End-to-end case studies, core skills, education, and public work.
     <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">View Job Intelligence Engine</a>
   </div>
 
-  <!-- Right: image (clickable) -->
+  <!-- Right: image (clickable, no extra CTA) -->
   <div class="ds-feature-media">
     <a href="/datascience/projects/job_intelligence_engine/" style="display:block;">
       <img
@@ -113,10 +113,5 @@ End-to-end case studies, core skills, education, and public work.
         alt="Job Intelligence Engine workflow"
       >
     </a>
-    <div style="margin-top:0.6rem;">
-      <a href="/datascience/projects/job_intelligence_engine/" style="font-weight:600; text-decoration:underline;">
-        Open case study →
-      </a>
-    </div>
   </div>
 
