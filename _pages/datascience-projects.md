@@ -8,10 +8,11 @@ classes: wide projects-page
 entries_layout: grid
 ---
 
-This page is a map of my data-science work, grouped into three tiers:
-* Flagship Projects: end-to-end builds that ship a working app/pipeline with reproducible architecture and documented outputs.
-* Research Projects: research-grade modelling and analytics work presented in a DS format, where the primary deliverable is a peer-reviewed paper in an international scientific journal.
-* Skill Labs: short, focused builds created to implement and cement specific techniques through hands-on practice.
+This page is an overview of my data-science work, organised by deliverable and depth:
+
+- **Flagship Projects:** end-to-end builds that ship a working app/pipeline, with reproducible architecture, evaluation, and documented results.
+- **Research Projects:** research-grade modelling and analytics work, formatted as DS case studies, where the primary outcome is a peer-reviewed publication.
+- **Skill Labs:** short, targeted builds designed to practise and demonstrate a specific technique through implementation.
 
 
 {% include base_path %}
