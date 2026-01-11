@@ -7,7 +7,7 @@ toc: false
 ---
 
 ## Welcome to my Data Science portfolio
-A map of my end-to-end projects, core skills, education, and public work.
+End-to-end case studies, core skills, education, and public work.
 
 <!-- Styles (stable selectors; avoids "Word-like" reflow) -->
 <style>
@@ -93,8 +93,7 @@ A map of my end-to-end projects, core skills, education, and public work.
   <!-- Left: text -->
   <div class="ds-feature-text">
     <p>
-      <strong>Job Intelligence Engine</strong> — an end-to-end pipeline that turns real job ads into a skill taxonomy,
-      fit-for-purpose models, and decision-ready outputs for role targeting and upskilling.
+      <strong>Job Intelligence Engine</strong> — turns real job ads into a skill taxonomy and models that produce role recommendations and upskilling priorities.
     </p>
 
     <ul>
@@ -103,14 +102,21 @@ A map of my end-to-end projects, core skills, education, and public work.
       <li>Upskilling recommendations</li>
     </ul>
 
-    <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">View project</a>
+    <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">View Job Intelligence Engine</a>
   </div>
 
-  <!-- Right: image (stays on the side, doesn't drop unless small screens) -->
+  <!-- Right: image (clickable) -->
   <div class="ds-feature-media">
-    <img
-      src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/simple_workflow.png"
-      alt="Job Intelligence Engine workflow"
-    >
+    <a href="/datascience/projects/job_intelligence_engine/" style="display:block;">
+      <img
+        src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/simple_workflow.png"
+        alt="Job Intelligence Engine workflow"
+      >
+    </a>
+    <div style="margin-top:0.6rem;">
+      <a href="/datascience/projects/job_intelligence_engine/" style="font-weight:600; text-decoration:underline;">
+        Open case study →
+      </a>
+    </div>
   </div>
-</div>
+
