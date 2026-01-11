@@ -29,6 +29,14 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-### Welcome to my Data Science portfolio. This section showcases my projects, curated learning builds, and translated research case studies. Use Projects to see end-to-end work first, then Skills, Education, and Communication for supporting context.
+## Welcome to my Data Science portfolio
+This section showcases my projects, curated learning builds, and translated research case studies. Use Projects to see end-to-end work first, then Skills, Education, and Communication for supporting context.
+
+## Featured work
+**Job Intelligence Engine** — an end-to-end pipeline that turns real job ads into a skill taxonomy, fit-for-purpose models, and decision-ready outputs for role targeting and upskilling. Built with reproducible architecture and documented evaluation.
+
+[View the Job Intelligence Engine project](/datascience/projects/job_intelligence_engine/)
+
+
 
 {% include feature_row id="feature_row" %}
