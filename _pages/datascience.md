@@ -43,9 +43,6 @@ This section showcases my projects, curated learning builds, and translated rese
     alt="Job Intelligence Engine"
     style="width:90%; max-width:900px; height:auto;"
   >
-  <figcaption style="text-align:center; font-size:0.9em; color:#666;">
-    Job Intelligence Engine project.
-  </figcaption>
 </figure>
 
 
