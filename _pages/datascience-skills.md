@@ -189,4 +189,4 @@ I drive modelling work from definition to delivery: setting objectives and succe
 ---
 
 ## Education & Training
-A detailed, certificate-linked list of formal education and courses is maintained here: **/datascience/education/**.
+A detailed, certificate-linked list of formal education and courses is maintained here: **[Education & Training](/datascience/education/)**.
