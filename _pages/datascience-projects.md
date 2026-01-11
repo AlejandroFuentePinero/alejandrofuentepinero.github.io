@@ -24,7 +24,7 @@ In each /_projects/*.md add:
 
 {%- assign featured = site.projects | where: "tier", "featured" | sort: "order" -%}
 {%- assign learning = site.projects | where: "tier", "learning" | sort: "order" -%}
-{%- assign research = site.projects | where: "tier", "research" | sort: "order" -%}
+{%- assign research = site.projects | where: "tier", "research" | sort: "date" | reverse -%}
 {%- assign other    = site.projects | where_exp: "p", "p.tier == nil" | sort: "date" | reverse -%}
 
 ---
