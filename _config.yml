@@ -15,10 +15,6 @@ future                   : true
 read_more                : "disabled"
 talkmap_link             : false
 
-favicon                  : <link rel="icon" href="{{ 'https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/images/a_icon.png' | relative_url }}">
-
-#"https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/images/a_icon.png"
-
 comments:
   provider               :
   disqus:
