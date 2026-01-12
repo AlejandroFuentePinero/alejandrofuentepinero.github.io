@@ -15,6 +15,8 @@ future                   : true
 read_more                : "disabled"
 talkmap_link             : false
 
+favicon: "images/a_icon.png"
+
 comments:
   provider               :
   disqus:
