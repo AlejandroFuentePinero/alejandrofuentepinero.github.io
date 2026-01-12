@@ -1,12 +1,15 @@
 ---
 permalink: /
-title: "Welcome!"
+title: "Alejandro de la Fuente"
+classes: wide hide-page-title
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+# Welcome!
 
 ## Hi, I’m Alejandro — Researcher & Data Scientist
 
