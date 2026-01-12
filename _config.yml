@@ -14,7 +14,6 @@ words_per_minute         : 160
 future                   : true
 read_more                : "disabled"
 talkmap_link             : false
-logo                     : "/images/groodle_favicon_256.png"
 
 comments:
   provider               :
