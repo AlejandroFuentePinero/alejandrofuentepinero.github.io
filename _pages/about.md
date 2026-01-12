@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Alejandro de la Fuente"
+#title: "Alejandro de la Fuente"
 classes: wide hide-page-title
 excerpt: "About me"
 author_profile: true
