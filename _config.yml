@@ -15,7 +15,7 @@ future                   : true
 read_more                : "disabled"
 talkmap_link             : false
 
-favicon                  : "/images/a_icon.png"
+favicon                  : "https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/images/a_icon.png"
 
 comments:
   provider               :
