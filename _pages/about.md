@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Alejandro de la Fuente | Researcher & Data Scientist"
+title: "Welcome!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
