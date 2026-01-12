@@ -2,7 +2,7 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Alejandro de la Fuente"
-title_separator          : "-"
+title_separator          : 
 name                     : &name "Alejandro de la Fuente"
 description              : &description "Professional website"
 url                      : https://alejandrofuentepinero.github.io
