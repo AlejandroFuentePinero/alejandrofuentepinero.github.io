@@ -44,30 +44,34 @@
 
 .hide-page-title .page__title { display: none; }
 
-/* Force masthead logo + title to stay on ONE line */
-.masthead__menu-item--lg a.site-title-link{
-  display: flex !important;
+/* ================= Masthead logo + site title ================= */
+/* Put this block at the VERY BOTTOM of your custom CSS file */
+
+.masthead .greedy-nav .masthead__menu-item--lg > a.site-title-link{
+  display: inline-flex !important;
   align-items: center !important;
-  gap: 10px;
   flex-wrap: nowrap !important;
   white-space: nowrap !important;
+  gap: 10px !important;
+  text-align: left !important;
 }
 
-/* Prevent the title span from behaving like a block */
-.masthead__menu-item--lg .site-title-text{
+/* Logo sizing */
+.masthead .greedy-nav .masthead__menu-item--lg > a.site-title-link > img.masthead-logo{
+  display: inline-block !important;
+  height: 34px !important;   /* tweak: 32–38px */
+  width: 34px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
+  flex: 0 0 auto !important;
+  border-radius: 50% !important; /* optional; remove if you want square */
+}
+
+/* Title text: force single-line */
+.masthead .greedy-nav .masthead__menu-item--lg > a.site-title-link > span.site-title-text{
   display: inline-block !important;
   white-space: nowrap !important;
-  line-height: 1.1;
+  margin: 0 !important;
+  line-height: 1.1 !important;
 }
-
-/* Slightly bigger logo */
-.masthead__menu-item--lg img.masthead-logo{
-  height: 34px !important;   /* try 32–38 */
-  width: 34px !important;
-  display: block;
-  flex: 0 0 auto;
-}
-
-
-
-
