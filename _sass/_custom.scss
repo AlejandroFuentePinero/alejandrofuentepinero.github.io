@@ -44,28 +44,30 @@
 
 .hide-page-title .page__title { display: none; }
 
-/* Masthead title + logo: keep on ONE line */
+/* Force masthead logo + title to stay on ONE line */
 .masthead__menu-item--lg a.site-title-link{
-  display: inline-flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
   gap: 10px;
-  flex-wrap: nowrap;
-  white-space: nowrap;   /* prevent wrapping */
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
 }
 
+/* Prevent the title span from behaving like a block */
 .masthead__menu-item--lg .site-title-text{
-  white-space: nowrap;   /* prevent title breaking */
-  line-height: 1;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  line-height: 1.1;
 }
 
 /* Slightly bigger logo */
 .masthead__menu-item--lg img.masthead-logo{
-  height: 34px;          /* tweak to taste (32–38px typical) */
-  width: 34px;
-  display: inline-block;
+  height: 34px !important;   /* try 32–38 */
+  width: 34px !important;
+  display: block;
   flex: 0 0 auto;
-  border-radius: 50%;    /* optional */
 }
+
 
 
 
