@@ -44,18 +44,28 @@
 
 .hide-page-title .page__title { display: none; }
 
-/* Masthead title + logo */
-.site-title-link{
-  display:flex;
-  align-items:center;
-  gap:10px;
+/* Masthead title + logo: keep on ONE line */
+.masthead__menu-item--lg a.site-title-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  white-space: nowrap;   /* prevent wrapping */
 }
 
-.masthead-logo{
-  height:28px;     /* adjust */
-  width:28px;
-  border-radius:50%; /* optional */
-  display:block;
+.masthead__menu-item--lg .site-title-text{
+  white-space: nowrap;   /* prevent title breaking */
+  line-height: 1;
 }
+
+/* Slightly bigger logo */
+.masthead__menu-item--lg img.masthead-logo{
+  height: 34px;          /* tweak to taste (32–38px typical) */
+  width: 34px;
+  display: inline-block;
+  flex: 0 0 auto;
+  border-radius: 50%;    /* optional */
+}
+
 
 
