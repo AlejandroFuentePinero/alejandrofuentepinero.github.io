@@ -44,3 +44,18 @@
 
 .hide-page-title .page__title { display: none; }
 
+/* Masthead title + logo */
+.site-title-link{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.masthead-logo{
+  height:28px;     /* adjust */
+  width:28px;
+  border-radius:50%; /* optional */
+  display:block;
+}
+
+
