@@ -2,6 +2,7 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Alejandro de la Fuente"
+logo                     : "/images/groodle_favicon_256.png"
 title_separator          : 
 name                     : &name "Alejandro de la Fuente"
 description              : &description "Professional website"
