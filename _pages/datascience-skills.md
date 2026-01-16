@@ -17,7 +17,8 @@ classes: wide projects-page
 
 ## What I’m best at
 
-I drive modelling work from definition to delivery: setting objectives and success metrics, building the data foundation, developing features and models, and shipping reproducible outputs that inform decisions. My differentiator is deep statistical judgement and uncertainty-aware inference, with particular strength in hierarchical and Bayesian modelling, producing results that remain robust under noise, sparse data, selection bias, and spatiotemporal structure.
+I deliver end-to-end modelling: define the decision and metrics, build the data foundation, develop features and models, validate rigorously, and ship reproducible outputs. Strength: statistical judgement and uncertainty-aware inference (especially hierarchical/Bayesian), useful when data are noisy, sparse, biased, or structured in space/time.
+
 
 ---
 
@@ -34,9 +35,10 @@ I drive modelling work from definition to delivery: setting objectives and succe
 ## Core stack
 
 **Tools**
-- **Python:** pandas, NumPy, scikit-learn; pipelines; visualisation (matplotlib/plotly)
+- **Python:** pandas, NumPy, scikit-learn; pipelines; visualisation (matplotlib/seaborn/plotly)
 - **SQL (PostgreSQL):** joins, CTEs, window functions; analytics transformations
-- **Software engineering:** Git/GitHub; modular code; testing/validation (pytest patterns); reproducible environments (conda/venv)
+- **Software engineering:** Git/GitHub; modular code; testing/validation; reproducible environments (conda/venv)
+- **LLM engineering**: structured prompting, tool calling, RAG foundations, agent orchestration (LangGraph; Python), API integration
 
 **Core methods**
 - **Bayesian & hierarchical modelling:** partial pooling, uncertainty quantification and propagation  
@@ -70,6 +72,20 @@ I drive modelling work from definition to delivery: setting objectives and succe
 - Spatiotemporal modelling: structured dependence, forecasting logic, species distribution modelling (SDMs)  
 - Observation vs process modelling: detection–abundance separation; N-mixture models  
 - Integrated Population Models (IPMs)
+
+</div>
+</details>
+
+<details>
+<summary><strong>LLMs, prompt engineering & agents</strong></summary>
+
+<div markdown="1">
+
+- Prompting for structured outputs; reliability patterns (prompt scaffolds, self-checks, evaluation loops)  
+- Tool calling and retrieval patterns; schema/contract design for model outputs  
+- Agent workflows: planning/acting loops, orchestration, retries, human-in-the-loop checkpoints  
+- LangGraph concepts: state, control flow, tracing/debugging  
+- OpenAI API integration patterns for prompt-driven applications  
 
 </div>
 </details>
@@ -156,20 +172,6 @@ I drive modelling work from definition to delivery: setting objectives and succe
 - Text preprocessing and inspection: normalisation, tokenisation, feature auditing  
 - Vectorisation: bag-of-words and TF-IDF; baseline classifiers (Naive Bayes)  
 - Recommender foundations: similarity metrics, collaborative filtering, constraint-aware framing  
-
-</div>
-</details>
-
-<details>
-<summary><strong>LLMs, prompt engineering & agents</strong></summary>
-
-<div markdown="1">
-
-- Prompting for structured outputs; reliability patterns (prompt scaffolds, self-checks, evaluation loops)  
-- Tool calling and retrieval patterns; schema/contract design for model outputs  
-- Agent workflows: planning/acting loops, orchestration, retries, human-in-the-loop checkpoints  
-- LangGraph concepts: state, control flow, tracing/debugging  
-- OpenAI API integration patterns for prompt-driven applications  
 
 </div>
 </details>
