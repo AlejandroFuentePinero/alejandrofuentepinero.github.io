@@ -288,14 +288,15 @@ classes: wide projects-page
 <div markdown="1">
 
 [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/git_github.pdf)
-- **Outcome:** professional Git fluency for collaborative codebases.
-- **Coverage:**
-  - Core workflow: working tree → staging → commits; branching/merging; conflict resolution.
-  - Inspecting change with `git diff`; reasoning across commits and branches.
-  - Recovery workflows: `restore`, `revert`, `reset`, detached HEAD, reflogs.
-  - Collaboration: remotes, `push/pull/fetch`, PRs, forks/clones; GitHub workflows.
-  - Markdown/READMEs, Gists, and GitHub Pages basics.
-  - Rebasing and interactive rebase; tags and lightweight release patterns.
+- **Outcome:** professional Git fluency for collaborative codebases.  
+- **Coverage:**  
+  - Core workflow: working tree → staging → commits; branching/merging; conflict resolution.  
+  - Inspecting change with `git diff`; reasoning across commits and branches.  
+  - Interrupt/recovery workflows: stash; restore, revert, reset; detached HEAD; reflogs.  
+  - Collaboration: remotes, push/pull/fetch, PRs, forks/clones; GitHub workflows.  
+  - Git internals mental model: objects (blobs/trees/commits) and annotated tags.  
+  - Markdown/READMEs, Gists, and GitHub Pages basics.  
+  - Rebasing and interactive rebase; tags and lightweight release patterns; custom Git aliases.  
 
 </div>
 </details>
