@@ -287,6 +287,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
+[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/git_github.pdf)
 - **Outcome:** professional Git fluency for collaborative codebases.
 - **Coverage:**
   - Core workflow: working tree → staging → commits; branching/merging; conflict resolution.
