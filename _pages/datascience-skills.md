@@ -35,7 +35,7 @@ I deliver end-to-end modelling: define the decision and metrics, build the data 
 ## Core stack
 
 **Tools**
-- **Python:** pandas, NumPy, scikit-learn; pipelines; visualisation (matplotlib/seaborn/plotly)
+- **Python:** pandas, NumPy, scikit-learn; pipelines; visualisation (matplotlib/seaborn/plotly); Keras, TensorFlow
 - **SQL (PostgreSQL):** joins, CTEs, window functions; analytics transformations
 - **Software engineering:** Git/GitHub; modular code; testing/validation; reproducible environments (conda/venv)
 - **LLM engineering**: structured prompting, tool calling, RAG foundations, agent orchestration (LangGraph; Python), API integration
