@@ -11,29 +11,22 @@ redirect_from:
 
 # Welcome!
 
-## Hi, I’m Alejandro — Researcher & Data Scientist
+## Hi, I’m Alejandro — Data Scientist (PhD-trained)
 
-I work where **quantitative ecology** meets **data science** — building models that help explain how living systems change, and what those changes mean in the real world.
+I work at the intersection of **rigorous modelling** and **practical decision support** — building reproducible Python/SQL pipelines and ML systems that turn messy data into outputs people can act on.
 
-In **academia**, I study how species respond to **climate change**, from the microclimates experienced by endangered rainforest possums to the large-scale redistribution of tropical montane bird communities.
-
-In **data science**, I bring the same modelling mindset to applied problems: careful assumptions, clear uncertainty, and outputs that people can actually use. The common thread is simple — **rigour with practical impact**.
+My background is in **quantitative ecology and climate-change science**, where I built uncertainty-aware models to understand how living systems respond to environmental change. In industry-focused data science, I bring the same strengths: careful assumptions, clear validation, and decision-ready delivery.
 
 ---
 
-## Bridging Research & Application
+## What I do
 
-What motivates me is **turning complexity into clarity**.
+I build end-to-end analytics and ML workflows that prioritise reliability and usability:
 
-I use tools like **hierarchical Bayesian models**, **spatiotemporal analysis**, and **machine learning** to:
-
-- uncover patterns in high-dimensional ecological and environmental data  
-- forecast change (and quantify uncertainty) under future scenarios  
-- support decisions with results that are transparent and interpretable  
-
-Whether I’m working in **conservation science** or **applied analytics**, my goal is the same: deliver insights that can be **acted on** — helping teams respond to change with confidence.
-
-_Explore the **Academic** and **Data Science** tabs above to see case studies, projects, and tools I’ve built._
+- define measurable questions (metrics, cohorts, success criteria)  
+- engineer clean, testable data pipelines with validation and artefacts  
+- train and evaluate models with transparent trade-offs  
+- communicate results clearly (what changed, why it matters, what to do next)
 
 ---
 
@@ -43,25 +36,31 @@ _Explore the **Academic** and **Data Science** tabs above to see case studies, p
   <!-- Left: text -->
   <div class="ds-feature-text">
     <p>
-      <strong>Job Intelligence Engine</strong> — transforms real job ads into a skills graph and recommender that surfaces best-fit roles and ranks the highest-ROI upskilling moves.
+      <strong>Job Intelligence Engine</strong> — parses thousands of real job ads into a skills taxonomy and market signals, then recommends best-fit roles and a prioritised upskilling plan.
     </p>
 
     <ul>
-      <li>Interpretable market signals</li>
-      <li>Career positioning</li>
-      <li>Upskilling recommendations</li>
+      <li>Skill demand + salary signals by role/family</li>
+      <li>Best-now vs stretch role recommendations</li>
+      <li>Ranked upskilling priorities (positioning lift)</li>
     </ul>
 
-    <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">View Job Intelligence Engine</a>
+    <p style="margin-top:0.5rem; font-size:0.95rem;">
+      <strong>Stack:</strong> Python/SQL • NLP embeddings • XGBoost • Streamlit • reproducible pipeline + persisted artefacts
+    </p>
+
+    <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">See demo + details</a>
   </div>
 
-<!-- Right: image (clickable) -->
-<div class="ds-feature-media">
-  <a href="/datascience/projects/job_intelligence_engine/" aria-label="Open Job Intelligence Engine">
-    <img
-      src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/simple_workflow.png"
-      alt="Job Intelligence Engine workflow"
-    >
-  </a>
+  <!-- Right: image (clickable) -->
+  <div class="ds-feature-media">
+    <a href="/datascience/projects/job_intelligence_engine/" aria-label="Open Job Intelligence Engine">
+      <img
+        src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/simple_workflow.png"
+        alt="Job Intelligence Engine workflow"
+      >
+    </a>
+  </div>
 </div>
+
 
