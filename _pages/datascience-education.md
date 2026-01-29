@@ -228,7 +228,7 @@ classes: wide projects-page
 
 ---
 
-### Artificial Intelligence / Prompt Engineering
+## Artificial Intelligence / Prompt Engineering
 
 <details>
 <summary><strong>ChatGPT Prompt Engineering for Developers</strong></summary>
@@ -280,7 +280,7 @@ classes: wide projects-page
 
 ---
 
-### Version Control Systems
+## Version Control Systems
 
 <details>
 <summary><strong>The Git & GitHub Bootcamp</strong></summary>
@@ -300,3 +300,28 @@ classes: wide projects-page
 
 </div>
 </details>
+
+---
+
+## Cloud
+
+<details>
+<summary><strong>AWS Certified Cloud Practitioner (CLF-C02)</strong></summary>
+
+<div markdown="1">
+
+[_(Click to view certificate)_](PASTE_CERTIFICATE_LINK_HERE)
+
+- **Outcome:** validated foundational AWS/cloud knowledge (conceptual understanding; not hands-on operations).
+- **Coverage (core services & concepts):**
+  - **Compute & serverless:** EC2, Lambda
+  - **Storage:** S3, EBS, EFS
+  - **Databases:** RDS, DynamoDB
+  - **Networking (high level):** VPC, subnets, security groups, Internet Gateway, NAT Gateway
+  - **Security basics:** IAM (roles/policies), shared responsibility model
+  - **Monitoring & audit:** CloudWatch, CloudTrail
+  - **Cost & governance:** pricing concepts, Cost Explorer, Budgets, AWS Organizations
+
+</div>
+</details>
+
