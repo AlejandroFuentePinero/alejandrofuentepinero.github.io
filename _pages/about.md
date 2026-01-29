@@ -50,14 +50,14 @@ I build end-to-end analytics and ML workflows that prioritise reliability and us
       <strong>Stack:</strong> Python • NLP embeddings • XGBoost/LightGBM • Streamlit • reproducible pipeline & persisted artefacts • SHAP
     </p>
 
-    <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">See demo + details</a>
+    <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">See demo & details</a>
   </div>
 
   <!-- Right: image (clickable) -->
   <div class="ds-feature-media">
     <a href="/datascience/projects/job_intelligence_engine/" aria-label="Open Job Intelligence Engine">
       <img
-        src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/simple_workflow.png"
+        src="https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/engine_path.png"
         alt="Job Intelligence Engine workflow"
       >
     </a>
