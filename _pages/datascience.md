@@ -93,7 +93,7 @@ End-to-end case studies, core skills, education, and public work.
   <!-- Left: text -->
   <div class="ds-feature-text">
     <p>
-      <strong>Job Intelligence Engine</strong> — turns real job ads into a skill taxonomy and models that produce role recommendations and upskilling priorities.
+      <strong>Job Intelligence Engine</strong> — transforms real job ads into a skills graph and recommender that surfaces best-fit roles and ranks the highest-ROI upskilling moves.
     </p>
 
     <ul>
