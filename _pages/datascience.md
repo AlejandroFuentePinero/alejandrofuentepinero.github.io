@@ -46,7 +46,7 @@ End-to-end case studies, core skills, education, and public work.
   }
   .ds-feature-text p { margin-top: 0; }
   .ds-feature-text ul { margin: 0 0 1rem 1.1rem; padding: 0; }
-  .ds-feature-media img { width: 100%; height: auto; display: block; }
+  .ds-feature-media img { width: 100%; height: auto; display: block; border-radius: 12px; }
 
   /* Responsive */
   @media (max-width: 1100px) {
