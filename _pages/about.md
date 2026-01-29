@@ -36,17 +36,17 @@ I build end-to-end analytics and ML workflows that prioritise reliability and us
   <!-- Left: text -->
   <div class="ds-feature-text">
     <p>
-      <strong>Job Intelligence Engine</strong> — parses thousands of real job ads into a skills taxonomy and market signals, then recommends best-fit roles and a prioritised upskilling plan.
+      <strong>Job Intelligence Engine</strong> — parses thousands of real data job ads into a skills taxonomy and market signals, then recommends best-fit roles and a prioritised upskilling plan.
     </p>
 
     <ul>
-      <li>Skill demand + salary signals by role/family</li>
-      <li>Best-now vs stretch role recommendations</li>
+      <li>Skill demand & salary signals by role/family</li>
+      <li>Best-now vs stretch role job recommendations</li>
       <li>Ranked upskilling priorities (positioning lift)</li>
     </ul>
 
     <p style="margin-top:0.5rem; font-size:0.95rem;">
-      <strong>Stack:</strong> Python/SQL • NLP embeddings • XGBoost • Streamlit • reproducible pipeline + persisted artefacts
+      <strong>Stack:</strong> Python • NLP embeddings • XGBoost/LightGBM • Streamlit • reproducible pipeline & persisted artefacts • SHAP
     </p>
 
     <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">See demo + details</a>
