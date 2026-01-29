@@ -53,17 +53,19 @@ I build end-to-end analytics and ML workflows that prioritise reliability and us
     <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">See demo & details</a>
   </div>
 
-  <!-- Right: image (clickable) -->
-  <div class="ds-feature-media">
-    <a href="/datascience/projects/job_intelligence_engine/" aria-label="Open Job Intelligence Engine">
-      <img
-        src="https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/engine_path.png"
-        alt="Job Intelligence Engine workflow"
-        loading="lazy"
-        style="width:100%; height:auto; display:block; max-height:340px; object-fit:contain; border-radius:12px;"
-      >
-    </a>
-  </div>
+
+<!-- Right: image (clickable) -->
+<div class="ds-feature-media">
+  <a href="/datascience/projects/job_intelligence_engine/" aria-label="Open Job Intelligence Engine">
+    <img
+      src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png"
+      alt="Job Intelligence Engine workflow"
+      style="width:100%; height:auto; max-height:340px; object-fit:contain; display:block;"
+    >
+  </a>
+</div>
+
+
 
 
 
