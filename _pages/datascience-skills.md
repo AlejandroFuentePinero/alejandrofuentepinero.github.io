@@ -177,6 +177,20 @@ I deliver end-to-end modelling: define the decision and metrics, build the data 
 </details>
 
 <details>
+<summary><strong>Cloud (AWS)</strong></summary>
+
+<div markdown="1">
+
+- Foundational understanding of AWS cloud concepts: shared responsibility, high availability, scalability/elasticity, and core tradeoffs  
+- Core AWS services: **EC2**, **Lambda**, **S3**, **EBS**, **EFS**, **RDS**, **DynamoDB**  
+- Networking & access fundamentals (high level): **VPC**, **subnets**, **security groups**, **NACLs**, **Internet Gateway**, **NAT Gateway**  
+- Observability & governance (high level): **CloudWatch**, **CloudTrail**, **AWS Organizations**, **Cost Explorer**, **Budgets**
+
+</div>
+</details>
+
+
+<details>
 <summary><strong>Geospatial & remote sensing</strong></summary>
 
 <div markdown="1">
