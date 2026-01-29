@@ -75,3 +75,44 @@
   margin: 0 !important;
   line-height: 1.1 !important;
 }
+
+/* ================= Featured work (homepage) ================= */
+/* Two-column layout: text left, image right (top-aligned) */
+.ds-feature{
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.ds-feature-text{
+  flex: 1 1 60%;
+  min-width: 320px;
+}
+
+.ds-feature-media{
+  flex: 0 0 40%;
+  max-width: 520px;
+  text-align: left;
+}
+
+.ds-feature-media img{
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 340px;   /* adjust: 280–380px */
+  object-fit: contain;
+}
+
+/* Stack on mobile */
+@media (max-width: 900px){
+  .ds-feature{
+    flex-direction: column;
+  }
+  .ds-feature-media{
+    max-width: 100%;
+  }
+  .ds-feature-media img{
+    max-height: 420px;
+  }
+}
