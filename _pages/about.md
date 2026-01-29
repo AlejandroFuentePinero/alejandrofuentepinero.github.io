@@ -2,7 +2,6 @@
 permalink: /
 title: ""
 classes: wide hide-page-title
-layout: splash
 excerpt: "About me"
 author_profile: true
 redirect_from: 
