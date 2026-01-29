@@ -34,3 +34,34 @@ I use tools like **hierarchical Bayesian models**, **spatiotemporal analysis**, 
 Whether I’m working in **conservation science** or **applied analytics**, my goal is the same: deliver insights that can be **acted on** — helping teams respond to change with confidence.
 
 _Explore the **Academic** and **Data Science** tabs above to see case studies, projects, and tools I’ve built._
+
+---
+
+## Featured work
+
+<div class="ds-feature">
+  <!-- Left: text -->
+  <div class="ds-feature-text">
+    <p>
+      <strong>Job Intelligence Engine</strong> — transforms real job ads into a skills graph and recommender that surfaces best-fit roles and ranks the highest-ROI upskilling moves.
+    </p>
+
+    <ul>
+      <li>Interpretable market signals</li>
+      <li>Career positioning</li>
+      <li>Upskilling recommendations</li>
+    </ul>
+
+    <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">View Job Intelligence Engine</a>
+  </div>
+
+<!-- Right: image (clickable) -->
+<div class="ds-feature-media">
+  <a href="/datascience/projects/job_intelligence_engine/" aria-label="Open Job Intelligence Engine">
+    <img
+      src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/simple_workflow.png"
+      alt="Job Intelligence Engine workflow"
+    >
+  </a>
+</div>
+
