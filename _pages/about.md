@@ -1,7 +1,8 @@
 ---
 permalink: /
 title: ""
-classes: wide projects-page
+classes: wide hide-page-title
+layout: archive
 excerpt: "About me"
 author_profile: true
 redirect_from: 
