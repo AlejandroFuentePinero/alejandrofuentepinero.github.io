@@ -10,6 +10,8 @@ order: 1
 - **Live app:** [Streamlit App](https://job-intelligence-engine.streamlit.app/)
 - **GitHub repo:** [Job Intelligence Engine](https://github.com/AlejandroFuentePinero/job-intelligence-engine)
 
+![Job Intelligence Engine — Demo](https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/app_demo.gif)
+
 ## Overview
 Job postings are noisy: roles and skills overlap heavily in meaning, postings describe the same requirements with different language, and “fit” often devolves into keyword matching or generic advice. The result is wasted time—applying to roles that are either unrealistic right now or undershoot your actual potential.
 
@@ -18,8 +20,6 @@ Job postings are noisy: roles and skills overlap heavily in meaning, postings de
 - What roles are realistic **now** (high fit, low friction)?
 - What roles are worth a **stretch** (clear upside, clear gaps)?
 - What should I learn next to change my options **measurably**?
-
-![Job Intelligence Engine — Demo](https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/app_demo.gif)
 
 ## What it delivers
 - **Interpretable market signals:** structured skill demand and salary drivers you can inspect and reason about.
