@@ -19,12 +19,7 @@ Job postings are noisy: roles and skills overlap heavily in meaning, postings de
 - What roles are worth a **stretch** (clear upside, clear gaps)?
 - What should I learn next to change my options **measurably**?
 
-<figure>
-  <img src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/project_pipeline_simple.png" alt="Job Intelligence Engine — system workflow" style="width:100%; max-width:1100px;">
-  <figcaption style="text-align:center; font-size:0.9em; color:#666;">
-    System workflow: job ads → deterministic pipeline → market insights, best_now vs stretch recommendations, and ROI-ranked upskilling.
-  </figcaption>
-</figure>
+![Job Intelligence Engine — Demo](https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/app_demo.gif)
 
 ## What it delivers
 - **Interpretable market signals:** structured skill demand and salary drivers you can inspect and reason about.
@@ -33,6 +28,13 @@ Job postings are noisy: roles and skills overlap heavily in meaning, postings de
 
 ## How it works
 The system runs as a deterministic pipeline. It normalises raw postings (titles, locations, salaries, skill tokens), learns market structure via probabilistic skill-requirement models and a tuned salary model, then translates those signals into transparent positioning scores, recommendations, and upskilling targets. Outputs are served through a lightweight Streamlit interface.
+
+<figure>
+  <img src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/project_pipeline_simple.png" alt="Job Intelligence Engine — system workflow" style="width:100%; max-width:1100px;">
+  <figcaption style="text-align:center; font-size:0.9em; color:#666;">
+    System workflow: job ads → pipeline → market insights, best_now vs stretch recommendations, and ROI-ranked upskilling.
+  </figcaption>
+</figure>
 
 ## Stack
 Python, pandas, numpy, scikit-learn, Sentence Transformers (SBERT), KMeans, XGBoost, SHAP, Streamlit, NetworkX.
