@@ -31,9 +31,6 @@ The system runs as a deterministic pipeline. It normalises raw postings (titles,
 
 <figure>
   <img src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/project_pipeline_simple.png" alt="Job Intelligence Engine — system workflow" style="width:100%; max-width:1100px;">
-  <figcaption style="text-align:center; font-size:0.9em; color:#666;">
-    System workflow: job ads → pipeline → market insights, best_now vs stretch recommendations, and ROI-ranked upskilling.
-  </figcaption>
 </figure>
 
 ## Stack
