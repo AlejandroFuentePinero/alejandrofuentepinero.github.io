@@ -310,7 +310,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](PASTE_CERTIFICATE_LINK_HERE)
+[_(Click to view certificate)_](https://www.credly.com/badges/83976696-b330-483e-8f3d-fff929b4d359/public_url)
 
 - **Outcome:** validated foundational AWS/cloud knowledge (conceptual understanding; not hands-on operations).
 - **Coverage (core services & concepts):**
