@@ -60,12 +60,34 @@ I build end-to-end analytics and ML workflows that prioritise reliability and us
     <img
       src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png"
       alt="Job Intelligence Engine workflow"
-      style="width:100%; height:auto; max-height:340px; object-fit:contain; display:block;"
     >
   </a>
 </div>
 
+<style>
+  /* Featured work 2-column layout (homepage) */
+  .ds-feature {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 28px;
+    align-items: start;
+    margin-top: 0.75rem;
+  }
+  .ds-feature-text p { margin-top: 0; }
+  .ds-feature-text ul { margin: 0 0 1rem 1.1rem; padding: 0; }
 
+  .ds-feature-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 340px;   /* size control */
+    object-fit: contain;
+  }
+
+  @media (max-width: 1100px) {
+    .ds-feature { grid-template-columns: 1fr; }
+  }
+</style>
 
 
 
