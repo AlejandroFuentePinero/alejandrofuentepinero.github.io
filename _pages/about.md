@@ -68,11 +68,12 @@ I build end-to-end analytics and ML workflows that prioritise reliability and us
   /* Featured work 2-column layout (homepage) */
   .ds-feature {
     display: grid;
-    grid-template-columns: 1.05fr 1fr;
+    grid-template-columns: 1fr 1.15fr; /* image column slightly wider */
     gap: 28px;
     align-items: start;
     margin-top: 0.75rem;
   }
+
   .ds-feature-text p { margin-top: 0; }
   .ds-feature-text ul { margin: 0 0 1rem 1.1rem; padding: 0; }
 
@@ -80,14 +81,17 @@ I build end-to-end analytics and ML workflows that prioritise reliability and us
     width: 100%;
     height: auto;
     display: block;
-    max-height: 340px;   /* size control */
-    object-fit: contain;
+    max-height: 420px;   /* bigger */
+    object-fit: cover;   /* fills space better */
+    border-radius: 12px; /* optional, looks nicer */
   }
 
   @media (max-width: 1100px) {
     .ds-feature { grid-template-columns: 1fr; }
+    .ds-feature-media img { max-height: 520px; }
   }
 </style>
+
 
 
 
