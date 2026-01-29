@@ -1,9 +1,9 @@
 # Top header links
 main:
-  - title: "Academia"
-    url: /academic/
   - title: "Data Science"
     url: /datascience/
+  - title: "Academia"
+    url: /academic/
 
 # Sidebar: Academic
 academic:
