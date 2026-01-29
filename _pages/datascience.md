@@ -109,7 +109,7 @@ End-to-end case studies, core skills, education, and public work.
 <div class="ds-feature-media">
   <a href="/datascience/projects/job_intelligence_engine/" aria-label="Open Job Intelligence Engine">
     <img
-      src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/project_pipeline_simple.png"
+      src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png"
       alt="Job Intelligence Engine workflow"
     >
   </a>
