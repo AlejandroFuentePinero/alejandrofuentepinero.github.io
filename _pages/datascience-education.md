@@ -283,7 +283,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](<CERTIFICATION_LINK_PLACEHOLDER>)
+[_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/561c6d75-c8aa-4f52-82ed-88e13692f56e?usp=sharing)
 
 - **Outcome:** practical best practices for using Claude Code as a highly agentic coding assistant to plan, execute, and iterate on code with minimal supervision.
 - **Coverage:**
