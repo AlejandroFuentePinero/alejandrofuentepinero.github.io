@@ -278,6 +278,26 @@ classes: wide projects-page
 </div>
 </details>
 
+<details>
+<summary><strong>Claude Code: A Highly Agentic Coding Assistant — Anthropic </strong></summary>
+
+<div markdown="1">
+
+[_(Click to view certificate)_](<CERTIFICATION_LINK_PLACEHOLDER>)
+
+- **Outcome:** practical best practices for using Claude Code as a highly agentic coding assistant to plan, execute, and iterate on code with minimal supervision.
+- **Coverage:**
+  - Claude Code fundamentals: architecture, tool use, codebase navigation, and memory across sessions.
+  - Context and memory discipline: supplying the right files or media, using `escape`, `clear`, and `compact`, and persisting project rules via `CLAUDE.md`.
+  - Agentic workflow patterns: plan-first prompting, “thinking mode” for harder tasks, and subagents for ideation and parallel work.
+  - Quality and iteration: test-writing, refactoring, and structured improvement loops to harden functionality.
+  - Parallel delivery and integrations: multi-session development with `git worktrees`, plus GitHub issue and pull request workflows, hooks, and MCP servers such as Figma and Playwright applied to real builds.
+
+
+</div>
+</details>
+
+
 ---
 
 ## Version Control Systems
