@@ -302,7 +302,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](CERTIFICATE_LINK_PLACEHOLDER)
+[_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/d345c36e-1200-4cf4-8848-4eda47b340e5?usp=sharing)
 
 - **Outcome:** hands-on ability to design, package, and deploy reusable “skills” (instruction folders) that make agents more reliable specialists across Anthropic’s ecosystem.
 - **Coverage:**
