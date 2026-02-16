@@ -228,7 +228,7 @@ classes: wide projects-page
 
 ---
 
-## Artificial Intelligence / Prompt Engineering
+## Artificial Intelligence
 
 <details>
 <summary><strong>ChatGPT Prompt Engineering for Developers</strong></summary>
@@ -296,6 +296,28 @@ classes: wide projects-page
 
 </div>
 </details>
+
+<details>
+<summary><strong>Agent Skills with Anthropic</strong></summary>
+
+<div markdown="1">
+
+[_(Click to view certificate)_](CERTIFICATE_LINK_PLACEHOLDER)
+
+- **Outcome:** hands-on ability to design, package, and deploy reusable “skills” (instruction folders) that make agents more reliable specialists across Anthropic’s ecosystem.
+- **Coverage:**
+  - Skills concept: turning general-purpose agents into specialists on demand; skill portability via an open standard.
+  - Skill structure & format: skill folder anatomy, `SKILL.md`, and **progressive disclosure** for efficient context management.
+  - Comparisons: when to use **skills** vs **tools**, **MCP**, and **subagents**.
+  - Pre-built skills in practice: using Anthropic skills (Excel, PowerPoint, Skill Creation) in **Claude.ai** to build a marketing campaign analysis workflow.
+  - Building custom skills (best practices): skills for generating practice questions from lecture notes; analyzing time-series data characteristics.
+  - API integration: using custom + pre-built skills with the **Claude API**, including **code execution** and **Files API** to enable filesystem access and bash-driven Python execution.
+  - Claude Code workflows: skill-driven code generation/review/testing pipelines; subagents with isolated context and specialized skills.
+  - Agent SDK: building a research agent with the **Claude Agent SDK** that uses a skill to produce a learning guide from documentation, GitHub, and web search.
+
+</div>
+</details>
+
 
 
 ---
