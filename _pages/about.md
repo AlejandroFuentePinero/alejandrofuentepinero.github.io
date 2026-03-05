@@ -12,22 +12,22 @@ redirect_from:
 
 # Welcome!
 
-## Hi, I’m Alejandro — Data Scientist (PhD-trained)
+## Hi, I'm Alejandro — AI Engineer and Data Scientist
 
-I work at the intersection of **rigorous modelling** and **practical decision support** — building reproducible Python/SQL pipelines and ML systems that turn messy data into outputs people can act on.
+I build **LLM-powered applications and ML systems** that turn messy data into outputs people can act on: production RAG pipelines, agentic workflows, and end-to-end analytics built with Python and SQL.
 
-My background is in **quantitative ecology and climate-change science**, where I built uncertainty-aware models to understand how living systems respond to environmental change. In industry-focused data science, I bring the same strengths: careful assumptions, clear validation, and decision-ready delivery.
+My background is in **quantitative ecology and climate-change science**, where I built uncertainty-aware models to understand how living systems respond to environmental change. I bring the same rigour to industry: careful assumptions, transparent validation, and decision-ready delivery.
 
 ---
 
-## What I do
+## What I build
 
-I build end-to-end analytics and ML workflows that prioritise reliability and usability:
+End-to-end AI and data systems that prioritise reliability and usability:
 
-- define measurable questions (metrics, cohorts, success criteria)  
-- engineer clean, testable data pipelines with validation and artefacts  
-- train and evaluate models with transparent trade-offs  
-- communicate results clearly (what changed, why it matters, what to do next)
+- **RAG systems and LLM applications** — retrieval pipelines with evaluation frameworks (MRR, nDCG, LLM-as-judge) and structured output patterns
+- **ML workflows** — from problem framing and feature engineering to model evaluation with transparent trade-offs
+- **Data pipelines** — clean, testable, reproducible pipelines with validation and clear artefacts
+- **Decision support** — results communicated clearly: what changed, why it matters, what to do next
 
 ---
 
