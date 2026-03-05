@@ -141,7 +141,7 @@ classes: wide projects-page
   - Data wrangling and numerical computing: **pandas**, **NumPy**.
   - Visualisation: **Matplotlib**, **Seaborn**, **Plotly**.
   - ML with **scikit-learn**:
-    - Supervised: Linear/Logistic Regression, k-NN, Decision Trees, Random Forests, SVM, feed-forward neural networks (intro).
+    - Supervised: Linear/Logistic Regression, k-NN, Decision Trees, Random Forests, SVM, feed-forward neural networks.
     - Unsupervised: K-Means, **PCA**.
   - Intro NLP: tokenisation, vectorisation (CountVectorizer/TF-IDF), **Naive Bayes** baselines.
   - Intro recommenders: similarity metrics and collaborative filtering.
