@@ -145,7 +145,7 @@ classes: wide projects-page
     - Unsupervised: K-Means, **PCA**.
   - Intro NLP: tokenisation, vectorisation (CountVectorizer/TF-IDF), **Naive Bayes** baselines.
   - Intro recommenders: similarity metrics and collaborative filtering.
-  - Deep learning foundations with Keras (intro).
+  - Deep learning foundations with Keras and Tensorflow.
   - Evaluation workflows: cross-validation, train/test design, bias–variance reasoning.
   - Exposure to big-data concepts with **Spark** (intro).
 
@@ -162,7 +162,7 @@ classes: wide projects-page
 - **Outcome:** strong conceptual + practical grounding in classical ML and core modern foundations.
 - **Coverage:**
   - Supervised learning fundamentals; model evaluation and optimisation concepts.
-  - Advanced learning algorithms; neural network foundations; decision trees and ensemble logic.
+  - Advanced learning algorithms; Deep Learning, neural network foundations; decision trees and ensemble logic.
   - Unsupervised learning; anomaly detection; recommenders; introductory reinforcement learning.
 
   <details>
