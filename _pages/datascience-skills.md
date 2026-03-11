@@ -109,7 +109,7 @@ I deliver end-to-end modelling: define the decision and metrics, build the data 
 
 - Neural networks for classification and regression  
 - Training fundamentals: loss functions, optimisers, regularisation, monitoring and early stopping  
-- TensorFlow / Keras: model definition, training, evaluation  
+- TensorFlow / Keras / Pytorch: model definition, training, evaluation  
 
 </div>
 </details>
