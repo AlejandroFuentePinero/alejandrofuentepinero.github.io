@@ -35,16 +35,17 @@ I deliver end-to-end modelling: define the decision and metrics, build the data 
 ## Core stack
 
 **Tools**
-- **Python:** pandas, NumPy, scikit-learn; pipelines; visualisation (matplotlib/seaborn/plotly); Keras, TensorFlow
+- **Python:** pandas, NumPy, scikit-learn; pipelines; visualisation (matplotlib/seaborn/plotly); Keras, TensorFlow; Streamlit, Gradio
 - **SQL (PostgreSQL):** joins, CTEs, window functions; analytics transformations
 - **Software engineering:** Git/GitHub; modular code; testing/validation; reproducible environments (conda/venv)
-- **LLM engineering**: structured prompting, tool calling, RAG foundations, agent orchestration (LangGraph; Python), API integration
+- **LLM engineering:** Frontier APIs (OpenAI, Anthropic, Google); HuggingFace open-source models; structured prompting; tool calling; RAG pipelines; fine-tuning (Frontier + QLoRA); agent orchestration (LangGraph, LangChain); multimodal inputs; production deployment
 
 **Core methods**
-- **Bayesian & hierarchical modelling:** partial pooling, uncertainty quantification and propagation  
-- **Machine learning:** supervised/unsupervised, model selection, tuning, gradient boosting (incl. XGBoost)  
-- **Experimentation & causal:** A/B testing, power/effect size, confounding, selection bias  
-- **Evaluation discipline:** leakage, calibration, error analysis, robustness  
+- **Bayesian & hierarchical modelling:** partial pooling, uncertainty quantification and propagation
+- **Machine learning:** supervised/unsupervised, model selection, tuning, gradient boosting (incl. XGBoost)
+- **LLM training & adaptation:** supervised fine-tuning of Frontier models; QLoRA for open-source models; inference-to-training transition
+- **Experimentation & causal:** A/B testing, power/effect size, confounding, selection bias
+- **Evaluation discipline:** leakage, calibration, error analysis, robustness
 
 --- 
 
@@ -81,11 +82,17 @@ I deliver end-to-end modelling: define the decision and metrics, build the data 
 
 <div markdown="1">
 
-- Prompting for structured outputs; reliability patterns (prompt scaffolds, self-checks, evaluation loops)  
-- Tool calling and retrieval patterns; schema/contract design for model outputs  
-- Agent workflows: planning/acting loops, orchestration, retries, human-in-the-loop checkpoints  
-- LangGraph concepts: state, control flow, tracing/debugging  
-- OpenAI API integration patterns for prompt-driven applications  
+- Prompting for structured outputs; reliability patterns (prompt scaffolds, self-checks, evaluation loops)
+- Tool calling and retrieval patterns; schema/contract design for model outputs
+- Agent workflows: planning/acting loops, orchestration, retries, human-in-the-loop checkpoints
+- LangGraph concepts: state, control flow, tracing/debugging
+- Multi-model experimentation: Frontier APIs (OpenAI, Anthropic, Google) and open-source models via HuggingFace
+- Multimodal inputs: text, image, and audio processing in LLM pipelines
+- RAG: vector embeddings, open-source vector datastores, retrieval pipeline design
+- Fine-tuning — Frontier: supervised fine-tuning of closed models for domain-specific tasks
+- Fine-tuning — Open-source: QLoRA fine-tuning; training open-source models to match or exceed Frontier performance on specific tasks
+- LangChain for LLM application orchestration
+- Production deployment patterns: end-to-end productionised LLM systems with agentic capabilities
 
 </div>
 </details>
@@ -109,7 +116,8 @@ I deliver end-to-end modelling: define the decision and metrics, build the data 
 
 - Neural networks for classification and regression  
 - Training fundamentals: loss functions, optimisers, regularisation, monitoring and early stopping  
-- TensorFlow / Keras / Pytorch: model definition, training, evaluation  
+- TensorFlow / Keras / Pytorch: model definition, training, evaluation
+- Fine-tuning and parameter-efficient training: QLoRA for open-source LLMs
 
 </div>
 </details>
@@ -208,7 +216,7 @@ I deliver end-to-end modelling: define the decision and metrics, build the data 
 <div markdown="1">
 
 - Visualisation: matplotlib, seaborn, plotly; ggplot2  
-- Lightweight apps: Streamlit (Python), Shiny (R)  
+- Lightweight apps: Streamlit (Python), Gradio (Python), Shiny (R)  
 
 </div>
 </details>
