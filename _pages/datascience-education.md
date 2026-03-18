@@ -231,6 +231,27 @@ classes: wide projects-page
 ## Artificial Intelligence
 
 <details>
+<summary><strong>AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents</strong></summary>
+
+<div markdown="1">
+
+[_(Click to view certificate)_](PLACEHOLDER_CERTIFICATE_LINK)
+
+- **Outcome:** end-to-end LLM engineering proficiency — from Frontier API integration and open-source model deployment through RAG, fine-tuning, and production-grade agentic systems.
+- **Coverage:**
+  - **Foundations:** Transformer architecture; hands-on experimentation with 6+ Frontier models; first business Gen AI product (web-scraping brochure generator).
+  - **Frontier APIs & multimodality:** customer service chatbot with UI, function-calling, and text/image/audio interaction.
+  - **Open-source models:** HuggingFace ecosystem; 10 common Gen AI use cases (translation, image generation, etc.); meeting-minutes generator from audio recordings.
+  - **LLM selection & code generation:** model comparison for business tasks; Python-to-C++ code translation achieving 60,000× performance improvements.
+  - **RAG:** vector embeddings and open-source vector datastores; full AI knowledge-worker product that answers questions from a company's shared drive.
+  - **Fine-tuning — Frontier:** transitioning from inference to training; fine-tuned Frontier model for price prediction from product descriptions.
+  - **Fine-tuning — Open-source:** QLoRA fine-tuning; trained open-source model to outperform Frontier models on a specific task.
+  - **Deployment & agents:** production deployment with polished UI; agentic autonomous system for deal-spotting and notifications; LangChain and Gradio.
+
+</div>
+</details>
+
+<details>
 <summary><strong>ChatGPT Prompt Engineering for Developers</strong></summary>
 
 <div markdown="1">
