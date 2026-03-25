@@ -20,9 +20,9 @@ This lab is my sandbox for building LLM systems that hold up in real work. Proje
 
 ## Flagship project: LLM Price Predictor
 
-An end-to-end ML system that predicts Amazon product prices from natural language descriptions. It covers the full lifecycle — data curation at scale, LLM-powered preprocessing, model training and benchmarking across a dozen architectures, RAG retrieval, cloud deployment, and autonomous multi-agent orchestration — and culminates in an agent that scans the web for deals, prices them using the ensemble model, and notifies the user in real time.
+An end-to-end ML system that predicts Amazon product prices from natural language descriptions. It covers the full lifecycle — data curation at scale, LLM-powered preprocessing, model training and benchmarking across a dozen architectures, RAG retrieval, cloud deployment, autonomous multi-agent orchestration, and a live Gradio dashboard — and culminates in an agent that scans the web for deals, prices them using the ensemble model, and notifies the user in real time.
 
-### The pipeline in six stages
+### The pipeline in seven stages
 
 **1. Data curation** — 820k Amazon products ingested across 8 categories, filtered, deduplicated, and resampled using quadratic weighting to reduce price-distribution skew. Both a full (~820k) and lite (~23k) dataset are pushed to HuggingFace Hub.
 
@@ -40,6 +40,8 @@ An end-to-end ML system that predicts Amazon product prices from natural languag
 - picks the best opportunity and triggers a real-time push notification via `MessagingAgent` (Pushover API)
 
 The orchestration logic lives in the model, not in code: `AutonomousPlanningAgent` gives GPT-5.1 three tools (`scan_the_internet_for_bargains`, `estimate_true_value`, `notify_user_of_deal`) and lets it decide the plan autonomously.
+
+**7. Live dashboard** — a Gradio UI that runs the deal-finding agent on load and auto-refreshes every 5 minutes. Streams agent logs to the UI in real time via a background thread and queue; displays found deals in a clickable dataframe (click to re-trigger a push notification); renders a 3D t-SNE scatter plot of the 800k vectorstore embeddings coloured by product category. The full system is observable end-to-end from a single interface.
 
 ### Models benchmarked
 
@@ -98,6 +100,7 @@ This table maps the skills built across the lab to the projects that exercise th
 | **Multi-step LLM pipelines** (planning → generation, prompt contracts) | Company Brochure Generator, LLM Price Predictor, Expert Knowledge Worker |
 | **Multimodal** (audio transcription, TTS, image generation) | Meeting Minute Generator (Whisper), Flight Booking Agentic Tool (TTS + image), LLM Price Predictor (vision in frontier models) |
 | **Structured outputs** (Pydantic, schema-as-contract, JSON tool schemas) | LLM Price Predictor (Item data model), Flight Booking Agentic Tool (tool schemas), Synthetic A/B Dataset Generator |
+| **Observability & deployment** (real-time log streaming, background threads, t-SNE visualisation) | LLM Price Predictor (Gradio live dashboard) |
 | **Prompt engineering** (tone control, faithfulness guardrails, persona design) | All projects |
 
 ---
@@ -107,6 +110,7 @@ This table maps the skills built across the lab to the projects that exercise th
 - **Prompt contracts** — prompts specify tone, length, format, and faithfulness guardrails so outputs are consistent and predictable across runs.
 - **Stage-based orchestration** — each pipeline stage is an independent module that can be re-run or swapped without touching the others. Matters when iterating on a single layer (e.g., testing a different prompt format for fine-tuning).
 - **Evaluation as a first-class concern** — the Price Predictor benchmarks a dozen model families on the same held-out test set; the RAG project measures both retrieval quality (MRR, nDCG) and answer quality (LLM-as-judge) in a live dashboard.
+- **Observability by design** — the live Gradio dashboard streams agent logs in real time, surfaces deal results in an interactive dataframe, and renders the vectorstore geometry in 3D. The full system is inspectable from a single interface.
 - **Workflow-ready outputs** — results are produced as Markdown and structured JSON so they plug into docs, tickets, wikis, and downstream tools without manual cleanup.
 - **Resumable async jobs** — batch preprocessing and fine-tuning jobs persist state to disk and poll on restart, so 24-hour cloud jobs survive interruptions.
 - **Environment portability** — utilities run against hosted or local models (OpenAI / Anthropic / Ollama / OpenRouter) via the same interfaces.
