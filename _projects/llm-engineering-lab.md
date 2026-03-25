@@ -20,10 +20,6 @@ This lab is my sandbox for building LLM systems that hold up in real work. Proje
 
 ## Flagship project: LLM Price Predictor
 
-<p align="center">
-  <img src="/files/price_predictor_hero.png" alt="LLM Price Predictor" width="900">
-</p>
-
 An end-to-end ML system that predicts Amazon product prices from natural language descriptions. It covers the full lifecycle — data curation at scale, LLM-powered preprocessing, model training and benchmarking across a dozen architectures, RAG retrieval, cloud deployment, and autonomous multi-agent orchestration — and culminates in an agent that scans the web for deals, prices them using the ensemble model, and notifies the user in real time.
 
 ### The pipeline in six stages
@@ -46,10 +42,6 @@ An end-to-end ML system that predicts Amazon product prices from natural languag
 The orchestration logic lives in the model, not in code: `AutonomousPlanningAgent` gives GPT-5.1 three tools (`scan_the_internet_for_bargains`, `estimate_true_value`, `notify_user_of_deal`) and lets it decide the plan autonomously.
 
 ### Models benchmarked
-
-<p align="center">
-  <img src="/files/price_predictor_comp_final.png" alt="LLM Price Predictor — model comparison" width="900">
-</p>
 
 | Model | Type |
 |---|---|
