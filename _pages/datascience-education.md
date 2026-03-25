@@ -235,7 +235,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](PLACEHOLDER_CERTIFICATE_LINK)
+[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/ai_engineer.pdf)
 
 - **Outcome:** end-to-end LLM engineering proficiency — from Frontier API integration and open-source model deployment through RAG, fine-tuning, and production-grade agentic systems.
 - **Coverage:**
