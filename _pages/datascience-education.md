@@ -8,10 +8,13 @@ classes: wide projects-page
 
 ## Highlights
 
-- Research PhD with a strong quantitative foundation: hierarchical/Bayesian inference, spatiotemporal reasoning, and reproducible modelling workflows.
-- Industry-oriented stack: Python + SQL for data work, modelling, evaluation, and reliable delivery.
-- Formal ML training across supervised/unsupervised learning, recommenders, and introductory deep learning.
-- LLMs and agentic workflows (foundational): prompt engineering, tool use patterns, and graph-style orchestration concepts.
+- Research PhD with a strong quantitative foundation: hierarchical/Bayesian inference, spatiotemporal reasoning, and reproducible modelling workflows applied to real conservation decisions.
+- Industry-oriented stack: Python and SQL as core tools for data work, modelling, evaluation, and end-to-end delivery.
+- Formal ML training across supervised/unsupervised learning, deep learning, recommenders, and model evaluation.
+- LLM engineering and agentic AI: prompt engineering, RAG pipelines, tool calling, multi-agent orchestration, and graph-style control flow (LangGraph) — built through hands-on project work, not just coursework.
+- Model fine-tuning: supervised fine-tuning of frontier models via API and QLoRA fine-tuning of open-source LLMs (Llama 3.2, 4-bit NF4/LoRA), with dataset curation, W&B experiment tracking, and benchmarked evaluation.
+- Production AI systems: serverless deployment (Modal), experiment tracking (Weights & Biases), and end-to-end application delivery with Gradio and Streamlit.
+- Cloud foundations: AWS Certified Cloud Practitioner (2026).
 
 ---
 
