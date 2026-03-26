@@ -37,7 +37,7 @@ End-to-end AI and data systems that prioritise reliability and usability:
   <!-- Left: text -->
   <div class="ds-feature-text">
     <p>
-      <strong>Job Intelligence Engine</strong> : an end-to-end job recommender and market intelligence system built on 6,100+ real job postings. Surfaces where you stand in the market, which roles fit now, and exactly what to learn next to close the gap.
+      <strong>Job Intelligence Engine</strong>: an end-to-end job recommender and market intelligence system built on 6,100+ real job postings. Surfaces where you stand in the market, which roles fit now, and exactly what to learn next to close the gap.
     </p>
     <ul>
       <li>Skill demand and salary signals across roles and job families</li>
@@ -45,7 +45,7 @@ End-to-end AI and data systems that prioritise reliability and usability:
       <li>Upskilling priorities ranked by expected positioning lift</li>
     </ul>
     <p style="margin-top:0.5rem; font-size:0.95rem;">
-      <strong>Stack:</strong> Python • SBERT embeddings • XGBoost/LightGBM • SHAP • Streamlit
+      <strong>Stack:</strong> Python • SBERT embeddings • XGBoost • LightGBM • SHAP • Streamlit
     </p>
     <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">See demo & details</a>
   </div>
