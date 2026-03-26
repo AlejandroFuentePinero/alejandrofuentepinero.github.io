@@ -88,23 +88,22 @@ End-to-end case studies, core skills, education, and public work.
 <hr style="margin: 1.5rem 0;">
 
 ## Featured work
-
 <div class="ds-feature">
   <!-- Left: text -->
   <div class="ds-feature-text">
     <p>
-      <strong>Job Intelligence Engine</strong>: parses thousands of real job ads into a skills taxonomy and market signals, then recommends best-fit roles and a prioritised upskilling plan.
+      <strong>Job Intelligence Engine</strong>: an end-to-end job recommender and market intelligence system built on 6,100+ real job postings. Surfaces where you stand in the market, which roles fit now, and exactly what to learn next to close the gap.
     </p>
-
     <ul>
-      <li>Interpretable market signals</li>
-      <li>Career positioning</li>
-      <li>Upskilling recommendations</li>
+      <li>Skill demand and salary signals across roles and job families</li>
+      <li>Best-now vs stretch recommendations with explicit rationale</li>
+      <li>Upskilling priorities ranked by expected positioning lift</li>
     </ul>
-
-    <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">View Job Intelligence Engine</a>
+    <p style="margin-top:0.5rem; font-size:0.95rem;">
+      <strong>Stack:</strong> Python • SBERT embeddings • XGBoost • LightGBM • SHAP • Streamlit
+    </p>
+    <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">See demo & details</a>
   </div>
-
 <!-- Right: image (clickable) -->
 <div class="ds-feature-media">
   <a href="/datascience/projects/job_intelligence_engine/" aria-label="Open Job Intelligence Engine">
