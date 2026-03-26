@@ -1,6 +1,6 @@
 # Top header links
 main:
-  - title: "Data Science - AI Engineering"
+  - title: "Data Science & AI Engineering"
     url: /datascience_AI/
   - title: "Academia"
     url: /academic/
@@ -26,7 +26,7 @@ academic:
 
 # Sidebar: Data Science
 datascience:
-  - title: "Data Science - AI Engineering"
+  - title: "Data Science & AI Engineering"
     class: "nav__sub-title"
   - title: "Projects"
     url: /datascience/projects/
