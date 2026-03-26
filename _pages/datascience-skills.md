@@ -6,56 +6,43 @@ author_profile: true
 classes: wide projects-page
 ---
 
-<figure style="text-align:center; margin:0;">
-  <img
-    src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/skill_summary.png"
-    alt="Skills at a Glance"
-    style="width:100%; max-width:1100px; height:auto; display:block; margin:0 auto;"
-  >
-</figure>
+## What I'm best at
 
+My core strength is statistical modelling and uncertainty-aware inference (particularly Bayesian hierarchical methods) applied to problems where data are noisy, sparse, biased, or structured across space and time. That foundation shapes everything: careful assumptions, principled model selection, rigorous validation, and outputs that are honest about what they do and don't know.
 
-## What I’m best at
-
-I deliver end-to-end modelling: define the decision and metrics, build the data foundation, develop features and models, validate rigorously, and ship reproducible outputs. Strength: statistical judgement and uncertainty-aware inference (especially hierarchical/Bayesian), useful when data are noisy, sparse, biased, or structured in space/time.
-
+I've extended that same rigour into AI engineering: building LLM-powered applications, RAG systems with proper evaluation, agentic workflows, and fine-tuned models. The instincts transfer directly: if it can't be evaluated, it can't be trusted, whether that's a Bayesian forecast or an LLM pipeline.
 
 ---
 
 ## What I deliver
 
-- Full-cycle modelling delivery: define objectives and success metrics, design the data foundation, engineer features, train models, validate rigorously, and deliver reproducible outputs that support decisions.
-- Model selection with statistical judgement: select model families aligned to the data-generating process, including structured dependence across space and time.
-- Bayesian hierarchical inference: partial pooling and principled uncertainty propagation for robust estimates and uncertainty-aware decision-making under sparse, noisy, or biased data.
-- Experimentation and causal reasoning: A/B testing fundamentals, power and effect-size framing, and clear treatment of confounding, selection bias, and the limits of identification.
-- Reliable evaluation and communication: leakage checks, calibration awareness, error slicing, robustness and stress testing, and transparent reporting of assumptions, tradeoffs, and limitations.
+- **End-to-end AI systems:** RAG pipelines with retrieval evaluation (MRR, nDCG, LLM-as-judge), agentic workflows with tool calling and stateful backends, and fine-tuned models (Frontier supervised fine-tuning and QLoRA for open-source LLMs) — built with structured outputs and production habits from the start.
+- **Full-cycle ML and modelling:** problem framing, feature engineering, model selection, rigorous validation, and reproducible delivery — with particular depth in Bayesian hierarchical inference, spatiotemporal forecasting, and uncertainty-aware decision support.
+- **Data pipelines and analytics:** clean, testable, version-controlled pipelines from raw data to decision-ready outputs, with SQL and Python as the core tools.
+- **Evaluation and communication:** leakage checks, calibration, error slicing, robustness testing — and results communicated with explicit assumptions, trade-offs, and clear recommendations.
 
 ---
 
 ## Core stack
 
-**Tools**
-- **Python:** pandas, NumPy, scikit-learn; pipelines; visualisation (matplotlib/seaborn/plotly); Keras, TensorFlow; Streamlit, Gradio
-- **SQL (PostgreSQL):** joins, CTEs, window functions; analytics transformations
-- **Software engineering:** Git/GitHub; modular code; testing/validation; reproducible environments (conda/venv)
-- **LLM engineering:** Frontier APIs (OpenAI, Anthropic, Google); HuggingFace open-source models; structured prompting; tool calling; RAG pipelines; fine-tuning (Frontier + QLoRA); agent orchestration (LangGraph, LangChain); multimodal inputs; production deployment
+**AI / LLM**
+OpenAI · Anthropic · Google · HuggingFace · LangChain · LangGraph · ChromaDB · RAG pipelines · QLoRA fine-tuning (Llama 3.2, 4-bit NF4/LoRA) · Frontier fine-tuning · tool calling · agent orchestration · multimodal inputs (text, image, audio) · Modal serverless deployment · Weights & Biases · Gradio · Streamlit
 
-**Core methods**
-- **Bayesian & hierarchical modelling:** partial pooling, uncertainty quantification and propagation
-- **Machine learning:** supervised/unsupervised, model selection, tuning, gradient boosting (incl. XGBoost)
-- **LLM training & adaptation:** supervised fine-tuning of Frontier models; QLoRA for open-source models; inference-to-training transition
-- **Experimentation & causal:** A/B testing, power/effect size, confounding, selection bias
-- **Evaluation discipline:** leakage, calibration, error analysis, robustness
+**ML / Data**
+Python (pandas, NumPy, scikit-learn, XGBoost, TensorFlow/Keras, PyTorch) · SQL (PostgreSQL) · R (tidyverse) · Git/GitHub
 
---- 
+**Methods**
+Bayesian & hierarchical modelling · spatiotemporal forecasting · supervised/unsupervised ML · NLP and embeddings · ranking and recommendation · A/B testing · causal inference · model evaluation and interpretability
 
-## Academia transferability
+---
 
-- **First-principles problem solving:** break down open-ended questions, formalise hypotheses, and select methods aligned to the data-generating process.  
-- **Study and measurement design:** design sampling and measurement protocols, define data quality standards, and handle bias, missingness, and uncertainty at the source.  
-- **Full-cycle project delivery:** scope work, set milestones, manage tradeoffs, and deliver high-quality outcomes under real constraints.  
-- **High-standard technical communication:** publish peer-reviewed work and produce clear, auditable narratives with explicit assumptions, evidence, and limitations.  
-- **Cross-functional collaboration and mentorship:** work across disciplines, mentor and upskill collaborators, and drive alignment through proposal-style writing and resourcing justification (grants/funding).  
+## What I bring from research
+
+- **First-principles thinking:** breaking open-ended problems into well-formed questions with the right method for the data-generating process.
+- **Measurement and study design:** sampling protocols, data quality standards, bias and missingness at the source — not as afterthoughts.
+- **Delivery under real constraints:** scoping work, managing trade-offs, and shipping high-quality outputs on time.
+- **Transparent communication:** clear, auditable narratives with explicit assumptions, evidence, and limitations — the standard I held in peer-reviewed work, applied to every project.
+- **Cross-functional collaboration:** working across disciplines, mentoring others, and building alignment through clear writing and structured proposals.
 
 ---
 
