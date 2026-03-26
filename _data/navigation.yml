@@ -1,7 +1,7 @@
 # Top header links
 main:
   - title: "Data Science & AI Engineering"
-    url: /datascience_AI/
+    url: /datascience/
   - title: "Academia"
     url: /academic/
 
