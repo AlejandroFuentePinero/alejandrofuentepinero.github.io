@@ -1,12 +1,12 @@
 ---
-title: "Data Science"
+title: "Data Science - AI Engineering"
 permalink: /datascience/
 layout: splash
 classes: wide
 toc: false
 ---
 
-## Welcome to my Data Science portfolio
+## Welcome to my data science / AI engineering portfolio
 End-to-end case studies, core skills, education, and public work.
 
 <!-- Styles (stable selectors; avoids "Word-like" reflow) -->
