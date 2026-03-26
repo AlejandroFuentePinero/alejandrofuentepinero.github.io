@@ -14,7 +14,7 @@ redirect_from:
 
 ## Hi, I'm Alejandro — AI Engineer & Data Scientist
 
-I've spent years trying to understand how wildlife populations respond to a changing climate: building Bayesian models on decades of field data, forecasting species viability under uncertainty, and producing evidence that fed directly into conservation decisions. Some of that work meant tracking pumas and jaguars across remote South American landscapes. Some of it meant climbing tropical mountains in the rainforests of northeast Australia to understand how global warming is quietly reshaping the lives of arboreal marsupials in the canopy above. When your model output determines whether a species gets protected, you develop a particular relationship with getting it right.
+I've spent years trying to understand how wildlife populations respond to a changing climate: building Bayesian models on decades of field data, forecasting species viability under uncertainty, and producing evidence that fed directly into conservation decisions. Some of that work meant tracking pumas and jaguars across remote South American landscapes. Some of it meant climbing tropical mountains in the rainforests of northeast Australia to understand how global warming is quietly reshaping the lives of arboreal marsupials and song birds in the canopy above. When your model output determines whether a species gets protected, you develop a particular relationship with getting it right.
 
 These days I work at the intersection of AI engineering and data science, building systems that turn messy real-world data into outputs people can act on. I'm particularly drawn to problems where the data is hard, the uncertainty is real, and the answer actually matters. Same instincts, different problems.
 
