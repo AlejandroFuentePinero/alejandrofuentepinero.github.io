@@ -27,7 +27,7 @@ Job postings are noisy: roles and skills overlap heavily in meaning, postings de
 - **Upskilling recommendations:** counterfactual “add-one-skill” analysis that ranks what to learn by the change it produces in suitability, competitiveness, and salary alignment.
 
 ## How it works
-The system runs as a deterministic pipeline. It normalises raw postings (titles, locations, salaries, skill tokens), learns market structure via probabilistic skill-requirement models and a tuned salary model, then translates those signals into transparent positioning scores, recommendations, and upskilling targets. Outputs are served through a lightweight Streamlit interface.
+The system runs as a deterministic pipeline. It normalises raw postings (titles, locations, salaries, skill tokens), learns market structure via probabilistic skill-requirement models and a tuned salary model, then translates those signals into transparent positioning scores, recommendations, and upskilling targets. The engine separates suitability (fit to your current profile) from competitiveness (barrier to entry driven by missing or rare skill requirements) — a distinction most job tools collapse into a single score. Outputs are served through a lightweight Streamlit interface.
 
 <figure>
   <img src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/project_pipeline_simple.png" alt="Job Intelligence Engine — system workflow" style="width:100%; max-width:1100px;">
@@ -35,6 +35,3 @@ The system runs as a deterministic pipeline. It normalises raw postings (titles,
 
 ## Stack
 Python · pandas · NumPy · scikit-learn · SBERT · XGBoost/LightGBM · SHAP · Streamlit · NetworkX
-
-## Engineering standards
-Reproducible, modular `src/` design with persisted artefacts and an end-to-end build that reliably regenerates app-ready assets from raw inputs.
