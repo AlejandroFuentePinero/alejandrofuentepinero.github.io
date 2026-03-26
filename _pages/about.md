@@ -12,11 +12,11 @@ redirect_from:
 
 # Welcome!
 
-## Hi, I'm Alejandro — AI Engineer and Data Scientist
+## Hi, I'm Alejandro — AI Engineer & Data Scientist
 
-I build LLM-powered applications and ML systems that turn messy data into outputs people can act on: production RAG pipelines, agentic workflows, and end-to-end analytics built with Python and SQL.
+I've spent years trying to understand how wildlife populations respond to a changing climate: building Bayesian models on decades of field data, forecasting species viability under uncertainty, and producing evidence that fed directly into conservation decisions. Some of that work meant tracking pumas and jaguars across remote South American landscapes. Some of it meant climbing tropical mountains in the rainforests of northeast Australia to understand how global warming is quietly reshaping the lives of arboreal marsupials in the canopy above. When your model output determines whether a species gets protected, you develop a particular relationship with getting it right.
 
-My background is in quantitative ecology and climate-change science, where I built uncertainty-aware models to understand how living systems respond to environmental change. I bring the same rigour to industry: careful assumptions, transparent validation, and decision-ready delivery.
+These days I work at the intersection of AI engineering and data science, building systems that turn messy real-world data into outputs people can act on. I'm particularly drawn to problems where the data is hard, the uncertainty is real, and the answer actually matters. Same instincts, different problems.
 
 ---
 
@@ -37,7 +37,7 @@ End-to-end AI and data systems that prioritise reliability and usability:
   <!-- Left: text -->
   <div class="ds-feature-text">
     <p>
-      <strong>Job Intelligence Engine</strong> — an end-to-end job recommender and market intelligence system built on 6,100+ real job postings. Surfaces where you stand in the market, which roles fit now, and exactly what to learn next to close the gap.
+      <strong>Job Intelligence Engine</strong> : an end-to-end job recommender and market intelligence system built on 6,100+ real job postings. Surfaces where you stand in the market, which roles fit now, and exactly what to learn next to close the gap.
     </p>
     <ul>
       <li>Skill demand and salary signals across roles and job families</li>
