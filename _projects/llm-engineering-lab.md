@@ -59,9 +59,9 @@ The orchestration logic lives in the model, not in code: `AutonomousPlanningAgen
 
 ---
 
-## The rest of the lab
+## Supporting projects
 
-The ten supporting projects build the skills that feed into the flagship. Each one is a standalone, deployable utility.
+Each of the ten supporting projects isolates a specific pattern (retrieval, tool-calling, evaluation, multimodal) that feeds into the flagship.
 
 **Expert Knowledge Worker (RAG Chatbot)** — A RAG assistant over a Markdown knowledge base. Separates ingestion (chunking, embedding, Chroma) from answering (conversation-aware retrieval + generation), with a Gradio UI that shows retrieved source chunks side-by-side with the answer. Includes a full evaluation suite: retrieval quality (MRR, nDCG, keyword coverage) and LLM-as-judge answer scoring (accuracy, completeness, relevance) in a colour-coded dashboard.
 
