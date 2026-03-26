@@ -160,7 +160,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/machine_learning_specialisation.png)
+[_(Click to view certificate)_](https://learn.deeplearning.ai/certificates/3384e7df-ec7d-4ec6-9314-973855530059?usp=sharing)
 
 - **Outcome:** strong conceptual + practical grounding in classical ML and core modern foundations.
 - **Coverage:**
