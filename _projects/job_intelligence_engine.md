@@ -34,7 +34,7 @@ The system runs as a deterministic pipeline. It normalises raw postings (titles,
 </figure>
 
 ## Stack
-Python, pandas, numpy, scikit-learn, Sentence Transformers (SBERT), KMeans, XGBoost/LightGBM, SHAP, Streamlit, NetworkX, SHAP.
+Python · pandas · NumPy · scikit-learn · SBERT · XGBoost/LightGBM · SHAP · Streamlit · NetworkX
 
 ## Engineering standards
 Reproducible, modular `src/` design with persisted artefacts and an end-to-end build that reliably regenerates app-ready assets from raw inputs.
