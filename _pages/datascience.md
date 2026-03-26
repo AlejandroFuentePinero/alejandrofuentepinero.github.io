@@ -93,7 +93,7 @@ End-to-end case studies, core skills, education, and public work.
   <!-- Left: text -->
   <div class="ds-feature-text">
     <p>
-      <strong>Job Intelligence Engine</strong> — parses thousands of real job ads into a skills taxonomy and market signals, then recommends best-fit roles and a prioritised upskilling plan.
+      <strong>Job Intelligence Engine</strong>: parses thousands of real job ads into a skills taxonomy and market signals, then recommends best-fit roles and a prioritised upskilling plan.
     </p>
 
     <ul>
