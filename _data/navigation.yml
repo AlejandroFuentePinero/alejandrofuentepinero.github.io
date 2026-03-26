@@ -25,8 +25,8 @@ academic:
     url: /academic/cv/
 
 # Sidebar: Data Science
-datascience:
-  - title: "Data Science"
+datascience_AI:
+  - title: "Data Science - AI Engineering"
     class: "nav__sub-title"
   - title: "Projects"
     url: /datascience/projects/
