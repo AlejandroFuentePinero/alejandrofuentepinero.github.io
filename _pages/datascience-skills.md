@@ -165,7 +165,7 @@ Bayesian & hierarchical modelling · spatiotemporal forecasting · supervised/un
 <div markdown="1">
 
 - Text preprocessing and inspection: normalisation, tokenisation, feature auditing  
-- Vectorisation: bag-of-words and TF-IDF; baseline classifiers (Naive Bayes)  
+- Vectorisation: bag-of-words, TF-IDF, and dense embeddings (SBERT, sentence-transformers); semantic search and similarity-based retrieval
 - Recommender foundations: similarity metrics, collaborative filtering, constraint-aware framing  
 
 </div>
