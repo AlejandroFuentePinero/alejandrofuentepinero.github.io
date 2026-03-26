@@ -14,9 +14,9 @@ redirect_from:
 
 ## Hi, I'm Alejandro — AI Engineer and Data Scientist
 
-I build **LLM-powered applications and ML systems** that turn messy data into outputs people can act on: production RAG pipelines, agentic workflows, and end-to-end analytics built with Python and SQL.
+I build LLM-powered applications and ML systems that turn messy data into outputs people can act on: production RAG pipelines, agentic workflows, and end-to-end analytics built with Python and SQL.
 
-My background is in **quantitative ecology and climate-change science**, where I built uncertainty-aware models to understand how living systems respond to environmental change. I bring the same rigour to industry: careful assumptions, transparent validation, and decision-ready delivery.
+My background is in quantitative ecology and climate-change science, where I built uncertainty-aware models to understand how living systems respond to environmental change. I bring the same rigour to industry: careful assumptions, transparent validation, and decision-ready delivery.
 
 ---
 
@@ -24,35 +24,31 @@ My background is in **quantitative ecology and climate-change science**, where I
 
 End-to-end AI and data systems that prioritise reliability and usability:
 
-- **RAG systems and LLM applications** — retrieval pipelines with evaluation frameworks (MRR, nDCG, LLM-as-judge) and structured output patterns
-- **ML workflows** — from problem framing and feature engineering to model evaluation with transparent trade-offs
-- **Data pipelines** — clean, testable, reproducible pipelines with validation and clear artefacts
-- **Decision support** — results communicated clearly: what changed, why it matters, what to do next
+- **RAG systems and LLM applications**: retrieval pipelines with evaluation frameworks (MRR, nDCG, LLM-as-judge) and structured output patterns
+- **Fine-tuned models**: supervised fine-tuning of frontier models via API and QLoRA fine-tuning of open-source LLMs for domain-specific tasks, with dataset curation, training runs tracked in W&B, and benchmarked against baseline models
+- **ML workflows**: from problem framing and feature engineering to model evaluation with transparent trade-offs
+- **Data pipelines**: clean, testable, reproducible pipelines with validation and clear artefacts
+- **Decision support**: results communicated clearly: what changed, why it matters, what to do next
 
 ---
 
 ## Featured work
-
 <div class="ds-feature">
   <!-- Left: text -->
   <div class="ds-feature-text">
     <p>
-      <strong>Job Intelligence Engine</strong> — parses thousands of real data job ads into a skills taxonomy and market signals, then recommends best-fit roles and a prioritised upskilling plan.
+      <strong>Job Intelligence Engine</strong> — an end-to-end job recommender and market intelligence system built on 6,100+ real job postings. Surfaces where you stand in the market, which roles fit now, and exactly what to learn next to close the gap.
     </p>
-
     <ul>
-      <li>Skill demand & salary signals by role/family</li>
-      <li>Best-now vs stretch role job recommendations</li>
-      <li>Ranked upskilling priorities (positioning lift)</li>
+      <li>Skill demand and salary signals across roles and job families</li>
+      <li>Best-now vs stretch recommendations with explicit rationale</li>
+      <li>Upskilling priorities ranked by expected positioning lift</li>
     </ul>
-
     <p style="margin-top:0.5rem; font-size:0.95rem;">
-      <strong>Stack:</strong> Python • NLP embeddings • XGBoost/LightGBM • Streamlit • reproducible pipeline & persisted artefacts • SHAP
+      <strong>Stack:</strong> Python • SBERT embeddings • XGBoost/LightGBM • SHAP • Streamlit
     </p>
-
     <a class="btn btn--primary" href="/datascience/projects/job_intelligence_engine/">See demo & details</a>
   </div>
-
 
 <!-- Right: image (clickable) -->
 <div class="ds-feature-media">
