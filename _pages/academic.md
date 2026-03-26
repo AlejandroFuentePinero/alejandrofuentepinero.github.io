@@ -44,11 +44,11 @@ feature_row:
     btn_class: "btn--primary"
 ---
 
-## Welcome to my Academic Portfolio. 
+## Welcome to my academic portfolio. 
 This section showcases my publications, talks, teaching, grants & awards, and threatened-species work.
 
 ### Postdoctoral Research: Mitigating Climate Change Impacts on Spectacled Flying Foxes
-> My current research focuses on the endangered spectacled flying fox, whose populations were dramatically impacted by the extreme heatwave of 2018. This event, which led to the loss of approximately one-third of the species, underscores the critical threat that future extreme thermal events pose. I am investigating the thermal environments of spectacled flying fox roosts across their range—from the Wet Tropics to the rainforests of Cape Tribulation—to better understand how rising temperatures and increasing heatwave intensity compromise their survival.
+> My postdoctoral research focuses on the endangered spectacled flying fox, whose populations were dramatically impacted by the extreme heatwave of 2018. This event, which led to the loss of approximately one-third of the species, underscores the critical threat that future extreme thermal events pose. I am investigating the thermal environments of spectacled flying fox roosts across their range—from the Wet Tropics to the rainforests of Cape Tribulation—to better understand how rising temperatures and increasing heatwave intensity compromise their survival.
 > By integrating ecological monitoring, physiological studies, and forecasting models, I am developing a predictive tool to identify high-risk heat events and pinpoint vulnerable roost sites. This work not only enhances our understanding of how climate change drives mass mortality events in flying foxes but also provides actionable guidance for conservation managers. Potential interventions include misting systems, roost exclusion measures, and targeted revegetation to modify roost microclimates. Ultimately, this project aims to support adaptive conservation strategies that address national priorities and contribute to reversing the decline of Australia’s natural environment.
 
 
