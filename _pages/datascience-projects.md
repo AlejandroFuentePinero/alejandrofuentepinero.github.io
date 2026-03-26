@@ -8,11 +8,12 @@ classes: wide projects-page
 entries_layout: grid
 ---
 
-This page is an overview of my data-science work, organised by deliverable and depth:
+My projects are organised by deliverable and depth:
 
-- **Flagship Projects:** end-to-end builds that ship a working app/pipeline, with reproducible architecture, evaluation, and documented results.
-- **Research Projects:** research-grade modelling and analytics work, formatted as DS case studies, where the primary outcome is a peer-reviewed publication.
-- **Skill Labs:** short, targeted builds designed to practise and demonstrate a specific technique through implementation.
+- **Flagship Projects:** end-to-end builds that ship a working app or pipeline — reproducible architecture, rigorous evaluation, and documented results you can explore directly.
+- **Research Projects:** peer-reviewed modelling work presented as data science case studies, where the primary output is a published finding with real consequences.
+- **Skill Labs:** short, targeted builds designed to cement a specific technique through implementation rather than coursework.
+Everything below that — the Liquid template logic, the section headings, the grid includes
 
 
 {% include base_path %}
