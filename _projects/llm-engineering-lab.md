@@ -3,7 +3,7 @@ title: "LLM Engineering Lab"
 excerpt: "Eleven production-minded Python projects spanning the full LLM engineering stack — from structured prompting and RAG to QLoRA fine-tuning, autonomous multi-agent systems, and serverless cloud deployment. The flagship project builds a price predictor that trains on 800k products, benchmarks a dozen model architectures, and deploys an autonomous agent that scans for deals and notifies you in real time."
 date: 2026-03-25
 tier: featured   # featured | learning | research
-order: 2
+order: 3
 ---
 
 <p align="center">
