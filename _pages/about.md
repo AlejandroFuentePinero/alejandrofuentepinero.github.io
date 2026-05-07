@@ -20,6 +20,23 @@ These days I work at the intersection of AI engineering and data science, buildi
 
 ---
 
+<section id="digital-twin">
+  <h2>Try the digital twin</h2>
+  <p>A representative agent that answers questions about my work, skills, and projects. The conversation is logged so I can improve it; data stays in a private dataset.</p>
+
+  <iframe
+    src="https://alejandrofupi-digital-twin.hf.space"
+    title="Digital twin chat"
+    style="width: 100%; height: 640px; border: 1px solid #e5e5e5; border-radius: 6px;"
+    loading="lazy"
+    allow="clipboard-write"
+  ></iframe>
+
+  <p><small>Doesn't load? <a href="https://huggingface.co/spaces/Alejandrofupi/digital-twin">Open the chat in a new tab</a>.</small></p>
+</section>
+
+---
+
 ## What I build
 
 End-to-end AI and data systems that prioritise reliability and usability:
