@@ -27,7 +27,7 @@ These days I work at the intersection of AI engineering and data science, buildi
   <iframe
     src="https://alejandrofupi-digital-twin.hf.space"
     title="Digital twin chat"
-    style="width: 100%; height: 900px; border: 1px solid #e5e5e5; border-radius: 6px;"
+    style="width: 100%; height: 1100px; border: 1px solid #e5e5e5; border-radius: 6px;"
     loading="lazy"
     allow="clipboard-write"
   ></iframe>
