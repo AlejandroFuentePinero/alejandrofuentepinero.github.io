@@ -30,7 +30,7 @@ The chat is embedded on the home page of this site and also runs as a standalone
 ## How it works
 
 <figure>
-  <img src="/files/digital_twin_runtime.png" alt="Digital Twin — runtime pipeline" style="width:100%; max-width:900px;">
+  <img src="/files/digital_twin_runtime.png" alt="Digital Twin — runtime pipeline" style="width:100%; max-width:520px; display:block; margin: 0 auto;">
 </figure>
 
 A small, cheap model (`gpt-4.1-nano`) labels each question, the prompt composer assembles the right rules and context, the generator (`gpt-4.1`) drafts an answer — with optional tool use to fetch project docs on technical branches — and a guardrail model (`claude-sonnet-4-6`) accepts or rejects the result against the same ground truth. Retries on rejection (up to three) carry structured feedback back into the generator; if all attempts fail, the visitor sees a polite contact-me fallback. Either way, the full record of the turn is logged.
