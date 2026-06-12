@@ -342,6 +342,26 @@ classes: wide projects-page
 </div>
 </details>
 
+<details>
+<summary><strong>MCP: Build Rich-Context AI Apps with Anthropic</strong></summary>
+
+<div markdown="1">
+
+[_(Certificate — placeholder, to be added)_](#)
+
+- **Outcome:** ability to build, connect, and deploy **Model Context Protocol (MCP)** servers and clients that give AI applications standardised access to external tools, data, and prompts.
+- **Coverage:**
+  - MCP fundamentals: why MCP reduces integration fragmentation; client–server architecture and communication/transport mechanisms.
+  - Building MCP servers with **FastMCP** that expose **tools, resources, and prompt templates**; testing with the **MCP Inspector**.
+  - Implementing MCP clients inside an application; hosting multiple clients with 1-to-1 server connections.
+  - Transforming a chatbot into an MCP-compatible system with custom tools (e.g., academic paper search).
+  - Connecting to Anthropic **reference servers** (filesystem operations, web content extraction) and configuring **Claude Desktop**.
+  - Deploying and testing **remote MCP servers**.
+  - MCP roadmap: multi-agent architecture, registry/discovery, and authorization.
+
+</div>
+</details>
+
 
 
 ---

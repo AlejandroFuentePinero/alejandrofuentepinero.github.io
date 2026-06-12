@@ -26,7 +26,7 @@ I've extended that same rigour into AI engineering: building LLM-powered applica
 ## Core stack
 
 **AI / LLM**
-OpenAI · Anthropic · Google · HuggingFace · LangChain · LangGraph · LiteLLM · ChromaDB · Pydantic · RAG pipelines · QLoRA fine-tuning (Llama 3.2, 4-bit NF4/LoRA) · Frontier fine-tuning · tool calling · agent orchestration · multimodal inputs (text, image, audio) · Modal serverless deployment · Weights & Biases · Gradio · Streamlit
+OpenAI · Anthropic · Google · HuggingFace · LangChain · LangGraph · LiteLLM · MCP (FastMCP) · ChromaDB · Pydantic · RAG pipelines · QLoRA fine-tuning (Llama 3.2, 4-bit NF4/LoRA) · Frontier fine-tuning · tool calling · agent orchestration · multimodal inputs (text, image, audio) · Modal serverless deployment · Weights & Biases · Gradio · Streamlit
 
 **ML / Data**
 Python (pandas, NumPy, scikit-learn, XGBoost, TensorFlow/Keras, PyTorch) · SQL (PostgreSQL) · R (tidyverse) · Git/GitHub
@@ -79,6 +79,7 @@ Bayesian & hierarchical modelling · spatiotemporal forecasting · supervised/un
 - Fine-tuning — Frontier: supervised fine-tuning of closed models for domain-specific tasks
 - Fine-tuning — Open-source: QLoRA fine-tuning; training open-source models to match or exceed Frontier performance on specific tasks
 - LangChain for LLM application orchestration
+- Model Context Protocol (MCP): building servers with FastMCP that expose tools, resources, and prompt templates; implementing MCP clients; connecting to reference servers; configuring Claude Desktop; deploying and testing remote MCP servers
 - Production deployment patterns: end-to-end productionised LLM systems with agentic capabilities
 - Runtime guardrails: cross-family model-as-judge vetting every response before it reaches the user, with structured rejection feedback driving bounded retries and graceful fallbacks
 - System observability: structured per-turn logging (routing branch, classifier confidence, retrieval chunks, tool calls, retries, latency) with operator dashboards for live LLM systems
