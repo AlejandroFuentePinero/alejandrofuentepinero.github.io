@@ -347,7 +347,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Certificate — placeholder, to be added)_](#)
+[_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/5f173543-7e1f-4988-b20a-e0b88ef401f3?usp=sharing)
 
 - **Outcome:** ability to build, connect, and deploy **Model Context Protocol (MCP)** servers and clients that give AI applications standardised access to external tools, data, and prompts.
 - **Coverage:**
