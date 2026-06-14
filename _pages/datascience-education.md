@@ -303,6 +303,25 @@ classes: wide projects-page
 </details>
 
 <details>
+<summary><strong>Knowledge Graphs for RAG — DeepLearning.AI (Neo4j)</strong></summary>
+
+<div markdown="1">
+
+[_(Click to view certificate)_](PLACEHOLDER)
+
+- **Outcome:** ability to build retrieval-augmented generation systems backed by knowledge graphs, querying structured and unstructured data to provide LLMs with richer, more relevant context.
+- **Coverage:**
+  - Knowledge graph fundamentals: nodes (entities) and edges (relationships); advantages over traditional databases; integrating structured and unstructured data sources.
+  - **Cypher** query language: managing and retrieving data stored in **Neo4j** knowledge graphs.
+  - Vector indexing of unstructured text and vector similarity search over graph data.
+  - Constructing knowledge graphs from documents; connecting multiple graphs and formulating complex queries.
+  - RAG prompt optimisation: composing graph queries that find and format text to ground LLM responses.
+  - Building a question-answering system over a knowledge graph with **Neo4j** and **LangChain** (SEC financial-document case study).
+
+</div>
+</details>
+
+<details>
 <summary><strong>Claude Code: A Highly Agentic Coding Assistant — Anthropic </strong></summary>
 
 <div markdown="1">
