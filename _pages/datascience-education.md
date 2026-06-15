@@ -307,7 +307,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](PLACEHOLDER)
+[_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/bf03d51a-53c2-48cf-bc97-6538b30065fe?usp=sharing)
 
 - **Outcome:** ability to build retrieval-augmented generation systems backed by knowledge graphs, querying structured and unstructured data to provide LLMs with richer, more relevant context.
 - **Coverage:**
@@ -317,6 +317,24 @@ classes: wide projects-page
   - Constructing knowledge graphs from documents; connecting multiple graphs and formulating complex queries.
   - RAG prompt optimisation: composing graph queries that find and format text to ground LLM responses.
   - Building a question-answering system over a knowledge graph with **Neo4j** and **LangChain** (SEC financial-document case study).
+
+</div>
+</details>
+
+<details>
+<summary><strong>Agentic Knowledge Graph Construction — DeepLearning.AI (Neo4j)</strong></summary>
+
+<div markdown="1">
+
+[_(Click to view certificate)_](PLACEHOLDER)
+
+- **Outcome:** ability to build multi-agent systems that construct knowledge graphs from structured and unstructured data, designing specialised agents that infer schema and extract nodes and relationships aligned to a user's goal.
+- **Coverage:**
+  - Knowledge graph construction fundamentals; node/edge extraction methodologies; comparison with traditional RAG approaches.
+  - Multi-agent orchestration with **Google's Agent Development Kit (ADK)**; shared context management across agents and graph-schema output.
+  - Specialised agent workflows: user-intent identification, file-relevance assessment and sampling, schema proposal for structured (CSV/relational) sources, and schema extraction from unstructured text.
+  - Graph construction and integration procedures; merging knowledge graphs from diverse sources into a cohesive system.
+  - Practical application: product issue root-cause analysis over structured data (products, suppliers, parts) and unstructured product reviews, using **Neo4j**.
 
 </div>
 </details>
