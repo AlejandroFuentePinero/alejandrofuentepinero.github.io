@@ -326,7 +326,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](PLACEHOLDER)
+[_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/9068bca9-c83e-4629-8e3e-09efffeddc3a?usp=sharing)
 
 - **Outcome:** ability to build multi-agent systems that construct knowledge graphs from structured and unstructured data, designing specialised agents that infer schema and extract nodes and relationships aligned to a user's goal.
 - **Coverage:**
