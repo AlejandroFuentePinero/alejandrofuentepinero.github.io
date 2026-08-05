@@ -26,7 +26,7 @@ I've extended that same rigour into AI engineering: building LLM-powered applica
 ## Core stack
 
 **AI / LLM**
-OpenAI · Anthropic · Google · HuggingFace · LangChain · LangGraph · Google ADK · LiteLLM · MCP (FastMCP) · ChromaDB · Neo4j · Cypher · Pydantic · RAG pipelines · GraphRAG · QLoRA fine-tuning (Llama 3.2, 4-bit NF4/LoRA) · Frontier fine-tuning · tool calling · agent orchestration · multimodal inputs (text, image, audio) · Modal serverless deployment · Weights & Biases · Gradio · Streamlit
+OpenAI · Anthropic · Google · HuggingFace · LangChain · LangGraph · LlamaIndex · Google ADK · LiteLLM · MCP (FastMCP) · ChromaDB · Neo4j · Cypher · Pydantic · TruLens · RAG pipelines · GraphRAG · QLoRA fine-tuning (Llama 3.2, 4-bit NF4/LoRA) · Frontier fine-tuning · tool calling · agent orchestration · multimodal inputs (text, image, audio) · Modal serverless deployment · Weights & Biases · Gradio · Streamlit
 
 **ML / Data**
 Python (pandas, NumPy, scikit-learn, XGBoost, TensorFlow/Keras, PyTorch) · SQL (PostgreSQL) · R (tidyverse) · Git/GitHub
@@ -76,6 +76,8 @@ Bayesian & hierarchical modelling · spatiotemporal forecasting · supervised/un
 - Multi-model experimentation: Frontier APIs (OpenAI, Anthropic, Google) and open-source models via HuggingFace
 - Multimodal inputs: text, image, and audio processing in LLM pipelines
 - RAG: vector embeddings, open-source vector datastores, retrieval pipeline design
+- Advanced retrieval strategies: sentence-window retrieval and auto-merging (hierarchical) retrieval with LlamaIndex, decoupling retrieval granularity from the context handed to the model
+- RAG evaluation: the RAG triad (context relevance, groundedness, answer relevance) via TruLens, used to separate retrieval failures from hallucination and to justify pipeline configuration with measured comparisons
 - Knowledge graphs & GraphRAG: graph data modelling (Neo4j/Cypher), vector indexing over graph data, and graph-backed retrieval that combines structured and unstructured sources for richer LLM context
 - Agentic knowledge-graph construction: multi-agent systems (Google ADK) that infer schema and extract nodes/relationships from structured (CSV/relational) and unstructured text sources
 - Fine-tuning — Frontier: supervised fine-tuning of closed models for domain-specific tasks

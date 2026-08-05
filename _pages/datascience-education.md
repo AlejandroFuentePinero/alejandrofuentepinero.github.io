@@ -303,6 +303,24 @@ classes: wide projects-page
 </details>
 
 <details>
+<summary><strong>Building and Evaluating Advanced RAG — DeepLearning.AI (LlamaIndex, TruEra)</strong></summary>
+
+<div markdown="1">
+
+[_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/25051b11-a3d7-4d21-a8bd-0171cf57fc28?usp=sharing)
+
+- **Outcome:** ability to move a RAG pipeline beyond naive chunk-and-retrieve, using advanced retrieval methods and a systematic evaluation framework to diagnose and iteratively improve retrieval and response quality.
+- **Coverage:**
+  - Advanced RAG pipeline construction with **LlamaIndex**: ingestion, indexing, query engines, and structured comparison against a baseline pipeline.
+  - **RAG triad of metrics** with **TruLens**: context relevance, groundedness, and answer relevance as complementary failure detectors (retrieval vs hallucination vs task fit).
+  - **Sentence-window retrieval:** embedding at sentence granularity while feeding the surrounding window to the LLM, decoupling retrieval precision from context sufficiency.
+  - **Auto-merging (hierarchical) retrieval:** parent/child node hierarchies where fragmented child hits are merged into their parent, reducing incoherent context.
+  - Evaluation-driven iteration: experiment tracking across pipeline variants, window/hierarchy parameter sweeps, and failure-mode analysis to justify configuration choices with evidence rather than intuition.
+
+</div>
+</details>
+
+<details>
 <summary><strong>Knowledge Graphs for RAG — DeepLearning.AI (Neo4j)</strong></summary>
 
 <div markdown="1">
