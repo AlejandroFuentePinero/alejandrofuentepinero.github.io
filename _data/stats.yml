@@ -1,0 +1,37 @@
+# _data/stats.yml
+# The stats band, in display order.
+# type: derived        -> include computes site.<collection> | size
+# type: derived_data   -> include counts entries of _data/<data>.yml matching `where`
+# type: years_since    -> include renders current year minus start_year
+# type: declared       -> include renders `value`; must carry source and as_of
+band:
+  - id: years_uncertainty
+    label: "Years working with uncertainty"
+    type: years_since
+    start_year: 2016
+    source: "First professional data role: head biologist, CONAF, Puyehue National Park"
+    as_of: 2026-08-07
+
+  - id: projects
+    label: "Projects"
+    type: derived
+    collection: projects
+
+  - id: live_apps
+    label: "Live apps"
+    type: derived_data
+    data: apps
+    where:
+      status: live
+
+  - id: publications
+    label: "Peer-reviewed papers"
+    type: derived
+    collection: publications
+
+  - id: citations
+    label: "Citations"
+    type: declared
+    value: 193
+    source: "Google Scholar profile 7CKVdZwAAAAJ"
+    as_of: 2026-08-07
