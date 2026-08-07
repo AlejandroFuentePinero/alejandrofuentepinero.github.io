@@ -24,5 +24,8 @@ do
   cwebp -q 82 -m 6 -quiet "$f" -o "${f%.png}.webp"
 done
 
-# The one animated image. Lossy animated webp, gif stays as the fallback.
-gif2webp -lossy -q 75 -m 4 -quiet files/app_demo.gif -o files/app_demo.webp
+# files/app_demo.gif is not converted: animated webp lands at 7.7 MB
+# against the gif's 11 MB (measured with -lossy -mixed -min_size -q 70),
+# too little to justify a second multi-megabyte file in the repo. The
+# gif lazy-loads below the fold. The real fix is a short video file,
+# which replaces the asset itself: owner call, FINDINGS 21.
