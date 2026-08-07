@@ -1,7 +1,7 @@
 {% comment %}
   Component 1: sticky header. Logo, name, five nav items, theme toggle.
-  Pass demo=true to render placeholder nav links (used on /styleguide/
-  until the Phase 4 pages exist).
+  Active state follows the accent-underline rule (DECISIONS.md 28): a
+  section is active when the page URL sits under the nav item's URL.
 {% endcomment %}
 <header class="site-header">
   <div class="container site-header__inner">
@@ -14,7 +14,7 @@
       <ul class="site-nav__list">
         {% for item in site.data.navigation.refurb %}
         <li>
-          <a class="site-nav__link" href="{% if include.demo %}#{% else %}{{ item.url | relative_url }}{% endif %}">{{ item.title }}</a>
+          <a class="site-nav__link" href="{{ item.url | relative_url }}"{% if page.url contains item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
         </li>
         {% endfor %}
       </ul>
