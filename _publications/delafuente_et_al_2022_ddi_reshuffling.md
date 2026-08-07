@@ -25,4 +25,4 @@ Dispersal success was strongly influenced by species’ dispersal ability, lands
 ## Main conclusions
 Our study highlights the escalating impact of climate change on community assemblages in response to climate-induced elevational shifts, providing a classic example of the "escalator to extinction." Future predictions of the impacts of climate change on ecosystems will benefit from improvements in understanding species interactions, population dynamics and species potential to adapt to a changing environment.
 
-[Download paper here](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/Diversity%20and%20Distributions%20-%202022%20-%20de%20la%20Fuente%20-%20Predicted%20alteration%20of%20vertebrate%20communities%20in%20response%20to.pdf)
+[Download paper here](/files/Diversity%20and%20Distributions%20-%202022%20-%20de%20la%20Fuente%20-%20Predicted%20alteration%20of%20vertebrate%20communities%20in%20response%20to.pdf)

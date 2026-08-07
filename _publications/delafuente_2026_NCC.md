@@ -12,4 +12,4 @@ citation: 'de la Fuente, A., Chen, IC., Briscoe, N.J. et al. Mountains magnify m
 
 Mountains, with their sharp climatic contrasts, are emblematic of climate-driven species movement and, ultimately, loss. Here, we argue that these same contrasts make mountains powerful natural laboratories for discovering the mechanisms that underlie biological change.
 
-[Download paper here](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/delaFuente_mountains_NCC.pdf)
+[Download paper here](/files/delaFuente_mountains_NCC.pdf)
