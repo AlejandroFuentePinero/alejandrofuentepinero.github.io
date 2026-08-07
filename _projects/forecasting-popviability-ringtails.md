@@ -1,6 +1,6 @@
 ---
-title: "Forecasting Population Viability with Bayesian Hierarchical Models"
-excerpt: "Developed Bayesian hierarchical models incorporating detection probability to forecast population viability and support elevated conservation status for imperilled species."
+title: "Ringtail possum viability forecast"
+excerpt: "A hierarchical Bayesian model on 30 years of surveys forecast possum collapse by 2050. It fed a national protection nomination."
 date: 2022-11-06
 type: research
 stack:
@@ -11,39 +11,36 @@ redirect_from:
   - /datascience/projects/forecasting-popviability-ringtails/
 ---
 
-## Problem
-Understanding population sustainability is critical to conservation prioritisation—but count data are often imperfect and biased by detection issues.  
-**Goal:** Build robust forecasts of population viability using **Bayesian hierarchical models** that explicitly account for detection probability, to inform elevated conservation listing at national and international levels.
+A hierarchical Bayesian model on 30 years of surveys forecast the collapse of rainforest ringtail possums by 2050. The forecast fed a national protection nomination for the lemuroid ringtail possum. The nomination ran under the Environment Protection and Biodiversity Conservation Act (EPBC Act).
 
-## Approach
-- Collated long-term count data with imperfect detection from population monitoring of targeted species.  
-- Built **Bayesian hierarchical models**: observation process (detection component) separated from true state process (abundance/trend).  
-- Integrated prior knowledge and error structures to model latent population trends and forecast future viability under current and projected conditions.  
-- Derived **population viability metrics** (e.g., extinction probability, trend trajectories), feeding decisions for national/international conservation listings.
+The model fits possum population dynamics in the Australian Wet Tropics from 1992 to 2021. It separates real population change from imperfect detection. It then runs the fitted mechanism forward to 2050 under forecast warming. Populations fall below viability thresholds within 3 decades, with extreme heatwaves doing most of the damage.
 
-## Stack
-- **Bayesian hierarchical modelling**: detection–abundance partitioning, forecasting of latent trends with credible intervals.  
-- **Forecasting workflows**: dynamic prediction of future population trajectories under forecasted climate change, uncertainty quantification.  
-- **Data workflows**: count data cleaning, variable development (climate change predictors), model fitting, posterior analysis, reproducible scripting and reporting.  
-- **Implementation**: carried out in **R** (data processing, analysis, visualisation) and **JAGS** (Bayesian model specification and MCMC sampling), with full version control for transparency.
+## Links
 
+- **Paper page:** [Climate change threatens the future of rain forest ringtail possums by 2050](/research/ringtail-possum-collapse-2022/)
+- **Journal:** [Diversity and Distributions](https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13652)
+- **Data:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.m63xsj44h)
 
-## Results
-- Forecasted strong declines in target species with credible uncertainty bounds.  
-- Identified species with high extinction risk over relevant time horizons.  
-- Results directly contributed to elevating conservation priority status for those species under national and international protection lists.
+## Architecture
 
-## Impact
-- Strengthened the scientific basis for conservation policy decisions by delivering rigorous, uncertainty-aware forecasts.  
-- Demonstrated the value of integrating detection-corrected Bayesian models into species viability assessments.
+The model is hierarchical, written in R and JAGS. An observation layer describes detection, so who searched where cannot masquerade as population change. A state layer describes true abundance and its trend, driven by climate covariates: warming and heatwave frequency. Posterior sampling gives every quantity a credible interval.
 
-## Links & Resources
-- 📄 **Paper:** [Diversity & Distributions article](https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13652)  
-- 💾 **Data Repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.m63xsj44h)
+The forecast is not a separate model. The fitted mechanism itself propagates forward, from 2022 to 2050, carrying its uncertainty. The forward runs yield probabilities of absolute and quasi-extinction under different viability thresholds.
+
+## The decision that was hard
+
+The tempting analysis fits a trend to raw counts and extrapolates it. That approach cannot say why a population falls, and effort changes corrupt it. The model instead estimates the mechanism: how warming and heatwaves move survival and abundance. Only a fitted mechanism supports a forward run with honest uncertainty.
+
+The cost was a harder model: 2 linked processes, more parameters, longer fits. The gain was a forecast that names its driver and carries defensible error bars into a legal document.
+
+## What was measured
+
+The fitted model shows a strong negative effect of climate change on population dynamics, extreme heatwaves above all. The decline over the last 3 decades was rapid and severe. Under forecast warming, populations fall below viability thresholds by 2050. Each claim carries its credible interval, and the model states extinction probabilities per threshold.
 
 ## Role
-- Conceptualised and developed the hierarchical Bayesian framework.  
-- Cleaned and structured count/detection data and climate change covariates (heatwaves and warming) for robust inference.  
-- Ran forecasting models and interpreted posterior outputs.  
-- Produced insights used in elevated conservation recommendations.  
-- Wrote the manuscript and communicated findings to conservation authorities.
+
+I conceived the framework, structured the count and climate data, ran the forecasting models and wrote the manuscript. I communicated the findings to conservation authorities.
+
+## What this taught me about evaluation
+
+Separate the instrument from the thing it measures, or every trend inherits the instrument's noise. The same separation now shapes how I evaluate retrieval systems: score each pipeline stage on its own. A forecast without propagated uncertainty is an opinion with digits.

@@ -1,6 +1,6 @@
 ---
-title: "Integrating Microclimate, Physiology, Biogeochemistry, and Population Models to Link Climate Change to Demographic Outcomes"
-excerpt: "Developed and implemented a holistic Bayesian framework integrating microclimate, mechanistic physiology, biogeochemical processes, and population dynamics to identify causal pathways from climate change to survival and recruitment."
+title: "Physiological stress and rainforest mammal declines"
+excerpt: "A model chain from microclimate to physiology to demography showed heat stress and foraging limits driving possum declines, species by species."
 date: 2025-05-05
 type: research
 stack:
@@ -11,41 +11,40 @@ redirect_from:
   - /datascience/projects/physiological-stress-climate-populations/
 ---
 
-## Problem
-Climate change impacts species through complex, interacting mechanisms — from environmental conditions to physiological stress, ecosystem processes, and demographic rates.  
-Understanding these links requires integrating multiple models and data sources into a **single, holistic framework** that can reveal causality, not just correlation.
+Climate change kills through mechanisms, and this project measured which ones. A unified Bayesian framework linked microclimate, physiological stress, nutrition and population dynamics for 2 rainforest ringtail possums over 30 years. Both species collapsed at lower elevations and in low-nutrition sites, but through different causal routes.
 
-**Goal:** Combine **microclimate modelling**, **mechanistic physiological energetics**, **biogeochemical pathway modelling**, and **Bayesian hierarchical population forecasting** to mechanistically link climate variability and extremes to recruitment and survival in a climate-vulnerable species.
+For Pseudochirops archeri, overheating and dehydration cut survival, and restricted foraging cut recruitment. For Hemibelideus lemuroides, foraging constraints dominated. The framework bridges mechanistic models, which simulate species from traits, and statistical models, which infer them from counts.
 
-## Approach
-- **Microclimate modelling**: simulated fine-scale environmental conditions within roosting habitats to capture species-relevant temperature, humidity, and thermal stress.
-- **Physiological modelling**: quantified energetic and thermal balances to estimate climate-driven physiological stress (e.g. dehydration, overheating) at relevant temporal scales.
-- **Biogeochemical modelling**: incorporated nutrient cycling and vegetation process models to capture indirect effects on habitat quality and food availability.
-- **Population modelling**: developed Bayesian hierarchical models linking physiological and biogeochemical predictors to demographic rates (recruitment and survival), explicitly accounting for detection probability in count data.
-- Integrated all components into a **unified Bayesian framework** implemented in **R** and **JAGS**, enabling joint inference and propagation of uncertainty across the entire causal chain.
+## Links
 
-## Stack
-- **Holistic modelling integration**: combining microclimate, physiology, biogeochemistry, and population dynamics within one framework.
-- **Bayesian hierarchical modelling**: linking mechanistic covariates to demographic outcomes with full uncertainty propagation.
-- **Mechanistic physiological energetics**: modelling metabolic and thermal constraints under changing environments.
-- **Data workflows**: multi-source environmental, physiological, and demographic data cleaning and harmonisation; reproducible pipelines.
-- **Implementation**: developed in **R** for data processing, integration, and visualisation; **JAGS** for Bayesian model specification and inference.
+- **Paper page:** [Climate-Induced Physiological Stress Drives Rainforest Mammal Population Declines](/research/physiological-stress-declines-2025/)
+- **Journal:** [Global Change Biology](https://doi.org/10.1111/gcb.70215)
+- **Data:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.fxpnvx13n)
 
-## Results
-- Demonstrated causal pathways from climate variability and extremes to population decline through physiological stress on recruitment and survival.
-- Quantified direct and indirect effects, revealing the magnitude of each mechanism and their combined influence on viability.
-- Produced fully integrated forecasts, allowing scenario testing for management interventions.
+## Architecture
 
-## Impact
-- First application to integrate microclimate, physiology, biogeochemistry, and population dynamics in a unified Bayesian framework for conservation.
-- Provided a mechanistic, evidence-based foundation for targeted conservation planning under climate change.
+4 model components feed one inference. Microclimate models simulate conditions inside roosting habitat: temperature, humidity, thermal stress. Physiological models turn those conditions into energy, water and heat budgets per species. Nutritional and vegetation models add food quality, and a hierarchical population model links everything to recruitment and survival.
 
-## Links & Resources
-- 📄 **Paper:** [Global Change Biology article](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.70215)  
-- 💾 **Data Repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.fxpnvx13n)
+The population model accounts for imperfect detection in the count data. The whole chain runs as one Bayesian framework in R and JAGS, so uncertainty propagates from microclimate to demography. Joint inference also supports scenario testing for management interventions.
+
+## The decision that was hard
+
+The field offers 2 model families and a habit of choosing one. Mechanistic models predict from first principles and often miss what populations actually do. Statistical models fit the counts and cannot say why. We joined them: mechanistic stress estimates became the covariates of an open population model, fitted jointly.
+
+The join is the hard part: every component must hand its uncertainty to the next instead of a point estimate. The reward is causal language a correlation cannot earn.
+
+## What was measured
+
+The framework quantified 30 years of population dynamics against species-specific estimates of temperature stress, water stress and foraging limitation. It separated direct effects from indirect ones and sized each mechanism's contribution to decline. Fully integrated forecasts then supported scenario testing for interventions.
+
+## What did not work
+
+One shared mechanism did not explain both species. Direct heat stress, the obvious suspect, underperformed for Hemibelideus lemuroides. The model pointed to climate-driven limits on foraging activity instead. A single-species story, applied to both, would have prescribed the wrong intervention for one of them.
 
 ## Role
-- Designed and implemented the entire multi-component modelling workflow.
-- Developed each model component (microclimate, physiology, biogeochemistry, population) and integrated them into a holistic Bayesian framework.
-- Conducted model fitting, validation, and scenario testing.
-- Authored manuscript, providing the analytical synthesis and causal interpretation.
+
+I designed the multi-component workflow, developed each model and integrated them into the unified framework. I ran the fitting, validation and scenario testing, and wrote the manuscript.
+
+## What this taught me about evaluation
+
+It is cheap to know that a system fails, and expensive to learn why. The why is what changes the fix. This project is the research version of error analysis: decompose the failure into mechanisms and size each one. Intervene where the evidence points, and expect different causes in things that look alike.

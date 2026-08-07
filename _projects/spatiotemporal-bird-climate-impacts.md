@@ -1,6 +1,6 @@
 ---
-title: "Detecting Climate Impacts on Rainforest Birds Using Bayesian Spatiotemporal Modelling"
-excerpt: "Applied hierarchical Bayesian models with satellite-derived predictors to identify climate-driven population changes in rainforest birds across space and time."
+title: "Climatic drivers of rainforest bird change"
+excerpt: "Warming and shifting rainfall drove opposite trends in lowland and upland birds across 47 species. Cyclones and droughts had only marginal effects."
 date: 2023-01-18
 type: research
 stack:
@@ -11,41 +11,38 @@ redirect_from:
   - /datascience/projects/spatiotemporal-bird-climate-impacts/
 ---
 
-## Problem
-Tropical montane bird populations are increasingly threatened by climate change and extreme events, but detecting climate-driven signals in noisy, long-term monitoring data is challenging.  
-**Goal:** Use **Bayesian hierarchical spatiotemporal models** to quantify how climate variables and cyclone impacts drive population change, integrating multi-scale environmental predictors from remote sensing.
+Not every climate driver matters equally, and this study measured which ones move rainforest bird populations. Across 47 species in the Australian Wet Tropics, warming and changing rainfall drove the strongest responses. The directions flip by elevation. Lowland populations gained from rising temperature and precipitation, while upland species declined under the same drivers.
 
-## Approach
-- Assembled multi-decadal bird abundance datasets across rainforest sites in the Australian Wet Tropics.
-- Derived spatiotemporal climate predictors, including temperature, precipitation, and cyclone exposure indices, at the site-year level.
-- Processed high-resolution **satellite imagery** to quantify cyclone-induced changes in rainforest vegetation structure.
-- Integrated climate and vegetation metrics into a **hierarchical Bayesian framework** to model abundance in a multidimensional space:  
-  - State process: latent population dynamics across space and time.  
-  - Observation process: detection probability from repeated surveys.
-- Ran models in **JAGS** with spatial and temporal random effects, quantifying effect sizes, uncertainty, and spatial heterogeneity in climate impacts.
+Hierarchical population models separated detection from true change, 2000 to 2016. Heatwaves cut lowland populations, matching where those events concentrate. Cyclones and droughts, the expected disasters, had marginal effects on community change.
 
-## Stack
-- **Bayesian spatiotemporal modelling**: spatial random effects, temporal trends, and covariate integration.
-- **Remote sensing integration**: processed satellite imagery to derive vegetation change metrics.
-- **Advanced statistical modelling**: detection–abundance separation, credible interval estimation.
-- **Data workflows**: large-scale data cleaning, spatial joins, reproducible analysis pipelines.
-- **Implementation**: conducted in **R** for data processing/visualisation and **JAGS** for model specification and inference, under version control.
+## Links
 
-## Results
-- Identified significant negative population responses to cyclone-driven vegetation loss and to climate warming in several species.
-- Revealed spatial heterogeneity in climate impact strength, with higher elevations often showing stronger declines.
-- Quantified uncertainty, enabling robust interpretation for conservation planning.
+- **Paper page:** [The climatic drivers of long-term population changes in rainforest montane birds](/research/montane-bird-climate-drivers-2023/)
+- **Journal:** [Global Change Biology](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.16608)
+- **Data:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.hx3ffbgjj)
 
-## Impact
-- Provided direct evidence linking extreme climatic events and long-term warming to bird population declines in the Wet Tropics.
-- Informed adaptive management strategies and reinforced the case for targeted conservation action in climate-vulnerable habitats.
+## Architecture
 
-## Links & Resources
-- 📄 **Paper:** [Global Change Biology article](https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.16608)  
-- 💾 **Data Repository:** [Dryad dataset](https://datadryad.org/dataset/doi:10.5061/dryad.hx3ffbgjj)
+The state process models latent population dynamics across space and time, with spatial and temporal random effects. The observation process models detection from repeated surveys, so survey noise stays out of the trends. Climate predictors enter at the site-year level: temperature, precipitation, heatwave exposure, drought and cyclone indices.
+
+Cyclone damage needed its own measurement. High-resolution satellite imagery quantified cyclone-induced change in rainforest vegetation structure, which then joined the model as a predictor. JAGS ran the model fitting, and R handled processing and visualisation.
+
+## The decision that was hard
+
+A single warming trend would fit the data and answer nothing. Management needs to know which driver does the damage, and drivers travel together: hot years bring heatwaves, cyclones flatten vegetation. We modelled 5 drivers jointly rather than one at a time, accepting the collinearity risk. Joint estimation is what let the surprising answer, that cyclones barely matter, emerge at all.
+
+## What was measured
+
+The model measured effect sizes per driver, with credible intervals, across the elevational gradient. Warming and rainfall change carried the community-wide signal, positive in the lowlands and negative in the uplands. Heatwaves added a negative effect on lowland populations, matching the observed distribution of extreme events across elevations.
+
+## What did not work
+
+We expected cyclones and droughts to be major drivers of change. The model found marginal effects on spatiotemporal community change for both. Responses were species-specific and unrelated to the elevational gradient. The expected disaster story did not survive measurement, and the paper reports that plainly.
 
 ## Role
-- Designed and implemented the spatiotemporal Bayesian modelling framework.
-- Processed and integrated satellite-derived vegetation change metrics.
-- Conducted model fitting, validation, and uncertainty quantification.
-- Interpreted results in the context of climate change impacts and co-authored the manuscript.
+
+I designed the spatiotemporal modelling framework and processed the satellite-derived vegetation metrics. I ran the fitting, validated the models and co-authored the manuscript.
+
+## What this taught me about evaluation
+
+Measure every plausible cause, including the ones you expect to win. The dramatic driver here lost to the chronic one, and only joint measurement could show that. In engineering I keep the same habit: benchmark the assumed bottleneck before optimising it.
