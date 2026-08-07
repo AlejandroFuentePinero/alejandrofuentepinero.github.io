@@ -184,7 +184,10 @@ hidden: true
     <div class="sg-demo">
       <ul class="card-grid">
         <li class="card card--media">
-          <img class="card__shot" src="{{ '/images/apps/digital-twin.png' | relative_url }}" alt="Screenshot of the digital twin chat" loading="lazy">
+          <picture>
+            <source type="image/webp" srcset="{{ '/images/apps/digital-twin.webp' | relative_url }}">
+            <img class="card__shot" src="{{ '/images/apps/digital-twin.png' | relative_url }}" alt="Screenshot of the digital twin chat" width="1232" height="954" loading="lazy">
+          </picture>
           <div class="card__body">
             <p class="card__meta"><span class="label">Live</span></p>
             <h3 class="card__title"><a href="#">Digital twin</a></h3>
@@ -206,6 +209,8 @@ hidden: true
       context="A retrieval-augmented agent that answers questions about my work. A second model reviews every answer before you see it."
       url="https://alejandrofupi-digital-twin.hf.space"
       screenshot="/images/apps/digital-twin.png"
+      screenshot_width="1232"
+      screenshot_height="954"
     %}
     <h3 style="margin-top: var(--space-xl)">Fallback state</h3>
     <p class="sg-note">Rendered here in its failed state on purpose: if the app does not load within 15 seconds, the frame swaps to a screenshot and the link. No apology, no broken iframe.</p>
@@ -214,6 +219,8 @@ hidden: true
       context="A retrieval-augmented agent that answers questions about my work. A second model reviews every answer before you see it."
       url="https://alejandrofupi-digital-twin.hf.space"
       screenshot="/images/apps/digital-twin.png"
+      screenshot_width="1232"
+      screenshot_height="954"
       state="forced-fallback"
     %}
   </section>
@@ -317,11 +324,17 @@ hidden: true
     <span class="label sg-section__eyebrow">Component 11 of 14</span>
     <h2>Figure</h2>
     <figure class="figure">
-      <img src="{{ '/files/7ph_graph_metagame_landscape.png' | relative_url }}" alt="Scatter plot of 25 deck archetypes by share of decks and mean finish, each with an error bar" width="1240" height="745" loading="lazy">
+      <picture>
+        <source type="image/webp" srcset="{{ '/files/7ph_graph_metagame_landscape.webp' | relative_url }}">
+        <img src="{{ '/files/7ph_graph_metagame_landscape.png' | relative_url }}" alt="Scatter plot of 25 deck archetypes by share of decks and mean finish, each with an error bar" width="1240" height="745" loading="lazy">
+      </picture>
       <figcaption>Standard figure: constrained to the container, caption in muted ink at --step--1.</figcaption>
     </figure>
     <figure class="figure figure--full-bleed">
-      <img src="{{ '/files/7ph_graph_metagame_landscape.png' | relative_url }}" alt="The same scatter plot at full viewport width" width="1240" height="745" loading="lazy">
+      <picture>
+        <source type="image/webp" srcset="{{ '/files/7ph_graph_metagame_landscape.webp' | relative_url }}">
+        <img src="{{ '/files/7ph_graph_metagame_landscape.png' | relative_url }}" alt="The same scatter plot at full viewport width" width="1240" height="745" loading="lazy">
+      </picture>
       <figcaption class="container">Full-bleed variant: the escape hatch for wide figures and the twin embed.</figcaption>
     </figure>
   </section>

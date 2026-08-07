@@ -26,7 +26,10 @@ Each turn passes through a classifier, a branch-specific prompt, retrieval over 
 ## Architecture
 
 <figure>
-  <img src="/files/digital_twin_runtime.png" alt="Digital Twin runtime pipeline" style="width:100%; max-width:520px; display:block; margin: 0 auto;">
+  <picture>
+    <source type="image/webp" srcset="/files/digital_twin_runtime.webp">
+    <img src="/files/digital_twin_runtime.png" alt="Digital Twin runtime pipeline" width="438" height="1772" loading="lazy" style="width:100%; max-width:520px; display:block; margin: 0 auto;">
+  </picture>
 </figure>
 
 A small classifier (gpt-4.1-nano) labels each question and routes it to a branch: technical, behavioural, logistical, generic or gap. Each branch loads only the profile sections, rules and tools its question type needs. The generator (gpt-4.1) drafts the answer, fetching full project documentation through a registered tool on technical branches. The guardrail (claude-sonnet-4-6) accepts or rejects the draft against the same ground truth the generator saw.

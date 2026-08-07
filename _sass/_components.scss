@@ -284,7 +284,7 @@
   font-family: var(--font-body);
   font-size: var(--step--1);
   font-weight: 400;
-  color: var(--ink-faint);
+  color: var(--ink-muted);
   margin-top: var(--space-2xs);
 }
 
@@ -445,7 +445,7 @@
 .card__note {
   margin: 0;
   font-size: var(--step--1);
-  color: var(--ink-faint);
+  color: var(--ink-muted);
 }
 
 /* 6. Embed frame for the digital twin, with fallback state
@@ -595,7 +595,7 @@
   font-family: var(--font-mono);
   font-size: var(--step--1);
   font-variant-numeric: tabular-nums;
-  color: var(--ink-faint);
+  color: var(--ink-muted);
   padding-top: 0.3em;
 }
 
@@ -728,7 +728,7 @@
   content: "+";
   font-family: var(--font-mono);
   font-size: var(--step-0);
-  color: var(--ink-faint);
+  color: var(--ink-muted);
   line-height: 1;
 }
 
@@ -840,7 +840,7 @@
   font-family: var(--font-mono);
   font-size: var(--step--1);
   font-variant-numeric: tabular-nums;
-  color: var(--ink-faint);
+  color: var(--ink-muted);
   padding-top: 0.45em;
 }
 
@@ -913,7 +913,7 @@
 .site-footer__fine {
   margin: var(--space-lg) 0 0;
   font-size: var(--step--1);
-  color: var(--ink-faint);
+  color: var(--ink-muted);
 }
 
 /* 14. Print stylesheet for /work/ (tokens reset to light in _tokens.scss)

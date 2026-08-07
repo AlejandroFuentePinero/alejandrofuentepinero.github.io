@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Sitemap"
+description: "This page lists every page on the site, one line each."
 permalink: /sitemap/
 ---
 

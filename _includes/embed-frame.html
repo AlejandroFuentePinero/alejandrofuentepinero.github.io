@@ -8,7 +8,8 @@
     title       heading above the frame
     context     one line of context
     url         the embedded app
-    screenshot  fallback image path
+    screenshot  fallback image path (png; a webp sibling must exist)
+    screenshot_width, screenshot_height  the screenshot's pixel size
     state       optional; "forced-fallback" renders the failed state
                 statically for the styleguide, otherwise "idle"
 {% endcomment %}
@@ -26,7 +27,10 @@
   <div class="embed-frame__body">
     <p class="embed-frame__placeholder">The app loads when it comes into view.</p>
     <div class="embed-frame__fallback">
-      <img class="embed-frame__fallback-shot" src="{{ include.screenshot | relative_url }}" alt="Screenshot of {{ include.title }}">
+      <picture>
+        <source type="image/webp" srcset="{{ include.screenshot | replace: '.png', '.webp' | relative_url }}">
+        <img class="embed-frame__fallback-shot" src="{{ include.screenshot | relative_url }}" alt="Screenshot of {{ include.title }}" width="{{ include.screenshot_width }}" height="{{ include.screenshot_height }}" loading="lazy">
+      </picture>
       <div class="embed-frame__fallback-bar">
         <p>The live app did not load here.</p>
         <a class="embed-frame__open" href="{{ include.url }}" target="_blank" rel="noopener">Open it in a new tab</a>

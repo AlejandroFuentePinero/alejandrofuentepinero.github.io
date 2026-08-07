@@ -19,6 +19,19 @@ Fails on:
  11. Any teaching-entry prose failing the Tier B checks, any dash
      outside a teaching file's record regions, and the 2 entries'
      combined prose over the shared teaching section budget.
+ 12. Any meta description that is not lifted verbatim from its page:
+     each _pages description must be a substring of the page's visible
+     prose (the home page's must equal the site description in
+     _config.yml), stay within 160 characters, and exist on every
+     _pages file except the 404. Collection pages derive their
+     descriptions from the excerpt fields checked above.
+ 13. Any literal alt text with a dash, a banned word, or more than 25
+     words (the card ceiling). Empty alt is the decorative-image
+     convention and passes. Liquid-derived alt strings mirror checked
+     fields and are skipped where the Liquid is stripped.
+ 14. Any literal value in _includes/jsonld.html beyond the schema.org
+     constants: every fact in the structured data must render through
+     Liquid from front matter, _config.yml or a data file.
 
 Scope: the files in FILES and TEACHING_FILES below plus the stats
 include. The styleguide (internal, exempt) and the redirect stubs (no
@@ -168,6 +181,21 @@ TEACHING_BUDGET = 120
 
 STATS_INCLUDE = "_includes/stats-band.html"
 APPS_DATA = "_data/apps.yml"
+JSONLD_INCLUDE = "_includes/jsonld.html"
+CONFIG = "_config.yml"
+
+# The 404 is the one _pages file that serves no crawler and needs no
+# description; every other _pages file in FILES must carry one.
+DESCRIPTION_EXEMPT = {"_pages/404.md"}
+DESCRIPTION_LIMIT = 160
+ALT_BUDGET = 25
+
+# The only literal strings _includes/jsonld.html may contain: schema.org
+# structure, never facts.
+JSONLD_CONSTANTS = {
+    "https://schema.org", "Person", "ScholarlyArticle", "CreativeWork",
+    "SoftwareApplication", "Periodical",
+}
 
 SENTENCE_LIMIT = {"A": 20, "B": 25}
 PARAGRAPH_LIMIT = 4
@@ -458,6 +486,12 @@ def check_file(rel_path, tier, budget, report, extra_words=0):
     if rel_path == "_pages/apps.html":
         blocks += apps_data_strings(fails)
 
+    if rel_path.startswith("_pages/"):
+        front_match = FRONT_MATTER_RE.match(raw)
+        check_description(rel_path, front_match.group(0) if front_match else "",
+                          blocks, fails)
+    check_alt_texts(body, fails)
+
     all_sentences = run_prose_checks(blocks, tier, fails)
 
     words = sum(word_count(b) for b in blocks) + extra_words
@@ -475,6 +509,9 @@ def check_file(rel_path, tier, budget, report, extra_words=0):
 
 HEADING_RE = re.compile(r"^#{1,6}\s", re.M)
 EXCERPT_RE = re.compile(r"^excerpt:\s*[\"']?(.*?)[\"']?\s*$", re.M)
+DESCRIPTION_RE = re.compile(r"^description\s*:\s*\"(.*)\"\s*(?:#.*)?$", re.M)
+ALT_RE = re.compile(r'alt="([^"]*)"')
+JSONLD_LITERAL_RE = re.compile(r':\s*"([^"]*)"')
 SUMMARY_RE = re.compile(r"^summary: \|\n((?:  .*\n|\n)*)", re.M)
 REDIRECT_TO_RE = re.compile(r"^redirect_to:", re.M)
 
@@ -575,6 +612,73 @@ def check_project_page(raw, fails):
     return lead_words
 
 
+def check_description(rel_path, front, blocks, fails):
+    """The meta description on a _pages file is lifted verbatim from the
+    page (DECISIONS, Phase 6): it must be a substring of the visible
+    prose, so the fact never exists in 2 versions. The home page's must
+    equal the site description in _config.yml, its one settled source."""
+    match = DESCRIPTION_RE.search(front)
+    if match is None:
+        if rel_path not in DESCRIPTION_EXEMPT:
+            fails.append("no description in front matter (crawlers fall "
+                         "back to the site description)")
+        return
+    description = match.group(1)
+    if len(description) > DESCRIPTION_LIMIT:
+        fails.append(f"description of {len(description)} characters "
+                     f"(max {DESCRIPTION_LIMIT})")
+    if rel_path == "_pages/home.html":
+        config = (ROOT / CONFIG).read_text(encoding="utf-8")
+        site_description = DESCRIPTION_RE.search(config)
+        if site_description is None or description != site_description.group(1):
+            fails.append("home description differs from the site "
+                         "description in _config.yml")
+    elif all(description not in block for block in blocks):
+        fails.append("description is not a verbatim substring of the "
+                     "page's visible prose")
+
+
+def check_alt_texts(body, fails):
+    """Literal alt text is visitor-facing prose: no dashes, no banned
+    words, at most the 25-word card ceiling. Empty alt (the decorative
+    convention) passes, and Liquid output is stripped first because
+    derived alt strings mirror fields checked elsewhere. Alt text
+    depicts an image rather than introducing terms, so the acronym rule
+    does not apply."""
+    for match in ALT_RE.finditer(strip_records(body)):
+        alt = LIQUID_RE.sub(" ", match.group(1)).strip()
+        if not alt:
+            continue
+        for name, char in (("em dash", EM_DASH), ("en dash", EN_DASH)):
+            if char in alt:
+                fails.append(f'{name} in alt text: "{alt[:60]}"')
+        for pattern, label in BANNED:
+            if re.search(pattern, alt, re.I):
+                fails.append(f'banned word or construction "{label}" '
+                             f'in alt text: "{alt[:60]}"')
+        n = word_count(alt)
+        if n > ALT_BUDGET:
+            fails.append(f'alt text of {n} words (max {ALT_BUDGET}): '
+                         f'"{alt[:60]}"')
+
+
+def check_jsonld_include():
+    """Every value in the JSON-LD include must render through Liquid;
+    the only literal strings allowed are the schema.org constants, so
+    no fact can be typed into the structured data by hand."""
+    raw = (ROOT / JSONLD_INCLUDE).read_text(encoding="utf-8")
+    raw = re.sub(r"{%-?\s*comment\s*-?%}.*?{%-?\s*endcomment\s*-?%}", "",
+                 raw, flags=re.S)
+    raw = LIQUID_RE.sub(" ", raw)
+    fails = []
+    for match in JSONLD_LITERAL_RE.finditer(raw):
+        value = match.group(1)
+        if value and value not in JSONLD_CONSTANTS:
+            fails.append(f'{JSONLD_INCLUDE}: literal value "{value[:50]}" '
+                         "(facts must render through Liquid)")
+    return fails
+
+
 def check_stats_include():
     raw = (ROOT / STATS_INCLUDE).read_text(encoding="utf-8")
     digits = re.findall(r"[0-9]", raw)
@@ -610,6 +714,7 @@ def main():
             failures.append(f"{rel_path}: {fail}")
     failures.extend(teaching_failures)
     failures.extend(check_stats_include())
+    failures.extend(check_jsonld_include())
 
     if show_metrics:
         header = (

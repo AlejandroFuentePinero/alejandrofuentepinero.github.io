@@ -26,7 +26,10 @@ The source data is incomplete and sometimes contradicts itself. So every value t
 - **Architecture decision records:** [docs/adr/](https://github.com/AlejandroFuentePinero/7ph-graph/tree/main/docs/adr)
 
 <figure>
-  <img src="/files/7ph_graph_pilot_overview.png" alt="7PH Graph, a pilot's neighbourhood drawn as an interactive graph" style="width:100%; display:block; margin: 0 auto;">
+  <picture>
+    <source type="image/webp" srcset="/files/7ph_graph_pilot_overview.webp">
+    <img src="/files/7ph_graph_pilot_overview.png" alt="7PH Graph, a pilot's neighbourhood drawn as an interactive graph" width="1440" height="1465" loading="lazy" style="width:100%; display:block; margin: 0 auto;">
+  </picture>
 </figure>
 
 ## What it does
@@ -39,7 +42,10 @@ The source data is incomplete and sometimes contradicts itself. So every value t
 The app neither draws nor truncates a result too large to read. It reports what the query matched and asks you to narrow it. A truncated graph looks like an answer and is not one. The same rule covers a pilot with too little history and a pair who never met.
 
 <figure>
-  <img src="/files/7ph_graph_metagame_landscape.png" alt="Archetype share against mean finish, with error bars" style="width:100%; display:block; margin: 0 auto;">
+  <picture>
+    <source type="image/webp" srcset="/files/7ph_graph_metagame_landscape.webp">
+    <img src="/files/7ph_graph_metagame_landscape.png" alt="Archetype share against mean finish, with error bars" width="1240" height="745" loading="lazy" style="width:100%; display:block; margin: 0 auto;">
+  </picture>
 </figure>
 
 ## Architecture

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Apps"
+description: "I build apps people can use. Each entry links the live app and the project page that records how I built and measured it."
 permalink: /apps/
 redirect_from:
   - /datascience/communication/
@@ -15,10 +16,13 @@ redirect_from:
   <ul class="card-grid">
     {% for app in site.data.apps %}
     <li class="card card--media">
-      <img class="card__shot" src="{{ app.screenshot | relative_url }}" alt="Screenshot of {{ app.name }}" loading="lazy">
+      <picture>
+        <source type="image/webp" srcset="{{ app.screenshot | replace: '.png', '.webp' | relative_url }}">
+        <img class="card__shot" src="{{ app.screenshot | relative_url }}" alt="Screenshot of {{ app.name }}" width="{{ app.screenshot_width }}" height="{{ app.screenshot_height }}" loading="lazy">
+      </picture>
       <div class="card__body">
         <p class="card__meta"><span class="label">{% if app.status == "live" %}Live{% else %}Archived{% endif %}</span></p>
-        <h3 class="card__title"><a href="{{ app.url }}" rel="noopener">{{ app.name }}</a></h3>
+        <h2 class="card__title"><a href="{{ app.url }}" rel="noopener">{{ app.name }}</a></h2>
         {% if app.pitch and app.pitch != "" %}<p class="card__result">{{ app.pitch }}</p>{% endif %}
         {% if app.demonstrates and app.demonstrates != "" %}<p class="card__result">{{ app.demonstrates }}</p>{% endif %}
         {% if app.note and app.note != "" %}<p class="card__note">{{ app.note }}</p>{% endif %}
