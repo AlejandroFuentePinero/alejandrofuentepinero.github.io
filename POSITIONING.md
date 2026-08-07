@@ -2,77 +2,77 @@
 
 Produced on branch `refurb/phase-1-positioning`, 2026-08-07. Inputs: REFURB_BRIEF.md section 2, AUDIT.md, and the Gate 0 outcomes. This file and CONTENT_MAP.md are the only Phase 1 deliverables. No code or content changed.
 
+Revised the same day after the first Gate 1 round: warmer thesis options, anchor year 2016, skills row cut to demonstrated mastery.
+
 ---
 
 ## 1. The thesis
 
 ### 1.1 What the hero must do
 
-The thesis is 2 or 3 sentences under the name and the role line. The budget is 60 words on the first screen, role line included (brief 4.1). It must survive three readers at once: a recruiter deciding in 40 seconds whether to keep reading, a technical peer testing for substance, and an academic checking that the research is real. The three options below make three genuinely different bets, and each could carry the site. All are written to Tier B rules: sentences of 25 words or fewer, active voice, no em dashes.
+The thesis is 2 or 3 sentences under the name and the role line. The budget is 60 words on the first screen, role line included (brief 4.1). It must survive three readers at once: a recruiter deciding in 40 seconds whether to keep reading, a technical peer testing for substance, and an academic checking that the research is real. All options are written to Tier B rules: sentences of 25 words or fewer, active voice, no em dashes.
 
-**A note on honest claims, before the options.** Brief 2.1 says the model output "determined whether a species received legal protection". Strictly, the models fed formal nominations: 15 nomination documents under the EPBC Act and to the IUCN through BirdLife International, with the 2022 possum forecast paper behind the lemuroid ringtail possum nomination. Regulators decide; the models made the case. Every option below therefore says "fed" or "helped decide", never "determined". The record is strong enough not to need inflation, and precision here is on brand.
+**The voice, reset at Gate 1.** The first three options (A to C, in the PR history) were rejected as too corporate. This is a personal site; the hero should sound like Alejandro talking, warm and plain, not a positioning statement. The three options below all open as a greeting and keep the field story in first person. Warmth and rigour are not in tension; the copy aims for both.
 
-**A note on the year count.** None of the recommended copy hard-codes a running year count. The stats band directly under the hero carries the computed number (section 3.2), so the hero and the band can never disagree and nothing goes stale. Option B is the exception: it uses "six years" for the closed 2019 to 2024 period, which is a historical fact and cannot rot.
+**A note on honest claims, settled at Gate 1.** Brief 2.1 says the model output "determined whether a species received legal protection". Strictly, the models fed formal nominations: 15 nomination documents under the EPBC Act and to the IUCN through BirdLife International, with the 2022 possum forecast paper behind the lemuroid ringtail possum nomination. Regulators decide; the models made the case. Every option below therefore says "helped protect" or "helped decide", never "determined". The record is strong enough not to need inflation, and precision here is on brand.
 
-### 1.2 Option A: the builder who measures
+**A note on the year count.** No option hard-codes a running year count ("I spent years", never "I spent N years"). The stats band directly under the hero carries the computed number (section 3.2), so the hero and the band can never disagree and nothing goes stale.
 
-> I build AI systems and measure whether they work. The discipline comes from years of Bayesian population modelling, where my numbers fed legal protection decisions for threatened species. That work demanded quantified uncertainty and evaluation that survives scrutiny. I apply the same standard to retrieval systems, agents and language model pipelines.
+### 1.2 Option D: the care up front
 
-51 words, 4 sentences, longest sentence 19 words.
+> Hi, I'm Alejandro. I spent years in rainforests counting possums and birds, then building the models that helped protect them. That work taught me to be honest about uncertainty. Now I build AI systems, and I bring the same care: if I can't measure that it works, I don't ship it.
 
-**The bet.** Identity first. He is a builder; the evaluation discipline is the edge, not the identity. The present tense opens and closes the copy, and the past sits in the middle as evidence.
+52 words, 4 sentences, longest sentence 22 words.
 
-**Audience test.** The recruiter gets role and differentiator in sentence one, nine words in. The peer gets a falsifiable claim ("measure whether they work") that the stats band, the apps and the project pages must then back. The academic gets the research named as the source of the method, not as a former life.
+**The bet.** Maximum warmth. The story opens, the lesson follows, the engineering promise closes. The final sentence is the quotable one.
 
-**Risk.** "I build X and measure it" is becoming a common claim in 2026. The defence is that sentence two is not a claim, it is a record, and almost nobody else has it.
+**Audience test.** The peer gets a shipping standard they can hold him to. The academic gets fieldwork that was counted and modelled, not name-dropped. The recruiter, though, does not reach "AI systems" until sentence four, about 35 words in.
 
-### 1.3 Option B: consequences first
+**Risk.** On a skim, the possums arrive before the job. The role line above the hero has to carry "AI engineer" alone, and it can.
 
-> For six years my models helped decide which species were nominated for legal protection. Wrong answers had real consequences, so I learned to quantify uncertainty and defend every number in review. I now build AI systems to the same standard: retrieval, agents and fine-tuned models, with nothing shipped unmeasured.
+### 1.3 Option E: the friendly handshake
 
-49 words, 3 sentences, longest sentence 18 words.
+> Hi, I'm Alejandro. I build AI systems: retrieval pipelines, agents, and the evaluation that proves they work. I learned that discipline in the rainforest, forecasting wildlife populations where a wrong number could cost a species its protection. I like hard data, honest error bars, and tools people actually use.
 
-**The bet.** Narrative first. Open on the stakes, because stakes are the one thing no other AI engineer's hero can copy. The most memorable of the three.
+50 words, 4 sentences, longest sentence 20 words.
 
-**Audience test.** The peer and the academic get the strongest possible open. The recruiter, though, does not learn what he does today until sentence three, roughly 30 words in. Their 40 seconds start with a puzzle: is this a biologist?
+**The bet.** The friendly open and the recruiter's answer in the same breath. The story sits in the middle as evidence, and the close is personality doing keyword work.
 
-**Risk.** Leading with the past is structurally the two-CVs problem this rebuild exists to fix. Handled well it reads as an origin story; skimmed, it reads as a career changer. The skim is the recruiter's default mode.
+**Audience test.** The recruiter has the role by word 8. The peer gets a testable claim ("evaluation that proves they work") plus a taste statement they will recognise as one of their own. The academic gets the forecasting record with its stakes intact.
 
-### 1.4 Option C: uncertainty as the product
+**Risk.** The least story-forward of the three. If the goal is maximum warmth, D beats it.
 
-> I build AI systems that know what they do not know. Retrieval pipelines, agents and fine-tuned models ship with evaluation frameworks and honest error bars. The method comes from Bayesian ecology, where quantified uncertainty helped decide whether a species received legal protection.
+### 1.4 Option F: the rainforest office
 
-42 words, 3 sentences, longest sentence 17 words.
+> Hi, I'm Alejandro. For years my office was a rainforest. I tracked possums and birds, and my models helped decide which species got protected, so I learned to defend every number. I build AI systems now, and the habit stays: quantify the uncertainty, measure everything, say what you don't know.
 
-**The bet.** Capability first. Calibration, guardrails and evaluation are concrete, scarce and increasingly what teams hire for. The sharpest technical hook of the three.
+51 words, 4 sentences, longest sentence 21 words.
 
-**Audience test.** The peer gets the best first sentence on this page. The academic reads "quantified uncertainty" as fluent statistics. The recruiter gets a memorable line but a narrower one: it frames a reliability specialist more than a builder.
+**The bet.** The origin story with a smile. "For years my office was a rainforest" is the most charming line in any of the six options, and it earns the discipline claim that follows.
 
-**Risk.** It positions the edge as the job. The record (three live apps, a knowledge graph, an end-to-end recommender) shows a builder whose systems are evaluated, not an evaluator who sometimes builds. Choosing C narrows perceived role fit to evaluation-heavy positions.
+**Audience test.** The peer and the academic get a memorable, credible open. The recruiter waits until sentence four for "AI systems", about 33 words in.
 
-### 1.5 Recommendation: Option A
+**Risk.** Same as D: the skimmer meets the rainforest before the role. The charm is the mitigation; it buys a second sentence of attention.
 
-Three reasons.
+### 1.5 Recommendation: Option E
 
-1. It answers the recruiter's only question, "what do you do", in nine words, then differentiates. B delays that answer; C narrows it.
-2. It matches the record. The site's strongest evidence is built systems with evaluation attached: the twin's guardrail model, 7PH Graph's statistical guards, the AI-JIE judge framework. A builder thesis lets each of those pages confirm the hero.
-3. It degrades gracefully. Sentence one alone works as a role line. Sentences two and three are Option B's story. Sentence four carries Option C's keywords. A absorbs the best of both losers.
+E is the only option that is warm and answers the recruiter immediately, and the 40-second reader is the one the current site fails hardest (AUDIT.md section 8). D and F are warmer but both spend their first 30 words in the rainforest, which asks the busiest reader for patience the data says they do not have.
 
-Honest counterpoints: B is the most memorable and the best spoken aloud; if the site's main job were talks and profiles, B wins. C is the strongest differentiator for evaluation and reliability roles; if the target market shifts that way, revisit. For a unified portfolio serving all three audiences at once, A.
+Two salvage notes, whichever wins. D's closing line ("if I can't measure that it works, I don't ship it") is too good to lose: it becomes the opening line of the `/projects/` index or the `/work/` intro. F's rainforest-office line goes to the `/work/` timeline intro, where the reader has opted into the story.
 
 ---
 
 ## 2. The role descriptor
 
-One line under 12 words (brief 4.1). Three options:
+One line under 12 words (brief 4.1). Three options, revised to match the warmer voice:
 
 | # | Descriptor | Words | Character |
 |---|---|---|---|
-| 1 | AI engineer. I build systems and measure whether they work. | 10 | Mirrors thesis A; plain and falsifiable |
-| 2 | AI engineer, formed by six years of consequence-bearing Bayesian modelling. | 10 | Carries the origin; pairs with thesis B |
-| 3 | AI engineer: retrieval, agents, fine-tuning, evaluation. | 6 | Keyword-dense; pairs with thesis C |
+| 1 | AI engineer. I build systems and measure whether they work. | 10 | Plain and falsifiable; safe with any thesis |
+| 2 | AI engineer, raised on rainforest data and honest error bars. | 10 | Warm; carries the origin in passing |
+| 3 | AI engineer: retrieval, agents, evaluation, uncertainty. | 6 | Keyword-dense |
 
-Recommendation: option 1 with thesis A. One caution against option 3: as a standalone line it does recruiter-keyword work, but the skills row directly below the hero already does that job, so spending the role line on keywords is redundant.
+Recommendation: option 2 with thesis E. E's first sentence already makes the plain claim, so the role line can afford personality, and if thesis D or F wins instead, switch to option 1 so the role line carries the job title plainly while the hero tells the story. Option 3 is redundant either way: the skills row directly below already does the keyword work.
 
 ---
 
@@ -84,7 +84,7 @@ Five stats, ordered to read as a sentence: experience, then what he built, then 
 
 | # | Label | Value today | Type | Source |
 |---|---|---|---|---|
-| 1 | Years modelling under uncertainty | 7 | Declared anchor, computed render | `start_year: 2019` in `_data/stats.yml`; rendered as current year minus start year |
+| 1 | Years working with uncertainty | 10 | Declared anchor, computed render | `start_year: 2016` in `_data/stats.yml`; rendered as current year minus start year |
 | 2 | Projects | 18 now, 16 after the Gate 1 merges | Derived | `site.projects \| size` |
 | 3 | Live apps | 3 | Derived | count of `_data/apps.yml` entries with `status: live` |
 | 4 | Peer-reviewed papers | 12 | Derived | `site.publications \| size` |
@@ -92,13 +92,11 @@ Five stats, ordered to read as a sentence: experience, then what he built, then 
 
 Rejected candidates, with reasons. Talks (15 now, 12 after consolidation): worthy, but a six-stat band starts to read as a dashboard; bench option if one of the five falls at the gate. h-index (7): a niche academic metric that invites judgment rather than credibility. Book chapters (14): impressive but confusing next to "12 papers" without context; it lives in `/research/`. Journals published in (10): trivia at band level. Media reach (70 national stories): belongs on the possum pages where it has context, not in a summary row.
 
-### 3.2 The anchor year decision
+### 3.2 The anchor year: 2016, settled at Gate 1
 
-The brief flags this and AUDIT.md 9.8 lists the options: 2016 (head biologist, CONAF), 2019 (research assistant, JCU), 2020 (PhD monitoring work).
+AUDIT.md 9.8 listed the options: 2016 (head biologist, CONAF), 2019 (research assistant, JCU), 2020 (PhD monitoring work). Gate 1 chose **2016**, the first professional data role. The band computes 10 in 2026 and can never go stale.
 
-**Recommendation: 2019.** That is when continuous quantitative work on the Wet Tropics monitoring program began, and it survives scrutiny: any reader of the CV sees an unbroken line from 2019 research assistant through PhD to postdoc. Anchoring at 2016 yields a bigger number (10) but invites the challenge "were you building models as a park biologist?", and the thesis claims consequence-bearing modelling specifically. Under-claiming is the brand.
-
-Consequences of the 2019 anchor: the band computes 7 in 2026, and the brief's "6 years" phrasing in section 2.1 is already stale, which is exactly why no year count is typed anywhere. The hero copy in options A and C carries no count. Option B's "six years" refers to the closed 2019 to 2024 period and stays true forever.
+One label consequence, for honesty. In 2016 and 2017 the work was running field programs and population monitoring at Puyehue National Park; the full-time hierarchical modelling came later. So the label reads "Years working with uncertainty", not "Years modelling under uncertainty". The wider claim is watertight from 2016; the narrower one is not, and this band does not stretch. The hero copy carries no year count either way (section 1.1), so the choice changes one field in one data file.
 
 ### 3.3 `_data/stats.yml` schema
 
@@ -113,10 +111,10 @@ The band is data-driven: the include iterates this list in order, so adding, rem
 # type: declared       -> include renders `value`; must carry source and as_of
 band:
   - id: years_uncertainty
-    label: "Years modelling under uncertainty"
+    label: "Years working with uncertainty"
     type: years_since
-    start_year: 2019
-    source: "Start of quantitative work on the JCU Wet Tropics monitoring program"
+    start_year: 2016
+    source: "First professional data role: head biologist, CONAF, Puyehue National Park"
     as_of: 2026-08-07
 
   - id: projects
@@ -157,35 +155,35 @@ band:
 
 ### 4.1 The chips
 
-Twelve chips in two visually continuous groups. Rule for inclusion: a chip claims working competence demonstrated by work visible on this site. Each chip below names its evidence.
+Ten chips in two visually continuous groups. The rule, tightened at Gate 1: a chip claims mastery demonstrated by a shipped system or a peer-reviewed paper. Certificates and course-scaffolded labs do not qualify, however recent. Each chip names its evidence.
 
-**Builds with** (7):
+**Builds with** (5):
 
 | Chip | Evidence |
 |---|---|
-| Python | Every engineering project |
-| RAG pipelines | Digital twin; LLM Engineering Lab |
-| LLM agents | LLM Engineering Lab multi-agent systems; twin tool use |
-| QLoRA fine-tuning | LLM Engineering Lab (Llama 3.2, 4-bit) |
-| Knowledge graphs | 7PH Graph (Neo4j, Cypher, GraphRAG) |
-| LLM-as-judge evaluation | AI-JIE evaluation framework; twin guardrail and 149-question eval set |
-| SQL | MLB analytics project; JIE pipeline (PostgreSQL) |
+| Python | Digital twin, AI-JIE, 7PH Graph, Job Intelligence Engine: shipped systems |
+| RAG pipelines | The digital twin: a production retrieval system with a 149-question evaluation set |
+| Knowledge graphs | 7PH Graph: a live Neo4j and Cypher store with per-value provenance |
+| LLM-as-judge evaluation | The twin's guardrail model running in production; the AI-JIE judge framework |
+| SQL | The MLB analytics project: schema design, reusable views, window functions |
 
 **Grounded in** (5):
 
 | Chip | Evidence |
 |---|---|
-| Bayesian inference | 9 research projects, 12 papers |
-| Hierarchical models | Possum and bird population models |
-| Uncertainty quantification | Viability forecasts behind protection nominations |
-| Evaluation design | 149-question eval set, canary corpus, retrieval metrics |
-| R | Shiny app; the entire research record |
+| Bayesian inference | 12 papers |
+| Hierarchical models | The possum and bird population models behind the protection nominations |
+| Uncertainty quantification | Published viability forecasts with propagated uncertainty |
+| Evaluation design | The twin's evaluation set and canary corpus; retrieval metrics; peer review survived 12 times |
+| R | The entire research record and the Shiny app |
 
-### 4.2 Corrections to the brief's candidate list
+### 4.2 What was cut, and one logged assumption
 
-Brief 4.3 suggests GCP, Vertex AI and BigQuery. Nothing in the repo supports them: the skills page documents AWS at a foundational level and no GCP work at all. Under the no-fabricated-claims rule those three chips are out, and AWS stays out too because foundational familiarity is not working competence. If real GCP or cloud work exists off-site, name the project and it can join the row; otherwise the row must not outrun the record.
+Cut at Gate 1 under the mastery rule: "LLM agents" and "QLoRA fine-tuning". Their main evidence was the LLM Engineering Lab, a course-scaffolded lab. They return the day a shipped system demonstrates them.
 
-One pairing to defend at the gate: "LLM-as-judge evaluation" (a technique he builds with) and "Evaluation design" (the discipline he brings) both appear. They are different claims and both earn their place, but if the gate wants 11 chips, drop "LLM-as-judge evaluation"; the AI-JIE and twin cards carry that keyword anyway.
+Already excluded from the brief's candidate list: GCP, Vertex AI and BigQuery (nothing in the record supports them) and AWS (foundational familiarity is not mastery). If real cloud work exists off-site, name the project and it can join the row.
+
+Logged assumption: SQL stays on the strength of the MLB analytics project, which is self-directed applied work on a real database rather than a guided course. If that later reads as lab-grade evidence, the row drops to 9 chips.
 
 ### 4.3 `_data/skills.yml` schema
 
@@ -200,8 +198,6 @@ groups:
     chips:
       - Python
       - RAG pipelines
-      - LLM agents
-      - QLoRA fine-tuning
       - Knowledge graphs
       - LLM-as-judge evaluation
       - SQL
@@ -255,12 +251,15 @@ The context line is the thesis in miniature: the demo itself ships with a guardr
 
 ---
 
-## 7. Decisions this file asks Gate 1 to settle
+## 7. Gate 1 decision log
 
-1. Thesis: A, B or C (recommendation: A).
-2. Role descriptor: 1, 2 or 3 (recommendation: 1).
-3. The "helped decide / fed nominations" honesty standard for protection claims, replacing the brief's "determined".
-4. Stats band: the five stats and their order in 3.1.
-5. Anchor year 2019 for the experience stat.
-6. Skills row: the 12 chips in 4.1, including the exclusion of GCP, Vertex AI, BigQuery and AWS.
-7. Twin embed at 720px with the "Ask the digital twin" framing.
+Settled in round one: the honesty standard for protection claims; the five stats and their order; the 2016 anchor with the label change in 3.2; the mastery rule for the skills row; and, in CONTENT_MAP.md, the project demotions, the four talk pages, the four home cards and the worked summary.
+
+**The one open decision: the thesis.** D, E or F (section 1; recommendation E).
+
+Everything else proceeds on the recommendations below, logged as assumptions to test once the site is visible. Per the Gate 1 working rule, only pressing decisions are surfaced; all of these are reversible and none blocks Phase 2.
+
+1. Role descriptor: option 2 if thesis E wins, option 1 if D or F wins.
+2. The SQL chip stays (assumption in 4.2).
+3. Twin embed at 720px with the "Ask the digital twin" framing, all site-side.
+4. The CONTENT_MAP mechanical layer (slugs, redirect targets, teaching inline, blog permalink, threatened species home) as written.

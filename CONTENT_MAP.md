@@ -432,7 +432,9 @@ Against the brief 2.4 ceilings. Verbatim records (citations, abstracts, the nomi
 
 ---
 
-## 9. Decisions this file asks Gate 1 to settle
+## 9. Gate 1 decision log
+
+Round one settled items 3, 4, 6 and 7 below. The rest proceed as written under the Gate 1 working rule: only pressing decisions are surfaced; defaults follow the plan and are logged here for review once the site is visible. The single owner action in this file is the Job Intelligence Engine republish decision (item 5), which only affects one data file line whenever it lands.
 
 1. Primary redirect targets for the two split pages: `/academic/` to `/research/`, `/datascience/` to `/projects/`.
 2. The publication slug convention (finding plus year) and the 12 slugs in 2.4.
