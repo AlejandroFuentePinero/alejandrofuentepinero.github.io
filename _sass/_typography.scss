@@ -194,6 +194,12 @@ img {
   height: auto;
 }
 
+/* The webp <picture> wrappers are layout-neutral: the img inside stays
+   the flex or grid child its component styles expect. */
+picture {
+  display: contents;
+}
+
 figure {
   margin: 0;
 }

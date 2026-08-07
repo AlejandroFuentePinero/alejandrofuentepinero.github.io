@@ -15,7 +15,10 @@ redirect_from:
   <ul class="card-grid">
     {% for app in site.data.apps %}
     <li class="card card--media">
-      <img class="card__shot" src="{{ app.screenshot | relative_url }}" alt="Screenshot of {{ app.name }}" loading="lazy">
+      <picture>
+        <source type="image/webp" srcset="{{ app.screenshot | replace: '.png', '.webp' | relative_url }}">
+        <img class="card__shot" src="{{ app.screenshot | relative_url }}" alt="Screenshot of {{ app.name }}" width="{{ app.screenshot_width }}" height="{{ app.screenshot_height }}" loading="lazy">
+      </picture>
       <div class="card__body">
         <p class="card__meta"><span class="label">{% if app.status == "live" %}Live{% else %}Archived{% endif %}</span></p>
         <h3 class="card__title"><a href="{{ app.url }}" rel="noopener">{{ app.name }}</a></h3>
