@@ -1,6 +1,6 @@
 ---
 title: "LLM Engineering Lab"
-excerpt: "Eleven production-minded Python projects spanning the full LLM engineering stack — from structured prompting and RAG to QLoRA fine-tuning, autonomous multi-agent systems, and serverless cloud deployment. The flagship project builds a price predictor that trains on 800k products, benchmarks a dozen model architectures, and deploys an autonomous agent that scans for deals and notifies you in real time."
+excerpt: "11 projects spanning retrieval, fine-tuning and autonomous agents. The flagship ensemble predicts product prices with a mean absolute error of $29.95."
 date: 2026-03-25
 type: engineering
 stack:
@@ -12,114 +12,73 @@ redirect_from:
   - /datascience/projects/llm-engineering-lab/
 ---
 
+This lab holds 11 Python systems across the language model stack: prompting, retrieval, tool use, fine-tuning, agents and deployment. The flagship predicts Amazon product prices from text descriptions. Its final ensemble reaches a mean absolute error of $29.95 and R² of 86.3% on 10,000 held-out products.
+
+The projects escalate. Early ones isolate one pattern each. The flagship joins them into one system: data curation, fine-tuning, retrieval, an agent fleet and a live dashboard. Every model faces the same held-out test, so the comparison stays fair.
+
+## Links
+
+- **Source:** [llm-engineering-lab on GitHub](https://github.com/AlejandroFuentePinero/llm-engineering-lab)
+
 <p align="center">
   <img src="/files/llm-engineering-cartoon.png" alt="LLM Engineering Lab" width="900">
 </p>
 
-## Motivation
+## The flagship: a price predictor
 
-This lab is my sandbox for building LLM systems that hold up in real work. Projects escalate in complexity: the earlier ones establish core patterns — structured prompting, retrieval, tool use — and the later ones bring everything together into production-grade systems with data pipelines, model training, cloud deployment, and autonomous agents. The emphasis throughout is engineering judgement: when to chain calls, how to constrain prompts for consistency, and how to produce artefacts that integrate cleanly into downstream workflows.
+820,000 Amazon products enter a curation pipeline: filtered, deduplicated and resampled with quadratic weighting to flatten price skew. A batch job on Groq generates a clean structured summary per product before any model sees the data. Prompt-completion pairs use the Llama-3.2-3B tokeniser with a 110-token cap. Both the full and a 23,000-item lite dataset land on Hugging Face Hub.
 
-**[→ Explore the full repo on GitHub](https://github.com/AlejandroFuentePinero/llm-engineering-lab)**
+Open-source fine-tuning uses QLoRA: 4-bit NF4 quantisation on a T4 GPU. Adapters train on attention layers in lite mode, adding feed-forward layers in full mode. Batch jobs persist state to disk, so a 24-hour run survives restarts. The retrieval path embeds all 800,000 training products into ChromaDB and passes the 5 most similar to GPT-5.1 as context.
 
----
+The ensemble blends GPT-5.1 with retrieval at 80%, the fine-tuned specialist at 10%, the deep network at 10%. On top sits an agent fleet. A scanner agent filters deal feeds, an ensemble agent prices each deal, and a messaging agent pushes notifications through Pushover. GPT-5.1 plans the loop itself with 3 registered tools.
 
-## Flagship project: LLM Price Predictor
-
-An end-to-end ML system that predicts Amazon product prices from natural language descriptions. It covers the full lifecycle — data curation at scale, LLM-powered preprocessing, model training and benchmarking across a dozen architectures, RAG retrieval, cloud deployment, autonomous multi-agent orchestration, and a live Gradio dashboard — and culminates in an agent that scans the web for deals, prices them using the ensemble model, and notifies the user in real time.
-
-### The pipeline in seven stages
-
-**1. Data curation** — 820k Amazon products ingested across 8 categories, filtered, deduplicated, and resampled using quadratic weighting to reduce price-distribution skew. Both a full (~820k) and lite (~23k) dataset are pushed to HuggingFace Hub.
-
-**2. LLM batch preprocessing** — product descriptions are noisy. An async Groq batch job generates clean structured summaries (Title / Category / Brand / Description / Details) for every item before any model sees the data. State is persisted to disk so long-running jobs survive restarts without data loss.
-
-**3. Fine-tuning preparation** — prompt-completion pairs are generated in SFT format using the Llama-3.2-3B tokeniser with a 110-token cap, then pushed to HuggingFace Hub for training.
-
-**4. Modelling and evaluation** — all models are evaluated on the same held-out test split with the same `Tester` class, keeping the comparison fair across model families. Open-source fine-tuning uses QLoRA: 4-bit NF4 quantisation on a T4 GPU, with LoRA adapters trained on attention (lite) and attention + MLP layers (full). Training is logged to Weights & Biases.
-
-**5. RAG pipeline** — all 800k training products are encoded with `sentence-transformers/all-MiniLM-L6-v2` and stored in ChromaDB. At inference time, the 5 most similar products are retrieved and passed as context to GPT-5.1, grounding predictions in real comparable products.
-
-**6. Ensemble + agent system** — three predictors are blended: GPT-5.1+RAG (80%), the fine-tuned Modal specialist (10%), and the DNN (10%). On top of this sits an autonomous agent that:
-- scrapes RSS deal feeds via `ScannerAgent`, filtering for deals with clear prices and descriptions
-- prices each deal using the ensemble via `EnsembleAgent`
-- picks the best opportunity and triggers a real-time push notification via `MessagingAgent` (Pushover API)
-
-The orchestration logic lives in the model, not in code: `AutonomousPlanningAgent` gives GPT-5.1 three tools (`scan_the_internet_for_bargains`, `estimate_true_value`, `notify_user_of_deal`) and lets it decide the plan autonomously.
-
-**7. Live dashboard** — a Gradio UI that runs the deal-finding agent on load and auto-refreshes every 5 minutes. Streams agent logs to the UI in real time via a background thread and queue; displays found deals in a clickable dataframe (click to re-trigger a push notification); renders a 3D t-SNE scatter plot of the 800k vectorstore embeddings coloured by product category. The full system is observable end-to-end from a single interface.
+A Gradio dashboard runs the deal finder on load and refreshes every 5 minutes. It streams agent logs live and renders the 800,000-vector store as a 3-dimensional t-SNE plot.
 
 ### Models benchmarked
 
 | Model | Type |
 |---|---|
-| Constant / Linear / Random Forest / XGBoost | Traditional ML baselines |
-| Neural Network (8-layer MLP) | Deep learning |
-| Deep Neural Network (10-layer ResNet, log-space) | Deep learning |
-| GPT-4.1 Nano (zero-shot) | Frontier LLM, pre-trained |
-| GPT-4.1 Nano (fine-tuned) | Frontier LLM, fine-tuned |
-| Llama-3.2-3B (base) | Open-source LLM, pre-trained |
-| Llama-3.2-3B (fine-tuned, QLoRA) | Open-source LLM, fine-tuned |
-| GPT-5.1 + RAG | Frontier LLM with retrieval augmentation |
-| Ensemble (GPT-5.1+RAG + specialist + DNN) | Multi-model ensemble |
+| Constant / Linear / Random Forest / XGBoost | Traditional baselines |
+| 8-layer neural network | Deep learning |
+| 10-layer deep network (residual, log-space) | Deep learning |
+| GPT-4.1 Nano (zero-shot) | Frontier model, pre-trained |
+| GPT-4.1 Nano (fine-tuned) | Frontier model, fine-tuned |
+| Llama-3.2-3B (base) | Open-source model, pre-trained |
+| Llama-3.2-3B (fine-tuned, QLoRA) | Open-source model, fine-tuned |
+| GPT-5.1 with retrieval | Frontier model with retrieval |
+| Ensemble (GPT-5.1 with retrieval, specialist, deep network) | Multi-model ensemble |
 
----
+## The decision that was hard
 
-## Supporting projects
+A fair benchmark across model families was the hard design problem. Traditional regressors, fine-tuned open-source models and frontier models with retrieval do not naturally share inputs or outputs. The resolution has 3 parts. Every model consumes the same cleaned summaries, faces the same held-out split, and reports through one shared Tester class.
 
-Each of the ten supporting projects isolates a specific pattern (retrieval, tool-calling, evaluation, multimodal) that feeds into the flagship.
+The Tester extracts a number from each model's raw text output. That keeps generative models comparable with regressors without hand-tuning per family.
 
-**Expert Knowledge Worker (RAG Chatbot)** — A RAG assistant over a Markdown knowledge base. Separates ingestion (chunking, embedding, Chroma) from answering (conversation-aware retrieval + generation), with a Gradio UI that shows retrieved source chunks side-by-side with the answer. Includes a full evaluation suite: retrieval quality (MRR, nDCG, keyword coverage) and LLM-as-judge answer scoring (accuracy, completeness, relevance) in a colour-coded dashboard.
+## What was measured
 
-**Multi-Agent Conversation** — A turn-based three-agent review panel (Data Scientist, PM, Tech Lead) sharing a single conversation transcript as the source of truth. Designed to expose the core pitfalls of multi-agent systems: state drift, role drift, and inconsistent turn-taking.
+Every model runs the same 200-item evaluation on the shared split. The ensemble finishes at a $29.95 mean absolute error and 86.3% R² across 10,000 test products. Training curves log to Weights & Biases.
 
-**Flight Booking Agentic Tool** — A chat agent with real tool-calling against a SQLite backend: price queries and mock bookings with autoincrement IDs. Demonstrates the full tool-call loop — schema-constrained invocations appended back into message history, multi-step resolution — plus TTS audio replies and destination image generation.
+A separate benchmark compares hosted and local models on Python-to-C++ translation. It distinguishes compile errors, runtime errors and success, and attributes each failure to the model output. The retrieval assistant scores retrieval with mean reciprocal rank and keyword coverage, and answers with a judge model.
 
-**LLM Code Performance Benchmark** — Compares hosted (OpenAI, Anthropic) and open-source (Ollama, OpenRouter) models on Python-to-C++ translation, measuring runtime speedup and distinguishing failure modes (compile error, runtime error, success). Every model's C++ output is saved as an artefact.
+## What did not work
 
-**Company Brochure Generator** — Two-stage pipeline: a planning call selects the most brochure-relevant pages, a generation call synthesises the brief. Demonstrates how separating "decide what to read" from "write the output" reduces noise and keeps generations grounded.
+The raw price distribution nearly broke the benchmark. It skews so far toward cheap items that a model can score well by always guessing low. Quadratic resampling at curation time flattened the distribution and closed that exploit. A model can pass a benchmark by exploiting its shape, not by learning the task.
 
-**Meeting Minute Generator** — Whisper transcription → structured Markdown minutes with a fixed, contract-driven format. Faithfulness guardrails prevent invented metadata; transcript persistence allows debugging at the transcription vs. summarisation level.
+Multi-agent systems fail in quiet ways: stale context, role drift, duplicated state and inconsistent turn-taking. One project, the 3-agent review panel, exists to expose exactly those failures on a shared transcript.
 
-**Sales Intake Copilot** — A B2B lead-qualification chatbot that produces a structured handoff note for a human rep, demonstrating conversational intake on the front-end with consistent operational artefacts on the back-end.
+## The supporting projects
 
-**Synthetic A/B Dataset Generator** — Generates a CSV conversion dataset and a Markdown dataset card from a schema-as-contract prompt. Useful for prototyping dashboards, testing pipelines, and teaching experimentation.
+- **Expert Knowledge Worker.** A retrieval assistant over a Markdown knowledge base, with source chunks shown beside every answer. Its evaluation dashboard scores retrieval and answers.
+- **Multi-Agent Conversation.** A 3-agent review panel sharing one transcript, built to expose state and role drift.
+- **Flight Booking Agentic Tool.** A chat agent with real tool calls against a SQLite backend, plus spoken replies and generated destination images.
+- **Code Performance Benchmark.** Hosted against local models on Python-to-C++ translation, with failure modes attributed per model.
+- **Company Brochure Generator.** A planning call picks which pages to read, and a second call writes the brief.
+- **Meeting Minute Generator.** Whisper transcription into contract-driven minutes, with guardrails against invented metadata.
+- **Sales Intake Copilot.** A lead-qualification chat that hands a structured note to a human rep.
+- **Synthetic A/B Dataset Generator.** A schema-as-contract prompt that produces a conversion dataset and its dataset card.
+- **Web Summary Tool.** A page-to-brief summariser that runs on hosted or local models.
+- **Tech Tutor.** A streaming question answerer with a movie-analogy backbone for memorability.
 
-**Web Summary Tool** — URL → Markdown brief via OpenAI or Ollama. A `chat_personality` parameter adapts tone for different audiences.
+## Stack
 
-**Tech Tutor** — Answers data/ML/software questions with a movie-analogy backbone for memorability. Supports OpenAI and Ollama backends with streaming.
-
----
-
-## Skills demonstrated — by project
-
-This table maps the skills built across the lab to the projects that exercise them. The LLM Price Predictor is where most of them converge.
-
-| Skill | Projects |
-|---|---|
-| **RAG** (vector ingestion, embedding search, retrieval-augmented generation at scale) | LLM Price Predictor (800k docs, ChromaDB), Expert Knowledge Worker (LangChain + Chroma, hierarchical RAG, query rewriting, LLM reranking) |
-| **LLM fine-tuning** (QLoRA open-source, frontier model fine-tuning via API) | LLM Price Predictor (Llama 3.2 3B QLoRA on Colab T4, GPT-4.1-nano fine-tuning via OpenAI API) |
-| **Autonomous agents & orchestration** (tool-use, planning loops, multi-agent coordination) | LLM Price Predictor (AutonomousPlanningAgent, ScannerAgent, EnsembleAgent, MessagingAgent), Multi-Agent Conversation, Flight Booking Agentic Tool |
-| **LLM evaluation & benchmarking** (model comparison, retrieval metrics, LLM-as-judge) | LLM Price Predictor (dozen model families, shared Tester, W&B logging), Expert Knowledge Worker (MRR, nDCG, LLM-as-judge scoring dashboard), LLM Code Performance Benchmark (multi-provider, failure-aware) |
-| **Data engineering at scale** (curation pipelines, deduplication, weighted resampling) | LLM Price Predictor (820k products, async batch preprocessing, HuggingFace Hub) |
-| **Cloud & serverless deployment** (Modal, HuggingFace Hub, async batch jobs) | LLM Price Predictor (Modal specialist deployment, Groq async batch API, HF Hub push/pull) |
-| **Multi-step LLM pipelines** (planning → generation, prompt contracts) | Company Brochure Generator, LLM Price Predictor, Expert Knowledge Worker |
-| **Multimodal** (audio transcription, TTS, image generation) | Meeting Minute Generator (Whisper), Flight Booking Agentic Tool (TTS + image), LLM Price Predictor (vision in frontier models) |
-| **Structured outputs** (Pydantic, schema-as-contract, JSON tool schemas) | LLM Price Predictor (Item data model), Flight Booking Agentic Tool (tool schemas), Synthetic A/B Dataset Generator |
-| **Observability & deployment** (real-time log streaming, background threads, t-SNE visualisation) | LLM Price Predictor (Gradio live dashboard) |
-| **Prompt engineering** (tone control, faithfulness guardrails, persona design) | All projects |
-
----
-
-## Engineering patterns across the lab
-
-- **Prompt contracts** — prompts specify tone, length, format, and faithfulness guardrails so outputs are consistent and predictable across runs.
-- **Stage-based orchestration** — each pipeline stage is an independent module that can be re-run or swapped without touching the others. Matters when iterating on a single layer (e.g., testing a different prompt format for fine-tuning).
-- **Evaluation as a first-class concern** — the Price Predictor benchmarks a dozen model families on the same held-out test set; the RAG project measures both retrieval quality (MRR, nDCG) and answer quality (LLM-as-judge) in a live dashboard.
-- **Observability by design** — the live Gradio dashboard streams agent logs in real time, surfaces deal results in an interactive dataframe, and renders the vectorstore geometry in 3D. The full system is inspectable from a single interface.
-- **Workflow-ready outputs** — results are produced as Markdown and structured JSON so they plug into docs, tickets, wikis, and downstream tools without manual cleanup.
-- **Resumable async jobs** — batch preprocessing and fine-tuning jobs persist state to disk and poll on restart, so 24-hour cloud jobs survive interruptions.
-- **Environment portability** — utilities run against hosted or local models (OpenAI / Anthropic / Ollama / OpenRouter) via the same interfaces.
-
-## Links & Resources
-- **Code repository:** [GitHub – LLM Engineering Lab](https://github.com/AlejandroFuentePinero/llm-engineering-lab)
+Python · Groq · OpenAI · Llama-3.2-3B · QLoRA · ChromaDB · Modal · Gradio · Weights & Biases · Hugging Face Hub

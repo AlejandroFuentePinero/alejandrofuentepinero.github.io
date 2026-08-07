@@ -43,14 +43,30 @@ their original wording and outrank this file.
 | Rainforest | rainforest, one word | rain forest | "Rain forest" survives only inside the verbatim 2022 possum paper title. |
 | The CV document | the CV, download the CV as a PDF | resume, curriculum vitae | |
 
+## Project pages (added in the _projects pass)
+
+| Concept | Term | Not | Notes |
+|---|---|---|---|
+| Level 3 headings on project pages | Links, Architecture, The decision that was hard, What was measured, What did not work, Role, Stack | Overview, Approach, Results, Impact | One template for engineering and research pages. What did not work appears only where the record supports it. |
+| The research closing section | What this taught me about evaluation | lessons learned | Research pages only, after Role, per POSITIONING move 7. |
+| The recommendation buckets (Job Intelligence Engine) | best-now and stretch | best_now in prose | The underscore form is the code identifier and survives only in code and records. |
+| Toolchain rows | tokens separated by " · " | prose sentences | Stack lines and model lists. The checker skips sentence checks on them. |
+| Journal names as link labels | the venue string as cited | reworded labels | "Plos One" keeps the citation's casing. |
+
 ## Acronym policy
 
 Expand every acronym on first use per page (section 6.2 rule 10). Exceptions,
-treated as words and never expanded: AI, CV, PDF, XML, URL. Proper names that
-look like acronyms and are never expanded: CONAF, CSIRO, ORCID, 7PH, R.
+treated as words and never expanded: AI, CV, PDF, XML, URL, and since the
+_projects pass API, SQL, JSON, JSONL, GPU, DVD. Proper names that
+look like acronyms and are never expanded: CONAF, CSIRO, ORCID, 7PH, R, and
+since the _projects pass GPT (model family), JAGS, JIE (inside AI-JIE),
+SBERT, SHAP, SNE (inside t-SNE) and AA (the accessibility grade). nDCG is
+treated as a metric name: its 4-word expansion would break the noun-cluster
+rule, so it stays unexpanded beside the expanded mean reciprocal rank (MRR).
 Acronyms inside verbatim records (citations, course titles, the nomination
 list, award venues) are exempt. `scripts/prose_check.py` enforces this with
-the same allowlist and an expansion dictionary.
+the same allowlist and an expansion dictionary (MRR and MLB joined it in the
+_projects pass).
 
 ## Mechanics
 

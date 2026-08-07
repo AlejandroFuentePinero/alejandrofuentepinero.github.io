@@ -1,6 +1,6 @@
 ---
 title: "Job Intelligence Engine"
-excerpt: "A deterministic job-market intelligence system that turns messy postings into interpretable skill demand, salary signals, and clear best_now vs stretch recommendations — delivered as a reproducible Python pipeline + Streamlit app."
+excerpt: "An extraction pipeline turns 6,100 job postings into ranked role recommendations. A judge model scores the extraction layer's accuracy."
 date: 2026-01-02
 type: engineering
 stack:
@@ -13,35 +13,51 @@ redirect_from:
   - /datascience/projects/job_intelligence_engine/
 ---
 
-## Links (start here)
-- **Live app:** [Streamlit App](https://job-intelligence-engine.streamlit.app/)
-- **GitHub repo:** [Job Intelligence Engine](https://github.com/AlejandroFuentePinero/job-intelligence-engine)
+The Job Intelligence Engine turns 6,100 job postings into ranked role recommendations. It separates the roles to target now from the roles worth a stretch, with the reasons attached. A counterfactual layer ranks which missing skill changes your options the most.
 
-![Job Intelligence Engine — Demo](/files/app_demo.gif)
+The pipeline is deterministic end to end. The salary model explains about 30% of variance on held-out postings, the expected ceiling for noisy posted pay. 27 per-skill models score demand at 0.88 to 0.95 area under the curve.
 
-## Overview
+Its language model extraction layer, [AI-JIE](/projects/ai-jie/), has its own page.
 
-Job postings are noisy: roles and skills overlap heavily in meaning, postings describe the same requirements with different language, and "fit" often devolves into keyword matching or generic advice. The result is wasted time—applying to roles that are either unrealistic right now or undershoot your actual potential.
+## Links
 
-**Job Intelligence Engine** converts raw job ads into a structured, interpretable market layer, then positions an individual within that landscape to make decisions that are both realistic and strategic. The app surfaces recommendations with explicit rationale and interpretation panels; the repo contains the deterministic pipeline and persisted artefacts that reproduce those outputs.
+- **Live app:** [job-intelligence-engine.streamlit.app](https://job-intelligence-engine.streamlit.app/)
+- **Source:** [job-intelligence-engine on GitHub](https://github.com/AlejandroFuentePinero/job-intelligence-engine)
+- **Technical report:** [Methods, evaluation and results](https://github.com/AlejandroFuentePinero/job-intelligence-engine/blob/main/docs/narrative/technical_report.md)
 
-- What roles are realistic **now** (high fit, low friction)?
-- What roles are worth a **stretch** (clear upside, clear gaps)?
-- What should I learn next to change my options **measurably**?
+![Job Intelligence Engine demo](/files/app_demo.gif)
 
-## What it delivers
+## Architecture
 
-- **Interpretable market signals:** structured skill demand and salary drivers you can inspect and reason about.
-- **Career positioning:** separates **best_now** roles (strong fit, lower barriers) from **stretch** roles (higher upside, clearer gaps), with explicit rationale.
-- **Upskilling recommendations:** counterfactual "add-one-skill" analysis that ranks what to learn by the change it produces in suitability, competitiveness, and salary alignment.
+The pipeline normalises raw postings first: titles, seniority, locations, salary fields and skill tokens mapped into skill families. 2 learned layers sit on top. A tuned salary response model estimates expected pay with interpretable drivers. 27 per-skill requirement models turn sparse skill mentions into calibrated demand probabilities per job.
 
-## How it works
+A graph layer embeds jobs and skills from their co-occurrence and clusters them into 20 latent job families. The families expose which roles behave alike in skill space, whatever their titles say.
 
-The system runs as a deterministic pipeline. It normalises raw postings (titles, locations, salaries, skill tokens), learns market structure via probabilistic skill-requirement models and a tuned salary model, then translates those signals into transparent positioning scores, recommendations, and upskilling targets. The engine separates suitability (fit to your current profile) from competitiveness (barrier to entry driven by missing or rare skill requirements) — a distinction most job tools collapse into a single score. Outputs are served through a lightweight Streamlit interface.
+User positioning separates 2 ideas most job tools collapse into one score. Suitability measures fit to your current profile. Competitiveness measures the barrier: missing, rare skill requirements and seniority expectations. The recommender turns the 2 axes into the best-now and stretch shortlists, each with explicit gap explanations.
 
 <figure>
-  <img src="/files/project_pipeline_simple.png" alt="Job Intelligence Engine — system workflow" style="width:100%; max-width:1100px;">
+  <img src="/files/project_pipeline_simple.png" alt="Job Intelligence Engine system workflow" style="width:100%; max-width:1100px;">
 </figure>
+
+## The decision that was hard
+
+Upskilling advice is a counterfactual claim: add this skill and your options improve. The tempting design recomputes everything per scenario, including which jobs qualify. That inflates every lift, because a changed candidate universe changes the denominator.
+
+The engine freezes the candidate universe instead. Each add-one-skill scenario recomputes positioning on the same job set. Deltas stay comparable, and a guardrail rejects skills that harm the current best-now set. The ranking rewards real movement: stretch roles promoted to best-now, gaps closed, alignment gained.
+
+## What was measured
+
+The salary model reaches a test R² of about 0.30 with a mean absolute error near $25,000. That is the expected range for posted salaries, which carry ranges, gaps and negotiation noise. The skill models hold 0.88 to 0.95 area under the curve for most families, weaker on rare ones.
+
+Contract evaluations enforce correctness, not trust. Artefacts must share one job universe in one order. Probabilities must stay bounded and finite. Repeated runs must reproduce the same rankings, and the 2 shortlists must never overlap.
+
+Empty universes and misaligned inputs fail fast instead of producing quietly wrong output. A rebuild-versus-benchmark check catches silent changes to the processed dataset after refactors.
+
+## What did not work
+
+Salary prediction as fine-grained optimisation did not survive contact with the data. Posted pay is too noisy to rank individual roles by predicted dollars. The engine now uses salary only as an alignment check against a target band. Core ranking stays anchored in skill match.
+
+Dictionary skill extraction hit its ceiling. It reads exact tokens, so synonyms and implicit requirements become false negatives, and rare skill families stay unstable. That recorded limit is what [AI-JIE](/projects/ai-jie/) exists to remove: a language model reads intent where a dictionary reads strings.
 
 ## Stack
 
