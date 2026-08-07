@@ -1,0 +1,8 @@
+Configuration file: /Users/alejandrofp/Projects/portfolio/alejandrofuentepinero.github.io/_config.yml
+            Source: /Users/alejandrofp/Projects/portfolio/alejandrofuentepinero.github.io
+       Destination: /Users/alejandrofp/Projects/portfolio/alejandrofuentepinero.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 0.379 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

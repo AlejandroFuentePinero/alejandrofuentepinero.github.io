@@ -1,0 +1,24 @@
+Record integrity check, teaching and posts pass
+Old = refurb/main, new = working tree
+
+1. _teaching/james_cook_university.md course list
+   replace: old=['demonstrator.'] -> new=['Demonstrator.']
+   replace: old=['Guess'] -> new=['Guest']
+   replace: old=['demonstrator'] -> new=['Demonstrator']
+   replace: old=['demonstrator'] -> new=['Demonstrator']
+   replace: old=['demonstrator'] -> new=['Demonstrator']
+   replace: old=['Biologist'] -> new=['Biologist.']
+   6 word-level differences, all listed above; every other word identical
+   facts-ok: all 6 course titles, the lecture title, both degree levels and all 6 years verbatim
+
+2. _teaching/mentoring.md project abstract
+   byte-identical: True (1275 bytes)
+   project title verbatim in record markers: True
+   facts-ok: student name, year and both institutions verbatim
+
+3. _posts/2021-12-01-action-plan-australian-birds.md
+   publisher's description byte-identical: True (1353 bytes)
+   old hand-typed list vs _data/book_chapters.yml: 14/14 items identical
+   the post now renders the list from the data file, so one source serves both surfaces
+   title: 'The Action Plan for Australian Birds 2021' -> 'The Action Plan for Australian Birds 2020'
+   permalink and redirect_from unchanged: no URL moves, no MIGRATIONS.md entry needed
