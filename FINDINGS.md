@@ -15,3 +15,9 @@ Found while working, not fixed, per the working rules in REFURB_BRIEF.md section
 6. **Likely typos inside the nomination record's author lists**: "Graig, M." where the book chapter citations spell "Craig M", and the "Freeman AND." initials style varies between entries. The list is a verbatim record and was not touched; whether to correct it against the submitted nominations is an owner call.
 7. **Media engagement block headline typos** ("Aussi birds dissapearing due to warming", "possums species fromt their mountain homes"). The block moves to the relevant paper pages in the _publications pass (DECISIONS 49); fix the titles against the real headlines then.
 8. **The award title "Best talk prize for best presentation"** (2023, Zoology and Ecology North Queensland) reads like a recording slip. Kept verbatim as an award title; owner may want to shorten it to what the prize was actually called.
+
+## Phase 5, _projects pass
+
+9. **The 7PH pilot count may be stale against the live app.** The project page records 1,083 pilots (with 107 events, 4,591 decks, 4,995 cards). The digital twin repo's decisions log (session 65, 2026-08-03) records the live 7phgraph.com footer at 1,086 pilots. The page numbers describe the artifact at its stated date and were kept exactly. Refreshing them against the live footer is an owner call, and the home card carries only the event and deck counts, which agree.
+10. **Apps-pass inputs confirmed in passing**: the 7PH Graph source repo is public at github.com/AlejandroFuentePinero/7ph-graph, and the Job Intelligence Engine repo is github.com/AlejandroFuentePinero/job-intelligence-engine. CONTENT_MAP 5.1 left both `source` fields to confirm in Phase 5; the apps copy pass can now fill them.
+11. **The digital twin decisions log flags this repo's 7PH page and its 2 PNG files as previously untracked.** They are tracked and rewritten as of this pass; noted only so the twin-side note is not chased twice.
