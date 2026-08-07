@@ -5,10 +5,14 @@ title                    : "Alejandro de la Fuente"
 logo                     : "/images/groodle_favicon_256.png"
 title_separator          : 
 name                     : &name "Alejandro de la Fuente"
-description              : &description "Professional website"
+description              : &description "AI engineer building retrieval pipelines, agents and the evaluation that proves they work. Grounded in years of Bayesian wildlife forecasting with real consequences."
 url                      : https://alejandrofuentepinero.github.io
 baseurl                  : ""
 repository               : "AlejandroFuentePinero/alejandrofuentepinero.github.io"
+# The theme is vendored in-repo (academicpages fork of Minimal Mistakes).
+# Without an explicit null, the github-pages gem injects jekyll-theme-primer
+# and ships 76 KB of dead CSS at /assets/css/style.css.
+theme                    : null
 teaser                   :
 breadcrumbs              : false
 words_per_minute         : 160
@@ -120,6 +124,12 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - REFURB_BRIEF.md
+  - AUDIT.md
+  - POSITIONING.md
+  - CONTENT_MAP.md
+  - DECISIONS.md
+  - MIGRATIONS.md
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
@@ -138,7 +148,6 @@ exclude:
   - gulpfile.js
   - log
   - node_modules
-  - package.json
   - tmp
   - vendor
 keep_files:
