@@ -1,0 +1,34 @@
+---
+layout: default
+title: "Apps"
+permalink: /apps/
+redirect_from:
+  - /datascience/communication/
+---
+
+<div class="container page-block">
+  <header class="page-header">
+    <h1>Apps</h1>
+    <p class="page-lead">Live, usable systems. Each entry links the running app, its source and the project page behind it.</p>
+  </header>
+
+  <ul class="card-grid">
+    {% for app in site.data.apps %}
+    <li class="card card--media">
+      <img class="card__shot" src="{{ app.screenshot | relative_url }}" alt="Screenshot of {{ app.name }}" loading="lazy">
+      <div class="card__body">
+        <p class="card__meta"><span class="label">{% if app.status == "live" %}Live{% else %}Archived{% endif %}</span></p>
+        <h3 class="card__title"><a href="{{ app.url }}" rel="noopener">{{ app.name }}</a></h3>
+        {% if app.pitch and app.pitch != "" %}<p class="card__result">{{ app.pitch }}</p>{% endif %}
+        {% if app.demonstrates and app.demonstrates != "" %}<p class="card__result">{{ app.demonstrates }}</p>{% endif %}
+        {% if app.note and app.note != "" %}<p class="card__note">{{ app.note }}</p>{% endif %}
+        <p class="pub-row__links">
+          <a href="{{ app.url }}" rel="noopener">Open app</a>
+          {% if app.source and app.source != "" %}<a href="{{ app.source }}" rel="noopener">Source</a>{% endif %}
+          {% if app.project %}<a href="{{ app.project | relative_url }}">Project page</a>{% endif %}
+        </p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

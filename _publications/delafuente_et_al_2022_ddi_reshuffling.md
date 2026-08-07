@@ -10,9 +10,8 @@ date: 2022-04-01
 venue: 'Diversity and Distributions'
 paperurl: 'https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13514'
 citation: 'de la Fuente, A., Krockenberger, A., Hirsch, B., Cernusak, L., & Williams, S. (2022). &quot;Predicted alteration of vertebrate communities in response to climate-induced elevational shifts.&quot; <i>Diversity and Distributions</i>. 28, 1180– 1190.'
+pdf: '/files/Diversity%20and%20Distributions%20-%202022%20-%20de%20la%20Fuente%20-%20Predicted%20alteration%20of%20vertebrate%20communities%20in%20response%20to.pdf'
 ---
-# Abstract
-
 ## Aim
 Climate change is driving species to migrate to novel areas as current environments become unsuitable. As a result, species distributions have shifted uphill in montane ecosystems globally. Heterogeneous dispersal rates among shifting species could result in complex changes to community assemblages. For example, interspecific differences in dispersal ability could lead to the disruption, or creation, of species interactions and processes within communities, likely amplifying the impact of climate change on ecosystems. Here, we studied the dispersal success of vertebrate species in a tropical montane ecosystem under a climate-induced uphill shift and assessed the derived impacts on community structures.
 
@@ -27,5 +26,3 @@ Dispersal success was strongly influenced by species’ dispersal ability, lands
 
 ## Main conclusions
 Our study highlights the escalating impact of climate change on community assemblages in response to climate-induced elevational shifts, providing a classic example of the "escalator to extinction." Future predictions of the impacts of climate change on ecosystems will benefit from improvements in understanding species interactions, population dynamics and species potential to adapt to a changing environment.
-
-[Download paper here](/files/Diversity%20and%20Distributions%20-%202022%20-%20de%20la%20Fuente%20-%20Predicted%20alteration%20of%20vertebrate%20communities%20in%20response%20to.pdf)

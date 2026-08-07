@@ -2,8 +2,15 @@
 title: "Job Intelligence Engine"
 excerpt: "A deterministic job-market intelligence system that turns messy postings into interpretable skill demand, salary signals, and clear best_now vs stretch recommendations — delivered as a reproducible Python pipeline + Streamlit app."
 date: 2026-01-02
-tier: featured   # featured | learning | research
-order: 1
+type: engineering
+stack:
+  - Python
+  - scikit-learn
+  - SBERT
+  - XGBoost
+  - Streamlit
+redirect_from:
+  - /datascience/projects/job_intelligence_engine/
 ---
 
 ## Links (start here)

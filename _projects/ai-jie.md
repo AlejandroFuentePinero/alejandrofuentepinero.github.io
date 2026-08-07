@@ -2,8 +2,14 @@
 title: "AI-JIE: LLM Extraction & Evaluation Pipeline"
 excerpt: "An async LLM pipeline that extracts structured job intelligence from raw postings using GPT-4o-mini, chain-of-thought prompt architecture, and a rigorous LLM-as-judge evaluation framework — built as the AI layer for the Job Intelligence Engine."
 date: 2026-04-09
-tier: featured
-order: 3
+type: engineering
+stack:
+  - Python
+  - OpenAI API
+  - Pydantic
+  - asyncio
+redirect_from:
+  - /datascience/projects/ai-jie/
 ---
 
 ## Links (start here)

@@ -9,7 +9,7 @@ hidden: true
 <div class="container">
   <header class="sg-header">
     <h1>Styleguide</h1>
-    <p>Internal reference for the design system: every token, every type step, and the fourteen components from the brief, in both themes. Use the toggle in the header to switch theme.</p>
+    <p>Internal reference for the design system: every token, every type step, the fourteen components from the brief plus the Phase 4 additions, in both themes. Use the toggle in the header to switch theme.</p>
   </header>
 
   <!-- ================================================================ -->
@@ -120,7 +120,7 @@ hidden: true
   <section class="sg-section" id="c1-header">
     <span class="label sg-section__eyebrow">Component 1 of 14</span>
     <h2>Sticky header</h2>
-    <p class="sg-note">The header of this page is the component: logo at 30px, name, the five nav items, theme toggle. It stays pinned with a hairline rule beneath. Below 768px the nav folds behind a menu button. The demo links are placeholders until the Phase 4 pages exist.</p>
+    <p class="sg-note">The header of this page is the component: logo at 30px, name, the five nav items, theme toggle. It stays pinned with a hairline rule beneath. Below 768px the nav folds behind a menu button. The nav is live since Phase 4; the active section carries the accent underline.</p>
   </section>
 
   <!-- ================================================================ -->
@@ -178,6 +178,22 @@ hidden: true
       </ul>
     </div>
     <p class="sg-note">One template for engineering and research work: type label, title, a result in 25 words or fewer, stack chips. Hairline border, no shadow; hover shifts colour only. The whole card is clickable.</p>
+
+    <h3 style="margin-top: var(--space-xl)">Media variant</h3>
+    <p class="sg-note">Added in Phase 4 for /apps/: the same card with a screenshot above the body and quiet links beneath.</p>
+    <div class="sg-demo">
+      <ul class="card-grid">
+        <li class="card card--media">
+          <img class="card__shot" src="{{ '/images/apps/digital-twin.png' | relative_url }}" alt="Screenshot of the digital twin chat" loading="lazy">
+          <div class="card__body">
+            <p class="card__meta"><span class="label">Live</span></p>
+            <h3 class="card__title"><a href="#">Digital twin</a></h3>
+            <p class="card__result">A conversational agent that answers questions about my work, with a second model reviewing every answer before it ships.</p>
+            <p class="pub-row__links"><a href="#">Open app</a><a href="#">Source</a><a href="#">Project page</a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <!-- ================================================================ -->
@@ -349,5 +365,20 @@ hidden: true
     <span class="label sg-section__eyebrow">Component 14 of 14</span>
     <h2>Print stylesheet</h2>
     <p class="sg-note">Built for /work/: open the print dialog on this page to preview. Print forces the light palette, hides the header, footer links, toggles and embeds, drops link underlines, and keeps timeline entries and publication rows unbroken across pages.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c15-filter">
+    <span class="label sg-section__eyebrow">Component 15, added in Phase 4</span>
+    <h2>Type filter row</h2>
+    <div class="sg-demo">
+      <div class="filter-row" role="group" aria-label="Filter demo">
+        <button type="button" class="filter-row__btn" aria-pressed="true">All</button>
+        <button type="button" class="filter-row__btn" aria-pressed="false">Engineering</button>
+        <button type="button" class="filter-row__btn" aria-pressed="false">Research</button>
+        <button type="button" class="filter-row__btn" aria-pressed="false">Labs</button>
+      </div>
+    </div>
+    <p class="sg-note">The /projects/ grid filter. Progressive enhancement: the control ships hidden and every project visible; JS reveals it, and filtering only ever hides cards, so with JS off all projects show. The active state follows the accent-underline rule, like the nav. This demo row is static.</p>
   </section>
 </div>
