@@ -86,7 +86,7 @@ Five stats, ordered to read as a sentence: experience, then what he built, then 
 |---|---|---|---|---|
 | 1 | Years working with uncertainty | 10 | Declared anchor, computed render | `start_year: 2016` in `_data/stats.yml`; rendered as current year minus start year |
 | 2 | Projects | 18 now, 16 after the Gate 1 merges | Derived | `site.projects \| size` |
-| 3 | Live apps | 3 | Derived | count of `_data/apps.yml` entries with `status: live` |
+| 3 | Live apps | 4 | Derived | count of `_data/apps.yml` entries with `status: live` |
 | 4 | Peer-reviewed papers | 12 | Derived | `site.publications \| size` |
 | 5 | Citations | 193 | Declared | Google Scholar profile 7CKVdZwAAAAJ, as of 2026-08-07 |
 

@@ -282,10 +282,10 @@ Decisions from the Gate 0 liveness results.
 |---|---|---|---|
 | Digital twin | Live, healthy, 1.2 to 2.1 s | **Embed** on the home page (POSITIONING.md 6) | `/apps/` entry uses link treatment with a screenshot; one embed per site is enough |
 | 7PH Graph | Live, 9 s cold start | **Link** | Screenshot card, link to 7phgraph.com, source link, one line: "first load can take about 10 seconds" |
-| Job Intelligence Engine | Behind a Streamlit login wall | **Archive, pending owner action** | Screenshot, source link, marked "demo currently private". If the Space is made public before Phase 4, flip to link; the schema makes that a one-line change |
+| Job Intelligence Engine | Live and public. Corrected at Gate 1: the Phase 0 "login wall" was Streamlit bot-blocking plain curl; with browser headers the app returns 200 in under 2 s, and the owner's settings show public and searchable | **Link** | Screenshot card, link to the Streamlit app, source link |
 | Birds trend Shiny app | Live, wakes in about 20 s | **Link** | Screenshot card, link, one line: "free hosting, wakes in about 20 seconds". Not embedded: a 20-second blank iframe reads as broken |
 
-**Open action for the owner:** decide whether to republish the Job Intelligence Engine Streamlit app. Until then it is archived and the live-apps stat counts 3.
+No owner action remains: all four apps are live and the live-apps stat counts 4. Liveness checks against `*.streamlit.app` must use browser-like headers or they hit a bot wall; noted for the Phase 7 QA link check.
 
 ### 5.1 `_data/apps.yml` schema
 
@@ -319,12 +319,12 @@ Feeds `/apps/`, the home page live-apps stat (count of `status: live`), and the 
 
 - id: job-intelligence-engine
   name: "Job Intelligence Engine"
-  status: archived
-  treatment: archive
+  status: live
+  treatment: link
   url: "https://job-intelligence-engine.streamlit.app"
   source: "https://github.com/AlejandroFuentePinero"   # confirm exact repo in Phase 5
   project: /projects/job-intelligence-engine/
-  note: "Demo currently private."
+  note: ""
   screenshot: /images/apps/job-intelligence-engine.png
 
 - id: birds-shiny
@@ -434,7 +434,7 @@ Against the brief 2.4 ceilings. Verbatim records (citations, abstracts, the nomi
 
 ## 9. Gate 1 decision log
 
-Round one settled items 3, 4, 6 and 7 below. The rest proceed as written under the Gate 1 working rule: only pressing decisions are surfaced; defaults follow the plan and are logged here for review once the site is visible. The single owner action in this file is the Job Intelligence Engine republish decision (item 5), which only affects one data file line whenever it lands.
+Round one settled items 3, 4, 6 and 7 below. The rest proceed as written under the Gate 1 working rule: only pressing decisions are surfaced; defaults follow the plan and are logged here for review once the site is visible. The Job Intelligence Engine question resolved itself: the app was public all along (section 5), so no owner action remains in this file.
 
 Also confirmed at Gate 1: the two dead external links found in Phase 0 (the `Nmixture_Frogs_CodeR` repository link on the CodeR talk and the Zoo de Santillana foundation link in the CV) are removed in Phase 2 with no replacements.
 
@@ -442,7 +442,7 @@ Also confirmed at Gate 1: the two dead external links found in Phase 0 (the `Nmi
 2. The publication slug convention (finding plus year) and the 12 slugs in 2.4.
 3. The Python labs merge (three files into `python-labs`) and the MLB SQL reclassification from featured to lab.
 4. The four talk pages in 6.2 and the three consolidation merges in 6.1.
-5. The apps roster: twin embedded, 7PH Graph and Shiny linked with latency notes, JIE archived pending the owner's republish decision.
+5. The apps roster: twin embedded, JIE linked, 7PH Graph and Shiny linked with latency notes.
 6. The four home page cards in section 4, and the exclusion of the digital twin card in favour of its embed section.
 7. The worked summary in section 7 as the standard for the remaining 11 papers.
 8. Teaching rendered inline on `/research/` with the two standalone teaching pages retired.
