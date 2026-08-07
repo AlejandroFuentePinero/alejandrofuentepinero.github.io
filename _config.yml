@@ -38,8 +38,10 @@ exclude:
   - DECISIONS.md
   - MIGRATIONS.md
   - FINDINGS.md
+  - TERMINOLOGY.md
   - CLAUDE.md
   - docs
+  - scripts
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
