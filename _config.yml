@@ -99,6 +99,17 @@ collections:
 
 # Defaults
 defaults:
+  # Keep static files (paper PDFs, the CV, certificates) out of
+  # sitemap.xml: every one is linked from the page that gives it
+  # context, and the sitemap lists canonical pages only.
+  - scope:
+      path: "files"
+    values:
+      sitemap: false
+  - scope:
+      path: "images"
+    values:
+      sitemap: false
   - scope:
       path: ""
       type: posts
