@@ -25,7 +25,7 @@ redirect_from:
     {% for project in projects %}
     <li class="card" data-project-type="{{ project.type }}">
       <p class="card__meta"><span class="label">{{ project.type | capitalize }}</span><span class="label">{{ project.date | date: "%Y" }}</span></p>
-      <h3 class="card__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+      <h2 class="card__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
       <p class="card__result">{{ project.excerpt }}</p>
       {% if project.stack %}
       <p class="card__chips">

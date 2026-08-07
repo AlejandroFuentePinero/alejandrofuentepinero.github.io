@@ -21,7 +21,7 @@ redirect_from:
       </picture>
       <div class="card__body">
         <p class="card__meta"><span class="label">{% if app.status == "live" %}Live{% else %}Archived{% endif %}</span></p>
-        <h3 class="card__title"><a href="{{ app.url }}" rel="noopener">{{ app.name }}</a></h3>
+        <h2 class="card__title"><a href="{{ app.url }}" rel="noopener">{{ app.name }}</a></h2>
         {% if app.pitch and app.pitch != "" %}<p class="card__result">{{ app.pitch }}</p>{% endif %}
         {% if app.demonstrates and app.demonstrates != "" %}<p class="card__result">{{ app.demonstrates }}</p>{% endif %}
         {% if app.note and app.note != "" %}<p class="card__note">{{ app.note }}</p>{% endif %}
