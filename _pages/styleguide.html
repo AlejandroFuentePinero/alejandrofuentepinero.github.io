@@ -1,0 +1,353 @@
+---
+title: "Styleguide"
+layout: styleguide
+permalink: /styleguide/
+sitemap: false
+hidden: true
+---
+
+<div class="container">
+  <header class="sg-header">
+    <h1>Styleguide</h1>
+    <p>Internal reference for the design system: every token, every type step, and the fourteen components from the brief, in both themes. Use the toggle in the header to switch theme.</p>
+  </header>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="colour">
+    <span class="label sg-section__eyebrow">Foundations</span>
+    <h2>Colour tokens</h2>
+    <p class="sg-note">Nine tokens, defined once in <code>_sass/_tokens.scss</code> as CSS custom properties. No hex value exists outside that file. Swatches render the live token for the active theme; the two values under each name are light and dark.</p>
+    <ul class="sg-swatches">
+      <li><div class="sg-swatch__chip" style="background: var(--paper)"></div><span class="sg-swatch__name">--paper</span><span class="sg-swatch__values">#FAFAF7 / #1F1E1D</span></li>
+      <li><div class="sg-swatch__chip" style="background: var(--paper-sunk)"></div><span class="sg-swatch__name">--paper-sunk</span><span class="sg-swatch__values">#F0EEE6 / #2B2A28</span></li>
+      <li><div class="sg-swatch__chip" style="background: var(--ink)"></div><span class="sg-swatch__name">--ink</span><span class="sg-swatch__values">#141413 / #F2F0E9</span></li>
+      <li><div class="sg-swatch__chip" style="background: var(--ink-muted)"></div><span class="sg-swatch__name">--ink-muted</span><span class="sg-swatch__values">#6B6960 / #A3A199</span></li>
+      <li><div class="sg-swatch__chip" style="background: var(--ink-faint)"></div><span class="sg-swatch__name">--ink-faint</span><span class="sg-swatch__values">#93918A / #6E6C65</span></li>
+      <li><div class="sg-swatch__chip" style="background: var(--rule)"></div><span class="sg-swatch__name">--rule</span><span class="sg-swatch__values">#E5E3DB / #3A3936</span></li>
+      <li><div class="sg-swatch__chip" style="background: var(--accent)"></div><span class="sg-swatch__name">--accent</span><span class="sg-swatch__values">#D97757 / #E08A6C</span></li>
+      <li><div class="sg-swatch__chip" style="background: var(--accent-deep)"></div><span class="sg-swatch__name">--accent-deep</span><span class="sg-swatch__values">#C15F3C / #F0A98D</span></li>
+      <li><div class="sg-swatch__chip" style="background: var(--accent-wash)"></div><span class="sg-swatch__name">--accent-wash</span><span class="sg-swatch__values">#F7EDE7 / #2E2622</span></li>
+    </ul>
+    <p class="sg-note">Accent rules: links and active nav carry the accent as an underline, never as body-size text colour. At most one emphasis element per screen. Never a large fill.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="type">
+    <span class="label sg-section__eyebrow">Foundations</span>
+    <h2>Typography</h2>
+    <p class="sg-note">Three families, self-hosted as variable woff2 with <code>font-display: swap</code>, latin subset with Spanish diacritics. Newsreader for display, Inter for body and UI, JetBrains Mono for code and data columns.</p>
+
+    <div class="sg-type-row">
+      <span class="sg-type-row__meta">Newsreader</span>
+      <p class="sg-type-row__sample" style="font-family: var(--font-display); font-size: var(--step-2)">A well-set print journal that happens to be a website. <em>Años entre montañas: ¿qué pájaro canta? ¡El chucao!</em></p>
+    </div>
+    <div class="sg-type-row">
+      <span class="sg-type-row__meta">Inter</span>
+      <p class="sg-type-row__sample">Body and interface text. Warm paper, near-black ink, hairline rules. <em>Señales añejas: ¿cuántas quedan? ¡Muchísimas!</em></p>
+    </div>
+    <div class="sg-type-row">
+      <span class="sg-type-row__meta">JetBrains Mono</span>
+      <p class="sg-type-row__sample" style="font-family: var(--font-mono); font-size: var(--step--1)">bundle exec jekyll build && echo "0 warnings"</p>
+    </div>
+
+    <h3 style="margin-top: var(--space-xl)">Scale</h3>
+    <p class="sg-note">1.250 major third at a 17px desktop base, easing to 1.2 at 16px on small screens, fluid with <code>clamp()</code> between 390px and 1440px viewports. Body line height 1.65, headings 1.15, measure capped at 68 characters.</p>
+    <div class="sg-type-row">
+      <span class="sg-type-row__meta">--step-5<br>39.8 to 51.9 px</span>
+      <p class="sg-type-row__sample" style="font-family: var(--font-display); font-size: var(--step-5); font-weight: 500; line-height: 1.15">Home display only</p>
+    </div>
+    <div class="sg-type-row">
+      <span class="sg-type-row__meta">--step-4<br>33.2 to 41.5 px</span>
+      <p class="sg-type-row__sample" style="font-family: var(--font-display); font-size: var(--step-4); font-weight: 500; line-height: 1.15">Page titles</p>
+    </div>
+    <div class="sg-type-row">
+      <span class="sg-type-row__meta">--step-3<br>27.6 to 33.2 px</span>
+      <p class="sg-type-row__sample" style="font-family: var(--font-display); font-size: var(--step-3); font-weight: 500; line-height: 1.15; font-variant-numeric: tabular-nums">Stats band numbers: 1992 to 2050</p>
+    </div>
+    <div class="sg-type-row">
+      <span class="sg-type-row__meta">--step-2<br>23.0 to 26.6 px</span>
+      <p class="sg-type-row__sample" style="font-family: var(--font-display); font-size: var(--step-2); font-weight: 500; line-height: 1.15">Section headings</p>
+    </div>
+    <div class="sg-type-row">
+      <span class="sg-type-row__meta">--step-1<br>19.2 to 21.2 px</span>
+      <p class="sg-type-row__sample" style="font-family: var(--font-display); font-size: var(--step-1); font-weight: 500; line-height: 1.15">Card titles and subheadings</p>
+    </div>
+    <div class="sg-type-row">
+      <span class="sg-type-row__meta">--step-0<br>16.0 to 17.0 px</span>
+      <p class="sg-type-row__sample">Body text. The base step. Tabular figures where numbers align in columns: 1,024 and 2,048.</p>
+    </div>
+    <div class="sg-type-row">
+      <span class="sg-type-row__meta">--step--1<br>13.3 to 13.6 px</span>
+      <p class="sg-type-row__sample" style="font-size: var(--step--1); color: var(--ink-muted)">Labels, captions and metadata only. Body copy never drops below --step-0.</p>
+    </div>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="space">
+    <span class="label sg-section__eyebrow">Foundations</span>
+    <h2>Space</h2>
+    <p class="sg-note">The 8px scale from the brief: 4, 8, 12, 16, 24, 32, 48, 64, 96, 128.</p>
+    <ul class="sg-space">
+      <li><span class="sg-space__name">--space-2xs &middot; 4px</span><div class="sg-space__bar" style="width: var(--space-2xs)"></div></li>
+      <li><span class="sg-space__name">--space-xs &middot; 8px</span><div class="sg-space__bar" style="width: var(--space-xs)"></div></li>
+      <li><span class="sg-space__name">--space-sm &middot; 12px</span><div class="sg-space__bar" style="width: var(--space-sm)"></div></li>
+      <li><span class="sg-space__name">--space-md &middot; 16px</span><div class="sg-space__bar" style="width: var(--space-md)"></div></li>
+      <li><span class="sg-space__name">--space-lg &middot; 24px</span><div class="sg-space__bar" style="width: var(--space-lg)"></div></li>
+      <li><span class="sg-space__name">--space-xl &middot; 32px</span><div class="sg-space__bar" style="width: var(--space-xl)"></div></li>
+      <li><span class="sg-space__name">--space-2xl &middot; 48px</span><div class="sg-space__bar" style="width: var(--space-2xl)"></div></li>
+      <li><span class="sg-space__name">--space-3xl &middot; 64px</span><div class="sg-space__bar" style="width: var(--space-3xl)"></div></li>
+      <li><span class="sg-space__name">--space-4xl &middot; 96px</span><div class="sg-space__bar" style="width: var(--space-4xl)"></div></li>
+      <li><span class="sg-space__name">--space-5xl &middot; 128px</span><div class="sg-space__bar" style="width: var(--space-5xl)"></div></li>
+    </ul>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="motion">
+    <span class="label sg-section__eyebrow">Foundations</span>
+    <h2>Motion</h2>
+    <p class="sg-note">150ms to 200ms, ease-out, colour and opacity only. No entrance animations, no scroll reveals, no parallax, no counters. Everything is disabled under <code>prefers-reduced-motion</code>. Hover the sample:</p>
+    <p><span class="sg-motion-demo">Colour and opacity only</span></p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="theme">
+    <span class="label sg-section__eyebrow">Foundations</span>
+    <h2>Dark mode</h2>
+    <p class="sg-note">The theme follows <code>prefers-color-scheme</code> until the header toggle sets an explicit choice, stored in <code>localStorage</code>. An inline blocking script in the head applies the stored choice before first paint, so a hard reload never flashes the wrong theme.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c1-header">
+    <span class="label sg-section__eyebrow">Component 1 of 14</span>
+    <h2>Sticky header</h2>
+    <p class="sg-note">The header of this page is the component: logo at 30px, name, the five nav items, theme toggle. It stays pinned with a hairline rule beneath. Below 768px the nav folds behind a menu button. The demo links are placeholders until the Phase 4 pages exist.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c2-hero">
+    <span class="label sg-section__eyebrow">Component 2 of 14</span>
+    <h2>Home hero</h2>
+    <div class="sg-demo">
+      <div class="hero" style="padding-block: var(--space-xl)">
+        <h1 class="hero__name">Alejandro de la Fuente</h1>
+        <p class="hero__role">AI engineer, raised on rainforest data and honest error bars.</p>
+        <p class="hero__thesis">Hi, I'm Alejandro. I build AI systems: retrieval pipelines, agents, and the evaluation that proves they work. I learned that discipline in the rainforest, forecasting wildlife populations where a wrong number could cost a species its protection. I like hard data, honest error bars, and tools people actually use.</p>
+      </div>
+    </div>
+    <p class="sg-note">Name at --step-5, the only use of that step. Role line and thesis in the display serif. Copy is the Gate 1 settled wording; it gets one polish pass in Phase 4 or 5.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c3-stats">
+    <span class="label sg-section__eyebrow">Component 3 of 14</span>
+    <h2>Stats band</h2>
+    <div class="sg-demo sg-demo--flush" style="border-inline: 0; border-radius: 0">
+      {% include stats-band.html %}
+    </div>
+    <p class="sg-note">Live numbers, computed at build time from <code>_data/stats.yml</code>. The include implements the four schema types (derived, derived_data, years_since, declared) and contains no literal digit. Numbers in the display serif at --step-3 with tabular figures, labels at --step--1 in muted ink, hairline rules between. No icons, no cards, no count-up.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c4-skills">
+    <span class="label sg-section__eyebrow">Component 4 of 14</span>
+    <h2>Skills chip row</h2>
+    <div class="sg-demo">
+      {% include skills-row.html %}
+    </div>
+    <p class="sg-note">Two groups from <code>_data/skills.yml</code>, rendered as one continuous row that wraps. A chip claims mastery demonstrated by a shipped system or a peer-reviewed paper.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c5-cards">
+    <span class="label sg-section__eyebrow">Component 5 of 14</span>
+    <h2>Project and app card</h2>
+    <div class="sg-demo">
+      <ul class="card-grid">
+        <li class="card">
+          <p class="card__meta"><span class="label">Engineering</span><span class="label">Live</span></p>
+          <h3 class="card__title"><a href="#">7PH Graph</a></h3>
+          <p class="card__result">A live knowledge graph of a competitive Magic format: 107 events, 4,591 decks, every chart backed by provenance and statistical guards.</p>
+          <p class="card__chips"><span class="chip">Python</span><span class="chip">Neo4j</span><span class="chip">Cypher</span></p>
+        </li>
+        <li class="card">
+          <p class="card__meta"><span class="label">Research</span><span class="label">2022</span></p>
+          <h3 class="card__title"><a href="#">Ringtail possum viability forecast</a></h3>
+          <p class="card__result">A hierarchical Bayesian model on 30 years of surveys forecast possum collapse by 2050. It fed a national protection nomination.</p>
+          <p class="card__chips"><span class="chip">R</span><span class="chip">Hierarchical models</span><span class="chip">Forecasting</span></p>
+        </li>
+      </ul>
+    </div>
+    <p class="sg-note">One template for engineering and research work: type label, title, a result in 25 words or fewer, stack chips. Hairline border, no shadow; hover shifts colour only. The whole card is clickable.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c6-embed">
+    <span class="label sg-section__eyebrow">Component 6 of 14</span>
+    <h2>Embed frame</h2>
+    <p class="sg-note">Height reserved at 720px, capped at 85vh, so the embed never shifts layout. The iframe is created by an IntersectionObserver only when the frame nears the viewport. The full screen link is always visible.</p>
+    {% include embed-frame.html
+      title="Ask the digital twin"
+      context="A retrieval-augmented agent that answers questions about my work. A second model reviews every answer before you see it."
+      url="https://alejandrofupi-digital-twin.hf.space"
+      screenshot="/images/apps/digital-twin.png"
+    %}
+    <h3 style="margin-top: var(--space-xl)">Fallback state</h3>
+    <p class="sg-note">Rendered here in its failed state on purpose: if the app does not load within 15 seconds, the frame swaps to a screenshot and the link. No apology, no broken iframe.</p>
+    {% include embed-frame.html
+      title="Ask the digital twin"
+      context="A retrieval-augmented agent that answers questions about my work. A second model reviews every answer before you see it."
+      url="https://alejandrofupi-digital-twin.hf.space"
+      screenshot="/images/apps/digital-twin.png"
+      state="forced-fallback"
+    %}
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c7-publication">
+    <span class="label sg-section__eyebrow">Component 7 of 14</span>
+    <h2>Publication row</h2>
+    <div class="sg-demo sg-demo--flush" style="padding: 0 var(--space-xl)">
+      <ul class="pub-list">
+        <li class="pub-row">
+          <span class="pub-row__year">2022</span>
+          <div>
+            <h3 class="pub-row__title"><a href="#">Climate change threatens the future of rain forest ringtail possums by 2050</a></h3>
+            <p class="pub-row__finding">Ringtail possum populations in the Wet Tropics fall below viability thresholds by 2050 under forecast warming. Extreme heatwaves do most of the damage.</p>
+            <p class="pub-row__venue"><em>Diversity and Distributions</em></p>
+            <p class="pub-row__links"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13652" rel="noopener">Paper</a><a href="#">PDF</a></p>
+          </div>
+        </li>
+        <li class="pub-row">
+          <span class="pub-row__year">2021</span>
+          <div>
+            <h3 class="pub-row__title"><a href="#">Long-term changes in populations of rainforest birds in the Australia Wet Tropics bioregion: A climate-driven biodiversity emergency</a></h3>
+            <p class="pub-row__finding">Rainforest birds in the Australian Wet Tropics are following the escalator to extinction, with upland populations nearly halving over 17 years.</p>
+            <p class="pub-row__venue"><em>PLOS ONE</em></p>
+            <p class="pub-row__links"><a href="#">Paper</a><a href="#">PDF</a></p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <p class="sg-note">The entry states the finding, not the topic, in 25 words or fewer. Year in the mono column, title in the serif, quiet links beneath.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c8-talk">
+    <span class="label sg-section__eyebrow">Component 8 of 14</span>
+    <h2>Talk row</h2>
+    <div class="sg-demo sg-demo--flush" style="padding: 0 var(--space-xl)">
+      <ul class="talk-list">
+        <li class="talk-row">
+          <span class="talk-row__year">2023</span>
+          <div>
+            <h3 class="talk-row__title"><a href="#">Songs of disappearance: Rainforest Montane Birds and Climate Change</a><span class="tag-award">Best talk</span></h3>
+            <p class="talk-row__venue">Zoology and Ecology North Queensland, Mission Beach</p>
+            <p class="talk-row__excerpt">How five climatic drivers reshape 47 rainforest bird populations across the mountains of the Wet Tropics.</p>
+          </div>
+        </li>
+        <li class="talk-row">
+          <span class="talk-row__year">2022</span>
+          <div>
+            <h3 class="talk-row__title"><a href="#">Predicted alteration of vertebrate communities in response to climate-induced elevational shifts</a><span class="tag-award">Best postgraduate talk</span></h3>
+            <p class="talk-row__venue">ESA-SCBO conference, Wollongong &middot; also presented as a poster, ESA 2021</p>
+            <p class="talk-row__excerpt">Simulated uphill shifts for 7,613 communities point to mass local extinctions at high elevation.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <p class="sg-note">Same skeleton as the publication row, one size down. Awards render as a quiet accent-wash tag. Venues consolidate onto one line.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c9-disclosure">
+    <span class="label sg-section__eyebrow">Component 9 of 14</span>
+    <h2>Disclosure block</h2>
+    <p class="sg-note">An appendix, not hidden content: the original abstract survives verbatim beneath the plain summary on every paper page. Native <code>details</code>, keyboard accessible, printable heading.</p>
+    <details class="disclosure">
+      <summary><span class="label">Original abstract as published</span></summary>
+      <div class="disclosure__body">
+        <p><strong>Aim.</strong> The increasing frequency and intensity of extreme weather escalate the pressure of global warming on biodiversity. Globally, synergistic effects of multiple components of climate change have driven local extinctions and community collapses, raising concern about the irreversible deterioration of ecosystems. Here, we disentangle the pressure of increasing warming and frequency of extreme heatwaves on the population dynamics of tropical ringtail possums (family: Pseudocheiridae).</p>
+        <p><strong>Location.</strong> The Australian Wet Tropics World Heritage Area.</p>
+        <p><strong>Method.</strong> Ringtail possums' population dynamics were estimated between 1992 and 2021 using a hierarchical population model that explicitly described the state process and accounted for imperfect detection. Under our model, we propagated the estimated mechanisms governing the system by forecasting ringtails' population dynamics between 2022 and 2050. Derived from this process, we calculated the probability of absolute and quasi-extinction using different population viability thresholds.</p>
+        <p><strong>Results.</strong> We find a strong negative effect of climate change on population dynamics, particularly extreme heatwaves, resulting in a rapid and severe decline in ringtails' population size in the last three decades.</p>
+        <p><strong>Main conclusions.</strong> Forecasted increases in temperature and heatwaves threaten the collapse of rain forest ringtail possums by 2050, with populations falling below viability thresholds within three decades.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c10-callout">
+    <span class="label sg-section__eyebrow">Component 10 of 14</span>
+    <h2>Callout</h2>
+    <div class="sg-demo" style="display: flex; flex-direction: column; gap: var(--space-md)">
+      <div class="callout">
+        <span class="label">Note</span>
+        <p>The twin runs on a free Space. The first answer can take a few seconds.</p>
+      </div>
+      <div class="callout callout--result">
+        <span class="label">Result</span>
+        <p>Populations fall below viability thresholds by 2050 under forecast warming.</p>
+      </div>
+      <div class="callout callout--warning">
+        <span class="label">Warning</span>
+        <p>Never edit citation strings or original abstracts. The record stays verbatim.</p>
+      </div>
+    </div>
+    <p class="sg-note">Three variants distinguished by rule colour and label, not by new hues. Result is the one place a section may spend its accent.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c11-figure">
+    <span class="label sg-section__eyebrow">Component 11 of 14</span>
+    <h2>Figure</h2>
+    <figure class="figure">
+      <img src="{{ '/files/7ph_graph_metagame_landscape.png' | relative_url }}" alt="Scatter plot of 25 deck archetypes by share of decks and mean finish, each with an error bar" width="1240" height="745" loading="lazy">
+      <figcaption>Standard figure: constrained to the container, caption in muted ink at --step--1.</figcaption>
+    </figure>
+    <figure class="figure figure--full-bleed">
+      <img src="{{ '/files/7ph_graph_metagame_landscape.png' | relative_url }}" alt="The same scatter plot at full viewport width" width="1240" height="745" loading="lazy">
+      <figcaption class="container">Full-bleed variant: the escape hatch for wide figures and the twin embed.</figcaption>
+    </figure>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c12-timeline">
+    <span class="label sg-section__eyebrow">Component 12 of 14</span>
+    <h2>Work timeline entry</h2>
+    <div class="sg-demo sg-demo--flush" style="padding: 0 var(--space-xl)">
+      <ul class="timeline">
+        <li class="timeline__entry">
+          <span class="timeline__dates">2020 to 2024</span>
+          <div>
+            <h3 class="timeline__role">PhD candidate</h3>
+            <p class="timeline__org">James Cook University &middot; Townsville, Australia</p>
+            <p class="timeline__summary">Built hierarchical population models on 30 years of rainforest monitoring. The forecasts fed national and international protection nominations.</p>
+          </div>
+        </li>
+        <li class="timeline__entry">
+          <span class="timeline__dates">2016 to 2017</span>
+          <div>
+            <h3 class="timeline__role">Head biologist</h3>
+            <p class="timeline__org">CONAF &middot; Puyehue National Park, Chile</p>
+            <p class="timeline__summary">Ran field programs and population monitoring across the park. The first professional data role behind the years counter above.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <p class="sg-note">Dates in the mono column, role in the serif, one entry capped at 40 words. Ranges spell "to"; no dashes.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c13-footer">
+    <span class="label sg-section__eyebrow">Component 13 of 14</span>
+    <h2>Footer</h2>
+    <p class="sg-note">The footer of this page is the component: name, the five contact links once, location and terms. Contact links live here and nowhere else in the chrome.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c14-print">
+    <span class="label sg-section__eyebrow">Component 14 of 14</span>
+    <h2>Print stylesheet</h2>
+    <p class="sg-note">Built for /work/: open the print dialog on this page to preview. Print forces the light palette, hides the header, footer links, toggles and embeds, drops link underlines, and keeps timeline entries and publication rows unbroken across pages.</p>
+  </section>
+</div>

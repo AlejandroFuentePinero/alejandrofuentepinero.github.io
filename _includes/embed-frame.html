@@ -1,0 +1,36 @@
+{% comment %}
+  Component 6: embed frame with fallback. Space is reserved by CSS so the
+  embed never shifts layout. assets/js/site.js creates the iframe when the
+  frame nears the viewport; on failure the fallback (screenshot plus link)
+  replaces it.
+
+  Parameters:
+    title       heading above the frame
+    context     one line of context
+    url         the embedded app
+    screenshot  fallback image path
+    state       optional; "forced-fallback" renders the failed state
+                statically for the styleguide, otherwise "idle"
+{% endcomment %}
+{% if include.state == "forced-fallback" %}
+  {% assign frame_state = "failed" %}
+{% else %}
+  {% assign frame_state = "idle" %}
+{% endif %}
+<section class="embed-frame" data-state="{{ frame_state }}"{% unless include.state == "forced-fallback" %} data-embed-src="{{ include.url }}" data-embed-title="{{ include.title }}"{% endunless %}>
+  <div class="embed-frame__header">
+    <h3 class="embed-frame__title">{{ include.title }}</h3>
+    <a class="embed-frame__open" href="{{ include.url }}" target="_blank" rel="noopener">Open full screen</a>
+    <p class="embed-frame__context">{{ include.context }}</p>
+  </div>
+  <div class="embed-frame__body">
+    <p class="embed-frame__placeholder">The app loads when it comes into view.</p>
+    <div class="embed-frame__fallback">
+      <img class="embed-frame__fallback-shot" src="{{ include.screenshot | relative_url }}" alt="Screenshot of {{ include.title }}">
+      <div class="embed-frame__fallback-bar">
+        <p>The live app did not load here.</p>
+        <a class="embed-frame__open" href="{{ include.url }}" target="_blank" rel="noopener">Open it in a new tab</a>
+      </div>
+    </div>
+  </div>
+</section>

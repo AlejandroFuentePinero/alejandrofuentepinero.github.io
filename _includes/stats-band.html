@@ -1,0 +1,35 @@
+{% comment %}
+  The stats band component. Data-driven from _data/stats.yml, four types:
+  derived, derived_data, years_since, declared. No literal digit may appear
+  anywhere in this file, comments included; scripts/prose_check.py will
+  enforce that. Digits enter only through Liquid computation or a value
+  field in the data file. Hash pairs are read with .first and .last, never
+  indexed, because an index is a digit.
+{% endcomment %}
+<section class="stats-band" aria-label="Record in numbers">
+  <dl class="stats-band__list">
+    {% for stat in site.data.stats.band %}
+      {% case stat.type %}
+      {% when "derived" %}
+        {% assign stat_value = site[stat.collection] | size %}
+      {% when "derived_data" %}
+        {% assign stat_items = site.data[stat.data] %}
+        {% for pair in stat.where %}
+          {% assign where_key = pair.first %}
+          {% assign where_value = pair.last %}
+          {% assign stat_items = stat_items | where_exp: "item", "item[where_key] == where_value" %}
+        {% endfor %}
+        {% assign stat_value = stat_items | size %}
+      {% when "years_since" %}
+        {% assign current_year = "now" | date: "%Y" %}
+        {% assign stat_value = current_year | minus: stat.start_year %}
+      {% when "declared" %}
+        {% assign stat_value = stat.value %}
+      {% endcase %}
+      <div class="stats-band__item">
+        <dt class="stats-band__label">{{ stat.label }}{% if stat.type == "declared" and stat.as_of %}<span class="stats-band__asof">as of {{ stat.as_of | date: "%b %Y" }}</span>{% endif %}</dt>
+        <dd class="stats-band__value">{{ stat_value }}</dd>
+      </div>
+    {% endfor %}
+  </dl>
+</section>
