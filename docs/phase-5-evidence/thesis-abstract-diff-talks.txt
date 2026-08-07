@@ -1,0 +1,26 @@
+Source: An uphill battle: the impacts of climate change on Montane
+rainforest vertebrates. PhD thesis, James Cook University, 2024.
+DOI 10.25903/07p8-7k08, ResearchOnline@JCU eprint 91342, thesis PDF
+pages vii to viii (the record page carries only a 2-sentence blurb,
+and the repository blocks non-browser requests).
+
+site text before: 278 words
+thesis abstract:  519 words
+
+Word-level diff, site text before against the thesis:
+  replace: site=['reshufiling'] -> thesis=['reshuffling']
+  replace: site=['biogeo', 'chemical'] -> thesis=['biogeochemical']
+  omitted by the seminar abstract: 137 words starting "At the core of this thesis is the ..."
+  omitted by the seminar abstract: 24 words starting "These findings underscore the urgency of proactive conservation ..."
+  replace: site=['causallinks'] -> thesis=['causal', 'links']
+  omitted by the seminar abstract: 26 words starting "These findings offer actionable strategies for conservation and ..."
+  omitted by the seminar abstract: 27 words starting "underscores the urgent need for proactive conservation strategies ..."
+  omitted by the seminar abstract: 27 words starting "Continued investment in long-term monitoring programs is essential ..."
+
+Repairs applied (the 3 replacements above, nothing else):
+  replace: before=['reshufiling'] -> after=['reshuffling']
+  replace: before=['biogeo', 'chemical'] -> after=['biogeochemical']
+  replace: before=['causallinks'] -> after=['causal', 'links']
+
+doubled-space runs in the site body: 0
+Every word the seminar abstract keeps now matches the thesis exactly.
