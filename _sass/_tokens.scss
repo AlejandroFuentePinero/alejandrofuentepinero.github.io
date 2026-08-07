@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Design tokens (REFURB_BRIEF.md section 5)
+   The only file in the codebase that may contain a colour value.
+   ========================================================================== */
+
+@mixin tokens-light {
+  color-scheme: light;
+  --paper:       #FAFAF7;
+  --paper-sunk:  #F0EEE6;
+  --ink:         #141413;
+  --ink-muted:   #6B6960;
+  --ink-faint:   #93918A;
+  --rule:        #E5E3DB;
+  --accent:      #D97757;
+  --accent-deep: #C15F3C;
+  --accent-wash: #F7EDE7;
+}
+
+@mixin tokens-dark {
+  color-scheme: dark;
+  --paper:       #1F1E1D;
+  --paper-sunk:  #2B2A28;
+  --ink:         #F2F0E9;
+  --ink-muted:   #A3A199;
+  --ink-faint:   #6E6C65;
+  --rule:        #3A3936;
+  --accent:      #E08A6C;
+  --accent-deep: #F0A98D;
+  --accent-wash: #2E2622;
+}
+
+:root {
+  @include tokens-light;
+
+  /* Type scale, 1.250 major third at a 17px desktop base (brief 5.2),
+     easing to 1.2 at a 16px base on small screens. Fluid between
+     viewports 390px and 1440px. */
+  --step--1: clamp(0.8333rem, 0.8271rem + 0.0254vw, 0.8500rem);  /* 13.3px to 13.6px */
+  --step-0:  clamp(1.0000rem, 0.9768rem + 0.0952vw, 1.0625rem);  /* 16.0px to 17.0px */
+  --step-1:  clamp(1.2000rem, 1.1524rem + 0.1952vw, 1.3281rem);  /* 19.2px to 21.2px */
+  --step-2:  clamp(1.4400rem, 1.3582rem + 0.3355vw, 1.6602rem);  /* 23.0px to 26.6px */
+  --step-3:  clamp(1.7280rem, 1.5990rem + 0.5291vw, 2.0752rem);  /* 27.6px to 33.2px, stats band numbers */
+  --step-4:  clamp(2.0736rem, 1.8803rem + 0.7930vw, 2.5940rem);  /* 33.2px to 41.5px */
+  --step-5:  clamp(2.4883rem, 2.2082rem + 1.1492vw, 3.2425rem);  /* 39.8px to 51.9px, home display only */
+
+  /* Space, 8px scale (brief 5.3): 4, 8, 12, 16, 24, 32, 48, 64, 96, 128 */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* Layout (brief 5.3) */
+  --measure:   68ch;
+  --container: 70rem;      /* 1120px */
+  --radius:    3px;
+
+  /* Type families (brief 5.2, self-hosted in assets/fonts/) */
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Motion (brief 5.4): colour and opacity only, disabled under
+     prefers-reduced-motion in _typography.scss */
+  --dur:      150ms;
+  --dur-slow: 200ms;
+  --ease:     ease-out;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include tokens-dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  @include tokens-dark;
+}
+
+/* Print is always ink on paper, light values, whatever the screen theme. */
+@media print {
+  :root,
+  :root[data-theme="dark"] {
+    @include tokens-light;
+  }
+}
