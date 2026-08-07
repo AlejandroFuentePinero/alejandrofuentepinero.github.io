@@ -24,4 +24,4 @@ Found while working, not fixed, per the working rules in REFURB_BRIEF.md section
 
 ## Phase 5, apps pass
 
-12. **No public source repo exists for the birds Shiny app.** The `source` field of the birds-shiny entry stays empty: GitHub search over the owner's repo list, repository names and code found nothing for BirdsPopTrendAWT (Shiny apps often deploy straight from a local RStudio session, with no repo). If the R source still exists locally, publishing it and filling the field completes the last gap on /apps/. Owner call.
+12. **No public source repo exists for the birds Shiny app.** The `source` field of the birds-shiny entry stays empty: GitHub search over the owner's repo list, repository names and code found nothing for BirdsPopTrendAWT (Shiny apps often deploy straight from a local RStudio session, with no repo). If the R source still exists locally, publishing it and filling the field completes the last gap on /apps/. Owner call. *Settled at the apps-pass merge: the owner confirmed no public repo exists. The field stays empty and the card hides the link.*
