@@ -3,7 +3,7 @@ locale                   : "en-US"
 title                    : "Alejandro de la Fuente"
 logo                     : "/images/groodle_favicon_256.png"
 name                     : "Alejandro de la Fuente"
-description              : "AI engineer building retrieval pipelines, agents and the evaluation that proves they work. Grounded in years of Bayesian wildlife forecasting with real consequences."
+description              : "AI engineer building retrieval pipelines, agents and the evaluation that proves they work. Grounded in Bayesian wildlife forecasting with real consequences."
 url                      : https://alejandrofuentepinero.github.io
 baseurl                  : ""
 repository               : "AlejandroFuentePinero/alejandrofuentepinero.github.io"

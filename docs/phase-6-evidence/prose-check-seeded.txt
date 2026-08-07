@@ -1,0 +1,19 @@
+Seeded-violation run for the Phase 6 prose_check extensions.
+Each new check fired before landing clean: description over 160,
+home/config equality, substring derivation, missing description,
+alt dash, alt banned word, alt over 25 words, JSON-LD literal.
+
+prose_check: 9 violation(s)
+  _pages/home.html: description of 163 characters (max 160)
+  _pages/home.html: home description differs from the site description in _config.yml
+  _pages/work.md: description is not a verbatim substring of the page's visible prose
+  _pages/contact.md: no description in front matter (crawlers fall back to the site description)
+  _projects/digital-twin.md: 1 em dash(es) outside record regions
+  _projects/digital-twin.md: em dash in alt text: "A seamless runtime pipeline — with one two three four five s"
+  _projects/digital-twin.md: banned word or construction "seamless" in alt text: "A seamless runtime pipeline — with one two three four five s"
+  _projects/digital-twin.md: alt text of 27 words (max 25): "A seamless runtime pipeline — with one two three four five s"
+  _includes/jsonld.html: literal value "Alejandro de la Fuente" (facts must render through Liquid)
+
+The 165-character site description was a live catch during development:
+the description check found it truncating mid-word in the rendered meta
+tag, and the string was trimmed by 2 words in both its copies.
