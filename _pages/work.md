@@ -205,20 +205,8 @@ redirect_from:
 
 <!-- record -->
 
-* Possums threatened by climate change
-  * Article. [JCU media](https://www.jcu.edu.au/news/releases/2022/november/possums-threatened-by-climate-change)
-  * Total media coverage - [70 national stories](https://app.mediaportal.com/#/custom-report/062b775f-86fc-4380-a866-2a2ed7c8b988)
-* Aussi birds dissapearing due to warming
-  * Article. [Narromine News](https://www.narrominenewsonline.com.au/story/7574394/aussie-birds-disappearing-due-to-warming/)
-* Global warming drives Wet Tropics possums species fromt their mountain homes.
-  * Article. [ABC news](https://www.abc.net.au/news/2022-01-03/climate-change-herbert-river-ringtail-possum-decline/100705912)
-  * Interview. [ABC news](https://www.abc.net.au/news/2022-01-02/climate-change-drives-possums-from-high-altitude/13693612)
 * It’s Easy to Hate Selfies. But Can They Also Be a Force for Good?
   * Photo contribution. [New York Times](https://www.nytimes.com/2019/07/11/style/selfies-instagram.html)
-* Woody bamboo flowering in Puyehue National Park.
-  * Article. El Austral, Chile.
-* Tropical rainforest research
-  * Article [Skyrail Foundation](https://www.skyrail.com.au/blog/tropical-rainforest-research-in-education/)
 
 <!-- /record -->
 
