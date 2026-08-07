@@ -233,3 +233,27 @@ Produced on branch `refurb/phase-5-talks`, 2026-08-07. Numbering continues from 
 ## Tooling
 
 108. **prose_check reads talks the way it reads publications.** `check_publication` became `check_front_matter`, shared by both collections with a `has_page` flag. All 12 talk files are checked on the excerpt (20-word ceiling, no questions); the 4 page files add the summary (Tier B, 100-word budget) and the rule that the body holds nothing but the record. The 8 rows-only files render as redirects, so their unrendered bodies are treated as records and only the excerpt is checked, which is why the em dashes in the NFFF and IBRC abstracts never reach a reader or the checker. A new check fires if a rows-only entry grows a summary that nothing would render. All 12 new checks fired on seeded violations before landing clean.
+
+# DECISIONS.md: Phase 5 judgment calls, teaching and posts pass
+
+Produced on branch `refurb/phase-5-teaching-posts`, 2026-08-07. Numbering continues from the talks pass. Working rule unchanged: only pressing decisions were surfaced; everything else follows best practice and is logged here. Settled before the pass started: the teaching collection stays `output: false` with its 2 stubs (DECISIONS 41), the student abstract is a third-party record routed like the paper and talk abstracts, the 2 named record repairs fall under the DECISIONS 69 rule, and the post keeps its content with the chapter list exempt.
+
+## Copy
+
+109. **The course list renders as a collapsed block, not an open list.** The list is a record and exempt from the 120-word teaching budget, but 11 entries under 6 year headings would dominate the page the way the 367-word migration did (FINDINGS 15). A "Course list" disclosure follows the page's own editorial service block and the /work/ certificates block: the visible prose states the shape (11 roles, 6 courses, 2019 to 2025) and the record sits complete at level 3. The nomination list stays open on its own page because that page exists for the record; the teaching section is one of 4 on /research/.
+
+110. **Record repairs, 6 words, under the DECISIONS 69 rule.** "Guess lecturer" became "Guest lecturer" (FINDINGS 15), 4 lowercase "demonstrator" role lines were capitalised to the majority form, and "Toolkit for the Field Biologist" gained the final period every sibling line carries. Course titles, years, degree levels and the lecture title are untouched, including the lowercase "Advanced statistics" (FINDINGS 18).
+
+111. **The mentoring entry opens with the student's finding and keeps every fact in prose.** Result first, then Olivia Bond, Johns Hopkins University, the School for International Training and the year, then the method. The project title sits verbatim in record markers and the abstract is byte-identical inside a collapsed "Project abstract" block. The framing deliberately does not reuse the IBRC 2025 talk excerpt's wording: related work, 2 surfaces, no copy (the DECISIONS 100 principle). The old "**Abstract**" label line was presentation, replaced by the disclosure label, per the DECISIONS 103 reading.
+
+112. **Entry titles: "Courses" and "Mentoring".** "Teaching: James Cook University" repeated the section heading above it and the venue line below it. Titles are the site's own labels, not records; venue and location render from front matter unchanged.
+
+113. **The post's opening 2 paragraphs are the publisher's text, marked as a record.** This settles the open question the pass carried: the wording matches CSIRO Publishing's description of the book, so it is third-party text under brief 6.4, never reworded. Both paragraphs moved byte-identical into record markers inside a collapsed "Publisher's description" block, and new owner prose opens the post with the result. The post title now names the book as published, The Action Plan for Australian Birds 2020, replacing the 2021 misname; the permalink is unchanged, so no URL moves and MIGRATIONS.md gains no line.
+
+114. **The post renders the chapter list from `_data/book_chapters.yml`**, executing the DECISIONS 52 single-source rule. The hand-typed list was verified identical to the data file on all 14 items before it was replaced with a Liquid loop, so the same record now renders on /research/ and the post from one source and cannot diverge. The counts in the post prose stay hand-written numerals: the no-literal-digit rule is scoped to the stats include, and the 2021 book cannot grow a 15th account.
+
+## Tooling
+
+115. **prose_check reads the teaching files directly and joins the /research/ budget to what the page serves.** The entries reach the page through Liquid (DECISIONS 41), so the checker reads them the way it reads `_data/apps.yml`: per-file Tier B checks with dash scans outside record regions, plus a 120-word section budget shared across the 2 files. Their words also join research.html's page total together with the 24 publication and talk excerpts its rows render, so the 700-word page budget now measures the rendered page: 694 of 700 words, which closes FINDINGS 15. Every check newly applied to these files fired on a seeded violation before landing clean (14 violations in the seeded run, committed in the gate evidence).
+
+116. **The post's budget is 120, not CONTENT_MAP's "keep 746".** The 746 was the whole old post, blurb and list included. Both are records now, so the budget applies to the owner's prose alone, at the level 2 standard every other page opener carries. The content the 746 described survives complete: blurb collapsed, list rendered from the data file.

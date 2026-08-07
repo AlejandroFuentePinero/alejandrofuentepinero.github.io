@@ -16,10 +16,14 @@ Fails on:
  10. Any talk excerpt over 20 words or asking a question, any talk
      summary over 100 words, and any prose outside the record markers on
      a talk that has its own page.
+ 11. Any teaching-entry prose failing the Tier B checks, any dash
+     outside a teaching file's record regions, and the 2 entries'
+     combined prose over the shared teaching section budget.
 
-Scope: the files in FILES below plus the stats include. Later Phase 5
-passes extend FILES collection by collection. The styleguide (internal,
-exempt) and the redirect stubs (no prose) are deliberately absent.
+Scope: the files in FILES and TEACHING_FILES below plus the stats
+include. The styleguide (internal, exempt) and the redirect stubs (no
+prose) are deliberately absent, and the 8 rows-only talk bodies render
+as redirects, so nothing a reader can see is unchecked.
 
 Publication files (_publications/) render their prose from front matter:
 the excerpt is the index finding (25-word ceiling, no questions) and the
@@ -55,6 +59,21 @@ label spans, filter buttons and Liquid output are presentation tokens,
 not prose, and are removed before checking. Words inside Liquid include
 parameters (the twin frame context line) are not visible to this script;
 the Gate evidence counts them by hand.
+
+Teaching files (_teaching/) render inline on /research/ through Liquid
+(DECISIONS 41), so the page-level check on research.html never sees
+them: they are read directly, the way _data/apps.yml is. The course
+list and the student project abstract are records inside collapsed
+blocks; the visible framing prose is Tier B. The 2 entries share the
+CONTENT_MAP teaching budget of 120 words, and their words also join the
+/research/ page budget, together with the publication and talk excerpts
+its rows render, so the 700-word page budget measures what the page
+actually serves.
+
+The post (_posts/) is checked like a page: Tier B, with the level 2
+budget of 120 words on the owner's prose. The publisher's description
+sits inside record markers and the chapter list renders from
+_data/book_chapters.yml through Liquid, so neither counts.
 
 The /apps/ entries (pitch, demonstrates, note) live in _data/apps.yml,
 which Liquid renders into the page, so the page file alone never shows
@@ -133,7 +152,19 @@ FILES = {
     "_talks/tess_2023.md": ("B", 100),
     "_talks/wtma_workshop.md": ("B", 100),
     "_talks/zenq_2022.md": ("B", 100),
+    # The post: Tier B, level 2 budget on the owner's prose. Records
+    # (the publisher's description, the chapter list) are exempt.
+    "_posts/2021-12-01-action-plan-australian-birds.md": ("B", 120),
 }
+
+# Checked by check_teaching: read directly because the entries render
+# inline on /research/ through Liquid (DECISIONS 41). The budget is the
+# CONTENT_MAP section total, shared across both files.
+TEACHING_FILES = [
+    "_teaching/james_cook_university.md",
+    "_teaching/mentoring.md",
+]
+TEACHING_BUDGET = 120
 
 STATS_INCLUDE = "_includes/stats-band.html"
 APPS_DATA = "_data/apps.yml"
@@ -300,6 +331,52 @@ def apps_data_strings(fails):
     return texts
 
 
+def check_teaching(report):
+    """The 2 teaching entries, read directly (they render inline on
+    /research/ through Liquid, so check_file never sees them). Per-file
+    Tier B checks plus the shared section budget. Returns the combined
+    word count, which joins the /research/ page budget."""
+    total_words = 0
+    failures = []
+    for rel_path in TEACHING_FILES:
+        raw = (ROOT / rel_path).read_text(encoding="utf-8")
+        fails = []
+        stripped = strip_records(raw)
+        for name, char in (("em dash", EM_DASH), ("en dash", EN_DASH)):
+            count = stripped.count(char)
+            if count:
+                fails.append(f"{count} {name}(es) outside record regions")
+        blocks = extract_blocks(raw)
+        all_sentences = run_prose_checks(blocks, "B", fails)
+        words = sum(word_count(b) for b in blocks)
+        total_words += words
+        file_report(report, rel_path, "B", words, None, None,
+                    PROJECT_LEAD_BUDGET, all_sentences, fails)
+        failures.extend(f"{rel_path}: {fail}" for fail in fails)
+    if total_words > TEACHING_BUDGET:
+        failures.append(
+            f"_teaching: {total_words} words of section prose across both "
+            f"entries, over the shared budget of {TEACHING_BUDGET}"
+        )
+    return total_words, failures
+
+
+def rendered_excerpt_words():
+    """Words the /research/ rows render from publication and talk front
+    matter. Each excerpt is already checked in its own file; here they
+    count toward the page budget of the page that renders them."""
+    total = 0
+    for rel_path in FILES:
+        if not rel_path.startswith(("_publications/", "_talks/")):
+            continue
+        raw = (ROOT / rel_path).read_text(encoding="utf-8")
+        front = FRONT_MATTER_RE.match(raw).group(0)
+        excerpt_match = EXCERPT_RE.search(front)
+        if excerpt_match:
+            total += word_count(clean_prose(excerpt_match.group(1)))
+    return total
+
+
 def run_prose_checks(blocks, tier, fails):
     """The checks every prose block gets: banned words, sentence and
     paragraph limits, acronym expansion. Returns the sentence list."""
@@ -364,7 +441,7 @@ def file_report(report, rel_path, tier, words, budget, lead, lead_budget,
     }
 
 
-def check_file(rel_path, tier, budget, report):
+def check_file(rel_path, tier, budget, report, extra_words=0):
     path = ROOT / rel_path
     raw = path.read_text(encoding="utf-8")
     fails = []
@@ -383,7 +460,7 @@ def check_file(rel_path, tier, budget, report):
 
     all_sentences = run_prose_checks(blocks, tier, fails)
 
-    words = sum(word_count(b) for b in blocks)
+    words = sum(word_count(b) for b in blocks) + extra_words
     if budget is not None and words > budget:
         fails.append(f"page at {words} words, over its budget of {budget}")
 
@@ -511,6 +588,9 @@ def main():
     report = {}
     failures = []
 
+    teaching_words, teaching_failures = check_teaching(report)
+    research_extra = teaching_words + rendered_excerpt_words()
+
     for rel_path, (tier, budget) in FILES.items():
         if rel_path.startswith("_publications/"):
             fails = check_front_matter(rel_path, tier, budget,
@@ -523,9 +603,12 @@ def main():
                                        TALK_EXCERPT_BUDGET, report,
                                        has_page=not REDIRECT_TO_RE.search(front))
         else:
-            fails = check_file(rel_path, tier, budget, report)
+            extra = research_extra if rel_path == "_pages/research.html" else 0
+            fails = check_file(rel_path, tier, budget, report,
+                               extra_words=extra)
         for fail in fails:
             failures.append(f"{rel_path}: {fail}")
+    failures.extend(teaching_failures)
     failures.extend(check_stats_include())
 
     if show_metrics:
@@ -552,7 +635,10 @@ def main():
         for failure in failures:
             print(f"  {failure}")
         return 1
-    print(f"prose_check: clean ({len(FILES)} files and the stats include)")
+    print(
+        f"prose_check: clean ({len(FILES) + len(TEACHING_FILES)} files "
+        "and the stats include)"
+    )
     return 0
 
 
