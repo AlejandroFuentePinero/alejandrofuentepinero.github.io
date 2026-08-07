@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex, nofollow">
+  <title>{{ page.title }} | {{ site.author.name }}</title>
+  {% include theme-script.html %}
+  <link rel="preload" href="{{ '/assets/fonts/newsreader-var.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/inter-var.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/styleguide.css' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/groodle_favicon_256.png' | relative_url }}">
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include site-header.html demo=true %}
+  <main id="main">
+    {{ content }}
+  </main>
+  {% include site-footer.html %}
+</body>
+</html>
