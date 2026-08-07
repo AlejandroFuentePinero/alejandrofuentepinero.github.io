@@ -199,3 +199,37 @@ Produced on branch `refurb/phase-5-publications`, 2026-08-07. Numbering continue
 ## Tooling
 
 96. **prose_check publications policy (the front matter call).** Publication prose reaches the page through front matter, so the checker reads the 2 fields the pages render as prose: the excerpt (25-word ceiling, no question marks, per the index-entries-are-findings rule) and the summary (all Tier B checks plus the 120-word budget). The title and citation fields are verbatim records and are skipped, which also exempts the citation en dashes, sitting inside numeric ranges as the brief permits. Media titles are third-party records verified against their sources and are skipped. The body must be nothing but the record-marked abstract: any prose outside the markers fails. All 8 new checks fired on seeded violations before landing clean.
+
+# DECISIONS.md: Phase 5 judgment calls, talks pass
+
+Produced on branch `refurb/phase-5-talks`, 2026-08-07. Numbering continues from the publications pass. Working rule unchanged: only pressing decisions were surfaced; everything else follows best practice and is logged here. Settled before the pass started: the 12-entry consolidation and the 4 kept pages stand (DECISIONS 39, 40), the duplicated ZENQ and ESA-SCBO abstracts stay collapsed on their pages, and the PhD seminar abstract is repaired against the published thesis record.
+
+## Copy
+
+97. **The talk pages reuse the publications mechanics exactly.** A `summary` block scalar in front matter, rendered above everything by the talk layout through markdownify, then the submitted abstract inside a collapsed disclosure. The excerpt is the row entry on /research/ and no longer renders on the page, where its first sentence would repeat the summary's opening. This closes the interim state DECISIONS 10 and 45 recorded: every talk now carries explicit prose, so nothing auto-excerpts an abstract.
+
+98. **The disclosure reads "Original abstract as submitted", not "as published".** Talks submit abstracts to a committee; journals publish them. The papers keep their own wording, and both labels sit in TERMINOLOGY.
+
+99. **The 2 duplicated abstracts stay, collapsed and uniform.** The ZENQ 2023 abstract duplicates the 2023 Global Change Biology paper and the ESA-SCBO 2022 abstract duplicates the reshuffling paper. One template for all 4 pages beats a special case: the duplication sits invisibly at level 3, the record is never touched, and each page carries a "Paper page" cross-link so a reader who wants the paper is 1 click away rather than reading the same text twice by accident.
+
+100. **The 4 summaries were written from what each talk argued, not from its abstract.** Each opens on the result and states the method only where it carries the argument. Every number traces to the record: 47 species and 5 drivers from 2000 to 2016 (birds), 7,613 assemblages (reshuffling), three decades of monitoring (seminar). The birds summary deliberately does not reuse the paper page's closing sentence, because the same work now has 2 pages and they must not read as a copy.
+
+101. **The seminar page links the thesis, not 4 chapter papers.** The exit seminar is the whole doctorate, and its 4 chapters already have paper pages reachable from /research/. Linking all 4 from the talk page would duplicate the index; linking none would strand the deepest page on the site. The page carries 1 link, to the published thesis at its DOI, with the title verbatim. The flying fox talk links nothing, because no paper exists yet.
+
+102. **The ESA-SCBO poster arc moved from the body into front matter.** The body of a page file must hold nothing but the record-marked abstract, so the poster sentence became a `poster` block (title verbatim, venue, local PDF link) rendered by the layout as an "Also presented" section. The row's `also` line is unchanged. Same mechanism for the seminar's `thesis` block.
+
+103. **The "Abstract - " prefix lines were dropped from the 4 page files only.** They are presentation, not record, exactly as DECISIONS 44 read the papers' "# Abstract" headings; the disclosure summary now carries that label. The 8 rows-only files keep their prefixes, because their bodies are not touched at all.
+
+104. **The talk row gained the excerpt below the venue, per the styleguide.** Component 8 was built at Gate 3 with the order title, venue, excerpt, so the page follows the component rather than the publication row's order. No CSS changed: `.talk-row__excerpt` already existed and had never been used.
+
+## The record
+
+105. **The PhD seminar abstract repair (3 artefacts, nothing else).** The published thesis is "An uphill battle: the impacts of climate change on Montane rainforest vertebrates" (James Cook University, 2024, DOI 10.25903/07p8-7k08). ResearchOnline blocks non-browser requests, and its record page carries only a 2-sentence repository blurb, so the abstract came from the thesis PDF itself, page vii to viii. The word-level diff against the site text found exactly 3 differences: "reshufiling" to "reshuffling", "biogeo chemical" to "biogeochemical", and "causallinks" to "causal links". Every other word matches the thesis exactly. The diff is committed in the gate evidence.
+
+106. **The seminar abstract stays abridged.** The site text is 278 words of the thesis abstract's 519: it omits the habitat-suitability and community-reshuffling paragraphs, 2 closing sentences, and part of the final sentence, and every word it keeps matches the thesis. That is the submitted seminar abstract, an author's own condensation, not corruption, so it was repaired and not expanded. Restoring the missing 241 words would replace one record with a different one.
+
+107. **The IBRC 2025 record keeps its non-breaking spaces.** The abstract carries U+00A0 in 3 places alongside its em dashes. A first pass flattened them to ordinary spaces; they were restored byte for byte. The em dashes stay inside the markers and appear nowhere in the new prose.
+
+## Tooling
+
+108. **prose_check reads talks the way it reads publications.** `check_publication` became `check_front_matter`, shared by both collections with a `has_page` flag. All 12 talk files are checked on the excerpt (20-word ceiling, no questions); the 4 page files add the summary (Tier B, 100-word budget) and the rule that the body holds nothing but the record. The 8 rows-only files render as redirects, so their unrendered bodies are treated as records and only the excerpt is checked, which is why the em dashes in the NFFF and IBRC abstracts never reach a reader or the checker. A new check fires if a rows-only entry grows a summary that nothing would render. All 12 new checks fired on seeded violations before landing clean.

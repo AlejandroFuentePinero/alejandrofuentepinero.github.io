@@ -31,3 +31,11 @@ Found while working, not fixed, per the working rules in REFURB_BRIEF.md section
 13. **The El Austral media line cannot be verified.** "Woody bamboo flowering in Puyehue National Park" carries no link, and the outlet is a Chilean print newspaper, so the real headline (presumably Spanish) is unknown; the recorded line reads as a description rather than a headline. It moved to the 2017 bamboo paper page unaltered. If the owner holds the clipping, the line can be replaced with the real headline and date.
 
 14. **Two citations record early-view pagination.** The possum paper citation reads "00, 1– 11" and the 2023 Global Change Biology citation "00, 1-9"; the versions of record have volume and page numbers (the 2023 paper is 29(8), 2132-2140 per PubMed). Citations are never edited under the hard rule, so both stay as recorded. Updating them to the versions of record is an owner call.
+
+## Phase 5, talks pass
+
+15. **The teaching section is 3 times its word budget.** CONTENT_MAP 8 budgets 120 words for teaching on /research/; the 2 entries render 367. They were migrated whole in Phase 4 and are the next pass's material, so nothing was touched here. The page's rendered prose total sits above the 700 budget mainly because of them. Seen in passing while checking the rendered page, for that pass to fix: the James Cook University entry records "Role: Guess lecturer" where it means guest lecturer.
+
+16. **Doubled spaces inside 3 talk locations**: "Mission Beach,  Australia", "Palm Cove,  Australia" and "Santa Cruz,  Chile". Locations are facts and were not touched, and HTML collapses the space so nothing renders wrong. Worth a single pass if the owner ever wants the source clean.
+
+17. **The 8 rows-only talk files keep full abstracts that nothing renders.** Their `redirect_to` output replaces the body (DECISIONS 39), so the text survives in the source as a record and never reaches a reader. That is deliberate, but it means those abstracts are outside every prose check. If a rows-only talk is ever promoted to a page, wrap its abstract in record markers and add a summary first, or the checker will fail the file.
