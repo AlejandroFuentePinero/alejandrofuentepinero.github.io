@@ -418,6 +418,36 @@
   padding: var(--space-2xs) var(--space-sm);
 }
 
+/* Card media variant, used by the app cards: screenshot above the body. */
+.card--media {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card--media .card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+}
+
+.card__shot {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-sunk);
+}
+
+.card__note {
+  margin: 0;
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+}
+
 /* 6. Embed frame for the digital twin, with fallback state
    ========================================================================== */
 
@@ -900,7 +930,8 @@
   .theme-toggle,
   .nav-toggle,
   .embed-frame,
-  .skip-link {
+  .skip-link,
+  .print-hide {
     display: none !important;
   }
 
@@ -921,4 +952,44 @@
   .talk-row__year {
     color: var(--ink-muted);
   }
+}
+
+/* 15. Type filter row (added in Phase 4 for /projects/)
+   Progressive enhancement: ships hidden, revealed by JS. The active
+   state follows the accent-underline rule, like the nav.
+   ========================================================================== */
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-block: var(--space-lg);
+}
+
+.filter-row__btn {
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: 500;
+  line-height: 1;
+  color: var(--ink-muted);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: var(--space-xs) var(--space-md);
+  cursor: pointer;
+  transition: color var(--dur) var(--ease),
+    border-color var(--dur) var(--ease);
+}
+
+.filter-row__btn:hover {
+  color: var(--ink);
+  border-color: var(--ink-faint);
+}
+
+.filter-row__btn[aria-pressed="true"] {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
 }

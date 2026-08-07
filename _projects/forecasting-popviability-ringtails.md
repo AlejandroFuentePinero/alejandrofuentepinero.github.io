@@ -1,8 +1,14 @@
 ---
 title: "Forecasting Population Viability with Bayesian Hierarchical Models"
 excerpt: "Developed Bayesian hierarchical models incorporating detection probability to forecast population viability and support elevated conservation status for imperilled species."
-tier: research   # featured | learning | research
 date: 2022-11-06
+type: research
+stack:
+  - R
+  - JAGS
+  - Forecasting
+redirect_from:
+  - /datascience/projects/forecasting-popviability-ringtails/
 ---
 
 ## Problem

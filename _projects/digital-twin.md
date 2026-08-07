@@ -2,8 +2,14 @@
 title: "Digital Twin"
 excerpt: "A conversational agent that answers professional questions about me — experience, research, projects, skills — built as a production-grade RAG system with branch-routed prompting, a model-as-judge guardrail, and end-to-end observability. Embedded on the home page; deployed on HuggingFace Spaces."
 date: 2026-05-07
-tier: featured   # featured | learning | research
-order: 2
+type: engineering
+stack:
+  - Python
+  - ChromaDB
+  - LiteLLM
+  - Gradio
+redirect_from:
+  - /datascience/projects/digital-twin/
 ---
 
 ## Links (start here)

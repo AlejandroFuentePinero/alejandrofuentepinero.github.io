@@ -1,8 +1,14 @@
 ---
 title: "Predicting Species Abundance from Environmental Suitability"
 excerpt: "Applied ensemble machine learning to convert presence-only niche models into abundance predictions, combining big-data wrangling, advanced analytics, and multi-algorithm ensembles."
-tier: research   # featured | learning | research
 date: 2021-10-12
+type: research
+stack:
+  - R
+  - Ensemble ML
+  - MaxEnt
+redirect_from:
+  - /datascience/projects/predicting-abundance-from-niche-theory/
 ---
 
 ## Problem

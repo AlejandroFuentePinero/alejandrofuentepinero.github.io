@@ -1,8 +1,14 @@
 ---
 title: "Detecting Climate Impacts on Rainforest Birds Using Bayesian Spatiotemporal Modelling"
 excerpt: "Applied hierarchical Bayesian models with satellite-derived predictors to identify climate-driven population changes in rainforest birds across space and time."
-tier: research   # featured | learning | research
 date: 2023-01-18
+type: research
+stack:
+  - R
+  - JAGS
+  - Remote sensing
+redirect_from:
+  - /datascience/projects/spatiotemporal-bird-climate-impacts/
 ---
 
 ## Problem

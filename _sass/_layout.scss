@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Page scaffolding (Phase 4)
+   Layout glue for the content pages: the centred prose column, page
+   headers, sections. Components stay in _components.scss.
+   ========================================================================== */
+
+/* The centred prose column (brief 5.3): 68ch, centred, padded. */
+.prose-column {
+  max-width: calc(var(--measure) + 2 * var(--space-lg));
+  margin-inline: auto;
+  padding-inline: var(--space-lg);
+}
+
+.page-block {
+  padding-block: var(--space-2xl) var(--space-xl);
+}
+
+.page-header {
+  margin-bottom: var(--space-xl);
+}
+
+.page-header__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.page-header__venue {
+  margin: 0;
+  color: var(--ink-muted);
+}
+
+.page-header .card__chips {
+  margin-top: var(--space-sm);
+  max-width: none;
+}
+
+/* The level 2 lead: one plain paragraph before anything dense. */
+.page-lead {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  line-height: 1.5;
+  max-width: var(--measure);
+}
+
+/* Section rhythm on index pages (home, work, research). */
+.section {
+  margin-block: var(--space-3xl);
+}
+
+.section__eyebrow {
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.section > h2 {
+  margin-bottom: var(--space-lg);
+}
+
+/* Headings inside a disclosure body read as appendix labels, not page
+   structure: body face at body size, whatever the markdown level. */
+.disclosure__body h1,
+.disclosure__body h2,
+.disclosure__body h3 {
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  font-weight: 600;
+  margin: var(--space-md) 0 var(--space-2xs);
+}
+
+/* Citation block on publication pages: quiet, mono-adjacent. */
+.citation-block {
+  margin-block: var(--space-xl);
+  border-left: 2px solid var(--rule);
+  padding-left: var(--space-lg);
+}
+
+.citation-block > .label {
+  display: block;
+  margin-bottom: var(--space-2xs);
+}
+
+.citation-block p {
+  margin: 0;
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+
+/* Home page: hero name split from role by rhythm alone. */
+.home-section {
+  margin-block: var(--space-3xl);
+}
+
+.home-section > h2 {
+  margin-bottom: var(--space-lg);
+}

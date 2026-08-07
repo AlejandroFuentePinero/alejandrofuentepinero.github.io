@@ -8,9 +8,9 @@
   url: "https://alejandrofupi-digital-twin.hf.space"
   source: "https://github.com/AlejandroFuentePinero/digital-twin"
   project: /projects/digital-twin/
-  pitch: ""          # max 25 words, written in Phase 5
+  pitch: "A conversational agent that answers questions about my work, with a second model reviewing every answer before it ships."
   demonstrates: ""   # one line, written in Phase 5
-  note: ""           # optional operational caveat, e.g. wake time
+  note: "Embedded on the home page; this entry links the standalone Space."
   screenshot: /images/apps/digital-twin.png
 
 - id: 7ph-graph
@@ -18,8 +18,9 @@
   status: live
   treatment: link
   url: "https://7phgraph.com"
-  source: ""         # confirm public repo link in Phase 5
+  source: "https://github.com/AlejandroFuentePinero/7ph-graph"
   project: /projects/7ph-graph/
+  pitch: "Explore the Australian 7 Point Highlander metagame: 107 events, 4,591 decks, every chart carrying provenance and statistical guards."
   note: "First load can take about 10 seconds."
   screenshot: /images/apps/7ph-graph.png
 
@@ -28,8 +29,9 @@
   status: live
   treatment: link
   url: "https://job-intelligence-engine.streamlit.app"
-  source: "https://github.com/AlejandroFuentePinero"   # confirm exact repo in Phase 5
+  source: "https://github.com/AlejandroFuentePinero/job-intelligence-engine"
   project: /projects/job-intelligence-engine/
+  pitch: "A job market intelligence system built on 6,100 postings: skill demand, salary signals and ranked role recommendations."
   note: ""
   screenshot: /images/apps/job-intelligence-engine.png
 
@@ -40,5 +42,6 @@
   url: "https://alejandrodelafuente.shinyapps.io/BirdsPopTrendAWT/"
   source: ""
   project: /projects/heightened-protection-bird-trends/
+  pitch: "Interactive explorer for rainforest bird population trends in the Australian Wet Tropics, built from long-term standardised monitoring."
   note: "Free hosting, wakes in about 20 seconds."
   screenshot: /images/apps/birds-shiny.png

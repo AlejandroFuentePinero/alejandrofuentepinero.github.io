@@ -1,124 +1,31 @@
-# Welcome to Jekyll!
-# Site Settings
+# Site settings
 locale                   : "en-US"
 title                    : "Alejandro de la Fuente"
 logo                     : "/images/groodle_favicon_256.png"
-title_separator          : 
-name                     : &name "Alejandro de la Fuente"
-description              : &description "AI engineer building retrieval pipelines, agents and the evaluation that proves they work. Grounded in years of Bayesian wildlife forecasting with real consequences."
+name                     : "Alejandro de la Fuente"
+description              : "AI engineer building retrieval pipelines, agents and the evaluation that proves they work. Grounded in years of Bayesian wildlife forecasting with real consequences."
 url                      : https://alejandrofuentepinero.github.io
 baseurl                  : ""
 repository               : "AlejandroFuentePinero/alejandrofuentepinero.github.io"
-# The theme is vendored in-repo (academicpages fork of Minimal Mistakes).
+# The design system is self-contained in _sass/ and assets/css/site.scss.
 # Without an explicit null, the github-pages gem injects jekyll-theme-primer
 # and ships 76 KB of dead CSS at /assets/css/style.css.
 theme                    : null
-teaser                   :
-breadcrumbs              : false
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled"
-talkmap_link             : false
+og_image                 :          # real 1200x630 asset arrives in Phase 6
 
-comments:
-  provider               :
-  disqus:
-    shortname            :
-  discourse:
-    server               :
-  facebook:
-    appid                :
-    num_posts            :
-    colorscheme          :
-
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601"
-
-atom_feed:
-  path                   :
-
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-# Social Sharing
-twitter:
-  username               : &twitter
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :
-
-# Social profiles
-social:
-  type                   :
-  name                   :
-  links: []
-
-# Analytics
-analytics:
-  provider               : "google-universal"
-  google:
-    tracking_id          :
-
-# Site Author
+# Site author. Consumed by the header brand, the footer contact links and
+# the contact page.
 author:
   name             : "Alejandro de la Fuente"
-  avatar           : "profile.jpeg"
-  bio              : "AI Engineer and Data Scientist"
   location         : "Melbourne, Australia"
-  employer         :
-  pubmed           :
-  googlescholar    : "https://scholar.google.com.au/citations?user=7CKVdZwAAAAJ&hl=en"
   email            : "alejandrofuentepinero@gmail.com"
-  researchgate     :
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
+  googlescholar    : "https://scholar.google.com.au/citations?user=7CKVdZwAAAAJ&hl=en"
   github           : "AlejandroFuentePinero"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      :
-  lastfm           :
   linkedin         : "alejandro-dela-fuente/"
   orcid            : "https://orcid.org/0000-0001-9686-3844"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    :
-  steam            :
-  tumblr           :
-  twitter          : "Afuentepinero"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
 
-# Reading Files
+# Reading files
 include:
-  - .htaccess
   - _pages
   - files
 exclude:
@@ -130,6 +37,8 @@ exclude:
   - CONTENT_MAP.md
   - DECISIONS.md
   - MIGRATIONS.md
+  - FINDINGS.md
+  - CLAUDE.md
   - docs
   - .asset-cache
   - .bundle
@@ -142,9 +51,6 @@ exclude:
   - LICENSE
   - README
   - Rakefile
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
   - config
   - gulpfile.js
   - log
@@ -164,7 +70,7 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-# Markdown Processing
+# Markdown processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -178,99 +84,44 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
-    permalink: /:collection/:path/
+    output: false
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/
-  # Data Science projects collection (keeps DS items under /datascience/projects/)
   projects:
     output: true
-    permalink: /datascience/projects/:path/
-    sort_by: order
-    order: ascending
+    permalink: /projects/:path/
 
 # Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: false
-      share: false
-      related: true
-  # _pages
+      layout: post
   - scope:
       path: ""
       type: pages
     values:
-      layout: single
-      author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: false
-      comments: false
-  # _publications
+      layout: page
   - scope:
       path: ""
       type: publications
     values:
-      layout: single
-      author_profile: true
-      share: false
-      comments: false
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: false
-      comment: false
-  # _talks
+      layout: publication
   - scope:
       path: ""
       type: talks
     values:
       layout: talk
-      author_profile: true
-      share: false
-  # _projects (DS)
   - scope:
       path: ""
       type: projects
     values:
-      layout: single
-      author_profile: true
-  # Academic section sidebar
-  - scope:
-      path: "academic"
-    values:
-      sidebar:
-        nav: academic
-
-  # Data Science section sidebar
-  - scope:
-      path: "datascience"
-    values:
-      sidebar:
-        nav: datascience
+      layout: project
 
 # Sass/SCSS
 sass:
@@ -279,8 +130,6 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5
-# paginate_path: /page:num/
 timezone: Australia/Brisbane
 
 # Plugins
@@ -298,17 +147,3 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
-# Archives
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-# HTML Compression
-compress_html:
-  clippings: all
-  ignore:
-    envs: development

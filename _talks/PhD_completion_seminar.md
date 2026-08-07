@@ -2,7 +2,9 @@
 title: "The impacts of Climate Change on the Rainforest Vertebrates of the Australian Wet Tropics"
 collection: talks
 type: "Talk"
-permalink: /talks/PhD_exit_seminar
+permalink: /research/phd-exit-seminar-2024/
+redirect_from:
+  - /talks/PhD_exit_seminar
 venue: "James Cook University"
 date: 2024-07-01
 location: "Townsville, Australia"
