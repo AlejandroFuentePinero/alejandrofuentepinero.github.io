@@ -1,7 +1,9 @@
 ---
 title: 'The Action Plan for Australian Birds 2021'
 date: 2021-12-01
-permalink: /posts/2012/08/blog-post-1/
+permalink: /posts/action-plan-australian-birds-2021/
+redirect_from:
+  - /posts/2012/08/blog-post-1/
 tags:
   - Australian birds
   - Climate change

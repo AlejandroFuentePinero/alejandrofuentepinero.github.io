@@ -1,9 +1,12 @@
 ---
 title: "Predicted alteration of vertebrate communities in response to climate-induced elevational shifts"
 collection: publications
-permalink: /publication/Diversity%20and%20Distributions%20-%202022%20-%20de%20la%20Fuente%20-%20Predicted%20alteration%20of%20vertebrate%20communities%20in%20response%20to
+permalink: /research/community-reshuffling-2022/
+redirect_from:
+  - "/publication/Diversity%20and%20Distributions%20-%202022%20-%20de%20la%20Fuente%20-%20Predicted%20alteration%20of%20vertebrate%20communities%20in%20response%20to"
+  - "/publication/Diversity and Distributions - 2022 - de la Fuente - Predicted alteration of vertebrate communities in response to"
 excerpt: 'Climate-driven community re-shuffling in the mountains of the Australian Wet Tropics.'
-date: 2022-04-1
+date: 2022-04-01
 venue: 'Diversity and Distributions'
 paperurl: 'https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13514'
 citation: 'de la Fuente, A., Krockenberger, A., Hirsch, B., Cernusak, L., & Williams, S. (2022). &quot;Predicted alteration of vertebrate communities in response to climate-induced elevational shifts.&quot; <i>Diversity and Distributions</i>. 28, 1180– 1190.'
