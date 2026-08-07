@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Contact"
+description: "I'm open to AI engineering roles, research collaborations and hard evaluation problems. Email is the fastest way to reach me."
 permalink: /contact/
 ---
 

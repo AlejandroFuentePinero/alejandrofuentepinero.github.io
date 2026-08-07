@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Work"
+description: "I tracked possums and birds across the Australian Wet Tropics, and my models helped decide which species received legal protection."
 permalink: /work/
 redirect_from:
   - /academic/cv/

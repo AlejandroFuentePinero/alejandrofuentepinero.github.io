@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Threatened species nominations"
+description: "My models and monitoring evidence supported formal protection nominations for 15 upland species: 14 rainforest birds and the lemuroid ringtail possum."
 permalink: /research/threatened-species/
 redirect_from:
   - /academic/threatened_species/
