@@ -1,0 +1,10 @@
+---
+# The Phase 3 design system bundle. Serves the styleguide now and the new
+# layouts from Phase 4. The legacy bundle is assets/css/main.scss.
+hidden: true
+sitemap: false
+---
+
+@import "tokens";
+@import "typography";
+@import "components";

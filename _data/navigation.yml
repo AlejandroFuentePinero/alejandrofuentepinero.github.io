@@ -1,3 +1,17 @@
+# The unified five-item nav (brief 3.1). Consumed by _includes/site-header.html;
+# the target pages arrive in Phase 4.
+refurb:
+  - title: "Work"
+    url: /work/
+  - title: "Projects"
+    url: /projects/
+  - title: "Apps"
+    url: /apps/
+  - title: "Research"
+    url: /research/
+  - title: "Contact"
+    url: /contact/
+
 # Top header links
 main:
   - title: "AI Engineering"

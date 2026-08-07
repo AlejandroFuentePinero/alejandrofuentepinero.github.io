@@ -1,0 +1,12 @@
+{% comment %}
+  Component 4: skills chip row. Two groups from _data/skills.yml rendered
+  as one visually continuous row.
+{% endcomment %}
+<div class="chip-row" aria-label="Skills">
+  {% for group in site.data.skills.groups %}
+    <span class="label chip-row__group">{{ group.name }}</span>
+    {% for chip in group.chips %}
+      <span class="chip">{{ chip }}</span>
+    {% endfor %}
+  {% endfor %}
+</div>
