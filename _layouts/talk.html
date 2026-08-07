@@ -7,5 +7,33 @@ layout: default
     <h1>{{ page.title }}{% if page.award %} <span class="tag-award">{{ page.award }}</span>{% endif %}</h1>
     <p class="page-header__venue">{{ page.venue }} &middot; {{ page.location }}</p>
   </header>
-  {{ content }}
+
+  {{ page.summary | markdownify }}
+
+  <details class="disclosure">
+    <summary><span class="label">Original abstract as submitted</span></summary>
+    <div class="disclosure__body">
+      {{ content }}
+    </div>
+  </details>
+
+  {% if page.poster %}
+  <section class="citation-block">
+    <span class="label">Also presented</span>
+    <p>{{ page.poster.title }} &middot; {{ page.poster.venue }}</p>
+    <p class="pub-row__links"><a href="{{ page.poster.url | relative_url }}" rel="noopener">Poster</a></p>
+  </section>
+  {% endif %}
+
+  {% if page.thesis %}
+  <section class="citation-block">
+    <span class="label">Thesis</span>
+    <p><a href="{{ page.thesis.url }}" rel="noopener">{{ page.thesis.title }}</a> &middot; {{ page.thesis.venue }}</p>
+  </section>
+  {% endif %}
+
+  {% if page.paper %}
+  {% assign paper_page = site.publications | where_exp: "p", "p.url == page.paper" | first %}
+  <p><strong>Paper page:</strong> <a href="{{ page.paper | relative_url }}">{{ paper_page.title }}</a></p>
+  {% endif %}
 </article>
