@@ -10,7 +10,7 @@ order: 1
 - **Live app:** [Streamlit App](https://job-intelligence-engine.streamlit.app/)
 - **GitHub repo:** [Job Intelligence Engine](https://github.com/AlejandroFuentePinero/job-intelligence-engine)
 
-![Job Intelligence Engine — Demo](https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/app_demo.gif)
+![Job Intelligence Engine — Demo](/files/app_demo.gif)
 
 ## Overview
 
@@ -33,7 +33,7 @@ Job postings are noisy: roles and skills overlap heavily in meaning, postings de
 The system runs as a deterministic pipeline. It normalises raw postings (titles, locations, salaries, skill tokens), learns market structure via probabilistic skill-requirement models and a tuned salary model, then translates those signals into transparent positioning scores, recommendations, and upskilling targets. The engine separates suitability (fit to your current profile) from competitiveness (barrier to entry driven by missing or rare skill requirements) — a distinction most job tools collapse into a single score. Outputs are served through a lightweight Streamlit interface.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/project_pipeline_simple.png" alt="Job Intelligence Engine — system workflow" style="width:100%; max-width:1100px;">
+  <img src="/files/project_pipeline_simple.png" alt="Job Intelligence Engine — system workflow" style="width:100%; max-width:1100px;">
 </figure>
 
 ## Stack

@@ -71,7 +71,7 @@ End-to-end AI and data systems that prioritise reliability and usability:
 <div class="ds-feature-media">
   <a href="/datascience/projects/job_intelligence_engine/" aria-label="Open Job Intelligence Engine">
     <img
-      src="https://raw.githubusercontent.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/master/files/engine_path.png"
+      src="/files/engine_path.png"
       alt="Job Intelligence Engine workflow"
     >
   </a>
