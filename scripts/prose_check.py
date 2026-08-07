@@ -14,6 +14,11 @@ Scope: the files in FILES below plus the stats include. Later Phase 5
 passes extend FILES collection by collection. The styleguide (internal,
 exempt) and the redirect stubs (no prose) are deliberately absent.
 
+Project pages (_projects/) have no total word budget: level 3 is
+unbounded per CONTENT_MAP section 8. They instead carry 2 budgets of
+their own, from REFURB_BRIEF section 2.4: at most 120 visible words
+before the first heading, and a card excerpt of at most 25 words.
+
 Verbatim records (citations, degree and course titles, grant and award
 lines, the nomination list) sit between <!-- record --> and
 <!-- /record --> markers in the source and are skipped by every check:
@@ -35,7 +40,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 # file -> (tier, word budget). Budgets from CONTENT_MAP.md section 8;
-# terms and sitemap budgets set in DECISIONS.md (Phase 5).
+# terms and sitemap budgets set in DECISIONS.md (Phase 5). A budget of
+# None means no total cap (project pages, level 3 unbounded).
 FILES = {
     "_pages/home.html": ("B", 450),
     "_pages/work.md": ("B", 420),
@@ -47,19 +53,44 @@ FILES = {
     "_pages/sitemap.md": ("A", 120),
     "_pages/terms.md": ("A", 150),
     "_pages/threatened_species.md": ("B", 150),
+    "_projects/7ph-graph.md": ("A", None),
+    "_projects/ai-jie.md": ("A", None),
+    "_projects/digital-twin.md": ("A", None),
+    "_projects/job-intelligence-engine.md": ("A", None),
+    "_projects/llm-engineering-lab.md": ("A", None),
+    "_projects/mlb-analytics-sql.md": ("A", None),
+    "_projects/python-labs.md": ("A", None),
+    "_projects/bird-elevational-migration.md": ("A", None),
+    "_projects/dynamic-community-reshuffling.md": ("A", None),
+    "_projects/ecosystem-pathway-cascades.md": ("A", None),
+    "_projects/forecasting-popviability-ringtails.md": ("A", None),
+    "_projects/forest-gap-abundance-gradients.md": ("A", None),
+    "_projects/heightened-protection-bird-trends.md": ("A", None),
+    "_projects/physiological-stress-climate-populations.md": ("A", None),
+    "_projects/predicting-abundance-from-niche-theory.md": ("A", None),
+    "_projects/spatiotemporal-bird-climate-impacts.md": ("A", None),
 }
 
 STATS_INCLUDE = "_includes/stats-band.html"
 
 SENTENCE_LIMIT = {"A": 20, "B": 25}
 PARAGRAPH_LIMIT = 4
+PROJECT_LEAD_BUDGET = 120
+PROJECT_EXCERPT_BUDGET = 25
 
 EM_DASH = "—"
 EN_DASH = "–"
 
 # Acronyms treated as words, plus proper names that look like acronyms
 # (TERMINOLOGY.md, acronym policy).
-ACRONYM_ALLOW = {"AI", "CV", "PDF", "XML", "URL", "CONAF", "CSIRO", "ORCID"}
+ACRONYM_ALLOW = {
+    "AI", "CV", "PDF", "XML", "URL", "CONAF", "CSIRO", "ORCID",
+    # Added in the _projects pass (TERMINOLOGY.md, acronym policy):
+    # ubiquitous technical terms treated as words, and acronym-shaped
+    # proper names (products, software, model and class names).
+    "API", "SQL", "JSON", "JSONL", "GPU", "DVD",
+    "GPT", "JAGS", "JIE", "SBERT", "SHAP", "SNE", "AA",
+}
 
 # Acronym -> expansion that must appear earlier on the same page.
 ACRONYM_EXPANSIONS = {
@@ -69,6 +100,8 @@ ACRONYM_EXPANSIONS = {
     "RAG": "retrieval-augmented generation",
     "WCS": "wildlife conservation society",
     "DOI": "digital object identifier",
+    "MRR": "mean reciprocal rank",
+    "MLB": "major league baseball",
 }
 
 # Banned words and constructions, REFURB_BRIEF.md section 6.2. The
@@ -143,6 +176,7 @@ def extract_blocks(text):
     for raw_block in re.split(r"\n\s*\n", text):
         for line in raw_block.splitlines():
             line = re.sub(r"^\s*(?:[*+-]|#{1,6}|\d+\.)\s+", "", line).strip()
+            line = line.replace("**", "")
             line = line.strip("*_` ")
             if line:
                 blocks.append(line)
@@ -192,6 +226,10 @@ def check_file(rel_path, tier, budget, report):
     all_sentences = []
     limit = SENTENCE_LIMIT[tier]
     for block in blocks:
+        # Toolchain rows ("Python · Gradio · ...") are token lists, not
+        # prose: version dots would otherwise read as sentence ends.
+        if " · " in block:
+            continue
         sentences = split_sentences(block)
         all_sentences.extend(sentences)
         if len(sentences) > PARAGRAPH_LIMIT:
@@ -222,20 +260,55 @@ def check_file(rel_path, tier, budget, report):
             fails.append(f'acronym "{acronym}" used before its expansion')
 
     words = sum(word_count(b) for b in blocks)
-    if words > budget:
+    if budget is not None and words > budget:
         fails.append(f"page at {words} words, over its budget of {budget}")
+
+    lead_words = None
+    if rel_path.startswith("_projects/"):
+        lead_words = check_project_page(raw, fails)
 
     lengths = [word_count(s) for s in all_sentences]
     report[rel_path] = {
         "tier": tier,
         "words": words,
         "budget": budget,
+        "lead": lead_words,
         "sentences": len(all_sentences),
         "mean": round(sum(lengths) / len(lengths), 1) if lengths else 0,
         "longest": max(lengths) if lengths else 0,
         "fails": fails,
     }
     return fails
+
+
+HEADING_RE = re.compile(r"^#{1,6}\s", re.M)
+EXCERPT_RE = re.compile(r"^excerpt:\s*[\"']?(.*?)[\"']?\s*$", re.M)
+
+
+def check_project_page(raw, fails):
+    """Project-page budgets: lead of 120 words before the first heading
+    (REFURB_BRIEF 2.4) and a card excerpt of 25 words."""
+    body = FRONT_MATTER_RE.sub("", raw)
+    heading = HEADING_RE.search(body)
+    lead_text = body[: heading.start()] if heading else body
+    lead_words = sum(word_count(b) for b in extract_blocks(lead_text))
+    if lead_words > PROJECT_LEAD_BUDGET:
+        fails.append(
+            f"{lead_words} words before the first heading "
+            f"(max {PROJECT_LEAD_BUDGET})"
+        )
+
+    front = FRONT_MATTER_RE.match(raw)
+    excerpt = EXCERPT_RE.search(front.group(0)) if front else None
+    if excerpt is None:
+        fails.append("no excerpt in front matter (cards and the sitemap need one)")
+    else:
+        n = word_count(excerpt.group(1))
+        if n > PROJECT_EXCERPT_BUDGET:
+            fails.append(
+                f"excerpt of {n} words (max {PROJECT_EXCERPT_BUDGET})"
+            )
+    return lead_words
 
 
 def check_stats_include():
@@ -257,14 +330,19 @@ def main():
     failures.extend(check_stats_include())
 
     if show_metrics:
-        header = f'{"file":<34}{"tier":<6}{"words":<12}{"sents":<7}{"mean":<7}{"longest":<9}{"dashes":<8}{"banned"}'
+        header = (
+            f'{"file":<52}{"tier":<6}{"words":<12}{"lead":<9}'
+            f'{"sents":<7}{"mean":<7}{"longest":<9}{"dashes":<8}{"banned"}'
+        )
         print(header)
         for rel_path, r in report.items():
             dash_fails = sum("dash" in f for f in r["fails"])
             banned_fails = sum("banned" in f for f in r["fails"])
+            budget = "-" if r["budget"] is None else str(r["budget"])
+            lead = "-" if r["lead"] is None else f'{r["lead"]}/{PROJECT_LEAD_BUDGET}'
             print(
-                f'{rel_path:<34}{r["tier"]:<6}'
-                f'{str(r["words"]) + "/" + str(r["budget"]):<12}'
+                f'{rel_path:<52}{r["tier"]:<6}'
+                f'{str(r["words"]) + "/" + budget:<12}{lead:<9}'
                 f'{r["sentences"]:<7}{r["mean"]:<7}{r["longest"]:<9}'
                 f"{dash_fails:<8}{banned_fails}"
             )
