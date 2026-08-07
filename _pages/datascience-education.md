@@ -116,7 +116,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python%20bootcamp.pdf)
+[_(Click to view certificate)_](/files/python%20bootcamp.pdf)
 
 - **Outcome:** strong programming foundation for automation, scripting, data handling, and maintainable code.
 - **Coverage:**
@@ -137,7 +137,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/python_ML.pdf)
+[_(Click to view certificate)_](/files/python_ML.pdf)
 
 - **Outcome:** end-to-end applied ML workflow: wrangling → modelling → evaluation.
 - **Coverage:**
@@ -174,13 +174,13 @@ classes: wide projects-page
   <div markdown="1">
 
   - **Module 1 — Supervised Machine Learning: Regression and Classification**  
-    [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/supervised_ml.png)
+    [_(Click to view certificate)_](/files/supervised_ml.png)
 
   - **Module 2 — Advanced Learning Algorithms**  
-    [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/advanced_learning_algorithms.png)
+    [_(Click to view certificate)_](/files/advanced_learning_algorithms.png)
 
   - **Module 3 — Unsupervised Learning, Recommenders, and Reinforcement Learning**  
-    [_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/unsupervised_learning.png)
+    [_(Click to view certificate)_](/files/unsupervised_learning.png)
 
   </div>
   </details>
@@ -197,7 +197,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_basic.pdf)
+[_(Click to view certificate)_](/files/sql_basic.pdf)
 
 - **Outcome:** strong SQL foundation for analytics workflows in PostgreSQL.
 - **Coverage:**
@@ -215,7 +215,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/sql_advanced.pdf)
+[_(Click to view certificate)_](/files/sql_advanced.pdf)
 
 - **Outcome:** advanced analytical SQL patterns for complex relational datasets.
 - **Coverage:**
@@ -238,7 +238,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/ai_engineer.pdf)
+[_(Click to view certificate)_](/files/ai_engineer.pdf)
 
 - **Outcome:** end-to-end LLM engineering proficiency — from Frontier API integration and open-source model deployment through RAG, fine-tuning, and production-grade agentic systems.
 - **Coverage:**
@@ -275,7 +275,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/agentic_AI.png)
+[_(Click to view certificate)_](/files/agentic_AI.png)
 
 - **Outcome:** foundations of agentic workflows (plan/act/reflect) and tool-based systems.
 - **Coverage:**
@@ -448,7 +448,7 @@ classes: wide projects-page
 
 <div markdown="1">
 
-[_(Click to view certificate)_](https://github.com/AlejandroFuentePinero/alejandrofuentepinero.github.io/blob/master/files/git_github.pdf)
+[_(Click to view certificate)_](/files/git_github.pdf)
 - **Outcome:** professional Git fluency for collaborative codebases.  
 - **Coverage:**  
   - Core workflow: working tree → staging → commits; branching/merging; conflict resolution.  

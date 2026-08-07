@@ -3,9 +3,6 @@ layout: single
 title: "Threatened Species Nomination"
 permalink: /academic/threatened_species/
 author_profile: true
-redirect_from: 
-  - /md/
-  - /markdown.html
 #sidebar:
 #  nav: "academic"
 ---

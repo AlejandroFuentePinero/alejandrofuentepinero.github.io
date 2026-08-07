@@ -1,0 +1,44 @@
+# _data/apps.yml
+# status: live | archived        (drives the stats band count)
+# treatment: embed | link | archive   (drives the /apps/ card rendering)
+- id: digital-twin
+  name: "Digital twin"
+  status: live
+  treatment: embed
+  url: "https://alejandrofupi-digital-twin.hf.space"
+  source: "https://github.com/AlejandroFuentePinero/digital-twin"
+  project: /projects/digital-twin/
+  pitch: ""          # max 25 words, written in Phase 5
+  demonstrates: ""   # one line, written in Phase 5
+  note: ""           # optional operational caveat, e.g. wake time
+  screenshot: /images/apps/digital-twin.png
+
+- id: 7ph-graph
+  name: "7PH Graph"
+  status: live
+  treatment: link
+  url: "https://7phgraph.com"
+  source: ""         # confirm public repo link in Phase 5
+  project: /projects/7ph-graph/
+  note: "First load can take about 10 seconds."
+  screenshot: /images/apps/7ph-graph.png
+
+- id: job-intelligence-engine
+  name: "Job Intelligence Engine"
+  status: live
+  treatment: link
+  url: "https://job-intelligence-engine.streamlit.app"
+  source: "https://github.com/AlejandroFuentePinero"   # confirm exact repo in Phase 5
+  project: /projects/job-intelligence-engine/
+  note: ""
+  screenshot: /images/apps/job-intelligence-engine.png
+
+- id: birds-shiny
+  name: "Bird population trends"
+  status: live
+  treatment: link
+  url: "https://alejandrodelafuente.shinyapps.io/BirdsPopTrendAWT/"
+  source: ""
+  project: /projects/heightened-protection-bird-trends/
+  note: "Free hosting, wakes in about 20 seconds."
+  screenshot: /images/apps/birds-shiny.png
