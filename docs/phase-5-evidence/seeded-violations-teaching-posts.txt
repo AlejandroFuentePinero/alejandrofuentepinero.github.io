@@ -1,0 +1,15 @@
+prose_check: 14 violation(s)
+  _pages/research.html: page at 754 words, over its budget of 700
+  _publications/delafuente_et_al_2021_ecography.md: excerpt of 30 words (max 25)
+  _posts/2021-12-01-action-plan-australian-birds.md: 1 em dash(es) outside record regions
+  _posts/2021-12-01-action-plan-australian-birds.md: banned word or construction "seamless" in: "The accounts cover upland rainforest birds of the Australian Wet Tropi"
+  _posts/2021-12-01-action-plan-australian-birds.md: sentence of 44 words (tier B max 25): "More seeded filler follows to carry the post past its level 2 budget o"
+  _posts/2021-12-01-action-plan-australian-birds.md: page at 132 words, over its budget of 120
+  _teaching/james_cook_university.md: 1 em dash(es) outside record regions
+  _teaching/james_cook_university.md: sentence of 30 words (tier B max 25): "I tutored and demonstrated in undergraduate ecology, demonstrated in M"
+  _teaching/james_cook_university.md: sentence of 26 words (tier B max 25): "Seeded filler words now push the shared teaching section well past its"
+  _teaching/mentoring.md: 1 en dash(es) outside record regions
+  _teaching/mentoring.md: banned word or construction "robust" in: "The worst heat stress responses in the spectacled flying fox come when"
+  _teaching/mentoring.md: sentence of 39 words (tier B max 25): "She joined behavioural observations to microclimate measurements in 20"
+  _teaching/mentoring.md: unknown acronym "XYZQ": expand it, add an expansion to ACRONYM_EXPANSIONS, or allowlist it per TERMINOLOGY.md
+  _teaching: 152 words of section prose across both entries, over the shared budget of 120
