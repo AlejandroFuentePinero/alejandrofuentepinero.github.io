@@ -8,9 +8,7 @@ layout: default
     <p class="page-header__venue"><em>{{ page.venue }}</em></p>
   </header>
 
-  {% if page.excerpt %}
-  <p class="page-lead">{{ page.excerpt }}</p>
-  {% endif %}
+  {{ page.summary | markdownify }}
 
   <details class="disclosure">
     <summary><span class="label">Original abstract as published</span></summary>
@@ -28,4 +26,18 @@ layout: default
     {% if page.paperurl %}<a href="{{ page.paperurl }}" rel="noopener">Paper</a>{% endif %}
     {% if page.pdf %}<a href="{{ page.pdf }}" rel="noopener">PDF</a>{% endif %}
   </p>
+
+  {% if page.media %}
+  <section class="citation-block">
+    <span class="label">Media</span>
+    {% for item in page.media %}
+    <p>{% if item.url %}<a href="{{ item.url }}" rel="noopener">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %} &middot; {{ item.outlet }}</p>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if page.project %}
+  {% assign project_page = site.projects | where_exp: "p", "p.url == page.project" | first %}
+  <p><strong>Project page:</strong> <a href="{{ page.project | relative_url }}">{{ project_page.title }}</a></p>
+  {% endif %}
 </article>
