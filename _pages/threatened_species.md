@@ -1,13 +1,16 @@
 ---
 layout: page
-title: "Threatened Species Nomination"
+title: "Threatened species nominations"
 permalink: /research/threatened-species/
 redirect_from:
   - /academic/threatened_species/
 ---
 
-My research has contributed to a better understanding of the impacts of climate change on tropical biodiversity. One of the most relevant findings is the rapid climate-driven biodiversity erosion. Below is a list of the most relevant cases, representing a robust representation of the unique biodiversity that constituted the Outstanding Universal Value of the Wet Tropics of North Queensland. All these species have a prominent characteristic in common - they are restricted to the highlands of the Australian Wet Tropics. The rapid decline of upland populations highlighs the alarming rapid collapse of tropical montane ecosystems, following a clear pattern of the ["escalator to extinction"](https://www.pnas.org/doi/abs/10.1073/pnas.1817416115).
+Climate change is emptying the mountain tops of the Australian Wet Tropics. My models and monitoring evidence supported formal protection nominations for 15 upland species: 14 rainforest birds and the lemuroid ringtail possum. Each nomination went to the Australian Government under the Environment Protection and Biodiversity Conservation Act (EPBC Act). The bird nominations also went to the International Union for Conservation of Nature (IUCN) through BirdLife International.
 
+Every species on the list is restricted to the highlands, where warming pushes populations upslope until no habitat remains. Ecologists call this pattern the ["escalator to extinction"](https://www.pnas.org/doi/abs/10.1073/pnas.1817416115). The nominations below are listed as submitted.
+
+<!-- record -->
 
 ### 15. Lemuroid Ringtail Possum
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999).
@@ -68,3 +71,5 @@ My research has contributed to a better understanding of the impacts of climate 
 ### 1. Wet Tropics King-Parrot
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
 - Authors: Williams, S., de la Fuente A., Freeman, AND., Graig, M., Garnett, ST. (2021).
+
+<!-- /record -->
