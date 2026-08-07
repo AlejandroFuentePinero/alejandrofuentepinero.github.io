@@ -21,7 +21,10 @@ The projects escalate. Early ones isolate one pattern each. The flagship joins t
 - **Source:** [llm-engineering-lab on GitHub](https://github.com/AlejandroFuentePinero/llm-engineering-lab)
 
 <p align="center">
-  <img src="/files/llm-engineering-cartoon.png" alt="LLM Engineering Lab" width="900">
+  <picture>
+    <source type="image/webp" srcset="/files/llm-engineering-cartoon.webp">
+    <img src="/files/llm-engineering-cartoon.png" alt="Cartoon of a programmer and a robot, both in cowboy hats, at a desk beside a screen that reads LLM Tools" width="900" height="600" loading="lazy">
+  </picture>
 </p>
 
 ## The flagship: a price predictor

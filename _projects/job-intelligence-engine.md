@@ -25,7 +25,7 @@ Its language model extraction layer, [AI-JIE](/projects/ai-jie/), has its own pa
 - **Source:** [job-intelligence-engine on GitHub](https://github.com/AlejandroFuentePinero/job-intelligence-engine)
 - **Technical report:** [Methods, evaluation and results](https://github.com/AlejandroFuentePinero/job-intelligence-engine/blob/main/docs/narrative/technical_report.md)
 
-![Job Intelligence Engine demo](/files/app_demo.gif)
+<img src="/files/app_demo.gif" alt="Job Intelligence Engine demo" width="960" height="540" loading="lazy">
 
 ## Architecture
 
@@ -36,7 +36,10 @@ A graph layer embeds jobs and skills from their co-occurrence and clusters them 
 User positioning separates 2 ideas most job tools collapse into one score. Suitability measures fit to your current profile. Competitiveness measures the barrier: missing, rare skill requirements and seniority expectations. The recommender turns the 2 axes into the best-now and stretch shortlists, each with explicit gap explanations.
 
 <figure>
-  <img src="/files/project_pipeline_simple.png" alt="Job Intelligence Engine system workflow" style="width:100%; max-width:1100px;">
+  <picture>
+    <source type="image/webp" srcset="/files/project_pipeline_simple.webp">
+    <img src="/files/project_pipeline_simple.png" alt="Job Intelligence Engine system workflow" width="1536" height="1024" loading="lazy" style="width:100%; max-width:1100px;">
+  </picture>
 </figure>
 
 ## The decision that was hard

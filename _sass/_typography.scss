@@ -11,7 +11,7 @@ $latin-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
 @font-face {
   font-family: "Newsreader";
   font-style: normal;
-  font-weight: 200 800;
+  font-weight: 400 600;
   font-display: swap;
   src: url("../fonts/newsreader-var.woff2") format("woff2");
   unicode-range: $latin-range;
@@ -20,7 +20,7 @@ $latin-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
 @font-face {
   font-family: "Newsreader";
   font-style: italic;
-  font-weight: 200 800;
+  font-weight: 400 600;
   font-display: swap;
   src: url("../fonts/newsreader-italic-var.woff2") format("woff2");
   unicode-range: $latin-range;
@@ -29,7 +29,7 @@ $latin-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
 @font-face {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: 400 600;
   font-display: swap;
   src: url("../fonts/inter-var.woff2") format("woff2");
   unicode-range: $latin-range;
@@ -38,7 +38,7 @@ $latin-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
 @font-face {
   font-family: "Inter";
   font-style: italic;
-  font-weight: 100 900;
+  font-weight: 400 600;
   font-display: swap;
   src: url("../fonts/inter-italic-var.woff2") format("woff2");
   unicode-range: $latin-range;
@@ -47,7 +47,7 @@ $latin-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
-  font-weight: 100 800;
+  font-weight: 400 600;
   font-display: swap;
   src: url("../fonts/jetbrains-mono-var.woff2") format("woff2");
   unicode-range: $latin-range;
@@ -192,6 +192,12 @@ blockquote {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* The webp <picture> wrappers are layout-neutral: the img inside stays
+   the flex or grid child its component styles expect. */
+picture {
+  display: contents;
 }
 
 figure {

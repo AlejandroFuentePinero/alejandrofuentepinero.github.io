@@ -2,6 +2,7 @@
 layout: page
 permalink: /terms/
 title: "Terms and Privacy Policy"
+description: "This site is static. It sets no cookies, runs no analytics and shows no ads."
 ---
 
 ## Privacy

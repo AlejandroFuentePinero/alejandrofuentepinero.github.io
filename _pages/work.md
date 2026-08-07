@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Work"
+description: "I tracked possums and birds across the Australian Wet Tropics, and my models helped decide which species received legal protection."
 permalink: /work/
 redirect_from:
   - /academic/cv/
@@ -20,7 +21,7 @@ redirect_from:
   <li class="timeline__entry">
     <span class="timeline__dates">2024 to now</span>
     <div>
-      <h3 class="timeline__role">Postdoctoral fellow</h3>
+      <h2 class="timeline__role">Postdoctoral fellow</h2>
       <p class="timeline__org">James Cook University &middot; Australia</p>
       <p class="timeline__summary">I work on the endangered spectacled flying fox, which lost about a third of its population to a single heatwave in 2018. I model roost microclimates to forecast high-risk heat events and to guide interventions before the next one.</p>
     </div>
@@ -28,7 +29,7 @@ redirect_from:
   <li class="timeline__entry">
     <span class="timeline__dates">2020 to 2024</span>
     <div>
-      <h3 class="timeline__role">PhD candidate, Quantitative Ecology</h3>
+      <h2 class="timeline__role">PhD candidate, Quantitative Ecology</h2>
       <p class="timeline__org">James Cook University &middot; Australia &middot; Cum laude</p>
       <p class="timeline__summary">I studied climate change impacts on rainforest birds and possums in the Australian Wet Tropics. My hierarchical Bayesian models on three decades of monitoring explained the declines, and the results fed formal protection nominations.</p>
     </div>
@@ -36,7 +37,7 @@ redirect_from:
   <li class="timeline__entry">
     <span class="timeline__dates">2019</span>
     <div>
-      <h3 class="timeline__role">Research assistant</h3>
+      <h2 class="timeline__role">Research assistant</h2>
       <p class="timeline__org">James Cook University &middot; Australia</p>
       <p class="timeline__summary">I ran standardised vertebrate surveys across the Wet Tropics, part of the long-term monitoring program that later powered my doctoral models.</p>
     </div>
@@ -44,7 +45,7 @@ redirect_from:
   <li class="timeline__entry">
     <span class="timeline__dates">2017 to 2018</span>
     <div>
-      <h3 class="timeline__role">Research and conservation leader</h3>
+      <h2 class="timeline__role">Research and conservation leader</h2>
       <p class="timeline__org">Kaa-Iya National Park &middot; Bolivia</p>
       <p class="timeline__summary">I led the park's research and conservation programs. The work covered big cat monitoring, supported by the University of Florida and the Wildlife Conservation Society, and ranger training in biodiversity monitoring.</p>
     </div>
@@ -52,7 +53,7 @@ redirect_from:
   <li class="timeline__entry">
     <span class="timeline__dates">2016 to 2017</span>
     <div>
-      <h3 class="timeline__role">Head biologist</h3>
+      <h2 class="timeline__role">Head biologist</h2>
       <p class="timeline__org">CONAF, Puyehue National Park &middot; Chile</p>
       <p class="timeline__summary">This was my first professional data role. I ran the park's field programs and population monitoring, trained rangers and published my first paper on a mass bamboo flowering event.</p>
     </div>

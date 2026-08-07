@@ -12,6 +12,8 @@
   demonstrates: "It shows evaluation discipline applied to an agent: a frozen baseline scores retrieval and answer quality."
   note: "The chat also lives on the home page."
   screenshot: /images/apps/digital-twin.png
+  screenshot_width: 1232
+  screenshot_height: 954
 
 - id: 7ph-graph
   name: "7PH Graph"
@@ -24,6 +26,8 @@
   demonstrates: "It shows graph modelling and a build that refuses to draw charts the evidence cannot support."
   note: "First load can take about 10 seconds."
   screenshot: /images/apps/7ph-graph.png
+  screenshot_width: 1280
+  screenshot_height: 800
 
 - id: job-intelligence-engine
   name: "Job Intelligence Engine"
@@ -36,6 +40,8 @@
   demonstrates: "It shows a deterministic pipeline where every model reports its score on held-out data."
   note: ""
   screenshot: /images/apps/job-intelligence-engine.png
+  screenshot_width: 1280
+  screenshot_height: 800
 
 - id: birds-shiny
   name: "Bird population trends"
@@ -48,3 +54,5 @@
   demonstrates: "It shows research made usable: the models behind a published paper, open for anyone to query."
   note: "Free hosting, wakes in about 20 seconds."
   screenshot: /images/apps/birds-shiny.png
+  screenshot_width: 1280
+  screenshot_height: 800

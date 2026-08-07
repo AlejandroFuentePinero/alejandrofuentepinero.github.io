@@ -1,0 +1,28 @@
+JSON-LD validation, Phase 6. Each block extracted from the built
+HTML, parsed as strict JSON, and checked for schema.org shape:
+known @type, absolute URLs, ISO dates.
+
+PASS  home (Person): 1 node(s), types valid, URLs absolute, dates ISO
+PASS  publication (ScholarlyArticle): 1 node(s), types valid, URLs absolute, dates ISO
+PASS  publication without publisher URL: 1 node(s), types valid, URLs absolute, dates ISO
+PASS  project (CreativeWork): 1 node(s), types valid, URLs absolute, dates ISO
+PASS  apps (SoftwareApplication graph): 4 node(s), types valid, URLs absolute, dates ISO
+
+The full block on the possum publication page:
+
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Climate change threatens the future of rain forest ringtail possums by 2050",
+  "datePublished": "2022-11-06",
+  "description": "Ringtail possum populations in the Wet Tropics fall below viability thresholds by 2050 under forecast warming. Extreme heatwaves do most of the damage.",
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": "Diversity and Distributions"
+  },
+  "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13652",
+  "mainEntityOfPage": "https://alejandrofuentepinero.github.io/research/ringtail-possum-collapse-2022/"
+}
+
+A validator.schema.org run against the live URLs is a 5-minute
+post-merge check; the validator needs a public URL or manual paste.

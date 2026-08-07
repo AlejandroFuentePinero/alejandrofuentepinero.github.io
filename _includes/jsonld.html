@@ -1,0 +1,77 @@
+{% comment %}
+  JSON-LD structured data (REFURB_BRIEF Phase 6): Person on the home
+  page, ScholarlyArticle per publication, CreativeWork per project,
+  SoftwareApplication per app. Every value renders through Liquid from
+  _config.yml, front matter or _data/apps.yml; no fact is typed here.
+  A field with no derivable source is omitted, never invented: the 2018
+  Bosque paper has no publisher URL, so its entry carries none
+  (FINDINGS 4). scripts/prose_check.py enforces the no-literal-values
+  rule on this file.
+{% endcomment %}
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author.name | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "email": {{ site.author.email | jsonify }},
+  "image": {{ site.logo | absolute_url | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "sameAs": [
+    {{ site.author.googlescholar | jsonify }},
+    {{ site.author.orcid | jsonify }},
+    {{ site.author.github | prepend: "https://github.com/" | jsonify }},
+    {{ site.author.linkedin | prepend: "https://www.linkedin.com/in/" | jsonify }}
+  ]
+}
+</script>
+{% elsif page.collection == "publications" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": {{ page.title | jsonify }},
+  "datePublished": {{ page.date | date: "%Y-%m-%d" | jsonify }},
+  "description": {{ page.excerpt | jsonify }},
+  "isPartOf": {
+    "@type": "Periodical",
+    "name": {{ page.venue | jsonify }}
+  },
+  {% if page.paperurl contains "://" %}"url": {{ page.paperurl | jsonify }},
+  {% endif %}"mainEntityOfPage": {{ page_url | jsonify }}
+}
+</script>
+{% elsif page.collection == "projects" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": {{ page.title | jsonify }},
+  "dateCreated": {{ page.date | date: "%Y-%m-%d" | jsonify }},
+  "description": {{ page.excerpt | jsonify }},
+  {% if page.stack %}"keywords": {{ page.stack | join: ", " | jsonify }},
+  {% endif %}"url": {{ page_url | jsonify }}
+}
+</script>
+{% elsif page.url == "/apps/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {% for app in site.data.apps %}{
+      "@type": "SoftwareApplication",
+      "name": {{ app.name | jsonify }},
+      "url": {{ app.url | jsonify }},
+      "description": {{ app.pitch | jsonify }},
+      "screenshot": {{ app.screenshot | absolute_url | jsonify }},
+      "author": {
+        "@type": "Person",
+        "name": {{ site.author.name | jsonify }}
+      }
+    }{% unless forloop.last %},
+    {% endunless %}{% endfor %}
+  ]
+}
+</script>
+{% endif %}

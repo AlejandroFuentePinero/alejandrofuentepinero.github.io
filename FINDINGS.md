@@ -45,3 +45,11 @@ Found while working, not fixed, per the working rules in REFURB_BRIEF.md section
 18. **"Advanced statistics" is the one lowercase course title** against Title Case siblings in the course list. A course title is a record, so it stays as recorded; correcting it against the university's handbook name is an owner call.
 
 19. **Suspected slips inside the chapter citations**, now rendered from `_data/book_chapters.yml` on 2 surfaces: items 1 and 13 both read "pp. 744-746", but the Grey-headed Robin and Bower's Shrike-thrush accounts cannot share a page range. "Oreoscupus gutturalis" for the Fernwren is usually spelled Oreoscopus, and "Heteremyias cinereifrons" usually Heteromyias. Citation strings are never edited under the hard rule; correcting them against the published book is an owner call.
+
+## Phase 6
+
+20. **The threatened-species page skips from h1 to h3.** The nomination list's `###` headings sit inside record markers (DECISIONS 70), so levelling them means editing a record. DECISIONS 44 and 103 read heading labels as presentation, which would permit demoting the list to `##`, but that reading has only ever been applied to labels the layout re-renders. Owner call; every other page now has strict heading order.
+
+21. **files/app_demo.gif is 11 MB.** webp cannot meaningfully compress it (7.7 MB at best settings, DECISIONS 124). A short mp4 or webm of the same demo would land around 1 MB and play identically in a `<video>` tag. Replacing the asset is an owner call; until then it lazy-loads below the fold on one project page.
+
+22. **The AUDIT.md Lighthouse diagnostic is resolved in passing.** The Phase 0 NO_FCP failures on publication pages and the CV reproduced on the legacy layouts and are gone: publication pages and /work/ now measure normally (97 and 99 Performance at Gate 6), so no diagnostic work remains for Phase 7.
