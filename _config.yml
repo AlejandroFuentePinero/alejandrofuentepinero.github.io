@@ -130,6 +130,7 @@ exclude:
   - CONTENT_MAP.md
   - DECISIONS.md
   - MIGRATIONS.md
+  - docs
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
