@@ -1,6 +1,6 @@
 ---
 title: "Digital Twin"
-excerpt: "A conversational agent that answers professional questions about me — experience, research, projects, skills — built as a production-grade RAG system with branch-routed prompting, a model-as-judge guardrail, and end-to-end observability. Embedded on the home page; deployed on HuggingFace Spaces."
+excerpt: "A conversational agent answers questions about my work, grounded in a curated knowledge base. A second model reviews every answer before a visitor sees it."
 date: 2026-05-07
 type: engineering
 stack:
@@ -12,47 +12,55 @@ redirect_from:
   - /datascience/projects/digital-twin/
 ---
 
-## Links (start here)
+The digital twin is a conversational agent that answers questions about my work on my behalf. A second model from a different family reviews every answer before a visitor sees it. On the frozen evaluation baseline, retrieval scores 0.866 mean reciprocal rank and answers score 4.56 on the judge's scale.
+
+Each turn passes through a classifier, a branch-specific prompt, retrieval over a vector store, generation and the guardrail. Failed attempts retry with structured feedback. Persistent failures fall back to a polite contact line. The chat lives on the home page and runs as a Hugging Face Space.
+
+## Links
+
 - **Try it on the home page:** [Digital twin chat](/#digital-twin)
 - **Live demo:** [alejandrofupi-digital-twin.hf.space](https://alejandrofupi-digital-twin.hf.space)
-- **HuggingFace Space:** [Alejandrofupi/digital-twin](https://huggingface.co/spaces/Alejandrofupi/digital-twin)
-- **GitHub repo:** [digital-twin](https://github.com/AlejandroFuentePinero/digital-twin)
+- **Hugging Face Space:** [Alejandrofupi/digital-twin](https://huggingface.co/spaces/Alejandrofupi/digital-twin)
+- **Source:** [digital-twin on GitHub](https://github.com/AlejandroFuentePinero/digital-twin)
 
-## Overview
-
-A "tell me about yourself" page only goes so far. Recruiters, hiring managers, and curious visitors usually have specific questions — what did I actually build, how does my research connect to AI work, what would I do in their team — and a static portfolio is a poor medium for that conversation.
-
-**Digital Twin** is a conversational agent that answers those questions on my behalf, grounded in a curated knowledge base of my experience, research, projects, and skills. It is deliberately not a generic chatbot wrapper: every turn passes through a small classifier, a topic-aware prompt composer, retrieval over a vector store, generation, and a separate model that acts as a guardrail before the answer reaches the visitor. Failed attempts retry with structured feedback; persistent failures fall back to a polite "contact me directly".
-
-The chat is embedded on the home page of this site and also runs as a standalone Space on HuggingFace.
-
-## What it does
-
-- **Answers focused questions about my background** — research, AI engineering, projects, behavioural, and logistical questions are routed to topic-specific prompts that load the right slice of profile and the right rules.
-- **Grounds answers in a real knowledge base** — a small always-on profile (~2k tokens) supplies identity and rules; a larger knowledge base is retrieved on demand. For technical questions, the model can fetch full project READMEs through a registered tool.
-- **Checks itself before replying** — a second model from a different family reviews each draft against the same context the generator saw, and accepts or rejects it. Up to three rejection-feedback retries before falling back.
-- **Logs every turn for observability** — branch, classifier confidence, retrieval chunks, tool calls, retry attempts, and latency are written to a single JSONL log, surfaced in a local operator dashboard ("Sentinel") for drift detection and gap discovery.
-
-## How it works
+## Architecture
 
 <figure>
-  <img src="/files/digital_twin_runtime.png" alt="Digital Twin — runtime pipeline" style="width:100%; max-width:520px; display:block; margin: 0 auto;">
+  <img src="/files/digital_twin_runtime.png" alt="Digital Twin runtime pipeline" style="width:100%; max-width:520px; display:block; margin: 0 auto;">
 </figure>
 
-A small, cheap model (`gpt-4.1-nano`) labels each question, the prompt composer assembles the right rules and context, the generator (`gpt-4.1`) drafts an answer — with optional tool use to fetch project docs on technical branches — and a guardrail model (`claude-sonnet-4-6`) accepts or rejects the result against the same ground truth. Retries on rejection (up to three) carry structured feedback back into the generator; if all attempts fail, the visitor sees a polite contact-me fallback. Either way, the full record of the turn is logged.
+A small classifier (gpt-4.1-nano) labels each question and routes it to a branch: technical, behavioural, logistical, generic or gap. Each branch loads only the profile sections, rules and tools its question type needs. The generator (gpt-4.1) drafts the answer, fetching full project documentation through a registered tool on technical branches. The guardrail (claude-sonnet-4-6) accepts or rejects the draft against the same ground truth the generator saw.
 
-Two ideas do most of the load-bearing work. **Classify-then-route** keeps each question on a narrow track — a behavioural question doesn't see technical-fetch tools, an off-topic question gets a short polite redirect. And the split between a small always-on **Frame** (identity, rules) and a larger retrieved **Substance** (knowledge base) keeps context focused without dropping recall as the corpus grows.
+Rejections carry structured feedback back into the generator, up to 3 times. Shared rule constants feed both the generator and the guardrail, so their rules cannot drift apart.
 
-## Evaluation and drift detection
+Knowledge splits in 2. A small always-on profile of about 2,000 tokens supplies identity and rules. The system retrieves the larger knowledge base on demand from a vector store.
 
-A 149-question evaluation set covers seven question types (direct fact, temporal, comparative, numerical, relationship, spanning, holistic). Retrieval is scored with MRR, nDCG, and keyword coverage; answers with an LLM-as-judge on accuracy, completeness, and relevance.
+Every turn writes one JSONL record: branch, classifier confidence, retrieved chunks, tool calls, retries and latency. A local operator dashboard, Sentinel, reads that log for drift detection and gap discovery.
 
-A separate **canary corpus** of 50 probe questions is replayed periodically and shares the live log file (distinguished by an `is_canary` flag), so drift between releases is visible in the same operator dashboard the live traffic flows through.
+## The decision that was hard
+
+The first design loaded one monolithic prompt: full profile, all rules, retrieved chunks. That put 6,000 to 7,000 tokens into every turn and diluted the model's attention. I had hit that failure mode on earlier projects. Section trimming was a band-aid, and cheap models pick tools unreliably, so model-chosen context was out.
+
+The resolution was classify-then-route. A thin classifier picks the branch, and the branch composes only what its question type needs. The cost is a small classifier call per turn. The gain is a short, relevant prompt on every branch.
+
+## What was measured
+
+A 149-question evaluation set covers 7 question types. The types are direct fact, temporal, comparative, numerical, relationship, spanning and holistic. Retrieval scoring uses mean reciprocal rank (MRR), nDCG and keyword coverage. A judge model scores answers on accuracy, completeness and relevance.
+
+The frozen baseline stands at 0.866 MRR and 4.56 accuracy on the judge's scale.
+
+A canary corpus of 50 probe questions replays periodically against the live system. Canary records carry an `is_canary` flag and share the live log file. Drift therefore appears in the same dashboard the traffic flows through. Major drift flags fell across the last 3 points: 12, then 9, then 6.
+
+## What did not work
+
+The guardrail at first saw only the retrieved chunks, not the content the generator fetched through tools. It judged tool-grounded answers as fabrication and rejected them. The fix shares every grounding surface with the guardrail. Whatever context the generator used, the judge now sees.
+
+The first drift detector compared mechanisms, not outcomes. After a routine re-ingest it raised 52 flags against a healthy system, 33 of them from re-chunked storage. I removed the 2 mechanism-level checks, and the same data produced 12 signal-dominated flags. The detector now watches what visitors would see, not how the system got there.
 
 ## Privacy
 
-Conversations are logged to a private HuggingFace dataset to help me improve the system. Email me at [alejandrofuentepinero@gmail.com](mailto:alejandrofuentepinero@gmail.com) to request deletion.
+The system logs conversations to a private Hugging Face dataset so I can improve it. Email me at [alejandrofuentepinero@gmail.com](mailto:alejandrofuentepinero@gmail.com) to request deletion.
 
 ## Stack
 
-Python · Gradio · ChromaDB · LiteLLM · OpenAI (`gpt-4.1`, `gpt-4.1-nano`, `text-embedding-3-small`) · Anthropic (`claude-sonnet-4-6`) · Pydantic · Tenacity · HuggingFace Spaces & Datasets
+Python · Gradio · ChromaDB · LiteLLM · OpenAI (gpt-4.1, gpt-4.1-nano, text-embedding-3-small) · Anthropic (claude-sonnet-4-6) · Pydantic · Tenacity · Hugging Face Spaces and Datasets
