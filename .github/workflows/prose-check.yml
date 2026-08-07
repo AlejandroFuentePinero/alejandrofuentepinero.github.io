@@ -1,0 +1,14 @@
+name: prose check
+
+on:
+  push:
+    branches: ["main", "refurb/**"]
+  pull_request:
+
+jobs:
+  prose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run prose_check
+        run: python3 scripts/prose_check.py --metrics

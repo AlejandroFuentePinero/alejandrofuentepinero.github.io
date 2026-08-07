@@ -114,3 +114,28 @@ Produced on branch `refurb/phase-4-structure`, 2026-08-07. Numbering continues f
 60. **Config consumed only by deleted templates went with them**: analytics, comments, staticman, social-share and SEO-verification blocks, archive settings, `compress_html`, reading-time and breadcrumb flags. The author block is trimmed to the seven fields the header, footer and contact page consume. `jekyll-paginate` stays in the plugin list for GitHub Pages parity even though nothing paginates.
 61. **The 404 was rewritten, not migrated**: the old copy carried a triple-hyphen dash and a dead Google `fixurl` script. New copy is 3 lines and 2 links.
 62. **The base head is deliberately minimal** (title pattern, meta description from `page.description | excerpt | site.description`, canonical, icons, theme script, fonts, one stylesheet, one script). Phase 6 owns real SEO metadata, og:image and JSON-LD.
+
+# DECISIONS.md: Phase 5 judgment calls, _pages pass
+
+Produced on branch `refurb/phase-5-pages`, 2026-08-07. Numbering continues from Phase 4. Working rule unchanged: only pressing decisions were surfaced; everything else follows best practice and is logged here.
+
+## Settled with the owner
+
+63. **The PhD field reads "Quantitative Ecology" everywhere.** The one surfaced decision: the CV recorded "Zoology and Ecology", the education page "Quantitative Ecology" (FINDINGS 1). The owner chose Quantitative Ecology. Applied to the /work/ education list, the timeline entry and the regenerated CV PDF. Degree punctuation normalised alongside: credential lines read B.S., M.S., Ph.D. (the CV's "Ph.D" lacked its final period), and prose uses "PhD" without periods, per TERMINOLOGY.md.
+
+## Copy
+
+64. **Tier classification.** Tier B: home, /work/, /projects/, /research/, /contact/, /research/threatened-species/. Tier A: /apps/, 404, sitemap, terms. The styleguide is internal and exempt; the redirect stubs carry no prose.
+65. **The timeline stays at 5 entries.** CONTENT_MAP 8 budgeted 6 entries, but only 5 roles exist and the AI engineering work is projects, not employment. Inventing a sixth entry would fake a role. The 40-word summaries were written from the retired academic.md paragraphs, POSITIONING 3.2 and the volunteering record; no new facts introduced.
+66. **The certificates block compressed to title, provider, certificate link and one "Covers" line per course.** The Highlights and Formal Education subsections went entirely: they were the internal degree duplication DECISIONS 50 deferred to this pass, plus a summary-of-a-summary. Every certificate link survives, including the three module certificates. The dropped syllabus prose lives in git history at this branch's parent. The Murray Logan workshop appeared twice (core texts and R) and now appears once, under R.
+67. **Grants and awards compacted to one line per item**: year, organisation, project title verbatim, amount verbatim. Award titles kept verbatim, including "Best talk prize for best presentation" as recorded.
+68. **The terms page now describes the real site.** The old text was template boilerplate about Disqus comments, ad cookies and Google Analytics, none of which exist. The rewrite states what is true: no cookies, no analytics, the localStorage theme value, GitHub Pages request logging, and the digital twin's message logging on Hugging Face, which nothing on the site previously disclosed. Word budgets set where CONTENT_MAP 8 had none: terms 150, sitemap 120.
+69. **Record spelling repairs limited to unambiguous typos** ("Organisaion", "Spaninsh", "iberian", a stray "Year 2016" missing its colon). Names, titles, dates and amounts untouched. The media engagement block was not touched at all: DECISIONS 49 routes it to paper pages in the _publications pass.
+70. **The threatened species page title pluralised** to "Threatened species nominations"; the permalink is unchanged and the nomination list is byte-identical inside its record markers.
+71. **The Gate 1 surfaces shipped unchanged.** Hero, role line, stats band, skills row and the twin framing were reviewed rendered, per the POSITIONING assumption of one polish pass, and needed no edit. The home CTA line and the four card texts were polished; the Job Intelligence Engine card lost its unexpanded "LLM" acronyms to a judge-model phrasing.
+
+## Tooling
+
+72. **Verbatim records are marked in source** with `<!-- record -->` and `<!-- /record -->` comments. `scripts/prose_check.py` skips them for every check and excludes them from word budgets, because records are never rewritten and nothing in them is actionable. The markers ship as invisible HTML comments.
+73. **prose_check scope this pass**: the 10 _pages files plus the digit check on the stats include. Later Phase 5 passes extend the FILES table collection by collection. Acronym rule: an allowlist (AI, CV, PDF, XML, URL, and the acronym-shaped proper names CONAF, CSIRO, ORCID) plus an expansion dictionary; anything else fails. The checker was verified to fail on the pre-rewrite pages (83 violations) and on a digit seeded into the stats include, and runs in CI via `.github/workflows/prose-check.yml` on pushes and pull requests.
+74. **The CV PDF was regenerated** with the Phase 4 method (the /work/ print stylesheet with every disclosure opened): 9 pages, down from 18, with the settled degree title.
