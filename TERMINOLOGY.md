@@ -59,6 +59,16 @@ their original wording and outrank this file.
 |---|---|---|---|
 | The what-it-demonstrates line | opens with "It shows" | Demonstrates:, This demo shows | One line per app in `_data/apps.yml`, stating the engineering signal the pitch does not carry. |
 
+## Publications (added in the publications pass)
+
+| Concept | Term | Not | Notes |
+|---|---|---|---|
+| The block that opens a paper page | plain summary, the front matter `summary` field | lead, rewritten abstract | 120 words, Tier B, written fresh from the finding. The original abstract stays verbatim in the collapsed block. |
+| The paper-to-project cross-link | Project page: | Read more, See also | Mirrors the project pages' "Paper page:" label. The link label is the project page's own title, resolved at build time. |
+| Media lines on paper pages | verified headline · outlet | reworded or summarised headlines | Media titles are third-party records, verified against their sources and never rewritten. Outlet labels are site prose, so acronyms in them expand (James Cook University, not JCU). |
+| The Chilean rodent | viscacha | vizcacha | Follows the paper's own spelling. "vizcacha" survives only in the settled page slug. |
+| The Skyrail funder in prose | Skyrail Rainforest Foundation | Skyrail Foundation | The short form survives only in the verbatim grant lines. |
+
 ## Acronym policy
 
 Expand every acronym on first use per page (section 6.2 rule 10). Exceptions,
@@ -70,8 +80,10 @@ SBERT, SHAP, SNE (inside t-SNE) and AA (the accessibility grade). nDCG is
 treated as a metric name: its 4-word expansion would break the noun-cluster
 rule, so it stays unexpanded beside the expanded mean reciprocal rank (MRR).
 Acronyms inside verbatim records (citations, course titles, the nomination
-list, award venues) are exempt. `scripts/prose_check.py` enforces this with
-the same allowlist and an expansion dictionary (MRR and MLB joined it in the
+list, award venues) are exempt, and so are media titles, which are
+third-party records. ABC inside "ABC News" is the broadcaster's proper name
+and is never expanded. `scripts/prose_check.py` enforces this with the same
+allowlist and an expansion dictionary (MRR and MLB joined it in the
 _projects pass).
 
 ## Mechanics

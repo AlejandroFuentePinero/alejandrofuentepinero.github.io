@@ -1,0 +1,41 @@
+file                                                tier  words       lead     sents  mean   longest  dashes  banned
+_pages/home.html                                    B     174/450     -        14     10.9   21       0       0
+_pages/work.md                                      B     276/420     -        13     16.5   23       0       0
+_pages/projects.html                                B     34/440      -        3      11.0   13       0       0
+_pages/apps.html                                    A     198/200     -        16     12.0   20       0       0
+_pages/research.html                                B     120/700     -        6      15.3   24       0       0
+_pages/contact.md                                   B     38/60       -        3      10.7   12       0       0
+_pages/404.md                                       A     28/30       -        3      9.3    13       0       0
+_pages/sitemap.md                                   A     74/120      -        2      9.0    11       0       0
+_pages/terms.md                                     A     129/150     -        15     8.5    15       0       0
+_pages/threatened_species.md                        B     101/150     -        7      14.4   21       0       0
+_projects/7ph-graph.md                              A     975/-       95/120   72     12.1   20       0       0
+_projects/ai-jie.md                                 A     615/-       93/120   46     12.1   19       0       0
+_projects/digital-twin.md                           A     627/-       97/120   46     12.4   19       0       0
+_projects/job-intelligence-engine.md                A     545/-       89/120   42     12.0   19       0       0
+_projects/llm-engineering-lab.md                    A     830/-       85/120   66     11.2   20       0       0
+_projects/mlb-analytics-sql.md                      A     185/-       75/120   13     12.2   20       0       0
+_projects/python-labs.md                            A     301/-       57/120   20     12.4   20       0       0
+_projects/bird-elevational-migration.md             A     389/-       93/120   25     14.6   20       0       0
+_projects/dynamic-community-reshuffling.md          A     383/-       92/120   25     14.1   19       0       0
+_projects/ecosystem-pathway-cascades.md             A     385/-       81/120   24     14.5   20       0       0
+_projects/forecasting-popviability-ringtails.md     A     414/-       94/120   29     13.0   18       0       0
+_projects/forest-gap-abundance-gradients.md         A     378/-       83/120   26     13.0   20       0       0
+_projects/heightened-protection-bird-trends.md      A     405/-       93/120   28     13.2   19       0       0
+_projects/physiological-stress-climate-populations.mdA     453/-       83/120   32     13.0   20       0       0
+_projects/predicting-abundance-from-niche-theory.md A     426/-       80/120   31     12.5   20       0       0
+_projects/spatiotemporal-bird-climate-impacts.md    A     427/-       85/120   29     13.3   20       0       0
+_publications/delafuente_pacheco_2017_bosque.md     B     105/120     23/25    9      14.2   22       0       0
+_publications/gallardo_et_al_2018.md                B     89/120      23/25    8      14.0   23       0       0
+_publications/delafuente_et_al_2021_ecography.md    B     95/120      25/25    8      15.0   20       0       0
+_publications/Williams_delafuente_2021.md           B     118/120     23/25    9      15.7   23       0       0
+_publications/iriarte_et_al_2021.md                 B     82/120      16/25    6      16.3   23       0       0
+_publications/delafuente_et_al_2022_ddi_reshuffling.mdB     106/120     25/25    9      14.6   19       0       0
+_publications/delafuente_williams_2022_possums_ddi.mdB     113/120     23/25    10     13.6   20       0       0
+_publications/delafuente_et_al_2023_GCB.md          B     118/120     24/25    9      15.8   24       0       0
+_publications/herbivory_awt_2024_oecologia.md       B     104/120     25/25    8      16.1   24       0       0
+_publications/delafuente_2025_GCB.md                B     95/120      21/25    8      14.5   21       0       0
+_publications/siri_et_al_2025.md                    B     111/120     23/25    9      14.9   21       0       0
+_publications/delafuente_2026_NCC.md                B     70/120      20/25    6      15.0   24       0       0
+
+prose_check: clean (38 files and the stats include)

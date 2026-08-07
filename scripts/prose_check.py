@@ -10,10 +10,24 @@ Fails on:
   6. Any page over its word budget.
   7. Any literal digit inside the stats band include.
   8. Any app pitch in _data/apps.yml over its 25-word card ceiling.
+  9. Any publication excerpt over 25 words or asking a question, any
+     publication summary over 120 words, and any publication body prose
+     outside its record markers.
 
 Scope: the files in FILES below plus the stats include. Later Phase 5
 passes extend FILES collection by collection. The styleguide (internal,
 exempt) and the redirect stubs (no prose) are deliberately absent.
+
+Publication files (_publications/) render their prose from front matter:
+the excerpt is the index finding (25-word ceiling, no questions) and the
+summary is the plain-language block that opens the page (Tier B, 120
+words). Those two fields are the checked prose. The title and citation
+fields are verbatim records (citation en dashes sit inside numeric
+ranges, which the brief permits), media titles are third-party records
+verified against their sources, and the body is the original abstract
+inside record markers. None of those are checked, by the same principle
+as the record regions: never rewritten, so nothing in them is
+actionable.
 
 Project pages (_projects/) have no total word budget: level 3 is
 unbounded per CONTENT_MAP section 8. They instead carry 2 budgets of
@@ -77,6 +91,20 @@ FILES = {
     "_projects/physiological-stress-climate-populations.md": ("A", None),
     "_projects/predicting-abundance-from-niche-theory.md": ("A", None),
     "_projects/spatiotemporal-bird-climate-impacts.md": ("A", None),
+    # Publications: the budget is the 120-word summary ceiling; the
+    # excerpt carries its own 25-word ceiling (REFURB_BRIEF 2.4).
+    "_publications/delafuente_pacheco_2017_bosque.md": ("B", 120),
+    "_publications/gallardo_et_al_2018.md": ("B", 120),
+    "_publications/delafuente_et_al_2021_ecography.md": ("B", 120),
+    "_publications/Williams_delafuente_2021.md": ("B", 120),
+    "_publications/iriarte_et_al_2021.md": ("B", 120),
+    "_publications/delafuente_et_al_2022_ddi_reshuffling.md": ("B", 120),
+    "_publications/delafuente_williams_2022_possums_ddi.md": ("B", 120),
+    "_publications/delafuente_et_al_2023_GCB.md": ("B", 120),
+    "_publications/herbivory_awt_2024_oecologia.md": ("B", 120),
+    "_publications/delafuente_2025_GCB.md": ("B", 120),
+    "_publications/siri_et_al_2025.md": ("B", 120),
+    "_publications/delafuente_2026_NCC.md": ("B", 120),
 }
 
 STATS_INCLUDE = "_includes/stats-band.html"
@@ -87,6 +115,7 @@ PARAGRAPH_LIMIT = 4
 PROJECT_LEAD_BUDGET = 120
 PROJECT_EXCERPT_BUDGET = 25
 APP_PITCH_BUDGET = 25
+PUB_EXCERPT_BUDGET = 25
 
 EM_DASH = "—"
 EN_DASH = "–"
@@ -242,22 +271,9 @@ def apps_data_strings(fails):
     return texts
 
 
-def check_file(rel_path, tier, budget, report):
-    path = ROOT / rel_path
-    raw = path.read_text(encoding="utf-8")
-    fails = []
-
-    body = FRONT_MATTER_RE.sub("", raw)
-    for name, char in (("em dash", EM_DASH), ("en dash", EN_DASH)):
-        count = strip_records(body).count(char) + len(
-            re.findall(char, FRONT_MATTER_RE.match(raw).group(0) if FRONT_MATTER_RE.match(raw) else "")
-        )
-        if count:
-            fails.append(f"{count} {name}(es) outside record regions")
-
-    blocks = extract_blocks(raw)
-    if rel_path == "_pages/apps.html":
-        blocks += apps_data_strings(fails)
+def run_prose_checks(blocks, tier, fails):
+    """The checks every prose block gets: banned words, sentence and
+    paragraph limits, acronym expansion. Returns the sentence list."""
     prose_text = "\n".join(blocks)
 
     for pattern, label in BANNED:
@@ -300,6 +316,43 @@ def check_file(rel_path, tier, budget, report):
             )
         elif lower_prose.find(expansion) < 0 or lower_prose.find(expansion) > match.start():
             fails.append(f'acronym "{acronym}" used before its expansion')
+    return all_sentences
+
+
+def file_report(report, rel_path, tier, words, budget, lead, lead_budget,
+                all_sentences, fails):
+    lengths = [word_count(s) for s in all_sentences]
+    report[rel_path] = {
+        "tier": tier,
+        "words": words,
+        "budget": budget,
+        "lead": lead,
+        "lead_budget": lead_budget,
+        "sentences": len(all_sentences),
+        "mean": round(sum(lengths) / len(lengths), 1) if lengths else 0,
+        "longest": max(lengths) if lengths else 0,
+        "fails": fails,
+    }
+
+
+def check_file(rel_path, tier, budget, report):
+    path = ROOT / rel_path
+    raw = path.read_text(encoding="utf-8")
+    fails = []
+
+    body = FRONT_MATTER_RE.sub("", raw)
+    for name, char in (("em dash", EM_DASH), ("en dash", EN_DASH)):
+        count = strip_records(body).count(char) + len(
+            re.findall(char, FRONT_MATTER_RE.match(raw).group(0) if FRONT_MATTER_RE.match(raw) else "")
+        )
+        if count:
+            fails.append(f"{count} {name}(es) outside record regions")
+
+    blocks = extract_blocks(raw)
+    if rel_path == "_pages/apps.html":
+        blocks += apps_data_strings(fails)
+
+    all_sentences = run_prose_checks(blocks, tier, fails)
 
     words = sum(word_count(b) for b in blocks)
     if budget is not None and words > budget:
@@ -309,22 +362,73 @@ def check_file(rel_path, tier, budget, report):
     if rel_path.startswith("_projects/"):
         lead_words = check_project_page(raw, fails)
 
-    lengths = [word_count(s) for s in all_sentences]
-    report[rel_path] = {
-        "tier": tier,
-        "words": words,
-        "budget": budget,
-        "lead": lead_words,
-        "sentences": len(all_sentences),
-        "mean": round(sum(lengths) / len(lengths), 1) if lengths else 0,
-        "longest": max(lengths) if lengths else 0,
-        "fails": fails,
-    }
+    file_report(report, rel_path, tier, words, budget, lead_words,
+                PROJECT_LEAD_BUDGET, all_sentences, fails)
     return fails
 
 
 HEADING_RE = re.compile(r"^#{1,6}\s", re.M)
 EXCERPT_RE = re.compile(r"^excerpt:\s*[\"']?(.*?)[\"']?\s*$", re.M)
+PUB_SUMMARY_RE = re.compile(r"^summary: \|\n((?:  .*\n|\n)*)", re.M)
+
+
+def clean_prose(text):
+    """Reduce a front matter prose string to checkable text."""
+    text = MD_LINK_RE.sub(r"\1", text)
+    return text.replace("**", "").strip()
+
+
+def check_publication(rel_path, tier, budget, report):
+    """Publication files render their prose from front matter: the
+    excerpt (the index finding) and the summary (the plain-language
+    block that opens the page) are the checked prose. The title and
+    citation are verbatim records, media titles are third-party records,
+    and the body is the original abstract inside record markers."""
+    path = ROOT / rel_path
+    raw = path.read_text(encoding="utf-8")
+    fails = []
+    front = FRONT_MATTER_RE.match(raw).group(0)
+    body = FRONT_MATTER_RE.sub("", raw)
+
+    leftover = strip_records(body).strip()
+    if leftover:
+        fails.append(f'body prose outside record markers: "{leftover[:60]}"')
+
+    blocks = []
+    excerpt_words = 0
+    excerpt_match = EXCERPT_RE.search(front)
+    if excerpt_match is None:
+        fails.append("no excerpt in front matter (the research index needs one)")
+    else:
+        excerpt = clean_prose(excerpt_match.group(1))
+        excerpt_words = word_count(excerpt)
+        if excerpt_words > PUB_EXCERPT_BUDGET:
+            fails.append(f"excerpt of {excerpt_words} words (max {PUB_EXCERPT_BUDGET})")
+        if "?" in excerpt:
+            fails.append("excerpt asks a question (index entries state the finding)")
+        blocks.append(excerpt)
+
+    summary_words = 0
+    summary_match = PUB_SUMMARY_RE.search(front)
+    if summary_match is None:
+        fails.append("no summary in front matter (the page opens with it)")
+    else:
+        text = re.sub(r"^  ", "", summary_match.group(1), flags=re.M)
+        paragraphs = [clean_prose(p) for p in re.split(r"\n\s*\n", text) if p.strip()]
+        summary_words = sum(word_count(p) for p in paragraphs)
+        if summary_words > budget:
+            fails.append(f"summary at {summary_words} words, over its budget of {budget}")
+        blocks.extend(paragraphs)
+
+    for name, char in (("em dash", EM_DASH), ("en dash", EN_DASH)):
+        count = sum(block.count(char) for block in blocks)
+        if count:
+            fails.append(f"{count} {name}(es) in the excerpt or summary")
+
+    all_sentences = run_prose_checks(blocks, tier, fails)
+    file_report(report, rel_path, tier, summary_words, budget, excerpt_words,
+                PUB_EXCERPT_BUDGET, all_sentences, fails)
+    return fails
 
 
 def check_project_page(raw, fails):
@@ -367,7 +471,11 @@ def main():
     failures = []
 
     for rel_path, (tier, budget) in FILES.items():
-        for fail in check_file(rel_path, tier, budget, report):
+        if rel_path.startswith("_publications/"):
+            fails = check_publication(rel_path, tier, budget, report)
+        else:
+            fails = check_file(rel_path, tier, budget, report)
+        for fail in fails:
             failures.append(f"{rel_path}: {fail}")
     failures.extend(check_stats_include())
 
@@ -381,7 +489,7 @@ def main():
             dash_fails = sum("dash" in f for f in r["fails"])
             banned_fails = sum("banned" in f for f in r["fails"])
             budget = "-" if r["budget"] is None else str(r["budget"])
-            lead = "-" if r["lead"] is None else f'{r["lead"]}/{PROJECT_LEAD_BUDGET}'
+            lead = "-" if r["lead"] is None else f'{r["lead"]}/{r["lead_budget"]}'
             print(
                 f'{rel_path:<52}{r["tier"]:<6}'
                 f'{str(r["words"]) + "/" + budget:<12}{lead:<9}'
