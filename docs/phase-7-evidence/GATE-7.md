@@ -1,5 +1,28 @@
 # Gate 7 evidence: final QA
 
+## Closeout
+
+The refurbishment ends with this gate. The one-time sequence that
+closes it, in order:
+
+1. PR #18 merges into `refurb/main` after owner review.
+2. The checkpoint merge: `refurb/main` into `main` (merge commit,
+   never squash), push, then `main` back-merged into `refurb/main`.
+3. Post-deploy spot checks on the live domain, about 3 minutes: the
+   Siri 2025 paper page's Paper link opens the article at biotaxa.org,
+   the home twin embed boots and its fallback screenshot still serves,
+   and the CV PDF downloaded from /work/ is the regenerated 8 pages.
+4. The manual browser pass: `manual-browser-checklist.md` beside this
+   file, 12 checks for Firefox, Safari desktop and iOS Safari that the
+   automation could not honestly claim.
+5. The open owner calls stay in `FINDINGS.md` (6, 8, 9, 13, 14, 16,
+   18, 19, 20, 21, 23, 24) until the owner settles each one. None
+   blocks anything.
+6. After a stable week the owner deletes the phase branches and
+   `refurb/main`. From then on `MAINTENANCE.md` governs all work.
+
+## The QA run
+
 Run on branch `refurb/phase-7-final-qa`, 2026-08-08. `refurb/main` and
 `main` were content-identical at run time (they differ by a merge
 commit only), so live-domain checks describe exactly this tree. Every
