@@ -2,8 +2,14 @@
 title: "7PH Graph: A Knowledge Graph of a Competitive Metagame"
 excerpt: "A knowledge graph of the Australian 7 Point Highlander Magic: The Gathering metagame, linking 107 events, 1,083 pilots, 4,591 decks and 4,995 cards down to card attributes. An embedded Cypher store behind a Gradio explorer, with an append-only ingestion pipeline, per-value provenance on everything the build decides, and statistical guards that refuse a chart when the evidence does not support it. Live at 7phgraph.com."
 date: 2026-08-02
-tier: featured   # featured | learning | research
-order: 4
+type: engineering
+stack:
+  - Python
+  - Cypher
+  - Gradio
+  - Plotly
+redirect_from:
+  - /datascience/projects/7ph-graph/
 ---
 
 ## Links (start here)

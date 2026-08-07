@@ -10,9 +10,8 @@ date: 2022-11-06
 venue: 'Diversity and Distributions'
 paperurl: 'https://onlinelibrary.wiley.com/doi/full/10.1111/ddi.13652'
 citation: 'de la Fuente, A. & Williams, S. (2022). &quot;Climate change threatens the future of rain forest ringtail possums by 2050.&quot; <i>Diversity and Distributions</i>. 00, 1– 11.'
+pdf: '/files/Diversity%20and%20Distributions%20-%202022%20-%20Fuente%20-%20Climate%20change%20threatens%20the%20future%20of%20rain%20forest%20ringtail%20possums%20by%202050.pdf'
 ---
-# Abstract
-
 ## Aim
 The increasing frequency and intensity of extreme weather escalate the pressure of global warming on biodiversity. Globally, synergistic effects of multiple components of climate change have driven local extinctions and community collapses, raising concern about the irreversible deterioration of ecosystems. Here, we disentangle the pressure of increasing warming and frequency of extreme heatwaves on the population dynamics of tropical ringtail possums (family: Pseudocheiridae).
 
@@ -27,5 +26,3 @@ We find a strong negative effect of climate change on population dynamics, parti
 
 ## Main Conclusions
 Forecasted increases in temperature and heatwaves threaten the collapse of rain forest ringtail possums by 2050, with populations falling below viability thresholds within three decades.
-
-[Download paper here](/files/Diversity%20and%20Distributions%20-%202022%20-%20Fuente%20-%20Climate%20change%20threatens%20the%20future%20of%20rain%20forest%20ringtail%20possums%20by%202050.pdf)

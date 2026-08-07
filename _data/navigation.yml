@@ -1,5 +1,4 @@
-# The unified five-item nav (brief 3.1). Consumed by _includes/site-header.html;
-# the target pages arrive in Phase 4.
+# The unified five-item nav (brief 3.1). Consumed by _includes/site-header.html.
 refurb:
   - title: "Work"
     url: /work/
@@ -11,42 +10,3 @@ refurb:
     url: /research/
   - title: "Contact"
     url: /contact/
-
-# Top header links
-main:
-  - title: "AI Engineering"
-    url: /datascience/
-  - title: "Academia"
-    url: /academic/
-
-# Sidebar: Academic
-academic:
-  - title: "Academic"
-    class: "nav__sub-title"
-  - title: "Publications"
-    url: /academic/publications/
-  - title: "Book chapters"
-    url: /academic/book_chapter/
-  - title: "Threatened species"
-    url: /academic/threatened_species/
-  - title: "Talks"
-    url: /academic/talks/
-  - title: "Teaching"
-    url: /academic/teaching/
-  - title: "Grants and Awards"
-    url: /academic/grants_awards/
-  - title: "CV"
-    url: /academic/cv/
-
-# Sidebar: Data Science
-datascience:
-  - title: "AI Engineering"
-    class: "nav__sub-title"
-  - title: "Projects"
-    url: /datascience/projects/
-  - title: "Skills"
-    url: /datascience/skills/
-  - title: "Education"
-    url: /datascience/education/
-  - title: "Communication"
-    url: /datascience/communication/

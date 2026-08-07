@@ -2,12 +2,16 @@
 title: "Predicted alteration of vertebrate communities in response to climate-induced elevational shifts"
 collection: talks
 type: "Talk"
-permalink: /talks/esa_scbo_2022
+permalink: /research/elevational-shifts-talk-2022/
+redirect_from:
+  - /talks/esa_scbo_2022
+  - /talks/esa_2021_poster
 venue: "ESA-SCBO conference"
 date: 2022-11-25
 location: "Wollongong, Australia"
-redirect_from:
-  - /talks/esa_2021_poster
+
+award: "Best postgraduate presentation"
+also: "Presented earlier as a poster at the ESA conference, March 2021"
 ---
 Presented earlier as a poster, "Escalator to extinction: predicted community response to an uphill elevational shift in the Wet Tropics", at the ESA conference, March 2021 (virtual). [Link to poster](/images/delafuente_alejandro_escalator_to_extinction_ESA_conference.pdf).
 

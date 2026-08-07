@@ -1,0 +1,69 @@
+---
+layout: default
+title: ""
+permalink: /
+description: "AI engineer building retrieval pipelines, agents and the evaluation that proves they work. Grounded in years of Bayesian wildlife forecasting with real consequences."
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+<div class="container">
+  <section class="hero">
+    <h1 class="hero__name">Alejandro de la Fuente</h1>
+    <p class="hero__role">AI engineer, raised on rainforest data and honest error bars.</p>
+    <p class="hero__thesis">Hi, I'm Alejandro. I build AI systems: retrieval pipelines, agents, and the evaluation that proves they work. I learned that discipline in the rainforest, forecasting wildlife populations where a wrong number could cost a species its protection. I like hard data, honest error bars, and tools people actually use.</p>
+  </section>
+</div>
+
+<div class="container">
+  {% include stats-band.html %}
+</div>
+
+<section id="skills" class="container home-section" aria-label="Skills">
+  {% include skills-row.html %}
+</section>
+
+<section class="container home-section" aria-labelledby="selected-work">
+  <h2 id="selected-work">Selected work</h2>
+  <ul class="card-grid">
+    <li class="card">
+      <p class="card__meta"><span class="label">Engineering</span><span class="label">Live</span></p>
+      <h3 class="card__title"><a href="{{ '/projects/7ph-graph/' | relative_url }}">7PH Graph</a></h3>
+      <p class="card__result">A live knowledge graph of a competitive Magic format: 107 events, 4,591 decks, every chart backed by provenance and statistical guards.</p>
+      <p class="card__chips"><span class="chip">Python</span><span class="chip">Cypher</span><span class="chip">Gradio</span></p>
+    </li>
+    <li class="card">
+      <p class="card__meta"><span class="label">Engineering</span><span class="label">Live</span></p>
+      <h3 class="card__title"><a href="{{ '/projects/job-intelligence-engine/' | relative_url }}">Job Intelligence Engine</a></h3>
+      <p class="card__result">6,100 job postings turned into ranked role recommendations, with an LLM extraction layer scored by an LLM-as-judge evaluation framework.</p>
+      <p class="card__chips"><span class="chip">Python</span><span class="chip">XGBoost</span><span class="chip">LLM-as-judge</span></p>
+    </li>
+    <li class="card">
+      <p class="card__meta"><span class="label">Research</span><span class="label">2022</span></p>
+      <h3 class="card__title"><a href="{{ '/projects/forecasting-popviability-ringtails/' | relative_url }}">Ringtail possum viability forecast</a></h3>
+      <p class="card__result">A hierarchical Bayesian model on 30 years of surveys forecast possum collapse by 2050. It fed a national protection nomination.</p>
+      <p class="card__chips"><span class="chip">R</span><span class="chip">Hierarchical models</span><span class="chip">Forecasting</span></p>
+    </li>
+    <li class="card">
+      <p class="card__meta"><span class="label">Research</span><span class="label">2021</span></p>
+      <h3 class="card__title"><a href="{{ '/projects/heightened-protection-bird-trends/' | relative_url }}">Rainforest bird declines</a></h3>
+      <p class="card__result">17 years of bird monitoring showed upland populations nearly halving. The evidence supported protection nominations for 14 rainforest species.</p>
+      <p class="card__chips"><span class="chip">R</span><span class="chip">GLMs</span><span class="chip">Shiny</span></p>
+    </li>
+  </ul>
+</section>
+
+<section id="digital-twin" class="container home-section" aria-label="Digital twin">
+  {% include embed-frame.html
+    title="Ask the digital twin"
+    context="A retrieval-augmented agent that answers questions about my work. A second model reviews every answer before you see it."
+    url="https://alejandrofupi-digital-twin.hf.space"
+    screenshot="/images/apps/digital-twin.png"
+  %}
+</section>
+
+<section class="container home-section" aria-labelledby="get-in-touch">
+  <h2 id="get-in-touch">Get in touch</h2>
+  <p>I'm open to AI engineering roles, collaborations and interesting evaluation problems. <a href="{{ '/contact/' | relative_url }}">Contact me</a>.</p>
+</section>

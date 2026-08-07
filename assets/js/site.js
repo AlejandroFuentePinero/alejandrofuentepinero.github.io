@@ -119,7 +119,10 @@
             }
           });
         },
-        { rootMargin: "400px" }
+        /* rootMargin 0 on purpose (DECISIONS.md 36 mitigation): the Space
+           can only boot, and only steal scroll, while the frame is already
+           on screen. */
+        { rootMargin: "0px" }
       );
       frames.forEach(function (frame) {
         observer.observe(frame);
@@ -127,5 +130,29 @@
     } else {
       frames.forEach(loadFrame);
     }
+  }
+
+  /* Projects type filter, progressive enhancement: the control ships
+     hidden and every project visible. JS reveals the control; filtering
+     only ever hides cards, so with JS off all projects show. */
+  var filter = document.querySelector("[data-filter]");
+
+  if (filter) {
+    filter.hidden = false;
+    var filterButtons = filter.querySelectorAll("button[data-type]");
+    var cards = document.querySelectorAll("[data-project-type]");
+
+    filter.addEventListener("click", function (event) {
+      var button = event.target.closest("button[data-type]");
+      if (!button) return;
+      var type = button.getAttribute("data-type");
+      filterButtons.forEach(function (b) {
+        b.setAttribute("aria-pressed", b === button ? "true" : "false");
+      });
+      cards.forEach(function (card) {
+        card.hidden =
+          type !== "all" && card.getAttribute("data-project-type") !== type;
+      });
+    });
   }
 })();

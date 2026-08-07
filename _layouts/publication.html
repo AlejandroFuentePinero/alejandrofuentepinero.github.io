@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="prose-column page-block">
+  <header class="page-header">
+    <p class="page-header__meta"><span class="label">Peer-reviewed paper</span><span class="label">{{ page.date | date: "%Y" }}</span></p>
+    <h1>{{ page.title }}</h1>
+    <p class="page-header__venue"><em>{{ page.venue }}</em></p>
+  </header>
+
+  {% if page.excerpt %}
+  <p class="page-lead">{{ page.excerpt }}</p>
+  {% endif %}
+
+  <details class="disclosure">
+    <summary><span class="label">Original abstract as published</span></summary>
+    <div class="disclosure__body">
+      {{ content }}
+    </div>
+  </details>
+
+  <section class="citation-block">
+    <span class="label">Citation</span>
+    <p>{{ page.citation }}</p>
+  </section>
+
+  <p class="pub-row__links">
+    {% if page.paperurl %}<a href="{{ page.paperurl }}" rel="noopener">Paper</a>{% endif %}
+    {% if page.pdf %}<a href="{{ page.pdf }}" rel="noopener">PDF</a>{% endif %}
+  </p>
+</article>

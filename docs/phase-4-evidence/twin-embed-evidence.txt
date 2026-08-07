@@ -1,0 +1,36 @@
+Twin embed evidence, 2026-08-07
+Method: the built site served locally. DOM state read over the Chrome
+DevTools protocol in real time; the failure case reproduced with the
+Space's requests held pending so the load never completes.
+
+1. Lazy loading: home page at 1440x900, the embed below the fold.
+   After load plus 2.5 s: {"iframe": false, "state": "idle"}
+   PASS: no iframe element exists in the DOM before the frame is in
+   view. The IntersectionObserver runs with rootMargin 0 (DECISIONS.md
+   56), so the Space cannot boot, and cannot steal scroll, while it is
+   off screen.
+   Visual: 1440-twin-embed-loading.jpg shows the frame just after it
+   enters the viewport: the vertical space is fully reserved, the quiet
+   placeholder shows, and the Space boots behind it. No layout shift.
+
+2. Load on view: viewport tall enough that the frame intersects on
+   page load. After 25 s of real time:
+   {"iframe": true, "state": "loaded"}
+   PASS: the iframe is created only once the frame is in view and the
+   live Space renders. Confirmed twice (DevTools protocol and a real
+   browser session, where the booted app was interactive). A composited
+   screenshot of the loaded cross-origin iframe is not reliably
+   available from headless capture (out-of-process iframe limitation);
+   the DOM state above is the proof.
+   Observed residual from DECISIONS.md 56, worth knowing at review: in
+   the real browser session, when the Space finished booting it focused
+   its input and the page scrolled back to the embed once. This is the
+   accepted residual behaviour; rootMargin 0 confines it to the time
+   the frame is already on screen.
+
+3. Graceful failure: every request to the Space host held pending, so
+   the frame hangs past the 15 s timeout.
+   Final state: data-state="failed"
+   PASS: the frame swaps to the fallback: the screenshot plus "Open it
+   in a new tab". No broken iframe, no apology.
+   Visual: 1440-twin-embed-fallback.jpg.

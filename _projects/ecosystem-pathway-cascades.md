@@ -1,8 +1,14 @@
 ---
 title: "Modelling Biogeochemical Pathway Cascades using Bayesian Hierarchical Models"
 excerpt: "Revealed ecosystem cascades and biogeochemical pathways in tropical systems using Bayesian hierarchical modelling to quantify direct and indirect effects in complex ecological networks."
-tier: research   # featured | learning | research
 date: 2024-10-25
+type: research
+stack:
+  - R
+  - JAGS
+  - Hierarchical models
+redirect_from:
+  - /datascience/projects/ecosystem-pathway-cascades/
 ---
 
 ## Problem

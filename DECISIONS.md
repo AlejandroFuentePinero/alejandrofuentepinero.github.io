@@ -74,3 +74,43 @@ Produced on branch `refurb/phase-3-design-system`, 2026-08-07. Numbering continu
 36. **Known issue, logged for Phase 4: the Space steals scroll once when it boots.** The twin's app focuses its input when it finishes loading, and the browser scrolls the page to a focused cross-origin iframe. If a visitor triggers the lazy load and moves on during the boot window, the page can jump back to the embed once. Site-side mitigations to weigh when the embed lands on the home page: a smaller IntersectionObserver rootMargin so loading starts only when the frame is visible, or a scroll-restore guard. The Space itself stays in observe mode; nothing there changed.
 37. **The stats include stays digit-free by construction.** Hash pairs are read with `.first` and `.last` because a bracket index is a literal digit; counts come from `where_exp` plus `size`; the year count comes from date arithmetic; even the comment block avoids digits so the future `prose_check.py` grep stays clean. Verified in the built page: 10 / 18 / 4 / 12 / 193 with "as of Aug 2026" formatted by Liquid from the date field.
 38. **Evidence lives in the repo.** `docs/phase-3-evidence/` holds the gate screenshots and the no-flash reload capture, and `docs` joins the build exclude list so none of it ships to the site.
+
+# DECISIONS.md: Phase 4 judgment calls
+
+Produced on branch `refurb/phase-4-structure`, 2026-08-07. Numbering continues from Phase 3. Working rule unchanged: only pressing decisions were surfaced; everything else follows best practice and is logged here.
+
+## Redirects and URLs
+
+39. **The 8 non-page talk URLs redirect via `redirect_to` on the talk documents themselves.** No stub files needed: the plugin replaces each document's output with a redirect page while its front matter stays available to the /research/ talk rows. Verified in the gem source that `redirect_to` replaces `doc.content`, which is why the rows read only front matter.
+40. **The three interim talk redirects now point at their final targets directly, with no chains.** `melbourne_2022` and `tropical_bes_2021` got standalone stubs to `/research/#talks`, replacing the Phase 2 `redirect_from` entries that would have produced two-hop chains through the canonical talks' URLs. `esa_2021_poster` redirects straight to the kept `/research/elevational-shifts-talk-2022/` page.
+41. **The teaching collection switched to `output: false` with two stubs at the old URLs.** The two entries render inline on /research/, which needs their raw content; `redirect_to` on the documents would have replaced that content with redirect HTML (decision 39), so the stubs carry the redirects instead.
+42. **All anchor-target stubs live in `_pages/redirects/`**, one file per old URL, `sitemap: false`.
+43. **The old URL inventory is crawled by script.** `docs/phase-4-evidence/crawl_old_urls.py` serves the built site with GitHub Pages resolution semantics (extensionless URLs resolve to `.html` files), requests all 143 old and new URL forms, follows meta-refresh chains, and requires every one to end in a 200. The report is committed beside it.
+
+## Structure
+
+44. **Publication bodies lost their `# Abstract` heading and download line; nothing else.** The disclosure summary "Original abstract as published" replaces the heading, and each download link moved to a `pdf` front matter field rendered as a PDF link. Abstract text is byte-identical. Where the paper link and the download were the same file (the 2018 Bosque paper), the pdf field was dropped rather than render the same link twice.
+45. **Publication leads and index entries reuse the existing front matter excerpts verbatim.** They are topics, not findings; Phase 5 rewrites them to the standard in CONTENT_MAP 7. Talk rows carry no excerpt at all this phase, because the only existing prose is full abstracts, and auto-excerpting them is the exact sitemap failure the audit flagged.
+46. **Talk awards and second-venue facts moved into front matter** (`award:`, `also:`) so rows and pages render them consistently. Wording comes from the awards file and the talks' own "Also presented" lines; titles, venues and dates untouched.
+47. **The Python labs merged with headings demoted one level** under each lab's title heading, so the merged page keeps a sane outline. A structural card line was written for the merged page (the only card copy that could not migrate verbatim); Phase 5 polishes it.
+48. **Timeline entries carry role, organisation and dates only.** The 40-word summaries are Phase 5 copy; the structure does not fake them in the meantime.
+49. **CV sections with no mapped Phase 4 destination survive as collapsed blocks on /work/**: volunteering and field experience, professional development, the field and modelling skills list, and media engagement. CONTENT_MAP routes media engagement to the relevant paper pages in Phase 5; until then the record stays reachable.
+50. **Education renders the cv.md degree list visibly; everything else from the education page sits verbatim in one collapsed "Certificates and training" block.** The block internally duplicates the degrees (its own Formal Education details); accepted inside level 3 until the Phase 5 rewrite.
+51. **Retired-page prose that CONTENT_MAP routes to Phase 5 destinations was not republished this phase.** The academic.md postdoc and PhD paragraphs (seeds for the /research/ intro) and the datascience-skills depth content (destined for the /work/ intro and project pages) live in git history at this branch's parent; DECISIONS records that so the Phase 5 passes can pull them.
+52. **Editorial service renders as a small disclosure at the end of the publications section**; book chapters live in `_data/book_chapters.yml` (citations verbatim) so the section's count is derived, per CONTENT_MAP 3.1.
+53. **Structural text written this phase, flagged for the Phase 5 polish pass**: the /projects/ lead (option D's closing line, per POSITIONING 1.5), the /work/ lead (option F's rainforest line, same source), the home CTA and contact availability line, the /apps/ intro, the 404 copy, the sitemap intro, and the two /research/ pointer lines (threatened species record, book chapters post).
+54. **Two additions to the styleguide**: the type filter row as component 15, and the app card media variant under component 5. Both were needed by pages the styleguide's 14 components did not cover; both follow the accent-underline and hairline idioms.
+55. **Stack chips were extracted into front matter from each project's own Stack section**, 2 to 5 chips per project, names verbatim.
+
+## Behaviour
+
+56. **The embed observer runs with rootMargin 0** (settled from decision 36): the Space can only boot, and only steal scroll, while the frame is already on screen. Residual behaviour, logged: a visitor who scrolls the frame into view and keeps moving during the boot window can still be pulled back once when the app focuses its input. Accepted for now; the only stronger fix is a scroll-restore guard, revisit if real use shows it.
+57. **The projects filter only ever hides.** The control ships `hidden` and is revealed by JS; filtering toggles `hidden` on cards. With JS off the control never appears and every project shows.
+58. **The CV PDF is generated from /work/ through the print stylesheet** with every disclosure opened, committed at `files/alejandro-de-la-fuente-cv.pdf` and linked from /work/ and /contact/. Regeneration steps go into MAINTENANCE.md in Phase 7.
+
+## Config and strip
+
+59. **Zero jQuery ships.** `main.min.js`, the plugin and vendor JS trees, the entire legacy SCSS tree with its vendor imports, the academicons and font-awesome font files, every legacy layout and include, and the `ui-text`/`authors`/`comments` data files are gone. The only JS on the site is `assets/js/site.js`.
+60. **Config consumed only by deleted templates went with them**: analytics, comments, staticman, social-share and SEO-verification blocks, archive settings, `compress_html`, reading-time and breadcrumb flags. The author block is trimmed to the seven fields the header, footer and contact page consume. `jekyll-paginate` stays in the plugin list for GitHub Pages parity even though nothing paginates.
+61. **The 404 was rewritten, not migrated**: the old copy carried a triple-hyphen dash and a dead Google `fixurl` script. New copy is 3 lines and 2 links.
+62. **The base head is deliberately minimal** (title pattern, meta description from `page.description | excerpt | site.description`, canonical, icons, theme script, fonts, one stylesheet, one script). Phase 6 owns real SEO metadata, og:image and JSON-LD.

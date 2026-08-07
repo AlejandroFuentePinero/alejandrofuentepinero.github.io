@@ -1,0 +1,38 @@
+---
+layout: default
+title: "Projects"
+permalink: /projects/
+redirect_from:
+  - /datascience/
+  - /datascience/projects/
+---
+
+<div class="container page-block">
+  <header class="page-header">
+    <h1>Projects</h1>
+    <p class="page-lead">If I can't measure that it works, I don't ship it.</p>
+  </header>
+
+  <div class="filter-row" data-filter hidden role="group" aria-label="Filter projects by type">
+    <button type="button" class="filter-row__btn" data-type="all" aria-pressed="true">All</button>
+    <button type="button" class="filter-row__btn" data-type="engineering" aria-pressed="false">Engineering</button>
+    <button type="button" class="filter-row__btn" data-type="research" aria-pressed="false">Research</button>
+    <button type="button" class="filter-row__btn" data-type="lab" aria-pressed="false">Labs</button>
+  </div>
+
+  {% assign projects = site.projects | sort: "date" | reverse %}
+  <ul class="card-grid">
+    {% for project in projects %}
+    <li class="card" data-project-type="{{ project.type }}">
+      <p class="card__meta"><span class="label">{{ project.type | capitalize }}</span><span class="label">{{ project.date | date: "%Y" }}</span></p>
+      <h3 class="card__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+      <p class="card__result">{{ project.excerpt }}</p>
+      {% if project.stack %}
+      <p class="card__chips">
+        {% for chip in project.stack %}<span class="chip">{{ chip }}</span>{% endfor %}
+      </p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>

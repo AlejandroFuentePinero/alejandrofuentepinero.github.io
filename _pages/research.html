@@ -1,0 +1,88 @@
+---
+layout: default
+title: "Research"
+permalink: /research/
+redirect_from:
+  - /academic/
+---
+
+<div class="container page-block">
+  <header class="page-header">
+    <h1>Research</h1>
+  </header>
+
+  <section class="section" id="publications" aria-labelledby="publications-heading">
+    <h2 id="publications-heading">Publications</h2>
+    <ul class="pub-list">
+      {% assign publications = site.publications | sort: "date" | reverse %}
+      {% for publication in publications %}
+      <li class="pub-row">
+        <span class="pub-row__year">{{ publication.date | date: "%Y" }}</span>
+        <div>
+          <h3 class="pub-row__title"><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
+          <p class="pub-row__finding">{{ publication.excerpt }}</p>
+          <p class="pub-row__venue"><em>{{ publication.venue }}</em></p>
+          <p class="pub-row__links">
+            {% if publication.paperurl %}<a href="{{ publication.paperurl }}" rel="noopener">Paper</a>{% endif %}
+            {% if publication.pdf %}<a href="{{ publication.pdf }}" rel="noopener">PDF</a>{% endif %}
+          </p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <p>See also the <a href="{{ '/research/threatened-species/' | relative_url }}">threatened species nomination record</a> this research supported.</p>
+    <details class="disclosure">
+      <summary><span class="label">Editorial service</span></summary>
+      <div class="disclosure__body">
+        <ul>
+          <li>Functional Ecology</li>
+          <li>PeerJ</li>
+          <li>Biodiversity and Conservation</li>
+          <li>One Earth</li>
+          <li>Ecology and Evolution</li>
+          <li>Emu - Austral Ornithology</li>
+          <li>Diversity and Distributions</li>
+          <li>Ecography</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <section class="section" id="talks" aria-labelledby="talks-heading">
+    <h2 id="talks-heading">Talks</h2>
+    <ul class="talk-list">
+      {% assign talks = site.talks | sort: "date" | reverse %}
+      {% for talk in talks %}
+      <li class="talk-row">
+        <span class="talk-row__year">{{ talk.date | date: "%Y" }}</span>
+        <div>
+          <h3 class="talk-row__title">{% if talk.redirect_to %}{{ talk.title }}{% else %}<a href="{{ talk.url | relative_url }}">{{ talk.title }}</a>{% endif %}{% if talk.award %}<span class="tag-award">{{ talk.award }}</span>{% endif %}</h3>
+          <p class="talk-row__venue">{{ talk.venue }}, {{ talk.location }}{% if talk.also %} &middot; {{ talk.also }}{% endif %}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="section" id="teaching" aria-labelledby="teaching-heading">
+    <h2 id="teaching-heading">Teaching</h2>
+    {% assign teaching = site.teaching | sort: "date" %}
+    {% for entry in teaching %}
+    <article class="prose">
+      <h3>{{ entry.title }}</h3>
+      <p class="page-header__venue">{{ entry.venue }} &middot; {{ entry.location }}</p>
+      {{ entry.content | markdownify }}
+    </article>
+    {% endfor %}
+  </section>
+
+  <section class="section" id="book-chapters" aria-labelledby="book-chapters-heading">
+    <h2 id="book-chapters-heading">Book chapters</h2>
+    <p>{{ site.data.book_chapters | size }} species accounts in The Action Plan for Australian Birds 2020, CSIRO Publishing. Background in <a href="{{ '/posts/action-plan-australian-birds-2021/' | relative_url }}">this post</a>.</p>
+    <ol>
+      {% for chapter in site.data.book_chapters %}
+      <li>{{ chapter.citation }}</li>
+      {% endfor %}
+    </ol>
+  </section>
+</div>
