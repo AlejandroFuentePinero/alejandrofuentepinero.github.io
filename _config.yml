@@ -38,6 +38,7 @@ exclude:
   - DECISIONS.md
   - MIGRATIONS.md
   - FINDINGS.md
+  - MAINTENANCE.md
   - TERMINOLOGY.md
   - CLAUDE.md
   - docs

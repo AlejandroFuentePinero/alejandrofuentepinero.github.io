@@ -295,3 +295,27 @@ Produced on branch `refurb/phase-6-performance-seo-a11y`, 2026-08-08. Numbering 
 ## Tooling
 
 128. **prose_check reads the three new string kinds.** Descriptions per decision 117. Literal alt text gets the dash and banned-word scans and a 25-word cap (the card ceiling); empty alt is the decorative convention and passes; the acronym rule does not apply because alt text depicts an image rather than introducing terms, and derived alt strings mirror fields checked elsewhere. The JSON-LD include per decision 119. Every new check fired on a seeded violation before landing clean (9 violations in the seeded run, committed in the gate evidence), and the description length check fired on a real defect during development (decision 118).
+
+# DECISIONS.md: Phase 7 judgment calls
+
+Produced on branch `refurb/phase-7-final-qa`, 2026-08-08. Numbering continues from Phase 6. Working rule unchanged: only pressing decisions were surfaced; everything else follows best practice and is logged here.
+
+## Fixes the QA run forced
+
+129. **The Siri 2025 paper links moved from the DOI to the publisher page.** The link check found `https://doi.org/10.37828/em.2025.88.11` resolving to `biotaxa.prod.amazon.auckland.ac.nz`, a hostname that does not resolve on two independent DNS resolvers, so the Paper and Journal links 404 for every visitor. `https://www.biotaxa.org/em/article/view/87143` serves the article (200, verified). The `paperurl` field and the project page's Journal link now point there. The citation string keeps its DOI verbatim, records are never edited. If the registrant repairs the DOI, the links can move back: FINDINGS 23.
+
+130. **The embed fallback gained a reachability probe.** The Gate 7 drill proved that on a fast network failure Chrome commits its own error page inside the iframe and still fires `load`, so the frame reported "loaded" and showed a broken frame; the 15 second timeout never ran because `load` cleared it. The fallback logic in `assets/js/site.js` now also issues a `no-cors` HEAD fetch of the embed URL, which rejects on network failure and flips the frame to the fallback. The timeout stays as the backstop, and a spurious probe failure fails safe: the fallback still links the Space. Verified both ways by the drill: normal load reaches "loaded" and opens full screen, blocked load reaches "failed" with the screenshot fallback visible.
+
+131. **The skills chip-row lost its `aria-label`.** The Nu Html Checker flagged `aria-label` on a role-less `div` as an error on home and the styleguide, the run's only validation error. The labelled section wrapping the row on home carries the accessible name, so the div's label was invalid and redundant at once. Removed in `_includes/skills-row.html`; all 11 pages revalidate with zero errors. Info-level notices were retained with reasons, logged in the validation report.
+
+132. **The CV PDF was stale and is now script-regenerated.** The committed PDF predated the publications pass: it still carried the media engagement block that DECISIONS 93 moved to the paper pages, typo'd headlines included, at 9 pages against today's 8. The Phase 4 method (print stylesheet, every disclosure opened) is now a committed script, `scripts/generate_cv_pdf.py`, so the regeneration steps in MAINTENANCE.md are executable rather than prose. Text-level diff after regeneration: identical to a fresh print of /work/.
+
+## Method calls
+
+133. **HTML validation ran on the hosted Nu Html Checker** (validator.w3.org/nu, version 26.8.7 as self-reported in each JSON response) instead of a local vnu: this machine has no Java runtime and the validator Docker image pull did not complete in reasonable time. Same engine, version pinned in the report. 11 built pages covering all 7 layouts plus home and the 404.
+
+134. **The link check extends the Gate 4 crawler rather than replacing it.** `docs/phase-7-evidence/live_link_check.py` imports the Gate 4 URL inventory (all 143 old and new forms, every MIGRATIONS.md redirect) and resolves it on the live domain, then adds every internal reference extracted from the built site (97), fragment anchor verification against the built HTML (66), and all 75 external links with browser headers. Bot-walled hosts pass only on the exact status AUDIT.md section 5 recorded. The two free-tier app hosts that answer scripts with wake pages (shinyapps 202, streamlit 303) pass only with a same-day real-Chrome load; both screenshots are committed. Result: 381 of 381 after the fixes above.
+
+135. **The stats increment test ran against the rendered band.** A dummy publication was added, built, and removed; the parsed band read 12, then 13, then 12 peer-reviewed papers with every other figure unchanged. The dummy never reached a commit.
+
+136. **CLAUDE.md's Current state section was brought current** alongside the mandated placeholder replacement. It still named `refurb/phase-4-structure` as the working branch; an orientation file that misstates the project state misleads every future session, which defeats its purpose. The rewrite states the refurbishment is complete and routes routine work to MAINTENANCE.md.

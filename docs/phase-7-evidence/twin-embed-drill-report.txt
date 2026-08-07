@@ -1,0 +1,9 @@
+PASS lazy: before scrolling, embed state "idle", Space requests 0
+PASS lazy: after scrolling into view, iframe created and 161 Space request(s) fired
+PASS load: embed reaches data-state loaded (Space HTML answered)
+PASS full screen: "Open full screen" opened a new tab on https://alejandrofupi-digital-twin.hf.space/
+PASS fallback: with the Space blocked, embed reaches data-state failed
+PASS fallback: screenshot fallback visible (container true, image true)
+PASS fallback: open link points at the Space (https://alejandrofupi-digital-twin.hf.space/)
+
+RESULT: PASS

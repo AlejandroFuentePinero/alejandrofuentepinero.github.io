@@ -1,0 +1,14 @@
+Gate 7 stats band increment test, 2026-08-08.
+
+Method: parse the rendered stats band values from _site/index.html,
+add a dummy publication (_publications/zz_dummy_gate7_increment_test.md,
+permalink /research/gate7-dummy-test/, sitemap: false), rebuild, parse
+again, delete the dummy, rebuild, parse again. The dummy never left the
+working tree and was deleted before commit.
+
+Baseline:     [('10', 'Years working with uncertainty'), ('16', 'Projects'), ('4', 'Live apps'), ('12', 'Peer-reviewed papers'), ('193', 'Citations')]
+With dummy:   [('10', 'Years working with uncertainty'), ('16', 'Projects'), ('4', 'Live apps'), ('13', 'Peer-reviewed papers'), ('193', 'Citations')]
+After remove: ['10', '16', '4', '12', '193']
+
+PASS: the paper count is derived from the publications collection at
+build time (12 -> 13 -> 12); no other figure moved.
