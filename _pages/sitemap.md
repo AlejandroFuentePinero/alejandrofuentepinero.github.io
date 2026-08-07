@@ -7,7 +7,7 @@ permalink: /sitemap/
 <div class="container page-block">
   <header class="page-header">
     <h1>Sitemap</h1>
-    <p>Every page on the site, one line each. Robots can digest the <a href="{{ '/sitemap.xml' | relative_url }}">XML version</a>.</p>
+    <p>This page lists every page on the site, one line each. Crawlers can read the <a href="{{ '/sitemap.xml' | relative_url }}">XML version</a>.</p>
   </header>
 
   <section class="section">

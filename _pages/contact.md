@@ -4,7 +4,7 @@ title: "Contact"
 permalink: /contact/
 ---
 
-I'm open to AI engineering roles, collaborations and interesting evaluation problems.
+I'm open to AI engineering roles, research collaborations and hard evaluation problems. Email is the fastest way to reach me.
 
 - [Email](mailto:alejandrofuentepinero@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/alejandro-dela-fuente/)
@@ -12,4 +12,4 @@ I'm open to AI engineering roles, collaborations and interesting evaluation prob
 - [Google Scholar](https://scholar.google.com.au/citations?user=7CKVdZwAAAAJ&hl=en)
 - [ORCID](https://orcid.org/0000-0001-9686-3844)
 
-Prefer the traditional document? [Download the CV as a PDF](/files/alejandro-de-la-fuente-cv.pdf).
+If you want the traditional document, [download the CV as a PDF](/files/alejandro-de-la-fuente-cv.pdf).
