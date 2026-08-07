@@ -38,6 +38,7 @@ exclude:
   - DECISIONS.md
   - MIGRATIONS.md
   - FINDINGS.md
+  - CLAUDE.md
   - docs
   - .asset-cache
   - .bundle
