@@ -87,21 +87,32 @@
     iframe.title = frame.getAttribute("data-embed-title") || "Embedded app";
     iframe.setAttribute("loading", "lazy");
 
-    var timer = setTimeout(function () {
+    function fail() {
+      clearTimeout(timer);
       frame.setAttribute("data-state", "failed");
       iframe.remove();
-    }, FAIL_TIMEOUT);
+    }
+
+    var timer = setTimeout(fail, FAIL_TIMEOUT);
 
     iframe.addEventListener("load", function () {
       clearTimeout(timer);
       frame.setAttribute("data-state", "loaded");
     });
 
-    iframe.addEventListener("error", function () {
-      clearTimeout(timer);
-      frame.setAttribute("data-state", "failed");
-      iframe.remove();
-    });
+    iframe.addEventListener("error", fail);
+
+    /* When the network fails fast, Chrome commits its own error page
+       inside the frame and still fires load, so the load event alone
+       cannot be trusted. This probe of the same URL rejects on network
+       failure and flips the frame to the fallback. */
+    if (window.fetch) {
+      fetch(iframe.src, {
+        method: "HEAD",
+        mode: "no-cors",
+        cache: "no-store",
+      }).catch(fail);
+    }
 
     frame.appendChild(iframe);
   }

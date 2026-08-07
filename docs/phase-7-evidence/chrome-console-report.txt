@@ -1,0 +1,29 @@
+PASS [1280px] / console/page/request errors: 0
+PASS [1280px] /work/ console/page/request errors: 0
+PASS [1280px] /projects/ console/page/request errors: 0
+PASS [1280px] /apps/ console/page/request errors: 0
+PASS [1280px] /research/ console/page/request errors: 0
+PASS [1280px] /contact/ console/page/request errors: 0
+PASS [1280px] /projects/digital-twin/ console/page/request errors: 0
+PASS [1280px] /research/ringtail-possum-collapse-2022/ console/page/request errors: 0
+PASS [1280px] /research/phd-exit-seminar-2024/ console/page/request errors: 0
+PASS [1280px] /posts/action-plan-australian-birds-2021/ console/page/request errors: 0
+PASS [1280px] /styleguide/ console/page/request errors: 0
+PASS [1280px] /404.html console/page/request errors: 0
+PASS [390px] / console/page/request errors: 0
+PASS [390px] /work/ console/page/request errors: 0
+PASS [390px] /projects/ console/page/request errors: 0
+PASS [390px] /apps/ console/page/request errors: 0
+PASS [390px] /research/ console/page/request errors: 0
+PASS [390px] /contact/ console/page/request errors: 0
+PASS [390px] /projects/digital-twin/ console/page/request errors: 0
+PASS [390px] /research/ringtail-possum-collapse-2022/ console/page/request errors: 0
+PASS [390px] /research/phd-exit-seminar-2024/ console/page/request errors: 0
+PASS [390px] /posts/action-plan-australian-birds-2021/ console/page/request errors: 0
+PASS [390px] /styleguide/ console/page/request errors: 0
+PASS [390px] /404.html console/page/request errors: 0
+PASS theme toggle: null -> light -> dark
+PASS projects filter: 16 cards, engineering hides 11, all restores (0 hidden)
+PASS nav disclosure at 390px: closed -> open on toggle -> closed on Escape
+
+RESULT: PASS

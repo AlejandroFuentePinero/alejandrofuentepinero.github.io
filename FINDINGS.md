@@ -53,3 +53,9 @@ Found while working, not fixed, per the working rules in REFURB_BRIEF.md section
 21. **files/app_demo.gif is 11 MB.** webp cannot meaningfully compress it (7.7 MB at best settings, DECISIONS 124). A short mp4 or webm of the same demo would land around 1 MB and play identically in a `<video>` tag. Replacing the asset is an owner call; until then it lazy-loads below the fold on one project page.
 
 22. **The AUDIT.md Lighthouse diagnostic is resolved in passing.** The Phase 0 NO_FCP failures on publication pages and the CV reproduced on the legacy layouts and are gone: publication pages and /work/ now measure normally (97 and 99 Performance at Gate 6), so no diagnostic work remains for Phase 7.
+
+## Phase 7
+
+23. **The Ecologica Montenegrina DOI is broken upstream.** `10.37828/em.2025.88.11` (the Siri 2025 forest gap paper) resolves to `biotaxa.prod.amazon.auckland.ac.nz`, which no longer exists in public DNS; the working article page is `www.biotaxa.org/em/article/view/87143`, which the site now links (DECISIONS 129). The citation string still prints the DOI as text, correctly. If the registrar repairs the DOI, the `paperurl` and the project page's Journal link can move back to it. Reporting the broken resolution to the journal is an owner call.
+
+24. **The Job Intelligence Engine wake experience is rough.** Waking the slept Streamlit app took minutes in this QA run, and the "in the oven" page never handed over on its own; a manual reload showed the fully running app (evidence committed). The birds Shiny card carries "wakes in about 20 seconds" but the Job Intelligence Engine card's note field is empty. Adding a wake note is an owner call because it edits a checked Tier A data string.

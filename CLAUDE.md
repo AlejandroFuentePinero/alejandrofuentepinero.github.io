@@ -12,10 +12,12 @@ This file summarises the working rules; the brief is the authority on intent.
 
 ## Current state
 
-Phases 0 to 4 are complete (audit, positioning, cleanup, design system,
-unified structure). Remaining: Phase 5 (content rewrite, collection by
-collection), Phase 6 (performance, SEO, accessibility), Phase 7 (final QA and
-`MAINTENANCE.md`). The current working branch is `refurb/phase-4-structure`.
+The refurbishment is complete: Phases 0 to 7 all shipped (audit,
+positioning, cleanup, design system, unified structure, content rewrite,
+performance and SEO and accessibility, final QA with `MAINTENANCE.md`).
+The site is in maintenance. Routine changes follow `MAINTENANCE.md`;
+`refurb/main` retires once the owner deletes the phase branches after
+the soak week.
 
 ## Authoritative documents
 
@@ -96,8 +98,11 @@ opacity only, dead under `prefers-reduced-motion`. New components are built on
 
 ## Post-launch maintenance
 
-**Placeholder.** The how-to for routine additions (new project, new
-publication with plain summary, new app, updating `_data/stats.yml`) is a
-Phase 7 deliverable, `MAINTENANCE.md`. Until it exists, follow the shapes
-already in the collections and the hard rules above, and update this section
-once `MAINTENANCE.md` lands.
+**Follow `MAINTENANCE.md`.** It is the self-contained manual for every
+routine change: adding a project, a publication or an app, refreshing the
+two Scholar numbers in `_data/stats.yml`, the prose rules and density
+budget in short form, the record-marker convention, extending the
+`prose_check.py` FILES table, the branch model, and the regeneration
+steps for the CV PDF, og:image, webp images and instanced fonts. It
+assumes no other document has been read; when it and this file disagree,
+the hard rules above win.
