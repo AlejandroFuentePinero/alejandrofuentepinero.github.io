@@ -54,11 +54,11 @@ The thesis is 2 or 3 sentences under the name and the role line. The budget is 6
 
 **Risk.** Same as D: the skimmer meets the rainforest before the role. The charm is the mitigation; it buys a second sentence of attention.
 
-### 1.5 Recommendation: Option E
+### 1.5 The decision: Option E, settled at Gate 1
 
-E is the only option that is warm and answers the recruiter immediately, and the 40-second reader is the one the current site fails hardest (AUDIT.md section 8). D and F are warmer but both spend their first 30 words in the rainforest, which asks the busiest reader for patience the data says they do not have.
+E won because it is warm and still answers the recruiter immediately, and the 40-second reader is the one the current site fails hardest (AUDIT.md section 8). The wording is locked for structure now and gets one polish pass when first seen rendered, in Phase 4 or 5.
 
-Two salvage notes, whichever wins. D's closing line ("if I can't measure that it works, I don't ship it") is too good to lose: it becomes the opening line of the `/projects/` index or the `/work/` intro. F's rainforest-office line goes to the `/work/` timeline intro, where the reader has opted into the story.
+Two salvage moves, logged. D's closing line ("if I can't measure that it works, I don't ship it") becomes the opening line of the `/projects/` index or the `/work/` intro. F's rainforest-office line goes to the `/work/` timeline intro, where the reader has opted into the story.
 
 ---
 
@@ -72,7 +72,7 @@ One line under 12 words (brief 4.1). Three options, revised to match the warmer 
 | 2 | AI engineer, raised on rainforest data and honest error bars. | 10 | Warm; carries the origin in passing |
 | 3 | AI engineer: retrieval, agents, evaluation, uncertainty. | 6 | Keyword-dense |
 
-Recommendation: option 2 with thesis E. E's first sentence already makes the plain claim, so the role line can afford personality, and if thesis D or F wins instead, switch to option 1 so the role line carries the job title plainly while the hero tells the story. Option 3 is redundant either way: the skills row directly below already does the keyword work.
+Settled at Gate 1 with thesis E: option 2. E's first sentence already makes the plain claim, so the role line can afford personality. Option 3 was redundant either way: the skills row directly below already does the keyword work. Like the hero, the wording gets one polish pass when first rendered.
 
 ---
 
@@ -253,13 +253,11 @@ The context line is the thesis in miniature: the demo itself ships with a guardr
 
 ## 7. Gate 1 decision log
 
-Settled in round one: the honesty standard for protection claims; the five stats and their order; the 2016 anchor with the label change in 3.2; the mastery rule for the skills row; and, in CONTENT_MAP.md, the project demotions, the four talk pages, the four home cards and the worked summary.
+Settled: thesis E with role descriptor 2; the honesty standard for protection claims; the five stats and their order; the 2016 anchor with the label change in 3.2; the mastery rule and the 10 chips; and, in CONTENT_MAP.md, the project demotions, the four talk pages, the four home cards and the worked summary. **No open decisions remain in this file.**
 
-**The one open decision: the thesis.** D, E or F (section 1; recommendation E).
+Assumptions proceeding as logged, to test once the site is visible:
 
-Everything else proceeds on the recommendations below, logged as assumptions to test once the site is visible. Per the Gate 1 working rule, only pressing decisions are surfaced; all of these are reversible and none blocks Phase 2.
-
-1. Role descriptor: option 2 if thesis E wins, option 1 if D or F wins.
-2. The SQL chip stays (assumption in 4.2).
-3. Twin embed at 720px with the "Ask the digital twin" framing, all site-side.
-4. The CONTENT_MAP mechanical layer (slugs, redirect targets, teaching inline, blog permalink, threatened species home) as written.
+1. The SQL chip stays (4.2).
+2. Twin embed at 720px with the "Ask the digital twin" framing, all site-side.
+3. The CONTENT_MAP mechanical layer (slugs, redirect targets, teaching inline, blog permalink, threatened species home) as written.
+4. Hero and role-line wording is locked for structure and gets one polish pass when first rendered, in Phase 4 or 5.

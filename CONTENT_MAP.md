@@ -436,6 +436,8 @@ Against the brief 2.4 ceilings. Verbatim records (citations, abstracts, the nomi
 
 Round one settled items 3, 4, 6 and 7 below. The rest proceed as written under the Gate 1 working rule: only pressing decisions are surfaced; defaults follow the plan and are logged here for review once the site is visible. The single owner action in this file is the Job Intelligence Engine republish decision (item 5), which only affects one data file line whenever it lands.
 
+Also confirmed at Gate 1: the two dead external links found in Phase 0 (the `Nmixture_Frogs_CodeR` repository link on the CodeR talk and the Zoo de Santillana foundation link in the CV) are removed in Phase 2 with no replacements.
+
 1. Primary redirect targets for the two split pages: `/academic/` to `/research/`, `/datascience/` to `/projects/`.
 2. The publication slug convention (finding plus year) and the 12 slugs in 2.4.
 3. The Python labs merge (three files into `python-labs`) and the MLB SQL reclassification from featured to lab.
