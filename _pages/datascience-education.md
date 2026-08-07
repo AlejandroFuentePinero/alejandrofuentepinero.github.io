@@ -303,6 +303,26 @@ classes: wide projects-page
 </details>
 
 <details>
+<summary><strong>Evaluating AI Agents — DeepLearning.AI (Arize AI)</strong></summary>
+
+<div markdown="1">
+
+[_(Click to view certificate)_](https://learn.deeplearning.ai/accomplishments/01e739d1-2472-4a74-b710-93422e9d6c0d?usp=sharing)
+
+- **Outcome:** ability to measure and systematically improve agent performance, replacing subjective judgement of agent behaviour with traced, versioned experiments that isolate which component is failing and whether a change actually helped.
+- **Coverage:**
+  - Agent decomposition into evaluable components: router logic, individual skills, and memory, so failures can be attributed to a specific step rather than to the system as a whole.
+  - **Tracing and observability** with **Arize Phoenix**: instrumenting an agent to capture per-step spans (tool selection, tool arguments, intermediate outputs, latency) and using those traces as the substrate for evaluation.
+  - **Router and skill evaluations:** checking whether the correct tool/path was chosen and whether each skill produced a correct result, assessed independently of the final answer.
+  - **Trajectory evaluations:** scoring the full path an agent takes, including convergence (steps taken relative to an ideal run) rather than only the end state.
+  - **Evaluator design:** code-based evaluators, LLM-as-a-judge, and human annotation; iterating on judge prompts and benchmarking them against labelled data to control judge bias and variance.
+  - **Structured experimentation:** curated test datasets and versioned experiments across prompt, model, and logic changes, so improvements are demonstrated by comparison rather than asserted.
+  - **Production monitoring:** carrying the same evaluators into deployment to track live agent performance and surface regressions.
+
+</div>
+</details>
+
+<details>
 <summary><strong>Building and Evaluating Advanced RAG — DeepLearning.AI (LlamaIndex, TruEra)</strong></summary>
 
 <div markdown="1">

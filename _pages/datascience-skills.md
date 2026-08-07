@@ -26,7 +26,7 @@ I've extended that same rigour into AI engineering: building LLM-powered applica
 ## Core stack
 
 **AI / LLM**
-OpenAI · Anthropic · Google · HuggingFace · LangChain · LangGraph · LlamaIndex · Google ADK · LiteLLM · MCP (FastMCP) · ChromaDB · Neo4j · Cypher · Pydantic · TruLens · RAG pipelines · GraphRAG · QLoRA fine-tuning (Llama 3.2, 4-bit NF4/LoRA) · Frontier fine-tuning · tool calling · agent orchestration · multimodal inputs (text, image, audio) · Modal serverless deployment · Weights & Biases · Gradio · Streamlit
+OpenAI · Anthropic · Google · HuggingFace · LangChain · LangGraph · LlamaIndex · Google ADK · LiteLLM · MCP (FastMCP) · ChromaDB · Neo4j · Cypher · Pydantic · TruLens · Arize Phoenix · agent tracing & evaluation · RAG pipelines · GraphRAG · QLoRA fine-tuning (Llama 3.2, 4-bit NF4/LoRA) · Frontier fine-tuning · tool calling · agent orchestration · multimodal inputs (text, image, audio) · Modal serverless deployment · Weights & Biases · Gradio · Streamlit
 
 **ML / Data**
 Python (pandas, NumPy, scikit-learn, XGBoost, TensorFlow/Keras, PyTorch) · SQL (PostgreSQL) · R (tidyverse) · Git/GitHub
@@ -73,6 +73,9 @@ Bayesian & hierarchical modelling · spatiotemporal forecasting · supervised/un
 - Tool calling and retrieval patterns; schema/contract design for model outputs
 - Agent workflows: planning/acting loops, orchestration, retries, human-in-the-loop checkpoints
 - LangGraph concepts: state, control flow, tracing/debugging
+- Agent evaluation: decomposing an agent into router, skills, and memory, then scoring each independently plus the full trajectory (including convergence against an ideal run) so failures are attributed to a specific component
+- Agent tracing and experimentation with Arize Phoenix: per-step span instrumentation, curated test datasets, and versioned experiments across prompt/model/logic changes, with the same evaluators carried into production monitoring
+- LLM-as-a-judge design: code-based vs model-based vs human evaluators, and benchmarking judge prompts against labelled data to control bias and variance
 - Multi-model experimentation: Frontier APIs (OpenAI, Anthropic, Google) and open-source models via HuggingFace
 - Multimodal inputs: text, image, and audio processing in LLM pipelines
 - RAG: vector embeddings, open-source vector datastores, retrieval pipeline design
