@@ -218,6 +218,4 @@ Professional development and community-based conservation
 Grants and Awards
 ======
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+See [Grants and Awards](/academic/grants_awards/).
