@@ -11,7 +11,7 @@ repository               : "AlejandroFuentePinero/alejandrofuentepinero.github.i
 # Without an explicit null, the github-pages gem injects jekyll-theme-primer
 # and ships 76 KB of dead CSS at /assets/css/style.css.
 theme                    : null
-og_image                 :          # real 1200x630 asset arrives in Phase 6
+og_image                 : "/images/og-image.png"   # scripts/generate_og_image.py
 
 # Site author. Consumed by the header brand, the footer contact links and
 # the contact page.
