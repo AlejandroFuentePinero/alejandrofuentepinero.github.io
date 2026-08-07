@@ -53,6 +53,12 @@ their original wording and outrank this file.
 | Toolchain rows | tokens separated by " · " | prose sentences | Stack lines and model lists. The checker skips sentence checks on them. |
 | Journal names as link labels | the venue string as cited | reworded labels | "Plos One" keeps the citation's casing. |
 
+## Apps (added in the apps pass)
+
+| Concept | Term | Not | Notes |
+|---|---|---|---|
+| The what-it-demonstrates line | opens with "It shows" | Demonstrates:, This demo shows | One line per app in `_data/apps.yml`, stating the engineering signal the pitch does not carry. |
+
 ## Acronym policy
 
 Expand every acronym on first use per page (section 6.2 rule 10). Exceptions,

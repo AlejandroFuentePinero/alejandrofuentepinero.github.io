@@ -9,6 +9,7 @@ Fails on:
   5. Any unexpanded acronym on first use in prose.
   6. Any page over its word budget.
   7. Any literal digit inside the stats band include.
+  8. Any app pitch in _data/apps.yml over its 25-word card ceiling.
 
 Scope: the files in FILES below plus the stats include. Later Phase 5
 passes extend FILES collection by collection. The styleguide (internal,
@@ -27,6 +28,13 @@ label spans, filter buttons and Liquid output are presentation tokens,
 not prose, and are removed before checking. Words inside Liquid include
 parameters (the twin frame context line) are not visible to this script;
 the Gate evidence counts them by hand.
+
+The /apps/ entries (pitch, demonstrates, note) live in _data/apps.yml,
+which Liquid renders into the page, so the page file alone never shows
+them. The data file is flat one-line YAML and is read here directly to
+stay stdlib-only: its strings join the apps.html blocks, so every check
+above covers them and they count toward the /apps/ budget. Each pitch
+also carries the 25-word card ceiling from REFURB_BRIEF section 2.4.
 
 Usage:
   python3 scripts/prose_check.py             check, exit 1 on violations
@@ -72,11 +80,13 @@ FILES = {
 }
 
 STATS_INCLUDE = "_includes/stats-band.html"
+APPS_DATA = "_data/apps.yml"
 
 SENTENCE_LIMIT = {"A": 20, "B": 25}
 PARAGRAPH_LIMIT = 4
 PROJECT_LEAD_BUDGET = 120
 PROJECT_EXCERPT_BUDGET = 25
+APP_PITCH_BUDGET = 25
 
 EM_DASH = "—"
 EN_DASH = "–"
@@ -202,6 +212,36 @@ def word_count(text):
     return len(text.split())
 
 
+def apps_data_strings(fails):
+    """Check _data/apps.yml and return its prose strings in file order."""
+    raw = (ROOT / APPS_DATA).read_text(encoding="utf-8")
+    for name, char in (("em dash", EM_DASH), ("en dash", EN_DASH)):
+        count = raw.count(char)
+        if count:
+            fails.append(f"{APPS_DATA}: {count} {name}(es)")
+    texts = []
+    app_id = None
+    for line in raw.splitlines():
+        id_match = re.match(r"^-\s*id:\s*(\S+)", line)
+        if id_match:
+            app_id = id_match.group(1)
+            continue
+        field_match = re.match(r'^\s+(pitch|demonstrates|note):\s*"(.*)"', line)
+        if not field_match:
+            continue
+        field, text = field_match.groups()
+        if field == "pitch":
+            n = word_count(text)
+            if n > APP_PITCH_BUDGET:
+                fails.append(
+                    f"{APPS_DATA}: {app_id} pitch of {n} words "
+                    f"(max {APP_PITCH_BUDGET})"
+                )
+        if text:
+            texts.append(text)
+    return texts
+
+
 def check_file(rel_path, tier, budget, report):
     path = ROOT / rel_path
     raw = path.read_text(encoding="utf-8")
@@ -216,6 +256,8 @@ def check_file(rel_path, tier, budget, report):
             fails.append(f"{count} {name}(es) outside record regions")
 
     blocks = extract_blocks(raw)
+    if rel_path == "_pages/apps.html":
+        blocks += apps_data_strings(fails)
     prose_text = "\n".join(blocks)
 
     for pattern, label in BANNED:
