@@ -1,0 +1,115 @@
+Asset sweep, Phase 6. Every asset under images/ and files/ grepped
+across the source tree (excluding _site, .git, docs) for its file
+name in raw and URL-encoded forms.
+
+files/7ph_graph_metagame_landscape.png
+    _pages/styleguide.html, _projects/7ph-graph.md, scripts/convert_images.sh
+files/7ph_graph_metagame_landscape.webp
+    _pages/styleguide.html, _projects/7ph-graph.md
+files/7ph_graph_pilot_overview.png
+    _projects/7ph-graph.md, scripts/convert_images.sh
+files/7ph_graph_pilot_overview.webp
+    _projects/7ph-graph.md
+files/Diversity and Distributions - 2022 - Fuente - Climate change threatens the future of rain forest ringtail possums by 2050.pdf
+    _publications/delafuente_williams_2022_possums_ddi.md
+files/Diversity and Distributions - 2022 - de la Fuente - Predicted alteration of vertebrate communities in response to.pdf
+    _publications/delafuente_et_al_2022_ddi_reshuffling.md
+files/Gallardo.et.al.2018.pdf
+    _publications/gallardo_et_al_2018.md
+files/Global Change Biology - 2025 - Fuente - Climate‐Induced Physiological Stress Drives Rainforest Mammal Population Declines.pdf
+    _publications/delafuente_2025_GCB.md
+files/SAREM_NotasMamSud_12-2021_Iriarte.pdf
+    _publications/iriarte_et_al_2021.md
+files/Williams_delafuente_2021_plosone.pdf
+    _publications/Williams_delafuente_2021.md
+files/advanced_learning_algorithms.png
+    _pages/work.md
+files/agentic_AI.png
+    _pages/work.md
+files/ai_engineer.pdf
+    _pages/work.md
+files/alejandro-de-la-fuente-cv.pdf
+    DECISIONS.md, _pages/contact.md, _pages/work.md
+files/app_demo.gif
+    _projects/job-intelligence-engine.md, scripts/convert_images.sh
+files/delaFuente.et.al.2021.pdf
+    _publications/delafuente_et_al_2021_ecography.md
+files/delaFuente_mountains_NCC.pdf
+    _publications/delafuente_2026_NCC.md
+files/delafuente_etal_2024_oecologia.pdf
+    _publications/herbivory_awt_2024_oecologia.md
+files/delafuente_pacheco_2017.pdf
+    _publications/delafuente_pacheco_2017_bosque.md
+files/digital_twin_runtime.png
+    _projects/digital-twin.md, scripts/convert_images.sh
+files/digital_twin_runtime.webp
+    _projects/digital-twin.md
+files/engine_path.png
+    AUDIT.md
+files/git_github.pdf
+    _pages/work.md
+files/llm-engineering-cartoon.png
+    _projects/llm-engineering-lab.md, scripts/convert_images.sh
+files/llm-engineering-cartoon.webp
+    _projects/llm-engineering-lab.md
+files/project_pipeline_simple.png
+    AUDIT.md, _projects/job-intelligence-engine.md, scripts/convert_images.sh
+files/project_pipeline_simple.webp
+    _projects/job-intelligence-engine.md
+files/python bootcamp.pdf
+    AUDIT.md, _pages/work.md
+files/python_ML.pdf
+    _pages/work.md
+files/simple_workflow.png
+    AUDIT.md
+files/siri_et_al_2025_tropical_birds_forest_gap.pdf
+    _projects/forest-gap-abundance-gradients.md, _publications/siri_et_al_2025.md
+files/sql_advanced.pdf
+    _pages/work.md
+files/sql_basic.pdf
+    _pages/work.md
+files/supervised_ml.png
+    _pages/work.md
+files/unsupervised_learning.png
+    _pages/work.md
+images/Pasted Graphic.png
+    AUDIT.md, FINDINGS.md, _talks/cbcs_brisbane_2023.md
+images/apps/7ph-graph.png
+    CONTENT_MAP.md, _data/apps.yml, scripts/convert_images.sh
+images/apps/7ph-graph.webp
+    NO REFERENCES
+images/apps/birds-shiny.png
+    CONTENT_MAP.md, _data/apps.yml, scripts/convert_images.sh
+images/apps/birds-shiny.webp
+    NO REFERENCES
+images/apps/digital-twin.png
+    CONTENT_MAP.md, DECISIONS.md, _data/apps.yml, _pages/home.html, _pages/styleguide.html, scripts/convert_images.sh
+images/apps/digital-twin.webp
+    _pages/styleguide.html
+images/apps/job-intelligence-engine.png
+    CONTENT_MAP.md, _data/apps.yml, scripts/convert_images.sh
+images/apps/job-intelligence-engine.webp
+    NO REFERENCES
+images/delafuente_alejandro_escalator_to_extinction_ESA_conference.pdf
+    _talks/esa_scbo_2022.md
+images/groodle_favicon_256.png
+    AUDIT.md, CLAUDE.md, REFURB_BRIEF.md, _config.yml, _includes/site-header.html, _layouts/default.html, _layouts/styleguide.html, scripts/generate_og_image.py
+images/groodle_favicon_256_dark.png
+    DECISIONS.md, _includes/site-header.html
+images/og-image.png
+    _config.yml, scripts/generate_og_image.py
+images/profile.jpeg
+    AUDIT.md, FINDINGS.md
+
+Notes:
+- The apps webp files show no literal reference because Liquid derives
+  their URLs from the png paths at render time (replace .png -> .webp).
+  They are served, not orphaned.
+- images/Pasted Graphic.png is referenced by _talks/cbcs_brisbane_2023.md,
+  whose body is an unrendered record (DECISIONS 39, 108). Records keep
+  their references, so the file stays.
+- Deleted this phase, zero site references each: images/profile.jpeg
+  (sidebar author card, gone in Phase 4), files/engine_path.png and
+  files/simple_workflow.png (Featured Work images of the retired about.md
+  and datascience.md, localised in Phase 2, consumers retired in Phase 4).
+
