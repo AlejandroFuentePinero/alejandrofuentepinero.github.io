@@ -1,0 +1,22 @@
+PASS [control light] / sees 26 elements with motion durations
+PASS [control light] /styleguide/ sees 42 elements with motion durations
+PASS [control light] /projects/ sees 51 elements with motion durations
+PASS [control light] /work/ sees 50 elements with motion durations
+PASS [control light] /research/ sees 59 elements with motion durations
+PASS [reduce  light] / offenders above 5ms: 0
+PASS [reduce  light] /styleguide/ offenders above 5ms: 0
+PASS [reduce  light] /projects/ offenders above 5ms: 0
+PASS [reduce  light] /work/ offenders above 5ms: 0
+PASS [reduce  light] /research/ offenders above 5ms: 0
+PASS [control dark] / sees 26 elements with motion durations
+PASS [control dark] /styleguide/ sees 42 elements with motion durations
+PASS [control dark] /projects/ sees 51 elements with motion durations
+PASS [control dark] /work/ sees 50 elements with motion durations
+PASS [control dark] /research/ sees 59 elements with motion durations
+PASS [reduce  dark] / offenders above 5ms: 0
+PASS [reduce  dark] /styleguide/ offenders above 5ms: 0
+PASS [reduce  dark] /projects/ offenders above 5ms: 0
+PASS [reduce  dark] /work/ offenders above 5ms: 0
+PASS [reduce  dark] /research/ offenders above 5ms: 0
+
+RESULT: PASS

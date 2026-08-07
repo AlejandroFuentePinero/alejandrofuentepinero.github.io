@@ -1,0 +1,4 @@
+PASS stored dark, OS light: 5 frames, 0 wrong-theme at or after firstPaint, 0 opposite-theme paints, 0 pre-paint compositor clears (headless artifact, informational)
+PASS stored light, OS dark: 5 frames, 0 wrong-theme at or after firstPaint, 0 opposite-theme paints, 0 pre-paint compositor clears (headless artifact, informational)
+
+RESULT: PASS

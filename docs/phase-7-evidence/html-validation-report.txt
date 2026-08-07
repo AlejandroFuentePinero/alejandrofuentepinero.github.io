@@ -1,0 +1,39 @@
+Nu Html Checker 26.8.7 (validator.w3.org/nu), run 2026-08-08
+PASS / (home): 0 errors, 0 warnings
+PASS /work/ (page layout): 0 errors, 0 warnings
+PASS /projects/ (page layout, type filter): 0 errors, 0 warnings
+PASS /apps/ (page layout, app cards and embed data): 0 errors, 0 warnings
+PASS /research/ (page layout, rows and disclosures): 0 errors, 0 warnings
+PASS /styleguide/ (styleguide layout, every component): 0 errors, 1 warnings
+    [info] line 206: Consider using the “h1” element as a top-level heading only — or else use the “headingoffset” attribute (otherwise, all “h1” elements are treated as top-level headings by many screen readers and other tools).
+PASS /projects/digital-twin/ (project layout): 0 errors, 2 warnings
+    [info] line 140: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+    [info] line 141: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+PASS /research/ringtail-possum-collapse-2022/ (publication layout): 0 errors, 2 warnings
+    [info] line 161: Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections, or else use a “div” element instead for any cases where no heading is needed.
+    [info] line 172: Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections, or else use a “div” element instead for any cases where no heading is needed.
+PASS /research/phd-exit-seminar-2024/ (talk layout): 0 errors, 1 warnings
+    [info] line 137: Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections, or else use a “div” element instead for any cases where no heading is needed.
+PASS /posts/action-plan-australian-birds-2021/ (post layout): 0 errors, 0 warnings
+PASS /404.html (404 page): 0 errors, 0 warnings
+
+11 pages, 11 passed, 0 failed
+
+Retained info-level notices, with reasons (none is an error):
+
+- /styleguide/ "consider h1 as top-level heading only": the type-scale
+  specimen intentionally renders an h1 sample inside the page. The
+  styleguide is internal and noindex; the sample is the content.
+- /projects/digital-twin/ trailing slashes on void elements: XML-style
+  self-closing tags in the page's hand-written figure markup. All
+  attribute values are quoted, so the noted bad interaction cannot
+  occur, and rendering is identical. Left as written.
+- publication and talk pages "section lacks heading": the citation,
+  links and media blocks are short labelled groups; forcing a visible
+  heading on each would add noise the design budget rejects, and the
+  Phase 6 heading-order pass (DECISIONS 122) settled the page outlines.
+
+One error was found and fixed: aria-label on the skills chip-row div
+(invalid per ARIA on a role-less div, and redundant with the labelled
+section that wraps it on home). Removed in _includes/skills-row.html;
+home and styleguide revalidate clean.
