@@ -1,0 +1,18 @@
+file                                        kind   abstract        facts
+IBRC_2025.md                                page   IDENTICAL       facts-ok
+NFFF_2025.md                                row    IDENTICAL       facts-ok
+PhD_completion_seminar.md                   page   REPAIRED-OK     facts-ok
+cbcs_brisbane_2023.md                       row    IDENTICAL       facts-ok
+chilean_congress_ornithology_2017.md        row    IDENTICAL       facts-ok
+coder_nmix.md                               row    IDENTICAL       facts-ok
+esa_scbo_2022.md                            page   IDENTICAL       facts-ok
+tess_2021.md                                row    IDENTICAL       facts-ok
+tess_2023.md                                row    IDENTICAL       facts-ok
+wtma_workshop.md                            row    IDENTICAL       facts-ok
+zenq_2022.md                                row    IDENTICAL       facts-ok
+zenq_2023.md                                page   IDENTICAL       facts-ok
+
+Comparison is against git HEAD (refurb/main). For the 4 page files the
+presentation-only "Abstract - " prefix and, on ESA-SCBO, the poster line
+moved to front matter are excluded; everything else is compared byte for
+byte, including the non-breaking spaces and em dashes in the IBRC record.

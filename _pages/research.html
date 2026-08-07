@@ -59,6 +59,7 @@ redirect_from:
         <div>
           <h3 class="talk-row__title">{% if talk.redirect_to %}{{ talk.title }}{% else %}<a href="{{ talk.url | relative_url }}">{{ talk.title }}</a>{% endif %}{% if talk.award %}<span class="tag-award">{{ talk.award }}</span>{% endif %}</h3>
           <p class="talk-row__venue">{{ talk.venue }}, {{ talk.location }}{% if talk.also %} &middot; {{ talk.also }}{% endif %}</p>
+          <p class="talk-row__excerpt">{{ talk.excerpt }}</p>
         </div>
       </li>
       {% endfor %}

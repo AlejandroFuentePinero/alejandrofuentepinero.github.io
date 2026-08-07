@@ -69,6 +69,17 @@ their original wording and outrank this file.
 | The Chilean rodent | viscacha | vizcacha | Follows the paper's own spelling. "vizcacha" survives only in the settled page slug. |
 | The Skyrail funder in prose | Skyrail Rainforest Foundation | Skyrail Foundation | The short form survives only in the verbatim grant lines. |
 
+## Talks (added in the talks pass)
+
+| Concept | Term | Not | Notes |
+|---|---|---|---|
+| The block that opens a talk page | plain summary, the front matter `summary` field | lead, rewritten abstract | 100 words, Tier B, written fresh from what the talk showed. Mirrors the publications row above. |
+| The collapsed abstract on a talk page | Original abstract as submitted | Original abstract as published | Talks submit abstracts, journals publish them. The papers keep "as published". |
+| The talk-to-paper cross-link | Paper page: | Read the paper, See also | Mirrors the publications pages' "Project page:" label. The link label is the paper page's own title, resolved at build time. |
+| The earlier-appearance block | Also presented | Previously presented, Encore | One block per talk, carrying the absorbed appearance's verbatim title and venue. |
+| Press and pulse | press for gradual trends, pulse for extreme events | chronic and acute | The thesis's own pairing, used in prose on the seminar page. |
+| The bat species | spectacled flying fox, then flying foxes | Spectacled Flying Fox in prose | Capitalised only inside verbatim records and the talk title. |
+
 ## Acronym policy
 
 Expand every acronym on first use per page (section 6.2 rule 10). Exceptions,

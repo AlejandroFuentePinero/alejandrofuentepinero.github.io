@@ -13,6 +13,9 @@ Fails on:
   9. Any publication excerpt over 25 words or asking a question, any
      publication summary over 120 words, and any publication body prose
      outside its record markers.
+ 10. Any talk excerpt over 20 words or asking a question, any talk
+     summary over 100 words, and any prose outside the record markers on
+     a talk that has its own page.
 
 Scope: the files in FILES below plus the stats include. Later Phase 5
 passes extend FILES collection by collection. The styleguide (internal,
@@ -28,6 +31,16 @@ verified against their sources, and the body is the original abstract
 inside record markers. None of those are checked, by the same principle
 as the record regions: never rewritten, so nothing in them is
 actionable.
+
+Talk files (_talks/) follow the same shape. All 12 carry an excerpt,
+which is the row entry on /research/ (20-word ceiling, no questions,
+REFURB_BRIEF 2.4). The 4 talks with their own pages also carry a summary
+(Tier B, 100 words) and keep the submitted abstract inside record
+markers, so their bodies must hold nothing else. The other 8 render as
+redirects (DECISIONS 39), so their bodies never reach a reader and are
+treated as unrendered records: only the excerpt is checked. Titles,
+venues, locations, awards, the also lines, and the poster and thesis
+blocks are records.
 
 Project pages (_projects/) have no total word budget: level 3 is
 unbounded per CONTENT_MAP section 8. They instead carry 2 budgets of
@@ -105,6 +118,21 @@ FILES = {
     "_publications/delafuente_2025_GCB.md": ("B", 120),
     "_publications/siri_et_al_2025.md": ("B", 120),
     "_publications/delafuente_2026_NCC.md": ("B", 120),
+    # Talks: the budget is the 100-word summary ceiling on the 4 files
+    # with pages; the excerpt carries its own 20-word ceiling. The 8
+    # rows-only files have no summary and no page (CONTENT_MAP 6).
+    "_talks/zenq_2023.md": ("B", 100),
+    "_talks/esa_scbo_2022.md": ("B", 100),
+    "_talks/PhD_completion_seminar.md": ("B", 100),
+    "_talks/IBRC_2025.md": ("B", 100),
+    "_talks/cbcs_brisbane_2023.md": ("B", 100),
+    "_talks/chilean_congress_ornithology_2017.md": ("B", 100),
+    "_talks/coder_nmix.md": ("B", 100),
+    "_talks/NFFF_2025.md": ("B", 100),
+    "_talks/tess_2021.md": ("B", 100),
+    "_talks/tess_2023.md": ("B", 100),
+    "_talks/wtma_workshop.md": ("B", 100),
+    "_talks/zenq_2022.md": ("B", 100),
 }
 
 STATS_INCLUDE = "_includes/stats-band.html"
@@ -116,6 +144,7 @@ PROJECT_LEAD_BUDGET = 120
 PROJECT_EXCERPT_BUDGET = 25
 APP_PITCH_BUDGET = 25
 PUB_EXCERPT_BUDGET = 25
+TALK_EXCERPT_BUDGET = 20
 
 EM_DASH = "—"
 EN_DASH = "–"
@@ -369,7 +398,8 @@ def check_file(rel_path, tier, budget, report):
 
 HEADING_RE = re.compile(r"^#{1,6}\s", re.M)
 EXCERPT_RE = re.compile(r"^excerpt:\s*[\"']?(.*?)[\"']?\s*$", re.M)
-PUB_SUMMARY_RE = re.compile(r"^summary: \|\n((?:  .*\n|\n)*)", re.M)
+SUMMARY_RE = re.compile(r"^summary: \|\n((?:  .*\n|\n)*)", re.M)
+REDIRECT_TO_RE = re.compile(r"^redirect_to:", re.M)
 
 
 def clean_prose(text):
@@ -378,21 +408,29 @@ def clean_prose(text):
     return text.replace("**", "").strip()
 
 
-def check_publication(rel_path, tier, budget, report):
-    """Publication files render their prose from front matter: the
-    excerpt (the index finding) and the summary (the plain-language
-    block that opens the page) are the checked prose. The title and
-    citation are verbatim records, media titles are third-party records,
-    and the body is the original abstract inside record markers."""
+def check_front_matter(rel_path, tier, budget, excerpt_budget, report,
+                       has_page):
+    """Publications and talks render their prose from front matter: the
+    excerpt (the index finding or the talk row) and the summary (the
+    plain-language block that opens the page) are the checked prose.
+    Titles, citations, venues, awards, also lines and the poster and
+    thesis blocks are verbatim records, media titles are third-party
+    records, and the body is the original abstract inside record
+    markers.
+
+    has_page is False for the 8 rows-only talks, which render as
+    redirects: they carry the excerpt alone, and their unrendered bodies
+    are treated as records."""
     path = ROOT / rel_path
     raw = path.read_text(encoding="utf-8")
     fails = []
     front = FRONT_MATTER_RE.match(raw).group(0)
     body = FRONT_MATTER_RE.sub("", raw)
 
-    leftover = strip_records(body).strip()
-    if leftover:
-        fails.append(f'body prose outside record markers: "{leftover[:60]}"')
+    if has_page:
+        leftover = strip_records(body).strip()
+        if leftover:
+            fails.append(f'body prose outside record markers: "{leftover[:60]}"')
 
     blocks = []
     excerpt_words = 0
@@ -402,16 +440,19 @@ def check_publication(rel_path, tier, budget, report):
     else:
         excerpt = clean_prose(excerpt_match.group(1))
         excerpt_words = word_count(excerpt)
-        if excerpt_words > PUB_EXCERPT_BUDGET:
-            fails.append(f"excerpt of {excerpt_words} words (max {PUB_EXCERPT_BUDGET})")
+        if excerpt_words > excerpt_budget:
+            fails.append(f"excerpt of {excerpt_words} words (max {excerpt_budget})")
         if "?" in excerpt:
             fails.append("excerpt asks a question (index entries state the finding)")
         blocks.append(excerpt)
 
     summary_words = 0
-    summary_match = PUB_SUMMARY_RE.search(front)
+    summary_match = SUMMARY_RE.search(front)
     if summary_match is None:
-        fails.append("no summary in front matter (the page opens with it)")
+        if has_page:
+            fails.append("no summary in front matter (the page opens with it)")
+    elif not has_page:
+        fails.append("summary on a redirect entry, where nothing renders it")
     else:
         text = re.sub(r"^  ", "", summary_match.group(1), flags=re.M)
         paragraphs = [clean_prose(p) for p in re.split(r"\n\s*\n", text) if p.strip()]
@@ -427,7 +468,7 @@ def check_publication(rel_path, tier, budget, report):
 
     all_sentences = run_prose_checks(blocks, tier, fails)
     file_report(report, rel_path, tier, summary_words, budget, excerpt_words,
-                PUB_EXCERPT_BUDGET, all_sentences, fails)
+                excerpt_budget, all_sentences, fails)
     return fails
 
 
@@ -472,7 +513,15 @@ def main():
 
     for rel_path, (tier, budget) in FILES.items():
         if rel_path.startswith("_publications/"):
-            fails = check_publication(rel_path, tier, budget, report)
+            fails = check_front_matter(rel_path, tier, budget,
+                                       PUB_EXCERPT_BUDGET, report,
+                                       has_page=True)
+        elif rel_path.startswith("_talks/"):
+            raw = (ROOT / rel_path).read_text(encoding="utf-8")
+            front = FRONT_MATTER_RE.match(raw).group(0)
+            fails = check_front_matter(rel_path, tier, budget,
+                                       TALK_EXCERPT_BUDGET, report,
+                                       has_page=not REDIRECT_TO_RE.search(front))
         else:
             fails = check_file(rel_path, tier, budget, report)
         for fail in fails:

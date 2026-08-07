@@ -1,0 +1,50 @@
+Seeded-violation log for the talks pass. Each seed is applied to one file,
+the checker runs, and the file is restored. A seed is only useful if the
+checker catches it, so every entry below must show a "caught" line.
+
+SEED: excerpt over 20 words
+   caught: _talks/zenq_2023.md: excerpt of 35 words (max 20)
+   caught: _talks/zenq_2023.md: sentence of 35 words (tier B max 25): "One more clause added here to push this line over the twenty word ceil"
+
+SEED: excerpt asks a question
+   caught: _talks/zenq_2023.md: excerpt asks a question (index entries state the finding)
+
+SEED: no excerpt at all
+   caught: _talks/zenq_2023.md: no excerpt in front matter (the research index needs one)
+
+SEED: summary over 100 words
+   caught: _talks/zenq_2023.md: summary at 129 words, over its budget of 100
+   caught: _talks/zenq_2023.md: paragraph of 5 sentences (max 4): "The talk also walked through the survey design, the detection model, t"
+
+SEED: no summary on a page talk
+   caught: _talks/zenq_2023.md: no summary in front matter (the page opens with it)
+
+SEED: body prose outside the record markers
+   caught: _talks/zenq_2023.md: body prose outside record markers: "A stray line of prose above the record."
+
+SEED: em dash in the summary
+   *** NOT CAUGHT *** (bad seed: the replacement string held a comma, not a
+   U+2014, so nothing was seeded. Re-run correctly at the end of this file.)
+
+SEED: en dash in the excerpt
+   caught: _talks/zenq_2023.md: 1 en dash(es) in the excerpt or summary
+
+SEED: banned word in the summary
+   caught: _talks/zenq_2023.md: banned word or construction "robust" in: "The models are robust. I showed hierarchical population
+
+SEED: sentence over the Tier B 25
+   caught: _talks/zenq_2023.md: summary at 113 words, over its budget of 100
+   caught: _talks/zenq_2023.md: sentence of 26 words (tier B max 25): "Not every rainforest bird in the mountains of the Australian Wet Tropi"
+
+SEED: summary on a redirect entry
+   caught: _talks/tess_2021.md: summary on a redirect entry, where nothing renders it
+
+SEED: excerpt over 20 words on a rows-only talk
+   caught: _talks/tess_2021.md: excerpt of 27 words (max 20)
+   caught: _talks/tess_2021.md: sentence of 27 words (tier B max 25): "Padding words one two three four five six seven eight nine ten, enviro"
+
+after restore: prose_check: clean (50 files and the stats include)
+SEED: em dash in the summary (re-run with an explicit U+2014)
+   caught: _talks/zenq_2023.md: 1 em dash(es) in the excerpt or summary
+
+after restore: prose_check: clean (50 files and the stats include)

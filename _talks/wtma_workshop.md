@@ -7,5 +7,6 @@ venue: "Cairns - Wet Tropics Management Authority"
 date: 2024-06-13
 location: "Brisbane, Australia"
 redirect_to: /research/#talks
+excerpt: "Rainforest ringtail possums are declining under climate change, evidence brought to a Wet Tropics threat workshop."
 ---
 Abstract - Presentation about the impacts of climate change on the populations of rainforest ringtail possums for the expert workshop "Improving the resilience of the Wet Tropics bioregion - Day two: Identifying threats".
