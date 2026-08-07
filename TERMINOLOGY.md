@@ -80,6 +80,16 @@ their original wording and outrank this file.
 | Press and pulse | press for gradual trends, pulse for extreme events | chronic and acute | The thesis's own pairing, used in prose on the seminar page. |
 | The bat species | spectacled flying fox, then flying foxes | Spectacled Flying Fox in prose | Capitalised only inside verbatim records and the talk title. |
 
+## Teaching and the post (added in the teaching and posts pass)
+
+| Concept | Term | Not | Notes |
+|---|---|---|---|
+| The two teaching entries | Courses, Mentoring | Teaching: James Cook University | Entry titles under the /research/ Teaching heading. Venue and location render from front matter. |
+| The collapsed course record | Course list | Teaching history, Appointments | Mirrors the editorial service and certificates disclosures. |
+| The student abstract block | Project abstract | Original abstract as submitted | A student's project abstract is a third-party record under brief 6.4. The "as submitted" label belongs to the owner's talks. |
+| Mentoring in prose | I mentored | supervised, coached | Matches the entry title "Mentoring". |
+| The publisher blurb block | Publisher's description | About the book, Blurb | Third-party record, byte-identical, attributed by its label. |
+
 ## Acronym policy
 
 Expand every acronym on first use per page (section 6.2 rule 10). Exceptions,

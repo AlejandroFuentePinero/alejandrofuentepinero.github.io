@@ -34,8 +34,14 @@ Found while working, not fixed, per the working rules in REFURB_BRIEF.md section
 
 ## Phase 5, talks pass
 
-15. **The teaching section is 3 times its word budget.** CONTENT_MAP 8 budgets 120 words for teaching on /research/; the 2 entries render 367. They were migrated whole in Phase 4 and are the next pass's material, so nothing was touched here. The page's rendered prose total sits above the 700 budget mainly because of them. Seen in passing while checking the rendered page, for that pass to fix: the James Cook University entry records "Role: Guess lecturer" where it means guest lecturer.
+15. **The teaching section is 3 times its word budget.** CONTENT_MAP 8 budgets 120 words for teaching on /research/; the 2 entries render 367. They were migrated whole in Phase 4 and are the next pass's material, so nothing was touched here. The page's rendered prose total sits above the 700 budget mainly because of them. Seen in passing while checking the rendered page, for that pass to fix: the James Cook University entry records "Role: Guess lecturer" where it means guest lecturer. *Resolved in the teaching and posts pass: the section prose is 97 words against the 120 budget, the course list is a collapsed record, "Guest lecturer" is repaired, and the page budget check now passes on the rendered page at 694 of 700 (DECISIONS 109, 110, 115).*
 
 16. **Doubled spaces inside 3 talk locations**: "Mission Beach,  Australia", "Palm Cove,  Australia" and "Santa Cruz,  Chile". Locations are facts and were not touched, and HTML collapses the space so nothing renders wrong. Worth a single pass if the owner ever wants the source clean.
 
 17. **The 8 rows-only talk files keep full abstracts that nothing renders.** Their `redirect_to` output replaces the body (DECISIONS 39), so the text survives in the source as a record and never reaches a reader. That is deliberate, but it means those abstracts are outside every prose check. If a rows-only talk is ever promoted to a page, wrap its abstract in record markers and add a summary first, or the checker will fail the file.
+
+## Phase 5, teaching and posts pass
+
+18. **"Advanced statistics" is the one lowercase course title** against Title Case siblings in the course list. A course title is a record, so it stays as recorded; correcting it against the university's handbook name is an owner call.
+
+19. **Suspected slips inside the chapter citations**, now rendered from `_data/book_chapters.yml` on 2 surfaces: items 1 and 13 both read "pp. 744-746", but the Grey-headed Robin and Bower's Shrike-thrush accounts cannot share a page range. "Oreoscupus gutturalis" for the Fernwren is usually spelled Oreoscopus, and "Heteremyias cinereifrons" usually Heteromyias. Citation strings are never edited under the hard rule; correcting them against the published book is an owner call.
