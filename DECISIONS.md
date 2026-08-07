@@ -257,3 +257,41 @@ Produced on branch `refurb/phase-5-teaching-posts`, 2026-08-07. Numbering contin
 115. **prose_check reads the teaching files directly and joins the /research/ budget to what the page serves.** The entries reach the page through Liquid (DECISIONS 41), so the checker reads them the way it reads `_data/apps.yml`: per-file Tier B checks with dash scans outside record regions, plus a 120-word section budget shared across the 2 files. Their words also join research.html's page total together with the 24 publication and talk excerpts its rows render, so the 700-word page budget now measures the rendered page: 694 of 700 words, which closes FINDINGS 15. Every check newly applied to these files fired on a seeded violation before landing clean (14 violations in the seeded run, committed in the gate evidence).
 
 116. **The post's budget is 120, not CONTENT_MAP's "keep 746".** The 746 was the whole old post, blurb and list included. Both are records now, so the budget applies to the owner's prose alone, at the level 2 standard every other page opener carries. The content the 746 described survives complete: blurb collapsed, list rendered from the data file.
+
+# DECISIONS.md: Phase 6 judgment calls
+
+Produced on branch `refurb/phase-6-performance-seo-a11y`, 2026-08-08. Numbering continues from Phase 5. Working rule unchanged: only pressing decisions were surfaced; everything else follows best practice and is logged here. The recurring question this phase was reuse: every new visitor-facing string (a description, an alt text, a JSON-LD value) derives from a settled surface or a data file, so no fact exists in 2 versions.
+
+## SEO metadata
+
+117. **Meta descriptions are lifted, not written.** Each `_pages` file carries a `description` that is a contiguous verbatim span of its own lead, chosen to fit 160 characters (the head's truncation limit). The home description equals the site description in `_config.yml`. Collection pages already derive their descriptions from checked front matter (publication and talk excerpts, project excerpts, the post's auto-excerpt), so they carry no description field. prose_check enforces all of this mechanically: substring for pages, equality for home, presence everywhere except the 404.
+
+118. **The site description lost 2 words.** The new 160-character check caught the settled 165-character description truncating mid-word in every rendered meta tag. "Grounded in years of Bayesian wildlife forecasting" became "Grounded in Bayesian wildlife forecasting" in both copies (config and home front matter). Every fact survives; the years claim stays on the stats band where it is computed, not typed.
+
+119. **JSON-LD derives or omits, never invents.** One include renders four shapes: Person (home), ScholarlyArticle (publications), CreativeWork (projects), SoftwareApplication (apps, from the data file). prose_check fails any literal value in the include beyond the six schema.org constants. ScholarlyArticle carries no author field: the citation string is the only author record, and parsing it would risk misrepresenting co-authors, so the field is omitted rather than derived badly. The url field renders only from absolute publisher links, which is why the 2018 Gallardo paper (whose Paper link serves the local PDF, FINDINGS 4) has none.
+
+120. **The og:image is generated, not designed by hand.** `scripts/generate_og_image.py` reads the light palette from `_sass/_tokens.scss` (hex stays defined in exactly one file), sets the name in Newsreader and the hero's role line in Inter over warm paper with the groodle mark, and screenshots 1200x630 with headless Chrome. og and twitter metadata reuse the head's computed title and description; `og:type` is article for dated documents and website otherwise.
+
+## Accessibility
+
+121. **`--ink-faint` is no longer a text colour.** It measured 2.90:1 on light paper and 3.16:1 on dark, so its six text uses (stats as-of, card notes, publication and talk row years, timeline dates, footer fine print, the disclosure marker glyph) moved to `--ink-muted`, which measures 5.26:1 light and 6.43:1 dark on paper. ink-faint remains for hairline borders only. The token values are untouched; only usage changed.
+
+122. **Heading levels follow structure, not size.** Card titles on /projects/ and /apps/ and the five timeline roles sat as h3 directly under h1 and became h2. Sizing is class-based, so nothing moved visually. Home keeps h3 cards correctly under its h2 sections. The one remaining skip is the threatened-species nomination list, whose h3 headings live inside record markers: FINDINGS 20.
+
+## Performance
+
+123. **webp beside the original, markup with fallback.** `scripts/convert_images.sh` converts the 9 content images (2.5 MB worst case to 211 KB); `<picture>` serves webp with the png as fallback, every img carries explicit dimensions and `loading="lazy"` below the fold. A global `picture { display: contents }` keeps the wrappers layout-neutral inside flex components. Icons and the mark stay png per the brief. The biggest single win was the embed fallback screenshot: 207 KB hidden on every home load, now lazy and 35 KB.
+
+124. **The demo gif stays a gif.** Animated webp measured 26 MB at normal settings and 7.7 MB at best (`-lossy -mixed -min_size`) against the 11 MB original: too little to justify a second multi-megabyte file in history. It lazy-loads below the fold. The real fix is a video file, which replaces the asset itself: FINDINGS 21.
+
+125. **Fonts instanced to the weights the site uses.** The stylesheet requests only 400 (body), 500 (display) and 600 (strong, h4 to h6), so `scripts/instance_fonts.py` narrows each variable font to wght 400:600 in place, keeping every glyph and the full opsz axis; the @font-face declarations state the same range. 458 KB became 322 KB across five files and home LCP went from 3.1 s to 2.5 s, the change that carried Performance past 95. Provenance note: the files are no longer byte-identical to the Google CDN originals (DECISIONS 25); re-fetch and rerun the script to widen the range.
+
+## Crawling
+
+126. **sitemap.xml lists pages only.** Front matter defaults set `sitemap: false` on everything under `files/` and `images/`, removing 19 PDFs: each document is linked from the page that gives it context, and the sitemap advertises canonical surfaces. The styleguide and every redirect were already excluded. robots.txt stays the plugin-generated Sitemap pointer, which allows everything.
+
+127. **The asset sweep deleted 3 files.** `images/profile.jpeg`, `files/engine_path.png` and `files/simple_workflow.png` had zero references outside the project documents (their consumers retired in Phase 4). `images/Pasted Graphic.png` stays despite FINDINGS 3 naming it: the CBCS talk body references it, that body is an unrendered record (DECISIONS 39, 108), and records keep their references. Grep evidence per file, including URL-encoded forms, is committed in the gate evidence.
+
+## Tooling
+
+128. **prose_check reads the three new string kinds.** Descriptions per decision 117. Literal alt text gets the dash and banned-word scans and a 25-word cap (the card ceiling); empty alt is the decorative convention and passes; the acronym rule does not apply because alt text depicts an image rather than introducing terms, and derived alt strings mirror fields checked elsewhere. The JSON-LD include per decision 119. Every new check fired on a seeded violation before landing clean (9 violations in the seeded run, committed in the gate evidence), and the description length check fired on a real defect during development (decision 118).
