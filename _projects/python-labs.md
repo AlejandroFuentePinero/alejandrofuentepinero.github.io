@@ -1,6 +1,6 @@
 ---
 title: "Python Labs"
-excerpt: "3 lab collections, one progression: object-oriented Python systems, exploratory data analysis and classical machine learning, the practice ground behind the shipped systems."
+excerpt: "3 lab collections cover the fundamentals: object-oriented Python, data analysis and machine learning. The machine learning collection spans 12 sections, from regression to neural networks."
 date: 2025-10-15
 type: lab
 stack:

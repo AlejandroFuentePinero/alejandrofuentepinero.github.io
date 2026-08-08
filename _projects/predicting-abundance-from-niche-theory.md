@@ -1,6 +1,6 @@
 ---
 title: "Predicting abundance from environmental suitability"
-excerpt: "An ensemble of 9 algorithms predicted local abundance from environmental suitability, explaining 55% of deviance on average across 50 rainforest species."
+excerpt: "Maps of where a species can live predicted about half the variation in local numbers. The models faced 50 species and places they never saw."
 date: 2021-10-12
 type: research
 stack:

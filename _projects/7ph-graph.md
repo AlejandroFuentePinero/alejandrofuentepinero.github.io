@@ -1,6 +1,6 @@
 ---
 title: "7PH Graph: A Knowledge Graph of a Competitive Metagame"
-excerpt: "A live knowledge graph of a competitive Magic format: 107 events, 4,591 decks, every chart backed by provenance and statistical guards."
+excerpt: "A graph of a competitive Magic format answers what stats tables cannot: which cards travel together. Charts across 4,591 decks carry provenance and statistical guards."
 date: 2026-08-02
 type: engineering
 stack:

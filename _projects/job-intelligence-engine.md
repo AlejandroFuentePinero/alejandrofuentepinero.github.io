@@ -1,6 +1,6 @@
 ---
 title: "Job Intelligence Engine"
-excerpt: "An extraction pipeline turns 6,100 job postings into ranked role recommendations. A judge model scores the extraction layer's accuracy."
+excerpt: "The engine ranks 6,100 postings into 2 shortlists: target now, or worth a stretch. Its skill-demand models score 0.88 to 0.95 area under the curve."
 date: 2026-01-02
 type: engineering
 stack:

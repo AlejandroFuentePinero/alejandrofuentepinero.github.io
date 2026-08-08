@@ -1,6 +1,6 @@
 ---
 title: "AI-JIE: Extraction and Evaluation Pipeline"
-excerpt: "A chain-of-thought extraction pipeline turned 3,892 job postings into validated, intent-classified records. Human review scored the final prompt at 4.11 of 5."
+excerpt: "The extraction layer of the Job Intelligence Engine tells a genuine requirement from a nice-to-have. Human review scored the final prompt at 4.11 of 5."
 date: 2026-04-09
 type: engineering
 stack:

@@ -1,6 +1,6 @@
 ---
 title: "MLB Analytics with SQL"
-excerpt: "A reusable SQL workflow answered 4 questions on 150 years of baseball data, from college talent pipelines to payroll overperformance."
+excerpt: "A reusable SQL workflow answered 4 questions on 150 years of baseball data. One finding: some low-payroll teams consistently beat expectations."
 date: 2025-11-24
 type: lab
 stack:

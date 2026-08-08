@@ -1,6 +1,6 @@
 ---
 title: "Ringtail possum viability forecast"
-excerpt: "A hierarchical Bayesian model on 30 years of surveys forecast possum collapse by 2050. It fed a national protection nomination."
+excerpt: "A model on 30 years of surveys forecasts possum collapse by 2050, heatwaves doing most of the damage. The forecast fed a national protection nomination."
 date: 2022-11-06
 type: research
 stack:

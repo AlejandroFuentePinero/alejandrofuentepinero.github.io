@@ -1,6 +1,6 @@
 ---
 title: "Climate, foliage chemistry and herbivory"
-excerpt: "Hierarchical models traced climate and geology through soil and leaf chemistry to herbivory. Single soil nutrients predicted little once geology was controlled."
+excerpt: "Climate and geology set the stage for how much insects eat rainforest leaves. Single soil nutrients, the expected drivers, predicted little after accounting for geology."
 date: 2024-10-25
 type: research
 stack:

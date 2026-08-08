@@ -1,6 +1,6 @@
 ---
 title: "Digital Twin"
-excerpt: "A conversational agent answers questions about my work, grounded in a curated knowledge base. A second model reviews every answer before a visitor sees it."
+excerpt: "An agent answers questions about my work, and a second model reviews every answer. Accuracy scores 4.56 on a 149-question evaluation."
 date: 2026-05-07
 type: engineering
 stack:

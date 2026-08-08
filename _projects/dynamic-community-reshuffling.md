@@ -1,6 +1,6 @@
 ---
 title: "Community reshuffling under elevational shifts"
-excerpt: "Simulated uphill shifts of 7,613 assemblages predicted mass local extinctions of upland species, mapping the escalator to extinction along the elevational gradient."
+excerpt: "A simulation of 7,613 wildlife communities predicts mass local extinctions as warming pushes mountain-top species out of habitat. Each species climbs at its own speed."
 date: 2022-04-01
 type: research
 stack:

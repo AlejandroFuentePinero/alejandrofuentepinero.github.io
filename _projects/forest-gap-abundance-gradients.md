@@ -1,6 +1,6 @@
 ---
 title: "Forest gap effects on tropical birds"
-excerpt: "Forest gaps reshaped bird assemblages across 1,148 captures of 81 species, while total abundance stayed level between gaps and closed canopy."
+excerpt: "Forest gaps changed which bird species lived where, while total numbers stayed level. One specialist, the Hill Blue Flycatcher, increased with gap size."
 date: 2025-07-16
 type: research
 stack:

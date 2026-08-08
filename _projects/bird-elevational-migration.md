@@ -1,6 +1,6 @@
 ---
 title: "Seasonal altitudinal migration in rainforest birds"
-excerpt: "16 years of counts showed rainforest birds shifting uphill each summer and back each winter, the first system-wide measure of partial altitudinal migration."
+excerpt: "Rainforest birds move uphill each summer and back down each winter. 16 years of counts make it the first system-wide measure of this movement."
 date: 2025-09-15
 type: research
 stack:
