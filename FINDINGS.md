@@ -62,4 +62,4 @@ Found while working, not fixed, per the working rules in REFURB_BRIEF.md section
 
 ## Post-launch
 
-25. **The home digital twin frame is slated for retirement.** Owner direction on 2026-08-08: with /digital-twin/ live as its own tab, the home embed section will retire when the home page next iterates. Until then the twin renders in both places, and the project page links the tab. What replaces the home section is a positioning call for that iteration.
+25. **The home digital twin frame is slated for retirement.** Owner direction on 2026-08-08: with /digital-twin/ live as its own tab, the home embed section will retire when the home page next iterates. Until then the twin renders in both places, and the project page links the tab. What replaces the home section is a positioning call for that iteration. *Resolved in the home iteration: the embed section came off the home page, and the twin lives at /digital-twin/ and in the Selected work cards (DECISIONS 146).*

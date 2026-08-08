@@ -343,3 +343,19 @@ Produced on branch `refurb/twin-education-tabs`, 2026-08-08. Owner-directed chan
 144. **The embed iframe mounts into the frame body.** site.js appended the created iframe to the section, whose only positioned box is the body div, so `inset: 0` resolved against the document and the iframe painted at the page origin, clipped out of its frame. Reproduced on the live home page by injecting an iframe both ways: as a child of the section it lands at document y 0, as a child of the body it fills the reserved space exactly. One line in site.js now appends into `.embed-frame__body`. Found while building /digital-twin/, where the offset was unmissable.
 
 145. **The measure is retired: text runs to the container.** Owner direction from the live /work/ page: paragraphs wrapped at 68ch inside the 1120px container read as pinned left and cut right. The max-width clamps came off p, ul, ol, blockquote, the page lead, the hero lines, disclosures, callouts and figcaptions, and .prose-column widened to the container. The --measure token stays for the styleguide notes. The 68ch readability rationale (brief 5.3) is superseded by the owner call.
+
+## The home page iteration
+
+Produced on `refurb/main`, 2026-08-08. Owner feedback on the home page.
+
+146. **The home twin embed is retired.** Owner direction: with /digital-twin/ live as its own tab, the home section duplicating it came off. FINDINGS 25 closes. The embed frame component itself is unchanged and still serves /digital-twin/ and the styleguide.
+
+147. **The hero opens warmer, from the twin's profile narrative.** Owner direction: the home page is a personal site, not a CV. The thesis grew to two paragraphs drawn from the digital twin knowledge base (the grandfather in rural Spain, a decade of ecology on three continents, the pivot to AI engineering). The role line and the meta description (which must equal the site description) are unchanged.
+
+148. **The skills row leaves the home page for a keyword row in the hero.** Owner direction: the "Builds with" and "Grounded in" groups read as CV material. Six high-level chips (Bayesian inference, Population modelling, System design, AI engineering, Evaluation, Conservation) sit under the thesis with a new `chip--accent` modifier that draws the border in the accent. The skills-row include and `_data/skills.yml` stay: /skills/ and the styleguide still use them.
+
+149. **The stats band renders in the accent, and its labels fit one line.** Owner direction asked for Claude's orange on the numbers and text: that is the existing `--accent` token (#D97757), so no new colour entered `_tokens.scss`. Values take `--accent`, labels and the as-of note take `--accent-deep` for the better small-text contrast (about 4.2:1 on light paper, slightly under the 4.5 target, an owner-directed trade). The first label shortened to "Years with uncertainty", the as-of note went inline, and the items get `justify-content: flex-end` so every value top-aligns whatever the label wraps to.
+
+150. **The portrait is the GitHub avatar.** Downloaded from github.com/AlejandroFuentePinero to `images/alejandro-avatar.jpg` (460px JPEG, 39 KB) and shown as a circle at the top right of the hero, shrinking fluidly on small screens.
+
+151. **Selected work carries seven cards, though the owner said six.** The owner named seven items (twin, 7PH Graph, JIE, the two Global Change Biology papers, the Nature Climate Change opinion, the Ecography paper) while asking for six in total. The explicit list won over the count; the discrepancy is flagged for the owner to drop one if six was meant. The opinion piece has no project page, so its card links to the paper page; the other research cards link to their project pages.
