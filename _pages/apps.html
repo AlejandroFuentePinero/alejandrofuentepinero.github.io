@@ -27,7 +27,6 @@ redirect_from:
         {% if app.demonstrates and app.demonstrates != "" %}<p class="card__result">{{ app.demonstrates }}</p>{% endif %}
         {% if app.note and app.note != "" %}<p class="card__note">{{ app.note }}</p>{% endif %}
         <p class="pub-row__links">
-          <a href="{{ app.url }}" rel="noopener">Open app</a>
           {% if app.source and app.source != "" %}<a href="{{ app.source }}" rel="noopener">Source</a>{% endif %}
           {% if app.project %}<a href="{{ app.project | relative_url }}">Project page</a>{% endif %}
         </p>
