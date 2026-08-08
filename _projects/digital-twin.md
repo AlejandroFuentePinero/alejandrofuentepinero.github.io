@@ -12,7 +12,7 @@ redirect_from:
   - /datascience/projects/digital-twin/
 ---
 
-The digital twin is a conversational agent that answers questions about my work on my behalf. A second model from a different family reviews every answer before a visitor sees it. On the frozen evaluation baseline, retrieval scores 0.866 mean reciprocal rank and answers score 4.56 on the judge's scale.
+The digital twin is a conversational agent that answers questions about my work on my behalf. A second model from a different family reviews every answer before a visitor sees it. On the frozen evaluation baseline, retrieval scores 0.866 mean reciprocal rank and answers score 4.56 of 5.
 
 Each turn passes through a classifier, a branch-specific prompt, retrieval over a vector store, generation and the guardrail. Failed attempts retry with structured feedback. Persistent failures fall back to a polite contact line. The chat has its own page on this site and runs as a Hugging Face Space.
 
@@ -48,7 +48,7 @@ The resolution was classify-then-route. A thin classifier picks the branch, and 
 
 A 149-question evaluation set covers 7 question types. The types are direct fact, temporal, comparative, numerical, relationship, spanning and holistic. Retrieval scoring uses mean reciprocal rank (MRR), nDCG and keyword coverage. A judge model scores answers on accuracy, completeness and relevance.
 
-The frozen baseline stands at 0.866 MRR and 4.56 accuracy on the judge's scale.
+The frozen baseline stands at 0.866 MRR and 4.56 accuracy on the judge's 1 to 5 scale.
 
 A canary corpus of 50 probe questions replays periodically against the live system. Canary records carry an `is_canary` flag and share the live log file. Drift therefore appears in the same dashboard the traffic flows through. Major drift flags fell across the last 3 points: 12, then 9, then 6.
 
