@@ -1,5 +1,5 @@
 ---
 permalink: /teaching/mentoring/
-redirect_to: /research/#teaching
+redirect_to: /research/#mentoring
 sitemap: false
 ---

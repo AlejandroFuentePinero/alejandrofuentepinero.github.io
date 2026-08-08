@@ -72,13 +72,19 @@ redirect_from:
 
   <section class="section" id="teaching" aria-labelledby="teaching-heading">
     <h2 id="teaching-heading">Teaching</h2>
-    {% assign teaching = site.teaching | sort: "date" %}
+    {% assign teaching = site.teaching | where_exp: "entry", "entry.title != 'Mentoring'" | sort: "date" %}
     {% for entry in teaching %}
     <article class="prose">
       <h3>{{ entry.title }}</h3>
       {{ entry.content | markdownify }}
     </article>
     {% endfor %}
+  </section>
+
+  <section class="section" id="mentoring" aria-labelledby="mentoring-heading">
+    <h2 id="mentoring-heading">Mentoring</h2>
+    {% assign mentoring = site.teaching | where: "title", "Mentoring" | first %}
+    {{ mentoring.content | markdownify }}
   </section>
 
   <section class="section" id="book-chapters" aria-labelledby="book-chapters-heading">

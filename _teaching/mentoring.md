@@ -12,7 +12,7 @@ date: "2025-01-01"
   <li class="talk-row">
     <span class="talk-row__year">2025</span>
     <div>
-      <h4 class="talk-row__title">Olivia Bond</h4>
+      <h3 class="talk-row__title">Olivia Bond</h3>
       <p class="talk-row__venue">James Cook University &middot; Cairns, Australia</p>
       <!-- record -->
       <p class="talk-row__excerpt"><strong>Project:</strong> <em>Microclimate drivers of thermoregulatory behaviors in spectacled flying-foxes (Pteropus conspicillatus)</em></p>
