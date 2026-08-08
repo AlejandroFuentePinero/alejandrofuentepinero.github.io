@@ -1,0 +1,50 @@
+# The 11 teaching roles across 6 courses at James Cook University,
+# 2019 to 2025. Field values are the record, split byte for byte from
+# the course list formerly in _teaching/james_cook_university.md (git
+# history); never edit them (REFURB_BRIEF.md section 1). The /research/
+# teaching section renders this list.
+- year: 2025
+  course: Climate Change and Biodiversity
+  level: Undergraduate
+  role: Demonstrator
+- year: 2023
+  course: Fundamentals of Ecology
+  level: Undergraduate
+  role: Demonstrator
+- year: 2022
+  course: Conservation Biology
+  level: Master's degree
+  role: Guest lecturer
+  lecture: Targeted conservation actions under climate change
+- year: 2022
+  course: Population and Community Ecology
+  level: Undergraduate
+  role: Tutor and field demonstrator
+- year: 2022
+  course: Advanced statistics
+  level: Master's degree
+  role: Demonstrator and tutor
+- year: 2022
+  course: Fundamentals of Ecology
+  level: Undergraduate
+  role: Demonstrator and course development
+- year: 2021
+  course: Fundamentals of Ecology
+  level: Undergraduate
+  role: Demonstrator and course development
+- year: 2021
+  course: Population and Community Ecology
+  level: Undergraduate
+  role: Tutor and field demonstrator
+- year: 2021
+  course: Toolkit for the Field Biologist
+  level: Undergraduate
+  role: Demonstrator and marking
+- year: 2020
+  course: Population and Community Ecology
+  level: Undergraduate
+  role: Tutor and field demonstrator
+- year: 2019
+  course: Climate Change and Biodiversity
+  level: Undergraduate
+  role: Demonstrator
