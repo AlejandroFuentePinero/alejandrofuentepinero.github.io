@@ -77,7 +77,12 @@ redirect_from:
 
 ## Volunteering and professional development {#volunteering}
 
-{% include volunteering-timeline.html %}
+<details class="disclosure">
+  <summary><span class="label">Show the full timeline, 2013 to 2025</span></summary>
+  <div class="disclosure__body">
+    {% include volunteering-timeline.html %}
+  </div>
+</details>
 
 ## Media engagement {#media}
 
