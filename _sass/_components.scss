@@ -1226,3 +1226,38 @@ a.chip:hover {
   font-weight: 500;
   text-align: center;
 }
+
+/* 19. Chapter row: the species accounts on /research/, a talk row
+   without the year column. The title carries the accent since the
+   row does not link.
+   ========================================================================== */
+
+.chapter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.chapter-row {
+  padding-block: var(--space-md);
+  border-top: 1px solid var(--rule);
+}
+
+.chapter-list > .chapter-row:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.chapter-row__title {
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  font-weight: 600;
+  color: var(--accent-deep);
+  margin-bottom: var(--space-2xs);
+}
+
+.chapter-row__citation {
+  margin: 0;
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}

@@ -56,12 +56,4 @@ permalink: /sitemap/
     </ul>
   </section>
 
-  <section class="section">
-    <h2>Posts</h2>
-    <ul>
-      {% for post in site.posts %}
-      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> ({{ post.date | date: "%Y" }})</li>
-      {% endfor %}
-    </ul>
-  </section>
 </div>

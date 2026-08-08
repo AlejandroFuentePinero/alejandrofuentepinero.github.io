@@ -45,7 +45,8 @@ Mechanism notes, from CONTENT_MAP 2.1:
 | `/portfolio/awards/` | `/work/#grants-awards` (stub) | wired (Phase 4) |
 | `/teaching/james_cook_university/` | `/research/#teaching` (stub) | wired (Phase 4) |
 | `/teaching/mentoring/` | `/research/#teaching` (stub) | wired (Phase 4) |
-| `/posts/2012/08/blog-post-1/` | `/posts/action-plan-australian-birds-2021/` | wired (Phase 2) |
+| `/posts/2012/08/blog-post-1/` | `/research/#book-chapters` (stub) | wired (Phase 2 to the post; re-pointed 2026-08-08 when the post retired) |
+| `/posts/action-plan-australian-birds-2021/` | `/research/#book-chapters` (stub) | wired (2026-08-08, the post retired into the chapter rows) |
 
 ## 2. Projects: 18 old URLs, 16 new pages
 

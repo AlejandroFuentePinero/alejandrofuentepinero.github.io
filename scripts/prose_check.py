@@ -166,9 +166,6 @@ FILES = {
     "_talks/tess_2023.md": ("B", 100),
     "_talks/wtma_workshop.md": ("B", 100),
     "_talks/zenq_2022.md": ("B", 100),
-    # The post: Tier B, level 2 budget on the owner's prose. Records
-    # (the publisher's description, the chapter list) are exempt.
-    "_posts/2021-12-01-action-plan-australian-birds.md": ("B", 120),
 }
 
 # Checked by check_teaching: read directly because the entries render
