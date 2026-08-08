@@ -367,3 +367,5 @@ Produced on `refurb/main`, 2026-08-08. Owner feedback on the home page.
 154. **The Ecography card is dropped from Selected work.** Owner call resolving the flag in DECISIONS 151: six cards was the intent. The paper keeps its page and its project page; only the home card went.
 
 155. **The hero portrait grows by a quarter,** to clamp(7.5rem, 17.5vw, 12.5rem), owner direction.
+
+156. **The stats band settles: ink numbers, orange labels, plain Citations.** Owner direction asked for cream numbers to complement the orange labels. Literal cream is invisible on the light theme's paper, so the numbers take `--ink`, which renders as the palette's warm cream (#F2F0E9) in dark mode and near-black in light: the cream the owner saw, theme-safe, no new token. The first label reads "Years of experience", and the visible "as of Aug 2026" note came off the Citations label; the freshness date and source stay recorded in `_data/stats.yml`, where the hard rule requires them.

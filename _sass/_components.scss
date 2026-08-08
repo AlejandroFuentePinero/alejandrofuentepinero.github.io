@@ -302,22 +302,13 @@
   font-variant-numeric: tabular-nums;
   line-height: 1.1;
   margin: 0;
-  color: var(--accent);
+  color: var(--ink);
 }
 
 .stats-band__label {
   font-size: var(--step--1);
   color: var(--accent-deep);
   line-height: 1.35;
-}
-
-.stats-band__asof {
-  display: inline;
-  font-family: var(--font-body);
-  font-size: var(--step--1);
-  font-weight: 400;
-  color: var(--accent-deep);
-  margin-left: var(--space-2xs);
 }
 
 @media (max-width: 47.9375em) {

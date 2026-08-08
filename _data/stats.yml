@@ -6,7 +6,7 @@
 # type: declared       -> include renders `value`; must carry source and as_of
 band:
   - id: years_uncertainty
-    label: "Years with uncertainty"
+    label: "Years of experience"
     type: years_since
     start_year: 2016
     source: "First professional data role: head biologist, CONAF, Puyehue National Park"

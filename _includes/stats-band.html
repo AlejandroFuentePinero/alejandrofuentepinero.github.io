@@ -27,7 +27,7 @@
         {% assign stat_value = stat.value %}
       {% endcase %}
       <div class="stats-band__item">
-        <dt class="stats-band__label">{{ stat.label }}{% if stat.type == "declared" and stat.as_of %}<span class="stats-band__asof">as of {{ stat.as_of | date: "%b %Y" }}</span>{% endif %}</dt>
+        <dt class="stats-band__label">{{ stat.label }}</dt>
         <dd class="stats-band__value">{{ stat_value }}</dd>
       </div>
     {% endfor %}
