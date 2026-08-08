@@ -217,7 +217,7 @@ ACRONYM_ALLOW = {
     # ubiquitous technical terms treated as words, and acronym-shaped
     # proper names (products, software, model and class names).
     "API", "SQL", "JSON", "JSONL", "GPU", "DVD",
-    "GPT", "JAGS", "JIE", "SBERT", "SHAP", "SNE", "AA",
+    "GPT", "JAGS", "JIE", "SBERT", "SHAP", "SNE", "AA", "IELTS",
 }
 
 # Acronym -> expansion that must appear earlier on the same page.

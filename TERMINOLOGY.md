@@ -97,7 +97,8 @@ treated as words and never expanded: AI, CV, PDF, XML, URL, and since the
 _projects pass API, SQL, JSON, JSONL, GPU, DVD. Proper names that
 look like acronyms and are never expanded: CONAF, CSIRO, ORCID, 7PH, R, and
 since the _projects pass GPT (model family), JAGS, JIE (inside AI-JIE),
-SBERT, SHAP, SNE (inside t-SNE) and AA (the accessibility grade). nDCG is
+SBERT, SHAP, SNE (inside t-SNE), AA (the accessibility grade) and IELTS
+(the test's proper name, on the /skills/ languages line). nDCG is
 treated as a metric name: its 4-word expansion would break the noun-cluster
 rule, so it stays unexpanded beside the expanded mean reciprocal rank (MRR).
 Acronyms inside verbatim records (citations, course titles, the nomination

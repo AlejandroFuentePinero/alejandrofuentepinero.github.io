@@ -18,100 +18,50 @@ redirect_from:
 
 {% include skills-row.html %}
 
-My core strength is statistical modelling under uncertainty: Bayesian hierarchical methods applied to noisy, sparse and structured data. The same discipline now runs my AI engineering: retrieval-augmented generation (RAG) pipelines, agents and the evaluation that proves they work. Research added the habits that transfer: measurement design first, explicit assumptions, delivery under real constraints and writing that can be audited.
+My core strength is statistical modelling under uncertainty. The same discipline now runs my AI engineering: retrieval pipelines, agents and the evaluation that proves they work. Research added the habits that transfer: measurement design first, explicit assumptions, delivery under real constraints and writing that can be audited.
 
 ### What I deliver
 
-* **End-to-end AI systems.** RAG pipelines with measured retrieval, agent workflows with tool calling, and fine-tuned frontier and open models.
-* **Full-cycle modelling.** Problem framing, model selection, validation and uncertainty-aware decision support, with depth in Bayesian and spatiotemporal inference.
-* **Data pipelines.** Clean, testable, version-controlled paths from raw data to decision-ready outputs, with Python and SQL as core tools.
+* **End-to-end AI systems.** Retrieval-augmented generation (RAG) pipelines with measured retrieval, agent workflows with tool calling, and fine-tuned models.
+* **Full-cycle modelling.** Problem framing, model selection, validation and uncertainty-aware decision support.
+* **Data pipelines.** Clean, testable, version-controlled paths from raw data to decision-ready outputs with Python and SQL.
 * **Evaluation and communication.** Leakage checks, calibration, error slicing and stress testing, reported with explicit assumptions and limits.
 
 ### Depth, by area
 
-<details class="disclosure">
-  <summary><span class="label">Stack</span></summary>
-  <div class="disclosure__body" markdown="1">
+#### AI engineering {#ai-engineering}
 
-* AI and language models
-  * OpenAI, Anthropic and Google APIs, and open models on Hugging Face
-  * LangChain, LangGraph, LlamaIndex, LiteLLM
-  * ChromaDB, Neo4j and Cypher
-  * Model Context Protocol (MCP) servers and clients with FastMCP
-  * TruLens and Arize Phoenix for tracing and evaluation
-  * Gradio, Streamlit and Modal for delivery
-* Machine learning and data
-  * Python: pandas, NumPy, scikit-learn, XGBoost, TensorFlow, PyTorch
-  * SQL on PostgreSQL
-  * R and the tidyverse
-  * Git and GitHub
-* Methods
-  * Bayesian and hierarchical modelling, spatiotemporal forecasting
-  * Supervised and unsupervised learning, embeddings and semantic search
-  * Knowledge graphs and graph-backed retrieval
-  * Ranking, A/B testing and causal framing
+I build language model systems and prove they work: grounded generation, agentic systems, fine-tuning and evaluation.
 
-</div>
-</details>
+* Retrieval over vector stores (ChromaDB) and knowledge graphs (Neo4j, Cypher), measured for groundedness and relevance
+* Agent workflows in LangGraph: planning loops, tool calling and human checkpoints
+* Judge models benchmarked against labelled data, traced with Arize Phoenix
+* Fine-tuning: supervised frontier runs and QLoRA on open Hugging Face models
+* Guardrails: cross-family review models, per-turn logging and drift detection
 
-<details class="disclosure">
-  <summary><span class="label">Bayesian and hierarchical modelling</span></summary>
-  <div class="disclosure__body" markdown="1">
+#### Statistical modelling under uncertainty {#statistical-modelling}
+
+Bayesian hierarchical methods for noisy, sparse and structured data, with uncertainty carried into every forecast.
 
 * Generalised linear, additive and mixed models with partial pooling
-* Priors as explicit assumptions, uncertainty propagated into every forecast
 * Observation separated from process: N-mixture and integrated population models
-* Spatiotemporal structure, species distribution models and threshold inference
+* Spatiotemporal forecasting, species distribution models and threshold inference
+* Gradient boosting with XGBoost, clustering and SHAP interpretability
+* Validation design: temporal splits, leakage checks, calibration and causal framing
 
-</div>
-</details>
+The methods grew from field ecology research, recorded on the [Research]({{ '/research/' | relative_url }}) page.
 
-<details class="disclosure">
-  <summary><span class="label">Language models and agents</span></summary>
-  <div class="disclosure__body" markdown="1">
+#### Data and software foundations {#foundations}
 
-* Prompting for structured outputs, with schema contracts and bounded retries
-* RAG: embeddings, vector stores, sentence-window and auto-merging retrieval
-* RAG evaluation: context relevance, groundedness and answer relevance
-* Agent workflows: planning loops, tool calling and human-in-the-loop checkpoints
-* Agent evaluation: router, skill and trajectory scoring over traced experiments
-* Judge model design, benchmarked against labelled data
-* Knowledge graph construction and retrieval with Neo4j and Cypher
-* Fine-tuning: supervised frontier fine-tuning and QLoRA on open models
-* Guardrails and observability: cross-family review models, per-turn logging, drift detection
+Reliable engineering around the models: pipelines, reproducibility, geospatial work and delivery apps.
 
-</div>
-</details>
+* Ingestion and transformation with pandas and scikit-learn: schema discipline, typed and tested code
+* Analytical queries on PostgreSQL: joins, window functions, common table expressions and reusable views
+* Reproducibility: pinned environments, deterministic runs, versioned artefacts and Git throughout
+* Raster and vector workflows in R, with spatial feature engineering
+* Delivery apps in Gradio, Streamlit and Shiny
 
-<details class="disclosure">
-  <summary><span class="label">Machine learning and evaluation</span></summary>
-  <div class="disclosure__body" markdown="1">
-
-* Supervised learning: regression, tree ensembles and gradient boosting
-* Unsupervised learning: clustering, dimensionality reduction, anomaly detection
-* Deep learning: training fundamentals in TensorFlow, Keras and PyTorch
-* Validation design: cross-validation, temporal splits, leakage checks, calibration
-* Interpretability: feature importance, partial dependence, SHAP explanations
-* Experimentation: A/B testing, causal framing, decisions under uncertainty
-
-</div>
-</details>
-
-<details class="disclosure">
-  <summary><span class="label">Data and software engineering</span></summary>
-  <div class="disclosure__body" markdown="1">
-
-* Ingestion and transformation with schema discipline and reliable input and output
-* Analytical SQL: joins, window functions, common table expressions, reusable views
-* Reproducibility: pinned environments, deterministic runs, versioned artefacts
-* Quality controls: input validation, unit tests, docstrings and type hints
-* Geospatial pipelines: raster and vector workflows, spatial feature engineering
-* Visualisation and small apps: matplotlib, plotly, ggplot2, Gradio, Streamlit, Shiny
-
-</div>
-</details>
-
-{% include skills-field-record.html %}
+Languages: Spanish (first language), English (IELTS 7.0), French (basic).
 
 ## Education {#education}
 
