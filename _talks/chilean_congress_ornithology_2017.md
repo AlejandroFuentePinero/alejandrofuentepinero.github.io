@@ -5,7 +5,7 @@ type: "Poster"
 permalink: /talks/chilean_congress_ornithology_2017
 venue: "XXII Congress of Chilean Ornithology"
 date: 2017-11-21
-location: "Santa Cruz,  Chile"
+location: "Santa Cruz, Chile"
 redirect_to: /research/#talks
 excerpt: "Bird richness peaks in spring across the urban wetlands of Llanquihue, and diversity stays high all year."
 ---

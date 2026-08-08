@@ -38,7 +38,7 @@
   project: /projects/job-intelligence-engine/
   pitch: "An extraction pipeline turns 6,100 job postings into ranked role recommendations. A judge model scores the extraction layer's accuracy."
   demonstrates: "It shows a deterministic pipeline where every model reports its score on held-out data."
-  note: ""
+  note: "Free hosting, slow to wake. Reload if the loading page stalls."
   screenshot: /images/apps/job-intelligence-engine.png
   screenshot_width: 1280
   screenshot_height: 800

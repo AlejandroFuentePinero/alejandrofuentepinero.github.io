@@ -19,7 +19,7 @@ Every species on the list is restricted to the highlands, where warming pushes p
 
 ### 14. Grey-Headed Robin
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
-- Authors: Williams, S., de la Fuente A., Freeman AND., Graig, M., Frith, DW., Frith, CD., Garnett, ST. (2021).
+- Authors: Williams, S., de la Fuente A., Freeman, AND., Craig, M., Frith, DW., Frith, CD., Garnett, ST. (2021).
 
 ### 13. Victoria's Riflebird
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
@@ -31,7 +31,7 @@ Every species on the list is restricted to the highlands, where warming pushes p
 
 ### 11. Tooth-billed Bowerbird
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
-- Authors: Williams, S., de la Fuente A., Harrington GB., Frith, CD., Frith, DW., Chaplin, D., Freeman, AND., Graig, M., Garnett, ST. (2021).
+- Authors: Williams, S., de la Fuente A., Harrington GB., Frith, CD., Frith, DW., Chaplin, D., Freeman, AND., Craig, M., Garnett, ST. (2021).
 
 ### 10. Wet Tropics Satin Bowerbird
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
@@ -63,14 +63,14 @@ Every species on the list is restricted to the highlands, where warming pushes p
 
 ### 3. Wet Tropics Large-Billed Scrubwren
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
-- Authors: Williams, S., de la Fuente A., Freeman, AND., Graig, M., Garnett, ST. (2021).
+- Authors: Williams, S., de la Fuente A., Freeman, AND., Craig, M., Garnett, ST. (2021).
 
 ### 2. Bower Shrike-Thrush
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
-- Authors: Williams, S., de la Fuente A., Freeman, AND., Graig, M., Garnett, ST. (2021).
+- Authors: Williams, S., de la Fuente A., Freeman, AND., Craig, M., Garnett, ST. (2021).
 
 ### 1. Wet Tropics King-Parrot
 - Nomination: EPBC (Environment Protection and Biodiversity Conservation Act 1999) & IUCN (through Birdlife International).
-- Authors: Williams, S., de la Fuente A., Freeman, AND., Graig, M., Garnett, ST. (2021).
+- Authors: Williams, S., de la Fuente A., Freeman, AND., Craig, M., Garnett, ST. (2021).
 
 <!-- /record -->

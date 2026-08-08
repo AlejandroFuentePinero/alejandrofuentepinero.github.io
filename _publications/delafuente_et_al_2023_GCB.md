@@ -22,7 +22,7 @@ summary: |
 date: 2023-01-18
 venue: 'Global Change Biology'
 paperurl: 'https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.16608'
-citation: 'de la Fuente, A., Navarro, A., & Williams, S. (2023). &quot;The climatic drivers of long-term population changes in rainforest montane birds.&quot; <i>Global Change Biology</i>. 00, 1-9.'
+citation: 'de la Fuente, A., Navarro, A., & Williams, S. (2023). &quot;The climatic drivers of long-term population changes in rainforest montane birds.&quot; <i>Global Change Biology</i>. 29(8), 2132-2140.'
 pdf: 'https://onlinelibrary.wiley.com/doi/epdf/10.1111/gcb.16608'
 project: /projects/spatiotemporal-bird-climate-impacts/
 ---
