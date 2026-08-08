@@ -63,3 +63,5 @@ Found while working, not fixed, per the working rules in REFURB_BRIEF.md section
 ## Post-launch
 
 25. **The home digital twin frame is slated for retirement.** Owner direction on 2026-08-08: with /digital-twin/ live as its own tab, the home embed section will retire when the home page next iterates. Until then the twin renders in both places, and the project page links the tab. What replaces the home section is a positioning call for that iteration. *Resolved in the home iteration: the embed section came off the home page, and the twin lives at /digital-twin/ and in the Selected work cards (DECISIONS 146).*
+
+26. **The CV PDF is unlinked but still maintained.** The /work/ download link retired (DECISIONS 157), so `/files/alejandro-de-la-fuente-cv.pdf` is now reachable only by old external links, yet MAINTENANCE.md still carries its regeneration procedure and the PDF still shows the postdoc as current. Whether to keep regenerating it, freeze it, or replace it with a redirect is an owner call.

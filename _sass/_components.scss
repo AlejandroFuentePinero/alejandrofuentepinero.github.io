@@ -765,6 +765,12 @@
   transition: color var(--dur) var(--ease);
 }
 
+/* A page heading straight after a closed disclosure needs air above
+   the hairline. */
+.disclosure + h2 {
+  margin-top: var(--space-2xl);
+}
+
 .disclosure summary::-webkit-details-marker {
   display: none;
 }

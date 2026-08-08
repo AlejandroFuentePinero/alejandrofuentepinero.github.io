@@ -1,5 +1,5 @@
 {% comment %}
-  The degree record, rendered on /work/#education and /skills/#education.
+  The degree record, rendered on /skills/#education.
   Markdown: include it only inside a markdown="1" container. The record
   is never edited (hard rule 1).
 {% endcomment %}

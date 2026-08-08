@@ -14,16 +14,23 @@ redirect_from:
 <header class="page-header">
   <h1>Work</h1>
   <p class="page-lead">For years my office was a rainforest. I tracked possums and birds across the Australian Wet Tropics, and my models helped decide which species received legal protection. Research taught me to design the measurement first, state every assumption and deliver under real constraints. I hold my AI work to the same standard: if it can't be evaluated, it can't be trusted.</p>
-  <p class="print-hide"><a href="/files/alejandro-de-la-fuente-cv.pdf">Download the CV as a PDF</a></p>
 </header>
 
 <ul class="timeline">
   <li class="timeline__entry">
-    <span class="timeline__dates">2024 to now</span>
+    <span class="timeline__dates">2026 to now</span>
+    <div>
+      <h2 class="timeline__role">AI engineer</h2>
+      <p class="timeline__org">Officeworks &middot; Australia</p>
+      <p class="timeline__summary">I build production AI systems for a national retailer. I built the evaluation system for a customer-facing AI assistant, the base of a product knowledge graph, and agent tooling other teams adopted.</p>
+    </div>
+  </li>
+  <li class="timeline__entry">
+    <span class="timeline__dates">2024 to 2026</span>
     <div>
       <h2 class="timeline__role">Postdoctoral fellow</h2>
       <p class="timeline__org">James Cook University &middot; Australia</p>
-      <p class="timeline__summary">I work on the endangered spectacled flying fox, which lost about a third of its population to a single heatwave in 2018. I model roost microclimates to forecast high-risk heat events and to guide interventions before the next one.</p>
+      <p class="timeline__summary">I worked on the endangered spectacled flying fox, which lost about a third of its population to a single heatwave in 2018. I modelled roost microclimates to forecast high-risk heat events and to guide interventions before the next one.</p>
     </div>
   </li>
   <li class="timeline__entry">
@@ -163,28 +170,32 @@ redirect_from:
   </div>
 </details>
 
-{% include skills-field-record.html %}
-
 <details class="disclosure">
   <summary><span class="label">Media engagement</span></summary>
   <div class="disclosure__body" markdown="1">
 
 <!-- record -->
 
+* Possums threatened by climate change
+  * Article. [James Cook University media release](https://www.jcu.edu.au/news/releases/2022/november/possums-threatened-by-climate-change)
+  * Total media coverage. [70 national stories](https://app.mediaportal.com/#/custom-report/062b775f-86fc-4380-a866-2a2ed7c8b988)
+* Global warming drives Wet Tropics possum species from their mountain homes
+  * Article. [ABC News](https://www.abc.net.au/news/2022-01-03/climate-change-herbert-river-ringtail-possum-decline/100705912)
+* Climate change drives possums from high altitude homes in Queensland's wet tropics
+  * Interview. [ABC News](https://www.abc.net.au/news/2022-01-02/climate-change-drives-possums-from-high-altitude/13693612)
+* Tropical Rainforest Research in Education
+  * Article. [Skyrail Rainforest Foundation](https://www.skyrail.com.au/blog/tropical-rainforest-research-in-education/)
+* Aussie birds disappearing due to warming
+  * Article. [Narromine News](https://www.narrominenewsonline.com.au/story/7574394/aussie-birds-disappearing-due-to-warming/)
 * It’s Easy to Hate Selfies. But Can They Also Be a Force for Good?
   * Photo contribution. [New York Times](https://www.nytimes.com/2019/07/11/style/selfies-instagram.html)
+* Woody bamboo flowering in Puyehue National Park
+  * Article. El Austral, Chile.
 
 <!-- /record -->
 
   </div>
 </details>
-
-
-## Education {#education}
-
-{% include education-degrees.md %}
-
-{% include education-certificates.html %}
 
 ## Grants and awards {#grants-awards}
 

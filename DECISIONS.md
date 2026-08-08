@@ -369,3 +369,19 @@ Produced on `refurb/main`, 2026-08-08. Owner feedback on the home page.
 155. **The hero portrait grows by a quarter,** to clamp(7.5rem, 17.5vw, 12.5rem), owner direction.
 
 156. **The stats band settles: ink numbers, orange labels, plain Citations.** Owner direction asked for cream numbers to complement the orange labels. Literal cream is invisible on the light theme's paper, so the numbers take `--ink`, which renders as the palette's warm cream (#F2F0E9) in dark mode and near-black in light: the cream the owner saw, theme-safe, no new token. The first label reads "Years of experience", and the visible "as of Aug 2026" note came off the Citations label; the freshness date and source stay recorded in `_data/stats.yml`, where the hard rule requires them.
+
+## The work page iteration
+
+Produced on `refurb/main`, 2026-08-08. Owner feedback on the work page.
+
+157. **The CV download retires from /work/.** Owner direction: the site is the CV, so the PDF link came off the page header. The PDF itself stays at `/files/alejandro-de-la-fuente-cv.pdf` so nothing anyone holds 404s, and the `/cv/` and `/resume` redirects into /work/ are unchanged. The MAINTENANCE.md regeneration procedure now maintains an unlinked artefact (FINDINGS 26).
+
+158. **The timeline opens at Officeworks.** The postdoc ended in May 2026 and its entry closes at 2026, with its summary moved to past tense. The new top entry (AI engineer, Officeworks, 2026 to now) is drawn from the digital twin knowledge base and stays inside its stated confidentiality boundary: generic system descriptions, no internal names, vendors or results.
+
+159. **Education leaves /work/.** Owner direction: degrees, certificates and training belong with /skills/, which already rendered both includes at /skills/#education. The one education redirect stub already targeted /skills/, so nothing re-points. The include comments now name /skills/ as the sole consumer.
+
+160. **The field and modelling disclosure leaves /work/.** Owner direction: it read as CV filler there. The identical record already renders on /skills/ through the same include, so every skill in it stays visible on the skills page and the include survives with one consumer.
+
+161. **Media engagement on /work/ lists the full record again.** Owner direction: the section looked thin with only the New York Times credit. The seven old-site entries return under the disclosure using the verified headlines and outlets recorded on the paper pages in the excerpt rewrite, so the possum, bird and bamboo stories are now dual-listed on /work/ and their paper pages. That dual listing supersedes the /work/-off routing half of the excerpt-rewrite decision; the paper-page half stands.
+
+162. **A heading after a closed disclosure gets air.** `.disclosure + h2` takes `margin-top: var(--space-2xl)` so "Grants and awards" no longer sits on the media disclosure's hairline. The same rule spaces "Education" above the certificates on /skills/. Spacing only, inside the existing token scale, so it skipped the styleguide-first path for new components.
