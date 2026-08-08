@@ -494,6 +494,14 @@
   background: var(--paper-sunk);
 }
 
+/* Tall variant for /digital-twin/: the body stretches to the viewport
+   below the sticky header and the page header. */
+.embed-frame--tall .embed-frame__body {
+  height: calc(100vh - 22rem);
+  height: calc(100dvh - 22rem);
+  min-height: 30rem;
+}
+
 .embed-frame__placeholder {
   position: absolute;
   inset: 0;
