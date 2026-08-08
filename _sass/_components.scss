@@ -17,6 +17,19 @@
   margin-inline: calc(50% - 50vw);
 }
 
+/* Screen-reader-only text: visually removed, still read aloud and
+   still parsed as page prose. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .skip-link {
   position: absolute;
   left: var(--space-md);
@@ -523,6 +536,17 @@
   height: calc(100vh - 22rem);
   height: calc(100dvh - 22rem);
   min-height: 30rem;
+}
+
+/* The /digital-twin/ tab: the app is the whole page, an iframe filling
+   the viewport below the sticky header. */
+.twin-app {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 3.6rem);
+  height: calc(100dvh - 3.6rem);
+  min-height: 30rem;
+  border: 0;
 }
 
 .embed-frame__placeholder {
