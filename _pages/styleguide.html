@@ -154,7 +154,7 @@ hidden: true
     <div class="sg-demo">
       {% include skills-row.html %}
     </div>
-    <p class="sg-note">Two groups from <code>_data/skills.yml</code>, rendered as one continuous row that wraps. A chip claims mastery demonstrated by a shipped system or a peer-reviewed paper.</p>
+    <p class="sg-note">Two groups from <code>_data/skills.yml</code>, rendered as one continuous row that wraps. A chip claims mastery demonstrated by a shipped system or a peer-reviewed paper, and links to the /skills/ capability card that holds the claim. Anchor chips drop the underline: the border carries the hover signal.</p>
     <div class="sg-demo">
       <p class="chip-row"><span class="chip chip--accent">Bayesian inference</span><span class="chip chip--accent">AI engineering</span></p>
     </div>
@@ -440,5 +440,24 @@ hidden: true
       </ul>
     </div>
     <p class="sg-note">Grants, awards and media engagement on /work/, one tile each: mono meta row (year range and amount, or kind and outlet), the funder, award or linked headline in the body face, detail line muted. Hairline border, no shadow, no hover state of its own. Data lives in _data/grants.yml, _data/awards.yml and _data/media.yml.</p>
+  </section>
+
+  <!-- ================================================================ -->
+  <section class="sg-section" id="c17-capability">
+    <span class="label sg-section__eyebrow">Component 17, added post-launch</span>
+    <h2>Capability card</h2>
+    <div class="sg-demo">
+      <ul class="capability-list">
+        <li class="capability">
+          <h4>AI engineering</h4>
+          <p>I build language model systems and prove they work: grounded generation, agentic systems, fine-tuning and evaluation.</p>
+          <ul>
+            <li>Agent workflows in LangGraph: planning loops, tool calling and human checkpoints</li>
+            <li>Judge models benchmarked against labelled data, traced with Arize Phoenix</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <p class="sg-note">The three skill areas on /skills/, one tile each: title, one-line claim muted, then at most five bullets with tools named inline. Single column, hairline border, no shadow, no hover since the card does not link. The skills row chips (component 4) anchor to these cards.</p>
   </section>
 </div>

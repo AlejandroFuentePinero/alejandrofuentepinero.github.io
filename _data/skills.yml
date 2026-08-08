@@ -1,18 +1,29 @@
 # _data/skills.yml
-# The home page skills row. Two groups, rendered as one chip row.
+# The skills chip row. Two groups, rendered as one chip row.
 # Rule: a chip claims working competence demonstrated on this site.
+# Each anchor points at the /skills/ capability card that holds the proof.
 groups:
   - name: "Builds with"
     chips:
-      - Python
-      - RAG pipelines
-      - Knowledge graphs
-      - LLM-as-judge evaluation
-      - SQL
+      - label: Python
+        anchor: "#foundations"
+      - label: RAG pipelines
+        anchor: "#ai-engineering"
+      - label: Knowledge graphs
+        anchor: "#ai-engineering"
+      - label: LLM-as-judge evaluation
+        anchor: "#ai-engineering"
+      - label: SQL
+        anchor: "#foundations"
   - name: "Grounded in"
     chips:
-      - Bayesian inference
-      - Hierarchical models
-      - Uncertainty quantification
-      - Evaluation design
-      - R
+      - label: Bayesian inference
+        anchor: "#statistical-modelling"
+      - label: Hierarchical models
+        anchor: "#statistical-modelling"
+      - label: Uncertainty quantification
+        anchor: "#statistical-modelling"
+      - label: Evaluation design
+        anchor: "#statistical-modelling"
+      - label: R
+        anchor: "#foundations"

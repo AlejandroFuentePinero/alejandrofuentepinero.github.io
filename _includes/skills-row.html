@@ -1,12 +1,13 @@
 {% comment %}
   Component 4: skills chip row. Two groups from _data/skills.yml rendered
-  as one visually continuous row.
+  as one visually continuous row. Each chip links to its /skills/
+  capability card, so the row works from any page that includes it.
 {% endcomment %}
 <div class="chip-row">
   {% for group in site.data.skills.groups %}
     <span class="label chip-row__group">{{ group.name }}</span>
     {% for chip in group.chips %}
-      <span class="chip">{{ chip }}</span>
+      <a class="chip" href="{{ '/skills/' | relative_url }}{{ chip.anchor }}">{{ chip.label }}</a>
     {% endfor %}
   {% endfor %}
 </div>

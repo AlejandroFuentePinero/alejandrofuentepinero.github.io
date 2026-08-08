@@ -29,6 +29,10 @@ My core strength is statistical modelling under uncertainty. The same discipline
 
 ### Depth, by area
 
+<ul class="capability-list">
+<li class="capability">
+<div markdown="1">
+
 #### AI engineering {#ai-engineering}
 
 I build language model systems and prove they work: grounded generation, agentic systems, fine-tuning and evaluation.
@@ -38,6 +42,11 @@ I build language model systems and prove they work: grounded generation, agentic
 * Judge models benchmarked against labelled data, traced with Arize Phoenix
 * Fine-tuning: supervised frontier runs and QLoRA on open Hugging Face models
 * Guardrails: cross-family review models, per-turn logging and drift detection
+
+</div>
+</li>
+<li class="capability">
+<div markdown="1">
 
 #### Statistical modelling under uncertainty {#statistical-modelling}
 
@@ -51,6 +60,11 @@ Bayesian hierarchical methods for noisy, sparse and structured data, with uncert
 
 The methods grew from field ecology research, recorded on the [Research]({{ '/research/' | relative_url }}) page.
 
+</div>
+</li>
+<li class="capability">
+<div markdown="1">
+
 #### Data and software foundations {#foundations}
 
 Reliable engineering around the models: pipelines, reproducibility, geospatial work and delivery apps.
@@ -60,6 +74,10 @@ Reliable engineering around the models: pipelines, reproducibility, geospatial w
 * Reproducibility: pinned environments, deterministic runs, versioned artefacts and Git throughout
 * Raster and vector workflows in R, with spatial feature engineering
 * Delivery apps in Gradio, Streamlit and Shiny
+
+</div>
+</li>
+</ul>
 
 Languages: Spanish (first language), English (IELTS 7.0), French (basic).
 

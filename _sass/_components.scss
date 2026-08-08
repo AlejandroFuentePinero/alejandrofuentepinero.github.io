@@ -367,6 +367,19 @@
   border-color: var(--accent);
 }
 
+/* Chips rendered as anchors (the skills row): the border carries the
+   link signal instead of an underline. Colour-only transition per
+   brief 5.4. */
+a.chip {
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color var(--dur) var(--ease);
+}
+
+a.chip:hover {
+  border-color: var(--accent-deep);
+}
+
 /* 5. Project and app card with stack chips
    ========================================================================== */
 
@@ -399,6 +412,12 @@
 
 .card:hover {
   border-color: var(--ink-faint);
+}
+
+/* display: flex above beats the UA [hidden] rule, so the projects
+   filter needs this restated for cards it hides. */
+.card[hidden] {
+  display: none;
 }
 
 .card__meta {
@@ -1118,4 +1137,46 @@
   margin: 0;
   font-size: var(--step--1);
   color: var(--ink-muted);
+}
+
+/* 17. Capability card: the three skill areas on /skills/ as bordered
+   tiles. Single column, no hover since the card itself does not link.
+   ========================================================================== */
+
+.capability-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  list-style: none;
+  margin: 0 0 var(--space-xl);
+  padding: 0;
+  max-width: none;
+}
+
+.capability {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+}
+
+.capability h4 {
+  margin: 0 0 var(--space-2xs);
+  font-size: var(--step-1);
+  /* Chip anchors land here: clear the sticky header. */
+  scroll-margin-top: 5rem;
+}
+
+.capability p {
+  margin: 0 0 var(--space-sm);
+  color: var(--ink-muted);
+}
+
+.capability ul {
+  margin: 0 0 var(--space-sm);
+  /* The card sits inside a list, so reassert first-level markers. */
+  list-style: disc;
+}
+
+.capability > :last-child {
+  margin-bottom: 0;
 }
