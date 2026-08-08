@@ -1,0 +1,26 @@
+# The grant record, rendered on /work/#grants by grants-awards.html.
+# Figures come from the owner's CV. Two merges, owner-directed
+# (DECISIONS 165): the 2021 Skyrail grant and its 2022 top-up read as
+# one entry ($5,000 each), and the four Salamanca undergraduate
+# scholarships (2010 to 2013, 6,000 euro each) read as one entry.
+# Never change a figure without the owner's CV in hand.
+- years: "2021 to 2022"
+  funder: Skyrail Foundation
+  amount: "$10,000"
+  detail: "Research grant and top-up: “Determinants of spatial variation in population density in a tropical folivore community”."
+- years: "2021"
+  funder: Wet Tropics Management Authority
+  amount: "$7,500"
+  detail: "Climate Action Grant: “Why are Ringtail Possums declining in the Australian Wet Tropics?”."
+- years: "2019"
+  funder: James Cook University
+  amount: "$98,000"
+  detail: "PhD scholarship over 3.5 years: “Determinants of spatial variation in population density in a tropical folivore community”."
+- years: "2014"
+  funder: University of Salamanca
+  amount: "€10,000"
+  detail: "Master’s scholarship: “Implementation of GIS and species distribution models on studies of niche marginality of threatened plants”."
+- years: "2010 to 2013"
+  funder: University of Salamanca
+  amount: "€24,000"
+  detail: "Four undergraduate scholarships, €6,000 a year."

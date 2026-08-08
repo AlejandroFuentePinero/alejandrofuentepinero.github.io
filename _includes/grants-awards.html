@@ -1,0 +1,26 @@
+{% comment %}
+  Grants and awards as honor cards, rendered on /work/. Data lives in
+  _data/grants.yml and _data/awards.yml, which carry the record; the
+  #grants and #awards anchors predate the component and must survive.
+{% endcomment %}
+<h3 id="grants">Grants</h3>
+<ul class="honor-grid">
+  {% for grant in site.data.grants %}
+  <li class="honor">
+    <p class="honor__meta"><span>{{ grant.years }}</span><span class="honor__amount">{{ grant.amount }}</span></p>
+    <p class="honor__title">{{ grant.funder }}</p>
+    <p class="honor__detail">{{ grant.detail }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+<h3 id="awards">Awards</h3>
+<ul class="honor-grid">
+  {% for award in site.data.awards %}
+  <li class="honor">
+    <p class="honor__meta"><span>{{ award.year }}</span></p>
+    <p class="honor__title">{{ award.award }}</p>
+    <p class="honor__detail">{{ award.detail }}</p>
+  </li>
+  {% endfor %}
+</ul>
