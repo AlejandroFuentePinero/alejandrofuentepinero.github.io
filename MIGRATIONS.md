@@ -23,6 +23,7 @@ Mechanism notes, from CONTENT_MAP 2.1:
 | `/404.html` | restyled (Phase 4) | keep |
 | `/sitemap/` | rewritten (Phase 4) | keep |
 | `/terms/` | light rewrite in Phase 5 | keep |
+| `/contact/` | `/` (stub) | wired (2026-08-08, page retired: the footer carries the contact links on every page) |
 | `/about/` | `/` | wired (pre-existing, unchanged) |
 | `/about.html` | `/` | wired (pre-existing, unchanged) |
 | `/academic/` | `/research/` | wired (Phase 4) |

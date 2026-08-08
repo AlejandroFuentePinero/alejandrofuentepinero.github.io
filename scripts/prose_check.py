@@ -117,7 +117,6 @@ FILES = {
     "_pages/apps.html": ("A", 200),
     "_pages/digital-twin.html": ("A", 80),
     "_pages/research.html": ("B", 700),
-    "_pages/contact.md": ("B", 60),
     "_pages/404.md": ("A", 30),
     "_pages/sitemap.md": ("A", 120),
     "_pages/terms.md": ("A", 150),

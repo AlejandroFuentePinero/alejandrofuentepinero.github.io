@@ -22,7 +22,6 @@ permalink: /sitemap/
       <li><a href="{{ '/apps/' | relative_url }}">Apps</a>: live, usable systems</li>
       <li><a href="{{ '/research/' | relative_url }}">Research</a>: publications, talks, teaching, book chapters</li>
       <li><a href="{{ '/research/threatened-species/' | relative_url }}">Threatened species nominations</a></li>
-      <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
       <li><a href="{{ '/terms/' | relative_url }}">Terms and privacy policy</a></li>
     </ul>
   </section>
