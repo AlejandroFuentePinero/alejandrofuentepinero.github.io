@@ -7,9 +7,6 @@
   <li class="honor">
     <p class="honor__meta"><span>{{ item.kind }}</span><span>{{ item.outlet }}</span></p>
     <p class="honor__title">{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</p>
-    {% if item.coverage_label %}
-    <p class="honor__detail">Total coverage: <a href="{{ item.coverage_url }}">{{ item.coverage_label }}</a>.</p>
-    {% endif %}
   </li>
   {% endfor %}
 </ul>
