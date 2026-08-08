@@ -137,6 +137,12 @@ All 15 wired in Phase 4: the four kept pages carry `redirect_from`, the rest red
 | `/md/`, `/markdown.html` | Template leftovers on the threatened species page | gone (Phase 2) |
 | `/wordpress/blog-posts/` | Template leftover on the book chapters page | gone (Phase 2) |
 
-## 6. Project documents
+## 6. URLs kept with changed content
+
+| URL | What changed | When |
+|---|---|---|
+| `/files/alejandro-de-la-fuente-cv.pdf` | The maintained CV became a frozen one-page pointer PDF linking to /work/. GitHub Pages cannot HTTP-redirect a `.pdf` path, so the URL keeps serving a valid PDF and never 404s (DECISIONS 180). | Closeout, 2026-08-08 |
+
+## 7. Project documents
 
 `/AUDIT/` and `/REFURB_BRIEF/` rendered as pages because root markdown builds by default. All six project documents (REFURB_BRIEF.md, AUDIT.md, POSITIONING.md, CONTENT_MAP.md, DECISIONS.md, MIGRATIONS.md) are now on the `_config.yml` exclude list. No redirects: they were never site content.

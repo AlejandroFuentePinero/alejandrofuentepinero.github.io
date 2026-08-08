@@ -253,19 +253,13 @@ seed a deliberate violation once and watch it fail, then land clean.
 
 ## Regenerating scripted assets
 
-All four scripts run locally from the repo root and their output is
+All three scripts run locally from the repo root and their output is
 committed, because GitHub Pages has no build step.
 
-**CV PDF** (`files/alejandro-de-la-fuente-cv.pdf`): the /work/ page
-printed through the print stylesheet with every disclosure opened
-(DECISIONS 58, 74). After any change to /work/ content:
-
-```
-bundle exec jekyll build
-python3 scripts/generate_cv_pdf.py
-```
-
-Requires Google Chrome. Commit the changed PDF.
+**CV PDF**: retired. `files/alejandro-de-la-fuente-cv.pdf` is a frozen
+one-page pointer to /work/ kept only so old external links never 404
+(DECISIONS 180). It is never regenerated. The print stylesheet still
+serves anyone who prints /work/ from the browser.
 
 **og:image** (`images/og-image.png`): the 1200x630 social card, built
 from the tokens file and the site's own fonts (DECISIONS 120). Rerun
@@ -312,5 +306,4 @@ python3 scripts/prose_check.py    # "clean"
 ```
 
 Then look at the rendered page once in both themes. If the change
-moved a URL, test the old URL locally before pushing. If it touched
-/work/, regenerate the CV PDF.
+moved a URL, test the old URL locally before pushing.
