@@ -42,6 +42,14 @@ redirect_from:
     </div>
   </li>
   <li class="timeline__entry">
+    <span class="timeline__dates">2024</span>
+    <div>
+      <h2 class="timeline__role">Research assistant, Data Analytics</h2>
+      <p class="timeline__org">University of Melbourne &middot; Australia</p>
+      <p class="timeline__summary">I built reproducible pipelines to clean, validate and integrate multi-source data. The work covered about 27,000 samples across 140 years of Australian museum records, delivered as analysis-ready datasets and plain summaries.</p>
+    </div>
+  </li>
+  <li class="timeline__entry">
     <span class="timeline__dates">2019</span>
     <div>
       <h2 class="timeline__role">Research assistant</h2>
