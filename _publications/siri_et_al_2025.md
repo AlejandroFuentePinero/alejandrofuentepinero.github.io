@@ -19,7 +19,7 @@ summary: |
   averages alone would have called these forests indifferent to gaps.
 date: 2025-07-16
 venue: 'Ecologica Montenegrina'
-paperurl: 'https://www.biotaxa.org/em/article/view/87143'
+paperurl: 'https://doi.org/10.37828/em.2025.88.11'
 citation: 'Siri, S., Ponpithuk, Y., Safoowong, M., Marod, D., de la Fuente, A., Williams, S. E., & Duengkae, P. (2025). The effect of forest gap dynamics on tropical rainforest birds. Ecologica Montenegrina, 88, 164–185. https://doi.org/10.37828/em.2025.88.11'
 pdf: '/files/siri_et_al_2025_tropical_birds_forest_gap.pdf'
 project: /projects/forest-gap-abundance-gradients/

@@ -17,7 +17,7 @@ I joined the study as the analyst. My part was the analytical framework: general
 ## Links
 
 - **Paper page:** [The effect of forest gap dynamics on tropical rainforest birds](/research/forest-gap-birds-2025/)
-- **Journal:** [Ecologica Montenegrina](https://www.biotaxa.org/em/article/view/87143)
+- **Journal:** [Ecologica Montenegrina](https://doi.org/10.37828/em.2025.88.11)
 - **PDF:** [Full text](/files/siri_et_al_2025_tropical_birds_forest_gap.pdf)
 
 ## Architecture
