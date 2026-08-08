@@ -367,7 +367,25 @@ hidden: true
         </li>
       </ul>
     </div>
-    <p class="sg-note">Dates in the mono column, role in the serif, one entry capped at 40 words. Ranges spell "to"; no dashes.</p>
+    <div class="sg-demo sg-demo--flush" style="padding: 0 var(--space-xl)">
+      <ul class="timeline timeline--dense">
+        <li class="timeline__entry">
+          <span class="timeline__dates">2020 to 2022</span>
+          <div>
+            <h3 class="timeline__role">Training of local rangers in biodiversity monitoring</h3>
+            <p class="timeline__org">Queensland National Parks and Wildlife Services &middot; Australia</p>
+          </div>
+        </li>
+        <li class="timeline__entry">
+          <span class="timeline__dates">2018</span>
+          <div>
+            <h3 class="timeline__role">Breeding bird survey at Fairburn Ings Natural Reserve</h3>
+            <p class="timeline__org">Royal Society for the Protection of Birds &middot; UK</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <p class="sg-note">Dates in the mono column, role in the serif, one entry capped at 40 words. Ranges spell "to"; no dashes. The dense variant (second demo) carries the volunteering and professional development record on /work/: no summary, title in the body face, tighter rows.</p>
   </section>
 
   <!-- ================================================================ -->
@@ -415,8 +433,12 @@ hidden: true
           <p class="honor__title">Best talk</p>
           <p class="honor__detail">Zoology and Ecology North Queensland, Mission Beach: “Songs of disappearance: Rainforest Montane Birds and Climate Change”.</p>
         </li>
+        <li class="honor">
+          <p class="honor__meta"><span>Interview</span><span>ABC News</span></p>
+          <p class="honor__title"><a href="#">Climate change drives possums from high altitude homes in Queensland's wet tropics</a></p>
+        </li>
       </ul>
     </div>
-    <p class="sg-note">Grants and awards on /work/, one tile each: mono meta row with the year range left and the amount right, funder or award name in the body face, detail line muted. Hairline border, no shadow, no hover: the tiles link nowhere. Data lives in _data/grants.yml and _data/awards.yml.</p>
+    <p class="sg-note">Grants, awards and media engagement on /work/, one tile each: mono meta row (year range and amount, or kind and outlet), the funder, award or linked headline in the body face, detail line muted. Hairline border, no shadow, no hover state of its own. Data lives in _data/grants.yml, _data/awards.yml and _data/media.yml.</p>
   </section>
 </div>

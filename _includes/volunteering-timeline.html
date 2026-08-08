@@ -1,0 +1,17 @@
+{% comment %}
+  The volunteering and professional development timeline, rendered on
+  /work/. Data lives in _data/volunteering.yml, which carries the
+  record. Dense variant of the work timeline: no summaries, body-face
+  titles.
+{% endcomment %}
+<ul class="timeline timeline--dense">
+  {% for item in site.data.volunteering %}
+  <li class="timeline__entry">
+    <span class="timeline__dates">{{ item.years }}</span>
+    <div>
+      <h3 class="timeline__role">{{ item.title }}</h3>
+      <p class="timeline__org">{% if item.org != "" %}{% if item.org_url %}<a href="{{ item.org_url }}">{{ item.org }}</a>{% else %}{{ item.org }}{% endif %} &middot; {% endif %}{{ item.country }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

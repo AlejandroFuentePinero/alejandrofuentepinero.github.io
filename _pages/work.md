@@ -75,135 +75,13 @@ redirect_from:
   </li>
 </ul>
 
-<details class="disclosure">
-  <summary><span class="label">Volunteering and other field experiences</span></summary>
-  <div class="disclosure__body" markdown="1">
+## Volunteering and professional development {#volunteering}
 
-<!-- record -->
+{% include volunteering-timeline.html %}
 
-* Vertebrate biodiversity monitoring in the Australian Wet Tropics.
-  * Organisation: James Cook University.
-  * Country: Australia.
-  * Year: 2019 - present.
-* Yellow-tailed woolly monkey Lagothrix flavicauda, survey, mammals’ inventory and community-based conservation work in the Peruvian Cloud Forest and the Peruvian Amazon Rainforest.
-  * Organisation: Neotropical Primate Conservation and Lush Cosmetics.
-  * Country: Peru.
-  * Year: 2018-2019.
-* Breeding bird survey at Fairburn Ings Natural Reserve.
-  * Organisation: Royal Society for the Protection of Birds.
-  * Country: UK.
-  * Year: 2018.
-* Exploration and description of Andean flora and fauna in Puyehue National Park.
-  * Organisation: CONAF.
-  * Country: Chile.
-  * Year: 2016-2017.
-* Annual population monitoring of the Darwin's Frog (_Rhinoderma darwinii_).
-  * Organisation: Andres Bello University.
-  * Country: Chile.
-  * Year: 2017.
-* Big cats monitoring in Kaa-Iya National Park.
-  * Organisation: Bolivian National Parks (with the support of University of Florida and WCS).
-  * Country: Bolivia.
-  * Year: 2017.
-* Population monitoring of black rats, population and breeding monitoring of cormorants and Cory's shearwater.
-  * Organisation: SPEA Life+ Berlengas.
-  * Country: Portugal.
-  * Year: 2016.
-* Population monitoring of amphibians and semi-aquatic mammals.
-  * Organisation: University of Salamanca.
-  * Country: Spain.
-  * Year: 2016.
-* Population dynamics of Balearic lacertids.
-  * Organisation: University of Salamanca.
-  * Country: Spain.
-  * Year: 2016.
-* Recovery and release of endemic Iberian fauna.
-  * Organisation: [AMUS](https://www.amus.org.es/).
-  * Country: Spain.
-  * Year: 2015.
-* Rescue and rehabilitation of primates.
-  * Organisation: [RAINFER](http://rainfer.org/english/).
-  * Country: Spain.
-  * Year: 2014-2015.
-* Animal care and wildlife rehabilitation and release.
-  * Organisation: Zoo de Santillana Foundation.
-  * Country: Spain.
-  * Year: 2013.
+## Media engagement {#media}
 
-<!-- /record -->
-
-  </div>
-</details>
-
-<details class="disclosure">
-  <summary><span class="label">Professional development and community-based conservation</span></summary>
-  <div class="disclosure__body" markdown="1">
-
-<!-- record -->
-
-* Biodiversity consulting.
-  * Organisation: Wet Tropics Management Authority.
-  * Country: Australia.
-  * Year: 2024.
-* Expert workshop participation: Improving the resilience of the Wet Tropics bioregion.
-  * Organisation: Wet Tropics Management Authority.
-  * Country: Australia.
-  * Year: 2024.
-* Training of local rangers in biodiversity monitoring.
-  * Organisation: Queensland National Parks and Wildlife Services.
-  * Country: Australia.
-  * Year: 2020 - 2022.
-* International Ecology School.
-  * Country: Thailand.
-  * Year: 2022.
-* Indigenous rangers training in biodiversity monitoring, data collection, curation, and interpretation.
-  * Organisation: Abriculture: indigenous environmental organisation.
-  * Country: Australia.
-  * Year: 2020.
-* Indigenous community engagement for the conservation of the critically endangered Yellow-tailed woolly monkey.
-  * Organisation: Neotropical Primate Conservation.
-  * Country: Peru.
-  * Year: 2018.
-* Training of local rangers in biodiversity monitoring.
-  * Organisation: Bolivian National Parks.
-  * Country: Bolivia.
-  * Year: 2017.
-* Training of local rangers in biodiversity monitoring, community engagement, and science communication.
-  * Organisation: CONAF - Chilean National Parks.
-  * Country: Chile.
-  * Year: 2016 - 2017.
-
-<!-- /record -->
-
-  </div>
-</details>
-
-<details class="disclosure">
-  <summary><span class="label">Media engagement</span></summary>
-  <div class="disclosure__body" markdown="1">
-
-<!-- record -->
-
-* Possums threatened by climate change
-  * Article. [James Cook University media release](https://www.jcu.edu.au/news/releases/2022/november/possums-threatened-by-climate-change)
-  * Total media coverage. [70 national stories](https://app.mediaportal.com/#/custom-report/062b775f-86fc-4380-a866-2a2ed7c8b988)
-* Global warming drives Wet Tropics possum species from their mountain homes
-  * Article. [ABC News](https://www.abc.net.au/news/2022-01-03/climate-change-herbert-river-ringtail-possum-decline/100705912)
-* Climate change drives possums from high altitude homes in Queensland's wet tropics
-  * Interview. [ABC News](https://www.abc.net.au/news/2022-01-02/climate-change-drives-possums-from-high-altitude/13693612)
-* Tropical Rainforest Research in Education
-  * Article. [Skyrail Rainforest Foundation](https://www.skyrail.com.au/blog/tropical-rainforest-research-in-education/)
-* Aussie birds disappearing due to warming
-  * Article. [Narromine News](https://www.narrominenewsonline.com.au/story/7574394/aussie-birds-disappearing-due-to-warming/)
-* It’s Easy to Hate Selfies. But Can They Also Be a Force for Good?
-  * Photo contribution. [New York Times](https://www.nytimes.com/2019/07/11/style/selfies-instagram.html)
-* Woody bamboo flowering in Puyehue National Park
-  * Article. El Austral, Chile.
-
-<!-- /record -->
-
-  </div>
-</details>
+{% include media-cards.html %}
 
 ## Grants and awards {#grants-awards}
 

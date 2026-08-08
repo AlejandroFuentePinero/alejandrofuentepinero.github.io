@@ -1,0 +1,33 @@
+# The media engagement record, rendered on /work/ by media-cards.html.
+# Headlines and outlets are third-party records verified against their
+# sources; never reword them. The same possum, bird and bamboo entries
+# also live on their paper pages (DECISIONS 161).
+- kind: Article
+  outlet: James Cook University media release
+  title: Possums threatened by climate change
+  url: https://www.jcu.edu.au/news/releases/2022/november/possums-threatened-by-climate-change
+  coverage_label: 70 national stories
+  coverage_url: https://app.mediaportal.com/#/custom-report/062b775f-86fc-4380-a866-2a2ed7c8b988
+- kind: Article
+  outlet: ABC News
+  title: Global warming drives Wet Tropics possum species from their mountain homes
+  url: https://www.abc.net.au/news/2022-01-03/climate-change-herbert-river-ringtail-possum-decline/100705912
+- kind: Interview
+  outlet: ABC News
+  title: Climate change drives possums from high altitude homes in Queensland's wet tropics
+  url: https://www.abc.net.au/news/2022-01-02/climate-change-drives-possums-from-high-altitude/13693612
+- kind: Article
+  outlet: Skyrail Rainforest Foundation
+  title: Tropical Rainforest Research in Education
+  url: https://www.skyrail.com.au/blog/tropical-rainforest-research-in-education/
+- kind: Article
+  outlet: Narromine News
+  title: Aussie birds disappearing due to warming
+  url: https://www.narrominenewsonline.com.au/story/7574394/aussie-birds-disappearing-due-to-warming/
+- kind: Photo contribution
+  outlet: New York Times
+  title: It’s Easy to Hate Selfies. But Can They Also Be a Force for Good?
+  url: https://www.nytimes.com/2019/07/11/style/selfies-instagram.html
+- kind: Article
+  outlet: El Austral, Chile
+  title: Woody bamboo flowering in Puyehue National Park
