@@ -15,7 +15,9 @@ permalink: /sitemap/
     <h2>Pages</h2>
     <ul>
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/digital-twin/' | relative_url }}">Digital twin</a>: ask an agent about my work</li>
       <li><a href="{{ '/work/' | relative_url }}">Work</a>: timeline, education, grants and awards, CV</li>
+      <li><a href="{{ '/skills/' | relative_url }}">Skills and education</a>: skill chips, degrees, certificates</li>
       <li><a href="{{ '/projects/' | relative_url }}">Projects</a>: engineering, research and lab projects in one grid</li>
       <li><a href="{{ '/apps/' | relative_url }}">Apps</a>: live, usable systems</li>
       <li><a href="{{ '/research/' | relative_url }}">Research</a>: publications, talks, teaching, book chapters</li>

@@ -1,7 +1,9 @@
 {% comment %}
-  Component 1: sticky header. Logo, name, five nav items, theme toggle.
+  Component 1: sticky header. Logo, name, the nav items, theme toggle.
   Active state follows the accent-underline rule (DECISIONS.md 28): a
-  section is active when the page URL sits under the nav item's URL.
+  section is active when the page URL sits under the nav item's URL,
+  matched as a prefix so /projects/digital-twin/ does not light
+  /digital-twin/ (DECISIONS 139).
 {% endcomment %}
 <header class="site-header">
   <div class="container site-header__inner">
@@ -13,8 +15,9 @@
     <nav class="site-nav" id="site-nav" aria-label="Site">
       <ul class="site-nav__list">
         {% for item in site.data.navigation.refurb %}
+        {% assign nav_prefix = page.url | slice: 0, item.url.size %}
         <li>
-          <a class="site-nav__link" href="{{ item.url | relative_url }}"{% if page.url contains item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+          <a class="site-nav__link" href="{{ item.url | relative_url }}"{% if nav_prefix == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
         </li>
         {% endfor %}
       </ul>

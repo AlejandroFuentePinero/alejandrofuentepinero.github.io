@@ -1,7 +1,12 @@
-# The unified five-item nav (brief 3.1). Consumed by _includes/site-header.html.
+# The unified nav (brief 3.1, grown by DECISIONS 138). Consumed by
+# _includes/site-header.html.
 refurb:
+  - title: "Digital twin"
+    url: /digital-twin/
   - title: "Work"
     url: /work/
+  - title: "Skills"
+    url: /skills/
   - title: "Projects"
     url: /projects/
   - title: "Apps"
