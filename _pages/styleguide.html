@@ -144,7 +144,7 @@ hidden: true
     <div class="sg-demo sg-demo--flush" style="border-inline: 0; border-radius: 0">
       {% include stats-band.html %}
     </div>
-    <p class="sg-note">Live numbers, computed at build time from <code>_data/stats.yml</code>. The include implements the four schema types (derived, derived_data, years_since, declared) and contains no literal digit. Numbers in the display serif at --step-3 with tabular figures, labels at --step--1 in muted ink, hairline rules between. No icons, no cards, no count-up.</p>
+    <p class="sg-note">Live numbers, computed at build time from <code>_data/stats.yml</code>. The include implements the four schema types (derived, derived_data, years_since, declared) and contains no literal digit. Numbers in the display serif at --step-3 with tabular figures in the accent, labels at --step--1 in the deep accent, hairline rules between. No icons, no cards, no count-up.</p>
   </section>
 
   <!-- ================================================================ -->
@@ -155,6 +155,10 @@ hidden: true
       {% include skills-row.html %}
     </div>
     <p class="sg-note">Two groups from <code>_data/skills.yml</code>, rendered as one continuous row that wraps. A chip claims mastery demonstrated by a shipped system or a peer-reviewed paper.</p>
+    <div class="sg-demo">
+      <p class="chip-row"><span class="chip chip--accent">Bayesian inference</span><span class="chip chip--accent">AI engineering</span></p>
+    </div>
+    <p class="sg-note">The <code>chip--accent</code> modifier draws the border in the accent. Used by the home hero keyword row.</p>
   </section>
 
   <!-- ================================================================ -->

@@ -10,9 +10,14 @@ redirect_from:
 
 <div class="container">
   <section class="hero">
-    <h1 class="hero__name">Alejandro de la Fuente</h1>
-    <p class="hero__role">AI engineer, raised on rainforest data and honest error bars.</p>
-    <p class="hero__thesis">Hi, I'm Alejandro. I build AI systems: retrieval pipelines, agents, and the evaluation that proves they work. I learned that discipline in the rainforest, forecasting wildlife populations where a wrong number could cost a species its protection. I like hard data, honest error bars, and tools people actually use.</p>
+    <div class="hero__text">
+      <h1 class="hero__name">Alejandro de la Fuente</h1>
+      <p class="hero__role">AI engineer, raised on rainforest data and honest error bars.</p>
+      <p class="hero__thesis">Hi, I'm Alejandro. My grandfather walked me into the forests of rural Spain as a child, and I never really left the natural world. A decade of quantitative ecology on three continents followed, from pumas in the Andes to possums in Australian rainforest.</p>
+      <p class="hero__thesis">I built Bayesian forecasts of wildlife populations, where a wrong number could cost a species its protection. That discipline now drives my work as an AI engineer: explicit assumptions, calibrated uncertainty, and evaluation that finds failure before users do. I like hard problems and tools people actually use.</p>
+      <p class="hero__chips"><span class="chip chip--accent">Bayesian inference</span><span class="chip chip--accent">Population modelling</span><span class="chip chip--accent">System design</span><span class="chip chip--accent">AI engineering</span><span class="chip chip--accent">Evaluation</span><span class="chip chip--accent">Conservation</span></p>
+    </div>
+    <img class="hero__photo" src="{{ '/images/alejandro-avatar.jpg' | relative_url }}" alt="Portrait of Alejandro de la Fuente" width="460" height="460">
   </section>
 </div>
 
@@ -20,13 +25,15 @@ redirect_from:
   {% include stats-band.html %}
 </div>
 
-<section id="skills" class="container home-section" aria-label="Skills">
-  {% include skills-row.html %}
-</section>
-
 <section class="container home-section" aria-labelledby="selected-work">
   <h2 id="selected-work">Selected work</h2>
   <ul class="card-grid">
+    <li class="card">
+      <p class="card__meta"><span class="label">Engineering</span><span class="label">Live</span></p>
+      <h3 class="card__title"><a href="{{ '/projects/digital-twin/' | relative_url }}">Digital Twin</a></h3>
+      <p class="card__result">A conversational agent answers questions about my work, grounded in a curated knowledge base. A second model reviews every answer before a visitor sees it.</p>
+      <p class="card__chips"><span class="chip">Python</span><span class="chip">ChromaDB</span><span class="chip">Gradio</span></p>
+    </li>
     <li class="card">
       <p class="card__meta"><span class="label">Engineering</span><span class="label">Live</span></p>
       <h3 class="card__title"><a href="{{ '/projects/7ph-graph/' | relative_url }}">7PH Graph</a></h3>
@@ -40,29 +47,30 @@ redirect_from:
       <p class="card__chips"><span class="chip">Python</span><span class="chip">XGBoost</span><span class="chip">LLM-as-judge</span></p>
     </li>
     <li class="card">
-      <p class="card__meta"><span class="label">Research</span><span class="label">2022</span></p>
-      <h3 class="card__title"><a href="{{ '/projects/forecasting-popviability-ringtails/' | relative_url }}">Ringtail possum viability forecast</a></h3>
-      <p class="card__result">A hierarchical Bayesian model on 30 years of surveys forecast possum collapse by 2050. It fed a national protection nomination.</p>
-      <p class="card__chips"><span class="chip">R</span><span class="chip">Hierarchical models</span><span class="chip">Forecasting</span></p>
+      <p class="card__meta"><span class="label">Research</span><span class="label">2026</span></p>
+      <h3 class="card__title"><a href="{{ '/research/mountains-magnify-mechanisms-2026/' | relative_url }}">Mountains magnify mechanisms</a></h3>
+      <p class="card__result">An opinion piece in Nature Climate Change: mountains compress climates into short distances, which makes them natural laboratories for the mechanisms behind climate-driven change.</p>
+      <p class="card__chips"><span class="chip">Opinion</span><span class="chip">Climate change</span><span class="chip">Mountains</span></p>
+    </li>
+    <li class="card">
+      <p class="card__meta"><span class="label">Research</span><span class="label">2025</span></p>
+      <h3 class="card__title"><a href="{{ '/projects/physiological-stress-climate-populations/' | relative_url }}">Physiological stress and possum declines</a></h3>
+      <p class="card__result">A model chain from microclimate to physiology to demography showed heat stress and foraging limits driving rainforest possum declines, species by species.</p>
+      <p class="card__chips"><span class="chip">R</span><span class="chip">JAGS</span><span class="chip">Biophysical models</span></p>
+    </li>
+    <li class="card">
+      <p class="card__meta"><span class="label">Research</span><span class="label">2023</span></p>
+      <h3 class="card__title"><a href="{{ '/projects/spatiotemporal-bird-climate-impacts/' | relative_url }}">Climatic drivers of rainforest bird change</a></h3>
+      <p class="card__result">Warming and shifting rainfall drove opposite trends in lowland and upland birds across 47 species. Cyclones and droughts had only marginal effects.</p>
+      <p class="card__chips"><span class="chip">R</span><span class="chip">JAGS</span><span class="chip">Remote sensing</span></p>
     </li>
     <li class="card">
       <p class="card__meta"><span class="label">Research</span><span class="label">2021</span></p>
-      <h3 class="card__title"><a href="{{ '/projects/heightened-protection-bird-trends/' | relative_url }}">Rainforest bird declines</a></h3>
-      <p class="card__result">17 years of bird monitoring showed upland populations nearly halving. The evidence supported protection nominations for 14 rainforest species.</p>
-      <p class="card__chips"><span class="chip">R</span><span class="chip">GLMs</span><span class="chip">Shiny</span></p>
+      <h3 class="card__title"><a href="{{ '/projects/predicting-abundance-from-niche-theory/' | relative_url }}">Predicting abundance from suitability</a></h3>
+      <p class="card__result">An ensemble of 9 algorithms predicted local abundance from environmental suitability, explaining 55% of deviance on average across 50 rainforest species.</p>
+      <p class="card__chips"><span class="chip">R</span><span class="chip">Ensemble ML</span><span class="chip">MaxEnt</span></p>
     </li>
   </ul>
-</section>
-
-<section id="digital-twin" class="container home-section" aria-label="Digital twin">
-  {% include embed-frame.html
-    title="Ask the digital twin"
-    context="A retrieval-augmented agent that answers questions about my work. A second model reviews every answer before you see it."
-    url="https://alejandrofupi-digital-twin.hf.space"
-    screenshot="/images/apps/digital-twin.png"
-    screenshot_width="1232"
-    screenshot_height="954"
-  %}
 </section>
 
 <section class="container home-section" aria-labelledby="get-in-touch">
