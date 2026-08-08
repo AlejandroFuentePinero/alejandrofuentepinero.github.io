@@ -211,23 +211,23 @@ redirect_from:
 
 ### Grants
 
-* 2022. Skyrail Foundation (top-up): "Determinants of spatial variation in population density in a tropical folivore community". $5,000.
-* 2021. Skyrail Foundation: "Determinants of spatial variation in population density in a tropical folivore community". $5,000.
-* 2021. Wet Tropics Management Authority, Climate Action Grant: "Why are Ringtail Possums declining in the Australian Wet Tropics?". $7,500.
-* 2019. James Cook University, scholarship: "Determinants of spatial variation in population density in a tropical folivore community". $98,000 over 3.5 years.
-* 2014. University of Salamanca, scholarship (Master's degree): "Implementation of GIS and species distribution models on studies of niche marginality of threatened plants". €10,000.
-* 2013. University of Salamanca, scholarship (undergraduate). €6,000.
-* 2012. University of Salamanca, scholarship (undergraduate). €6,000.
-* 2011. University of Salamanca, scholarship (undergraduate). €6,000.
-* 2010. University of Salamanca, scholarship (undergraduate). €6,000.
+* 2022\. Skyrail Foundation (top-up): "Determinants of spatial variation in population density in a tropical folivore community". $5,000.
+* 2021\. Skyrail Foundation: "Determinants of spatial variation in population density in a tropical folivore community". $5,000.
+* 2021\. Wet Tropics Management Authority, Climate Action Grant: "Why are Ringtail Possums declining in the Australian Wet Tropics?". $7,500.
+* 2019\. James Cook University, scholarship: "Determinants of spatial variation in population density in a tropical folivore community". $98,000 over 3.5 years.
+* 2014\. University of Salamanca, scholarship (Master's degree): "Implementation of GIS and species distribution models on studies of niche marginality of threatened plants". €10,000.
+* 2013\. University of Salamanca, scholarship (undergraduate). €6,000.
+* 2012\. University of Salamanca, scholarship (undergraduate). €6,000.
+* 2011\. University of Salamanca, scholarship (undergraduate). €6,000.
+* 2010\. University of Salamanca, scholarship (undergraduate). €6,000.
 
 ### Awards
 
-* 2023. Best talk prize for best presentation, Zoology and Ecology North Queensland, Mission Beach: "Songs of disappearance: Rainforest Montane Birds and Climate Change".
-* 2023. Second best presentation, TESS conference, Palm Cove: "Possums in Peril: The Urgent Need to Address Climate Change Impacts on Tropical Montane Species".
-* 2022. Best post-graduate presentation at the Conference Talk Skill Workshop, ESA-SCBO conference, Wollongong: "Predicted alteration of vertebrate communities in response to climate-induced elevational shifts".
-* 2022. People's Choice award for the best presentation, Zoology and Ecology North Queensland, Mission Beach: "Climate change threatens the future of rainforest ringtail possums".
-* 2021. Second best talk, annual conference of the Centre for Tropical, Environmental and Sustainability Science: "Predicting species abundance by implementing the ecological niche theory".
+* 2023\. Best talk prize for best presentation, Zoology and Ecology North Queensland, Mission Beach: "Songs of disappearance: Rainforest Montane Birds and Climate Change".
+* 2023\. Second best presentation, TESS conference, Palm Cove: "Possums in Peril: The Urgent Need to Address Climate Change Impacts on Tropical Montane Species".
+* 2022\. Best post-graduate presentation at the Conference Talk Skill Workshop, ESA-SCBO conference, Wollongong: "Predicted alteration of vertebrate communities in response to climate-induced elevational shifts".
+* 2022\. People's Choice award for the best presentation, Zoology and Ecology North Queensland, Mission Beach: "Climate change threatens the future of rainforest ringtail possums".
+* 2021\. Second best talk, annual conference of the Centre for Tropical, Environmental and Sustainability Science: "Predicting species abundance by implementing the ecological niche theory".
 
 <!-- /record -->
 

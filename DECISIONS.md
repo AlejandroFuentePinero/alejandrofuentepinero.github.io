@@ -387,3 +387,5 @@ Produced on `refurb/main`, 2026-08-08. Owner feedback on the work page.
 162. **A heading after a closed disclosure gets air.** `.disclosure + h2` takes `margin-top: var(--space-2xl)` so "Grants and awards" no longer sits on the media disclosure's hairline. The same rule spaces "Education" above the certificates on /skills/. Spacing only, inside the existing token scale, so it skipped the styleguide-first path for new components.
 
 163. **The Melbourne research assistantship joins the timeline.** Owner direction, from the owner's CV: Research assistant, Data Analytics, University of Melbourne, 2024, slotted between the postdoc and the 2019 JCU assistantship. The summary keeps the CV's figures (about 27,000 samples, 140 years of museum records) rewritten to the prose standard.
+
+164. **The grant and award years render again.** Kramdown read the leading "2022." on each record line as a nested ordered list, so every entry rendered as "1." with its year swallowed. The periods are now backslash-escaped (`2022\.`), a source-only markdown escape: the rendered text is byte-identical to the record as written, so the never-rewrite rule holds.
