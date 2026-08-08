@@ -37,8 +37,8 @@ Mechanism notes, from CONTENT_MAP 2.1:
 | `/academic/threatened_species/` | `/research/threatened-species/` | wired (Phase 4) |
 | `/datascience/` | `/projects/` | wired (Phase 4) |
 | `/datascience/projects/` | `/projects/` | wired (Phase 4) |
-| `/datascience/skills/` | `/#skills` (stub) | wired (Phase 4) |
-| `/datascience/education/` | `/work/#education` (stub) | wired (Phase 4) |
+| `/datascience/skills/` | `/skills/` | wired (Phase 4, re-pointed 2026-08-08 to the new page; the stub retired for a `redirect_from` entry) |
+| `/datascience/education/` | `/skills/#education` (stub) | wired (Phase 4, re-pointed 2026-08-08 to the new page) |
 | `/datascience/communication/` | `/apps/` | wired (Phase 4) |
 | `/portfolio/grants/` | `/work/#grants-awards` (stub) | wired (Phase 4) |
 | `/portfolio/awards/` | `/work/#grants-awards` (stub) | wired (Phase 4) |

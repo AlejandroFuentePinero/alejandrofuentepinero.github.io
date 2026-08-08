@@ -14,11 +14,11 @@ redirect_from:
 
 The digital twin is a conversational agent that answers questions about my work on my behalf. A second model from a different family reviews every answer before a visitor sees it. On the frozen evaluation baseline, retrieval scores 0.866 mean reciprocal rank and answers score 4.56 on the judge's scale.
 
-Each turn passes through a classifier, a branch-specific prompt, retrieval over a vector store, generation and the guardrail. Failed attempts retry with structured feedback. Persistent failures fall back to a polite contact line. The chat lives on the home page and runs as a Hugging Face Space.
+Each turn passes through a classifier, a branch-specific prompt, retrieval over a vector store, generation and the guardrail. Failed attempts retry with structured feedback. Persistent failures fall back to a polite contact line. The chat has its own page on this site and runs as a Hugging Face Space.
 
 ## Links
 
-- **Try it on the home page:** [Digital twin chat](/#digital-twin)
+- **Try it:** [Digital twin chat](/digital-twin/)
 - **Live demo:** [alejandrofupi-digital-twin.hf.space](https://alejandrofupi-digital-twin.hf.space)
 - **Hugging Face Space:** [Alejandrofupi/digital-twin](https://huggingface.co/spaces/Alejandrofupi/digital-twin)
 - **Source:** [digital-twin on GitHub](https://github.com/AlejandroFuentePinero/digital-twin)

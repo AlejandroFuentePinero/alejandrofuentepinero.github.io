@@ -112,8 +112,10 @@ ROOT = Path(__file__).resolve().parent.parent
 FILES = {
     "_pages/home.html": ("B", 450),
     "_pages/work.md": ("B", 420),
+    "_pages/skills.md": ("B", None),
     "_pages/projects.html": ("B", 440),
     "_pages/apps.html": ("A", 200),
+    "_pages/digital-twin.html": ("A", 80),
     "_pages/research.html": ("B", 700),
     "_pages/contact.md": ("B", 60),
     "_pages/404.md": ("A", 30),
@@ -229,6 +231,7 @@ ACRONYM_EXPANSIONS = {
     "DOI": "digital object identifier",
     "MRR": "mean reciprocal rank",
     "MLB": "major league baseball",
+    "MCP": "model context protocol",
 }
 
 # Banned words and constructions, REFURB_BRIEF.md section 6.2. The

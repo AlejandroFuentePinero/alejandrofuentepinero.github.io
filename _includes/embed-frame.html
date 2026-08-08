@@ -12,13 +12,15 @@
     screenshot_width, screenshot_height  the screenshot's pixel size
     state       optional; "forced-fallback" renders the failed state
                 statically for the styleguide, otherwise "idle"
+    modifier    optional extra class, e.g. "embed-frame--tall" on
+                /digital-twin/
 {% endcomment %}
 {% if include.state == "forced-fallback" %}
   {% assign frame_state = "failed" %}
 {% else %}
   {% assign frame_state = "idle" %}
 {% endif %}
-<section class="embed-frame" data-state="{{ frame_state }}"{% unless include.state == "forced-fallback" %} data-embed-src="{{ include.url }}" data-embed-title="{{ include.title }}"{% endunless %}>
+<section class="embed-frame{% if include.modifier %} {{ include.modifier }}{% endif %}" data-state="{{ frame_state }}"{% unless include.state == "forced-fallback" %} data-embed-src="{{ include.url }}" data-embed-title="{{ include.title }}"{% endunless %}>
   <div class="embed-frame__header">
     <h3 class="embed-frame__title">{{ include.title }}</h3>
     <a class="embed-frame__open" href="{{ include.url }}" target="_blank" rel="noopener">Open full screen</a>

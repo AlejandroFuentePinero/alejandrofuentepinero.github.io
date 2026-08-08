@@ -319,3 +319,27 @@ Produced on branch `refurb/phase-7-final-qa`, 2026-08-08. Numbering continues fr
 135. **The stats increment test ran against the rendered band.** A dummy publication was added, built, and removed; the parsed band read 12, then 13, then 12 peer-reviewed papers with every other figure unchanged. The dummy never reached a commit.
 
 136. **CLAUDE.md's Current state section was brought current** alongside the mandated placeholder replacement. It still named `refurb/phase-4-structure` as the working branch; an orientation file that misstates the project state misleads every future session, which defeats its purpose. The rewrite states the refurbishment is complete and routes routine work to MAINTENANCE.md.
+
+# DECISIONS.md: post-launch additions
+
+Produced on branch `refurb/twin-education-tabs`, 2026-08-08. Owner-directed changes after launch. Working rule unchanged: only pressing decisions are surfaced; the rest follows best practice and is logged here.
+
+## The two new tabs
+
+137. **The digital twin gets its own page at /digital-twin/.** Owner direction: the twin should be reachable as its own tab, full screen, rather than only as the home embed. The page reuses the embed frame component with a new `embed-frame--tall` modifier that stretches the body to the viewport below the header; the lazy iframe and the fallback probe (DECISIONS 130) apply unchanged. The home embed stays until the home page iterates: FINDINGS 25.
+
+138. **The nav grows to seven items, the twin first.** Owner direction added Skills and Digital twin, and put Digital twin before Work. Order: Digital twin, Work, Skills, Projects, Apps, Research, Contact. Skills sits beside Work in the who-I-am cluster. The five-item rule (brief 3.1) is superseded by the owner call.
+
+139. **Nav active state matches by prefix, not substring.** `page.url contains item.url` would light both Projects and Digital twin on /projects/digital-twin/, because that URL contains the new page URL as a substring. The header now compares `item.url` against the same-length prefix of `page.url`, which is what DECISIONS 28 ("the page URL sits under the nav item's URL") always meant.
+
+140. **Skills and education merge into one page at /skills/, skills first.** Owner direction: one tab may carry both, and skills present before education. The nav label is the single word Skills, the h1 is "Skills and education", and the education section carries a stable #education anchor.
+
+141. **/work/ keeps its education and skills content, sourced from shared includes.** The CV PDF is /work/ printed (DECISIONS 132), so moving education off /work/ would strip the CV. The degree record, the certificates disclosure and the field skills disclosure moved verbatim into `_includes/education-degrees.md`, `_includes/education-certificates.html` and `_includes/skills-field-record.html`, rendered on both /work/ and /skills/ from one source. The built /work/ page was diffed byte-identical around the swap, so the record and the CV pipeline are untouched.
+
+142. **The two datascience stubs re-point to /skills/.** `/datascience/skills/` lands on the dedicated page instead of the home chip row, via `redirect_from` on the new page; its stub existed only to carry a fragment, which the new target does not need, so it retired. `/datascience/education/` keeps its stub and lands on /skills/#education. MIGRATIONS.md rows updated.
+
+143. **/skills/ distills the retired datascience pages.** Owner direction: the page should faithfully represent the old /datascience/skills/ and /datascience/education/ content, restructured to the system. The old prose, recovered from git history, condensed into the chip row, a core-strength paragraph, 4 delivery bullets, 5 depth disclosures (stack, Bayesian and hierarchical modelling, language models and agents, machine learning and evaluation, data and software engineering), the field skills record, the degree record with 3 distilled outcome lines, and the certificates record. The old em-dash bullets were rewritten to the prose standard, "LLM" stays out of prose per TERMINOLOGY.md, and MCP joined the expansion dictionary. The prose_check budget is ("B", None): the depth lives in level 3 disclosures, the same shape as project pages.
+
+144. **The embed iframe mounts into the frame body.** site.js appended the created iframe to the section, whose only positioned box is the body div, so `inset: 0` resolved against the document and the iframe painted at the page origin, clipped out of its frame. Reproduced on the live home page by injecting an iframe both ways: as a child of the section it lands at document y 0, as a child of the body it fills the reserved space exactly. One line in site.js now appends into `.embed-frame__body`. Found while building /digital-twin/, where the offset was unmissable.
+
+145. **The measure is retired: text runs to the container.** Owner direction from the live /work/ page: paragraphs wrapped at 68ch inside the 1120px container read as pinned left and cut right. The max-width clamps came off p, ul, ol, blockquote, the page lead, the hero lines, disclosures, callouts and figcaptions, and .prose-column widened to the container. The --measure token stays for the styleguide notes. The 68ch readability rationale (brief 5.3) is superseded by the owner call.

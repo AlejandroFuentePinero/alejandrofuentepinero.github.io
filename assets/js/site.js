@@ -114,7 +114,10 @@
       }).catch(fail);
     }
 
-    frame.appendChild(iframe);
+    /* Into the body, the only positioned box: appended to the section,
+       inset 0 resolves against the document and the iframe paints at
+       the page origin instead of inside the frame. */
+    frame.querySelector(".embed-frame__body").appendChild(iframe);
   }
 
   var frames = document.querySelectorAll("[data-embed-src]");
