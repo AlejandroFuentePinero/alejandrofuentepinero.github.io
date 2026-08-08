@@ -19,8 +19,6 @@ Each turn passes through a classifier, a branch-specific prompt, retrieval over 
 ## Links
 
 - **Try it:** [Digital twin chat](/digital-twin/)
-- **Live demo:** [alejandrofupi-digital-twin.hf.space](https://alejandrofupi-digital-twin.hf.space)
-- **Hugging Face Space:** [Alejandrofupi/digital-twin](https://huggingface.co/spaces/Alejandrofupi/digital-twin)
 - **Source:** [digital-twin on GitHub](https://github.com/AlejandroFuentePinero/digital-twin)
 
 ## Architecture

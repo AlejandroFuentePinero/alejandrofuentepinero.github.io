@@ -5,12 +5,12 @@
   name: "Digital twin"
   status: live
   treatment: embed
-  url: "https://alejandrofupi-digital-twin.hf.space"
+  url: /digital-twin/
   source: "https://github.com/AlejandroFuentePinero/digital-twin"
   project: /projects/digital-twin/
   pitch: "A conversational agent answers questions about my work, grounded in a curated knowledge base. A second model reviews every answer before a visitor sees it."
   demonstrates: "It shows evaluation discipline applied to an agent: a frozen baseline scores retrieval and answer quality."
-  note: "The chat also lives on the home page."
+  note: ""
   screenshot: /images/apps/digital-twin.png
   screenshot_width: 1232
   screenshot_height: 954
