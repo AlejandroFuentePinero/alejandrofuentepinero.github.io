@@ -353,6 +353,11 @@
   margin-left: var(--space-md);
 }
 
+/* On /skills/ prose follows the row directly; give it air below. */
+.chip-row + p {
+  margin-top: var(--space-lg);
+}
+
 .chip {
   font-size: var(--step--1);
   font-weight: 500;
@@ -793,7 +798,8 @@ a.chip:hover {
    grid needs air above the hairline. */
 .disclosure + h2,
 .timeline + h2,
-.honor-grid + h2 {
+.honor-grid + h2,
+.honor-grid + h3 {
   margin-top: var(--space-2xl);
 }
 

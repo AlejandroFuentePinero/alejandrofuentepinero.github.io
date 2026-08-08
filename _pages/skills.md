@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Skills"
-description: "Behind the skills sits the education record: degrees in biology and quantitative ecology, and the certificates that retrained me for AI engineering."
+description: "My core strength is statistical modelling under uncertainty. The same discipline now runs my AI engineering"
 permalink: /skills/
 redirect_from:
   - /datascience/skills/
@@ -11,7 +11,6 @@ redirect_from:
 
 <header class="page-header">
   <h1>Skills and education</h1>
-  <p class="page-lead">Every chip names a skill demonstrated on this site. Behind the skills sits the education record: degrees in biology and quantitative ecology, and the certificates that retrained me for AI engineering.</p>
 </header>
 
 ## Skills {#skills}
@@ -42,6 +41,7 @@ I build language model systems and prove they work: grounded generation, agentic
 * Judge models benchmarked against labelled data, traced with Arize Phoenix
 * Fine-tuning: supervised frontier runs and QLoRA on open Hugging Face models
 * Guardrails: cross-family review models, per-turn logging and drift detection
+* Model Context Protocol (MCP) servers and clients, built with FastMCP and deployed remotely
 
 </div>
 </li>
@@ -74,6 +74,7 @@ Reliable engineering around the models: pipelines, reproducibility, geospatial w
 * Reproducibility: pinned environments, deterministic runs, versioned artefacts and Git throughout
 * Raster and vector workflows in R, with spatial feature engineering
 * Delivery apps in Gradio, Streamlit and Shiny
+* Cloud foundations on Amazon Web Services, certified at practitioner level: core services, identity and access, monitoring and cost governance
 
 </div>
 </li>

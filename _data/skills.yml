@@ -9,6 +9,8 @@ groups:
         anchor: "#foundations"
       - label: RAG pipelines
         anchor: "#ai-engineering"
+      - label: Agentic AI
+        anchor: "#ai-engineering"
       - label: Knowledge graphs
         anchor: "#ai-engineering"
       - label: LLM-as-judge evaluation

@@ -1,39 +1,17 @@
 {% comment %}
-  The certificates and training disclosure, rendered on /skills/.
-  Markdown inside: include it only inside a markdown="1" container.
-  The record is never edited (hard rule 1).
+  Certificates and training, rendered on /skills/ as capability cards,
+  the same treatment as the depth-by-area list. One card per training
+  area. Markdown inside: include it only inside a markdown="1"
+  container. The record is never edited (hard rule 1).
 {% endcomment %}
-<details class="disclosure">
-  <summary><span class="label">Certificates and training</span></summary>
-  <div class="disclosure__body" markdown="1">
+<h3 id="certificates">Certificates and training</h3>
 
+<ul class="capability-list">
 <!-- record -->
+<li class="capability">
+<div markdown="1">
 
-### Bayesian and hierarchical modelling
-
-* [Statistical Rethinking: A Bayesian Course with Examples in R and Stan](https://xcelab.net/rm/)
-* [Statistical Rethinking 2023, online course, Richard McElreath](https://www.youtube.com/watch?v=FdnMWdICdRs&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus)
-* Bayesian Methods for Ecology, Michael A. McCarthy
-* [Applied Hierarchical Modeling in Ecology](https://www.mbr-pwrc.usgs.gov/pubanalysis/keryroylebook/)
-* [Integrated Population Models](https://www.sciencedirect.com/book/9780323908108/integrated-population-models)
-
-### R
-
-* [R for Data Science](https://r4ds.had.co.nz/)
-* Statistics in R workshop, Dr Murray Logan (AIMS). Covers tidyverse, ggplot2, R Markdown, linear models, GLMs and GLMMs, mixed-effects models and multivariate analyses.
-
-### Python and machine learning
-
-* The Complete Python Bootcamp: From Zero to Hero in Python ([certificate](/files/python%20bootcamp.pdf)). Covers core Python, data structures, OOP, error handling, file work and web scraping with Requests and BeautifulSoup.
-* Python for Data Science and Machine Learning Bootcamp ([certificate](/files/python_ML.pdf)). Covers pandas, NumPy, Matplotlib, Seaborn, Plotly and scikit-learn: regression, trees, random forests, SVM, k-NN, K-Means, PCA, intro NLP and deep learning with Keras and TensorFlow.
-* Machine Learning Specialisation, DeepLearning.AI, Andrew Ng ([certificate](https://learn.deeplearning.ai/certificates/3384e7df-ec7d-4ec6-9314-973855530059?usp=sharing)). Covers supervised learning, advanced learning algorithms, unsupervised learning, anomaly detection, recommenders and introductory reinforcement learning. Module certificates: [supervised learning](/files/supervised_ml.png), [advanced algorithms](/files/advanced_learning_algorithms.png), [unsupervised learning](/files/unsupervised_learning.png).
-
-### SQL and databases
-
-* The Complete SQL Bootcamp: PostgreSQL & pgAdmin ([certificate](/files/sql_basic.pdf)). Covers querying, aggregation, joins, schema fundamentals and pgAdmin tooling.
-* SQL for Data Analysis: Advanced SQL Querying Techniques ([certificate](/files/sql_advanced.pdf)). Covers subqueries, CTEs, window functions, NULL-safe handling and reusable views.
-
-### AI engineering
+#### AI engineering
 
 * AI Engineer Core Track: LLM Engineering, RAG, QLoRA, Agents ([certificate](/files/ai_engineer.pdf)). Covers frontier APIs, open-source models, RAG, frontier and QLoRA fine-tuning, and agent deployment with LangChain and Gradio.
 * ChatGPT Prompt Engineering for Developers ([certificate](https://learn.deeplearning.ai/accomplishments/855ab3d3-2a59-4f56-b934-e620c7e28551?usp=sharing)). Covers structured prompting, iterative refinement and the OpenAI API.
@@ -47,15 +25,69 @@
 * Agent Skills with Anthropic ([certificate](https://learn.deeplearning.ai/accomplishments/d345c36e-1200-4cf4-8848-4eda47b340e5?usp=sharing)). Covers skill design and packaging, progressive disclosure, and skills with the Claude API and the Claude Agent SDK.
 * MCP: Build Rich-Context AI Apps with Anthropic ([certificate](https://learn.deeplearning.ai/accomplishments/5f173543-7e1f-4988-b20a-e0b88ef401f3?usp=sharing)). Covers MCP servers and clients with FastMCP, reference servers and remote deployment.
 
-### Version control
+</div>
+</li>
+<li class="capability">
+<div markdown="1">
+
+#### Python and machine learning
+
+* The Complete Python Bootcamp: From Zero to Hero in Python ([certificate](/files/python%20bootcamp.pdf)). Covers core Python, data structures, OOP, error handling, file work and web scraping with Requests and BeautifulSoup.
+* Python for Data Science and Machine Learning Bootcamp ([certificate](/files/python_ML.pdf)). Covers pandas, NumPy, Matplotlib, Seaborn, Plotly and scikit-learn: regression, trees, random forests, SVM, k-NN, K-Means, PCA, intro NLP and deep learning with Keras and TensorFlow.
+* Machine Learning Specialisation, DeepLearning.AI, Andrew Ng ([certificate](https://learn.deeplearning.ai/certificates/3384e7df-ec7d-4ec6-9314-973855530059?usp=sharing)). Covers supervised learning, advanced learning algorithms, unsupervised learning, anomaly detection, recommenders and introductory reinforcement learning. Module certificates: [supervised learning](/files/supervised_ml.png), [advanced algorithms](/files/advanced_learning_algorithms.png), [unsupervised learning](/files/unsupervised_learning.png).
+
+</div>
+</li>
+<li class="capability">
+<div markdown="1">
+
+#### Bayesian and hierarchical modelling
+
+* [Statistical Rethinking: A Bayesian Course with Examples in R and Stan](https://xcelab.net/rm/)
+* [Statistical Rethinking 2023, online course, Richard McElreath](https://www.youtube.com/watch?v=FdnMWdICdRs&list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus)
+* Bayesian Methods for Ecology, Michael A. McCarthy
+* [Applied Hierarchical Modeling in Ecology](https://www.mbr-pwrc.usgs.gov/pubanalysis/keryroylebook/)
+* [Integrated Population Models](https://www.sciencedirect.com/book/9780323908108/integrated-population-models)
+
+</div>
+</li>
+<li class="capability">
+<div markdown="1">
+
+#### R
+
+* [R for Data Science](https://r4ds.had.co.nz/)
+* Statistics in R workshop, Dr Murray Logan (AIMS). Covers tidyverse, ggplot2, R Markdown, linear models, GLMs and GLMMs, mixed-effects models and multivariate analyses.
+
+</div>
+</li>
+<li class="capability">
+<div markdown="1">
+
+#### SQL and databases
+
+* The Complete SQL Bootcamp: PostgreSQL & pgAdmin ([certificate](/files/sql_basic.pdf)). Covers querying, aggregation, joins, schema fundamentals and pgAdmin tooling.
+* SQL for Data Analysis: Advanced SQL Querying Techniques ([certificate](/files/sql_advanced.pdf)). Covers subqueries, CTEs, window functions, NULL-safe handling and reusable views.
+
+</div>
+</li>
+<li class="capability">
+<div markdown="1">
+
+#### Version control
 
 * The Git & GitHub Bootcamp ([certificate](/files/git_github.pdf)). Covers branching, merging, rebasing, recovery workflows and GitHub collaboration.
 
-### Cloud
+</div>
+</li>
+<li class="capability">
+<div markdown="1">
+
+#### Cloud
 
 * AWS Certified Cloud Practitioner, CLF-C02 ([certificate](https://www.credly.com/badges/83976696-b330-483e-8f3d-fff929b4d359/public_url)). Covers core AWS services, IAM, networking, monitoring and cost governance at a conceptual level.
 
+</div>
+</li>
 <!-- /record -->
-
-  </div>
-</details>
+</ul>
