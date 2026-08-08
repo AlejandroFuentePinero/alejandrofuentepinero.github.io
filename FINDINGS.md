@@ -59,3 +59,7 @@ Found while working, not fixed, per the working rules in REFURB_BRIEF.md section
 23. **The Ecologica Montenegrina DOI is broken upstream.** `10.37828/em.2025.88.11` (the Siri 2025 forest gap paper) resolves to `biotaxa.prod.amazon.auckland.ac.nz`, which no longer exists in public DNS; the working article page is `www.biotaxa.org/em/article/view/87143`, which the site now links (DECISIONS 129). The citation string still prints the DOI as text, correctly. If the registrar repairs the DOI, the `paperurl` and the project page's Journal link can move back to it. Reporting the broken resolution to the journal is an owner call.
 
 24. **The Job Intelligence Engine wake experience is rough.** Waking the slept Streamlit app took minutes in this QA run, and the "in the oven" page never handed over on its own; a manual reload showed the fully running app (evidence committed). The birds Shiny card carries "wakes in about 20 seconds" but the Job Intelligence Engine card's note field is empty. Adding a wake note is an owner call because it edits a checked Tier A data string.
+
+## Post-launch
+
+25. **The home digital twin frame is slated for retirement.** Owner direction on 2026-08-08: with /digital-twin/ live as its own tab, the home embed section will retire when the home page next iterates. Until then the twin renders in both places, and the project page links the tab. What replaces the home section is a positioning call for that iteration.
