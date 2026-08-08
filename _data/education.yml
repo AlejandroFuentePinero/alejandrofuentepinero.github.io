@@ -1,0 +1,18 @@
+# The degree record, rendered on /skills/#education by
+# education-degrees.html (DECISIONS 170). Degree titles, institutions,
+# years and the Cum laude honour are the record (hard rule 1): never
+# edit them. The detail lines are site prose held to the Tier B
+# standard by hand, like the grant details.
+- degree: Ph.D. in Quantitative Ecology
+  institution: James Cook University
+  year: "2024"
+  honour: Cum laude
+  detail: "The doctorate built modelling frameworks that predict vulnerability to extreme events and locate high-risk habitat."
+- degree: M.S. in Biology and Conservation of Biodiversity
+  institution: Universidad de Salamanca
+  year: "2016"
+  detail: "The master's degree centred on spatial analysis and statistical modelling for conservation planning."
+- degree: B.S. in Biology
+  institution: Universidad de Salamanca
+  year: "2014"
+  detail: "The bachelor's degree grounded biology in mathematics, biostatistics and ecological modelling."

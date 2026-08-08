@@ -1127,6 +1127,12 @@ a.chip:hover {
   font-weight: 600;
 }
 
+/* Honour flag: the degree distinction on /skills/, in the accent. */
+.honor__flag {
+  color: var(--accent-deep);
+  font-weight: 600;
+}
+
 .honor__title {
   margin: 0;
   font-size: var(--step-0);

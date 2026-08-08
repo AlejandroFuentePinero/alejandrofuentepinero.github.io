@@ -83,11 +83,7 @@ Languages: Spanish (first language), English (IELTS 7.0), French (basic).
 
 ## Education {#education}
 
-{% include education-degrees.md %}
-
-* The doctorate built modelling frameworks that predict vulnerability to extreme events and locate high-risk habitat.
-* The master's degree centred on spatial analysis and statistical modelling for conservation planning.
-* The bachelor's degree grounded biology in mathematics, biostatistics and ecological modelling.
+{% include education-degrees.html %}
 
 {% include education-certificates.html %}
 

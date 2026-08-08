@@ -1,0 +1,15 @@
+{% comment %}
+  The degree record as honor cards, rendered on /skills/#education.
+  Data lives in _data/education.yml, which carries the record warning.
+  The honour flag (Cum laude) renders in the accent.
+{% endcomment %}
+<ul class="honor-grid">
+  {% for degree in site.data.education %}
+  <li class="honor">
+    <p class="honor__meta"><span>{{ degree.year }}</span>{% if degree.honour %}<span class="honor__flag">{{ degree.honour }}</span>{% endif %}</p>
+    <p class="honor__title">{{ degree.degree }}</p>
+    <p class="honor__detail">{{ degree.institution }}</p>
+    <p class="honor__detail">{{ degree.detail }}</p>
+  </li>
+  {% endfor %}
+</ul>
