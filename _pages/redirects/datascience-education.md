@@ -1,5 +1,5 @@
 ---
 permalink: /datascience/education/
-redirect_to: /work/#education
+redirect_to: /skills/#education
 sitemap: false
 ---
