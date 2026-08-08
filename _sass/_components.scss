@@ -1197,3 +1197,32 @@ a.chip:hover {
 .capability > :last-child {
   margin-bottom: 0;
 }
+
+/* 18. Journal tile: the editorial service list on /research/ as a grid
+   of small bordered boxes. Name only, so the tiles stay compact.
+   ========================================================================== */
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xs);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+@media (min-width: 56.25em) {
+  .journal-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.journal {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--step--1);
+  font-weight: 500;
+  text-align: center;
+}

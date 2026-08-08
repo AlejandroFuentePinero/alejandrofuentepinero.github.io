@@ -32,22 +32,22 @@ redirect_from:
       </li>
       {% endfor %}
     </ul>
+    <h3>Editorial service</h3>
+    <ul class="journal-grid">
+      <li class="journal">Functional Ecology</li>
+      <li class="journal">PeerJ</li>
+      <li class="journal">Biodiversity and Conservation</li>
+      <li class="journal">One Earth</li>
+      <li class="journal">Ecology and Evolution</li>
+      <li class="journal">Emu - Austral Ornithology</li>
+      <li class="journal">Diversity and Distributions</li>
+      <li class="journal">Ecography</li>
+    </ul>
+  </section>
+
+  <section class="section" id="threatened-species" aria-labelledby="nominations-heading">
+    <h2 id="nominations-heading">Threatened species nominations</h2>
     <p>See the <a href="{{ '/research/threatened-species/' | relative_url }}">threatened species nomination record</a> this research supported.</p>
-    <details class="disclosure">
-      <summary><span class="label">Editorial service</span></summary>
-      <div class="disclosure__body">
-        <ul>
-          <li>Functional Ecology</li>
-          <li>PeerJ</li>
-          <li>Biodiversity and Conservation</li>
-          <li>One Earth</li>
-          <li>Ecology and Evolution</li>
-          <li>Emu - Austral Ornithology</li>
-          <li>Diversity and Distributions</li>
-          <li>Ecography</li>
-        </ul>
-      </div>
-    </details>
   </section>
 
   <section class="section" id="talks" aria-labelledby="talks-heading">
@@ -73,7 +73,6 @@ redirect_from:
     {% for entry in teaching %}
     <article class="prose">
       <h3>{{ entry.title }}</h3>
-      <p class="page-header__venue">{{ entry.venue }} &middot; {{ entry.location }}</p>
       {{ entry.content | markdownify }}
     </article>
     {% endfor %}
@@ -81,11 +80,17 @@ redirect_from:
 
   <section class="section" id="book-chapters" aria-labelledby="book-chapters-heading">
     <h2 id="book-chapters-heading">Book chapters</h2>
-    <p>I co-authored {{ site.data.book_chapters | size }} species accounts in The Action Plan for Australian Birds 2020, published by CSIRO Publishing. The story behind them is in <a href="{{ '/posts/action-plan-australian-birds-2021/' | relative_url }}">this post</a>.</p>
-    <ol>
+    <p>I co-authored {{ site.data.book_chapters | size }} species accounts in The Action Plan for Australian Birds 2020, published by CSIRO Publishing.</p>
+    <ul class="chapter-list">
       {% for chapter in site.data.book_chapters %}
-      <li>{{ chapter.citation }}</li>
+      {% assign chapter_parts = chapter.citation | split: " (2021). " %}
+      {% assign chapter_authors = chapter_parts[0] | replace: "de la Fuente A.", "<strong>de la Fuente A.</strong>" %}
+      {% assign chapter_rest = chapter_parts[1] | split: ". In " %}
+      <li class="chapter-row">
+        <h3 class="chapter-row__title">{{ chapter_rest[0] }}</h3>
+        <p class="chapter-row__citation">{{ chapter_authors }} (2021). In {{ chapter_rest[1] }}</p>
+      </li>
       {% endfor %}
-    </ol>
+    </ul>
   </section>
 </div>
