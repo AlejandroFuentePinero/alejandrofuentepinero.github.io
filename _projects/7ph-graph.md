@@ -12,7 +12,7 @@ redirect_from:
   - /datascience/projects/7ph-graph/
 ---
 
-7PH Graph is a live knowledge graph of the Australian 7 Point Highlander metagame, a competitive Magic: The Gathering format. It links 107 events, 1,083 pilots, 4,591 decks and 4,995 cards behind an interactive explorer at 7phgraph.com.
+7PH Graph is a live knowledge graph of the Australian 7 Point Highlander metagame, a competitive Magic: The Gathering format. It links 107 events, 1,086 pilots, 4,591 decks and 4,995 cards behind an interactive explorer at 7phgraph.com.
 
 Tabular stats sites answer aggregate questions well. This graph answers the relational ones: which cards travel together, at which events, and how that changed.
 
