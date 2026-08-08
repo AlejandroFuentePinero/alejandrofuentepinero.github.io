@@ -15,9 +15,9 @@ This file summarises the working rules; the brief is the authority on intent.
 The refurbishment is complete: Phases 0 to 7 all shipped (audit,
 positioning, cleanup, design system, unified structure, content rewrite,
 performance and SEO and accessibility, final QA with `MAINTENANCE.md`).
-The site is in maintenance. Routine changes follow `MAINTENANCE.md`;
-`refurb/main` retires once the owner deletes the phase branches after
-the soak week.
+The refurb branches retired on 2026-08-08 (DECISIONS 185). The site is
+in maintenance: every change follows `MAINTENANCE.md`, branching from
+`main` with a PR into `main`.
 
 ## Authoritative documents
 
