@@ -1,6 +1,6 @@
 ---
 title: "Digital Twin"
-excerpt: "An agent answers questions about my work, and a second model reviews every answer. Accuracy scores 4.56 on a 149-question evaluation."
+excerpt: "An agent answers questions about my work, and a second model reviews every answer. Accuracy scores 4.56 of 5 on a 149-question evaluation."
 date: 2026-05-07
 type: engineering
 stack:
