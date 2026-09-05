@@ -36,7 +36,7 @@
   url: "https://job-intelligence-engine.streamlit.app"
   source: "https://github.com/AlejandroFuentePinero/job-intelligence-engine"
   project: /projects/job-intelligence-engine/
-  pitch: "An extraction pipeline turns 6,100 job postings into ranked role recommendations. A judge model scores the extraction layer's accuracy."
+  pitch: "Sorts 6,162 postings into 2 shortlists, target now or worth a stretch, and names the skill to learn next."
   demonstrates: "It shows a deterministic pipeline where every model reports its score on held-out data."
   note: "Free hosting, slow to wake. Reload if the loading page stalls."
   screenshot: /images/apps/job-intelligence-engine.png
