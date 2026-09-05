@@ -4,7 +4,7 @@ collection: publications
 permalink: /research/abundance-niche-theory-2021/
 redirect_from:
   - /publication/delafuente_et_al_2021_ecography
-excerpt: 'Environmental suitability predicted local abundance for 50 endemic rainforest species, explaining 55% of deviance on average. Cheap occurrence data can stand in for costly counts.'
+excerpt: 'Environmental suitability predicted local abundance for 50 endemic rainforest species, explaining 55% of variation on average. Cheap occurrence data can stand in for costly counts.'
 summary: |
   Where a species can live predicts how many of them live there. We
   estimated environmental suitability from occurrence records for 50 endemic
