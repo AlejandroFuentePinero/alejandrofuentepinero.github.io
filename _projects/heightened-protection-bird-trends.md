@@ -1,6 +1,6 @@
 ---
 title: "Rainforest bird declines"
-excerpt: "17 years of bird monitoring showed upland populations nearly halving. The evidence supported protection nominations for 14 rainforest species."
+excerpt: "Seventeen years of monitoring showed upland rainforest birds nearly halving. The evidence supported protection nominations for 14 species."
 date: 2021-12-22
 type: research
 stack:

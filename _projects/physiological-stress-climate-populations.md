@@ -1,6 +1,6 @@
 ---
 title: "Physiological stress and rainforest mammal declines"
-excerpt: "2 possum species collapsed, each through a different mix of heat stress and foraging limits. A model chain traced the causes across 30 years."
+excerpt: "A model chain from microclimate to physiology to demography showed heat stress and foraging limits driving rainforest possum declines, species by species."
 date: 2025-05-05
 type: research
 stack:
