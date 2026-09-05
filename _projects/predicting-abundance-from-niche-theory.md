@@ -11,9 +11,9 @@ redirect_from:
   - /datascience/projects/predicting-abundance-from-niche-theory/
 ---
 
-Occurrence records are everywhere and counts are expensive, so we tested whether suitability can stand in for abundance. It can: models explained 55% of deviance on average across 50 endemic species of the Australian Wet Tropics. The fitted relationship predicts local abundance at fine resolution across each species' range.
+Records of where a species has been seen are everywhere, and counts of how many live there are expensive. So I tested whether a map of environmental suitability, built from the cheap records, can stand in for abundance. It can, within limits: the models explained 55% of the variation in local numbers on average across 50 species found only in the Australian Wet Tropics. The fitted relationship then predicts abundance at fine resolution across each species' range.
 
-Suitability came from an ensemble of 9 algorithms over presence-only data and climate and topography layers. Abundance came from 29 years of uninterrupted monitoring. Spatial cross-validation kept the predictive claims honest.
+Suitability came from an ensemble of 9 algorithms trained on presence-only records with climate and terrain layers. Abundance came from 29 years of uninterrupted monitoring. Spatial cross-validation, which tests the model on places it never saw, kept the predictive claims honest.
 
 ## Links
 
@@ -23,21 +23,21 @@ Suitability came from an ensemble of 9 algorithms over presence-only data and cl
 
 ## Architecture
 
-9 algorithms model each species' environmental suitability. The roster runs from surface range envelopes and classification trees to MaxEnt, boosted regression and neural networks. Random forests, regression splines, discriminant analysis and additive models complete the set. Their predictions combine into one ensemble suitability surface per species.
+Nine algorithms model each species' environmental suitability. The roster runs from surface range envelopes and classification trees to MaxEnt, boosted regression and neural networks, with random forests, regression splines, discriminant analysis and additive models completing the set. Their predictions combine into one ensemble suitability surface per species.
 
-A second stage models observed abundance as a flexible function of that suitability and tests several link functions. Survey effort and detectability enter as model terms. Outputs are gridded abundance maps with uncertainty bands, plus tabular summaries for managers. Everything runs in R under version control.
+A second stage models observed abundance as a flexible function of that suitability and tests several link functions, the mathematical bridges between suitability and count. Survey effort and detectability enter as model terms. The outputs are gridded abundance maps with uncertainty bands, plus tabular summaries for managers. Everything runs in R under version control.
 
 ## The decision that was hard
 
-The claim only matters if it extrapolates, and standard cross-validation flatters spatial models. Nearby sites share environments, so random folds leak information and inflate accuracy. We validated across spatial folds instead, predicting into areas the model never saw. The 55% figure survived that design, which is why it is worth reporting.
+The claim only matters if it extrapolates, and standard cross-validation flatters spatial models. Nearby sites share environments, so random folds leak information and inflate accuracy. I validated across spatial folds instead, predicting into areas the model never saw. The 55% figure survived that design, which is why it is worth reporting.
 
 ## What was measured
 
-The abundance-suitability relationship was strong for endemic species, and ensembles beat single algorithms on accuracy and calibration. Mean explained deviance reached 55% across taxa. Sensitivity analysis covered link functions and validation folds. The maps prioritised high-density areas the way managers need: at fine scale, with uncertainty attached.
+The abundance-suitability relationship was strong for endemic species, and ensembles beat single algorithms on both accuracy and calibration. Mean explained deviance, the share of variation the model accounts for, reached 55% across taxa. Sensitivity analysis covered link functions and validation folds. The maps prioritise high-density areas the way managers need: at fine scale, with uncertainty attached.
 
 ## What did not work
 
-The relationship is not uniform. Its strength varied between species, tied to intrinsic estimation biases the models cannot remove. For species with weak relationships, a suitability map is a hypothesis, not a shortcut to abundance. The paper says so rather than averaging the caveat away.
+The relationship is not uniform. Its strength varied between species, tied to biases in the estimates that the models cannot remove. For a species with a weak relationship, a suitability map is a hypothesis, not a shortcut to abundance. The paper says so rather than averaging the caveat away.
 
 ## Role
 
