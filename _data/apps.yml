@@ -22,7 +22,7 @@
   url: "https://7phgraph.com"
   source: "https://github.com/AlejandroFuentePinero/7ph-graph"
   project: /projects/7ph-graph/
-  pitch: "A live knowledge graph of a competitive Magic format: 107 events, 4,591 decks. Every chart carries provenance and statistical guards."
+  pitch: "A live knowledge graph of a competitive Magic format. It shows which cards travel together and refuses to chart weak evidence."
   demonstrates: "It shows graph modelling and a build that refuses to draw charts the evidence cannot support."
   note: "First load can take about 10 seconds."
   screenshot: /images/apps/7ph-graph.png
