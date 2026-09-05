@@ -1154,14 +1154,14 @@ a.chip:hover {
   color: var(--ink-muted);
 }
 
-/* 17. Capability card: the three skill areas on /skills/ as bordered
-   tiles. Single column, no hover since the card itself does not link.
+/* 17. Capability section: the three skill areas on /skills/ as plain
+   sections split by hairlines, not boxes. Prose content reads as
+   prose. No hover since nothing here links.
    ========================================================================== */
 
 .capability-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-md);
   list-style: none;
   margin: 0 0 var(--space-xl);
   padding: 0;
@@ -1169,9 +1169,8 @@ a.chip:hover {
 }
 
 .capability {
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  padding: var(--space-lg);
+  border-top: 1px solid var(--rule);
+  padding-block: var(--space-lg);
 }
 
 .capability h4 {
