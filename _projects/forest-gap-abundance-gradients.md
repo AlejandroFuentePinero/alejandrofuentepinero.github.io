@@ -10,9 +10,9 @@ redirect_from:
   - /datascience/projects/forest-gap-abundance-gradients/
 ---
 
-Natural forest gaps reshaped which birds lived where, while total abundance stayed level between gaps and closed canopy. The evidence is 5 years of mist-netting in Thai lower montane rainforest: 1,148 captures, 81 species, paired sites. One gap specialist, the Hill Blue Flycatcher (Cyornis whitei), increased in abundance with total gap size. Most species showed no relationship with gap size at all.
+When a tree falls in a rainforest, the gap it leaves changes which birds live there, even though the total number of birds stays the same. Five years of mist-netting in a Thai lower montane rainforest showed it: 1,148 captures of 81 species across paired sites in gaps and under closed canopy. Total abundance did not differ between the 2. The mix of species did, and one gap specialist, the Hill Blue Flycatcher (Cyornis whitei), grew more abundant as gaps grew larger. Most species ignored gap size.
 
-I joined the study as the analyst. My part was the analytical framework: generalised linear models along a continuous gap gradient.
+I joined the study as the analyst. My part was the analytical framework: generalised linear models, which relate counts to explanatory variables, fitted along a continuous gap gradient.
 
 ## Links
 
@@ -22,19 +22,19 @@ I joined the study as the analyst. My part was the analytical framework: general
 
 ## Architecture
 
-Generalised linear models relate each species' abundance to gap covariates: gap size and distance to edge. Error structures match the count data, and site-level terms absorb between-site variability. Residual diagnostics validated each model before we read any effect.
+Generalised linear models relate each species' abundance to 2 gap covariates: the size of the gap and the distance to its edge. The error structure matches count data, and site-level terms absorb the differences between sites. Residual diagnostics validated each model before I read any effect.
 
 ## The decision that was hard
 
-Gap studies usually compare 2 categories, gap against closed canopy, and the category test came back flat here. The design question was whether to stop there. We modelled abundance along the continuous gap-size gradient instead, species by species. The gradient models found what the categories hid: assemblage change and a single strong specialist response.
+Gap studies usually compare 2 categories, gap against closed canopy, and here the category test came back flat. The design question was whether to stop there. Instead I modelled abundance along the continuous gap-size gradient, species by species. The gradient models found what the categories hid: a change in the assemblage and one strong specialist response.
 
 ## What was measured
 
-The models produced effect sizes and confidence intervals per species along the gap gradient. Total abundance showed no difference between gaps and closed canopy. Assemblage composition shifted strongly with gaps, and the 5-year design also captured seasonal turnover from migration. Gaps of 130 to 1,020 square metres read as moderate disturbance: not highly detrimental, yet enough to affect sensitive species.
+The models produced effect sizes and confidence intervals per species along the gap gradient. Total abundance showed no difference between gaps and closed canopy. The make-up of the assemblage shifted strongly with gaps, and the 5-year design also captured seasonal turnover from migration. Gaps of 130 to 1,020 square metres read as moderate disturbance: not highly detrimental, yet enough to affect sensitive species.
 
 ## What did not work
 
-The headline effect was absent. Total bird abundance did not differ between gaps and closed canopy, and most species ignored gap size entirely. The signal lived one level down, in composition and in single species. An aggregate-only analysis would have called these forests indifferent to gaps and been wrong.
+The headline effect was absent. Total bird abundance did not differ between gaps and closed canopy, and most species ignored gap size entirely. The signal lived one level down, in the make-up of the assemblage and in single species. An aggregate-only analysis would have called these forests indifferent to gaps, and been wrong.
 
 ## Role
 
