@@ -368,8 +368,12 @@
   white-space: nowrap;
 }
 
+/* Accent chips (the home hero keyword row) sit on the accent wash with
+   no outline, so the row reads as a warm strip rather than six hollow
+   rings. The wash is the site's one tinted surface. */
 .chip--accent {
-  border-color: var(--accent);
+  border-color: transparent;
+  background: var(--accent-wash);
 }
 
 /* Chips rendered as anchors (the skills row): the border carries the
@@ -404,19 +408,17 @@ a.chip:hover {
   }
 }
 
+/* Cards sit on the sunk paper with no outline: the fill separates them
+   from the page, and in dark mode it is the lifted surface. The hover
+   signal is the title colour shift below, nothing on the box. */
 .card {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
-  border: 1px solid var(--rule);
+  background: var(--paper-sunk);
   border-radius: var(--radius);
   padding: var(--space-lg);
-  transition: border-color var(--dur) var(--ease);
-}
-
-.card:hover {
-  border-color: var(--ink-faint);
 }
 
 /* display: flex above beats the UA [hidden] rule, so the projects
@@ -495,7 +497,7 @@ a.chip:hover {
   object-fit: cover;
   object-position: top;
   border-bottom: 1px solid var(--rule);
-  background: var(--paper-sunk);
+  background: var(--paper);
 }
 
 .card__note {
@@ -1073,7 +1075,8 @@ a.chip:hover {
   padding: var(--space-xs) var(--space-md);
   cursor: pointer;
   transition: color var(--dur) var(--ease),
-    border-color var(--dur) var(--ease);
+    border-color var(--dur) var(--ease),
+    background-color var(--dur) var(--ease);
 }
 
 .filter-row__btn:hover {
@@ -1081,12 +1084,11 @@ a.chip:hover {
   border-color: var(--ink-faint);
 }
 
+/* Selected state shares the accent chip idiom: wash fill, no outline. */
 .filter-row__btn[aria-pressed="true"] {
   color: var(--ink);
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.3em;
+  border-color: transparent;
+  background: var(--accent-wash);
 }
 
 /* 16. Honor card: grants and awards on /work/ as bordered tiles
@@ -1152,14 +1154,14 @@ a.chip:hover {
   color: var(--ink-muted);
 }
 
-/* 17. Capability card: the three skill areas on /skills/ as bordered
-   tiles. Single column, no hover since the card itself does not link.
+/* 17. Capability section: the three skill areas on /skills/ as plain
+   sections split by hairlines, not boxes. Prose content reads as
+   prose. No hover since nothing here links.
    ========================================================================== */
 
 .capability-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-md);
   list-style: none;
   margin: 0 0 var(--space-xl);
   padding: 0;
@@ -1167,9 +1169,8 @@ a.chip:hover {
 }
 
 .capability {
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  padding: var(--space-lg);
+  border-top: 1px solid var(--rule);
+  padding-block: var(--space-lg);
 }
 
 .capability h4 {
