@@ -8,7 +8,7 @@
   url: /digital-twin/
   source: "https://github.com/AlejandroFuentePinero/digital-twin"
   project: /projects/digital-twin/
-  pitch: "A conversational agent answers questions about my work, grounded in a curated knowledge base. A second model reviews every answer before a visitor sees it."
+  pitch: "An agent answers questions about my work. A second model checks every answer before you see it. Accuracy scores 4.56 of 5 on 149 questions."
   demonstrates: "It shows evaluation discipline applied to an agent: a frozen baseline scores retrieval and answer quality."
   note: ""
   screenshot: /images/apps/digital-twin.png
