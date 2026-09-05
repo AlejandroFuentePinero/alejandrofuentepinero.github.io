@@ -1,6 +1,6 @@
 ---
 title: "Digital Twin"
-excerpt: "An agent answers questions about my work, and a second model reviews every answer. Accuracy scores 4.56 of 5 on a 149-question evaluation."
+excerpt: "An agent answers questions about my work. A second model checks every answer before you see it. Accuracy scores 4.56 of 5 on 149 questions."
 date: 2026-05-07
 type: engineering
 stack:
@@ -12,9 +12,9 @@ redirect_from:
   - /datascience/projects/digital-twin/
 ---
 
-The digital twin is a conversational agent that answers questions about my work on my behalf. A second model from a different family reviews every answer before a visitor sees it. On the frozen evaluation baseline, retrieval scores 0.866 mean reciprocal rank and answers score 4.56 of 5.
+Ask the digital twin about my work and it answers on my behalf: which projects I have built, what my papers found, how I approach a problem. Before you see the reply, a second model from a different provider checks it against the same facts and either accepts it or sends it back. On the frozen evaluation baseline the retriever scores 0.866 mean reciprocal rank, so the right passage usually sits at the top, and answers score 4.56 of 5 for accuracy.
 
-Each turn passes through a classifier, a branch-specific prompt, retrieval over a vector store, generation and the guardrail. Failed attempts retry with structured feedback. Persistent failures fall back to a polite contact line. The chat has its own page on this site and runs as a Hugging Face Space.
+Each turn passes through a classifier, a prompt built for that kind of question, retrieval, generation and the guardrail. A rejected draft gets feedback and another try. Persistent failures end in a polite invitation to email me.
 
 ## Links
 
@@ -30,33 +30,31 @@ Each turn passes through a classifier, a branch-specific prompt, retrieval over 
   </picture>
 </figure>
 
-A small classifier (gpt-4.1-nano) labels each question and routes it to a branch: technical, behavioural, logistical, generic or gap. Each branch loads only the profile sections, rules and tools its question type needs. The generator (gpt-4.1) drafts the answer, fetching full project documentation through a registered tool on technical branches. The guardrail (claude-sonnet-4-6) accepts or rejects the draft against the same ground truth the generator saw.
+A small classifier (gpt-4.1-nano) reads each question and sends it down one of 5 branches: technical, behavioural, logistical, generic or gap. A gap question asks about something I have not done. Each branch loads only the profile sections, rules and tools its kind of question needs. The generator (gpt-4.1) drafts the answer, and on technical branches it can fetch a project's full documentation through a registered tool. The guardrail (claude-sonnet-4-6) then judges the draft against the same ground truth the generator saw.
 
-Rejections carry structured feedback back into the generator, up to 3 times. Shared rule constants feed both the generator and the guardrail, so their rules cannot drift apart.
+When the guardrail rejects a draft, its structured feedback goes back to the generator, up to 3 times. Both models read their rules from the same shared constants, so the rule the generator follows and the rule the judge enforces cannot drift apart.
 
-Knowledge splits in 2. A small always-on profile of about 2,000 tokens supplies identity and rules. The system retrieves the larger knowledge base on demand from a vector store.
+The twin's knowledge is split in 2. A small always-on profile of about 2,000 tokens, roughly 1,500 words, carries identity and rules and is present in every turn. The larger knowledge base sits in a vector store, a database that finds passages by meaning rather than by exact words, and is retrieved only when a question needs it.
 
-Every turn writes one JSONL record: branch, classifier confidence, retrieved chunks, tool calls, retries and latency. A local operator dashboard, Sentinel, reads that log for drift detection and gap discovery.
+Every turn writes one line to a log: the branch, the classifier's confidence, the chunks retrieved, any tool calls, the retries and the latency. A local operator dashboard called Sentinel reads that log to detect drift and to find the questions the knowledge base cannot yet answer.
 
 ## The decision that was hard
 
-The first design loaded one monolithic prompt: full profile, all rules, retrieved chunks. That put 6,000 to 7,000 tokens into every turn and diluted the model's attention. I had hit that failure mode on earlier projects. Section trimming was a band-aid, and cheap models pick tools unreliably, so model-chosen context was out.
+The first design used one big prompt: the full profile, every rule and all the retrieved chunks, in every turn. That put 6,000 to 7,000 tokens in front of the model each time and diluted its attention, a failure I had already met on earlier projects. Trimming sections would have been a bandage, and letting the model choose its own context was out, because cheap models pick tools unreliably.
 
-The resolution was classify-then-route. A thin classifier picks the branch, and the branch composes only what its question type needs. The cost is a small classifier call per turn. The gain is a short, relevant prompt on every branch.
+The answer was to classify first and route second. A thin classifier picks the branch, and the branch assembles only what its kind of question needs. The cost is one small extra call per turn. The gain is a short, relevant prompt every time.
 
 ## What was measured
 
-A 149-question evaluation set covers 7 question types. The types are direct fact, temporal, comparative, numerical, relationship, spanning and holistic. Retrieval scoring uses mean reciprocal rank (MRR), nDCG and keyword coverage. A judge model scores answers on accuracy, completeness and relevance.
+The evaluation set holds 149 questions across 7 types: direct fact, temporal, comparative, numerical, relationship, spanning and holistic. Retrieval is scored with mean reciprocal rank (MRR), which rewards putting the right passage near the top, with nDCG, which rewards a well-ordered list, and with keyword coverage. A judge model scores each answer for accuracy, completeness and relevance on a 1 to 5 scale. The frozen baseline stands at 0.866 MRR and 4.56 for accuracy.
 
-The frozen baseline stands at 0.866 MRR and 4.56 accuracy on the judge's 1 to 5 scale.
-
-A canary corpus of 50 probe questions replays periodically against the live system. Canary records carry an `is_canary` flag and share the live log file. Drift therefore appears in the same dashboard the traffic flows through. Major drift flags fell across the last 3 points: 12, then 9, then 6.
+Drift is watched with a canary corpus, 50 probe questions replayed against the live system between releases. Canary records carry a flag and share the live log file, so drift shows up in the same dashboard the real traffic flows through. The flag count is a trip-wire rather than a gate. The latest run raised 14 flags, and triage found that 6 of the 9 major ones came from 2 questions whose answers had improved.
 
 ## What did not work
 
-The guardrail at first saw only the retrieved chunks, not the content the generator fetched through tools. It judged tool-grounded answers as fabrication and rejected them. The fix shares every grounding surface with the guardrail. Whatever context the generator used, the judge now sees.
+At first the guardrail saw only the retrieved chunks, not the documentation the generator had fetched through its tool. So it read correct, tool-grounded answers as fabrication and rejected them. The fix hands the guardrail every surface the generator could have drawn on. Whatever context the generator used, the judge now sees too.
 
-The first drift detector compared mechanisms, not outcomes. After a routine re-ingest it raised 52 flags against a healthy system, 33 of them from re-chunked storage. I removed the 2 mechanism-level checks, and the same data produced 12 signal-dominated flags. The detector now watches what visitors would see, not how the system got there.
+The first drift detector also compared mechanisms instead of outcomes. After a routine re-ingest of the knowledge base it raised 52 flags against a healthy system, and 33 of them came from storage that had merely been re-chunked. I removed the 2 mechanism-level checks, and the same data produced 12 flags, most of them real signal. The detector now watches what a visitor would see, not how the system got there.
 
 ## Privacy
 
@@ -64,4 +62,4 @@ The system logs conversations to a private Hugging Face dataset so I can improve
 
 ## Stack
 
-Python · Gradio · ChromaDB · LiteLLM · OpenAI (gpt-4.1, gpt-4.1-nano, text-embedding-3-small) · Anthropic (claude-sonnet-4-6) · Pydantic · Tenacity · Hugging Face Spaces and Datasets
+Python · Gradio · ChromaDB · LiteLLM · OpenAI (gpt-4.1, gpt-4.1-nano, text-embedding-3-large) · Anthropic (claude-sonnet-4-6) · Pydantic · Tenacity · Hugging Face Spaces and Datasets

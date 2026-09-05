@@ -12,9 +12,9 @@ redirect_from:
   - /datascience/projects/ai-jie/
 ---
 
-AI-JIE reads raw job postings and produces validated job records with skills split by intent: required, preferred or soft. A human evaluation of the final prompt scored 4.11 of 5, with structural fields at 5.00. The published dataset covers 3,892 data scientist postings.
+A job posting mixes what the employer needs, what they would like and what the job involves, and rarely labels which is which. AI-JIE reads raw postings and turns each one into a validated record with the skills sorted by intent: required, preferred or soft. Human review scored the final prompt 4.11 of 5, with structural fields such as seniority at 5.00. The published dataset covers 3,892 data scientist postings.
 
-The hard part was never extracting skills. It was telling a genuine requirement from a nice-to-have, and a skill from a responsibility described as one. The fix took 33 prompt versions and one architecture change: chain-of-thought scaffolding.
+Extracting skills was never the hard part. The hard part was telling a genuine requirement from a nice-to-have, and a skill from a responsibility described as one. It took 33 prompt versions and one architecture change.
 
 AI-JIE is the extraction layer of the [Job Intelligence Engine](/projects/job-intelligence-engine/), its host system.
 
@@ -27,35 +27,33 @@ AI-JIE is the extraction layer of the [Job Intelligence Engine](/projects/job-in
 
 ## Architecture
 
-An async pipeline reads each posting and returns a Pydantic-validated `Job` object through the instructor library. Skills arrive partitioned by intent. Role metadata covers seniority, job family, experience, education and responsibilities. Both the extractor and the judge run at temperature 0, so the same posting always produces the same record.
+An asynchronous pipeline sends each posting to the model and gets back a `Job` object that Pydantic has already validated, through the instructor library. The skills arrive partitioned by intent, and the role metadata covers seniority, job family, years of experience, education and responsibilities. Both the extractor and the judge run at temperature 0, which removes the model's randomness, so the same posting always produces the same record.
 
-A semaphore caps concurrency at 20 requests. The pipeline writes each result to a JSONL checkpoint as it lands. An interrupted batch resumes from the checkpoint instead of paying the spend again.
+A semaphore caps the pipeline at 20 requests in flight, and every result is written to a checkpoint file as it lands. An interrupted batch resumes from the checkpoint instead of paying for the same postings twice.
 
-A deterministic postprocessing layer runs after the model: responsibility exclusion and a blocklist for known noise. The model extracts broadly on purpose. The rules remove what broad extraction lets through, reproducibly.
+After the model comes a deterministic clean-up layer: it drops skills that were really responsibilities and filters a blocklist of known noise. The model extracts broadly on purpose, and the rules remove what broad extraction lets through, the same way every time.
 
-Extraction started on gpt-4o-mini and moved to gpt-5.4-mini for the final batch, about 3 times faster. The upgrade needed its own prompt pass, because the newer model followed the rules too literally.
+Extraction started on gpt-4o-mini and moved to gpt-5.4-mini for the final batch, which ran about 3 times faster. The upgrade needed its own prompt pass, because the newer model followed the rules too literally and pulled whole responsibility phrases into the required skills.
 
 ## The decision that was hard
 
-Early prompts asked the model to classify skills directly into required, preferred or soft. Accuracy on preferred skills stayed poor. The model kept conflating responsibilities with requirements. Rule tweaks alone moved nothing.
+The early prompts asked the model to sort skills straight into required, preferred or soft. Accuracy on preferred skills stayed poor, the model kept mistaking responsibilities for requirements, and no amount of rule tweaking moved it.
 
-The fix was structural: 3 intermediate schema fields that force the model to reason before it classifies. The model first lists skills found inside responsibility statements, the optionality phrases it detected, and every technical skill anywhere. Only then does it classify. This extract-then-classify scaffold was the largest accuracy gain across all 33 versions.
+The fix was structural. I added 3 intermediate fields to the schema that force the model to think before it classifies. It first lists the skills it found inside responsibility statements, then the phrases that signal something is optional, then every technical skill anywhere in the posting. Only after that does it classify. Schema design turned out to be the biggest lever across all 33 versions, and this extract-then-classify scaffold is the heart of it.
 
 ## What was measured
 
-A judge model scores every extraction on 12 dimensions, each from 1 to 3. The judge fills its own ground-truth fields before scoring, so it cannot anchor on the extractor's reasoning. Cross-seed runs on 3 random samples checked that a gain was real and not a lucky draw.
+A judge model scores every extraction on 12 dimensions, each from 1 to 3. Before it scores anything, the judge fills in its own ground-truth fields, so it cannot lean on the extractor's reasoning. Runs on 3 different random samples checked that a gain was real and not a lucky draw.
 
-A human evaluation of 28 postings, scored 1 to 5, was the final gate. Seniority and responsibilities reached 5.00. The weakest dimension was required skills at 4.00, from discipline labels leaking out of responsibility scanning. Version 33 fixed that leak with a section-boundary guard, and the full batch ran on it.
-
-Overall human score: 4.11 of 5. Cohen's kappa tracked agreement between judge and human, and trend plots tracked every dimension across versions.
+The final gate was a human evaluation of 28 postings, scored 1 to 5. Seniority and responsibilities reached 5.00. The weakest dimension was required skills at 4.00, because discipline labels such as field names were leaking out of the responsibility scan. Version 33 closed that leak with a guard for postings that lack clear section headers, and the full batch ran on it. The overall human score was 4.11 of 5, and trend plots track every dimension across all 33 versions.
 
 ## What did not work
 
-The first judge scored a suspicious 2.96 of 3. The cause was circular: the extraction it judged still contained the full posting text, so verification was trivial. The fix strips passthrough fields before judging, and scores fell to honest levels.
+The first judge scored a suspicious 2.96 of 3. The cause was circular: the extraction it was judging still carried the full posting text, so checking it was trivial. The fix strips those passthrough fields before judging, and the scores fell to honest levels.
 
-The judge also enforced its own conventions instead of the extraction rules. It punished the extractor for following instructions it never saw. The rewritten judge prompt now contains the extraction rules verbatim.
+The judge also enforced its own conventions instead of the extraction rules, punishing the extractor for breaking instructions it had never seen. The rewritten judge prompt now contains the extraction rules word for word.
 
-One promising experiment died on measurement. An injected industry hint raised ground-truth accuracy from 36% to 78%. It also diluted the model's attention and regressed the skill fields, whichever way it entered the prompt. I reverted the hint in full.
+One promising experiment died on measurement. Feeding the model the posting's industry label raised the accuracy of the industry field from 36% to 78%. But it also diluted the model's attention and regressed the skill fields, whichever way it entered the prompt, so I reverted it in full.
 
 ## Stack
 

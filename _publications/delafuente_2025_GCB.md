@@ -9,8 +9,9 @@ summary: |
   Climate change kills through mechanisms, and this paper measures which
   mechanisms drove rainforest possum declines. We built a framework that
   joins biophysical, nutritional and population models. We applied it to 2
-  ringtail possum species of the Australian Wet Tropics, over 30 years of
-  monitoring. Both species collapsed at lower elevations and in
+  ringtail possum species of the Australian Wet Tropics over 30 years of
+  monitoring, so that uncertainty flows from the microclimate to the
+  population count. Both species collapsed at lower elevations and in
   low-nutrition sites, but through different routes.
 
   For Pseudochirops archeri, overheating and dehydration reduced survival,

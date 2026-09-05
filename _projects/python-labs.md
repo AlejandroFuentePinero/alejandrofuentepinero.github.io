@@ -1,6 +1,6 @@
 ---
 title: "Python Labs"
-excerpt: "3 lab collections cover the fundamentals: object-oriented Python, data analysis and machine learning. The machine learning collection spans 12 sections, from regression to neural networks."
+excerpt: "Three lab collections cover the fundamentals: object-oriented Python, data analysis and machine learning. The machine learning collection runs from regression to neural networks."
 date: 2025-10-15
 type: lab
 stack:
@@ -13,9 +13,9 @@ redirect_from:
   - /datascience/projects/python_oop_minisystems/
 ---
 
-3 lab collections make one learning progression: object-oriented Python systems, exploratory data analysis and classical machine learning. They are practice, the ground where I consolidated the fundamentals behind the shipped systems.
+Every shipped system on this site rests on fundamentals I practised somewhere first. These 3 lab collections are that somewhere: object-oriented Python systems, exploratory data analysis and classical machine learning. They form one learning progression, and none of them pretends to be more than practice.
 
-Each collection keeps its own repository and its own arc. The arcs run from procedural scripts to class design, and from raw data to neural networks.
+Each collection keeps its own repository and its own arc. One runs from procedural scripts to class design, another from raw data to insight, and the third from linear regression to neural networks.
 
 ## Links
 
@@ -25,20 +25,20 @@ Each collection keeps its own repository and its own arc. The arcs run from proc
 
 ## Object-oriented Python systems
 
-A series of milestone builds moves from procedural games to multi-class applications. Tic-Tac-Toe practises function decomposition. Blackjack composes Card, Deck, Hand and Chips classes. A credit card validator implements the Luhn algorithm with rule-based card classification.
+A series of milestone builds moves from procedural games to multi-class applications. Tic-Tac-Toe practises breaking a program into functions. Blackjack composes Card, Deck, Hand and Chips classes into a working game with betting. A credit card validator implements the Luhn checksum and classifies card types by their prefixes.
 
-The later systems exercise inheritance and polymorphism. A bank account manager routes transfers through Account subclasses. An inventory system links Inventory and Product classes for create, update and search workflows. A library system tracks Book, Journal and DVD loans across Member records.
+The later systems exercise inheritance and polymorphism, where a family of classes shares one interface. A bank account manager routes transfers through checking, savings and business subclasses of a single Account. An inventory system links Inventory and Product classes for create, update and search workflows. A library system tracks Book, Journal and DVD loans across Member records.
 
 ## Exploratory data analysis
 
-2 end-to-end pipelines practise the cleaning-to-insight arc. The 911 calls analysis extracts time features from emergency call records and maps call volumes by reason, day and month. The finance analysis pulls multi-stock price data, computes moving averages and returns, and reads co-movement from correlation matrices.
+Two end-to-end pipelines practise the arc from cleaning to insight. The 911 calls analysis pulls time features out of emergency call records and maps call volumes by reason, day and month. The finance analysis pulls price data for several banks, computes moving averages and returns, and reads how the stocks move together from correlation matrices.
 
 ## Machine learning
 
-12 sections cover the classical toolkit in scikit-learn, ending with neural networks in TensorFlow and Keras. Regression and classification come first: linear and logistic regression, K-nearest neighbours, decision trees, random forests and support vector machines. Ensemble methods add gradient boosting and XGBoost.
+Eleven notebooks cover the classical toolkit in scikit-learn and end with neural networks in TensorFlow and Keras. Regression and classification come first: linear and logistic regression, K-nearest neighbours, decision trees, random forests and support vector machines. Then K-means clustering and principal component analysis, which compresses many features into a few, cover the unsupervised side.
 
-Unsupervised methods follow: K-means clustering, hierarchical clustering and principal component analysis. Naive Bayes text classification, recommender systems, cross-validation and an introduction to PySpark complete the set.
+Naive Bayes text classification and a similarity-based recommender complete the classical set. The last 3 notebooks build feedforward neural networks in Keras for regression, for classification, and for a credit-risk problem on LendingClub-style loan data.
 
 ## Stack
 
-Python 3 · pandas · NumPy · matplotlib · seaborn · Plotly · scikit-learn · XGBoost · TensorFlow · Keras · Jupyter · Git/GitHub
+Python 3 · pandas · NumPy · matplotlib · seaborn · Plotly · scikit-learn · TensorFlow · Keras · Jupyter · Git/GitHub

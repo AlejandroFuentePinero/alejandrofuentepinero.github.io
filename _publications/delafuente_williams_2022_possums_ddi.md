@@ -12,7 +12,7 @@ summary: |
   30 years of survey data, from 1992 to 2021. The model separates real
   population change from imperfect detection, so a trend is never an
   artefact of who searched where. It shows that warming, and heatwaves in
-  particular, drove a rapid and severe decline over three decades.
+  particular, drove a rapid and severe decline over 3 decades.
 
   We then ran the fitted model forward. Under forecast warming, populations
   fall below viability thresholds by 2050. We used the result to nominate

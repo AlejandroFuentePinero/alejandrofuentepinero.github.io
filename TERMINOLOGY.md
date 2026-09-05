@@ -90,6 +90,50 @@ their original wording and outrank this file.
 | Mentoring in prose | I mentored | supervised, coached | Matches the entry title "Mentoring". |
 | The publisher blurb block | Publisher's description | About the book, Blurb | Third-party record, byte-identical, attributed by its label. |
 
+## Plain-language translations (added in the writing review)
+
+Since DECISIONS 188 the standard is engaging plain English, and every
+technical term gets a plain clause the first time it appears on a page,
+with the precise term kept beside it. The same term gets the same clause
+on every page. Once translated on a page, the precise term stands alone.
+
+| Term | Plain clause used on first appearance |
+|---|---|
+| hierarchical (population) model | a model with 2 layers, one for the chance of seeing an animal and one for how many are there |
+| imperfect detection | the chance of missing an animal that is there |
+| credible interval | the Bayesian version of an error bar |
+| posterior sampling / posterior | fitting that gives every quantity its credible interval |
+| random effects | terms that let each site and year vary around the shared trend |
+| generalised linear model | a model that relates counts to explanatory variables |
+| N-mixture model | a model that separates true abundance from the chance of detecting an animal |
+| spatial cross-validation | testing the model on places it never saw |
+| explained deviance | the share of variation the model accounts for |
+| link function | the mathematical bridge between suitability and count |
+| beta-diversity metrics | metrics that compare the make-up of 2 communities |
+| local extinction rate | the share of species unable to move |
+| thermal resistance surface | a layer that scores how hard each stretch of terrain is to cross |
+| partial altitudinal migration | seasonal uphill and downhill movement where only part of each population moves |
+| mean reciprocal rank (MRR) | a retrieval score that rewards putting the right passage near the top |
+| nDCG | a retrieval score that rewards a well-ordered list |
+| vector store | a database that finds passages by meaning rather than by exact words |
+| guardrail / judge model | a second model that checks every answer before a visitor sees it |
+| canary corpus | probe questions replayed against the live system between releases |
+| drift | the system's answers changing between releases |
+| temperature 0 | the setting that removes the model's randomness |
+| area under the curve (0.88 to 0.95) | tells a role that needs a skill from one that does not about 9 times in 10 |
+| R² of 0.30 | the model explains roughly 30% of the variation |
+| calibrated probability | a probability that means what it says |
+| architecture decision record | a short document recording one design choice and the reasons behind it |
+| statistical power (6 to 9%) | the chance of detecting an effect that is really there |
+| detection floor | the smallest effect an instrument can tell apart from noise |
+| bootstrap | redrawing the data at random, with replacement, and rescoring many times |
+| permutation test | shuffling the data to destroy the signal and seeing what survives |
+| QLoRA | a technique that shrinks a model to 4-bit precision and trains only small adapter layers |
+| t-SNE | a projection that places similar items near each other |
+| window function (SQL) | a query function that computes rankings and running totals across rows without collapsing them |
+| sideboard (Magic) | the 15 spare cards swapped in between games |
+| camp (deck engine) | one of the sub-groups a deck's players split into |
+
 ## Acronym policy
 
 Expand every acronym on first use per page (section 6.2 rule 10). Exceptions,

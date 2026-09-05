@@ -11,9 +11,9 @@ redirect_from:
   - /datascience/projects/spatiotemporal-bird-climate-impacts/
 ---
 
-Not every climate driver matters equally, and this study measured which ones move rainforest bird populations. Across 47 species in the Australian Wet Tropics, warming and changing rainfall drove the strongest responses. The directions flip by elevation. Lowland populations gained from rising temperature and precipitation, while upland species declined under the same drivers.
+Not every climate driver matters equally, and this study measured which ones actually move rainforest bird populations. Across 47 species in the Australian Wet Tropics, warming and changing rainfall drove the strongest responses, and the direction flipped with elevation. Lowland populations gained from rising temperature and rainfall while upland species declined under the same drivers.
 
-Hierarchical population models separated detection from true change, 2000 to 2016. Heatwaves cut lowland populations, matching where those events concentrate. Cyclones and droughts, the expected disasters, had marginal effects on community change.
+The evidence is 17 years of surveys, 2000 to 2016, fitted with hierarchical population models that separate real change from the chance of missing a bird. Heatwaves cut lowland populations, which is where those events concentrate. Cyclones and droughts, the disasters everyone expected to matter, had only marginal effects on the community.
 
 ## Links
 
@@ -23,21 +23,21 @@ Hierarchical population models separated detection from true change, 2000 to 201
 
 ## Architecture
 
-The state process models latent population dynamics across space and time, with spatial and temporal random effects. The observation process models detection from repeated surveys, so survey noise stays out of the trends. Climate predictors enter at the site-year level: temperature, precipitation, heatwave exposure, drought and cyclone indices.
+The state process models the hidden population dynamics across space and time, with random effects that let each site and year vary around the shared trend. The observation process models detection from repeated surveys, so survey noise stays out of the trends. Climate predictors enter for each site and year: temperature, precipitation, heatwave exposure, and drought and cyclone indices.
 
-Cyclone damage needed its own measurement. High-resolution satellite imagery quantified cyclone-induced change in rainforest vegetation structure, which then joined the model as a predictor. JAGS ran the model fitting, and R handled processing and visualisation.
+Cyclone damage needed its own measurement. High-resolution satellite imagery quantified how much each cyclone changed the structure of the rainforest canopy, and that measure joined the model as a predictor. JAGS fitted the model, and R handled processing and visualisation.
 
 ## The decision that was hard
 
-A single warming trend would fit the data and answer nothing. Management needs to know which driver does the damage, and drivers travel together: hot years bring heatwaves, cyclones flatten vegetation. We modelled 5 drivers jointly rather than one at a time, accepting the collinearity risk. Joint estimation is what let the surprising answer, that cyclones barely matter, emerge at all.
+A single warming trend would fit the data and answer nothing. Management needs to know which driver does the damage, and drivers travel together: hot years bring heatwaves, and cyclones flatten vegetation. I modelled all 5 drivers jointly rather than one at a time, accepting the risk that correlated predictors make individual effects harder to pin down. Joint estimation is what let the surprising answer, that cyclones barely matter, emerge at all.
 
 ## What was measured
 
-The model measured effect sizes per driver, with credible intervals, across the elevational gradient. Warming and rainfall change carried the community-wide signal, positive in the lowlands and negative in the uplands. Heatwaves added a negative effect on lowland populations, matching the observed distribution of extreme events across elevations.
+The model measured an effect size per driver, with credible intervals, across the elevational gradient. Warming and rainfall change carried the community-wide signal, positive in the lowlands and negative in the uplands. Heatwaves added a negative effect on lowland populations, matching where those extreme events actually fall across elevations.
 
 ## What did not work
 
-We expected cyclones and droughts to be major drivers of change. The model found marginal effects on spatiotemporal community change for both. Responses were species-specific and unrelated to the elevational gradient. The expected disaster story did not survive measurement, and the paper reports that plainly.
+I expected cyclones and droughts to be major drivers of change. The model found marginal effects on community change for both, and the responses were species-specific and unrelated to elevation. The expected disaster story did not survive measurement, and the paper reports that plainly.
 
 ## Role
 

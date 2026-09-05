@@ -1,6 +1,6 @@
 ---
 title: "Rainforest bird declines"
-excerpt: "17 years of bird monitoring showed upland populations nearly halving. The evidence supported protection nominations for 14 rainforest species."
+excerpt: "Seventeen years of monitoring showed upland rainforest birds nearly halving. The evidence supported protection nominations for 14 species."
 date: 2021-12-22
 type: research
 stack:
@@ -11,9 +11,9 @@ redirect_from:
   - /datascience/projects/heightened-protection-bird-trends/
 ---
 
-17 years of standardised bird monitoring showed upland rainforest populations nearly halving. The evidence supported protection nominations for 14 rainforest species under national and international frameworks. It also went live as an interactive app anyone can query.
+Seventeen years of standardised bird monitoring showed the upland rainforest birds of the Australian Wet Tropics nearly halving. That evidence supported protection nominations for 14 species under national and international frameworks, and it went live as an interactive app that anyone can query.
 
-The record covers 1,977 surveys at 114 sites in the Australian Wet Tropics, from sea level to 1,500 m. Trend models for 42 species, adjusted for survey effort, quantified change from 2000 to 2016. Mid and high elevation species declined by more than 40% at their lower edges. Upland specialists and regional endemics lost almost 50%.
+The record covers 1,977 surveys at 114 sites, from sea level to 1,500 m. Trend models for 42 species, adjusted for survey effort, quantified the change from 2000 to 2016. Most mid and high elevation species lost more than 40% of their numbers at the lower edge of their range. Upland specialists and species found nowhere else lost almost 50%.
 
 ## Links
 
@@ -23,19 +23,19 @@ The record covers 1,977 surveys at 114 sites in the Australian Wet Tropics, from
 
 ## Architecture
 
-The pipeline harmonises multi-source count data into one time series per species and site. Generalised linear models estimate each species' trend, with covariates for survey effort and habitat change. The effort adjustment matters most: a decline must be a decline, not a change in who searched.
+The pipeline harmonises counts from several sources into one time series per species and site. Generalised linear models, which relate counts to explanatory variables, estimate each species' trend with terms for survey effort and habitat change. The effort adjustment matters most: a decline has to be a decline, not a change in who went looking.
 
-A Shiny app publishes the trends interactively. Managers and policymakers can explore each trajectory, its confidence interval and the nomination thresholds. The whole analysis runs in R under version control.
+A Shiny app publishes the trends interactively, so managers and policymakers can explore each trajectory, its confidence interval and the nomination thresholds. The whole analysis runs in R under version control.
 
 ## The decision that was hard
 
-A nomination document needs one defensible number per species, but monitoring data offer many candidate analyses. We modelled each species separately, with explicit covariate adjustment, instead of pooling a community index. A pooled index reads impressively and hides which species is collapsing. Per-species models are noisier, and they name the species a nomination must name.
+A nomination document needs one defensible number per species, and monitoring data offer many candidate analyses. I modelled each species separately, with explicit adjustment for covariates, instead of pooling everything into a community index. A pooled index reads impressively and hides which species is collapsing. Per-species models are noisier, and they name the species a nomination must name.
 
 ## What was measured
 
 Most mid and high elevation species lost more than 40% of local abundance at their lower edges. Lowland species expanded uphill, increasing by up to 190% in higher areas. Upland specialists and regional endemics declined by almost 50%.
 
-14 species carried enough evidence to support nominations for heightened protection. The nominations ran under national threatened species lists and through the International Union for Conservation of Nature (IUCN).
+Fourteen species carried enough evidence to support nominations for heightened protection. The nominations ran under national threatened species lists and through the International Union for Conservation of Nature (IUCN).
 
 ## Role
 

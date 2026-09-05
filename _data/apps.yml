@@ -8,7 +8,7 @@
   url: /digital-twin/
   source: "https://github.com/AlejandroFuentePinero/digital-twin"
   project: /projects/digital-twin/
-  pitch: "A conversational agent answers questions about my work, grounded in a curated knowledge base. A second model reviews every answer before a visitor sees it."
+  pitch: "An agent answers questions about my work. A second model checks every answer before you see it. Accuracy scores 4.56 of 5 on 149 questions."
   demonstrates: "It shows evaluation discipline applied to an agent: a frozen baseline scores retrieval and answer quality."
   note: ""
   screenshot: /images/apps/digital-twin.png
@@ -22,7 +22,7 @@
   url: "https://7phgraph.com"
   source: "https://github.com/AlejandroFuentePinero/7ph-graph"
   project: /projects/7ph-graph/
-  pitch: "A live knowledge graph of a competitive Magic format: 107 events, 4,591 decks. Every chart carries provenance and statistical guards."
+  pitch: "A live knowledge graph of a competitive Magic format. It shows which cards travel together and refuses to chart weak evidence."
   demonstrates: "It shows graph modelling and a build that refuses to draw charts the evidence cannot support."
   note: "First load can take about 10 seconds."
   screenshot: /images/apps/7ph-graph.png
@@ -36,7 +36,7 @@
   url: "https://job-intelligence-engine.streamlit.app"
   source: "https://github.com/AlejandroFuentePinero/job-intelligence-engine"
   project: /projects/job-intelligence-engine/
-  pitch: "An extraction pipeline turns 6,100 job postings into ranked role recommendations. A judge model scores the extraction layer's accuracy."
+  pitch: "Sorts 6,162 postings into 2 shortlists, target now or worth a stretch, and names the skill to learn next."
   demonstrates: "It shows a deterministic pipeline where every model reports its score on held-out data."
   note: "Free hosting, slow to wake. Reload if the loading page stalls."
   screenshot: /images/apps/job-intelligence-engine.png
