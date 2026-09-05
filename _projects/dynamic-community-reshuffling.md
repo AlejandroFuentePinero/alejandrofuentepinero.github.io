@@ -10,7 +10,7 @@ redirect_from:
   - /datascience/projects/dynamic-community-reshuffling/
 ---
 
-When warming pushes mountain species uphill, they do not move as a group. A species that flies crosses a valley that stops one that walks, so communities do not shift, they reshuffle. I simulated that reshuffling for 7,613 vertebrate communities in the Australian Wet Tropics. The local extinction rate, the share of species unable to move, rises with elevation and points to mass local extinctions of upland species.
+When warming pushes mountain species uphill, they do not move as a group. A flier crosses a valley that stops a walker, so communities do not shift, they reshuffle. I simulated that reshuffling for 7,613 vertebrate communities in the Australian Wet Tropics. The local extinction rate, the share of species unable to move, rises with elevation and points to mass local extinctions of upland species.
 
 Each species moves by its own chance of dispersing, computed from how far it can travel and how much the terrain resists it. Dissimilarity indices then measure how far each community drifts from its current make-up. The result is a worked example of the ["escalator to extinction"](https://www.pnas.org/doi/abs/10.1073/pnas.1817416115): species escape upslope until no habitat remains.
 
