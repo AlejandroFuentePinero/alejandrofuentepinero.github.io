@@ -1,6 +1,6 @@
 ---
 title: "LLM Engineering Lab"
-excerpt: "11 projects spanning retrieval, fine-tuning and autonomous agents. The flagship ensemble predicts product prices with a mean absolute error of $29.95."
+excerpt: "A lab of 11 projects across retrieval, fine-tuning and agents. The flagship prices Amazon products from their descriptions to within $29.95 on average."
 date: 2026-03-25
 type: engineering
 stack:
@@ -12,9 +12,9 @@ redirect_from:
   - /datascience/projects/llm-engineering-lab/
 ---
 
-This lab holds 11 Python systems across the language model stack: prompting, retrieval, tool use, fine-tuning, agents and deployment. The flagship predicts Amazon product prices from text descriptions. Its final ensemble reaches a mean absolute error of $29.95 and R² of 86.3% on 10,000 held-out products.
+This lab is where I learned the language model stack by building it. Its 11 Python systems move from prompting and retrieval through tool use and fine-tuning to autonomous agents and deployment. The flagship predicts the price of an Amazon product from its text description alone. Its final ensemble lands within $29.95 of the true price on average and explains 86.3% of price variation across 10,000 products it never saw in training.
 
-The projects escalate. Early ones isolate one pattern each. The flagship joins them into one system: data curation, fine-tuning, retrieval, an agent fleet and a live dashboard. Every model faces the same held-out test, so the comparison stays fair.
+The projects escalate on purpose. The early ones isolate one pattern each. The flagship then joins those patterns into a single system: data curation, fine-tuning, retrieval, a fleet of agents and a live dashboard. Every model faces the same held-out test, so the comparison between them stays fair.
 
 ## Links
 
@@ -29,13 +29,13 @@ The projects escalate. Early ones isolate one pattern each. The flagship joins t
 
 ## The flagship: a price predictor
 
-820,000 Amazon products enter a curation pipeline: filtered, deduplicated and resampled with quadratic weighting to flatten price skew. A batch job on Groq generates a clean structured summary per product before any model sees the data. Prompt-completion pairs use the Llama-3.2-3B tokeniser with a 110-token cap. Both the full and a 23,000-item lite dataset land on Hugging Face Hub.
+The raw material is 820,000 Amazon products. A curation pipeline filters and deduplicates them, then resamples with quadratic weighting so that cheap items stop dominating the price distribution. Before any model sees the data, a batch job on Groq writes a clean structured summary for each product. Each summary becomes a prompt-completion pair, cut at 110 tokens with the Llama-3.2-3B tokeniser. Both the full dataset and a 23,000-item lite version live on Hugging Face Hub.
 
-Open-source fine-tuning uses QLoRA: 4-bit NF4 quantisation on a T4 GPU. Adapters train on attention layers in lite mode, adding feed-forward layers in full mode. Batch jobs persist state to disk, so a 24-hour run survives restarts. The retrieval path embeds all 800,000 training products into ChromaDB and passes the 5 most similar to GPT-5.1 as context.
+The open-source model is fine-tuned with QLoRA, a technique that shrinks the model to 4-bit precision and trains only small adapter layers. That is how a 3-billion-parameter model fits on a free T4 GPU. The adapters attach to the attention layers in lite mode and to the feed-forward layers as well in full mode. Long batch jobs save their state to disk, so a 24-hour run survives a restart. The retrieval path embeds all 800,000 training products into ChromaDB, a vector database, and hands the 5 most similar products to GPT-5.1 as context for each prediction.
 
-The ensemble blends GPT-5.1 with retrieval at 80%, the fine-tuned specialist at 10%, the deep network at 10%. On top sits an agent fleet. A scanner agent filters deal feeds, an ensemble agent prices each deal, and a messaging agent pushes notifications through Pushover. GPT-5.1 plans the loop itself with 3 registered tools.
+The ensemble blends GPT-5.1 with retrieval at 80%, the fine-tuned specialist at 10% and the deep network at 10%. On top sits an agent fleet: a scanner agent filters deal feeds, an ensemble agent prices each deal, and a messaging agent sends a push notification through Pushover. GPT-5.1 plans the loop itself with 3 registered tools.
 
-A Gradio dashboard runs the deal finder on load and refreshes every 5 minutes. It streams agent logs live and renders the 800,000-vector store as a 3-dimensional t-SNE plot.
+A Gradio dashboard runs the deal finder on load and refreshes every 5 minutes. It streams the agent logs live and draws the 800,000-vector store as a 3-dimensional t-SNE plot, a projection that places similar products near each other.
 
 ### Models benchmarked
 
@@ -53,34 +53,34 @@ A Gradio dashboard runs the deal finder on load and refreshes every 5 minutes. I
 
 ## The decision that was hard
 
-A fair benchmark across model families was the hard design problem. Traditional regressors, fine-tuned open-source models and frontier models with retrieval do not naturally share inputs or outputs. The resolution has 3 parts. Every model consumes the same cleaned summaries, faces the same held-out split, and reports through one shared Tester class.
+The hard design problem was a fair benchmark across model families. A random forest, a fine-tuned open-source model and a frontier model with retrieval do not naturally share inputs or outputs. It is easy to flatter one family by feeding it better data. The resolution has 3 parts. Every model consumes the same cleaned summaries, faces the same held-out split, and reports through one shared Tester class.
 
-The Tester extracts a number from each model's raw text output. That keeps generative models comparable with regressors without hand-tuning per family.
+The Tester pulls a number out of whatever text a model returns, so generative models can be compared with regressors without hand-tuning per family.
 
 ## What was measured
 
-Every model runs the same 200-item evaluation on the shared split. The ensemble finishes at a $29.95 mean absolute error and 86.3% R² across 10,000 test products. Training curves log to Weights & Biases.
+Every model runs the same 200-item evaluation on the shared split, and the training curves log to Weights & Biases. The ensemble finishes at a $29.95 mean absolute error and 86.3% R² across the 10,000 test products.
 
-A separate benchmark compares hosted and local models on Python-to-C++ translation. It distinguishes compile errors, runtime errors and success, and attributes each failure to the model output. The retrieval assistant scores retrieval with mean reciprocal rank and keyword coverage, and answers with a judge model.
+Two supporting projects carry their own measurements. The code benchmark compares hosted and local models on translating Python to C++. It separates compile errors from runtime errors from success and attributes each failure to the model that caused it. The retrieval assistant scores its retrieval with mean reciprocal rank and keyword coverage, and its answers with a judge model.
 
 ## What did not work
 
-The raw price distribution nearly broke the benchmark. It skews so far toward cheap items that a model can score well by always guessing low. Quadratic resampling at curation time flattened the distribution and closed that exploit. A model can pass a benchmark by exploiting its shape, not by learning the task.
+The raw price distribution nearly broke the benchmark. It skews so far toward cheap items that a model could score well by always guessing low. Quadratic resampling at curation time flattened the distribution and closed that exploit. The lesson stuck: a model can pass a benchmark by exploiting its shape rather than by learning the task.
 
-Multi-agent systems fail in quiet ways: stale context, role drift, duplicated state and inconsistent turn-taking. One project, the 3-agent review panel, exists to expose exactly those failures on a shared transcript.
+Multi-agent systems fail in quiet ways: stale context, agents drifting out of their roles, state updated twice, turns taken out of order. One project, the 3-agent review panel, exists to expose exactly those failures on a shared transcript.
 
 ## The supporting projects
 
-- **Expert Knowledge Worker.** A retrieval assistant over a Markdown knowledge base, with source chunks shown beside every answer. Its evaluation dashboard scores retrieval and answers.
+- **Expert Knowledge Worker.** A retrieval assistant over a Markdown knowledge base that shows its source chunks beside every answer. Its evaluation dashboard scores both retrieval and answers.
 - **Multi-Agent Conversation.** A 3-agent review panel sharing one transcript, built to expose state and role drift.
-- **Flight Booking Agentic Tool.** A chat agent with real tool calls against a SQLite backend, plus spoken replies and generated destination images.
+- **Flight Booking Agentic Tool.** A chat agent that makes real tool calls against a SQLite backend, speaks its replies and generates destination images.
 - **Code Performance Benchmark.** Hosted against local models on Python-to-C++ translation, with failure modes attributed per model.
-- **Company Brochure Generator.** A planning call picks which pages to read, and a second call writes the brief.
-- **Meeting Minute Generator.** Whisper transcription into contract-driven minutes, with guardrails against invented metadata.
+- **Company Brochure Generator.** A planning call picks which pages of a company site to read, and a second call writes the brief.
+- **Meeting Minute Generator.** Whisper transcription turned into minutes under a strict contract, with guardrails against invented metadata.
 - **Sales Intake Copilot.** A lead-qualification chat that hands a structured note to a human rep.
 - **Synthetic A/B Dataset Generator.** A schema-as-contract prompt that produces a conversion dataset and its dataset card.
 - **Web Summary Tool.** A page-to-brief summariser that runs on hosted or local models.
-- **Tech Tutor.** A streaming question answerer with a movie-analogy backbone for memorability.
+- **Tech Tutor.** A streaming question answerer that explains concepts through movie analogies so they stick.
 
 ## Stack
 
