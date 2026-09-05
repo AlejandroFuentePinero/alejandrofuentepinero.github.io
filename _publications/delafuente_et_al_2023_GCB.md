@@ -16,8 +16,8 @@ summary: |
   those extreme events concentrate.
 
   Cyclones and droughts, the disasters we expected to dominate, had only a
-  marginal effect on community change. We used hierarchical population
-  models, so survey noise stays out of the trends. Naming the driver that
+  marginal effect on community change. Hierarchical population models kept
+  survey noise out of the trends. Naming the driver that
   does the damage is what turns monitoring into management advice.
 date: 2023-01-18
 venue: 'Global Change Biology'

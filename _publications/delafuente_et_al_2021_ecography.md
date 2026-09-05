@@ -11,7 +11,7 @@ summary: |
   species of the Australian Wet Tropics. We then related suitability to
   abundance from 29 years of uninterrupted monitoring. The fitted
   relationship predicted abundance at fine resolution across each species'
-  range, explaining 55% of deviance on average.
+  range, explaining 55% of the variation in abundance on average.
 
   Counts are expensive and occurrence records are cheap, so a validated link
   between them matters for conservation. The relationship was not equally

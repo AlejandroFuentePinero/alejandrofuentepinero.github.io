@@ -12,7 +12,7 @@ summary: |
   spring and fell to 24 in autumn. The 3 wetlands held very similar bird
   assemblages.
 
-  55% of the recorded species are residents, and 20% breed in Llanquihue.
+  Residents make up 55% of the recorded species, and 20% breed in Llanquihue.
   Cormorants, night herons, lapwings, teals and gulls were the most frequent
   birds through the year. Despite urbanisation, the wetland network remains
   an ecologically productive ecosystem.
