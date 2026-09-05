@@ -361,3 +361,40 @@ each, change log appended below:
 ## 8. Change log
 
 Appended during Phase 2, one entry per page.
+
+Standard first. The owner ruled on 2026-09-05 that Simplified Technical
+English is not to be enforced at all: the standard is engaging, easy to
+read and accurate prose. Logged as DECISIONS 188. `prose_check.py` keeps
+every mechanical rule and loosens its 2 STE ceilings into guards (30
+words per sentence, 6 sentences per paragraph). MAINTENANCE.md's short
+form follows. The plan's step 1 (multi-surface corrections first) was
+folded into the page commits, since each page carried its own excerpt,
+home card and app pitch in one commit anyway.
+
+| Page | What changed | Facts corrected |
+|---|---|---|
+| 7PH Graph | Full rewrite. Opener now poses the question stats sites cannot answer, every section reads as a story with its reason, hidden gem thresholds (10% share ceiling, 5-deck floor) and the bootstrap and permutation tests explained in plain words. Excerpt, home card and app pitch unified. | ADR count 24 to 26 |
+| Deck Optimisation Engine | Full rewrite. Opens with why I built it (a paper tournament), translates Modern, camps, the 75 and the sideboard, and tells the audit as a turn in the story. | none |
+| Digital Twin | Full rewrite. Opener addresses the visitor, branches and the gap branch explained, vector store and MRR translated, drift now described as triage. Excerpt, home card and app pitch unified. | embedding model to text-embedding-3-large, stale drift trend replaced with the latest run (14 flags, 6 of 9 major from improved answers) |
+| Job Intelligence Engine | Full rewrite from the audit sample. AUC read as 9 times in 10, R² read as 30% of variation, frozen universe explained through the denominator. Excerpt, home card and app pitch unified. | postings 6,100 to 6,162 on all 4 surfaces |
+| LLM Engineering Lab | Full rewrite. QLoRA, t-SNE and the fairness problem explained, supporting projects lightly reworded. | none |
+| AI-JIE | Full rewrite. Opens with what a posting mixes together, scaffold explained as thinking before classifying, the "largest gain" claim softened to the report's own wording (schema design as the biggest lever). | Cohen's kappa claim removed (not in README or report) |
+| MLB Analytics | Full rewrite of the findings from the README. | "physical attributes separate Hall of Fame careers" replaced with debut age and career length; "low-payroll teams consistently beat expectations" dropped from page and excerpt |
+| Python Labs | Full rewrite. | 12 sections to 11 notebooks, PySpark and hierarchical clustering removed, XGBoost and gradient boosting removed from the machine learning prose and stack line (not in the repo) |
+| Ringtail possum forecast | Opener from the audit sample, detection and credible interval translated, "I" for the design choices. | none |
+| Physiological stress | Restructured. Common names added beside the Latin ones, the hand-off of uncertainty explained, "we" to "I" for design. | none |
+| Climatic drivers | Restructured. Collinearity explained, "we" to "I" for design. | none |
+| Community reshuffling | Restructured. Opens with the flier and the walker, thermal resistance and beta-diversity translated. | none |
+| Herbivory pathways | Restructured. Opens with the leaf, mediation explained. | none |
+| Forest gaps | Restructured. Opens with the falling tree, generalised linear models translated, "we" to "I" for the analyst's choices. | none |
+| Rainforest bird declines | Restructured. Numeral-initial opener and excerpt fixed, "we" to "I" for design. | none |
+| Abundance from suitability | Restructured. Opens with cheap records against expensive counts, spatial folds, deviance and link functions translated. | none |
+| Altitudinal migration | Style only, no factual change (no source). Partial migration and the derived metrics translated, excerpt fixed. | none |
+| Paper summaries | Light pass on 5 of 12 (Gallardo 2018, possums 2022, Ecography 2021, GCB 2023, GCB 2025): one numeral-initial sentence, deviance translated, one mechanism clause added. The other 7 and all talk summaries were already in the target voice and stand. | none |
+| Terms | The chat pointer now names the twin's own page. This is the one link target changed in the rewrite, because the old target was the factual error. | chat location |
+| Home, work, skills, projects, apps, research, threatened species | Read as a visitor and left unchanged: already first person, result first, plain. Home cards updated only where a project excerpt changed. | none |
+
+Unverifiable after the rewrite: the altitudinal migration page (manuscript
+under review, no preprint). The bird declines page's "habitat change"
+covariate is existing page content not stated in the abstract, kept as
+is.
