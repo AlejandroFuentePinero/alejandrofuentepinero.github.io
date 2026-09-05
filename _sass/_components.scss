@@ -408,19 +408,17 @@ a.chip:hover {
   }
 }
 
+/* Cards sit on the sunk paper with no outline: the fill separates them
+   from the page, and in dark mode it is the lifted surface. The hover
+   signal is the title colour shift below, nothing on the box. */
 .card {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
-  border: 1px solid var(--rule);
+  background: var(--paper-sunk);
   border-radius: var(--radius);
   padding: var(--space-lg);
-  transition: border-color var(--dur) var(--ease);
-}
-
-.card:hover {
-  border-color: var(--ink-faint);
 }
 
 /* display: flex above beats the UA [hidden] rule, so the projects
@@ -499,7 +497,7 @@ a.chip:hover {
   object-fit: cover;
   object-position: top;
   border-bottom: 1px solid var(--rule);
-  background: var(--paper-sunk);
+  background: var(--paper);
 }
 
 .card__note {
