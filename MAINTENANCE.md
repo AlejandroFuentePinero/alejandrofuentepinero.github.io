@@ -187,8 +187,9 @@ template; prose_check fails the build if a digit appears in
 
 Full standard: REFURB_BRIEF.md section 6. The enforced core:
 
-- One idea per sentence. At most 20 words per sentence in Tier A
-  files, 25 in Tier B. At most 4 sentences per paragraph.
+- Plain, engaging English with flow. At most 30 words per sentence
+  and 6 sentences per paragraph, as a readability guard, not a target.
+  Simplified Technical English is not enforced (DECISIONS 188).
 - Active voice. Numerals for numbers. Expand every acronym on first
   use per page (the allowlist lives in `scripts/prose_check.py`).
 - **No em or en dashes anywhere in prose.** En dashes survive only
@@ -212,7 +213,7 @@ Density budget (REFURB_BRIEF 2.4), the ceilings prose_check enforces:
 | Publication plain summary | 120 words |
 | Talk excerpt / talk summary | 20 / 100 words |
 | Project page, before first heading | 120 words |
-| Any paragraph | 4 sentences |
+| Any paragraph | 6 sentences |
 
 Content that does not fit moves down a level. It does not get
 squeezed.

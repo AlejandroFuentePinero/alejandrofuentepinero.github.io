@@ -4,8 +4,8 @@
 Fails on:
   1. Any em dash or en dash outside a verbatim record region.
   2. Any banned word or construction in prose.
-  3. Any sentence over the tier limit (20 words Tier A, 25 Tier B).
-  4. Any paragraph over 4 sentences.
+  3. Any sentence over 30 words (both tiers, a readability guard).
+  4. Any paragraph over 6 sentences.
   5. Any unexpanded acronym on first use in prose.
   6. Any page over its word budget.
   7. Any literal digit inside the stats band include.
@@ -196,8 +196,8 @@ JSONLD_CONSTANTS = {
     "SoftwareApplication", "Periodical",
 }
 
-SENTENCE_LIMIT = {"A": 20, "B": 25}
-PARAGRAPH_LIMIT = 4
+SENTENCE_LIMIT = {"A": 30, "B": 30}
+PARAGRAPH_LIMIT = 6
 PROJECT_LEAD_BUDGET = 120
 PROJECT_EXCERPT_BUDGET = 25
 APP_PITCH_BUDGET = 25
