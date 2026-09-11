@@ -123,6 +123,7 @@ FILES = {
     "_pages/threatened_species.md": ("B", 150),
     "_projects/7ph-graph.md": ("A", None),
     "_projects/ai-jie.md": ("A", None),
+    "_projects/archetype-tracking.md": ("A", None),
     "_projects/deck-optimisation-engine.md": ("A", None),
     "_projects/digital-twin.md": ("A", None),
     "_projects/job-intelligence-engine.md": ("A", None),

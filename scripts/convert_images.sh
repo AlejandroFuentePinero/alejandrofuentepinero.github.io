@@ -19,6 +19,7 @@ for f in \
   files/digital_twin_runtime.png \
   files/7ph_graph_pilot_overview.png \
   files/7ph_graph_metagame_landscape.png \
+  files/archetype_tracking_presence.png \
   files/llm-engineering-cartoon.png
 do
   cwebp -q 82 -m 6 -quiet "$f" -o "${f%.png}.webp"

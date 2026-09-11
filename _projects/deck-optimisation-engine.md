@@ -16,6 +16,7 @@ Then I audited the engine against its own database, and the audit split it in 2.
 
 ## Links
 
+- **Superseded on 11 September 2026:** the tracking half moved to [Archetype Tracking](/projects/archetype-tracking/). This repo stays as the record of the experiment and its audit, and receives no further work.
 - **Source:** [deck-optimisation-engine on GitHub](https://github.com/AlejandroFuentePinero/deck-optimisation-engine)
 - **The audit:** [what published decklists can and cannot optimise](https://github.com/AlejandroFuentePinero/deck-optimisation-engine/blob/main/docs/postmortem-2026-08-08.md)
 - **Domain language:** [the glossary](https://github.com/AlejandroFuentePinero/deck-optimisation-engine/blob/main/CONTEXT.md)
