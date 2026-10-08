@@ -3,6 +3,10 @@
 # sources; never reword them. The same possum, bird and bamboo entries
 # also live on their paper pages (DECISIONS 161).
 - kind: Article
+  outlet: news.com.au
+  title: "‘Window is narrow’: Australian native animal populations plunge 70 per cent in WWF report"
+  url: https://www.news.com.au/technology/environment/window-is-narrow-australian-native-animal-populations-plunge-70-per-cent-in-wwf-report/news-story/634e58a1377a17000d99f65e5608511a
+- kind: Article
   outlet: James Cook University media release
   title: Possums threatened by climate change
   url: https://www.jcu.edu.au/news/releases/2022/november/possums-threatened-by-climate-change
