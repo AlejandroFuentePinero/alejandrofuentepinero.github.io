@@ -1,6 +1,7 @@
 # _data/stats.yml
 # The stats band, in display order.
-# type: derived        -> include computes site.<collection> | size
+# type: derived        -> include computes site.<collection> | size, minus
+#                         entries matching an `exclude` pair
 # type: derived_data   -> include counts entries of _data/<data>.yml matching `where`
 # type: years_since    -> include renders current year minus start_year
 # type: declared       -> include renders `value`; must carry source and as_of
@@ -16,6 +17,8 @@ band:
     label: "Open-source projects"
     type: derived
     collection: projects
+    exclude:            # entries matching any pair are left out of the count
+      source: private
 
   - id: live_apps
     label: "Live apps"
