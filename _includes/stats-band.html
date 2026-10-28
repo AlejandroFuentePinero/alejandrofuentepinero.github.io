@@ -11,7 +11,13 @@
     {% for stat in site.data.stats.band %}
       {% case stat.type %}
       {% when "derived" %}
-        {% assign stat_value = site[stat.collection] | size %}
+        {% assign stat_items = site[stat.collection] %}
+        {% for pair in stat.exclude %}
+          {% assign exclude_key = pair.first %}
+          {% assign exclude_value = pair.last %}
+          {% assign stat_items = stat_items | where_exp: "item", "item[exclude_key] != exclude_value" %}
+        {% endfor %}
+        {% assign stat_value = stat_items | size %}
       {% when "derived_data" %}
         {% assign stat_items = site.data[stat.data] %}
         {% for pair in stat.where %}

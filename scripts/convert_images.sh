@@ -12,6 +12,7 @@ cd "$(dirname "$0")/.."
 
 for f in \
   images/apps/7ph-graph.png \
+  images/apps/archetype-tracking.png \
   images/apps/birds-shiny.png \
   images/apps/digital-twin.png \
   images/apps/job-intelligence-engine.png \
@@ -19,7 +20,9 @@ for f in \
   files/digital_twin_runtime.png \
   files/7ph_graph_pilot_overview.png \
   files/7ph_graph_metagame_landscape.png \
-  files/archetype_tracking_presence.png \
+  files/archetype_tracking_broodscale.png \
+  files/arena_insights_card_table.png \
+  files/mtgo_insights_home.png \
   files/llm-engineering-cartoon.png
 do
   cwebp -q 82 -m 6 -quiet "$f" -o "${f%.png}.webp"
