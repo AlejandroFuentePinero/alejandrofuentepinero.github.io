@@ -114,7 +114,7 @@ FILES = {
     "_pages/work.md": ("B", 420),
     "_pages/skills.md": ("B", None),
     "_pages/projects.html": ("B", 440),
-    "_pages/apps.html": ("A", 200),
+    "_pages/apps.html": ("A", 250),
     "_pages/digital-twin.html": ("A", 80),
     "_pages/research.html": ("B", 700),
     "_pages/404.md": ("A", 30),
@@ -124,11 +124,13 @@ FILES = {
     "_projects/7ph-graph.md": ("A", None),
     "_projects/ai-jie.md": ("A", None),
     "_projects/archetype-tracking.md": ("A", None),
+    "_projects/arena-insights.md": ("A", None),
     "_projects/deck-optimisation-engine.md": ("A", None),
     "_projects/digital-twin.md": ("A", None),
     "_projects/job-intelligence-engine.md": ("A", None),
     "_projects/llm-engineering-lab.md": ("A", None),
     "_projects/mlb-analytics-sql.md": ("A", None),
+    "_projects/mtgo-insights.md": ("A", None),
     "_projects/python-labs.md": ("A", None),
     "_projects/bird-elevational-migration.md": ("A", None),
     "_projects/dynamic-community-reshuffling.md": ("A", None),
@@ -217,6 +219,7 @@ ACRONYM_ALLOW = {
     # proper names (products, software, model and class names).
     "API", "SQL", "JSON", "JSONL", "GPU", "DVD",
     "GPT", "JAGS", "JIE", "SBERT", "SHAP", "SNE", "AA", "IELTS",
+    "MTGO",  # only inside the app name MTGO Insights; Magic Online in prose
 }
 
 # Acronym -> expansion that must appear earlier on the same page.
