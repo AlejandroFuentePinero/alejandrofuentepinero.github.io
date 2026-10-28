@@ -17,6 +17,7 @@ It grew out of the [Deck Optimisation Engine](/projects/deck-optimisation-engine
 
 ## Links
 
+- **Live reports:** [the current week's report per tracked deck](https://alejandrofupi-mtg-archetype-tracking.static.hf.space), a public Hugging Face Space
 - **Source:** [archetype-tracking on GitHub](https://github.com/AlejandroFuentePinero/archetype-tracking)
 - **Domain language:** [the glossary](https://github.com/AlejandroFuentePinero/archetype-tracking/blob/main/CONTEXT.md)
 - **Architecture decision record:** [what a backfill established about the Magic Online stream](https://github.com/AlejandroFuentePinero/archetype-tracking/blob/main/docs/adr/0001-reading-the-published-mtgo-stream.md)

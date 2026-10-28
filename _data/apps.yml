@@ -56,3 +56,17 @@
   screenshot: /images/apps/birds-shiny.png
   screenshot_width: 1280
   screenshot_height: 800
+
+- id: archetype-tracking
+  name: "Archetype Tracking"
+  status: live
+  treatment: link
+  url: "https://alejandrofupi-mtg-archetype-tracking.static.hf.space"
+  source: "https://github.com/AlejandroFuentePinero/archetype-tracking"
+  project: /projects/archetype-tracking/
+  pitch: "Weekly reports on Modern archetypes from published decklists: presence, conversion and build, with the paper events in the storyline."
+  demonstrates: "It shows adoption measured honestly: every figure is a share of a published cut, and nothing on the page claims performance."
+  note: ""
+  screenshot: /images/apps/archetype-tracking.png
+  screenshot_width: 1280
+  screenshot_height: 800
