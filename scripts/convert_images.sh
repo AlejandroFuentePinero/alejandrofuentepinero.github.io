@@ -20,7 +20,7 @@ for f in \
   files/digital_twin_runtime.png \
   files/7ph_graph_pilot_overview.png \
   files/7ph_graph_metagame_landscape.png \
-  files/archetype_tracking_presence.png \
+  files/archetype_tracking_broodscale.png \
   files/arena_insights_card_table.png \
   files/mtgo_insights_home.png \
   files/llm-engineering-cartoon.png
