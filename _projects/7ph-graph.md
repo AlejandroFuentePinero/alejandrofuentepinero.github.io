@@ -60,7 +60,7 @@ Each fetch lands as a snapshot that is never edited afterwards. The build then f
 
 A new graph artifact is promoted only when it passes validation, and the previous one stays on disk for instant rollback. The app itself never fetches or builds anything. It opens a promoted artifact read-only, which means the deployed instance holds no upstream credential at all.
 
-Midway through the project the vendor archived Kùzu, the embedded graph database underneath everything. I moved to Ladybug, the active fork, and graded the migration with the recorded oracle described below.
+Midway through the project the vendor archived Kùzu, the embedded graph database underneath everything. I moved to Ladybug, the active fork, and checked the migration against the recorded answer key described below.
 
 ## The decision that was hard
 
@@ -74,9 +74,9 @@ The design paid for itself fast. A total of 28 decks had a placement but no scor
 
 Leaderboards invite overconfidence, so I measured how far the standings can be trusted. The test is a bootstrap: redraw every contender's finishes at random, with replacement, and rescore the whole field 1,000 times. On average only 4.9 of the top 8 keep their place, and rank 7's honest interval runs from 1 to 40. Every surface that ranks people now prints that uncertainty beside the rank.
 
-The store migration was graded by a recorded oracle rather than by reading the diff. A baseline file captures what every query entry point answers, along with table counts and dropdown catalogues. The baseline command exits non-zero on any difference and refuses to overwrite itself without a force flag, so a regression cannot slip through by being re-recorded.
+The database migration was checked against a recorded answer key rather than by reading the diff. A baseline file captures what every query answers, along with table counts and dropdown catalogues. The baseline command fails on any difference and refuses to overwrite itself without a force flag, so a regression cannot slip through by being re-recorded.
 
-The visual layer is tested by a real browser rather than by assertions about markup. A Playwright suite measures what the graph document actually paints at desktop width, and an acceptance script walks every tab and state at phone and desktop widths, photographing each one. It then measures every rendered text node against the background it sits on and grades the contrast at the Web Content Accessibility Guidelines AA level.
+The visual layer is tested in a real browser rather than by checking the page's markup. A Playwright suite measures what the graph actually draws at desktop width, and an acceptance script walks every tab and state at phone and desktop widths, photographing each one. It then measures every piece of rendered text against the background behind it and grades the contrast at the Web Content Accessibility Guidelines AA level.
 
 ## What did not work
 
