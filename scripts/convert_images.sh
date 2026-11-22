@@ -19,7 +19,8 @@ for f in \
   images/apps/job-intelligence-engine.png \
   files/project_pipeline_simple.png \
   files/digital_twin_runtime.png \
-  files/7ph_graph_pilot_overview.png \
+  files/7ph_graph_pilot_page.png \
+  files/7ph_graph_community.png \
   files/7ph_graph_metagame_landscape.png \
   files/anz_rc_data_overview.png \
   files/archetype_tracking_broodscale.png \
