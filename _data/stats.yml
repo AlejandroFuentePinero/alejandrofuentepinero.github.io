@@ -36,6 +36,6 @@ band:
   - id: citations
     label: "Citations"
     type: declared
-    value: 214
+    value: 218
     source: "Google Scholar profile 7CKVdZwAAAAJ"
-    as_of: 2026-10-29
+    as_of: 2026-11-22
