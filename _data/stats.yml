@@ -19,6 +19,7 @@ band:
     collection: projects
     exclude:            # entries matching any pair are left out of the count
       source: private
+      licence: none
 
   - id: live_apps
     label: "Live apps"
