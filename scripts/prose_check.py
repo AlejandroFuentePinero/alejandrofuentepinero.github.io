@@ -114,7 +114,7 @@ FILES = {
     "_pages/work.md": ("B", 420),
     "_pages/skills.md": ("B", None),
     "_pages/projects.html": ("B", 440),
-    "_pages/apps.html": ("A", 250),
+    "_pages/apps.html": ("A", 300),
     "_pages/digital-twin.html": ("A", 80),
     "_pages/research.html": ("B", 700),
     "_pages/404.md": ("A", 30),
@@ -123,6 +123,7 @@ FILES = {
     "_pages/threatened_species.md": ("B", 150),
     "_projects/7ph-graph.md": ("A", None),
     "_projects/ai-jie.md": ("A", None),
+    "_projects/anz-rc-data.md": ("A", None),
     "_projects/archetype-tracking.md": ("A", None),
     "_projects/arena-insights.md": ("A", None),
     "_projects/deck-optimisation-engine.md": ("A", None),
@@ -233,6 +234,9 @@ ACRONYM_EXPANSIONS = {
     "MRR": "mean reciprocal rank",
     "MLB": "major league baseball",
     "MCP": "model context protocol",
+    "ANZ": "australia and new zealand",
+    "RC": "regional championship",
+    "MTG": "magic: the gathering",
 }
 
 # Banned words and constructions, REFURB_BRIEF.md section 6.2. The

@@ -70,3 +70,17 @@
   screenshot: /images/apps/archetype-tracking.png
   screenshot_width: 1280
   screenshot_height: 800
+
+- id: anz-rc-data
+  name: "ANZ RC Data"
+  status: live
+  treatment: link
+  url: "https://www.anzrcdata.com"
+  source: "https://github.com/AlejandroFuentePinero/anz-rc-data"
+  project: /projects/anz-rc-data/
+  pitch: "Every player of the 13 Australian Regional Championships, rated from 8,140 matches, with a leaderboard, player cards and head-to-head records."
+  demonstrates: "It shows a borrowed method reproduced exactly: every rating change matches the published Elo record it follows."
+  note: ""
+  screenshot: /images/apps/anz-rc-data.png
+  screenshot_width: 1280
+  screenshot_height: 800

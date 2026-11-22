@@ -153,7 +153,9 @@ third-party records. ABC inside "ABC News" is the broadcaster's proper name
 and is never expanded. `scripts/prose_check.py` enforces this with the same
 allowlist and an expansion dictionary (MRR and MLB joined it in the
 _projects pass, MCP with the /skills/ page: the Model Context Protocol
-expands on first use like the EPBC Act).
+expands on first use like the EPBC Act,
+and ANZ, RC and MTG with the ANZ RC Data page in DECISIONS 198: each
+expands on first use, MTG through "Magic: The Gathering").
 
 ## Mechanics
 
